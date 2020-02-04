@@ -20,8 +20,11 @@ Developement Done. Current QA process. Will be released soon.
 ### History
 - DeadlyTrade Renewal Version Started Jan,2020
 - DeadlyTrade Started and Sharing April,2019
-- POEExileDirection coverted to DeadlyTrade in new empty Project 1years ago.
+- POEExileDirection coverted to DeadlyTrade in new empty Project 1year ago.
 ### Users
 - 2020.02.02 DeadlyTrade Discord Server Join User : 3076
 - non-counting user is more.
 - DeadlyTrade almost over 10,000 users used, using it 1 year over in Korea POE Communities.
+### Short Plan
+- English will be default UI from now on.
+- Reflect User Request by Priority.

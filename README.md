@@ -1,7 +1,7 @@
 # DeadlyTrade
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 # 1.3.9.9 Pre-Announce.
-Developement Done. Current QA process. Will be released soon.
+Developement Done. Current QA process. Will be released soon after determin Korean/English deployment policy.
 
 ![1.3.9.9 Preview](https://postfiles.pstatic.net/MjAyMDAyMDVfMzYg/MDAxNTgwODQ0ODgyODMx.Qomj0yEhGPG0l42LpB6yCNceGtzDRqtQzw1exiEblHIg.tQ_9fGCqn4LIh6tq3Odt-gYPAJWkUZuRbQLIZ0AOYt0g.JPEG.eocsdev2/new_main_hud.jpg?type=w773)
 - UI Renewal

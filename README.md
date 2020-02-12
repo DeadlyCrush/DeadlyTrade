@@ -48,3 +48,5 @@ Developement Done. Current QA process. Will be released soon after determin Kore
 ### Short Plan
 - English will be default UI from now on.
 - Reflect User Request by Priority.
+### Goal
+- Useful and Convenient Addon for Path of Exile User

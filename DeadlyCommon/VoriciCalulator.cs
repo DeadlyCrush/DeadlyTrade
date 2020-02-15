@@ -43,7 +43,7 @@ namespace POExileDirection
 			public string successChance;
 			public string averageAttempts;
 			public string costPerTry;
-		}
+		} 
 
 		// private static probs[] probsST = new probs[20];
 

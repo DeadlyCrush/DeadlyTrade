@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{351C33A8-622E-46D5-9EC1-CF210250782B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>POExileDirection</RootNamespace>
+    <AssemblyName>POExileDirection</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>POExileDirection.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GlobalLowLevelHooks">
+      <HintPath>lib\GlobalLowLevelHooks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsInput, Version=1.0.4.0, Culture=neutral, PublicKeyToken=9b287f7dc5073cad, processorArchitecture=MSIL">
+      <HintPath>..\packages\InputSimulator.1.0.4.0\lib\net20\WindowsInput.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\API.cs" />
+    <Compile Include="API\Currency.cs" />
+    <Compile Include="API\DivinationCards.cs" />
+    <Compile Include="API\Essences.cs" />
+    <Compile Include="API\Fossils.cs" />
+    <Compile Include="API\Fragments.cs" />
+    <Compile Include="API\HelmetEnchants.cs" />
+    <Compile Include="API\Incubators.cs" />
+    <Compile Include="API\Leagues.cs" />
+    <Compile Include="API\Prophecies.cs" />
+    <Compile Include="API\Resonators.cs" />
+    <Compile Include="API\Scarab.cs" />
+    <Compile Include="API\SkillGems.cs" />
+    <Compile Include="API\UniqueAccessories.cs" />
+    <Compile Include="API\UniqueArmours.cs" />
+    <Compile Include="API\UniqueFlasks.cs" />
+    <Compile Include="API\UniqueJewels.cs" />
+    <Compile Include="API\UniqueMaps.cs" />
+    <Compile Include="API\UniqueWeapons.cs" />
+    <Compile Include="API\WhiteMaps.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="ControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlForm.Designer.cs">
+      <DependentUpon>ControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlaskTimerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlaskTimerForm.Designer.cs">
+      <DependentUpon>FlaskTimerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideGridForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideGridForm.Designer.cs">
+      <DependentUpon>GuideGridForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageOverlayFormMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageOverlayFormMap.Designer.cs">
+      <DependentUpon>ImageOverlayFormMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageOverlayFormAlva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageOverlayFormAlva.Designer.cs">
+      <DependentUpon>ImageOverlayFormAlva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageOverlayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageOverlayForm.Designer.cs">
+      <DependentUpon>ImageOverlayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniParser.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MSGForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSGForm.Designer.cs">
+      <DependentUpon>MSGForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NinjaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NinjaForm.Designer.cs">
+      <DependentUpon>NinjaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotificationForm.Designer.cs">
+      <DependentUpon>NotificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverlayJson.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemainingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemainingForm.Designer.cs">
+      <DependentUpon>RemainingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StashGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StashGrid.Designer.cs">
+      <DependentUpon>StashGrid.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ControlForm.resx">
+      <DependentUpon>ControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlaskTimerForm.resx">
+      <DependentUpon>FlaskTimerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideGridForm.resx">
+      <DependentUpon>GuideGridForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageOverlayFormMap.resx">
+      <DependentUpon>ImageOverlayFormMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageOverlayFormAlva.resx">
+      <DependentUpon>ImageOverlayFormAlva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageOverlayForm.resx">
+      <DependentUpon>ImageOverlayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSGForm.resx">
+      <DependentUpon>MSGForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NinjaForm.resx">
+      <DependentUpon>NinjaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotificationForm.resx">
+      <DependentUpon>NotificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RemainingForm.resx">
+      <DependentUpon>RemainingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StashGrid.resx">
+      <DependentUpon>StashGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\sysMAX.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\sysMIN.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\sysCLOSE.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\bg_R0_G64_B64.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="POExileDirection.ico" />
+    <None Include="res\Notification\Others\calculator.png" />
+    <None Include="res\TopMostMain\Re_SendMessage_24px.png" />
+    <None Include="res\TopMostMain\Search_24px.png" />
+    <None Include="res\TopMostMain\QuestionMark_24px.png" />
+    <None Include="res\TopMostMain\Hideout_24px.png" />
+    <None Include="res\TopMostMain\Soldout_Warning_24px.png" />
+    <None Include="res\TopMostMain\TradeAccepted_24px.png" />
+    <None Include="res\TopMostMain\Soldout_24px.png" />
+    <None Include="res\TopMostMain\TradeCommand_24px.png" />
+    <None Include="res\TopMostMain\KickFromParty_24px.png" />
+    <None Include="res\TopMostMain\Invite_24px.png" />
+    <None Include="res\TopMostMain\WaitPlz_45_45_48_24px.png" />
+    <None Include="res\Currency\chaos.png" />
+    <None Include="res\Currency\Chaos Orb.png" />
+    <Content Include="res\Currency\curr_alch.png" />
+    <Content Include="res\Currency\curr_alt.png" />
+    <Content Include="res\Currency\curr_ancient.png" />
+    <Content Include="res\Currency\curr_annul.png" />
+    <Content Include="res\Currency\curr_appr_carto_sextant.png" />
+    <Content Include="res\Currency\curr_armour_scrap.png" />
+    <Content Include="res\Currency\curr_aug.png" />
+    <Content Include="res\Currency\curr_bauble.png" />
+    <Content Include="res\Currency\curr_bestiary_orb.png" />
+    <Content Include="res\Currency\curr_binding.png" />
+    <Content Include="res\Currency\curr_black_whetstone.png" />
+    <Content Include="res\Currency\curr_blessed.png" />
+    <Content Include="res\Currency\curr_bless_chayula.png" />
+    <Content Include="res\Currency\curr_bless_esh.png" />
+    <Content Include="res\Currency\curr_bless_tul.png" />
+    <Content Include="res\Currency\curr_bless_uul.png" />
+    <Content Include="res\Currency\curr_bless_xoph.png" />
+    <Content Include="res\Currency\curr_chance.png" />
+    <Content Include="res\Currency\curr_chaos.png" />
+    <Content Include="res\Currency\curr_chisel.png" />
+    <Content Include="res\Currency\curr_chrom.png" />
+    <Content Include="res\Currency\curr_divine.png" />
+    <Content Include="res\Currency\curr_divine_vessel.png" />
+    <Content Include="res\Currency\curr_engineer.png" />
+    <Content Include="res\Currency\curr_eternal.png" />
+    <Content Include="res\Currency\curr_ex.png" />
+    <Content Include="res\Currency\curr_fuse.png" />
+    <Content Include="res\Currency\curr_gcp.png" />
+    <Content Include="res\Currency\curr_harbinger.png" />
+    <Content Include="res\Currency\curr_horizon.png" />
+    <Content Include="res\Currency\curr_impr_bestiary.png" />
+    <Content Include="res\Currency\curr_jew.png" />
+    <Content Include="res\Currency\curr_journ_carto_sextant.png" />
+    <Content Include="res\Currency\curr_master_carto_sextant.png" />
+    <Content Include="res\Currency\curr_mirror.png" />
+    <Content Include="res\Currency\curr_offering_to_the_goddess.png" />
+    <Content Include="res\Currency\curr_perandus_coin.png" />
+    <Content Include="res\Currency\curr_port.png" />
+    <Content Include="res\Currency\curr_regal.png" />
+    <Content Include="res\Currency\curr_regret.png" />
+    <Content Include="res\Currency\curr_sacrifice_dawn.png" />
+    <Content Include="res\Currency\curr_sacrifice_dusk.png" />
+    <Content Include="res\Currency\curr_sacrifice_midnight.png" />
+    <Content Include="res\Currency\curr_sacrifice_noon.png" />
+    <Content Include="res\Currency\curr_scour.png" />
+    <Content Include="res\Currency\curr_silver.png" />
+    <Content Include="res\Currency\curr_splinter_chayula.png" />
+    <Content Include="res\Currency\curr_splinter_esh.png" />
+    <Content Include="res\Currency\curr_splinter_tul.png" />
+    <Content Include="res\Currency\curr_splinter_uul.png" />
+    <Content Include="res\Currency\curr_splinter_xoph.png" />
+    <Content Include="res\Currency\curr_tra.png" />
+    <Content Include="res\Currency\curr_vaal.png" />
+    <Content Include="res\Currency\curr_wis.png" />
+    <None Include="res\TopMostMain\CloseButton_45_45_48_24px.png" />
+    <None Include="res\TopMostMain\Minimize_45_45_48_24px.png" />
+    <None Include="res\TopMostMain\PinLock_45_45_48_24px.png" />
+    <None Include="res\Notification\Button6ColorTypes\button_pink_heart.png" />
+    <None Include="res\TopMostMain\Tasks.ico" />
+    <None Include="res\TopMostMain\Arrow_up.png" />
+    <None Include="res\TopMostMain\Arrow_Down.png" />
+    <None Include="res\Notification\Button6ColorTypes\button_green_heart.png" />
+    <None Include="res\TopMostMain\Power_Blue.png" />
+    <None Include="res\TopMostMain\Close.png" />
+    <None Include="res\TopMostMain\Minimize.png" />
+    <None Include="res\TopMostMain\Pin.ico" />
+    <None Include="res\Notification\Button6ColorTypes\button_red_delete.png" />
+    <None Include="res\Notification\Button6ColorTypes\button_blue_delete.png" />
+    <None Include="res\Notification\Button6ColorTypes\button_blue_TTT.png" />
+    <None Include="res\Notification\Button6ColorTypes\button_blue_add.png" />
+    <None Include="res\GridForm_RedCloseButton.bmp" />
+    <None Include="res\52x52_Box.bmp" />
+    <None Include="res\btnHome.bmp" />
+    <None Include="res\NINJA\AgateAmuletUnique.png" />
+    <None Include="res\NINJA\UArmour.png" />
+    <None Include="res\NINJA\UWeapon.png" />
+    <None Include="res\NINJA\UFlask.png" />
+    <None Include="res\NINJA\uniqueJewel.png" />
+    <None Include="res\NINJA\MAPGorge3.png" />
+    <None Include="res\NINJA\UMAPUndeadSiege.png" />
+    <None Include="res\NINJA\ProphecyOrbRed.png" />
+    <None Include="res\NINJA\DIVInventoryIcon.png" />
+    <None Include="res\NINJA\Woe7.png" />
+    <None Include="res\NINJA\Reroll2x2A.png" />
+    <None Include="res\NINJA\SanctifiedFossil.png" />
+    <None Include="res\NINJA\GreaterScarabBreach.png" />
+    <None Include="res\NINJA\IncubationAbyss.png" />
+    <None Include="res\NINJA\FragmentPhoenix.png" />
+    <None Include="res\NINJA\CurrencyRerollRare.png" />
+    <None Include="res\NinJaCurrencyBG_75_23_2nd.bmp" />
+    <None Include="res\NinJaCurrencyBG_75_23.bmp" />
+    <None Include="res\RemainBGBOX_32_32.bmp" />
+    <None Include="res\RemainBGBOX_48_48.bmp" />
+    <None Include="res\EINHAR.png" />
+    <None Include="res\NICO.png" />
+    <None Include="res\ZANA.png" />
+    <None Include="res\ALVA.png" />
+    <None Include="res\JUN.png" />
+    <None Include="res\HELENA.png" />
+    <None Include="res\RemainBGBOX.bmp" />
+    <None Include="res\btnInform.bmp" />
+    <None Include="res\btnF10.bmp" />
+    <None Include="res\btnF9.bmp" />
+    <None Include="res\btnF7.bmp" />
+    <None Include="res\btnF6.bmp" />
+    <None Include="res\btnF4.bmp" />
+    <None Include="res\btnF3.bmp" />
+    <None Include="res\Settings_BGBOX.png" />
+    <None Include="res\RemainBoxBG.png" />
+    <None Include="res\right_anchor_IMG.png" />
+    <None Include="res\POExileDirectionLOGO_mini.bmp" />
+    <None Include="res\btnBGRECT_Brown_17x17.bmp" />
+    <None Include="res\POE_BG_TILE_VERT.bmp" />
+    <None Include="res\btnSettings.bmp" />
+    <None Include="res\sysMaxPOEBg.bmp" />
+    <None Include="res\sysClosePOEBg.bmp" />
+    <None Include="res\sysMinPOEBg.bmp" />
+    <None Include="res\POE_BG_to_BottomPane.bmp" />
+    <None Include="res\POE_BG_TILE.bmp" />
+    <None Include="res\POExileDirection.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -41,6 +41,10 @@
 ### Better speed.
 [![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTNfMjUx/MDAxNTgxNTM1NjkwMTAz.hYn_oQIDueeeKBnv_JtCI1MSy_a8dsLn8qboFKagrk8g.0vZCPSyojgZJNcz5X-OMfhW345OJ_9MGBjIRfNXsTG8g.PNG.eocsdev2/2020_0213_005.png?type=w773)](https://youtu.be/a5axIiNkzXo)
 
+## ex) Trade Notification & Settings
+![TradeNotification](https://postfiles.pstatic.net/MjAyMDAyMTZfNjgg/MDAxNTgxODQzNTgyMzcx.AOTOUVAL9Yr0q-1j0VUgAU3p7rVq2toqgIrVGl7t47Ag._dK9znT8e5Fzi_mvWSonKsqtd7wkHiwxeV5okMPFI0Ag.PNG.eocsdev2/2020_0216_004.png?type=w773)
+![TradeNotification](https://postfiles.pstatic.net/MjAyMDAyMTZfMjE4/MDAxNTgxODQzNTk0Njgx.GxhPhkcfl5WQzGjuULi8vFYlFsWT0y4nvIJCu6DDDiog.Wc35qH7_JdIc1-bsAp11_p2d9pwfaiXMLLfV8apfg5kg.PNG.eocsdev2/2020_0216_005.png?type=w773)
+
 ## Installation
 - Portable.
 - Download and unzip.

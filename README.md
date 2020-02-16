@@ -84,4 +84,5 @@ DeadlyTrade / Deadly KOR Team >
 - Discord - https://discord.gg/ryjUA7r
 - Site - https://www.jumpleasure.me/deadlytrade
 - KAKAO Open Talk - https://open.kakao.com/o/gylOSztb
+![Discord](https://postfiles.pstatic.net/MjAyMDAyMTZfNjkg/MDAxNTgxODQyOTM5MzQ0.ISjyp2kaOhC4xRr2Db1eSqf5jAMecB_CZgIDoCVPE08g.7v-vXca-_bAUbQitXBsJZ2DFlafTfmLUXdKDKs2iEy4g.PNG.eocsdev2/2020_0216_007.png?type=w773)
 ## Thank you all. Good Luck Exile~!

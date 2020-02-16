@@ -64,4 +64,24 @@
 - English will be default UI from now on.
 ## Goal
 - Useful and Convenient Addon for Path of Exile User
+## Contact
+Private >
+○ Blog -https://deadlytrade.tistory.com/ https://blog.naver.com/eocsdev2 
+○ Twitter - https://twitter.com/crush_deadly
+○ Facebook - https://www.facebook.com/deadlycrush.kor
+○ Reddit - https://www.reddit.com/user/DeadlyCrush
+○ Discord - DeadlyCrush#7202
+
+Funny Project >
+○ GitHub - https://github.com/DeadlyCrush
+○ Azure - https://dev.azure.com/DeadlyCrush/
+
+Media >
+○ Twitch - https://www.twitch.tv/deadlycrush
+○ Youtube - https://www.youtube.com/c/DeadlyCrush
+
+DeadlyTrade / Deadly KOR Team >
+○ Discord - https://discord.gg/ryjUA7r
+○ Site - https://www.jumpleasure.me/deadlytrade
+○ KAKAO Open Talk - https://open.kakao.com/o/gylOSztb
 ## Thank you all. Good Luck Exile~!

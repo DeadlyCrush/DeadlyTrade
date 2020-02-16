@@ -71,6 +71,7 @@ Private >
 - Facebook - https://www.facebook.com/deadlycrush.kor
 - Reddit - https://www.reddit.com/user/DeadlyCrush
 - Discord - DeadlyCrush#7202
+
 [![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTZfNjkg/MDAxNTgxODQyOTM5MzQ0.ISjyp2kaOhC4xRr2Db1eSqf5jAMecB_CZgIDoCVPE08g.7v-vXca-_bAUbQitXBsJZ2DFlafTfmLUXdKDKs2iEy4g.PNG.eocsdev2/2020_0216_007.png?type=w773)](https://discord.gg/ryjUA7r)
 
 Funny Project >

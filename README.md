@@ -15,7 +15,7 @@
 - Ninja Data Speed Up
 - Oil Anointing Overhaul
 
-## Bug fixes
+## Bug fixes ( and All Update Note )
 
 > More detail information (Join Our Discord please) : https://discord.gg/Gd7MjCz
 

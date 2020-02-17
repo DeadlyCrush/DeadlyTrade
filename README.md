@@ -46,7 +46,7 @@
 
 ![TradeNotification](https://postfiles.pstatic.net/MjAyMDAyMTdfODUg/MDAxNTgxODcwODA4ODE5.1PWAwkD2ppat2X7vbkwyNStOnB46bvAxaDurY2MlvZYg.v1QdLM5hk5guQnM_tqAlv-3Y5sw3_C3OYTnsIE7YFEsg.PNG.eocsdev2/%EC%9D%B4%EB%AF%B8%EC%A7%80_005_-_%EB%B3%B5%EC%82%AC%EB%B3%B8.png?type=w773)
 
-![TradeNotification](https://postfiles.pstatic.net/MjAyMDAyMTZfMjE4/MDAxNTgxODQzNTk0Njgx.GxhPhkcfl5WQzGjuULi8vFYlFsWT0y4nvIJCu6DDDiog.Wc35qH7_JdIc1-bsAp11_p2d9pwfaiXMLLfV8apfg5kg.PNG.eocsdev2/2020_0216_005.png?type=w773)
+![TradeNotification](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FviEGe%2FbtqB3XsZ6mo%2F4kPuSnB5jSn6suK9AgKqwk%2Fimg.gif)
 
 ## Installation
 - Portable.

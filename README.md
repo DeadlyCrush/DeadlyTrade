@@ -61,10 +61,15 @@
 - DeadlyTrade Renewal Version Started Jan,2020
 - DeadlyTrade Started and Sharing April,2019
 - POEExileDirection coverted to DeadlyTrade in new empty Project 1year ago.
+- MercuryTrdae(Exslims) All Korean UI&Functions Version Jun,2019 until Exslims no longer maintain officially.
 ## Users
 - 2020.02.16 DeadlyTrade Discord Server Join User : 3419
 - non-counting user is more.
 - DeadlyTrade almost over 10,000 users used, using it 1 year over in Korea POE Communities.
+## Spetial Thanks to
+- Since the Korean launch of Path Of Exile, Localizing existing add-on programs affected me in many aspects. 
+MercuryTrade, TradeMacro, POE Compass, Lab Compass, TradeForPoe, CurrencyCop, Exilence and many more...
+All are such an amazing and inspiring examples that I can't thank enough.
 ## Work in progress
 - Price checking throgh the pathofexile trade.
 - Set priority User request and will be reflect.

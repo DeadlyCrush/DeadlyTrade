@@ -42,6 +42,8 @@
 [![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTNfMjUx/MDAxNTgxNTM1NjkwMTAz.hYn_oQIDueeeKBnv_JtCI1MSy_a8dsLn8qboFKagrk8g.0vZCPSyojgZJNcz5X-OMfhW345OJ_9MGBjIRfNXsTG8g.PNG.eocsdev2/2020_0213_005.png?type=w773)](https://youtu.be/a5axIiNkzXo)
 
 ## ex) Trade Notification & Settings
+Provide clipboard parsing when Kakao user buying that can be useful for kakao user. Find item by position function can be useful for who struggle with other languages message not Eng. Also deadlytrade can parse and pop panel when trade whisper by ggg user even if kakao user set default trade message language to Korean.
+
 ![TradeNotification](https://postfiles.pstatic.net/MjAyMDAyMTZfNjgg/MDAxNTgxODQzNTgyMzcx.AOTOUVAL9Yr0q-1j0VUgAU3p7rVq2toqgIrVGl7t47Ag._dK9znT8e5Fzi_mvWSonKsqtd7wkHiwxeV5okMPFI0Ag.PNG.eocsdev2/2020_0216_004.png?type=w773)
 
 ![TradeNotification](https://postfiles.pstatic.net/MjAyMDAyMTdfODUg/MDAxNTgxODcwODA4ODE5.1PWAwkD2ppat2X7vbkwyNStOnB46bvAxaDurY2MlvZYg.v1QdLM5hk5guQnM_tqAlv-3Y5sw3_C3OYTnsIE7YFEsg.PNG.eocsdev2/%EC%9D%B4%EB%AF%B8%EC%A7%80_005_-_%EB%B3%B5%EC%82%AC%EB%B3%B8.png?type=w773)

@@ -66,7 +66,7 @@
 - 2020.02.16 DeadlyTrade Discord Server Join User : 3419
 - non-counting user is more.
 - DeadlyTrade almost over 10,000 users used, using it 1 year over in Korea POE Communities.
-## Spetial Thanks to
+## Special Thanks to
 - Since the Korean launch of Path Of Exile, Localizing existing add-on programs affected me in many aspects. 
 MercuryTrade, TradeMacro, POE Compass, Lab Compass, TradeForPoe, CurrencyCop, Exilence and many more...
 All are such an amazing and inspiring examples that I can't thank enough.

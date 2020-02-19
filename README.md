@@ -24,6 +24,8 @@
 2. Our Site : https://www.jumpleasure.me/deadlytrade/repository/DeadlyTradeOvehaul_1.4.0.0.zip
 
 ### Main HUD rework.
+![Main HUD](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FnEVUM%2FbtqB10JTI9i%2FJhmAdkoH4eelxJOJk7QJ81%2Fimg.jpg)
+
 [![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTNfMTUx/MDAxNTgxNTMwNTg1Mzc3.FFWw_SfHrU1IaNDnGArMz2uy7QCnoR5IAdsAZxWcjC4g.uhQyyNZe9y2sch0qBdNNUqMEjbVv2F19udQvLxiDaN4g.PNG.eocsdev2/image.png?type=w773)](https://youtu.be/CC-UjKUfOpY)
 
 ### Atlas Overlay new feature added.

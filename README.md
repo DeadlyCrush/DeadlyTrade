@@ -99,3 +99,5 @@ DeadlyTrade / Deadly KOR Team >
 - Site - https://www.jumpleasure.me/deadlytrade
 - KAKAO Open Talk - https://open.kakao.com/o/gylOSztb
 ## Thank you all. Good Luck Exile~!
+Please let me know about any bugs you encounter or if you have any suggestions.
+Thank you for your interest and support.

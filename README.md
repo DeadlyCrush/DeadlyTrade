@@ -59,7 +59,7 @@ Provide clipboard parsing when Kakao user buying that can be useful for kakao us
 ![Labyrinth](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbznvQ7%2FbtqB8P23RtN%2FfUv5pVQ5l7VKl0xvy8jYNK%2Fimg.png)
 
 ## Information Overlay : Atlas, Syndicate, Incursion
-![Overlay](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fbqmpdf%2FbtqB9XzsUf9%2FPanB9dr9zV5FXwUdeYtwQK%2Fimg.png)
+[![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTNfNjUg/MDAxNTgxNTMwNjk1NDA0.02lfDR79X4qIkEL-rzAjZK0gMqIHrTsLRXRf0b3SpMEg.Qmkzb9Lg9pqZzKNYHKKgUDGGe24OBgMlKh2w301JlA0g.PNG.eocsdev2/2020_0213_002.png?type=w773)](https://youtu.be/MVxWsaGGbGA)
 
 ![Overlay](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FLLQRV%2FbtqB9XM2vL3%2FZ76gK3mmIJqGpAeRH3ZWS0%2Fimg.png)
 
@@ -68,12 +68,16 @@ Provide clipboard parsing when Kakao user buying that can be useful for kakao us
 ## Misc.
 Find Item by Position (Left, Top)
 ![Misc](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdCllsC%2FbtqB7PJtr4y%2FF53jA7idpiFwZnBwz1knRk%2Fimg.jpg)
+
 Monster Remaining.
 ![Misc](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2F7OBIQ%2FbtqB7OjvPG2%2F5xpH4WtipqeEdDjU4mAU40%2Fimg.png)
+
 Someone entered.  ( hideout )
 ![Misc](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FNJRse%2FbtqB7NY8zH2%2FvI890WrOkKDfJ13YO0mEa1%2Fimg.png)
+
 POE Command
 ![Misc](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FQAy58%2FbtqB8bMh0s9%2FAkVqjNMa4mvUpcKOBI6qx1%2Fimg.png)
+
 ## Installation
 - Portable.
 - Download and unzip.

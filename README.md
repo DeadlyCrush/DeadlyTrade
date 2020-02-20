@@ -53,6 +53,9 @@ Provide clipboard parsing when Kakao user buying that can be useful for kakao us
 ## Settings
 ![](DeadlyCrush_Setting.gif)
 
+## Labyrinth Overlay
+![Labyrinth](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fn4UF5%2FbtqB7aUAEEj%2FNpe2T7JydAlQhGwGNMVsI1%2Fimg.png)
+
 ## Installation
 - Portable.
 - Download and unzip.

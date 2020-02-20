@@ -86,6 +86,10 @@ POE Command
 - Portable.
 - Download and unzip.
 - Auto update.
+
+## Performance
+You can disable any feature you don’t want to use while launching the add-on and the app uses very little resources, around 50-80mb Ram which is around 1 tab in Chrome. It has no effect on GPU and even when receiving data from poe.ninja, the effects on the CPU usage is very minimal and will not cause any performance issues.
+
 ## Langueges
 * [C++] - Core
 * [C#, .Net Core/Web] - Front End, Web API

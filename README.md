@@ -82,6 +82,16 @@ POE Command
 
 ![Misc](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FQAy58%2FbtqB8bMh0s9%2FAkVqjNMa4mvUpcKOBI6qx1%2Fimg.png)
 
+## Default Hot Keys (Can change in Settings)
+- Hideout : F5
+- Emergency : CTRL+SCACE
+- Find item by Position (X,Y) : CTRL+P
+- Monster Remaining : F2
+- Syndicate Overlay : F3
+- Incursion Overlay : F6
+- Atlas, Pantheon Overlay : F7
+- Flask & Skill Timer : Auto detect your In-Game Option.
+
 ## Installation
 - Portable.
 - Download and unzip.

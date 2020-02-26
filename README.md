@@ -1,5 +1,6 @@
 # DeadlyTrade Overhaul.
-### Overhaul Version Build | 1.4.0.0 First Time User Count | Before 1.4.0.0 First Time User Count
+
+Overhaul ver. build | 1.4.0.0 ver. First time user count (Real-time) | Before 1.4.0.0 ver. user count (Real-time)
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) | [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]() | [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]()
 
 ## [ DeadlyTrade Overhaul 1.4.0.0 version. ]

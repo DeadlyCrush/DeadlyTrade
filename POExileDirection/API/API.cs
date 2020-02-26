@@ -22,7 +22,7 @@ namespace Ninja_Price.API.PoeNinja
             }
         }
 
-        public class Json
+        public class JsonAPI
         {
             public static string ReadJson(string filePath)
             {

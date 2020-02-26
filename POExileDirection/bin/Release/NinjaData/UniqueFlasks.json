@@ -1,0 +1,1451 @@
+{
+  "Lines": [
+    {
+      "Id": 20932,
+      "Name": "Bottled Faith",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvQm90dGxlZFB1cml0eSIsInNwIjowLjYwODUsImxldmVsIjowfV0/3a0d0d7262/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 35,
+      "BaseType": "Sulphur Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -4.97,
+          -8.61,
+          -9.74,
+          -12.89,
+          -12.66,
+          -13.41
+        ],
+        "TotalChange": -13.41
+      },
+      "ImplicitModifiers": [
+        {
+          "text": "Creates Consecrated Ground on Use",
+          "optional": false
+        }
+      ],
+      "ExplicitModifiers": [
+        {
+          "Text": "(30-50)% increased Duration",
+          "Optional": false
+        },
+        {
+          "Text": "Consecrated Ground created by this Flask has Tripled Radius",
+          "Optional": false
+        },
+        {
+          "Text": "+(1-2)% to Critical Strike Chance against Enemies on Consecrated Ground during Effect",
+          "Optional": false
+        },
+        {
+          "Text": "Consecrated Ground created during Effect applies (7-10)% increased Damage taken to Enemies",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "A tourniquet for the soul, squeezing ethereal into physical.",
+      "ItemType": "Unknown",
+      "ChaosValue": 2365.72,
+      "ExaltedValue": 14.0,
+      "Count": 99
+    },
+    {
+      "Id": 7020,
+      "Name": "Soul Ripper",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvU291bFJpcHBlciIsInNwIjowLjYwODUsImxldmVsIjowfV0/febcd8d98c/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 27,
+      "BaseType": "Quartz Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -2.99,
+          -5.98,
+          -8.68,
+          -8.78,
+          -8.5,
+          -7.34
+        ],
+        "TotalChange": -7.34
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "100% increased Charges used",
+          "Optional": false
+        },
+        {
+          "Text": "Vaal Skills deal (30-40)% more Damage during Effect",
+          "Optional": false
+        },
+        {
+          "Text": "Vaal Skills used during effect do not apply Soul Gain Prevention",
+          "Optional": false
+        },
+        {
+          "Text": "Gains no Charges during effect of any Soul Ripper Flask",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "\"What care have I for their pain? They're already dead.\"\n- Atalui, Vaal Priestess",
+      "ItemType": "Unknown",
+      "ChaosValue": 592.14,
+      "ExaltedValue": 3.5,
+      "Count": 60
+    },
+    {
+      "Id": 1956,
+      "Name": "Sin's Rebirth",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvU2luIiwic3AiOjAuNjA4NSwibGV2ZWwiOjB9XQ/df738b120a/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 14,
+      "BaseType": "Stibnite Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.63,
+          10.0,
+          10.45
+        ],
+        "TotalChange": 10.45
+      },
+      "ImplicitModifiers": [
+        {
+          "text": "Creates a Smoke Cloud on Use",
+          "optional": false
+        }
+      ],
+      "ExplicitModifiers": [
+        {
+          "Text": "Gain Unholy Might during Flask Effect",
+          "Optional": false
+        },
+        {
+          "Text": "Immunity to Ignite during Flask effect\nRemoves Burning on use",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "And from the ashes he rose, like a black cloud.\nThe Sin of one became the Sin of many.",
+      "ItemType": "Unknown",
+      "ChaosValue": 44.18,
+      "ExaltedValue": 0.26,
+      "Count": 99
+    },
+    {
+      "Id": 467,
+      "Name": "Dying Sun",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvU2hhcGVyc0ZsYXNrIiwic3AiOjAuNjA4NSwibGV2ZWwiOjB9XQ/4369b8fcb9/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 68,
+      "BaseType": "Ruby Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -2.11,
+          -12.5,
+          -25.0
+        ],
+        "TotalChange": -25.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "(1-10)% increased Charges used",
+          "Optional": true
+        },
+        {
+          "Text": "(1-10)% reduced Charges used",
+          "Optional": true
+        },
+        {
+          "Text": "Skills fire 2 additional Projectiles during Flask Effect",
+          "Optional": false
+        },
+        {
+          "Text": "(15-25)% increased Area of Effect during Flask Effect",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "All things must die.\nWhether you burn out or explode is up to you.",
+      "ItemType": "Unknown",
+      "ChaosValue": 30.0,
+      "ExaltedValue": 0.18,
+      "Count": 99
+    },
+    {
+      "Id": 19060,
+      "Name": "Cinderswallow Urn",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvVmlhbG9mVW5saWZlIiwic3AiOjAuNjA4NSwibGV2ZWwiOjB9XQ/ee7b4f9e4b/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 22,
+      "BaseType": "Silver Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -0.5,
+          -0.5,
+          -0.5,
+          1.68,
+          0.86,
+          -7.93
+        ],
+        "TotalChange": -7.93
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Recharges 1 Charge when you Consume an Ignited corpse",
+          "Optional": false
+        },
+        {
+          "Text": "Enemies Ignited by you during Flask Effect take 10% increased Damage",
+          "Optional": false
+        },
+        {
+          "Text": "Recover (1-3)% of Life when you Kill an Enemy during Flask Effect",
+          "Optional": false
+        },
+        {
+          "Text": "Recover (1-3)% of Mana when you Kill an Enemy during Flask Effect",
+          "Optional": false
+        },
+        {
+          "Text": "Recover (1-3)% of Energy Shield when you Kill an Enemy during Flask Effect",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "A controlled burn is sometimes necessary for new life.",
+      "ItemType": "Unknown",
+      "ChaosValue": 27.76,
+      "ExaltedValue": 0.16,
+      "Count": 99
+    },
+    {
+      "Id": 1614,
+      "Name": "The Sorrow of the Divine",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvU29ycm93T2ZUaGVEaXZpbmUiLCJzcCI6MC42MDg1LCJsZXZlbCI6MH1d/fee485ecf4/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 35,
+      "BaseType": "Sulphur Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          33.33,
+          33.33,
+          33.33,
+          33.33,
+          58.07,
+          66.67
+        ],
+        "TotalChange": 66.67
+      },
+      "ImplicitModifiers": [
+        {
+          "text": "Creates Consecrated Ground on Use",
+          "optional": false
+        }
+      ],
+      "ExplicitModifiers": [
+        {
+          "Text": "(25-50)% increased Duration",
+          "Optional": false
+        },
+        {
+          "Text": "Zealot's Oath during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "Life Recovery from Flasks also applies to Energy Shield during Flask Effect",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "As man sins,\nGod weeps.",
+      "ItemType": "Unknown",
+      "ChaosValue": 25.0,
+      "ExaltedValue": 0.15,
+      "Count": 99
+    },
+    {
+      "Id": 1073,
+      "Name": "Rumi's Concoction",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvQmxvY2tGbGFzayIsInNwIjowLjYwODUsImxldmVsIjowfV0/95d3526cf9/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 68,
+      "BaseType": "Granite Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -11.76,
+          0.0,
+          17.65,
+          17.65,
+          17.65,
+          17.65
+        ],
+        "TotalChange": 17.65
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "+(14-20)% Chance to Block Attack Damage during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "+(6-10)% Chance to Block Spell Damage during Flask effect",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "\"Yesterday I was clever, so I wanted to change the world.\nToday I am wise, so I am changing myself.\"\n-Rumi of the Vaal",
+      "ItemType": "Unknown",
+      "ChaosValue": 20.0,
+      "ExaltedValue": 0.12,
+      "Count": 99
+    },
+    {
+      "Id": 1394,
+      "Name": "Taste of Hate",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvVGFzdGVPZkhhdGUiLCJzcCI6MC42MDg1LCJsZXZlbCI6MH1d/fdc3742db8/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 18,
+      "BaseType": "Sapphire Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          10.33,
+          11.11,
+          0.0,
+          0.0,
+          -16.67,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "20% of Physical Damage from Hits taken as Cold Damage during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "Gain (15-20)% of Physical Damage as Extra Cold Damage during effect",
+          "Optional": false
+        },
+        {
+          "Text": "30% chance to Avoid being Chilled during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "30% chance to Avoid being Frozen during Flask effect",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "A sip will freeze your lips,\nA swig will chill your heart,\nA glass will still your soul.",
+      "ItemType": "Unknown",
+      "ChaosValue": 18.0,
+      "ExaltedValue": 0.11,
+      "Count": 99
+    },
+    {
+      "Id": 174,
+      "Name": "Blood of the Karui",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvQmxvb2RPZlRoZUthcnVpIiwic3AiOjAuNjA4NSwibGV2ZWwiOjB9XQ/b0af6601de/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 50,
+      "BaseType": "Sanctified Life Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -15.0,
+          -18.66,
+          -0.25,
+          -4.12,
+          -2.09,
+          1.67
+        ],
+        "TotalChange": 1.67
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "100% increased Life Recovered",
+          "Optional": false
+        },
+        {
+          "Text": "(5-20)% increased Recovery rate",
+          "Optional": false
+        },
+        {
+          "Text": "Recover Full Life at the end of the Flask Effect",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "\"Kaom fought and killed for his people.\nKaom bled for his people.\nAnd so the people gave, the people bled,\nSo their King might go on.\"\n- Lavianga, Advisor to Kaom",
+      "ItemType": "Unknown",
+      "ChaosValue": 10.0,
+      "ExaltedValue": 0.06,
+      "Count": 99
+    },
+    {
+      "Id": 424,
+      "Name": "Divination Distillate",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wveUZsYXNrczE3Iiwic3AiOjAuNjA4NSwibGV2ZWwiOjB9XQ/a154711d2f/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 30,
+      "BaseType": "Large Hybrid Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          40.0,
+          100.0,
+          100.0,
+          10.21,
+          100.0
+        ],
+        "TotalChange": 100.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "(40-60)% increased Rarity of Items found during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "(12-18)% increased Quantity of Items found during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "25% increased Light Radius during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "+50% to Elemental Resistances during Flask Effect",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Knowledge is fermented in pain and loss\nDistilled with reflection\nTo quench the thirst of those\nwho dream of enlightenment",
+      "ItemType": "Unknown",
+      "ChaosValue": 10.0,
+      "ExaltedValue": 0.06,
+      "Count": 99
+    },
+    {
+      "Id": 763,
+      "Name": "Lion's Roar",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wveUZsYXNrNSIsInNwIjowLjYwODUsImxldmVsIjowfV0/07437c860f/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 27,
+      "BaseType": "Granite Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          16.67,
+          16.67,
+          16.67,
+          26.17,
+          -5.0
+        ],
+        "TotalChange": -5.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Adds Knockback to Melee Attacks during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "Knocks Back Enemies in an Area when you use a Flask",
+          "Optional": false
+        },
+        {
+          "Text": "75% chance to cause Enemies to Flee on use",
+          "Optional": false
+        },
+        {
+          "Text": "(20-25)% more Melee Physical Damage during effect",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "A sprinkle of hunger, a spoonful of menace\nand three generous cups of Might.",
+      "ItemType": "Unknown",
+      "ChaosValue": 5.7,
+      "ExaltedValue": 0.03,
+      "Count": 99
+    },
+    {
+      "Id": 1679,
+      "Name": "The Writhing Jar",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvV3JpdGhpbmdKYXIiLCJzcCI6MC42MDg1LCJsZXZlbCI6MH1d/65ebc21512/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 60,
+      "BaseType": "Hallowed Hybrid Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          11.98,
+          11.98,
+          -10.42,
+          11.98,
+          11.98,
+          11.98
+        ],
+        "TotalChange": 11.98
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "(65-75)% reduced Amount Recovered",
+          "Optional": false
+        },
+        {
+          "Text": "Instant Recovery",
+          "Optional": false
+        },
+        {
+          "Text": "2 Enemy Writhing Worms escape the Flask when used\nWrithing Worms are destroyed when Hit",
+          "Optional": false
+        },
+        {
+          "Text": "(10-20)% reduced Charges used",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "To achieve godhood, they would cast off all that god has gifted us.\nMortality, compassion, even the sanctity of flesh.\n - High Templar Voll",
+      "ItemType": "Unknown",
+      "ChaosValue": 5.0,
+      "ExaltedValue": 0.03,
+      "Count": 99
+    },
+    {
+      "Id": 1772,
+      "Name": "Vessel of Vinktar",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvVmlua3RhckZsYXNrIiwic3AiOjAuNjA4NSwibGV2ZWwiOjB9XQ/13746f3103/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 68,
+      "BaseType": "Topaz Flask",
+      "StackSize": 0,
+      "Variant": "Added Attacks",
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -60.0
+        ],
+        "TotalChange": -60.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "(80-100)% increased Charges used",
+          "Optional": false
+        },
+        {
+          "Text": "Shocks nearby Enemies during Flask effect, causing 10% increased Damage taken",
+          "Optional": false
+        },
+        {
+          "Text": "You are Shocked during Flask effect, causing 50% increased Damage taken",
+          "Optional": false
+        },
+        {
+          "Text": "Adds (25-35) to (110-130) Lightning Damage to Attacks during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "20% of Lightning Damage Leeched as Life during Flask effect",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "The great city of storms, washed away by Vinktar's thirst for power.",
+      "ItemType": "Unknown",
+      "ChaosValue": 4.0,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
+      "Id": 1775,
+      "Name": "Vessel of Vinktar",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvVmlua3RhckZsYXNrIiwic3AiOjAuNjA4NSwibGV2ZWwiOjB9XQ/13746f3103/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 68,
+      "BaseType": "Topaz Flask",
+      "StackSize": 0,
+      "Variant": "Penetration",
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -19.0,
+          0.0,
+          25.0,
+          25.0,
+          25.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "(80-100)% increased Charges used",
+          "Optional": false
+        },
+        {
+          "Text": "Shocks nearby Enemies during Flask effect, causing 10% increased Damage taken",
+          "Optional": false
+        },
+        {
+          "Text": "You are Shocked during Flask effect, causing 50% increased Damage taken",
+          "Optional": false
+        },
+        {
+          "Text": "Damage Penetrates 10% Lightning Resistance during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "20% of Lightning Damage Leeched as Life during Flask effect",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "The great city of storms, washed away by Vinktar's thirst for power.",
+      "ItemType": "Unknown",
+      "ChaosValue": 4.0,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
+      "Id": 2075,
+      "Name": "The Wise Oak",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvVGhlV2lzZU9hayIsInNwIjowLjYwODUsImxldmVsIjowfV0/20115a413e/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 8,
+      "BaseType": "Bismuth Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -20.0
+        ],
+        "TotalChange": -20.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "During Flask Effect, 10% reduced Damage taken of each Element for which your Uncapped Elemental Resistance is lowest",
+          "Optional": false
+        },
+        {
+          "Text": "During Flask Effect, Damage Penetrates (10-15)% Resistance of each Element for which your Uncapped Elemental Resistance is highest",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "The summer sun dries the soil and burns the leaves.\nThe autumn rain extinguishes the flames.\nThe spring bloom shades the wet earth.\nNature is an eternal tug of war.",
+      "ItemType": "Unknown",
+      "ChaosValue": 4.0,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
+      "Id": 1773,
+      "Name": "Vessel of Vinktar",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvVmlua3RhckZsYXNrIiwic3AiOjAuNjA4NSwibGV2ZWwiOjB9XQ/13746f3103/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 68,
+      "BaseType": "Topaz Flask",
+      "StackSize": 0,
+      "Variant": "Added Spells",
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "(80-100)% increased Charges used",
+          "Optional": false
+        },
+        {
+          "Text": "Shocks nearby Enemies during Flask effect, causing 10% increased Damage taken",
+          "Optional": false
+        },
+        {
+          "Text": "You are Shocked during Flask effect, causing 50% increased Damage taken",
+          "Optional": false
+        },
+        {
+          "Text": "Adds (15-25) to (70-90) Lightning Damage to Spells during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "20% of Lightning Damage Leeched as Life during Flask effect",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "The great city of storms, washed away by Vinktar's thirst for power.",
+      "ItemType": "Unknown",
+      "ChaosValue": 3.0,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
+      "Id": 1774,
+      "Name": "Vessel of Vinktar",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvVmlua3RhckZsYXNrIiwic3AiOjAuNjA4NSwibGV2ZWwiOjB9XQ/13746f3103/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 68,
+      "BaseType": "Topaz Flask",
+      "StackSize": 0,
+      "Variant": "Conversion",
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "(80-100)% increased Charges used",
+          "Optional": false
+        },
+        {
+          "Text": "Shocks nearby Enemies during Flask effect, causing 10% increased Damage taken",
+          "Optional": false
+        },
+        {
+          "Text": "You are Shocked during Flask effect, causing 50% increased Damage taken",
+          "Optional": false
+        },
+        {
+          "Text": "20% of Physical Damage Converted to Lightning during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "20% of Lightning Damage Leeched as Life during Flask effect",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "The great city of storms, washed away by Vinktar's thirst for power.",
+      "ItemType": "Unknown",
+      "ChaosValue": 3.0,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
+      "Id": 1904,
+      "Name": "Zerphi's Last Breath",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvWmVycGhpc0xhc3RCcmVhdGgiLCJzcCI6MC42MDg1LCJsZXZlbCI6MH1d/31ce5498cf/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 18,
+      "BaseType": "Grand Mana Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "50% increased Charges used",
+          "Optional": false
+        },
+        {
+          "Text": "Grants Last Breath when you Use a Skill during Flask Effect, for (450-600)% of Mana Cost",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "\"Proof that if you devote yourself to a god of death,\nyou may be spared from its wrath.\"\n- Icius Perandus, Antiquities Collection, Item 408",
+      "ItemType": "Unknown",
+      "ChaosValue": 3.0,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
+      "Id": 125,
+      "Name": "Atziri's Promise",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvQXR6aXJpc1Byb21pc2UiLCJzcCI6MC42MDg1LCJsZXZlbCI6MH1d/6d2b998d6e/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 68,
+      "BaseType": "Amethyst Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "2% of Chaos Damage Leeched as Life during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "Gain (15-20)% of Physical Damage as Extra Chaos Damage during effect",
+          "Optional": false
+        },
+        {
+          "Text": "Gain (10-15)% of Elemental Damage as Extra Chaos Damage during effect",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "\"Death needs not your understanding. It needs only your loyalty.\" \n- Atziri, Queen of the Vaal",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 306,
+      "Name": "Coruscating Elixir",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvQ29ydXNFbGl4aXIiLCJzcCI6MC42MDg1LCJsZXZlbCI6MH1d/d373a5a842/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 18,
+      "BaseType": "Ruby Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Chaos Damage does not bypass Energy Shield during effect",
+          "Optional": false
+        },
+        {
+          "Text": "Removes all but one Life on use\nRemoved life is Regenerated as Energy Shield over 2 seconds",
+          "Optional": false
+        },
+        {
+          "Text": "100% increased Duration",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Let blood sear in your veins, \nLet the pain push outwards and turn away your enemy's blows.",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 537,
+      "Name": "Forbidden Taste",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvUGhhbnRvbUJsb29kIiwic3AiOjAuNjA4NSwibGV2ZWwiOjB9XQ/1b7e2554a7/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 27,
+      "BaseType": "Quartz Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          5.25,
+          -2.08,
+          4.73,
+          5.25,
+          4.2,
+          5.25
+        ],
+        "TotalChange": 5.25
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Recover (75-99)% of Life on use",
+          "Optional": true
+        },
+        {
+          "Text": "Recover Full Life on use",
+          "Optional": true
+        },
+        {
+          "Text": "8% of Maximum Life taken as Chaos Damage per second",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Your reach exceeds your grasp.",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 712,
+      "Name": "Kiara's Determination",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvS2lhcmFzRGV0ZXJtaW5hdGlvbiIsInNwIjowLjYwODUsImxldmVsIjowfV0/cfb02d0f77/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 22,
+      "BaseType": "Silver Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Immune to Freeze, Chill, Curses and Stuns during Flask Effect",
+          "Optional": false
+        },
+        {
+          "Text": "60% reduced Duration",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Travelers of the deep wood speak of a witch\nwhose ale provides a different kind\nof liquid courage.",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 739,
+      "Name": "Lavianga's Spirit",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvTGF2aWFuZ2FzT2lsIiwic3AiOjAuNjA4NSwibGV2ZWwiOjB9XQ/ed1e743278/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 50,
+      "BaseType": "Sanctified Mana Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "(30-50)% increased Amount Recovered",
+          "Optional": false
+        },
+        {
+          "Text": "100% increased Recovery rate",
+          "Optional": false
+        },
+        {
+          "Text": "Your Skills have no Mana Cost during Flask effect",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "\"When the Ancestors fill your cup,\nIt is only good manners to drink your fill.\"\n- Lavianga, Advisor to Kaom",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1068,
+      "Name": "Rotgut",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvUm90Z3V0Iiwic3AiOjAuNjA4NSwibGV2ZWwiOjB9XQ/d6316a4d44/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 40,
+      "BaseType": "Quicksilver Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          4.17,
+          -7.29,
+          4.17,
+          4.17,
+          -4.14,
+          4.17
+        ],
+        "TotalChange": 4.17
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "(50-100)% increased Charges used",
+          "Optional": false
+        },
+        {
+          "Text": "50% chance to gain a Flask Charge when you deal a Critical Strike",
+          "Optional": false
+        },
+        {
+          "Text": "(10-30)% increased Movement Speed during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "Consumes Frenzy Charges on use",
+          "Optional": false
+        },
+        {
+          "Text": "Gain Onslaught for 2 seconds per Frenzy Charge on use",
+          "Optional": false
+        },
+        {
+          "Text": "50% increased Duration",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Rancid, rotten, and wicked are those that dare to taste my serum.",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1561,
+      "Name": "The Overflowing Chalice",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvT3ZlcmZsb3dpbmdDaGFsaWNlIiwic3AiOjAuNjA4NSwibGV2ZWwiOjB9XQ/1177cee65a/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 35,
+      "BaseType": "Sulphur Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [
+        {
+          "text": "Creates Consecrated Ground on Use",
+          "optional": false
+        }
+      ],
+      "ExplicitModifiers": [
+        {
+          "Text": "100% increased Charge Recovery",
+          "Optional": false
+        },
+        {
+          "Text": "(10-20)% increased Duration",
+          "Optional": false
+        },
+        {
+          "Text": "Gains no Charges during Effect of any Overflowing Chalice Flask",
+          "Optional": false
+        },
+        {
+          "Text": "100% increased Charges gained by Other Flasks during Flask Effect",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Empty cup, full of promise.",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1893,
+      "Name": "Witchfire Brew",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvV2l0Y2hGaXJlQnJldyIsInNwIjowLjYwODUsImxldmVsIjowfV0/198a094502/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 48,
+      "BaseType": "Stibnite Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.5,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [
+        {
+          "text": "Creates a Smoke Cloud on Use",
+          "optional": false
+        }
+      ],
+      "ExplicitModifiers": [
+        {
+          "Text": "50% increased Charges used",
+          "Optional": false
+        },
+        {
+          "Text": "(25-40)% increased Damage Over Time during Flask Effect",
+          "Optional": false
+        },
+        {
+          "Text": "Grants Level 21 Despair Curse Aura during Flask Effect",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "\"Think of those that cursed us, judged us, \nand burned our sisters upon the pyre. \nThink of their names as you drink, \nand even their children will feel what we do to them today.\" \n-Vadinya, to her coven",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 2283,
+      "Name": "Coralito's Signature",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvR29yZ29uc0ZsYXNrIiwic3AiOjAuNjA4NSwibGV2ZWwiOjB9XQ/0aa84160ab/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 27,
+      "BaseType": "Diamond Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Take 30 Chaos Damage per Second during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "25% chance to Poison on Hit during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "Your Critical Strikes do not deal extra Damage during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "(50-75)% increased Duration of Poisons you inflict during Flask effect",
+          "Optional": false
+        },
+        {
+          "Text": "Grants Perfect Agony during Flask effect",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "\"What cruelty it is, that to be judged a success,\nsuch great work must go uncredited.\" \n- Coralito, Brotherhood of Silence",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 6896,
+      "Name": "Soul Catcher",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvU291bENhdGNoZXIiLCJzcCI6MC42MDg1LCJsZXZlbCI6MH1d/d7b343c0d1/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 27,
+      "BaseType": "Quartz Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Cannot gain Mana during effect",
+          "Optional": false
+        },
+        {
+          "Text": "Vaal Skills deal (60-100)% increased Damage during effect",
+          "Optional": false
+        },
+        {
+          "Text": "Vaal Skills have 25% reduced Soul Cost during effect",
+          "Optional": false
+        },
+        {
+          "Text": "Vaal Skills used during effect have (20-40)% reduced Soul Gain Prevention Duration",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Freedom is for the privileged, even in death.\n\n<default>{This item can be transformed on the Altar of Sacrifice along with Vial of the Ghost}",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 427,
+      "Name": "Doedre's Elixir",
+      "Icon": "https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wveUZsYXNrNCIsInNwIjowLjYwODUsImxldmVsIjowfV0/e0b8f4208b/Item.png",
+      "MapTier": 0,
+      "LevelRequired": 12,
+      "BaseType": "Greater Mana Flask",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          3.0,
+          3.0,
+          9.06,
+          106.0,
+          9.06,
+          -3.06
+        ],
+        "TotalChange": -3.06
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "(120-150)% increased Charges used",
+          "Optional": false
+        },
+        {
+          "Text": "Removes 20% of your maximum Energy Shield on use",
+          "Optional": false
+        },
+        {
+          "Text": "You take 10% of your maximum Life as Chaos Damage on use",
+          "Optional": false
+        },
+        {
+          "Text": "You gain a Power Charge on use",
+          "Optional": false
+        },
+        {
+          "Text": "You gain a Frenzy Charge on use",
+          "Optional": false
+        },
+        {
+          "Text": "You gain an Endurance Charge on use",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Doedre Darktongue knew the Way of the Thaumaturge.\nIn order to receive, one must give... without hesitation.",
+      "ItemType": "Unknown",
+      "ChaosValue": 0.16,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    }
+  ]
+}

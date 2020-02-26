@@ -1,0 +1,1354 @@
+{
+  "Lines": [
+    {
+      "Id": 20445,
+      "Name": "Fractured Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/FracturedFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 10,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.92,
+          0.92,
+          0.92,
+          4.52,
+          8.12,
+          6.25
+        ],
+        "TotalChange": 6.25
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.92,
+          0.92,
+          0.92,
+          4.52,
+          8.12,
+          6.25
+        ],
+        "TotalChange": 6.25
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Creates a mirrored copy",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 147.4,
+      "ExaltedValue": 0.83,
+      "Count": 99,
+      "DetailsId": "fractured-fossil"
+    },
+    {
+      "Id": 7650,
+      "Name": "Faceted Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/FacetedFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 10,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -0.95,
+          -0.95,
+          -0.95,
+          0.0,
+          0.0,
+          0.5
+        ],
+        "TotalChange": 0.5
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          -0.95,
+          -0.95,
+          -0.95,
+          0.0,
+          0.0,
+          0.5
+        ],
+        "TotalChange": 0.5
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More Socketed Gem Level modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 105.52,
+      "ExaltedValue": 0.6,
+      "Count": 99,
+      "DetailsId": "faceted-fossil"
+    },
+    {
+      "Id": 7661,
+      "Name": "Hollow Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/AmberEye.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 10,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          1.49,
+          5.55,
+          4.19,
+          1.49,
+          1.49,
+          1.49
+        ],
+        "TotalChange": 1.49
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          1.49,
+          5.55,
+          4.19,
+          1.49,
+          1.49,
+          1.49
+        ],
+        "TotalChange": 1.49
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Has an Abyssal socket",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 75.0,
+      "ExaltedValue": 0.42,
+      "Count": 99,
+      "DetailsId": "hollow-fossil"
+    },
+    {
+      "Id": 7666,
+      "Name": "Glyphic Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/GlyphicFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 10,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -3.67,
+          0.0,
+          0.6,
+          2.27,
+          2.27,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          -3.67,
+          0.0,
+          0.6,
+          2.27,
+          2.27,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Has a Corrupt Essence modifier",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 44.0,
+      "ExaltedValue": 0.25,
+      "Count": 99,
+      "DetailsId": "glyphic-fossil"
+    },
+    {
+      "Id": 7667,
+      "Name": "Bloodstained Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/BloodstainedFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 10,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -5.0,
+          -5.0,
+          -5.0,
+          -5.8
+        ],
+        "TotalChange": -5.8
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -5.0,
+          -5.0,
+          -5.0,
+          -5.8
+        ],
+        "TotalChange": -5.8
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Has a Vaal modifier",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 37.68,
+      "ExaltedValue": 0.21,
+      "Count": 99,
+      "DetailsId": "bloodstained-fossil"
+    },
+    {
+      "Id": 7658,
+      "Name": "Serrated Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/SerratedFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -1.52,
+          0.0,
+          -4.0,
+          -4.72
+        ],
+        "TotalChange": -4.72
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -1.52,
+          0.0,
+          -4.0,
+          -4.72
+        ],
+        "TotalChange": -4.72
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More Attack modifiers\nFewer Caster modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 23.82,
+      "ExaltedValue": 0.13,
+      "Count": 99,
+      "DetailsId": "serrated-fossil"
+    },
+    {
+      "Id": 7653,
+      "Name": "Sanctified Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/GildedFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 10,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -4.55,
+          4.55,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          -4.55,
+          4.55,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Numeric modifier values are lucky\nHigh Level modifiers are more common",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 22.0,
+      "ExaltedValue": 0.12,
+      "Count": 99,
+      "DetailsId": "sanctified-fossil"
+    },
+    {
+      "Id": 7664,
+      "Name": "Tangled Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/TangledFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 10,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -4.3,
+          -5.0,
+          -5.0,
+          -0.7,
+          -5.0,
+          -5.0
+        ],
+        "TotalChange": -5.0
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          -4.3,
+          -5.0,
+          -5.0,
+          -0.7,
+          -5.0,
+          -5.0
+        ],
+        "TotalChange": -5.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Can have any Fossil modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 19.0,
+      "ExaltedValue": 0.11,
+      "Count": 99,
+      "DetailsId": "tangled-fossil"
+    },
+    {
+      "Id": 7651,
+      "Name": "Enchanted Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/EnchantedFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -8.33,
+          -8.33,
+          -8.33,
+          -8.33
+        ],
+        "TotalChange": -8.33
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -8.33,
+          -8.33,
+          -8.33,
+          -8.33
+        ],
+        "TotalChange": -8.33
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Has a Labyrinth Enchantment",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 11.0,
+      "ExaltedValue": 0.06,
+      "Count": 99,
+      "DetailsId": "enchanted-fossil"
+    },
+    {
+      "Id": 7638,
+      "Name": "Gilded Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/SanctifiedFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 10,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          9.09,
+          9.09,
+          0.0,
+          8.32,
+          0.0,
+          -2.55
+        ],
+        "TotalChange": -2.55
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          9.09,
+          9.09,
+          0.0,
+          8.32,
+          0.0,
+          -2.55
+        ],
+        "TotalChange": -2.55
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Item is overvalued by vendors",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 10.72,
+      "ExaltedValue": 0.06,
+      "Count": 99,
+      "DetailsId": "gilded-fossil"
+    },
+    {
+      "Id": 7634,
+      "Name": "Perfect Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/PerfectFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -10.0,
+          -10.0,
+          -10.0,
+          -10.0
+        ],
+        "TotalChange": -10.0
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -10.0,
+          -10.0,
+          -10.0,
+          -10.0
+        ],
+        "TotalChange": -10.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Improved Quality",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 9.0,
+      "ExaltedValue": 0.05,
+      "Count": 99,
+      "DetailsId": "perfect-fossil"
+    },
+    {
+      "Id": 7665,
+      "Name": "Shuddering Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/ShudderingFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -14.29,
+          -14.29,
+          -10.86
+        ],
+        "TotalChange": -10.86
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -14.29,
+          -14.29,
+          -10.86
+        ],
+        "TotalChange": -10.86
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More Speed modifiers\nNo Mana modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 6.24,
+      "ExaltedValue": 0.04,
+      "Count": 99,
+      "DetailsId": "shuddering-fossil"
+    },
+    {
+      "Id": 7637,
+      "Name": "Aetheric Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/AethericFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More Caster modifiers\nFewer Attack modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 6.0,
+      "ExaltedValue": 0.03,
+      "Count": 99,
+      "DetailsId": "aetheric-fossil"
+    },
+    {
+      "Id": 7649,
+      "Name": "Prismatic Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/PrismaticFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.71,
+          -14.29,
+          -14.29
+        ],
+        "TotalChange": -14.29
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.71,
+          -14.29,
+          -14.29
+        ],
+        "TotalChange": -14.29
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More Elemental modifiers\nNo Poison or Bleeding modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 6.0,
+      "ExaltedValue": 0.03,
+      "Count": 99,
+      "DetailsId": "prismatic-fossil"
+    },
+    {
+      "Id": 7654,
+      "Name": "Corroded Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/CorrodedFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More Poison or Bleeding modifiers\nNo Elemental modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 5.0,
+      "ExaltedValue": 0.03,
+      "Count": 99,
+      "DetailsId": "corroded-fossil"
+    },
+    {
+      "Id": 7640,
+      "Name": "Bound Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/ResonatingFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More Minion or Aura modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 4.0,
+      "ExaltedValue": 0.02,
+      "Count": 99,
+      "DetailsId": "bound-fossil"
+    },
+    {
+      "Id": 7652,
+      "Name": "Pristine Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/PristineFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More Life modifiers\nNo Armour, Energy Shield or Evasion modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 4.0,
+      "ExaltedValue": 0.02,
+      "Count": 99,
+      "DetailsId": "pristine-fossil"
+    },
+    {
+      "Id": 7639,
+      "Name": "Jagged Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/JaggedFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          50.0
+        ],
+        "TotalChange": 50.0
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          50.0
+        ],
+        "TotalChange": 50.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More Physical modifiers\nNo Chaos modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 3.0,
+      "ExaltedValue": 0.02,
+      "Count": 99,
+      "DetailsId": "jagged-fossil"
+    },
+    {
+      "Id": 7643,
+      "Name": "Dense Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/DenseFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More Armour, Energy Shield or Evasion modifiers\nNo Life Modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 3.0,
+      "ExaltedValue": 0.02,
+      "Count": 99,
+      "DetailsId": "dense-fossil"
+    },
+    {
+      "Id": 7660,
+      "Name": "Encrusted Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/EncrustedFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 10,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More sockets\nCan have white sockets",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 2.0,
+      "ExaltedValue": 0.01,
+      "Count": 99,
+      "DetailsId": "encrusted-fossil"
+    },
+    {
+      "Id": 7644,
+      "Name": "Frigid Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/AmberFang.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More Cold modifiers\nNo Fire modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99,
+      "DetailsId": "frigid-fossil"
+    },
+    {
+      "Id": 7645,
+      "Name": "Metallic Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/MetallicFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -20.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -20.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More Lightning modifiers\nNo Physical modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 0.5,
+      "ExaltedValue": 0.0,
+      "Count": 99,
+      "DetailsId": "metallic-fossil"
+    },
+    {
+      "Id": 7641,
+      "Name": "Aberrant Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/AbberantFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -21.96,
+          -4.0
+        ],
+        "TotalChange": -4.0
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -21.96,
+          -4.0
+        ],
+        "TotalChange": -4.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More Chaos modifiers\nNo Lightning modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 0.48,
+      "ExaltedValue": 0.0,
+      "Count": 99,
+      "DetailsId": "aberrant-fossil"
+    },
+    {
+      "Id": 7655,
+      "Name": "Lucent Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/LucentFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          47.06,
+          47.06,
+          41.21,
+          23.77,
+          17.65,
+          23.53
+        ],
+        "TotalChange": 23.53
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          47.06,
+          47.06,
+          41.21,
+          23.77,
+          17.65,
+          23.53
+        ],
+        "TotalChange": 23.53
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More Mana modifiers\nNo Speed modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 0.42,
+      "ExaltedValue": 0.0,
+      "Count": 99,
+      "DetailsId": "lucent-fossil"
+    },
+    {
+      "Id": 7642,
+      "Name": "Scorched Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/AmberFireFly.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -46.0
+        ],
+        "TotalChange": -46.0
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -46.0
+        ],
+        "TotalChange": -46.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More Fire modifiers\nNo Cold modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 0.27,
+      "ExaltedValue": 0.0,
+      "Count": 99,
+      "DetailsId": "scorched-fossil"
+    }
+  ]
+}

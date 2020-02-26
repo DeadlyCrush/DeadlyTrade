@@ -1,17 +1,18 @@
-﻿using System.Reflection;
+﻿using System.Resources;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // 어셈블리에 대한 일반 정보는 다음 특성 집합을 통해 
 // 제어됩니다. 어셈블리와 관련된 정보를 수정하려면
 // 이러한 특성 값을 변경하세요.
-[assembly: AssemblyTitle("POExileDirection")]
+[assembly: AssemblyTitle("DeadlyTrade Overhaul")]
 [assembly: AssemblyDescription("Path Of Exile Total Addon")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("https://github.com/DeadlyCrush")]
-[assembly: AssemblyProduct("DeadlyCrush POE Exile Direction")]
-[assembly: AssemblyCopyright("Copyright ©  2019 https://github.com/DeadlyCrush")]
-[assembly: AssemblyTrademark("DeadlyCrush_KOR")]
+[assembly: AssemblyCompany("https://www.jumpleasure.me/deadlytrade - DeadlyCrush [Deadly KOR]")]
+[assembly: AssemblyProduct("DeadlyCrush's Path Of Exile All-In-On Addon (Goal)")]
+[assembly: AssemblyCopyright("Copyright ©  2019 Jumpleasure Soft by DeadlyCrush [Deadly KOR]")]
+[assembly: AssemblyTrademark("DeadlyTrade KOR")]
 [assembly: AssemblyCulture("")]
 
 // ComVisible을 false로 설정하면 이 어셈블리의 형식이 COM 구성 요소에 
@@ -32,5 +33,7 @@ using System.Runtime.InteropServices;
 // 모든 값을 지정하거나 아래와 같이 '*'를 사용하여 빌드 번호 및 수정 번호를
 // 기본값으로 할 수 있습니다.
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.1.1.1")]
-[assembly: AssemblyFileVersion("1.1.1.1")]
+[assembly: AssemblyVersion("1.4.0.0")]
+[assembly: AssemblyFileVersion("1.4.0.0")]
+[assembly: log4net.Config.XmlConfigurator(ConfigFile = "log4net.config", Watch = true)]
+[assembly: NeutralResourcesLanguage("en")]

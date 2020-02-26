@@ -1,0 +1,177 @@
+{
+	"Delve": [
+		{
+			"Id": "DelveSocketableCurrencyUpgrade1",
+			"Name_en": "Primitive Alchemical Resonator",
+			"Name_ko": "초기형 연금술 공명기",
+			"DDSFile": "Art/2DItems/Currency/Delve/Upgrade1x1A.dds"
+		},
+		{
+			"Id": "DelveSocketableCurrencyUpgrade2",
+			"Name_en": "Potent Alchemical Resonator",
+			"Name_ko": "강화형 연금술 공명기",
+			"DDSFile": "Art/2DItems/Currency/Delve/Upgrade2x1A.dds"
+		},
+		{
+			"Id": "DelveSocketableCurrencyUpgrade3",
+			"Name_en": "Powerful Alchemical Resonator",
+			"Name_ko": "강력 연금술 공명기",
+			"DDSFile": "Art/2DItems/Currency/Delve/Upgrade2x2A.dds"
+		},
+		{
+			"Id": "DelveSocketableCurrencyUpgrade4",
+			"Name_en": "Prime Alchemical Resonator",
+			"Name_ko": "최종형 연금술 공명기",
+			"DDSFile": "Art/2DItems/Currency/Delve/Upgrade2x2C.dds"
+		},
+		{
+			"Id": "DelveSocketableCurrencyReroll1",
+			"Name_en": "Primitive Chaotic Resonator",
+			"Name_ko": "초기형 혼돈 공명기",
+			"DDSFile": "Art/2DItems/Currency/Delve/Reroll1x1A.dds"
+		},
+		{
+			"Id": "DelveSocketableCurrencyReroll2",
+			"Name_en": "Potent Chaotic Resonator",
+			"Name_ko": "강화형 혼돈 공명기",
+			"DDSFile": "Art/2DItems/Currency/Delve/Reroll2x1A.dds"
+		},
+		{
+			"Id": "DelveSocketableCurrencyReroll3",
+			"Name_en": "Powerful Chaotic Resonator",
+			"Name_ko": "강력 혼돈 공명기",
+			"DDSFile": "Art/2DItems/Currency/Delve/Reroll2x2A.dds"
+		},
+		{
+			"Id": "DelveSocketableCurrencyReroll4",
+			"Name_en": "Prime Chaotic Resonator",
+			"Name_ko": "최종형 혼돈 공명기",
+			"DDSFile": "Art/2DItems/Currency/Delve/Reroll2x2C.dds"
+		},
+		{
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingFire",
+      "Name_ko": "그을린 화석",
+      "Name_en": "Scorched Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingCold",
+      "Name_ko": "차디찬 화석",
+      "Name_en": "Frigid Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingLightning",
+      "Name_ko": "금속성 화석",
+      "Name_en": "Metallic Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingPhysical",
+      "Name_ko": "뾰족한 화석",
+      "Name_en": "Jagged Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingChaos",
+      "Name_ko": "특이한 화석",
+      "Name_en": "Aberrant Fossil"
+    },
+	{
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingChaos",
+      "Name_ko": "도금된 화석",
+      "Name_en": "Gilded Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingLife",
+      "Name_ko": "온전한 화석",
+      "Name_en": "Pristine Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingDefences",
+      "Name_ko": "조밀한 화석",
+      "Name_en": "Dense Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingBleedPoison",
+      "Name_ko": "부식된 화석",
+      "Name_en": "Corroded Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingElemental",
+      "Name_ko": "분광 화석",
+      "Name_en": "Prismatic Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingCasterMods",
+      "Name_ko": "에테르 화석",
+      "Name_en": "Aetheric Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingAttackMods",
+      "Name_ko": "톱니 화석",
+      "Name_en": "Serrated Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingMana",
+      "Name_ko": "빛나는 화석",
+      "Name_en": "Lucent Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingSpeed",
+      "Name_ko": "전율의 화석",
+      "Name_en": "Shuddering Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingMinionsAuras",
+      "Name_ko": "속박의 화석",
+      "Name_en": "Bound Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingQuality",
+      "Name_ko": "완벽한 화석",
+      "Name_en": "Perfect Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingEnchant",
+      "Name_ko": "인챈트된 화석",
+      "Name_en": "Enchanted Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingSockets",
+      "Name_ko": "뒤덮인 화석",
+      "Name_en": "Encrusted Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingGemLevel",
+      "Name_ko": "연마한 화석",
+      "Name_en": "Faceted Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingVaal",
+      "Name_ko": "피얼룩 화석",
+      "Name_en": "Bloodstained Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingAbyss",
+      "Name_ko": "공허의 화석",
+      "Name_en": "Hollow Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingMirror",
+      "Name_ko": "분열된 화석",
+      "Name_en": "Fractured Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingCorruptEssence",
+      "Name_ko": "상형 문자 화석",
+      "Name_en": "Glyphic Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingRandom",
+      "Name_ko": "얽혀든 화석",
+      "Name_en": "Tangled Fossil"
+    },
+    {
+      "Id": "Metadata/Items/Currency/CurrencyDelveCraftingLuckyModRolls",
+      "Name_ko": "축성된 화석",
+      "Name_en": "Sanctified Fossil"
+    }
+	]
+}

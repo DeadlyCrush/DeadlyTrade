@@ -1,0 +1,16 @@
+{
+	"FossilInformation": [
+		{
+			"Zone": "마그마균열",
+			"ZoneKR": "Magma Fissure",
+			"FossilNameKR": ["그을린 화석", "분광 화석", "온전한 화석", "인챈트된 화석", "뒤덮인 화석"],
+			"FossilDescription": ["화염...", "원소...", "생명...", "미궁...", "홈..."]
+		},
+		{
+			"Zone": "aa",
+			"ZoneKR": "ㅇㅇ",
+			"FossilNameKR": ["ㄱㄱ", "ㄴㄴ", "ㄷㄷ", "ㄹㄹ", "ㅁㅁ"],
+			"FossilDescription": ["ㅂㅂ", "ㅅㅅ", "ㅇㅇ", "ㅈㅈ", "ㅊㅊ"]
+		},
+	]
+}

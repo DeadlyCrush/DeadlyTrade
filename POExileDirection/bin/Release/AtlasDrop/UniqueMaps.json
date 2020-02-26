@@ -1,0 +1,124 @@
+{
+	"UniqueMaps": [
+		{
+			"Id": "UniqueMapHarbinger",
+			"Text_en": "The Beachhead",
+			"Text_ko": "교두보(The Beachhead)",
+			"DDSFile": "Art/2DItems/Maps/HarbingerRed.dds"
+		},
+		{
+			"Id": "MapWorldsStrandUnique",
+			"Text_en": "Whakawairua Tuahu",
+			"Text_ko": "와카와 투아후(Whakawairua Tuahu)",
+			"DDSFile": "Art/2DItems/Maps/UniqueMapEye.dds"
+		},
+		{
+			"Id": "MapWorldsChateauUnique",
+			"Text_en": "Perandus Manor",
+			"Text_ko": "페란두스 저택(The Perandus Manor)",
+			"DDSFile": "Art/2DItems/Maps/PerandusManor.dds"
+		},
+		{
+			"Id": "MapWorldsMazeUnique",
+			"Text_en": "Doryani's Machinarium",
+			"Text_ko": "도리아니의 기계실(Doryani's Machinarium)",
+			"DDSFile": "Art/2DItems/Maps/Doryanis.dds"
+		},
+		{
+			"Id": "MapWorldsAtollUnique",
+			"Text_en": "Maelstr?m of Chaos",
+			"Text_ko": "혼돈의 마엘스트롬(Maelstr?m of Chaos)",
+			"DDSFile": "Art/2DItems/Maps/MaelstromofChaos.dds"
+		},
+		{
+			"Id": "MapWorldsCemeteryUnique",
+			"Text_en": "Hallowed Ground",
+			"Text_ko": "거룩한 대지(Hallowed Ground)",
+			"DDSFile": "Art/2DItems/Maps/HallowedGround.dds"
+		},
+		{
+			"Id": "MapWorldsDunesUnique",
+			"Text_en": "Pillars of Arun",
+			"Text_ko": "아룬의 기둥(Pillars of Arun)",
+			"DDSFile": "Art/2DItems/Maps/PillarsOfVastiri.dds"
+		},
+		{
+			"Id": "MapWorldsBoneCryptUnique",
+			"Text_en": "Olmec's Sanctum",
+			"Text_ko": "올멕의 지성소(Olmec's Sanctum)",
+			"DDSFile": "Art/2DItems/Maps/olmec.dds"
+		},
+		{
+			"Id": "MapWorldsUndergroundRiverUnique",
+			"Text_en": "Caer Blaidd, Wolfpack's Den",
+			"Text_ko": "캐어블레이드 늑대의 소굴(Caer Blaidd, Wolfpack's Den)",
+			"DDSFile": "Art/2DItems/Maps/WolfMap.dds"
+		},
+		{
+			"Id": "MapWorldsVaalPyramidUnique",
+			"Text_en": "Vaults of Atziri",
+			"Text_ko": "앗지리의 금고실(Vaults of Atziri)",
+			"DDSFile": "Art/2DItems/Maps/UniqueMap1.dds"
+		},
+		{
+			"Id": "MapWorldsCourtyardUnique",
+			"Text_en": "The Vinktar Square",
+			"Text_ko": "빙타 광장(The Vinktar Square)",
+			"DDSFile": "Art/2DItems/Maps/TheVinktarSquare.dds"
+		},
+		{
+			"Id": "MapWorldsShoreUnique",
+			"Text_en": "Mao Kun",
+			"Text_ko": "마오 쿤(Mao Kun)",
+			"DDSFile": "Art/2DItems/Maps/FairgravesMap01.dds"
+		},
+		{
+			"Id": "MapWorldsMoonTempleUnique",
+			"Text_en": "The Twilight Temple",
+			"Text_ko": "황혼의 사원(The Twilight Temple)",
+			"DDSFile": "Art/2DItems/Maps/Celestial.dds"
+		},
+		{
+			"Id": "MapWorldsTempleUnique",
+			"Text_en": "Poorjoy's Asylum",
+			"Text_ko": "푸어조이의 은신처(Poorjoy's Asylum)",
+			"DDSFile": "Art/2DItems/Maps/PoorjoysAsylum.dds"
+		},
+		{
+			"Id": "MapWorldsMuseumUnique",
+			"Text_en": "The Putrid Cloister",
+			"Text_ko": "악취 나는 수도원(The Putrid Cloister)",
+			"DDSFile": "Art/2DItems/Maps/PutridCloister.dds"
+		},
+		{
+			"Id": "MapWorldsCursedCryptUnique",
+			"Text_en": "The Coward's Trial",
+			"Text_ko": "겁쟁이의 시험(The Coward's Trial)",
+			"DDSFile": "Art/2DItems/Maps/UndeadSiege.dds"
+		},
+		{
+			"Id": "MapWorldsPromenadeUnique",
+			"Text_en": "Hall of Grandmasters",
+			"Text_ko": "명인의 전당(Hall of Grandmasters)",
+			"DDSFile": "Art/2DItems/Maps/HallOfGrandmasters.dds"
+		},
+		{
+			"Id": "MapWorldsOvergrownShrineUnique",
+			"Text_en": "Acton's Nightmare",
+			"Text_ko": "액턴의 악몽(Acton's Nightmare)",
+			"DDSFile": "Art/2DItems/Maps/musicbox.dds"
+		},
+		{
+			"Id": "MapWorldsTortureChamberUnique",
+			"Text_en": "Oba's Cursed Trove",
+			"Text_ko": "오바의 저주받은 전리품(Oba's Cursed Trove)",
+			"DDSFile": "Art/2DItems/Maps/oba.dds"
+		},
+		{
+			"Id": "MapWorldsNecropolisUnique",
+			"Text_en": "Death and Taxes",
+			"Text_ko": "죽음과 의무(Death and Taxes)",
+			"DDSFile": "Art/2DItems/Maps/DeathandTaxes.dds"
+		}
+	]
+}

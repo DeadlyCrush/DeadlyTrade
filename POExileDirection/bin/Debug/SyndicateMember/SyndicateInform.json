@@ -1,0 +1,197 @@
+﻿{
+  "SyndiData":[
+    {
+      "word": ["ma","마"],
+      "kr": "마스터",
+      "en": "Master",
+      "tier": "1"
+    },
+    {
+      "word": ["vo","보"],
+      "kr": "보리치",
+      "en": "Vorici",
+      "tier": "1",
+      "choice": ["R","I","R Captain"],
+      "T": ["Gem Quality", "젬 퀄러티"],
+      "F": ["Chr,Jew,Fus Orbs", "색채,소켓,연결 오브"],
+      "R": ["White Socket", "흰 소켓","Captain"],
+      "I": ["Shaper Scarab", "쉐이퍼 갑충석"]
+    },
+    {
+      "word": ["it","달"],
+      "kr": "달아난 그것",
+      "en": "It That Fled",
+      "tier": "1",
+      "choice": ["R","R Captain"],
+      "T": ["Breach Splinters", "균열 조각"],
+      "F": ["Abyss Jewels", "심연 쥬얼"],
+      "R": ["Upgrade BreachStone Ch→En→Pure", "균열석 업그레이드 충전→풍부→순수"],
+      "I": ["Breach Scarabs", "균열석 갑충석","Captain"]
+    },
+    {
+      "word": ["to","토"],
+      "kr": "토라",
+      "en": "Tora",
+      "tier": "1",
+      "choice": ["R","R Captain"],
+      "T": ["Timed Item Traps", "시간제한 아이템 선택"],
+      "F": ["Enchanting", "인챈트(라비보상)"],
+      "R": ["Gem Exp. Lv.", "젬 경험치(레벨)","Captain"],
+      "I": ["Harbinger Scarabs", "선구자 갑충석"]
+    },
+    {
+      "word": ["rin","린"],
+      "kr": "린",
+      "en": "Rin",
+      "tier": "1",
+      "choice": ["I","I Captain"],
+      "T": ["Normal maps", "일반 지도"],
+      "F": ["Rare maps", "레어 지도"],
+      "R": ["Unique maps", "유니크 지도"],
+      "I": ["Cartography Scarabs", "지도제작 갑충석","Captain"]
+    },
+    {
+      "word": ["ca","카"],
+      "kr": "카메리아",
+      "en": "Cameria",
+      "tier": "1",
+      "choice": ["I","F","T"],
+      "T": ["(Timed) item of past league", "리그 유니크(시간제한)"],
+      "F": ["Harbigner's Orbs", "선구자의 오브"],
+      "R": ["Cartographer's Sextants (by Lv.)", "육분의 (계급에 따라)"],
+      "I": ["Sulphite Scarabs (by Lv.)", "아황산염 갑충석 (계급에 따라)"]
+    },
+    {
+      "word": ["va","베"],
+      "kr": "베이건",
+      "en": "Vagan",
+      "tier": "1",
+      "choice": ["F","R","I"],
+      "T": ["Legion Splinters", "군단 조각"],
+      "F": ["Incubators", "인큐베이터"],
+      "R": ["Legion Scarabs", "군단 갑충석"],
+      "I": ["Chest with Legion Scarabs", "군단 갑충석 상자"]
+    },
+    {
+      "word": ["ai","아"],
+      "kr": "아이슬링",
+      "en": "Aisling",
+      "tier": "2",
+      "choice": ["R", "R Captain"],
+      "T": ["Veiled weapon", "장막 무기"],
+      "F": ["Veiled Armour", "장막 방어구"],
+      "R": ["Add veiled mod (Captain:1~2 mods)", "장막 옵션추가 (대장:1~2옵션)","Captain"],
+      "I": ["Veiled Jewellery", "장막 악세서리"]
+    },
+    {
+      "word": ["ja","야"],
+      "kr": "야누스",
+      "en": "Janus",
+      "tier": "2",
+      "choice": ["F","R","I"],
+      "T": ["Quality currency", "퀄러티 화폐(세공사등...)"],
+      "F": ["Currency shards", "화폐 파편들"],
+      "R": ["Perandus Coins(Cadiro)", "페란두스 코인(카디로)"],
+      "I": ["Perandus Scarabs", "페란두스 갑충석"]
+    },
+        {
+      "word": ["jo","요"],
+      "kr": "요르긴",
+      "en": "Jorgin",
+      "tier": "2",
+      "choice": ["R", "R Captain"],
+      "T": ["Random Talisman", "무작위 부적 목걸이"],
+      "F": ["Rare with random Aspect skills", "야수모드가 추가된 무작위 레어"],
+      "R": ["Talismans implicit corrupted", "부적 목걸이 옵션 증가,추가 (타락)","Captain"],
+      "I": ["Bestiary Scarabs", "야수 도감 갑충석"]
+    },
+    {
+      "word": ["ko","코"],
+      "kr": "코렐",
+      "en": "Korell",
+      "tier": "2",
+      "choice": ["R","F"],
+      "T": ["Essences", "에센스"],
+      "F": ["Multiple of Sacrifice at...", "무작위 지도조각 몇개"],
+      "R": ["Fossils", "화석"],
+      "I": ["Elder Scarabs", "엘더 갑충석"]
+    },
+    {
+      "word": ["le","레"],
+      "kr": "레오",
+      "en": "Leo",
+      "tier": "2",
+      "choice": ["F","R"],
+      "T": ["Silver Coins", "실버 코인"],
+      "F": ["Currency chest", "화폐 상자"],
+      "R": ["Crafting Bench", "크래프팅(제작)"],
+      "I": ["Torment Scarabs", "고통 갑충석"]
+    },
+    {
+      "word": ["gr","그"],
+      "kr": "그라비셔스",
+      "en": "Gravicius",
+      "tier": "2",
+      "choice": ["T","I"],
+      "T": ["Full stack of Divination Cards", "점술 카드 한세트"],
+      "F": ["Random Divination Cards", "무작위 점술 카드"],
+      "R": ["Exchange a Divination Card", "점술카드 교환"],
+      "I": ["Divination Scarabs", "점술 갑충석"]
+    },
+    {
+      "word": ["hi","힐"],
+      "kr": "힐록",
+      "en": "Hillock",
+      "tier": "2",
+      "choice": ["T","F"],
+      "T": ["Quality of a weapon 24,26,28%", "무기 퀄러티 24,26,28% 부여"],
+      "F": ["Quality of a armour 24,26,28%", "방어구 퀄러티 24,26,28% 부여"],
+      "R": ["Quality of a flask 24,26,28%", "플라스크 퀄러티 24,26,28% 부여"],
+      "I": ["Quality of a map 24,26,28%", "지도 퀄러티 24,26,28% 부여"]
+    },
+        {
+      "word": ["rik","라"],
+      "kr": "라이커",
+      "en": "Riker",
+      "tier": "3",
+      "choice": ["T","I"],
+      "T": ["Trapped chest with currency", "화폐 상자 선택(시간제한)"],
+      "F": ["Trapped chest with unique", "유니크 아이템 선택(시간제한)"],
+      "R": ["Trapped chest with veiled (lv.100)", "장막 아이템 lv.100 선택(시간제한)"],
+      "I": ["Trapped chest with Divination Cards", "점술 카드 선택(시간제한)"]
+    },
+    {
+      "word": ["ha","하"],
+      "kr": "하쿠",
+      "en": "Haku",
+      "tier": "3",
+      "choice": ["I"],
+      "T": ["Random Rare Items", "무작위 레어 아이템"],
+      "F": ["Random Strongbox", "무작위 금고"],
+      "R": ["Rare items with quality", "퀄러티 있는 레어 아이템"],
+      "I": ["Ambush Scarabs", "매복 갑충석"]
+    },
+    {
+      "word": ["gu","거"],
+      "kr": "거프",
+      "en": "Guff",
+      "tier": "3",
+      "choice": ["T"],
+      "T": ["Timed Crafting with Choas", "크래프팅, 카오스오브로(시간제한)"],
+      "F": ["Timed Crafting with Essence", "크래프팅, 에센스로(시간제한)"],
+      "R": ["Timed Crafting with Exal and Annul", "크래프팅, 엑잘과 소멸로(시간제한)"],
+      "I": ["Timed Crafting with Alter", "크래프팅, 변화의오브로(시간제한)"]
+    },
+    {
+      "word": ["el","엘"],
+      "kr": "엘레온",
+      "en": "Elreon",
+      "tier": "3",
+      "choice": ["X"],
+      "T": ["Random Unique weapon", "무작위 유니크 무기"],
+      "F": ["Random Unique armour", "무작위 유니크 방어구"],
+      "R": ["Random Unique Jewellery", "무작위 유니크 악세서리"],
+      "I": ["Reliquary Scarabs", "성유물 보관실 갑충석"]
+    }
+  ]
+}

@@ -1,0 +1,5967 @@
+{
+  "Lines": [
+    {
+      "Id": 483,
+      "Name": "Emperor's Mastery",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/Mastery.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Prismatic Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          null,
+          null,
+          null,
+          0.0,
+          -1.61,
+          -3.67,
+          -13.31
+        ],
+        "TotalChange": -13.31
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(6-7)% increased Attributes",
+          "optional": false
+        },
+        {
+          "text": "4% increased maximum Life",
+          "optional": false
+        },
+        {
+          "text": "3% increased Character Size",
+          "optional": false
+        },
+        {
+          "text": "5% increased Global Defences",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Learn as much as you can, \nand surround yourself with people who know the rest.",
+      "ItemType": "Jewel",
+      "ChaosValue": 8532.85,
+      "ExaltedValue": 48.2,
+      "Count": 5
+    },
+    {
+      "Id": 484,
+      "Name": "Emperor's Might",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/Might.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(5-6)% increased Strength",
+          "optional": false
+        },
+        {
+          "text": "10% increased Damage",
+          "optional": false
+        },
+        {
+          "text": "3% increased Character Size",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Even an iron fist can be handled with grace.",
+      "ItemType": "Jewel",
+      "ChaosValue": 3098.02,
+      "ExaltedValue": 17.5,
+      "Count": 4
+    },
+    {
+      "Id": 485,
+      "Name": "Emperor's Wit",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/Wit.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.0,
+          null
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(4-6)% increased Intelligence",
+          "optional": false
+        },
+        {
+          "text": "30% increased Global Critical Strike Chance",
+          "optional": false
+        },
+        {
+          "text": "3% increased Character Size",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Language is a tool that can be used to build walls \nor tear them down.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1284.53,
+      "ExaltedValue": 7.26,
+      "Count": 4
+    },
+    {
+      "Id": 7376,
+      "Name": "Unnatural Instinct",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/UnnaturalInstinct.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.59,
+          -1.69,
+          -2.52,
+          -5.13,
+          -4.79,
+          -7.45
+        ],
+        "TotalChange": -7.45
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Allocated Small Passive Skills in Radius grant nothing",
+          "optional": false
+        },
+        {
+          "text": "Grants all bonuses of Unallocated Small Passive Skills in Radius",
+          "optional": false
+        }
+      ],
+      "FlavourText": "\"I don't know how I know, \nI just know that I know.\"",
+      "ItemType": "Jewel",
+      "ChaosValue": 1124.33,
+      "ExaltedValue": 6.35,
+      "Count": 99
+    },
+    {
+      "Id": 676,
+      "Name": "Inspired Learning",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/unique7.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          4.15,
+          0.65,
+          0.76,
+          -1.27,
+          -4.55,
+          -12.86
+        ],
+        "TotalChange": -12.86
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "With 4 Notables Allocated in Radius, When you Kill a Rare monster, you gain 1 of its Modifiers for 20 seconds",
+          "optional": false
+        }
+      ],
+      "FlavourText": "If you do not learn from a won battle\nthen you have already lost the war.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1062.18,
+      "ExaltedValue": 6.0,
+      "Count": 99
+    },
+    {
+      "Id": 6959,
+      "Name": "Transcendent Spirit",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/TranscendentGreen.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 26,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.69,
+          0.75,
+          1.16,
+          1.82,
+          -2.02,
+          1.94
+        ],
+        "TotalChange": 1.94
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "-1 Dexterity per 1 Dexterity on Allocated Passives in Radius",
+          "optional": false
+        },
+        {
+          "text": "2% increased Movement Speed per 10 Dexterity on Allocated Passives in Radius",
+          "optional": false
+        },
+        {
+          "text": "+15 to Maximum Mana per 10 Dexterity on Unallocated Passives in Radius",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Take comfort knowing that, even in death,\nwe may serve our Queen and fuel her empire.",
+      "ItemType": "Jewel",
+      "ChaosValue": 265.54,
+      "ExaltedValue": 1.5,
+      "Count": 61
+    },
+    {
+      "Id": 6961,
+      "Name": "Transcendent Flesh",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/TranscendentRed.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -0.54,
+          -6.28,
+          -7.37,
+          -9.55,
+          -9.69,
+          -9.96
+        ],
+        "TotalChange": -9.96
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "-1 Strength per 1 Strength on Allocated Passives in Radius",
+          "optional": false
+        },
+        {
+          "text": "1% additional Physical Damage Reduction per 10 Strength on Allocated Passives in Radius",
+          "optional": false
+        },
+        {
+          "text": "+7% to Critical Strike Multiplier per 10 Strength on Unallocated Passives in Radius",
+          "optional": false
+        }
+      ],
+      "FlavourText": "We are as much shaped by what we do\nas what is done to us.",
+      "ItemType": "Jewel",
+      "ChaosValue": 265.54,
+      "ExaltedValue": 1.5,
+      "Count": 99
+    },
+    {
+      "Id": 6957,
+      "Name": "Transcendent Mind",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/TranscendentBlue.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.71,
+          0.76,
+          -5.37,
+          -0.89,
+          2.24,
+          -4.86
+        ],
+        "TotalChange": -4.86
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "-1 Intelligence per 1 Intelligence on Allocated Passives in Radius",
+          "optional": false
+        },
+        {
+          "text": "Regenerate 0.4% of Energy Shield per Second for\nevery 10 Intelligence on Allocated Passives in Radius",
+          "optional": false
+        },
+        {
+          "text": "+125 to Accuracy Rating per 10 Intelligence on Unallocated Passives in Radius",
+          "optional": false
+        }
+      ],
+      "FlavourText": "A keen mind sees what others do not,\nmakes connections where others do not, \nand is dangerous in a way that others are not.",
+      "ItemType": "Jewel",
+      "ChaosValue": 247.84,
+      "ExaltedValue": 1.4,
+      "Count": 68
+    },
+    {
+      "Id": 2030,
+      "Name": "The Green Nightmare",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/TheGreenDreamUpgrade.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          1.31,
+          1.29,
+          1.46,
+          3.95,
+          2.46,
+          5.84
+        ],
+        "TotalChange": 5.84
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Gain 5% of Cold Damage as Extra Chaos Damage",
+          "optional": false
+        },
+        {
+          "text": "Passives granting Cold Resistance or all Elemental Resistances in Radius\nalso grant Chance to Dodge Attack Hits at 35% of its value",
+          "optional": false
+        },
+        {
+          "text": "Passives granting Cold Resistance or all Elemental Resistances in Radius\nalso grant an equal chance to gain a Frenzy Charge on Kill",
+          "optional": false
+        }
+      ],
+      "FlavourText": "We take root in the dirt\nand strangle those who tread upon it.",
+      "ItemType": "Jewel",
+      "ChaosValue": 238.45,
+      "ExaltedValue": 1.35,
+      "Count": 95
+    },
+    {
+      "Id": 2029,
+      "Name": "The Red Nightmare",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/TheRedDreamUpgrade.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.72,
+          0.76,
+          21.2,
+          22.47,
+          30.65,
+          13.13
+        ],
+        "TotalChange": 13.13
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Gain 5% of Fire Damage as Extra Chaos Damage",
+          "optional": false
+        },
+        {
+          "text": "Passives granting Fire Resistance or all Elemental Resistances in Radius\nalso grant Chance to Block Attack Damage at 35% of its value",
+          "optional": false
+        },
+        {
+          "text": "Passives granting Fire Resistance or all Elemental Resistances in Radius\nalso grant an equal chance to gain an Endurance Charge on Kill",
+          "optional": false
+        }
+      ],
+      "FlavourText": "We coagulate; a crimson shell\nthat suffocates the unworthy.",
+      "ItemType": "Jewel",
+      "ChaosValue": 196.46,
+      "ExaltedValue": 1.11,
+      "Count": 70
+    },
+    {
+      "Id": 481,
+      "Name": "Emperor's Cunning",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/Cunning.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          9.73,
+          426.16,
+          428.33,
+          416.65,
+          498.18,
+          420.44
+        ],
+        "TotalChange": 420.44
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(4-6)% increased Dexterity",
+          "optional": false
+        },
+        {
+          "text": "20% increased Global Accuracy Rating",
+          "optional": false
+        },
+        {
+          "text": "3% increased Character Size",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The greatest victories happen\nbefore the battle has begun.",
+      "ItemType": "Jewel",
+      "ChaosValue": 184.6,
+      "ExaltedValue": 1.04,
+      "Count": 15
+    },
+    {
+      "Id": 2004,
+      "Name": "The Red Dream",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/TheRedDream.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          5.03,
+          1.22,
+          9.42,
+          24.12,
+          33.33,
+          59.88
+        ],
+        "TotalChange": 59.88
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Gain 5% of Fire Damage as Extra Chaos Damage",
+          "optional": false
+        },
+        {
+          "text": "Passives granting Fire Resistance or all Elemental Resistances in Radius\nalso grant an equal chance to gain an Endurance Charge on Kill",
+          "optional": false
+        }
+      ],
+      "FlavourText": "We flow like blood into Chayula's open mouth,\nand spill into the land we have watched forever.\n\n<default>{This item can be transformed with a Blessing of Chayula}",
+      "ItemType": "Jewel",
+      "ChaosValue": 143.89,
+      "ExaltedValue": 0.81,
+      "Count": 99
+    },
+    {
+      "Id": 1998,
+      "Name": "The Green Dream",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/TheGreenDream.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.33,
+          2.33,
+          2.33,
+          2.33,
+          2.33,
+          2.33
+        ],
+        "TotalChange": 2.33
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Gain 5% of Cold Damage as Extra Chaos Damage",
+          "optional": false
+        },
+        {
+          "text": "Passives granting Cold Resistance or all Elemental Resistances in Radius\nalso grant an equal chance to gain a Frenzy Charge on Kill",
+          "optional": false
+        }
+      ],
+      "FlavourText": "We climb like vines up Chayula's arms,\nreaching into the world that should be ours.\n\n<default>{This item can be transformed with a Blessing of Chayula}",
+      "ItemType": "Jewel",
+      "ChaosValue": 120.0,
+      "ExaltedValue": 0.68,
+      "Count": 93
+    },
+    {
+      "Id": 2302,
+      "Name": "Watcher's Eye",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/ElderJewel.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Prismatic Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -11.5,
+          -11.8,
+          -15.78,
+          -3.12,
+          -17.4,
+          40.37
+        ],
+        "TotalChange": 40.37
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(4-6)% increased maximum Energy Shield",
+          "optional": false
+        },
+        {
+          "text": "(4-6)% increased maximum Life",
+          "optional": false
+        },
+        {
+          "text": "(4-6)% increased maximum Mana",
+          "optional": false
+        },
+        {
+          "text": "30% increased Maximum total Recovery per second from Energy Shield Leech while affected by Zealotry",
+          "optional": true
+        },
+        {
+          "text": "(5-8)% additional Physical Damage Reduction while affected by Determination",
+          "optional": true
+        },
+        {
+          "text": "+(600-1000) to Armour while affected by Determination",
+          "optional": true
+        },
+        {
+          "text": "+(1.21-1.8)% to Critical Strike Chance while affected by Hatred",
+          "optional": true
+        },
+        {
+          "text": "(15-20)% of Damage taken gained as Mana over 4 seconds when Hit while affected by Clarity",
+          "optional": true
+        },
+        {
+          "text": "Your Hits Intimidate Enemies for 4 seconds while you are using Pride",
+          "optional": true
+        },
+        {
+          "text": "You have Phasing while affected by Haste",
+          "optional": true
+        },
+        {
+          "text": "Unaffected by Shocked Ground while affected by Purity of Lightning",
+          "optional": true
+        },
+        {
+          "text": "(40-60)% increased Lightning Damage while affected by Wrath",
+          "optional": true
+        },
+        {
+          "text": "(6-10)% of Physical Damage from Hits taken as Lightning Damage while affected by Purity of Lightning",
+          "optional": true
+        },
+        {
+          "text": "(40-60)% increased Attack Physical Damage while using Pride",
+          "optional": true
+        },
+        {
+          "text": "Immune to Shock while affected by Purity of Lightning",
+          "optional": true
+        },
+        {
+          "text": "You gain Onslaught for 4 seconds on Kill while affected by Haste",
+          "optional": true
+        },
+        {
+          "text": "+(5-8)% Chance to Block Spell Damage while affected by Discipline",
+          "optional": true
+        },
+        {
+          "text": "(25-40)% of Physical Damage Converted to Lightning Damage while affected by Wrath",
+          "optional": true
+        },
+        {
+          "text": "(10-15)% increased Attack Speed while affected by Precision",
+          "optional": true
+        },
+        {
+          "text": "+(30-50)% to Critical Strike Multiplier while affected by Anger",
+          "optional": true
+        },
+        {
+          "text": "(8-12)% chance to deal Double Damage while using Pride",
+          "optional": true
+        },
+        {
+          "text": "(15-20)% increased Recovery rate of Life and Energy Shield while affected by Malevolence",
+          "optional": true
+        },
+        {
+          "text": "Debuffs on you expire (15-20)% faster while affected by Haste",
+          "optional": true
+        },
+        {
+          "text": "+(5-8)% Chance to Block Attack Damage while affected by Determination",
+          "optional": true
+        },
+        {
+          "text": "(40-60)% increased Fire Damage while affected by Anger",
+          "optional": true
+        },
+        {
+          "text": "Gain a Flask Charge when you deal a Critical Strike while affected by Precision",
+          "optional": true
+        },
+        {
+          "text": "Gain Arcane Surge for 4 seconds when you create Consecrated Ground while affected by Zealotry",
+          "optional": true
+        },
+        {
+          "text": "Unaffected by Bleeding while affected by Malevolence",
+          "optional": true
+        },
+        {
+          "text": "Gain (15-25)% of Physical Damage as Extra Lightning Damage while affected by Wrath",
+          "optional": true
+        },
+        {
+          "text": "Damage Penetrates (10-15)% Lightning Resistance while affected by Wrath",
+          "optional": true
+        },
+        {
+          "text": "+(20-30) Energy Shield gained for each Enemy Hit while affected by Discipline",
+          "optional": true
+        },
+        {
+          "text": "(6-10)% chance to Dodge Attack Hits while affected by Grace",
+          "optional": true
+        },
+        {
+          "text": "(50-70)% increased Life Recovery from Flasks while affected by Vitality",
+          "optional": true
+        },
+        {
+          "text": "25% chance to Impale Enemies on Hit with Attacks while using Pride",
+          "optional": true
+        },
+        {
+          "text": "(40-60)% increased Attack Damage while affected by Precision",
+          "optional": true
+        },
+        {
+          "text": "Unaffected by Vulnerability while affected by Determination",
+          "optional": true
+        },
+        {
+          "text": "(6-10)% of Physical Damage from Hits taken as Cold Damage while affected by Purity of Ice",
+          "optional": true
+        },
+        {
+          "text": "Adds (58-70) to (88-104) Cold Damage while affected by Hatred",
+          "optional": true
+        },
+        {
+          "text": "(40-50)% reduced Reflected Physical Damage taken while affected by Determination",
+          "optional": true
+        },
+        {
+          "text": "Damage Penetrates (10-15)% Cold Resistance while affected by Hatred",
+          "optional": true
+        },
+        {
+          "text": "Gain (15-25)% of Physical Damage as Extra Fire Damage while affected by Anger",
+          "optional": true
+        },
+        {
+          "text": "(20-30)% increased Energy Shield Recovery Rate while affected by Discipline",
+          "optional": true
+        },
+        {
+          "text": "Unaffected by Temporal Chains while affected by Haste",
+          "optional": true
+        },
+        {
+          "text": "Consecrated Ground you create while affected by Zealotry causes enemies to take (8-10)% increased Damage",
+          "optional": true
+        },
+        {
+          "text": "Non-Channelling Skills have -(10-5) to Total Mana Cost while affected by Clarity",
+          "optional": true
+        },
+        {
+          "text": "(25-40)% of Physical Damage Converted to Fire Damage while affected by Anger",
+          "optional": true
+        },
+        {
+          "text": "(30-40)% faster start of Energy Shield Recharge while affected by Discipline",
+          "optional": true
+        },
+        {
+          "text": "(100-120)% increased Critical Strike Chance against Enemies on Consecrated Ground while affected by Zealotry",
+          "optional": true
+        },
+        {
+          "text": "+(30-50)% to Critical Strike Multiplier while affected by Precision",
+          "optional": true
+        },
+        {
+          "text": "(10-15)% increased Movement Speed while affected by Grace",
+          "optional": true
+        },
+        {
+          "text": "(6-10)% of Damage taken from Mana before Life while affected by Clarity",
+          "optional": true
+        },
+        {
+          "text": "(8-12)% of Physical Damage from Hits taken as Fire Damage while affected by Purity of Elements",
+          "optional": true
+        },
+        {
+          "text": "(1-1.5)% of Fire Damage Leeched as Life while affected by Anger",
+          "optional": true
+        },
+        {
+          "text": "(20-30)% increased Life Recovery Rate while affected by Vitality",
+          "optional": true
+        },
+        {
+          "text": "(1-1.5)% of Damage leeched as Life while affected by Vitality",
+          "optional": true
+        },
+        {
+          "text": "(5-8)% chance to Dodge Spell Hits while affected by Haste",
+          "optional": true
+        },
+        {
+          "text": "You take (40-60)% reduced Extra Damage from Critical Strikes while affected by Determination",
+          "optional": true
+        },
+        {
+          "text": "(8-12)% of Physical Damage from Hits taken as Lightning Damage while affected by Purity of Elements",
+          "optional": true
+        },
+        {
+          "text": "+(20-30) Life gained for each Enemy Hit while affected by Vitality",
+          "optional": true
+        },
+        {
+          "text": "Regenerate (1.52-2.5)% of Energy Shield per Second while affected by Discipline",
+          "optional": true
+        },
+        {
+          "text": "(40-60)% increased Cold Damage while affected by Hatred",
+          "optional": true
+        },
+        {
+          "text": "Unaffected by Burning Ground while affected by Purity of Fire",
+          "optional": true
+        },
+        {
+          "text": "Gain (12-18)% of Maximum Mana as Extra Maximum Energy Shield while affected by Clarity",
+          "optional": true
+        },
+        {
+          "text": "Critical Strikes Penetrate (8-10)% of Enemy Elemental Resistances while affected by Zealotry",
+          "optional": true
+        },
+        {
+          "text": "Damage Penetrates (10-15)% Fire Resistance while affected by Anger",
+          "optional": true
+        },
+        {
+          "text": "Unaffected by Frostbite while affected by Purity of Ice",
+          "optional": true
+        },
+        {
+          "text": "Immune to Ignite while affected by Purity of Fire",
+          "optional": true
+        },
+        {
+          "text": "+(18-22)% to Damage over Time Multiplier while affected by Malevolence",
+          "optional": true
+        },
+        {
+          "text": "(10-15)% increased Cast Speed while affected by Zealotry",
+          "optional": true
+        },
+        {
+          "text": "Regenerate (100-140) Life per Second while affected by Vitality",
+          "optional": true
+        },
+        {
+          "text": "Damaging Ailments you inflict deal Damage (10-15)% faster while affected by Malevolence",
+          "optional": true
+        },
+        {
+          "text": "(10-15)% chance to Recover 10% of Mana when you use a Skill while affected by Clarity",
+          "optional": true
+        },
+        {
+          "text": "Unaffected by Chilled Ground while affected by Purity of Ice",
+          "optional": true
+        },
+        {
+          "text": "(40-50)% reduced Reflected Elemental Damage taken while affected by Purity of Elements",
+          "optional": true
+        },
+        {
+          "text": "(30-50)% chance to Blind Enemies which Hit you while affected by Grace",
+          "optional": true
+        },
+        {
+          "text": "(1-1.5)% of Lightning Damage is Leeched as Energy Shield while affected by Wrath",
+          "optional": true
+        },
+        {
+          "text": "(8-12)% of Physical Damage from Hits taken as Cold Damage while affected by Purity of Elements",
+          "optional": true
+        },
+        {
+          "text": "Unaffected by Enfeeble while affected by Grace",
+          "optional": true
+        },
+        {
+          "text": "(6-10)% of Physical Damage from Hits taken as Fire Damage while affected by Purity of Fire",
+          "optional": true
+        },
+        {
+          "text": "Cannot be Blinded while affected by Precision",
+          "optional": true
+        },
+        {
+          "text": "Effects of Consecrated Ground you create while affected by Zealotry Linger for 2 seconds",
+          "optional": true
+        },
+        {
+          "text": "(70-100)% increased Critical Strike Chance while affected by Wrath",
+          "optional": true
+        },
+        {
+          "text": "(25-40)% of Physical Damage Converted to Cold Damage while affected by Hatred",
+          "optional": true
+        },
+        {
+          "text": "(20-30)% increased Mana Recovery Rate while affected by Clarity",
+          "optional": true
+        },
+        {
+          "text": "+(30-50)% to Chaos Resistance while affected by Purity of Elements",
+          "optional": true
+        },
+        {
+          "text": "Impales you inflict last 2 additional Hits while using Pride",
+          "optional": true
+        },
+        {
+          "text": "+(5-8)% chance to Evade Attacks while affected by Grace",
+          "optional": true
+        },
+        {
+          "text": "(30-50)% increased cooldown recovery speed of Movement Skills used while affected by Haste",
+          "optional": true
+        },
+        {
+          "text": "Unaffected by Conductivity while affected by Purity of Lightning",
+          "optional": true
+        },
+        {
+          "text": "Immune to Freeze while affected by Purity of Ice",
+          "optional": true
+        },
+        {
+          "text": "Unaffected by Elemental Weakness while affected by Purity of Elements",
+          "optional": true
+        },
+        {
+          "text": "Unaffected by Flammability while affected by Purity of Fire",
+          "optional": true
+        },
+        {
+          "text": "Unaffected by Poison while affected by Malevolence",
+          "optional": true
+        }
+      ],
+      "FlavourText": "One by one, they stood their ground against a creature \nthey had no hope of understanding, let alone defeating,\nand one by one, they became a part of it.",
+      "ItemType": "Jewel",
+      "ChaosValue": 100.0,
+      "ExaltedValue": 0.56,
+      "Count": 99
+    },
+    {
+      "Id": 21663,
+      "Name": "Lethal Pride",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/KaruiCivilization.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Timeless Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          2.56,
+          -0.18,
+          -5.98,
+          -7.55,
+          -14.53,
+          -14.53
+        ],
+        "TotalChange": -14.53
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Commanded leadership over (10012-17999) warriors under Rakiata\nPassives in radius are Conquered by the Karui",
+          "optional": true
+        },
+        {
+          "text": "Commanded leadership over (10000-17999) warriors under Kiloava\nPassives in radius are Conquered by the Karui",
+          "optional": true
+        },
+        {
+          "text": "Commanded leadership over (10000-18000) warriors under Kaom\nPassives in radius are Conquered by the Karui",
+          "optional": true
+        },
+        {
+          "text": "Historic",
+          "optional": false
+        }
+      ],
+      "FlavourText": "They believed themselves the greatest warriors, but that savagery turned upon their own.",
+      "ItemType": "Jewel",
+      "ChaosValue": 100.0,
+      "ExaltedValue": 0.56,
+      "Count": 99
+    },
+    {
+      "Id": 2032,
+      "Name": "The Blue Nightmare",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/TheBlueDreamUpgrade.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          2.44,
+          1.75,
+          2.02,
+          2.44,
+          2.44,
+          1.48
+        ],
+        "TotalChange": 1.48
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Gain 5% of Lightning Damage as Extra Chaos Damage",
+          "optional": false
+        },
+        {
+          "text": "Passives granting Lightning Resistance or all Elemental Resistances in Radius\nalso grant Chance to Block Spell Damage at 35% of its value",
+          "optional": false
+        },
+        {
+          "text": "Passives granting Lightning Resistance or all Elemental Resistances in Radius\nalso grant an equal chance to gain a Power Charge on Kill",
+          "optional": false
+        }
+      ],
+      "FlavourText": "We swell and flood\nand drown the undeserving beneath our might.",
+      "ItemType": "Jewel",
+      "ChaosValue": 89.16,
+      "ExaltedValue": 0.5,
+      "Count": 65
+    },
+    {
+      "Id": 477,
+      "Name": "Efficient Training",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/INTtoSTR.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -1.23,
+          -1.23,
+          -1.23,
+          2.88,
+          0.37,
+          -1.23
+        ],
+        "TotalChange": -1.23
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "+(16-24) to Strength",
+          "optional": false
+        },
+        {
+          "text": "Intelligence from Passives in Radius is Transformed to Strength",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Working smart and working hard aren't mutually exclusive.",
+      "ItemType": "Jewel",
+      "ChaosValue": 60.0,
+      "ExaltedValue": 0.34,
+      "Count": 99
+    },
+    {
+      "Id": 1745,
+      "Name": "Unending Hunger",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/SpectreJewel.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          13.66,
+          15.23,
+          11.02,
+          11.02,
+          11.27,
+          15.04
+        ],
+        "TotalChange": 15.04
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Minions have (6-8)% increased Area of Effect",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Intelligence in Radius, Raised Spectres have a 50% chance to gain Soul Eater for 20 seconds on Kill",
+          "optional": false
+        }
+      ],
+      "FlavourText": "They roamed, they fed, they grew,\nKilling as they went,\nConquer though they may,\nTheir hearts will never be content.",
+      "ItemType": "Jewel",
+      "ChaosValue": 49.74,
+      "ExaltedValue": 0.28,
+      "Count": 99
+    },
+    {
+      "Id": 754,
+      "Name": "Lioneye's Fall",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/LioneyesFall.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 32,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -2.0,
+          -2.0,
+          -2.0,
+          -2.0,
+          -4.0,
+          -3.08
+        ],
+        "TotalChange": -3.08
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Melee and Melee Weapon Type modifiers in Radius are Transformed to Bow Modifiers",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The shield crab does not leave his shell unless it is forced to, \nand even then, it knows to keep its distance.",
+      "ItemType": "Jewel",
+      "ChaosValue": 48.46,
+      "ExaltedValue": 0.27,
+      "Count": 99
+    },
+    {
+      "Id": 21780,
+      "Name": "Brutal Restraint",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/MarakethCivilization.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Timeless Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          -10.0,
+          -20.0,
+          -9.35,
+          -2.0,
+          -10.0
+        ],
+        "TotalChange": -10.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Denoted service of (500-7986) dekhara in the akhara of Nasima\nPassives in radius are Conquered by the Maraketh",
+          "optional": true
+        },
+        {
+          "text": "Denoted service of (510-7997) dekhara in the akhara of Asenath\nPassives in radius are Conquered by the Maraketh",
+          "optional": true
+        },
+        {
+          "text": "Denoted service of (530-7996) dekhara in the akhara of Deshret\nPassives in radius are Conquered by the Maraketh",
+          "optional": true
+        },
+        {
+          "text": "Historic",
+          "optional": false
+        }
+      ],
+      "FlavourText": "They believed themselves the most ordered, but that tradition turned their forests to salt.",
+      "ItemType": "Jewel",
+      "ChaosValue": 45.0,
+      "ExaltedValue": 0.25,
+      "Count": 99
+    },
+    {
+      "Id": 1977,
+      "Name": "The Anima Stone",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GolemChaos.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Prismatic Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          19.22,
+          23.33,
+          23.33,
+          34.17,
+          43.88,
+          43.88
+        ],
+        "TotalChange": 43.88
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "+1 to maximum number of Golems",
+          "optional": false
+        },
+        {
+          "text": "+1 to maximum number of Summoned Golems if you have 3 Primordial Items Socketed or Equipped",
+          "optional": false
+        }
+      ],
+      "FlavourText": "All revere the earth they walk,\nFor it wields strength beyond compare,\nHolds knowledge more than thought,\nStands long after all else falls.",
+      "ItemType": "Jewel",
+      "ChaosValue": 35.0,
+      "ExaltedValue": 0.2,
+      "Count": 99
+    },
+    {
+      "Id": 585,
+      "Name": "Grand Spectrum",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/BlueGrandSpectrum.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          10.44,
+          13.6,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Gain 30 Mana per Grand Spectrum",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Thoughts that shimmer like light across the rain.",
+      "ItemType": "Jewel",
+      "ChaosValue": 30.0,
+      "ExaltedValue": 0.17,
+      "Count": 99
+    },
+    {
+      "Id": 21720,
+      "Name": "Glorious Vanity",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/VaalCivilization.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Timeless Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          25.0,
+          25.0,
+          25.0,
+          48.8
+        ],
+        "TotalChange": 48.8
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Bathed in the blood of (100-8000) sacrificed in the name of Doryani\nPassives in radius are Conquered by the Vaal",
+          "optional": true
+        },
+        {
+          "text": "Bathed in the blood of (102-7998) sacrificed in the name of Zerphi\nPassives in radius are Conquered by the Vaal",
+          "optional": true
+        },
+        {
+          "text": "Bathed in the blood of (107-8000) sacrificed in the name of Xibaqua\nPassives in radius are Conquered by the Vaal",
+          "optional": true
+        },
+        {
+          "text": "Historic",
+          "optional": false
+        }
+      ],
+      "FlavourText": "They believed themselves the pinnacle of civilisation, but that height toppled their empire.",
+      "ItemType": "Jewel",
+      "ChaosValue": 29.76,
+      "ExaltedValue": 0.17,
+      "Count": 99
+    },
+    {
+      "Id": 489,
+      "Name": "Energy From Within",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/BlueJewel6.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -13.62,
+          -6.43,
+          3.66,
+          2.0,
+          -13.62,
+          2.45
+        ],
+        "TotalChange": 2.45
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(3-6)% increased maximum Energy Shield",
+          "optional": false
+        },
+        {
+          "text": "Increases and Reductions to Life in Radius are Transformed to apply to Energy Shield",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The Azmeri ascetics learnt the power\nof going without the body's ordinary cravings.",
+      "ItemType": "Jewel",
+      "ChaosValue": 29.65,
+      "ExaltedValue": 0.17,
+      "Count": 99
+    },
+    {
+      "Id": 677,
+      "Name": "Intuitive Leap",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/unique6.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 32,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          9.29,
+          -8.92,
+          12.38,
+          9.29,
+          5.56,
+          4.14
+        ],
+        "TotalChange": 4.14
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Passives in Radius can be Allocated without being connected to your tree",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The carpenter who picks up a blade is not mad.\nHe's ambitious.",
+      "ItemType": "Jewel",
+      "ChaosValue": 22.87,
+      "ExaltedValue": 0.13,
+      "Count": 99
+    },
+    {
+      "Id": 4858,
+      "Name": "Might of the Meek",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/PotencyOfTheUnremarkable.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -5.15,
+          -5.0,
+          -3.9,
+          -0.55,
+          -6.37,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "50% increased Effect of non-Keystone Passive Skills in Radius",
+          "optional": false
+        },
+        {
+          "text": "Notable Passive Skills in Radius grant nothing",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Enough mice can kill a wolf.",
+      "ItemType": "Jewel",
+      "ChaosValue": 20.0,
+      "ExaltedValue": 0.11,
+      "Count": 99
+    },
+    {
+      "Id": 21665,
+      "Name": "Militant Faith",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/TemplarCivilization.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Timeless Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -8.47,
+          -8.47,
+          -8.47,
+          -8.47,
+          -14.57,
+          22.04
+        ],
+        "TotalChange": 22.04
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Carved to glorify (2005-9997) new faithful converted by High Templar Venarius\nPassives in radius are Conquered by the Templars",
+          "optional": true
+        },
+        {
+          "text": "Carved to glorify (2013-10000) new faithful converted by High Templar Dominus\nPassives in radius are Conquered by the Templars",
+          "optional": true
+        },
+        {
+          "text": "Carved to glorify (2010-10000) new faithful converted by High Templar Avarius\nPassives in radius are Conquered by the Templars",
+          "optional": true
+        },
+        {
+          "text": "4% increased Area Damage per 10 Devotion",
+          "optional": true
+        },
+        {
+          "text": "4% increased Damage with Brand Skills per 10 Devotion",
+          "optional": true
+        },
+        {
+          "text": "4% increased Elemental Damage per 10 Devotion",
+          "optional": true
+        },
+        {
+          "text": "Channelling Skills deal 4% increased Damage per 10 Devotion",
+          "optional": true
+        },
+        {
+          "text": "3% increased Effect of non-Damaging Ailments on Enemies per 10 Devotion",
+          "optional": true
+        },
+        {
+          "text": "1% increased effect of Non-Curse Auras per 10 Devotion",
+          "optional": true
+        },
+        {
+          "text": "4% reduced Duration of Curses on you per 10 Devotion",
+          "optional": true
+        },
+        {
+          "text": "4% reduced Elemental Ailment Duration on you per 10 Devotion",
+          "optional": true
+        },
+        {
+          "text": "1% increased Minion Attack and Cast Speed per 10 Devotion",
+          "optional": true
+        },
+        {
+          "text": "3% increased Defences from Equipped Shield per 10 Devotion",
+          "optional": true
+        },
+        {
+          "text": "4% increased Totem Damage per 10 Devotion",
+          "optional": true
+        },
+        {
+          "text": "1% reduced Mana Cost of Skills per 10 Devotion",
+          "optional": true
+        },
+        {
+          "text": "Minions have +60 to Accuracy Rating per 10 Devotion",
+          "optional": true
+        },
+        {
+          "text": "Regenerate 0.6 Mana per Second per 10 Devotion",
+          "optional": true
+        },
+        {
+          "text": "+2% to all Elemental Resistances per 10 Devotion",
+          "optional": true
+        },
+        {
+          "text": "Historic",
+          "optional": false
+        }
+      ],
+      "FlavourText": "They believed themselves the utmost faithful, but that conviction became oppression.",
+      "ItemType": "Jewel",
+      "ChaosValue": 20.0,
+      "ExaltedValue": 0.11,
+      "Count": 99
+    },
+    {
+      "Id": 6895,
+      "Name": "Tempered Mind",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/TemperedBlue.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -5.26,
+          -18.76,
+          -21.05,
+          -5.26
+        ],
+        "TotalChange": -5.26
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "-1 Intelligence per 1 Intelligence on Allocated Passives in Radius",
+          "optional": false
+        },
+        {
+          "text": "+125 to Accuracy Rating per 10 Intelligence on Unallocated Passives in Radius",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Any thought, no matter how fleeting, changes the thinker.\n\n<default>{This item can be transformed on the Altar of Sacrifice along with Vial of Transcendence}",
+      "ItemType": "Jewel",
+      "ChaosValue": 18.0,
+      "ExaltedValue": 0.1,
+      "Count": 99
+    },
+    {
+      "Id": 6892,
+      "Name": "Tempered Flesh",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/TemperedRed.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          3.82,
+          -16.94,
+          -16.94,
+          -16.94,
+          -25.06,
+          -29.86
+        ],
+        "TotalChange": -29.86
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "-1 Strength per 1 Strength on Allocated Passives in Radius",
+          "optional": false
+        },
+        {
+          "text": "+7% to Critical Strike Multiplier per 10 Strength on Unallocated Passives in Radius",
+          "optional": false
+        }
+      ],
+      "FlavourText": "We are born raw and untested, and we are shaped by life.\n\n<default>{This item can be transformed on the Altar of Sacrifice along with Vial of Transcendence}",
+      "ItemType": "Jewel",
+      "ChaosValue": 16.89,
+      "ExaltedValue": 0.1,
+      "Count": 99
+    },
+    {
+      "Id": 21701,
+      "Name": "Elegant Hubris",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/EternalEmpireCivilization.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Timeless Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Commissioned (2080-159960) coins to commemorate Victario\nPassives in radius are Conquered by the Eternal Empire",
+          "optional": true
+        },
+        {
+          "text": "Commissioned (2020-159980) coins to commemorate Chitus\nPassives in radius are Conquered by the Eternal Empire",
+          "optional": true
+        },
+        {
+          "text": "Commissioned (2260-159920) coins to commemorate Cadiro\nPassives in radius are Conquered by the Eternal Empire",
+          "optional": true
+        },
+        {
+          "text": "Historic",
+          "optional": false
+        }
+      ],
+      "FlavourText": "They believed themselves better than the past, but that confidence brought about nightmare.",
+      "ItemType": "Jewel",
+      "ChaosValue": 15.0,
+      "ExaltedValue": 0.08,
+      "Count": 99
+    },
+    {
+      "Id": 608,
+      "Name": "Healthy Mind",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/BlueJewel7.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          30.0,
+          30.91,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(15-20)% increased maximum Mana",
+          "optional": false
+        },
+        {
+          "text": "Increases and Reductions to Life in Radius are Transformed to apply to Mana at 200% of their value",
+          "optional": false
+        }
+      ],
+      "FlavourText": "For the ambitious, flesh is a limitation.",
+      "ItemType": "Jewel",
+      "ChaosValue": 10.0,
+      "ExaltedValue": 0.06,
+      "Count": 99
+    },
+    {
+      "Id": 2007,
+      "Name": "The Blue Dream",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/TheBlueDream.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Gain 5% of Lightning Damage as Extra Chaos Damage",
+          "optional": false
+        },
+        {
+          "text": "Passives granting Lightning Resistance or all Elemental Resistances in Radius\nalso grant an equal chance to gain a Power Charge on Kill",
+          "optional": false
+        }
+      ],
+      "FlavourText": "We crash against Chayula's body,\nand fall like rain into the place we cannot go.\n\n<default>{This item can be transformed with a Blessing of Chayula}",
+      "ItemType": "Jewel",
+      "ChaosValue": 10.0,
+      "ExaltedValue": 0.06,
+      "Count": 89
+    },
+    {
+      "Id": 195,
+      "Name": "Brawn",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/RedJewel2.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          33.33,
+          0.0,
+          0.0,
+          24.53,
+          0.0,
+          66.67
+        ],
+        "TotalChange": 66.67
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(4-6)% increased Strength",
+          "optional": false
+        },
+        {
+          "text": "(4-6)% increased Dexterity",
+          "optional": false
+        },
+        {
+          "text": "(10-15)% reduced Intelligence",
+          "optional": false
+        }
+      ],
+      "FlavourText": "\"Take your time, make all your plans. \nThen tell me which plan\npulls my axe from your ribs.\"\n- Barkhul, the Butcher",
+      "ItemType": "Jewel",
+      "ChaosValue": 5.0,
+      "ExaltedValue": 0.03,
+      "Count": 99
+    },
+    {
+      "Id": 1952,
+      "Name": "Primordial Harmony",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GolemTempest.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Golem Skills have (20-30)% increased Cooldown Recovery Speed",
+          "optional": false
+        },
+        {
+          "text": "Golems have (30-45)% increased Cooldown Recovery Speed",
+          "optional": false
+        },
+        {
+          "text": "(16-20)% increased Golem Damage for each Type of Golem you have Summoned",
+          "optional": false
+        },
+        {
+          "text": "Summoned Golems Regenerate 2% of their Life per second",
+          "optional": false
+        },
+        {
+          "text": "Primordial",
+          "optional": false
+        }
+      ],
+      "FlavourText": "\"A stone is not a stone.\nIt is but one part of a fortress.\"\n- Ezomyte proverb",
+      "ItemType": "Jewel",
+      "ChaosValue": 5.0,
+      "ExaltedValue": 0.03,
+      "Count": 99
+    },
+    {
+      "Id": 1964,
+      "Name": "Primordial Might",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GolemInfernal.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(25-30)% increased Damage if you Summoned a Golem in the past 8 seconds",
+          "optional": false
+        },
+        {
+          "text": "Golems Summoned in the past 8 seconds deal (35-45)% increased Damage",
+          "optional": false
+        },
+        {
+          "text": "Golems have (18-22)% increased Maximum Life",
+          "optional": false
+        },
+        {
+          "text": "Primordial",
+          "optional": false
+        },
+        {
+          "text": "Summoned Golems are Aggressive",
+          "optional": false
+        }
+      ],
+      "FlavourText": "\"Do not cause the land to stir,\nIt holds secrets better unknown.\"\n- Azmerian proverb",
+      "ItemType": "Jewel",
+      "ChaosValue": 5.0,
+      "ExaltedValue": 0.03,
+      "Count": 99
+    },
+    {
+      "Id": 2284,
+      "Name": "Pure Talent",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/PureTalent.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          17.77,
+          25.0,
+          25.0,
+          25.0,
+          25.0
+        ],
+        "TotalChange": 25.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "While your Passive Skill Tree connects to a class' starting location, you gain:\nMarauder: Melee Skills have 15% increased Area of Effect\nDuelist: 1% of Attack Damage Leeched as Life\nRanger: 7% increased Movement Speed\nShadow: +0.5% to Critical Strike Chance\nWitch: 0.5% of Mana Regenerated per second\nTemplar: Damage Penetrates 5% Elemental Resistances\nScion: +25 to All Attributes",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The skilled know how to learn.\nThe talented know who to learn from.",
+      "ItemType": "Jewel",
+      "ChaosValue": 5.0,
+      "ExaltedValue": 0.03,
+      "Count": 99
+    },
+    {
+      "Id": 6897,
+      "Name": "Tempered Spirit",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/TemperedGreen.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -25.0,
+          -25.0,
+          -12.5,
+          25.0
+        ],
+        "TotalChange": 25.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "-1 Dexterity per 1 Dexterity on Allocated Passives in Radius",
+          "optional": false
+        },
+        {
+          "text": "+15 to Maximum Mana per 10 Dexterity on Unallocated Passives in Radius",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Though the body rots, the spirit lives on.\n\n<default>{This item can be transformed on the Altar of Sacrifice along with Vial of Transcendence}",
+      "ItemType": "Jewel",
+      "ChaosValue": 5.0,
+      "ExaltedValue": 0.03,
+      "Count": 99
+    },
+    {
+      "Id": 25056,
+      "Name": "Thread of Hope",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/ConnectedJewel.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Affects Passives in Small Ring",
+          "optional": true
+        },
+        {
+          "text": "Affects Passives in Large Ring",
+          "optional": true
+        },
+        {
+          "text": "Affects Passives in Very Large Ring",
+          "optional": true
+        },
+        {
+          "text": "Affects Passives in Medium Ring",
+          "optional": true
+        },
+        {
+          "text": "Passives in Radius can be Allocated without being connected to your tree",
+          "optional": false
+        },
+        {
+          "text": "-(20-10)% to all Elemental Resistances",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Though we cannot touch; one thought, one wish, through centuries alone in darkness.",
+      "ItemType": "Jewel",
+      "ChaosValue": 5.0,
+      "ExaltedValue": 0.03,
+      "Count": 99
+    },
+    {
+      "Id": 2070,
+      "Name": "Frozen Trail",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/FrostboltThreshold.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          17.0,
+          0.0,
+          33.33,
+          0.0,
+          -2.5,
+          33.33
+        ],
+        "TotalChange": 33.33
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(7-10)% increased Projectile Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Intelligence in Radius, Frostbolt fires 2 additional Projectiles",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Intelligence in Radius, Frostbolt Projectiles gain 40% increased Projectile Speed per second",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The Maraketh knew that a mountain path\nfree of vegetation was cut by regular avalanches,\nand so the advancing Eternals were unwittingly drawn into a deathtrap.",
+      "ItemType": "Jewel",
+      "ChaosValue": 4.0,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
+      "Id": 22431,
+      "Name": "Fortress Covenant",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/BlueJewel4.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -18.8,
+          -20.0
+        ],
+        "TotalChange": -20.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Minions deal (35-45)% increased Damage",
+          "optional": false
+        },
+        {
+          "text": "Minions have +(10-12)% Chance to Block Attack Damage",
+          "optional": false
+        },
+        {
+          "text": "Minions have +(10-12)% Chance to Block Spell Damage",
+          "optional": false
+        },
+        {
+          "text": "Notable Passive Skills in Radius are Transformed to\ninstead grant: Minions take 20% increased Damage",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Forsake what you might have had. Command power beyond your potential.",
+      "ItemType": "Jewel",
+      "ChaosValue": 4.0,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
+      "Id": 2276,
+      "Name": "The Golden Rule",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/TheGoldenRule.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -9.37,
+          -9.37,
+          -9.37,
+          -9.37,
+          20.38,
+          4.52
+        ],
+        "TotalChange": 4.52
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(30-40)% increased Armour while Bleeding",
+          "optional": false
+        },
+        {
+          "text": "Bleeding you inflict is Reflected to you",
+          "optional": false
+        },
+        {
+          "text": "+1% to Chaos Resistance per Poison on you",
+          "optional": false
+        },
+        {
+          "text": "Poison you inflict is Reflected to you if you have fewer than 100 Poisons on you",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Hurt as you would be hurt.",
+      "ItemType": "Jewel",
+      "ChaosValue": 3.46,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
+      "Id": 58,
+      "Name": "Anatomical Knowledge",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/BlueJewel5.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -31.11,
+          2.93,
+          6.51,
+          -32.62,
+          -31.72,
+          -57.15
+        ],
+        "TotalChange": -57.15
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(6-8)% increased maximum Life",
+          "optional": false
+        },
+        {
+          "text": "Adds 1 to Maximum Life per 3 Intelligence Allocated in Radius",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Once you understand how your body truly works\nyou can't help but treat it better.",
+      "ItemType": "Jewel",
+      "ChaosValue": 3.11,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
+      "Id": 1953,
+      "Name": "Primordial Eminence",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GolemArctic.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -33.33,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Golems have (16-20)% increased Attack and Cast Speed",
+          "optional": false
+        },
+        {
+          "text": "30% increased Effect of Buffs granted by your Golems",
+          "optional": false
+        },
+        {
+          "text": "Golems have +(800-1000) to Armour",
+          "optional": false
+        },
+        {
+          "text": "Primordial",
+          "optional": false
+        }
+      ],
+      "FlavourText": "\"Kings fall, empires crumble, mortals perish.\nAll turn to earth and sand.\"\n- Maraketh proverb",
+      "ItemType": "Jewel",
+      "ChaosValue": 3.0,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
+      "Id": 2184,
+      "Name": "To Dust",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/unique8.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -47.25,
+          -25.0,
+          -25.0,
+          -50.0,
+          -37.24,
+          -25.0
+        ],
+        "TotalChange": -25.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-20)% reduced Skeleton Duration",
+          "optional": false
+        },
+        {
+          "text": "Minions deal (8-12)% increased Damage",
+          "optional": false
+        },
+        {
+          "text": "(7-10)% increased Skeleton Attack Speed",
+          "optional": false
+        },
+        {
+          "text": "(7-10)% increased Skeleton Cast Speed",
+          "optional": false
+        },
+        {
+          "text": "(3-5)% increased Skeleton Movement Speed",
+          "optional": false
+        }
+      ],
+      "FlavourText": "In the end, time comes for all of us.\nFor some, it comes much sooner.",
+      "ItemType": "Jewel",
+      "ChaosValue": 3.0,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
+      "Id": 6893,
+      "Name": "Combat Focus",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/ElementalHitCold.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -16.0,
+          0.0,
+          40.0
+        ],
+        "TotalChange": 40.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Elemental Damage with Attack Skills",
+          "optional": false
+        },
+        {
+          "text": "With 40 total Strength and Intelligence in Radius, Elemental Hit and Wild Strike deal 50% less Cold Damage",
+          "optional": false
+        },
+        {
+          "text": "With 40 total Strength and Intelligence in Radius, Elemental Hit and Wild Strike cannot choose Cold",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Kaom watched the torches patrol the top of the Watch. \nHe observed the lay of the beach, its barricades and rocks, \nand his men in their canoes, ready to lay their lives down for him.\nBut when his foot hit the sand, he thought only of the fight.",
+      "ItemType": "Jewel",
+      "ChaosValue": 2.8,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
+      "Id": 536,
+      "Name": "Fluid Motion",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/STRtoDEX.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -73.26,
+          6.95,
+          -46.53,
+          -73.26,
+          -19.79,
+          -44.65
+        ],
+        "TotalChange": -44.65
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "+(16-24) to Dexterity",
+          "optional": false
+        },
+        {
+          "text": "Strength from Passives in Radius is Transformed to Dexterity",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Even the strongest of steel can be made to bend.",
+      "ItemType": "Jewel",
+      "ChaosValue": 2.07,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 278,
+      "Name": "Clear Mind",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/unique13.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          7.53,
+          -26.07,
+          -19.35,
+          -19.35,
+          -46.24,
+          -46.24
+        ],
+        "TotalChange": -46.24
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(20-30)% increased Mana Regeneration Rate",
+          "optional": false
+        },
+        {
+          "text": "(40-60)% increased Spell Damage while no Mana is Reserved",
+          "optional": false
+        }
+      ],
+      "FlavourText": "When your thoughts flow like a river, why build a dam?",
+      "ItemType": "Jewel",
+      "ChaosValue": 2.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 685,
+      "Name": "Izaro's Turmoil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/unique21.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          -33.33,
+          -33.33,
+          -33.33,
+          -21.67,
+          -33.33
+        ],
+        "TotalChange": -33.33
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(18-25)% increased Fire Damage",
+          "optional": false
+        },
+        {
+          "text": "(18-25)% increased Cold Damage",
+          "optional": false
+        },
+        {
+          "text": "2% chance to Ignite",
+          "optional": false
+        },
+        {
+          "text": "2% chance to Freeze",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The once-glorious emperor spent his final days\nimprisoned in his greatest creation;\na tool to filter out the unworthy\nthat pushed a monster to power.",
+      "ItemType": "Jewel",
+      "ChaosValue": 2.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 22378,
+      "Name": "Quickening Covenant",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/unique10.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          43.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          26.0
+        ],
+        "TotalChange": 26.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Minions have (12-16)% increased Attack Speed",
+          "optional": false
+        },
+        {
+          "text": "Minions have (12-16)% increased Cast Speed",
+          "optional": false
+        },
+        {
+          "text": "Minions have (10-12)% chance to Dodge Attack Hits",
+          "optional": false
+        },
+        {
+          "text": "Minions have (10-12)% chance to Dodge Spell Hits",
+          "optional": false
+        },
+        {
+          "text": "Notable Passive Skills in Radius are Transformed to\ninstead grant: Minions have 25% reduced Movement Speed",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Lose that which you never had. Gain power you could not have grasped.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.26,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 64,
+      "Name": "Ancient Waystones",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/RedCorrupt2.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "\"The Vaal left a thousand warnings behind.\nWe ignored every single one.\"\n- Siosa, the Last Scholar",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 204,
+      "Name": "Brittle Barrier",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/BlueCorrupt5.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -45.98,
+          0.0,
+          -7.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "Walls built in a hurry fall in a hurry.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 211,
+      "Name": "Brute Force Solution",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/STRtoINT.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "+(16-24) to Intelligence",
+          "optional": false
+        },
+        {
+          "text": "Strength from Passives in Radius is Transformed to Intelligence",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Picking a lock takes an immense amount of skill and practice.\nBreaking it with a hammer takes about three seconds.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 226,
+      "Name": "Careful Planning",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/INTtoDEX.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "+(16-24) to Dexterity",
+          "optional": false
+        },
+        {
+          "text": "Intelligence from Passives in Radius is Transformed to Dexterity",
+          "optional": false
+        }
+      ],
+      "FlavourText": "\"Greatly outnumbered, Deshret dressed her personal guard \nin identical garb. When the Empire rode north, Deshret and \nher guard took turns revealing themselves, creating the illusion \nof speed beyond the capabilities of even the Virtue Gems.\"\n- History of the Maraketh",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 266,
+      "Name": "Chill of Corruption",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GreenCorrupt2.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "Even a millennium later, Atziri's presence\ncasts a shroud over Wraeclast.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 288,
+      "Name": "Coated Shrapnel",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/RedJewel10.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -15.81,
+          -8.41,
+          -37.9,
+          -64.73,
+          5.24,
+          5.24
+        ],
+        "TotalChange": 5.24
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Traps and Mines have a 25% chance to Poison on Hit",
+          "optional": false
+        },
+        {
+          "text": "Passive Skills in Radius also grant: Traps and Mines deal (2-3) to (4-6) added Physical Damage",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The Ezomytes have a saying:\nTake everything and waste nothing.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 289,
+      "Name": "Cold Steel",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GreenJewel5.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          -6.98,
+          -83.0,
+          -82.0,
+          -19.5,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Increases and Reductions to Physical Damage in Radius are Transformed to apply to Cold Damage",
+          "optional": false
+        },
+        {
+          "text": "Increases and Reductions to Cold Damage in Radius are Transformed to apply to Physical Damage",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Winter provides us with her own weapons,\nhanging from the eaves of our homes.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 298,
+      "Name": "Combustibles",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/RedCorrupt4.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "The hotter something burns, the less is left at the end.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 299,
+      "Name": "Conqueror's Efficiency",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/HighQuestRewardRed.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "3% reduced Mana Cost of Skills",
+          "optional": false
+        },
+        {
+          "text": "4% increased Skill Effect Duration",
+          "optional": false
+        },
+        {
+          "text": "2% reduced Mana Reserved",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The stone may yet bleed.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 301,
+      "Name": "Conqueror's Potency",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/HighQuestRewardBlue.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -9.5,
+          -50.0,
+          -50.0,
+          -50.0,
+          -50.0,
+          -50.0
+        ],
+        "TotalChange": -50.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "4% increased Effect of your Curses",
+          "optional": false
+        },
+        {
+          "text": "Flasks applied to you have 8% increased Effect",
+          "optional": false
+        },
+        {
+          "text": "3% increased effect of Non-Curse Auras from your Skills",
+          "optional": false
+        }
+      ],
+      "FlavourText": "What you earn is almost as important as what you take.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 305,
+      "Name": "Corrupted Energy",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/BlueCorrupt3.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "Nothing is immune to the Nightmare's twisted influence.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 96
+    },
+    {
+      "Id": 362,
+      "Name": "Dead Reckoning",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/AdditionalSkeletonMagesModifier.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Minions have +(7-10)% to all Elemental Resistances",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Intelligence in Radius, Summon Skeletons can Summon up to 15 Skeleton Mages",
+          "optional": false
+        }
+      ],
+      "FlavourText": "A mage from the coast rode up on a broken nag, legs burnt to his bones.\nBefore he collapsed, he uttered:\n\"I watched the world we know end yesterday.\"",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 478,
+      "Name": "Eldritch Knowledge",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/unique9.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          -15.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "5% increased Chaos Damage per 10 Intelligence from Allocated Passives in Radius",
+          "optional": false
+        }
+      ],
+      "FlavourText": "\"True Thaumaturgy can only be learned \nby the brilliant or the mad.\"\n- Shavronne of Umbra",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 525,
+      "Name": "Fertile Mind",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/DEXtoINT.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "+(16-24) to Intelligence",
+          "optional": false
+        },
+        {
+          "text": "Dexterity from Passives in Radius is Transformed to Intelligence",
+          "optional": false
+        }
+      ],
+      "FlavourText": "\"The swallow flew fast and took many turns,\nspilling a seed where no plant had grown before. \nThis seed grew and grew until the desert became fertile and abundant. \nYour mind is like this seed.\" \n- Maraketh Proverb",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 526,
+      "Name": "Fevered Mind",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/BlueCorrupt4.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "In sickness, the insane becomes sane.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 532,
+      "Name": "Fireborn",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/RedJewel6.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Increases and Reductions to other Damage Types in Radius are Transformed to apply to Fire Damage",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Leaders are not born in times of peace.\nLeaders are born in ruins and flames.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 545,
+      "Name": "Fragile Bloom",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/unique20.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -68.0,
+          -68.0,
+          -56.0,
+          -29.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Regenerate 2% of Life per second",
+          "optional": false
+        },
+        {
+          "text": "10% increased Damage taken",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The first green shoots of Spring are the most resilient,\nand the most vulnerable.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 546,
+      "Name": "Fragility",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/RedCorrupt6.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "\"Your flesh will fail you.\"",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 586,
+      "Name": "Grand Spectrum",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/RedGrandSpectrum.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Gain 200 Armour per Grand Spectrum",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Skin like steel tempered by bright flames.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 587,
+      "Name": "Grand Spectrum",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GreenGrandSpectrum.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "12% increased Elemental Damage per Grand Spectrum",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Fists that strike like a falling tree.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 604,
+      "Name": "Hair Trigger",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GreenJewel2.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(15-25)% increased Trap Damage",
+          "optional": false
+        },
+        {
+          "text": "(40-60)% increased Trap Trigger Area of Effect",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Anyone can catch a lumbering beast.\nTry catching a bird before it has even landed.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 624,
+      "Name": "Hidden Potential",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/unique17.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 32,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(20-25)% increased Damage for each Magic Item Equipped",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The difference between the master and his apprentice\nis what they see when they look at the same block of wood.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 635,
+      "Name": "Hotfooted",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/unique14.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -6.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Movement Speed while Ignited",
+          "optional": false
+        }
+      ],
+      "FlavourText": "It's hard to stay still when you're engulfed in flames.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 646,
+      "Name": "Hungry Abyss",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GreenCorrupt3.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "Darkness can never be sated.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 665,
+      "Name": "Inertia",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/DEXtoSTR.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "+(16-24) to Strength",
+          "optional": false
+        },
+        {
+          "text": "Dexterity from Passives in Radius is Transformed to Strength",
+          "optional": false
+        }
+      ],
+      "FlavourText": "There is no force without movement.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 785,
+      "Name": "Mantra of Flames",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/unique16.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Adds (3-5) to (8-12) Fire Attack Damage per Buff on you",
+          "optional": false
+        },
+        {
+          "text": "Adds (2-3) to (5-8) Fire Spell Damage per Buff on you",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The strong grow stronger still.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 813,
+      "Name": "Might in All Forms",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/RedJewel7.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -4.0,
+          0.0,
+          -37.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Dexterity and Intelligence from passives in Radius count towards Strength Melee Damage bonus",
+          "optional": false
+        }
+      ],
+      "FlavourText": "True strength can be found anywhere, and in anything.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 843,
+      "Name": "Mutated Growth",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/BlueCorrupt2.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "Few living things survived the cleansing flames.\nThose that did thrived... \nAnd changed...",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 912,
+      "Name": "Pacifism",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GreenCorrupt6.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "\"Your fear will overcome you.\"",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 958,
+      "Name": "Poacher's Aim",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/MidQuestRewardGreen.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -47.06,
+          -23.51,
+          67.69,
+          194.12,
+          194.12,
+          194.12
+        ],
+        "TotalChange": 194.12
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Projectiles Pierce an additional Target",
+          "optional": false
+        },
+        {
+          "text": "10% increased Projectile Damage",
+          "optional": false
+        }
+      ],
+      "FlavourText": "A sharp eye can be more deadly than a sharp blade.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 964,
+      "Name": "Powerlessness",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/BlueCorrupt6.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -24.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "\"Your desires will mislead you.\"",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 983,
+      "Name": "Pugilist",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GreenJewel6.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "1% increased Evasion Rating per 3 Dexterity Allocated in Radius",
+          "optional": false
+        },
+        {
+          "text": "1% increased Claw Physical Damage per 3 Dexterity Allocated in Radius",
+          "optional": false
+        },
+        {
+          "text": "1% increased Melee Physical Damage with Unarmed Attacks per 3 Dexterity Allocated in Radius",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The best dancers often make the best fighters.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1007,
+      "Name": "Rain of Splinters",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/RedKarui.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(30-50)% reduced Totem Damage",
+          "optional": false
+        },
+        {
+          "text": "Totems fire 2 additional Projectiles",
+          "optional": false
+        }
+      ],
+      "FlavourText": "\"If one is an annoyance\nthen a hundred is a threat.\"\n- Ancient Karui Proverb",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1033,
+      "Name": "Reckless Defence",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/RecklessDefense.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "+(2-4)% Chance to Block Spell Damage",
+          "optional": false
+        },
+        {
+          "text": "+(2-4)% Chance to Block Attack Damage",
+          "optional": false
+        },
+        {
+          "text": "Hits have (140-200)% increased Critical Strike Chance against you",
+          "optional": false
+        }
+      ],
+      "FlavourText": "There's no motivation for genius\nquite like desperation.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1078,
+      "Name": "Sacrificial Harvest",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GreenCorrupt1.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "The Vaal used human sacrifice to power their empire.\nThey, too, eventually sought means to \nmake their machines run more efficiently.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1109,
+      "Name": "Self-Flagellation",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GreenCorrupt5.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "Beg for forgiveness.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1262,
+      "Name": "Shattered Chains",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GlacialHammerModifier.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Cold Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Strength in Radius, 20% increased\nRarity of Items dropped by Enemies Shattered by Glacial Hammer",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The prisoners of the empire raised their shackled hands.\nBegging to be delivered from Corruption.\nThe rebellion smote their chains,\nAnd gave them the freedom to choose corruption for themselves.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1349,
+      "Name": "Spire of Stone",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/RedKarui2.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -39.56,
+          -5.49,
+          -62.64,
+          -80.22,
+          -2.2,
+          9.89
+        ],
+        "TotalChange": 9.89
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "3% increased Totem Life per 10 Strength Allocated in Radius",
+          "optional": false
+        },
+        {
+          "text": "Totems cannot be Stunned",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The strongest Karui tribes left the longest impressions on the land.\nTheir symbols served as guidance many generations\nafter their creators had been buried deep beneath the earth.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1350,
+      "Name": "Spirit Guards",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/AnimateWeaponModifier.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -30.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Minions deal (8-12)% increased Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Dexterity in Radius, Animate Weapon can Animate up to 8 Ranged Weapons",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Long after the Karui passed through,\nthe whispers of those who stood their ground\nat Lioneye's Watch could be heard amongst the rubble.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1351,
+      "Name": "Spirited Response",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/InspiringCryModifier.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          28.19,
+          28.19,
+          -38.47,
+          -25.0,
+          28.19,
+          28.19
+        ],
+        "TotalChange": 28.19
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(7-10)% increased maximum Mana",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Intelligence in Radius, 10% of Damage taken gained as Mana over 4 seconds when Hit during Rallying Cry for you and Allies",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The Purity Rebels fought with heart and soul,\nTo free their empire from corruption.\nAnd the fires of war did merely serve,\nTo temper the steel of their spirits.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1364,
+      "Name": "Static Electricity",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GreenJewel7.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Adds 1 to 2 Lightning Damage to Attacks",
+          "optional": false
+        },
+        {
+          "text": "Adds 1 maximum Lightning Damage to Attacks per 1 Dexterity Allocated in Radius",
+          "optional": false
+        }
+      ],
+      "FlavourText": "\"Movement expends energy, but perhaps a little of that energy\ncan be recaptured and... reappropriated.\"\n- Inquisitor Maligaro",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1655,
+      "Name": "The Vigil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/VigilanteModifier.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 26,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Armour",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Strength in Radius, Vigilant Strike\nFortifies you and Nearby Allies for 12 seconds",
+          "optional": false
+        }
+      ],
+      "FlavourText": "When Voll took the throne,\nHe swore to care for the empire with eyes open.\nAnd so he looked to the salvation of his people,\nBlind to the damnation in his hands.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1761,
+      "Name": "Vaal Sentencing",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/BlueCorrupt1.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "In their final days, every crime was punishable by death.\nAtziri's empire ran on blood, but the blood was running dry.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1808,
+      "Name": "Volley Fire",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/BarrageModifier.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(7-10)% increased Projectile Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Dexterity in Radius, Barrage fires an additional 6 projectiles simultaneously on the first and final attacks",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Lioneye's men stood at the walls,\neyeing the savages that walked the beach below.\nWith a single word,\na thousand bodies, and ten thousand arrows,\nwould litter the sands.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1838,
+      "Name": "Warlord's Reach",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/MidQuestRewardRed.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -12.95,
+          -24.71,
+          -60.0,
+          -31.77,
+          135.27,
+          135.27
+        ],
+        "TotalChange": 135.27
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "8% increased Attack Damage",
+          "optional": false
+        },
+        {
+          "text": "+1 to Melee Weapon and Unarmed Attack range",
+          "optional": false
+        }
+      ],
+      "FlavourText": "A steady hand can hold back an army.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1864,
+      "Name": "Weight of Sin",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GreenCorrupt4.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -2.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "Ill will is the greatest of burdens.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1865,
+      "Name": "Weight of the Empire",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/DoubleDamageModifier.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(8-12)% increased Global Physical Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Strength in Radius, Heavy Strike has a \n20% chance to deal Double Damage",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Ondar not only betrayed his emperor,\nHe betrayed his friend.\nAnd in his dying moments, Chitus ensured,\nThat Ondar felt the full weight of his guilt.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1891,
+      "Name": "Winter's Bounty",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/ColdSnapModifier.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Cold Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Intelligence in Radius, Cold Snap grants Power Charges instead of Frenzy Charges when Enemies die in its Area\nWith at least 40 Intelligence in Radius, Cold Snap's Cooldown can be bypassed by Power Charges instead of Frenzy Charges",
+          "optional": false
+        }
+      ],
+      "FlavourText": "As a boy, Rigwald was taught to hunt,\nThrough the first snows of winter,\nWhen beasts have gorged their fill,\nAnd see nothing but the long slumber ahead.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 2060,
+      "Name": "Omen on the Winds",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/IceShotThreshold.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -43.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(15-20)% increased Damage with Hits against Chilled Enemies",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Dexterity in Radius, Ice Shot has 25% increased Area of Effect",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Dexterity in Radius, Ice Shot Pierces 3 additional Targets",
+          "optional": false
+        }
+      ],
+      "FlavourText": "As Malachai stepped into the Highgate mines,\ncold winds billowed from the mountain above.\nOne final, feeble attempt to save what was meant to be eternal.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 2062,
+      "Name": "Fight for Survival",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/FrostBladesThreshold.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Cold Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Dexterity in Radius, Melee Damage\ndealt by Frost Blades Penetrates 15% Cold Resistance",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Dexterity in Radius, Frost Blades has 25% increased Projectile Speed",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The winter that followed the Cataclysm was especially harsh.\nWraeclast's few survivors fought to the death for the last scraps of bread.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 2066,
+      "Name": "Wildfire",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/MoltenStrikeThreshold.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Fire Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Strength in Radius, Molten Strike fires 2 additional Projectiles",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Strength in Radius, Molten Strike has 25% increased Area of Effect",
+          "optional": false
+        }
+      ],
+      "FlavourText": "News of Kaom's victory in the south spread quickly.\nThose in support of the coming rebellion bided their time.\nThe rest fled like rats from a fire.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 2067,
+      "Name": "Ring of Blades",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/EtherealKnivesThreshold.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -19.99,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Global Physical Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Dexterity in Radius, Ethereal Knives fires 5 additional Projectiles",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Dexterity in Radius, Ethereal Knives fires Projectiles in a circle",
+          "optional": false
+        }
+      ],
+      "FlavourText": "At night, as a young Daresso shared his bed with a woman whose name he could not recall,\nhis thoughts remained in the one place he called his own: The Grand Arena.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 2068,
+      "Name": "Might and Influence",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/DualStrikeThreshold.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -26.46,
+          -0.5,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Global Physical Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Dexterity in Radius, Dual Strike has a 20% chance\nto deal Double Damage with the Main-Hand Weapon",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Dexterity in Radius, Dual Strike deals Off-Hand Splash Damage\nto surrounding targets",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Emperor Chitus could offer you a gift with one hand,\nand drive a blade into your back with the other.\nHis blend of brutality and charisma cultured a potent \nmixture of fear and admiration among the masses.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 2069,
+      "Name": "First Snow",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/FreezingPulseThreshold.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 32,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(7-10)% increased Projectile Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Intelligence in Radius, Freezing Pulse fires 2 additional Projectiles",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Intelligence in Radius, 25% increased Freezing Pulse Damage if\nyou've Shattered an Enemy Recently",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Cadiro watched young Chitus play in the frostbitten grass, care-free, happy,\nand unburdened by the responsibility the Perandus scion would soon endure.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 2073,
+      "Name": "Overwhelming Odds",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/CleaveThreshold.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 48,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -45.0,
+          0.0,
+          -34.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Global Physical Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Strength in Radius, Cleave grants Fortify on Hit",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Strength in Radius, Cleave has +1 to Radius per Nearby\nEnemy, up to 10",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Even as the tide turned, and victory swiftly became impossible,\nthe legionnaires of Lioneye's Watch stood their ground and fought on,\nevery last man dying a brutal, but honourable death.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 2074,
+      "Name": "Winter Burial",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GlacialHammerThreshold.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          -2.0,
+          -24.0,
+          -80.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Cold Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Strength in Radius, Glacial Hammer deals\nCold-only Splash Damage to surrounding targets",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Strength in Radius, 25% of Glacial\nHammer Physical Damage Converted to Cold Damage",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Exposure led to the deaths of many slaves.\nAnd it was the duty of slaves to bury the dead in the frozen ground.\nA growing circle of misery and death \nthat the elite were all too happy to sustain.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 2180,
+      "Name": "Hazardous Research",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/SparkThreshold.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          30.82,
+          14.28,
+          -9.74,
+          39.85,
+          50.36,
+          50.36
+        ],
+        "TotalChange": 50.36
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Lightning Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Intelligence in Radius, Spark fires 2 additional Projectiles",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Intelligence in Radius, Spark fires Projectiles in a circle",
+          "optional": false
+        },
+        {
+          "text": "(15-20)% reduced Spark Duration",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Of the elements at the thaumaturgist's disposal, lightning remained the least understood.\nThe simple passage of energy from one to another could result in profound power, or rapid death.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 2181,
+      "Name": "Spreading Rot",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/BlightThreshold.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(7-13)% increased Chaos Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Intelligence in Radius, Blight inflicts Withered for 2 seconds",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Intelligence in Radius, Blight has 50% increased Hinder Duration",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The Cataclysm was but the first act in a play of horrors.\nThe dead lingered, and the living began to rot.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 2191,
+      "Name": "From Dust",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/unique11.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Summon 4 additional Skeleton Warriors with Summon Skeleton",
+          "optional": false
+        },
+        {
+          "text": "+1 second to Summon Skeleton Cooldown",
+          "optional": false
+        }
+      ],
+      "FlavourText": "\"Would you leave an orchard of apples to rot unharvested?\nA cemetery is no different.\" \n-Kadavrus, Surgeon to the Umbra",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 2278,
+      "Name": "Soul's Wick",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/SoulsWick.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -1.0,
+          0.0,
+          0.0,
+          -1.98,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "+2 to maximum number of Spectres",
+          "optional": false
+        },
+        {
+          "text": "(40-50)% reduced Mana Cost of Raise Spectre",
+          "optional": false
+        },
+        {
+          "text": "Spectres have (800-1000)% increased Critical Strike Chance",
+          "optional": false
+        },
+        {
+          "text": "Spectres have a Base Duration of 20 seconds\nSpectres do not travel between Areas",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Candles with the brightest light\nBring life to death and day to night.\nBut lovely as the glow may seem,\nTheir light is fleeting, as a dream...",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 2287,
+      "Name": "The Long Winter",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GlacialCascadeThreshold.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 48,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Cold Damage",
+          "optional": false
+        },
+        {
+          "text": "With 40 Intelligence in Radius, Glacial Cascade has an additional Burst",
+          "optional": false
+        },
+        {
+          "text": "With 40 Intelligence in Radius, 20% of Glacial Cascade Physical Damage\nConverted to Cold Damage",
+          "optional": false
+        }
+      ],
+      "FlavourText": "In the years that followed the twisted sky,\ncold winds cloaked Wraeclast in snow.\nThe pure-white blanket masked a black heart\nthat lay dormant deep beneath the earth.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 7301,
+      "Name": "Combat Focus",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/ElementalHitFire.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Elemental Damage with Attack Skills",
+          "optional": false
+        },
+        {
+          "text": "With 40 total Intelligence and Dexterity in Radius, Elemental Hit and Wild Strike deal 50% less Fire Damage",
+          "optional": false
+        },
+        {
+          "text": "With 40 total Intelligence and Dexterity in Radius, Elemental Hit and Wild Strike cannot choose Fire",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Voll stood at the gates of Sarn, and a nation stood behind him. \nHe thought of the righteousness of his cause, \nand of the glory he would bring to the empire he would soon lead. \nBut as Chitus and his gemlings advanced, he thought only of the fight.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 7302,
+      "Name": "Combat Focus",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/ElementalHitLightening.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          77.52,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Elemental Damage with Attack Skills",
+          "optional": false
+        },
+        {
+          "text": "With 40 total Dexterity and Strength in Radius, Elemental Hit and Wild Strike deal 50% less Lightning Damage",
+          "optional": false
+        },
+        {
+          "text": "With 40 total Dexterity and Strength in Radius, Elemental Hit and Wild Strike cannot choose Lightning",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Standing behind iron bars,\nDaresso thought of his adoring fans cheering his name, \nhis wife's warm embrace waiting for him, \nand of the celebrations that would soon be thrown in his name.\nBut when the arena gate lifted, he thought only of the fight.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 21462,
+      "Name": "Divide and Conquer",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/SpectralThrowThreshold.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 32,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Attack Damage while holding a Shield",
+          "optional": false
+        },
+        {
+          "text": "With 40 total Dexterity and Strength in Radius, Spectral Shield Throw Chains +4 times",
+          "optional": false
+        },
+        {
+          "text": "With 40 total Dexterity and Strength in Radius, Spectral Shield Throw fires Shard Projectiles when Chaining",
+          "optional": false
+        },
+        {
+          "text": "With 40 total Dexterity and Strength in Radius, Spectral Shield Throw fires 75% less Shard Projectiles",
+          "optional": false
+        }
+      ],
+      "FlavourText": "It took the Bloody Flowers Rebellion to show the clans of Ezomyr the truth;\nWhat kept them apart was just a fabrication.\nConjured rivalries from men who grew fat from the discord they sowed.",
+      "ItemType": "Jewel",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 126,
+      "Name": "Atziri's Reign",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/RedCorrupt1.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "TotalChange": -1.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "Atziri went to great lengths to ensure her immortality,\nbut nothing is eternal.",
+      "ItemType": "Jewel",
+      "ChaosValue": 0.99,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 793,
+      "Name": "Martial Artistry",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/unique5.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 26,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          -13.0,
+          -21.99,
+          -1.99,
+          0.0,
+          -1.0
+        ],
+        "TotalChange": -1.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Area of Effect while Unarmed",
+          "optional": false
+        }
+      ],
+      "FlavourText": "A gentle hand rarely leaves a mark on the world.",
+      "ItemType": "Jewel",
+      "ChaosValue": 0.99,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1750,
+      "Name": "Unstable Payload",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/BlueJewel1.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "TotalChange": -1.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(8-12)% Chance for Traps to Trigger an additional time",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Saboteurs, like chefs, have their own secret recipes.",
+      "ItemType": "Jewel",
+      "ChaosValue": 0.99,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 2065,
+      "Name": "Inevitability",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/MagmaOrbThreshold.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -7.0,
+          -31.5,
+          -40.5,
+          -7.0
+        ],
+        "TotalChange": -7.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Fire Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Intelligence in Radius, Magma Orb fires an additional Projectile",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Intelligence in Radius, Magma Orb\nhas 10% increased Area of Effect per Chain",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Izaro gave rise to Chitus.\nChitus gave rise to Voll.\nNone could know how it would end.\nNone could stop it.",
+      "ItemType": "Jewel",
+      "ChaosValue": 0.93,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1012,
+      "Name": "Rapid Expansion",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GroundSlamModifier.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -60.0,
+          0.0,
+          0.0,
+          -22.0
+        ],
+        "TotalChange": -22.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(8-12)% increased Global Physical Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Strength in Radius, Ground Slam has a 35% chance\nto grant an Endurance Charge when you Stun an Enemy",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Strength in Radius, Ground Slam\nhas a 50% increased angle",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Chitus began to aggressively expand his empire\ninto neighbouring nations at great human cost. \nBut for absolute power, there is no price \nthat a Perandus won't pay.",
+      "ItemType": "Jewel",
+      "ChaosValue": 0.78,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 1066,
+      "Name": "Rolling Flames",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/FireballModifier.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -28.0,
+          -36.0,
+          -3.0,
+          0.0,
+          -4.0,
+          -28.0
+        ],
+        "TotalChange": -28.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(10-15)% increased Fire Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Intelligence in Radius, Fireball Projectiles gain Radius as they travel farther, up to +4 Radius",
+          "optional": false
+        }
+      ],
+      "FlavourText": "From north to south the sea of fire swept,\nRolling waves of gorging flame,\nGrowing taller and hungrier,\nWith every land they consumed.",
+      "ItemType": "Jewel",
+      "ChaosValue": 0.72,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 488,
+      "Name": "Energised Armour",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/RedJewel5.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -13.0,
+          0.0,
+          -26.0,
+          -45.0
+        ],
+        "TotalChange": -45.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(15-20)% increased Armour",
+          "optional": false
+        },
+        {
+          "text": "Increases and Reductions to Energy Shield in Radius are Transformed to apply to Armour at 200% of their value",
+          "optional": false
+        }
+      ],
+      "FlavourText": "\"I've yet to see prayer stop an arrow.\"",
+      "ItemType": "Jewel",
+      "ChaosValue": 0.55,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 175,
+      "Name": "Blood Sacrifice",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/RedCorrupt5.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          -29.0,
+          -2.0,
+          0.0,
+          0.0,
+          -54.0
+        ],
+        "TotalChange": -54.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "Power always comes with a price.",
+      "ItemType": "Jewel",
+      "ChaosValue": 0.46,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 603,
+      "Name": "Growing Agony",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/PoisonDamageModifier.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          185.71,
+          185.71,
+          160.03,
+          -42.86,
+          185.71,
+          -2.86
+        ],
+        "TotalChange": -2.86
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(8-12)% increased Damage over Time",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Dexterity in Radius, Viper Strike deals 2% increased Damage with Hits and Poison for each Poison on the Enemy",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Dexterity in Radius, Viper Strike has a 10% chance per Poison on Enemy to grant Unholy Might for 4 seconds on Hit",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Maligaro understood that devotion to science,\nMeans devotion to trial and error.\nFor Maligaro's errors, death was slow,\nAnd very painful.",
+      "ItemType": "Jewel",
+      "ChaosValue": 0.34,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 1365,
+      "Name": "Steel Spirit",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/SpectralThrowModifier.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          -23.0,
+          -41.0,
+          -34.0,
+          -32.5,
+          -66.0
+        ],
+        "TotalChange": -66.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(7-10)% increased Projectile Damage",
+          "optional": false
+        },
+        {
+          "text": "With at least 40 Dexterity in Radius, each Spectral Throw Projectile gains 5% increased Damage each time it Hits",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The Sekhema rode to the mountain,\nWith her tribe, devoted and strong.\nAnd sewed shut the mouth of nightmare,\nSo that it would not consume her world.",
+      "ItemType": "Jewel",
+      "ChaosValue": 0.34,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 780,
+      "Name": "Malicious Intent",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/BlueJewel3.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 26,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -64.96,
+          0.0,
+          -3.0,
+          0.0,
+          0.0,
+          -72.0
+        ],
+        "TotalChange": -72.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "5% chance to Gain Unholy Might for 4 seconds on Melee Kill",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Each life taken makes the next a little easier.",
+      "ItemType": "Jewel",
+      "ChaosValue": 0.28,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 261,
+      "Name": "Cheap Construction",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/GreenJewel1.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -43.99,
+          -82.0,
+          -3.48,
+          -75.0
+        ],
+        "TotalChange": -75.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "10% reduced Trap Duration",
+          "optional": false
+        },
+        {
+          "text": "Can have up to 1 additional Trap placed at a time",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Why waste the good stuff on something that's going to blow up?",
+      "ItemType": "Jewel",
+      "ChaosValue": 0.25,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 112,
+      "Name": "Assassin's Haste",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/MidQuestRewardBlue.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "10% increased Mana Regeneration Rate",
+          "optional": false
+        },
+        {
+          "text": "4% increased Movement Speed",
+          "optional": false
+        },
+        {
+          "text": "4% increased Attack and Cast Speed",
+          "optional": false
+        }
+      ],
+      "FlavourText": "A quick step can advance great plans.",
+      "ItemType": "Jewel",
+      "ChaosValue": 0.17,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 300,
+      "Name": "Conqueror's Longevity",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/HighQuestRewardGreen.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -5.88,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "3% chance to Avoid Elemental Ailments",
+          "optional": false
+        },
+        {
+          "text": "8% increased Life Recovery from Flasks",
+          "optional": false
+        },
+        {
+          "text": "2% chance to Dodge Attack Hits",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Victory is as simple as being the last one standing.",
+      "ItemType": "Jewel",
+      "ChaosValue": 0.17,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 1384,
+      "Name": "Survival Instincts",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/unique2.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Viridian Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -46.88,
+          -46.88,
+          -46.88,
+          -46.88,
+          -46.88,
+          -46.88
+        ],
+        "TotalChange": -46.88
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "+20 to Dexterity",
+          "optional": false
+        },
+        {
+          "text": "+6% to all Elemental Resistances",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Observe and master your surroundings.",
+      "ItemType": "Jewel",
+      "ChaosValue": 0.17,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 1385,
+      "Name": "Survival Secrets",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/unique12.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Cobalt Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -11.76,
+          -70.59,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Regenerate 3 Mana per second",
+          "optional": false
+        },
+        {
+          "text": "10% increased Elemental Damage",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Nature provides its own solutions.",
+      "ItemType": "Jewel",
+      "ChaosValue": 0.17,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 1386,
+      "Name": "Survival Skills",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Jewels/unique4.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": "Crimson Jewel",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "10% increased Global Physical Damage",
+          "optional": false
+        },
+        {
+          "text": "+50 to Armour",
+          "optional": false
+        }
+      ],
+      "FlavourText": "A helping hand has long reach.",
+      "ItemType": "Jewel",
+      "ChaosValue": 0.17,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    }
+  ]
+}

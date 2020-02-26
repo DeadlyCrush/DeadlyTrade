@@ -1,0 +1,1642 @@
+{
+	"Prophecies": [
+		{
+			"Id": "AtziriDropsVaults",
+			"Name_en": "The Queen's Vaults",
+			"Name_ko": "여왕의 금고실",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TormentedSpiritDropsUnique",
+			"Name_en": "The Singular Spirit",
+			"Name_ko": "비범한 혼백",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "ExileDropsAllRare",
+			"Name_en": "The Wealthy Exile",
+			"Name_ko": "부유한 유배자",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "ExileSummonsWarband",
+			"Name_en": "The Scout",
+			"Name_ko": "정찰병",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "StrongboxSpawnsExile",
+			"Name_en": "Waiting in Ambush",
+			"Name_ko": "매복하는 자",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AlchemistDropsAlchemyOrb",
+			"Name_en": "The Alchemist",
+			"Name_ko": "연금술사",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RoyalActBossDropsRegalOrb",
+			"Name_en": "A Regal Death",
+			"Name_ko": "제왕의 죽음",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "VaalSideBossDropsVaalOrb",
+			"Name_en": "The Corrupt",
+			"Name_ko": "타락한 자",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "IzaroDropsAdditionalTreasureKey",
+			"Name_en": "The Emperor's Trove",
+			"Name_ko": "황제의 발견물",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "InnerTreasureMonsterDropsAdditionalUnique",
+			"Name_en": "Nemesis of Greed",
+			"Name_ko": "탐욕의 천벌",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "UniqueMonsterDropsUnique",
+			"Name_en": "SHOULD NOT APPEAR",
+			"Name_ko": "보이지 말아야 함",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "HillockDropsTheAnvil",
+			"Name_en": "The Blacksmith",
+			"Name_ko": "대장장이",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "PossessedMonsterSpawnsTormentedSpirit",
+			"Name_en": "Forceful Exorcism",
+			"Name_ko": "완력을 통한 퇴마",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapBossDropsRareMap",
+			"Name_en": "The Dreamer's Dream",
+			"Name_ko": "몽상가의 꿈",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapShavronneBrutus",
+			"Name_en": "The Aesthete's Spirit",
+			"Name_ko": "탐미주의자의 혼백",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapKoleBrutus",
+			"Name_en": "Brothers in Arms",
+			"Name_ko": "전우들",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapDoedreStoneCircle",
+			"Name_en": "Echoes of Witchcraft",
+			"Name_ko": "마법의 메아리",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapKadakaKuduku",
+			"Name_en": "The God of Misfortune",
+			"Name_ko": "불행의 신",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapMaligaroFidelitas",
+			"Name_en": "Echoes of Mutation",
+			"Name_ko": "변이의 메아리",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapDaressoMerveil",
+			"Name_en": "Echoes of Lost Love",
+			"Name_ko": "죽은 연인의 메아리",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapExtraHaku",
+			"Name_en": "A Master Seeks Help",
+			"Name_ko": "대가가 도움을 청하다",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapExtraTora",
+			"Name_en": "A Master Seeks Help",
+			"Name_ko": "대가가 도움을 청하다",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapExtraCatarina",
+			"Name_en": "A Master Seeks Help",
+			"Name_ko": "대가가 도움을 청하다",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapExtraVagan",
+			"Name_en": "A Master Seeks Help",
+			"Name_ko": "대가가 도움을 청하다",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapExtraElreon",
+			"Name_en": "A Master Seeks Help",
+			"Name_ko": "대가가 도움을 청하다",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapExtraVorici",
+			"Name_en": "A Master Seeks Help",
+			"Name_ko": "대가가 도움을 청하다",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapExtraZana",
+			"Name_en": "A Master Seeks Help",
+			"Name_ko": "대가가 도움을 청하다",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapExtraEinhar",
+			"Name_en": "A Master Seeks Help",
+			"Name_ko": "대가가 도움을 청하다",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapExtraAlva",
+			"Name_en": "A Master Seeks Help",
+			"Name_ko": "대가가 도움을 청하다",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapExtraNiko",
+			"Name_en": "A Master Seeks Help",
+			"Name_ko": "대가가 도움을 청하다",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapExtraJun",
+			"Name_en": "A Master Seeks Help",
+			"Name_ko": "대가가 도움을 청하다",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapCorruptedSideArea",
+			"Name_en": "Hidden Vaal Pathways",
+			"Name_ko": "숨겨진 바알의 길",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapSpawnRareZombies",
+			"Name_en": "The Undead Brutes",
+			"Name_ko": "냉혹한 언데드 무리",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapSpawnRogueExiles",
+			"Name_en": "The Four Feral Exiles",
+			"Name_ko": "야생 유배자 4인방",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareMonsterKillSpawnsUniqueBloodElementalWithSlainMonstersMods",
+			"Name_en": "Risen Blood",
+			"Name_ko": "깨어난 피",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "SellingFiveUniquesToVendorReturnsRandomUnique",
+			"Name_en": "The Mysterious Gift",
+			"Name_ko": "정체불명의 염가 상품",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "ChaosOrbRecipeCreatesAdditionalChaosOrb",
+			"Name_en": "A Valuable Combination",
+			"Name_ko": "귀중한 조합",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RollingSixSocketBodyArmourLinksAllSockets",
+			"Name_en": "Fated Connections",
+			"Name_ko": "예견된 연결",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "ItemAbleToBecomesUniqueWhenChanceOrbApplied",
+			"Name_en": "Trash to Treasure",
+			"Name_ko": "오물에서 보물로",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "ArmourAbleToBecomesFiveLinkedWhenJewellersOrbApplied",
+			"Name_en": "The Jeweller's Touch",
+			"Name_ko": "보석 상인의 손길",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MasterMissionExtraRewards",
+			"Name_en": "A Gracious Master",
+			"Name_ko": "관대한 대가",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "SkillGemDropsWith20QualityAllocatedToYou",
+			"Name_en": "Erasmus' Gift",
+			"Name_ko": "에라스무스의 선물",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingKaomWithKaomsSignAddsSpecificMod",
+			"Name_en": "The King's Path",
+			"Name_ko": "왕의 길",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingGemlingLegionareWithKaruiWardAddsSpecificMod",
+			"Name_en": "The Karui Rebellion",
+			"Name_ko": "카루이의 봉기",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingDaressoWithBramblejackAddsSpecificMod",
+			"Name_en": "The King and the Brambles",
+			"Name_ko": "왕과 가시나무",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingShavronneWithShavronnesPaceAddsSpecificMod",
+			"Name_en": "The Flow of Energy",
+			"Name_ko": "에너지의 흐름",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingNightwaneWithDeathsHarpAddsSpecificMod",
+			"Name_en": "The Bowstring's Music",
+			"Name_ko": "활시위의 가락",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingBeyondUniqueWithBlackheartAddsSpecificMod",
+			"Name_en": "From The Void",
+			"Name_ko": "공허로부터",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingGneissWithCragheadAddsSpecificMod",
+			"Name_en": "Heavy Blows",
+			"Name_ko": "무거운 타격",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingHatebeatWithBlackgleamAddsSpecificMod",
+			"Name_en": "Fire and Brimstone",
+			"Name_ko": "화염과 유황",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingTorchoakGroveWithArakuTikiAddsSpecificMod",
+			"Name_en": "A Forest of False Idols",
+			"Name_ko": "거짓 우상의 숲",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingHailrakeWithHrimsorrowAddsSpecificMod",
+			"Name_en": "Fire and Ice",
+			"Name_ko": "화염과 얼음",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingShavronneWithCrownOfThornsAddsSpecificMod",
+			"Name_en": "Pleasure and Pain",
+			"Name_ko": "쾌락과 고통",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingGemlingLegionnaireWithEzomytePeakAddsSpecificMod",
+			"Name_en": "The Bloody Flowers Redux",
+			"Name_ko": "돌아온 핏빛 꽃송이",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingGraviciusWithDeidbellAddsSpecificMod",
+			"Name_en": "Dying Cry",
+			"Name_ko": "죽어가는 함성",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingDoedreWithChaliceOfHorrorsAddsSpecificMod",
+			"Name_en": "Mouth of Horrors",
+			"Name_ko": "공포의 입",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingCalafHeadstaverWithSpringleafAddsSpecificMod",
+			"Name_en": "Nature's Resilience",
+			"Name_ko": "자연의 회복력",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingChattersWithKaltenhaltAddsSpecificMod",
+			"Name_en": "The Snuffed Flame",
+			"Name_ko": "꺼진 불꽃",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingHundredFootShadowWithScreamingEagleAddsSpecificMod",
+			"Name_en": "The Apex Predator",
+			"Name_ko": "최상위 포식자",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingHammerstormWithLimbsplitAddsSpecificMod",
+			"Name_en": "Severed Limbs",
+			"Name_ko": "잘린 팔다리",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingVaalOversoulWithDoomfletchAddsSpecificMod",
+			"Name_en": "Ancient Doom",
+			"Name_ko": "고대의 파멸",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingKalFoxflyWithSilverbranchAddsSpecificMod",
+			"Name_en": "The Silverwood",
+			"Name_ko": "은빛 나무",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingFidelitasWithStormCloudAddsSpecificMod",
+			"Name_en": "The Servant's Heart",
+			"Name_ko": "노예의 심장",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingSoulmournWithHrimnorsHymnAddsSpecificMod",
+			"Name_en": "Winter's Mournful Melodies",
+			"Name_ko": "겨울의 구슬픈 선율",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingPietyWithReverberationRodAddsSpecificMod",
+			"Name_en": "Power Magnified",
+			"Name_ko": "증폭된 힘",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingGeofriWithRealmshaperAddsSpecificMod",
+			"Name_en": "The Beginning and the End",
+			"Name_ko": "시작과 끝",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingBoneQueenWithQueensDecreeAddsSpecificMod",
+			"Name_en": "The Misunderstood Queen",
+			"Name_ko": "오판한 여왕",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "UniqueMonsterKillTurnsAllNormalMonstersIntoMagic",
+			"Name_en": "SHOULD NOT APPEAR",
+			"Name_ko": "보이지 말아야 함",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheBlackStone1",
+			"Name_en": "The Black Stone I",
+			"Name_ko": "검은 돌 I",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheBlackStone2",
+			"Name_en": "The Black Stone II",
+			"Name_ko": "검은 돌 II",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheBlackStone3",
+			"Name_en": "The Black Stone III",
+			"Name_ko": "검은 돌 III",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheBlackStone4",
+			"Name_en": "The Black Stone IV",
+			"Name_ko": "검은 돌 IV",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareRuinedTitanDropsClayShaper",
+			"Name_en": "The Walking Mountain",
+			"Name_ko": "걸어 다니는 산",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareAxiomThunderGuardDropsStormPrison",
+			"Name_en": "The Prison Guard",
+			"Name_ko": "수용소의 간수",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareMadGladiatorDropsDaressosPassion",
+			"Name_en": "The Sword King's Passion",
+			"Name_ko": "검의 제왕의 열망",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareMurkRunnerDropsTheScreamingEagle",
+			"Name_en": "The Eagle's Cry",
+			"Name_ko": "독수리의 함성",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareDrippingDeadDropsLifesprig",
+			"Name_en": "From Death Springs Life",
+			"Name_ko": "죽음 속에서 삶이 피어난다",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareBrittlePoacherDropsStormCloud",
+			"Name_en": "Storm on the Horizon",
+			"Name_ko": "지평선의 태풍",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareSeethingBrineDropsWanderlust",
+			"Name_en": "A Firm Foothold",
+			"Name_ko": "단단한 기반",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareBeardedShamanDropsKaruiWard",
+			"Name_en": "The Ward's Ward",
+			"Name_ko": "감옥의 수호",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareDevourerDropsWideswing",
+			"Name_en": "Fear's Wide Reach",
+			"Name_ko": "광활하게 퍼지는 공포",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareBeardedDevilDropsAxiomPerpetuum",
+			"Name_en": "The Prison Key",
+			"Name_ko": "수용소 열쇠",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareOaksDevotedDropsRothsReach",
+			"Name_en": "Roth's Legacy",
+			"Name_ko": "로스의 유산",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareAncientConstructDropsAtzirisFoible",
+			"Name_en": "The Soulless Beast",
+			"Name_ko": "영혼 없는 짐승",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareSinLordDropsStoneOfLazhwar",
+			"Name_en": "The Sinner's Stone",
+			"Name_ko": "죄인의 돌",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareDeathBishopDropsGeofrisBaptism",
+			"Name_en": "Baptism by Death",
+			"Name_ko": "죽음에 이르는 세례",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareBlackguardArcmageDropsReverberationRod",
+			"Name_en": "The Lady in Black",
+			"Name_ko": "검은 옷을 입은 여인",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareDockhandWraithDropsRothsReach",
+			"Name_en": "Against the Tide",
+			"Name_ko": "파도를 뚫고",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareBlackguardEliteDropsFacebreaker",
+			"Name_en": "The Brutal Enforcer",
+			"Name_ko": "잔인한 집행자",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareFlameSentinelDropsGoldrim",
+			"Name_en": "Graceful Flames",
+			"Name_ko": "은총의 화염",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareDrownedDropsMoonbendersWing",
+			"Name_en": "Storm on the Reef",
+			"Name_ko": "암초의 태풍",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RarePockedLanternbearerDropsTwyzel",
+			"Name_en": "The Petrified",
+			"Name_ko": "석화된 존재",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareVollsVanguardDropsDeathsHarp",
+			"Name_en": "The Vanguard",
+			"Name_ko": "선봉대",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareUndyingEvangelistDropsTabulaRasa",
+			"Name_en": "Cleanser of Sins",
+			"Name_ko": "죄악의 청소자",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareFightingBullDropsMeginordsGirdle",
+			"Name_en": "Strong as a Bull",
+			"Name_ko": "소처럼 강인하게",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareSkulkingDwellerDropsWindsOfChange",
+			"Name_en": "The Lost Undying",
+			"Name_ko": "파멸한 산 송장",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareFrostPriestDropsTheWhisperingIce",
+			"Name_en": "A Whispered Prayer",
+			"Name_ko": "속삭이는 기도",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareAncientArcherDropsDrillneck",
+			"Name_en": "The Last Watch",
+			"Name_ko": "마지막 보초",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareSuturedAberrationDropsMaligarosVirtuosity",
+			"Name_en": "A Prodigious Hand",
+			"Name_ko": "놀라운 손",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareWanderingEyeDropsEyeOfChayula",
+			"Name_en": "The Watcher's Watcher",
+			"Name_ko": "감시자의 감시자",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareKaomsChosenDropsHezemanasBloodlust",
+			"Name_en": "Blood of the Betrayed",
+			"Name_ko": "배신당한 자의 피",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareUndyingIncineratorDropsSireOfShards",
+			"Name_en": "Heart of the Fire",
+			"Name_ko": "화염의 심장",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RarePockedMinerDropsInfractem",
+			"Name_en": "Notched Flesh",
+			"Name_ko": "상처 난 살점",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareAssaultRibbonDropsTearOfPurity",
+			"Name_en": "Custodians of Silence",
+			"Name_ko": "침묵의 관리인",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareBonewarpedWarriorDropsBellyOfTheBeast",
+			"Name_en": "Flesh of the Beast",
+			"Name_ko": "짐승의 살점",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareCinderElementalDropsMarohiErqi",
+			"Name_en": "Fire, Wood and Stone",
+			"Name_ko": "불과 나무와 돌",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareChaosSentinelDropsSingularity",
+			"Name_en": "Abnormal Effulgence",
+			"Name_ko": "기이한 광채",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareGalvanicRibbonDropsWindripper",
+			"Name_en": "Wind and Thunder",
+			"Name_ko": "바람과 천둥",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareUndyingArchivistDropsAstramentis",
+			"Name_en": "Lost in the Pages",
+			"Name_ko": "책 속에서 길을 잃다",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareDrippingDeadDropsRainbowstrides",
+			"Name_en": "Weeping Death",
+			"Name_ko": "흐느끼는 죽음",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareGutFlayerDropsBinosKitchenKnifeMap",
+			"Name_en": "The Flayed Man",
+			"Name_ko": "피부가 벗겨진 자",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareTunnelerDropsPledgeOfHandsMap",
+			"Name_en": "The Hollow Pledge",
+			"Name_ko": "실속 없는 약속",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareTalonArcherDropsVoltaxicRiftMap",
+			"Name_en": "A Call into the Void",
+			"Name_ko": "공허로의 부름",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareMadGladiatorDropsTheBringerOfRainMap",
+			"Name_en": "Blood in the Eyes",
+			"Name_ko": "피맺힌 눈",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareBroodingTarantulaDropsRatsNestMap",
+			"Name_en": "The Nest",
+			"Name_ko": "둥지",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "SpawnNecromancerAndSkeletonsInArea",
+			"Name_en": "The Brothers of Necromancy",
+			"Name_ko": "강령술의 형제",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "BloodlinePackDropsFiveOrbsOfFusing",
+			"Name_en": "Reforged Bonds",
+			"Name_ko": "다시 이어진 유대",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MonsterKillChanceToSpawnCurrencyFountain",
+			"Name_en": "Overflowing Riches",
+			"Name_ko": "넘치는 재물",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "ThePlaguemaw1",
+			"Name_en": "The Plaguemaw I",
+			"Name_ko": "역병 나락 I",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "ThePlaguemaw2",
+			"Name_en": "The Plaguemaw II",
+			"Name_ko": "역병 나락 II",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "ThePlaguemaw3",
+			"Name_en": "The Plaguemaw III",
+			"Name_ko": "역병 나락 III",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "ThePlaguemaw4",
+			"Name_en": "The Plaguemaw IV",
+			"Name_ko": "역병 나락 IV",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "ThePlaguemaw5",
+			"Name_en": "The Plaguemaw V",
+			"Name_ko": "역병 나락 V",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "PathOfTheThaumaturgist1",
+			"Name_en": "Thaumaturgical History I",
+			"Name_ko": "마석학의 역사 I",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "PathOfTheThaumaturgist2",
+			"Name_en": "Thaumaturgical History II",
+			"Name_ko": "마석학의 역사 II",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "PathOfTheThaumaturgist3",
+			"Name_en": "Thaumaturgical History III",
+			"Name_ko": "마석학의 역사 III",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "PathOfTheThaumaturgist4",
+			"Name_en": "Thaumaturgical History IV",
+			"Name_ko": "마석학의 역사 IV",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapFairGravesBossOpensPortalToMaoKun",
+			"Name_en": "The Pirate's Den",
+			"Name_ko": "해적의 굴",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapChaosGolemBossOpensPortalToMaelstromOfChaos",
+			"Name_en": "Enter the Maelstr?m",
+			"Name_ko": "마엘스트롬 입장",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapKudukuBossOpensPortalToOlmecsSanctum",
+			"Name_en": "Sanctum of Stone",
+			"Name_ko": "돌의 지성소",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapMirageOfBonesOpensPortalToMirrorDesert",
+			"Name_en": "Through the Mirage",
+			"Name_ko": "신기루를 지나서",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AncientRivalries1",
+			"Name_en": "Ancient Rivalries I",
+			"Name_ko": "고대의 대립 I",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AncientRivalries2",
+			"Name_en": "Ancient Rivalries II",
+			"Name_ko": "고대의 대립 II",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AncientRivalries3",
+			"Name_en": "Ancient Rivalries III",
+			"Name_ko": "고대의 대립 III",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AncientRivalries4",
+			"Name_en": "Ancient Rivalries IV",
+			"Name_ko": "고대의 대립 IV",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheFeralLord1",
+			"Name_en": "The Feral Lord I",
+			"Name_ko": "야생의 군주 I",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheFeralLord2",
+			"Name_en": "The Feral Lord II",
+			"Name_ko": "야생의 군주 II",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheFeralLord3",
+			"Name_en": "The Feral Lord III",
+			"Name_ko": "야생의 군주 III",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheFeralLord4",
+			"Name_en": "The Feral Lord IV",
+			"Name_ko": "야생의 군주 IV",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheFeralLord5",
+			"Name_en": "The Feral Lord V",
+			"Name_ko": "야생의 군주 V",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RatFlood",
+			"Name_en": "Plague of Rats",
+			"Name_ko": "성가신 쥐 떼",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AnarchysEnd1",
+			"Name_en": "Anarchy's End I",
+			"Name_ko": "혼란의 끝 I",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AnarchysEnd2",
+			"Name_en": "Anarchy's End II",
+			"Name_ko": "혼란의 끝 II",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AnarchysEnd3",
+			"Name_en": "Anarchy's End III",
+			"Name_ko": "혼란의 끝 III",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AnarchysEnd4",
+			"Name_en": "Anarchy's End IV",
+			"Name_ko": "혼란의 끝 IV",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "CompletingLabyrinthRewardsTwoEnchantmentUses",
+			"Name_en": "Twice Enchanted",
+			"Name_ko": "두 배 인챈트",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "StrongboxMonstersSpawnedAsMagicOrHigher",
+			"Name_en": "An Unseen Peril",
+			"Name_ko": "보이지 않는 위험",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MysteriousInvadersFire",
+			"Name_en": "Mysterious Invaders",
+			"Name_ko": "수수께끼의 침략자",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MysteriousInvadersCold",
+			"Name_en": "Mysterious Invaders",
+			"Name_ko": "수수께끼의 침략자",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MysteriousInvadersLightning",
+			"Name_en": "Mysterious Invaders",
+			"Name_ko": "수수께끼의 침략자",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MysteriousInvadersPhysical",
+			"Name_en": "Mysterious Invaders",
+			"Name_ko": "수수께끼의 침략자",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MysteriousInvadersChaos",
+			"Name_en": "Mysterious Invaders",
+			"Name_ko": "수수께끼의 침략자",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "UndeadSpawnInOldFields",
+			"Name_en": "Undead Uprising",
+			"Name_ko": "언데드의 반란",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "DayOfSacrifice1",
+			"Name_en": "Day of Sacrifice I",
+			"Name_ko": "희생의 날 I",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "DayOfSacrifice2",
+			"Name_en": "Day of Sacrifice II",
+			"Name_ko": "희생의 날 II",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "DayOfSacrifice3",
+			"Name_en": "Day of Sacrifice III",
+			"Name_ko": "희생의 날 III",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "DayOfSacrifice4",
+			"Name_en": "Day of Sacrifice IV",
+			"Name_ko": "희생의 날 IV",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingRareGrantsShrineEffect",
+			"Name_en": "The Blessing",
+			"Name_ko": "축복",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingRareStealsMods",
+			"Name_en": "Hunter's Lesson",
+			"Name_ko": "사냥꾼의 교훈",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingRareDropsRareItem",
+			"Name_en": "Gilded Within",
+			"Name_ko": "체내 도금",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingUniqueDropsScouringOrb",
+			"Name_en": "Erased from Memory",
+			"Name_ko": "기록 말살",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingRareSpawnsTormentedSpirit",
+			"Name_en": "Ending the Torment",
+			"Name_ko": "고통을 끝내다",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingMonsterSpawnsEmergingMagicMonsters",
+			"Name_en": "Hidden Reinforcements",
+			"Name_ko": "숨어있던 지원군",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingNormalRevivesAsRare",
+			"Name_en": "Rebirth",
+			"Name_ko": "부활",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "UseWhetstoneGetMaxQuality",
+			"Name_en": "The Sharpened Blade",
+			"Name_ko": "벼린 칼날",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "UseArmourersScrapGetMaxQuality",
+			"Name_en": "The Hardened Armour",
+			"Name_ko": "단단해진 방어구",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TransmuteUpgradesItemToThreeModRare",
+			"Name_en": "Golden Touch",
+			"Name_ko": "황금 손",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TransmuteRingOrJewelAddLife",
+			"Name_en": "Vital Transformation",
+			"Name_ko": "생명의 변형",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TransmuteEquipmentAddResistance",
+			"Name_en": "Resistant to Change",
+			"Name_ko": "변화에 대한 저항",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TransmuteBootsAddMovementSpeed",
+			"Name_en": "Touched by the Wind",
+			"Name_ko": "바람의 손길에 닿아",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "DivinationCardSpawnsWithJackInTheBoxAlso",
+			"Name_en": "The Pair",
+			"Name_ko": "한 쌍",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "UseChiselGetMaxQuality",
+			"Name_en": "The Beautiful Guide",
+			"Name_ko": "아름다운 안내인",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "ReceiveARareItemGetFourMirroredInstead",
+			"Name_en": "Kalandra's Craft",
+			"Name_ko": "칼란드라의 솜씨",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TransmuteMapAddMod",
+			"Name_en": "Smothering Tendrils",
+			"Name_ko": "질식 덩굴손",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapExtraStrongboxes",
+			"Name_en": "Bountiful Traps",
+			"Name_ko": "후한 보답의 함정",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapExtraRogueExiles",
+			"Name_en": "The Four Feral Exiles",
+			"Name_ko": "야생 유배자 4인방",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapTwinned",
+			"Name_en": "Deadly Twins",
+			"Name_ko": "위험한 쌍둥이",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "ReadLoreGrantsWisdomScrolls",
+			"Name_en": "Lasting Impressions",
+			"Name_ko": "오랜 생각",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapTempestFire",
+			"Name_en": "Fire from the Sky",
+			"Name_ko": "하늘에서 떨어지는 화염",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapTempestIce",
+			"Name_en": "Ice from Above",
+			"Name_ko": "하늘에서 떨어지는 얼음",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapTempestLightning",
+			"Name_en": "Lightning Falls",
+			"Name_ko": "번개 폭포",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapTempestUndead",
+			"Name_en": "The Undead Storm",
+			"Name_ko": "언데드 태풍",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapTempestPhysical",
+			"Name_en": "Crushing Squall",
+			"Name_ko": "타쇄하는 돌풍",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapTempestCorrupt",
+			"Name_en": "Vaal Winds",
+			"Name_ko": "바알의 바람",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "UniqueFireGolemAtFireFurysCamp",
+			"Name_en": "Living Fires",
+			"Name_ko": "살아있는 화염",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "FarmerSkeletonsAtRuinedHouse",
+			"Name_en": "Fallow At Last",
+			"Name_ko": "마침내 맞이한 휴경",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KaruiWarriorsNearWeatheredCarvings",
+			"Name_en": "Path of Betrayal",
+			"Name_ko": "배신의 길",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "WeaponsRiseUpAroundLioneyesStandard",
+			"Name_en": "The Forgotten Soldiers",
+			"Name_ko": "잊힌 병사들",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "GoldenWaterElementalsRiseFromGoldPiles",
+			"Name_en": "Pools of Wealth",
+			"Name_ko": "부의 웅덩이",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "ChildOfLunarisAppearsInChapel",
+			"Name_en": "The Child of Lunaris",
+			"Name_ko": "루나리스의 아이",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "ArmyOfUndeadSoldiersAppearInRuinedFortress",
+			"Name_en": "The Forgotten Garrison",
+			"Name_ko": "잊힌 주둔지",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheStockkeeperAppears",
+			"Name_en": "The Stockkeeper",
+			"Name_ko": "창고 관리인",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "UniqueLightningGolemAppearsOutsideBubble",
+			"Name_en": "Unnatural Energy",
+			"Name_ko": "기이한 에너지",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TwoUniqueBlackguardCaptainsAppearAtFarEnd",
+			"Name_en": "Holding the Bridge",
+			"Name_ko": "다리의 수문장",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "UniqueZombieBlackguardAtRuinedCart",
+			"Name_en": "In the Grasp of Corruption",
+			"Name_ko": "타락의 손아귀 안에서",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RareLunarisMiscreationsAppearAtScionCage",
+			"Name_en": "Defiled in the Sceptre",
+			"Name_ko": "셉터에서 더럽혀진 존재",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "Tier1MapsSpawnedAtMapDevice",
+			"Name_en": "The Lost Maps",
+			"Name_ko": "도난당한 지도",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AreaAllRaresAreCloned",
+			"Name_en": "The Twins",
+			"Name_ko": "쌍둥이",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AreaAllUniquesArePossessedByTormentedSpirits",
+			"Name_en": "Possessed Foe",
+			"Name_ko": "사로잡힌 적",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "KillingTormentedSpiritTouchesAllMonsters",
+			"Name_en": "Touched by Death",
+			"Name_ko": "죽음의 손길에 닿아",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AreaHasVaalMonstersAndOversoul",
+			"Name_en": "Vaal Invasion",
+			"Name_ko": "바알의 침략",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AreaHasOnlyStrongboxes",
+			"Name_en": "Monstrous Treasure",
+			"Name_ko": "무시무시한 보물",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AreaIsLikeCorruptedSideArea",
+			"Name_en": "The Spread of Corruption",
+			"Name_ko": "타락의 확산",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "FrogFlood",
+			"Name_en": "Plague of Frogs",
+			"Name_ko": "성가신 개구리 떼",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AreaContainsWashedUpCorpses",
+			"Name_en": "Visions of the Drowned",
+			"Name_ko": "물에 빠진 자의 환영",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MapContainsTrial",
+			"Name_en": "The Dream Trial",
+			"Name_ko": "꿈결 시험",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AreaSpawnsUndead",
+			"Name_en": "Soil, Worms and Blood",
+			"Name_ko": "땅, 벌레, 피",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AreaSpawnsInsectsAndQueens",
+			"Name_en": "The Hungering Swarm",
+			"Name_ko": "허기진 무리",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AreaSpawnsSeaWitchesAndSpawn",
+			"Name_en": "The Cursed Choir",
+			"Name_ko": "저주받은 합창단",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AreaSpawnsRareDevourers",
+			"Name_en": "The Trembling Earth",
+			"Name_ko": "떨리는 지면",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AreaContainsInvasionBoss",
+			"Name_en": "The Invader",
+			"Name_ko": "침략자",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "UnbearableWhispers1",
+			"Name_en": "Unbearable Whispers I",
+			"Name_ko": "견딜 수 없는 속삭임 I",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "UnbearableWhispers2",
+			"Name_en": "Unbearable Whispers II",
+			"Name_ko": "견딜 수 없는 속삭임 II",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "UnbearableWhispers3",
+			"Name_en": "Unbearable Whispers III",
+			"Name_ko": "견딜 수 없는 속삭임 III",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "UnbearableWhispers4",
+			"Name_en": "Unbearable Whispers IV",
+			"Name_ko": "견딜 수 없는 속삭임 IV",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "UnbearableWhispers5",
+			"Name_en": "Unbearable Whispers V",
+			"Name_ko": "견딜 수 없는 속삭임 V",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheUnbreathingQueen1",
+			"Name_en": "The Unbreathing Queen I",
+			"Name_ko": "숨 쉬지 않는 여왕 I",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheUnbreathingQueen2",
+			"Name_en": "The Unbreathing Queen II",
+			"Name_ko": "숨 쉬지 않는 여왕 II",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheUnbreathingQueen3",
+			"Name_en": "The Unbreathing Queen III",
+			"Name_ko": "숨 쉬지 않는 여왕 III",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheUnbreathingQueen4",
+			"Name_en": "The Unbreathing Queen IV",
+			"Name_ko": "숨 쉬지 않는 여왕 IV",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheUnbreathingQueen5",
+			"Name_en": "The Unbreathing Queen V",
+			"Name_ko": "숨 쉬지 않는 여왕 V",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheAmbitiousBandit1",
+			"Name_en": "The Ambitious Bandit I",
+			"Name_ko": "야심 있는 도적 I",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheAmbitiousBandit2",
+			"Name_en": "The Ambitious Bandit II",
+			"Name_ko": "야심 있는 도적 II",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheAmbitiousBandit3",
+			"Name_en": "The Ambitious Bandit III",
+			"Name_ko": "야심 있는 도적 III",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "DeadlyRivalry1",
+			"Name_en": "Deadly Rivalry I",
+			"Name_ko": "죽음의 경쟁 I",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "DeadlyRivalry2",
+			"Name_en": "Deadly Rivalry II",
+			"Name_ko": "죽음의 경쟁 II",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "DeadlyRivalry3",
+			"Name_en": "Deadly Rivalry III",
+			"Name_ko": "죽음의 경쟁 III",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "DeadlyRivalry4",
+			"Name_en": "Deadly Rivalry IV",
+			"Name_ko": "죽음의 경쟁 IV",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "DeadlyRivalry5",
+			"Name_en": "Deadly Rivalry V",
+			"Name_ko": "죽음의 경쟁 V",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheWarmongers1",
+			"Name_en": "The Warmongers I",
+			"Name_ko": "전쟁광 I",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheWarmongers2",
+			"Name_en": "The Warmongers II",
+			"Name_ko": "전쟁광 II",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheWarmongers3",
+			"Name_en": "The Warmongers III",
+			"Name_ko": "전쟁광 III",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheWarmongers4",
+			"Name_en": "The Warmongers IV",
+			"Name_ko": "전쟁광 IV",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "BeyondSight1",
+			"Name_en": "Beyond Sight I",
+			"Name_ko": "시야 너머 I",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "BeyondSight2",
+			"Name_en": "Beyond Sight II",
+			"Name_ko": "시야 너머 II",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "BeyondSight3",
+			"Name_en": "Beyond Sight III",
+			"Name_ko": "시야 너머 III",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "BeyondSight4",
+			"Name_en": "Beyond Sight IV",
+			"Name_ko": "시야 너머 IV",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "ChestWithDivinationCards",
+			"Name_en": "The Fortune Teller's Collection",
+			"Name_ko": "점술가의 수집품",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "IcetombFated",
+			"Name_en": "End of the Light",
+			"Name_ko": "빛의 종말",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "WondertrapFated",
+			"Name_en": "Greed's Folly",
+			"Name_ko": "탐욕의 어리석음",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "BriskwrapFated",
+			"Name_en": "Last of the Wildmen",
+			"Name_ko": "마지막 야생인",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "SundanceFated",
+			"Name_en": "Sun's Punishment",
+			"Name_ko": "태양의 응징",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "WindscreamFated",
+			"Name_en": "Darktongue's Shriek",
+			"Name_ko": "다크텅의 비명",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "DusktoeFated",
+			"Name_en": "Agony at Dusk",
+			"Name_ko": "황혼의 고통",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MeginordsViseFated",
+			"Name_en": "Fall of the Tower",
+			"Name_ko": "탑의 몰락",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "DoedresTenureFated",
+			"Name_en": "The Malevolent Witch",
+			"Name_ko": "심술궂은 마녀",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "HeatshiverFated",
+			"Name_en": "A Vision of Ice and Fire",
+			"Name_ko": "얼음과 화염의 환영",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TimeclaspFated",
+			"Name_en": "A Rift in Time",
+			"Name_ko": "시간의 균열",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AtzirisMirrorFated",
+			"Name_en": "The Queen's Sacrifice",
+			"Name_ko": "여왕의 희생",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "QuecholliFated",
+			"Name_en": "The Fall of an Empire",
+			"Name_ko": "제국의 몰락",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "FencoilFated",
+			"Name_en": "Trapped in the Tower",
+			"Name_ko": "탑에 갇히다",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheStormheartFated",
+			"Name_en": "The Storm Spire",
+			"Name_ko": "태풍의 첨탑",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "FoxshadeFated",
+			"Name_en": "Dark Instincts",
+			"Name_ko": "어둠의 본능",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "AsenathsMarkFated",
+			"Name_en": "Song of the Sekhema",
+			"Name_ko": "세케마의 노래",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "HonourhomeFated",
+			"Name_en": "Honour Held",
+			"Name_ko": "거머쥔 명예",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MalachaisSimulaFated",
+			"Name_en": "The Nightmare Awakens",
+			"Name_ko": "깨어난 악몽",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "SidhebreathFated",
+			"Name_en": "WIP",
+			"Name_ko": "WIP",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheIgnomonFated",
+			"Name_en": "Blind Faith",
+			"Name_ko": "맹목적인 믿음",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheMagnateFated1",
+			"Name_en": "The Great Mind of the North",
+			"Name_ko": "북쪽의 위대한 자",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheMagnateFated2",
+			"Name_en": "The Great Leader of the North",
+			"Name_ko": "북쪽의 위대한 지도자",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "BloodboilFated",
+			"Name_en": "Cold Blooded Fury",
+			"Name_ko": "냉혈의 광분",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "HyrrisBiteFated",
+			"Name_en": "A Dishonourable Death",
+			"Name_ko": "불명예스러운 죽음",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "DreadarcFated",
+			"Name_en": "Burning Dread",
+			"Name_ko": "불타는 공포",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "GoredrillFated",
+			"Name_en": "Crimson Hues",
+			"Name_ko": "진홍색 빛깔",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "GeofrisBaptismFated",
+			"Name_en": "Black Devotion",
+			"Name_ko": "검은 헌신",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "CameriasMaulFated",
+			"Name_en": "Cold Greed",
+			"Name_ko": "차가운 탐욕",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "RedbeakFated",
+			"Name_en": "The Dreaded Rhoa",
+			"Name_ko": "공포의 로아",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "TheDancingDervishFated",
+			"Name_en": "Dance of Steel",
+			"Name_ko": "강철의 춤사위",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "EclipseSolarisFated",
+			"Name_en": "Blinding Light",
+			"Name_ko": "눈부신 빛",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "IronHeartFated",
+			"Name_en": "Battle Hardened",
+			"Name_ko": "전투에 단련된 자",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "ChoberChaberFated",
+			"Name_en": "Faith Exhumed",
+			"Name_ko": "신념의 발굴",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "MatuaTupunaFated",
+			"Name_en": "The Mentor",
+			"Name_ko": "스승",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "GeofrisCrestFated",
+			"Name_en": "The Bishop's Legacy",
+			"Name_ko": "주교의 유산",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		}
+	]
+}

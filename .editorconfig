@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# IDE0055: 서식 수정
+dotnet_diagnostic.IDE0055.severity = none
+
+# CA2211: 비상수 필드는 표시할 수 없습니다.
+dotnet_diagnostic.CA2211.severity = suggestion

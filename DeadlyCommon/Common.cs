@@ -40,7 +40,7 @@ namespace POExileDirection
         public static string IsLoggedIn(SqlConnection _sqlcon, string strIP, string strMac)
         {
             string strisLogin = "N";
-            string strSQL = String.Format("SELECT isLogin FROM DeadlyLOG Where IPAddress = '{0}' and MacAddress = '{1}' "
+            string strSQL = String.Format("SELECT isLogin, IPAddress, MacAddress FROM DeadlyLOG Where IPAddress = '{0}' and MacAddress = '{1}' "
                                 + "Order by ActionDate DESC", strIP, strMac);
 
             SqlCommand sqlCmd = new SqlCommand();
@@ -203,7 +203,10 @@ namespace POExileDirection
         // Trade Message - English
         public Regex RegExENGPriceWithTabName { get; set; }
         public Regex RegExENGPriceNoTabName { get; set; }
-        public Regex RegExENGUnPrice { get; set; }
+        public Regex RegExENGPoeAppCom { get; set; }
+            // BUYING
+            public Regex RegExENGPoeAppComTabNameKAKAO { get; set; }
+        public Regex RegExENGPricePoeApp { get; set; }
         public Regex RegExENGBulkCurrencies { get; set; }
         public Regex RegExENGCurrency { get; set; }
         public Regex RegExENGMapLiveSite { get; set; }
@@ -345,6 +348,19 @@ namespace POExileDirection
 
     public class DeadlyAtlas
     {
+        public class FossilInformation
+        {
+            public string Zone { get; set; }
+            public string ZoneKR { get; set; }
+            public List<string> FossilNameKR { get; set; }
+            public List<string> FossilDescription { get; set; }
+        }
+
+        public class RootObjectFossilInformation
+        {
+            public List<FossilInformation> FossilInformation { get; set; }
+        }
+
         public class OilsMapAnoint
         {
             public string Oils { get; set; }
@@ -355,6 +371,18 @@ namespace POExileDirection
         public class RootObjectOilsMapAnoint
         {
             public List<OilsMapAnoint> OilsMapAnoint { get; set; }
+        }
+
+        public class OilsRingAnoint
+        {
+            public List<string> Oils { get; set; }
+            public string Effect { get; set; }
+            public string EffectKR { get; set; }
+        }
+
+        public class RootObjectOilsRingAnoint
+        {
+            public List<OilsRingAnoint> OilsRingAnoint { get; set; }
         }
 
         public class OilsPassive
@@ -755,9 +783,10 @@ namespace POExileDirection
 
     public static class DeadlyImageCommon
     {
-        public static Image resizeImage(Image imgToResize, double zoomScale)
+        public static Bitmap resizeImage(Bitmap imgToResize, float zoomScale)
         {
-            return (Image)(new Bitmap(imgToResize, (int)(imgToResize.Width * zoomScale), (int)(imgToResize.Height * zoomScale)));
+            return new Bitmap(imgToResize, new Size(Convert.ToInt32(imgToResize.Width * zoomScale), Convert.ToInt32(imgToResize.Height * zoomScale)));
+            //(int)(imgToResize.Width * zoomScale), (int)(imgToResize.Height * zoomScale));
         }
 
         public static Bitmap cropImage(Image img, Rectangle cropArea)
@@ -779,23 +808,6 @@ namespace POExileDirection
 
             using (var graphics = Graphics.FromImage(bmp))
                 graphics.DrawImage(newImage, 0, 0, newWidth, newHeight);
-
-            return newImage;
-        }
-
-        public static Image ScaleImage(Image image, int maxWidth, int maxHeight)
-        {
-            var ratioX = (double)maxWidth / image.Width;
-            var ratioY = (double)maxHeight / image.Height;
-            var ratio = Math.Min(ratioX, ratioY);
-
-            var newWidth = (int)(image.Width * ratio);
-            var newHeight = (int)(image.Height * ratio);
-
-            var newImage = new Bitmap(newWidth, newHeight);
-
-            using (var graphics = Graphics.FromImage(newImage))
-                graphics.DrawImage(image, 0, 0, newWidth, newHeight);
 
             return newImage;
         }

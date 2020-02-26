@@ -111,10 +111,12 @@ namespace POExileDirection
             IniParser parser = new IniParser(strINIPath);
 
             string sZoom = parser.GetSetting("LOCATIONIMG", "ZOOM");
-            double dZoomSale = 1.0;
-            if (Int32.Parse(sZoom) > 0)
-                dZoomSale = 1 + (Int32.Parse(sZoom) * 0.1);
-            img = DeadlyImageCommon.resizeImage(img, dZoomSale);
+            img = resizeImage(img, new Size(img.Width + Int32.Parse(sZoom), img.Height + Int32.Parse(sZoom)));
+        }
+
+        private static Image resizeImage(Image imgToResize, Size size)
+        {
+            return (Image)(new Bitmap(imgToResize, size));
         }
 
         private void ImageOverlayForm_Paint(object sender, PaintEventArgs e)
@@ -247,17 +249,21 @@ namespace POExileDirection
             nZoom = nZoom - 100;
             if (img.Width + nZoom > 0 && img.Height + nZoom > 0)
             {
-                double dZoomSale = 1.0;
-                if (nZoom > 0)
-                    dZoomSale = 1 + (nZoom * 0.1);
-                img = DeadlyImageCommon.resizeImage(img, dZoomSale);
+                try
+                {
+                    img = resizeImage(img, new Size(img.Width + nZoom, img.Height + nZoom));
 
-                parser.AddSetting("LOCATIONIMG", "ZOOM", nZoom.ToString());
-                parser.SaveSettings();
+                    parser.AddSetting("LOCATIONIMG", "ZOOM", nZoom.ToString());
+                    parser.SaveSettings();
 
-                this.Invalidate();
-                this.Update();
-                this.Refresh();
+                    this.Invalidate();
+                    this.Update();
+                    this.Refresh();
+                }
+                catch (Exception ex)
+                {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+                }
             }
         }
 
@@ -285,17 +291,21 @@ namespace POExileDirection
             nZoom = nZoom + 100;
             if (img.Width + nZoom <= 1920 && img.Height + nZoom <= 1080)
             {
-                double dZoomSale = 1.0;
-                if (nZoom > 0)
-                    dZoomSale = 1 + (nZoom * 0.1);
-                img = DeadlyImageCommon.resizeImage(img, dZoomSale);
+                try
+                {
+                    img = resizeImage(img, new Size(img.Width + nZoom, img.Height + nZoom));
 
-                parser.AddSetting("LOCATIONIMG", "ZOOM", nZoom.ToString());
-                parser.SaveSettings();
+                    parser.AddSetting("LOCATIONIMG", "ZOOM", nZoom.ToString());
+                    parser.SaveSettings();
 
-                this.Invalidate();
-                this.Update();
-                this.Refresh();
+                    this.Invalidate();
+                    this.Update();
+                    this.Refresh();
+                }
+                catch (Exception ex)
+                {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+                }
             }
         }
 

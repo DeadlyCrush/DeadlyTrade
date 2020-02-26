@@ -1,0 +1,5794 @@
+{
+	"Uniques": [
+		{
+			"Id": "UniqueTwoHandAxe1",
+			"Text_en": "Kaom's Primacy",
+			"Text_ko": "카옴의 탁월함(Kaom's Primacy)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe11Unique.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword1",
+			"Text_en": "Redbeak",
+			"Text_ko": "붉은 부리(Redbeak)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/OneHandSword1Unique.dds"
+		},
+		{
+			"Id": "UniqueAmulet1",
+			"Text_en": "Stone of Lazhwar",
+			"Text_ko": "라즈워의 보석(Stone of Lazhwar)",
+			"DDSFile": "Art/2DItems/Amulets/Amulet5Unique.dds"
+		},
+		{
+			"Id": "UniqueRing1",
+			"Text_en": "Blackheart",
+			"Text_ko": "검은 심장(Blackheart)",
+			"DDSFile": "Art/2DItems/Rings/Ring1Unique.dds"
+		},
+		{
+			"Id": "UniqueRing2",
+			"Text_en": "Kaom's Sign",
+			"Text_ko": "카옴의 표식(Kaom's Sign)",
+			"DDSFile": "Art/2DItems/Rings/Ring2Unique.dds"
+		},
+		{
+			"Id": "UniqueRing3",
+			"Text_en": "Andvarius",
+			"Text_ko": "앤드바리우스(Andvarius)",
+			"DDSFile": "Art/2DItems/Rings/Ring4Unique.dds"
+		},
+		{
+			"Id": "UniqueBow1",
+			"Text_en": "Lioneye's Glare",
+			"Text_ko": "라이온아이의 섬광(Lioneye's Glare)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/Bow8unique.dds"
+		},
+		{
+			"Id": "UniqueAmulet2",
+			"Text_en": "Demigod's Presence",
+			"Text_ko": "반신의 존재(Demigod's Presence)",
+			"DDSFile": "Art/2DItems/Amulets/Amulet7Unique2.dds"
+		},
+		{
+			"Id": "UniqueBodyStrInt1",
+			"Text_en": "Voll's Protector",
+			"Text_ko": "볼의 보호자(Voll's Protector)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/StrInt3AUnique.dds"
+		},
+		{
+			"Id": "UniqueDagger1",
+			"Text_en": "Divinarius",
+			"Text_ko": "디비나리우스(Divinarius)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/Dagger7unique.dds"
+		},
+		{
+			"Id": "UniqueBow2",
+			"Text_en": "Silverbranch",
+			"Text_ko": "은빛 가지(Silverbranch)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/Bow1Unique.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword2",
+			"Text_en": "Ephemeral Edge",
+			"Text_ko": "덧없는 칼날(Ephemeral Edge)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/OneHandSword8Unique.dds"
+		},
+		{
+			"Id": "UniqueHelmetDexInt1",
+			"Text_en": "Malachai's Simula",
+			"Text_ko": "말라카이의 위장막(Malachai's Simula)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/MalachaisSimula.dds"
+		},
+		{
+			"Id": "UniqueHelmetStr1",
+			"Text_en": "Ezomyte Peak",
+			"Text_ko": "에조미어의 면갑(Ezomyte Peak)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/EzomytePeak.dds"
+		},
+		{
+			"Id": "UniqueBow3",
+			"Text_en": "Death's Harp",
+			"Text_ko": "죽음의 하프(Death's Harp)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/Deathsharp.dds"
+		},
+		{
+			"Id": "UniqueStaff1",
+			"Text_en": "The Searing Touch",
+			"Text_ko": "이글거리는 손길(The Searing Touch)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/Staff4unique.dds"
+		},
+		{
+			"Id": "UniqueTwoHandMace1",
+			"Text_en": "Hrimnor's Hymn",
+			"Text_ko": "흐림노르의 찬가(Hrimnor's Hymn)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace6Unique.dds"
+		},
+		{
+			"Id": "UniqueTwoHandMace2",
+			"Text_en": "Geofri's Baptism",
+			"Text_ko": "조프리의 세례(Geofri's Baptism)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace7Unique.dds"
+		},
+		{
+			"Id": "UniqueTwoHandSword1",
+			"Text_en": "Rigwald's Charge",
+			"Text_ko": "리그월드의 돌진(Rigwald's Charge)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword5Unique.dds"
+		},
+		{
+			"Id": "UniqueTwoHandSword2",
+			"Text_en": "Shiversting",
+			"Text_ko": "오한의 검(Shiversting)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword6Unique.dds"
+		},
+		{
+			"Id": "UniqueRing4",
+			"Text_en": "Doedre's Damning",
+			"Text_ko": "도이드리의 파멸(Doedre's Damning)",
+			"DDSFile": "Art/2DItems/Rings/Ring3Unique.dds"
+		},
+		{
+			"Id": "UniqueRing5",
+			"Text_en": "Dream Fragments",
+			"Text_ko": "꿈의 조각(Dream Fragments)",
+			"DDSFile": "Art/2DItems/Rings/Ring6Unique.dds"
+		},
+		{
+			"Id": "UniqueQuiver1",
+			"Text_en": "Blackgleam",
+			"Text_ko": "검은 섬광(Blackgleam)",
+			"DDSFile": "Art/2DItems/Quivers/QuiverUnique1.dds"
+		},
+		{
+			"Id": "UniqueQuiver2",
+			"Text_en": "Broadstroke",
+			"Text_ko": "파괴의 살(Broadstroke)",
+			"DDSFile": "Art/2DItems/Quivers/QuiverUnique2.dds"
+		},
+		{
+			"Id": "UniqueAmulet3",
+			"Text_en": "Sidhebreath",
+			"Text_ko": "요정의 숨결(Sidhebreath)",
+			"DDSFile": "Art/2DItems/Amulets/Amulet1Unique.dds"
+		},
+		{
+			"Id": "UniqueAmulet5",
+			"Text_en": "Karui Ward",
+			"Text_ko": "카루이의 수호(Karui Ward)",
+			"DDSFile": "Art/2DItems/Amulets/Amulet4Unique.dds"
+		},
+		{
+			"Id": "UniqueAmulet6",
+			"Text_en": "Eye of Chayula",
+			"Text_ko": "차율라의 눈(Eye of Chayula)",
+			"DDSFile": "Art/2DItems/Amulets/Amulet7Unique.dds"
+		},
+		{
+			"Id": "UniqueBodyDex1",
+			"Text_en": "Hyrri's Ire",
+			"Text_ko": "하이리의 노여움(Hyrri's Ire)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/BodyDex3CUnique.dds"
+		},
+		{
+			"Id": "UniqueBodyStr1",
+			"Text_en": "Kaom's Heart",
+			"Text_ko": "카옴의 심장(Kaom's Heart)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/BodyStr3CUnique.dds"
+		},
+		{
+			"Id": "UniqueDexHelmet1",
+			"Text_en": "Fairgraves' Tricorne",
+			"Text_ko": "페어그레이브즈의 삼각모(Fairgraves' Tricorne)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/FairgravesTricorne.dds"
+		},
+		{
+			"Id": "UniqueDexHelmet2",
+			"Text_en": "Heatshiver",
+			"Text_ko": "열기와 오한(Heatshiver)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Heatshiver.dds"
+		},
+		{
+			"Id": "UniqueIntHelmet1",
+			"Text_en": "Crown of Thorns",
+			"Text_ko": "가시 왕관(Crown of Thorns)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/CrownofThorns.dds"
+		},
+		{
+			"Id": "UniqueIntHelmet2",
+			"Text_en": "Asenath's Mark",
+			"Text_ko": "아세나스의 징표(Asenath's Mark)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/HyrrisMark.dds"
+		},
+		{
+			"Id": "UniqueIntHelmet3",
+			"Text_en": "Chitus' Apex",
+			"Text_ko": "치투스의 정점(Chitus' Apex)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/ChitusApex.dds"
+		},
+		{
+			"Id": "UniqueStrHelmet2",
+			"Text_en": "Hrimnor's Resolve",
+			"Text_ko": "흐림노르의 결의(Hrimnor's Resolve)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/HrimnorsResolve.dds"
+		},
+		{
+			"Id": "UniqueStrDexHelmet1",
+			"Text_en": "The Peregrine",
+			"Text_ko": "송골매(The Peregrine)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/ThePeregrine.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrInt1",
+			"Text_en": "Honourhome",
+			"Text_ko": "명예의 총본산(Honourhome)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Honourhome.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrInt2",
+			"Text_en": "Geofri's Crest",
+			"Text_ko": "조프리의 문양(Geofri's Crest)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/GeofrisCrest.dds"
+		},
+		{
+			"Id": "UniqueAmulet4",
+			"Text_en": "Araku Tiki",
+			"Text_ko": "아라쿠 티키(Araku Tiki)",
+			"DDSFile": "Art/2DItems/Amulets/Amulet2Unique.dds"
+		},
+		{
+			"Id": "UniqueBootsInt1",
+			"Text_en": "Wondertrap",
+			"Text_ko": "기적의 발판(Wondertrap)",
+			"DDSFile": "Art/2DItems/Armours/Boots/Wondertrap.dds"
+		},
+		{
+			"Id": "UniqueDagger2",
+			"Text_en": "Mightflay",
+			"Text_ko": "강력한 가죽칼(Mightflay)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/Dagger2unique.dds"
+		},
+		{
+			"Id": "UniqueBootsStrDex1",
+			"Text_en": "Lioneye's Paws",
+			"Text_ko": "라이온아이의 발(Lioneye's Paws)",
+			"DDSFile": "Art/2DItems/Armours/Boots/LioneyesPaws.dds"
+		},
+		{
+			"Id": "UniqueBootsStrInt1",
+			"Text_en": "Wake of Destruction",
+			"Text_ko": "파괴의 경야(Wake of Destruction)",
+			"DDSFile": "Art/2DItems/Armours/Boots/WakeOfDestruction.dds"
+		},
+		{
+			"Id": "UniqueBootsInt2",
+			"Text_en": "Wanderlust",
+			"Text_ko": "방랑벽(Wanderlust)",
+			"DDSFile": "Art/2DItems/Armours/Boots/Wanderlust.dds"
+		},
+		{
+			"Id": "UniqueBootsInt3",
+			"Text_en": "Shavronne's Pace",
+			"Text_ko": "샤브론의 보폭(Shavronne's Pace)",
+			"DDSFile": "Art/2DItems/Armours/Boots/ShavronnesPace.dds"
+		},
+		{
+			"Id": "UniqueBootsDexInt1",
+			"Text_en": "Sundance",
+			"Text_ko": "태양을 보는 춤(Sundance)",
+			"DDSFile": "Art/2DItems/Armours/Boots/Sundance.dds"
+		},
+		{
+			"Id": "UniqueBootsStr1",
+			"Text_en": "Windscream",
+			"Text_ko": "바람의 괴성(Windscream)",
+			"DDSFile": "Art/2DItems/Armours/Boots/Windscream.dds"
+		},
+		{
+			"Id": "UniqueGlovesDex1",
+			"Text_en": "Hrimsorrow",
+			"Text_ko": "흐림소로우(Hrimsorrow)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/Hrimsorrow.dds"
+		},
+		{
+			"Id": "UniqueGlovesDex2",
+			"Text_en": "Maligaro's Virtuosity",
+			"Text_ko": "말리가로의 기교(Maligaro's Virtuosity)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/MaligarosVirtousity.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrDex1",
+			"Text_en": "Slitherpinch",
+			"Text_ko": "뱀의 손길(Slitherpinch)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/Slitherpinch.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrDex2",
+			"Text_en": "Aurseize",
+			"Text_ko": "아우르시즈(Aurseize)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/Aurseize.dds"
+		},
+		{
+			"Id": "UniqueGlovesInt1",
+			"Text_en": "Sadima's Touch",
+			"Text_ko": "사디마의 손길(Sadima's Touch)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/SadimasTouch.dds"
+		},
+		{
+			"Id": "UniqueGlovesInt2",
+			"Text_en": "Doedre's Tenure",
+			"Text_ko": "도이드리의 임기(Doedre's Tenure)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/DoedresTenure.dds"
+		},
+		{
+			"Id": "UniqueGlovesDexInt1",
+			"Text_en": "Ondar's Clasp",
+			"Text_ko": "온다르의 걸쇠(Ondar's Clasp)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/OndarsClasp.dds"
+		},
+		{
+			"Id": "UniqueGlovesStr1",
+			"Text_en": "Lochtonial Caress",
+			"Text_ko": "록토니얼의 손길(Lochtonial Caress)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/LochtonialCaress.dds"
+		},
+		{
+			"Id": "UniqueAmulet7",
+			"Text_en": "The Ignomon",
+			"Text_ko": "이그노몬(The Ignomon)",
+			"DDSFile": "Art/2DItems/Amulets/Amulet6Unique.dds"
+		},
+		{
+			"Id": "UniqueAmulet8",
+			"Text_en": "Astramentis",
+			"Text_ko": "별의 보석(Astramentis)",
+			"DDSFile": "Art/2DItems/Amulets/Amulet36.dds"
+		},
+		{
+			"Id": "UniqueBelt1",
+			"Text_en": "Wurm's Molt",
+			"Text_ko": "웜의 허물(Wurm's Molt)",
+			"DDSFile": "Art/2DItems/Belts/Belt6Unique.dds"
+		},
+		{
+			"Id": "UniqueBelt2",
+			"Text_en": "The Magnate",
+			"Text_ko": "거물(The Magnate)",
+			"DDSFile": "Art/2DItems/Belts/BuckledBeltUnique.dds"
+		},
+		{
+			"Id": "UniqueBelt3",
+			"Text_en": "Perandus Blazon",
+			"Text_ko": "페란두스 문장(Perandus Blazon)",
+			"DDSFile": "Art/2DItems/Belts/BuckledBeltUnique2.dds"
+		},
+		{
+			"Id": "UniqueBelt4",
+			"Text_en": "Meginord's Girdle",
+			"Text_ko": "메기노드의 허리띠(Meginord's Girdle)",
+			"DDSFile": "Art/2DItems/Belts/Belt7Unique.dds"
+		},
+		{
+			"Id": "UniqueShieldStrDex1",
+			"Text_en": "Daresso's Courage",
+			"Text_ko": "다레소의 용기(Daresso's Courage)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldStrDexUnique1.dds"
+		},
+		{
+			"Id": "UniqueShieldInt1",
+			"Text_en": "Rathpith Globe",
+			"Text_ko": "래스피스 구체(Rathpith Globe)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldInt6unique.dds"
+		},
+		{
+			"Id": "UniqueShieldDex1",
+			"Text_en": "Kaltenhalt",
+			"Text_ko": "붙잡은 냉기(Kaltenhalt)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldDexUnique6.dds"
+		},
+		{
+			"Id": "UniqueShieldDex2",
+			"Text_en": "Crest of Perandus",
+			"Text_ko": "페란두스의 문양(Crest of Perandus)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldDexUnique5.dds"
+		},
+		{
+			"Id": "UniqueShieldStr1",
+			"Text_en": "Lioneye's Remorse",
+			"Text_ko": "라이온아이의 후회(Lioneye's Remorse)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldStrUnique6.dds"
+		},
+		{
+			"Id": "UniqueTwoHandAce2",
+			"Text_en": "Reaper's Pursuit",
+			"Text_ko": "수확자의 추적(Reaper's Pursuit)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxeUnique1.dds"
+		},
+		{
+			"Id": "UniqueTwoHandSword3",
+			"Text_en": "Terminus Est",
+			"Text_ko": "다가온 최후(Terminus Est)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSwordUnique2.dds"
+		},
+		{
+			"Id": "UniqueRapier1",
+			"Text_en": "Tipua Kaikohuru",
+			"Text_ko": "티푸아 카이코후루(Tipua Kaikohuru)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Rapiers/UniqueRapier6.dds"
+		},
+		{
+			"Id": "UniqueBodyStrInt2",
+			"Text_en": "Ambu's Charge",
+			"Text_ko": "앰부의 돌진(Ambu's Charge)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/StrInt3AUnique2.dds"
+		},
+		{
+			"Id": "UniqueShieldStrInt1",
+			"Text_en": "Saffell's Frame",
+			"Text_ko": "사펠의 골격(Saffell's Frame)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldStrIntUnique6.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt4",
+			"Text_en": "Rime Gaze",
+			"Text_ko": "냉기의 시선(Rime Gaze)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/HelmetDexIntUnique1.dds"
+		},
+		{
+			"Id": "UniqueWand1",
+			"Text_en": "Moonsorrow",
+			"Text_ko": "달의 슬픔(Moonsorrow)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/WandUnique2.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrDex2",
+			"Text_en": "Devoto's Devotion",
+			"Text_ko": "드보토의 헌신(Devoto's Devotion)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/HelmetStrDex2unique.dds"
+		},
+		{
+			"Id": "UniqueShieldStrInt2",
+			"Text_en": "Prism Guardian",
+			"Text_ko": "분광의 수호자(Prism Guardian)",
+			"DDSFile": "Art/2DItems/Armours/Shields/TheCorundum.dds"
+		},
+		{
+			"Id": "UniqueShieldStrInt3",
+			"Text_en": "Springleaf",
+			"Text_ko": "생기의 잎사귀(Springleaf)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldStrIntUnique2.dds"
+		},
+		{
+			"Id": "UniqueTwoHandMace3",
+			"Text_en": "Marohi Erqi",
+			"Text_ko": "마로히 에르키(Marohi Erqi)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace2unique2.dds"
+		},
+		{
+			"Id": "UniqueAmulet9",
+			"Text_en": "Carnage Heart",
+			"Text_ko": "학살 심장(Carnage Heart)",
+			"DDSFile": "Art/2DItems/Amulets/Amulet37.dds"
+		},
+		{
+			"Id": "UniqueGlovesStr2",
+			"Text_en": "Meginord's Vise",
+			"Text_ko": "메기노드의 조임쇠(Meginord's Vise)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/GlovesStr5.dds"
+		},
+		{
+			"Id": "UniqueGlovesDexInt2",
+			"Text_en": "Facebreaker",
+			"Text_ko": "페이스브레이커(Facebreaker)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/GlovesDexIntUnique1.dds"
+		},
+		{
+			"Id": "UniqueBootsDex1",
+			"Text_en": "Sin Trek",
+			"Text_ko": "죄악의 여정(Sin Trek)",
+			"DDSFile": "Art/2DItems/Armours/Boots/SinTrek.dds"
+		},
+		{
+			"Id": "UniqueDagger3",
+			"Text_en": "Ungil's Gauche",
+			"Text_ko": "웅힐의 투박함(Ungil's Gauche)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/Dagger3unique.dds"
+		},
+		{
+			"Id": "UniqueBootsDex2",
+			"Text_en": "Goldwyrm",
+			"Text_ko": "황금 아룡(Goldwyrm)",
+			"DDSFile": "Art/2DItems/Armours/Boots/BootsDexUnique2.dds"
+		},
+		{
+			"Id": "UniqueBootsInt4",
+			"Text_en": "Bones of Ullr",
+			"Text_ko": "울러의 뼈(Bones of Ullr)",
+			"DDSFile": "Art/2DItems/Armours/Boots/bootunique.dds"
+		},
+		{
+			"Id": "UniqueOneHandMace1",
+			"Text_en": "Brightbeak",
+			"Text_ko": "밝은 부리(Brightbeak)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandMaces/OneHandMace5Unique.dds"
+		},
+		{
+			"Id": "UniqueBodyInt1",
+			"Text_en": "Shavronne's Wrappings",
+			"Text_ko": "샤브론의 겉옷(Shavronne's Wrappings)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/BodyInt1CUnique.dds"
+		},
+		{
+			"Id": "UniqueBow4",
+			"Text_en": "Quill Rain",
+			"Text_ko": "화살 비(Quill Rain)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/Bow2unique.dds"
+		},
+		{
+			"Id": "UniqueBow5",
+			"Text_en": "Darkscorn",
+			"Text_ko": "어두운 냉소(Darkscorn)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/Darkscorn.dds"
+		},
+		{
+			"Id": "UniqueTwoHandAxe3",
+			"Text_en": "Limbsplit",
+			"Text_ko": "사지 분할기(Limbsplit)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe_spare.dds"
+		},
+		{
+			"Id": "UniqueTwoHandMace4",
+			"Text_en": "Voidhome",
+			"Text_ko": "공허한 고향(Voidhome)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/Voidhome.dds"
+		},
+		{
+			"Id": "UniqueWand2",
+			"Text_en": "Midnight Bargain",
+			"Text_ko": "심야의 교섭(Midnight Bargain)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/WandUnique3.dds"
+		},
+		{
+			"Id": "UniqueBow6",
+			"Text_en": "Chin Sol",
+			"Text_ko": "친 솔(Chin Sol)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/Bow5unique.dds"
+		},
+		{
+			"Id": "UniqueBootsDex3",
+			"Text_en": "Victario's Flight",
+			"Text_ko": "빅타리오의 비상(Victario's Flight)",
+			"DDSFile": "Art/2DItems/Armours/Boots/BootsDexIntUnique2.dds"
+		},
+		{
+			"Id": "UniqueBodyStr2",
+			"Text_en": "Bramblejack",
+			"Text_ko": "가시나무 갑옷(Bramblejack)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Bramblejack.dds"
+		},
+		{
+			"Id": "UniqueBodyDex2",
+			"Text_en": "Dewath's Hide",
+			"Text_ko": "드워스의 가죽(Dewath's Hide)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/BodyDex1Aunique.dds"
+		},
+		{
+			"Id": "UniqueBodyDex3",
+			"Text_en": "Ashrend",
+			"Text_ko": "부서진 잿더미(Ashrend)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Ashrend.dds"
+		},
+		{
+			"Id": "UniqueBodyInt2",
+			"Text_en": "Cloak of Flame",
+			"Text_ko": "화염의 망토(Cloak of Flame)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/BodyInt1Aunique.dds"
+		},
+		{
+			"Id": "UniqueBow7",
+			"Text_en": "Infractem",
+			"Text_ko": "침범자(Infractem)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/Infractem.dds"
+		},
+		{
+			"Id": "UniqueClaw1",
+			"Text_en": "Essentia Sanguis",
+			"Text_ko": "피의 정수(Essentia Sanguis)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/Claw5Unique2.dds"
+		},
+		{
+			"Id": "UniqueShieldStr2",
+			"Text_en": "Titucius' Span",
+			"Text_ko": "티투시우스의 방패(Titucius' Span)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldStrUnique7.dds"
+		},
+		{
+			"Id": "UniqueBodyDex4",
+			"Text_en": "Foxshade",
+			"Text_ko": "여우 그림자(Foxshade)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Foxshade.dds"
+		},
+		{
+			"Id": "UniqueStaff2",
+			"Text_en": "Taryn's Shiver",
+			"Text_ko": "타린의 오한(Taryn's Shiver)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/Tarynsshiver.dds"
+		},
+		{
+			"Id": "UniqueHelmetDex3",
+			"Text_en": "Goldrim",
+			"Text_ko": "금테(Goldrim)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/HelmetDexUnique2.dds"
+		},
+		{
+			"Id": "UniqueShieldStrInt4",
+			"Text_en": "Aegis Aurora",
+			"Text_ko": "비호의 오로라(Aegis Aurora)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldStrIntUnique7unique.dds"
+		},
+		{
+			"Id": "UniqueSceptre1",
+			"Text_en": "The Supreme Truth",
+			"Text_ko": "지고의 진리(The Supreme Truth)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/Thesupremetruth.dds"
+		},
+		{
+			"Id": "UniqueBodyInt3",
+			"Text_en": "The Covenant",
+			"Text_ko": "계약(The Covenant)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Embrace.dds"
+		},
+		{
+			"Id": "UniqueBodyInt4",
+			"Text_en": "Infernal Mantle",
+			"Text_ko": "지옥불 외투(Infernal Mantle)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Infernalmantle.dds"
+		},
+		{
+			"Id": "UniqueClaw2",
+			"Text_en": "Mortem Morsu",
+			"Text_ko": "고통스러운 죽음(Mortem Morsu)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/Claw8unique.dds"
+		},
+		{
+			"Id": "UniqueTwoHandSword4",
+			"Text_en": "Queen's Decree",
+			"Text_ko": "여왕의 법령(Queen's Decree)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSwordUnique3.dds"
+		},
+		{
+			"Id": "UniqueShieldDex3",
+			"Text_en": "Atziri's Mirror",
+			"Text_ko": "앗지리의 거울(Atziri's Mirror)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldDex5Unique.dds"
+		},
+		{
+			"Id": "UniqueTwoHandAxe4",
+			"Text_en": "The Blood Reaper",
+			"Text_ko": "피의 수확자(The Blood Reaper)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxeUnique2.dds"
+		},
+		{
+			"Id": "UniqueBow8",
+			"Text_en": "Storm Cloud",
+			"Text_ko": "태풍 구름(Storm Cloud)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/Stormcloud.dds"
+		},
+		{
+			"Id": "UniqueHelmetWreath1",
+			"Text_en": "Demigod's Triumph (Race 1)",
+			"Text_ko": "반신의 성공(Demigod's Triumph)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Demigodstriumph.dds"
+		},
+		{
+			"Id": "UniqueShieldInt2",
+			"Text_en": "Matua Tupuna",
+			"Text_ko": "마투아 투푸나(Matua Tupuna)",
+			"DDSFile": "Art/2DItems/Armours/Shields/Matuatupuna.dds"
+		},
+		{
+			"Id": "UniqueDagger4",
+			"Text_en": "Heartbreaker",
+			"Text_ko": "심장 분쇄기(Heartbreaker)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/Heartbreaker.dds"
+		},
+		{
+			"Id": "UniqueBodyDexInt1",
+			"Text_en": "Carcass Jack",
+			"Text_ko": "시체 상인(Carcass Jack)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/CarcassJack.dds"
+		},
+		{
+			"Id": "UniqueRing6",
+			"Text_en": "Le Heup of All",
+			"Text_ko": "만인의 르 흐프(Le Heup of All)",
+			"DDSFile": "Art/2DItems/Rings/Leheupofall.dds"
+		},
+		{
+			"Id": "UniqueShieldStr3",
+			"Text_en": "Chernobog's Pillar",
+			"Text_ko": "체르노보그의 기둥(Chernobog's Pillar)",
+			"DDSFile": "Art/2DItems/Armours/Shields/Chernobogspillar.dds"
+		},
+		{
+			"Id": "UniqueSceptre2",
+			"Text_en": "Nycta's Lantern",
+			"Text_ko": "닉타의 등불(Nycta's Lantern)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/Lychnuslyaei.dds"
+		},
+		{
+			"Id": "UniqueHelmetDex4",
+			"Text_en": "Starkonja's Head",
+			"Text_ko": "스타콘자의 머리(Starkonja's Head)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Furryheadofstarkonja.dds"
+		},
+		{
+			"Id": "UniqueClaw3",
+			"Text_en": "Bloodseeker",
+			"Text_ko": "피의 탐색자(Bloodseeker)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/Bloodseeker.dds"
+		},
+		{
+			"Id": "UniqueTwoHandMace5",
+			"Text_en": "Chober Chaber",
+			"Text_ko": "초버 차버(Chober Chaber)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/ChoberChaber.dds"
+		},
+		{
+			"Id": "UniqueHelmetDex5",
+			"Text_en": "Alpha's Howl",
+			"Text_ko": "우두머리의 울부짖음(Alpha's Howl)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Wolfhead.dds"
+		},
+		{
+			"Id": "UniqueShieldStrInt5",
+			"Text_en": "Rise of the Phoenix",
+			"Text_ko": "불사조의 비상(Rise of the Phoenix)",
+			"DDSFile": "Art/2DItems/Armours/Shields/Riseofthephoenix.dds"
+		},
+		{
+			"Id": "UniqueBodyInt5",
+			"Text_en": "Thousand Ribbons",
+			"Text_ko": "천 개의 리본(Thousand Ribbons)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Thousandribbons.dds"
+		},
+		{
+			"Id": "UniqueBodyDex5",
+			"Text_en": "Bronn's Lithe",
+			"Text_ko": "브론의 융통성(Bronn's Lithe)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Bronnslithe.dds"
+		},
+		{
+			"Id": "UniqueBootsInt5",
+			"Text_en": "Rainbowstride",
+			"Text_ko": "무지갯빛 발걸음(Rainbowstride)",
+			"DDSFile": "Art/2DItems/Armours/Boots/rainbowstride.dds"
+		},
+		{
+			"Id": "UniqueBootsStrDex2",
+			"Text_en": "Darkray Vectors",
+			"Text_ko": "어두운 빛의 궤적(Darkray Vectors)",
+			"DDSFile": "Art/2DItems/Armours/Boots/DarkrayVectors.dds"
+		},
+		{
+			"Id": "UniqueStaff3",
+			"Text_en": "Pillar of the Caged God",
+			"Text_ko": "갇힌 신의 기둥(Pillar of the Caged God)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/PillaroftheCagedGod.dds"
+		},
+		{
+			"Id": "UniqueBodyStrInt3",
+			"Text_en": "Icetomb",
+			"Text_ko": "얼음 묘지(Icetomb)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Icetomb.dds"
+		},
+		{
+			"Id": "UniqueBodyInt7",
+			"Text_en": "Soul Mantle",
+			"Text_ko": "영혼의 외투(Soul Mantle)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/SoulMantle.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrDex3",
+			"Text_en": "Wurmfist",
+			"Text_ko": "웜의 주먹(Wurmfist)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/Wurmfist.dds"
+		},
+		{
+			"Id": "UniqueGlovesInt3",
+			"Text_en": "Asenath's Gentle Touch",
+			"Text_ko": "아세나스의 부드러운 손길(Asenath's Gentle Touch)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/AsenathsGentleTouch.dds"
+		},
+		{
+			"Id": "UniqueGlovesInt4",
+			"Text_en": "Kalisa's Grace",
+			"Text_ko": "칼리사의 은총(Kalisa's Grace)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/KalisasGrace.dds"
+		},
+		{
+			"Id": "UniqueGlovesInt5",
+			"Text_en": "Arimagius' Honor",
+			"Text_ko": "아리마기우스의 명예(Arimagius' Honor)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/Arimagiushonour.dds"
+		},
+		{
+			"Id": "UniqueGlovesInt6",
+			"Text_en": "Hellbringer",
+			"Text_ko": "지옥 인도자(Hellbringer)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/Hellbringer.dds"
+		},
+		{
+			"Id": "UniqueGlovesDexInt3",
+			"Text_en": "Thunderfist",
+			"Text_ko": "천둥 주먹(Thunderfist)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/thunderclaw.dds"
+		},
+		{
+			"Id": "UniqueGlovesDexInt4",
+			"Text_en": "Deadman's Hand",
+			"Text_ko": "망자의 손길(Deadman's Hand)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/Deadmanshand.dds"
+		},
+		{
+			"Id": "UniqueHelmetDex6",
+			"Text_en": "Rat's Nest",
+			"Text_ko": "쥐의 둥지(Rat's Nest)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/RatsNest.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt5",
+			"Text_en": "Vizaru's Folly",
+			"Text_ko": "비자루의 어리석음(Vizaru's Folly)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Vizarusfolly.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt6",
+			"Text_en": "Ylfe Ban",
+			"Text_ko": "일피 반(Ylfe Ban)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Ylfeban.dds"
+		},
+		{
+			"Id": "UniqueHelmetStr3",
+			"Text_en": "Abyssus",
+			"Text_ko": "깊은 심연(Abyssus)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Abyssus.dds"
+		},
+		{
+			"Id": "UniqueRapier2",
+			"Text_en": "Aurumvorax",
+			"Text_ko": "금빛 욕망(Aurumvorax)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Rapiers/Aurumvorax.dds"
+		},
+		{
+			"Id": "UniqueRing7",
+			"Text_en": "Thief's Torment",
+			"Text_ko": "도둑의 고통(Thief's Torment)",
+			"DDSFile": "Art/2DItems/Rings/ThiefsTorment.dds"
+		},
+		{
+			"Id": "UniqueHelmetWreath1v2",
+			"Text_en": "Demigod's Triumph (Race 2)",
+			"Text_ko": "반신의 성공(Demigod's Triumph)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Demigodstriumph2.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrDex3",
+			"Text_en": "Deidbell",
+			"Text_ko": "죽음의 종(Deidbell)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Deidbell.dds"
+		},
+		{
+			"Id": "UniqueClaw4",
+			"Text_en": "Last Resort",
+			"Text_ko": "최후의 수단(Last Resort)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/NerasLastResort.dds"
+		},
+		{
+			"Id": "UniqueClaw5",
+			"Text_en": "Leviathan Ivory",
+			"Text_ko": "레비아탄의 엄니(Leviathan Ivory)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/Leviathanivory.dds"
+		},
+		{
+			"Id": "UniqueClaw6_",
+			"Text_en": "Al Dhih",
+			"Text_ko": "알 디(Al Dhih)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/Aldhih.dds"
+		},
+		{
+			"Id": "UniqueRing8",
+			"Text_en": "Ungils's Coil",
+			"Text_ko": "웅힐의 고리(Ungils's Coil)",
+			"DDSFile": "Art/2DItems/Rings/Ring5Unique.dds"
+		},
+		{
+			"Id": "UniqueAmulet10",
+			"Text_en": "Atziri's Foible",
+			"Text_ko": "앗지리의 결점(Atziri's Foible)",
+			"DDSFile": "Art/2DItems/Amulets/Quid.dds"
+		},
+		{
+			"Id": "UniqueRing9",
+			"Text_en": "Lori's Lantern",
+			"Text_ko": "로리의 등불(Lori's Lantern)",
+			"DDSFile": "Art/2DItems/Rings/LorisLantern.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrDex4",
+			"Text_en": "The Bringer of Rain",
+			"Text_ko": "비의 인도자(The Bringer of Rain)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/TheBringerofRain.dds"
+		},
+		{
+			"Id": "UniqueBodyInt8",
+			"Text_en": "Zahndethus' Cassock",
+			"Text_ko": "잔데투스의 성직복(Zahndethus' Cassock)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Zahndethuscassock.dds"
+		},
+		{
+			"Id": "UniqueBodyStrInt4",
+			"Text_en": "Lightbane Raiment",
+			"Text_ko": "사그라든 빛의 의복(Lightbane Raiment)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Lightbanerainment.dds"
+		},
+		{
+			"Id": "UniqueWand3",
+			"Text_en": "Void Battery",
+			"Text_ko": "공허 충전기(Void Battery)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/VoidBattery.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword3",
+			"Text_en": "Rebuke of the Vaal",
+			"Text_ko": "바알의 질책(Rebuke of the Vaal)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/OneHandSword7Unique.dds"
+		},
+		{
+			"Id": "UniqueRing10",
+			"Text_en": "Sibyl's Lament",
+			"Text_ko": "시빌의 한탄(Sibyl's Lament)",
+			"DDSFile": "Art/2DItems/Rings/SibylsLament.dds"
+		},
+		{
+			"Id": "UniqueOneHandAxe1",
+			"Text_en": "Soul Taker",
+			"Text_ko": "영혼 수확자(Soul Taker)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandAxes/Alexaxe.dds"
+		},
+		{
+			"Id": "Amulet13",
+			"Text_en": "Daresso's Salute",
+			"Text_ko": "다레소의 경례(Daresso's Salute)",
+			"DDSFile": "Art/2DItems/Amulets/CitrineAmuletUnique.dds"
+		},
+		{
+			"Id": "Amulet14",
+			"Text_en": "Voll's Devotion",
+			"Text_ko": "볼의 헌신(Voll's Devotion)",
+			"DDSFile": "Art/2DItems/Amulets/AgateAmuletUnique.dds"
+		},
+		{
+			"Id": "Amulet15",
+			"Text_en": "Victario's Acuity",
+			"Text_ko": "빅타리오의 예리함(Victario's Acuity)",
+			"DDSFile": "Art/2DItems/Amulets/TurquoiseAmuletUnique.dds"
+		},
+		{
+			"Id": "Ring11",
+			"Text_en": "Gifts from Above",
+			"Text_ko": "하늘에서 내려준 선물(Gifts from Above)",
+			"DDSFile": "Art/2DItems/Rings/DiamondRing.dds"
+		},
+		{
+			"Id": "Ring12",
+			"Text_en": "Death Rush",
+			"Text_ko": "죽음의 재촉(Death Rush)",
+			"DDSFile": "Art/2DItems/Rings/TopazRuby.dds"
+		},
+		{
+			"Id": "Ring13",
+			"Text_en": "Shavronne's Revelation",
+			"Text_ko": "샤브론의 계시(Shavronne's Revelation)",
+			"DDSFile": "Art/2DItems/Rings/TopazSapphire.dds"
+		},
+		{
+			"Id": "Belt5",
+			"Text_en": "Auxium",
+			"Text_ko": "오시움(Auxium)",
+			"DDSFile": "Art/2DItems/Belts/Belt5.dds"
+		},
+		{
+			"Id": "UniqueBootsDex4",
+			"Text_en": "The Blood Dance",
+			"Text_ko": "피의 춤(The Blood Dance)",
+			"DDSFile": "Art/2DItems/Armours/Boots/GoreFrenzy.dds"
+		},
+		{
+			"Id": "UniqueTwoHandMace6",
+			"Text_en": "Kongor's Undying Rage",
+			"Text_ko": "콩고르의 끝없는 격노(Kongor's Undying Rage)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/KongorsUndyingRage.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword4",
+			"Text_en": "The Goddess Scorned",
+			"Text_ko": "경멸받는 여신(The Goddess Scorned)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/TheGoddessscorned.dds"
+		},
+		{
+			"Id": "UniqueAmulet16",
+			"Text_en": "The Anvil",
+			"Text_ko": "모루(The Anvil)",
+			"DDSFile": "Art/2DItems/Amulets/Anvil.dds"
+		},
+		{
+			"Id": "UniqueSceptre3",
+			"Text_en": "Mon'tregul's Grasp",
+			"Text_ko": "몬트레굴의 장악(Mon'tregul's Grasp)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/MontregulsGrasp.dds"
+		},
+		{
+			"Id": "UniqueRing14",
+			"Text_en": "Perandus Signet",
+			"Text_ko": "페란두스 인장(Perandus Signet)",
+			"DDSFile": "Art/2DItems/Rings/LadyRing.dds"
+		},
+		{
+			"Id": "UniqueRing15",
+			"Text_en": "Pyre",
+			"Text_ko": "장작(Pyre)",
+			"DDSFile": "Art/2DItems/Rings/Cherufe.dds"
+		},
+		{
+			"Id": "UniqueFlask1",
+			"Text_en": "Divination Distillate",
+			"Text_ko": "예언의 정수(Divination Distillate)",
+			"DDSFile": "Art/2DItems/Flasks/yFlasks17.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt7",
+			"Text_en": "Crown of Eyes",
+			"Text_ko": "눈알 왕관(Crown of Eyes)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/CrownofEyes.dds"
+		},
+		{
+			"Id": "UniqueBodyDex6",
+			"Text_en": "Queen of the Forest",
+			"Text_ko": "숲의 여왕(Queen of the Forest)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/QueenoftheForest.dds"
+		},
+		{
+			"Id": "UniqueBootsDemigods1",
+			"Text_en": "Demigod's Stride (Race 3)",
+			"Text_ko": "반신의 질주(Demigod's Stride)",
+			"DDSFile": "Art/2DItems/Armours/Boots/DemigodsStride.dds"
+		},
+		{
+			"Id": "UniqueBootsDemigods2",
+			"Text_en": "Demigod's Stride (Race 4)",
+			"Text_ko": "반신의 질주(Demigod's Stride)",
+			"DDSFile": "Art/2DItems/Armours/Boots/DemigodsStrideAlt.dds"
+		},
+		{
+			"Id": "UniqueBow9",
+			"Text_en": "Windripper",
+			"Text_ko": "윈드리퍼(Windripper)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/Eagle.dds"
+		},
+		{
+			"Id": "UniqueBodyStr3",
+			"Text_en": "Death's Oath",
+			"Text_ko": "죽음의 서약(Death's Oath)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Deathsoath.dds"
+		},
+		{
+			"Id": "UniqueTwoHandAxe6",
+			"Text_en": "Wings of Entropy",
+			"Text_ko": "엔트로피의 날개(Wings of Entropy)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandAxes/Entropywings.dds"
+		},
+		{
+			"Id": "UniqueBodyStrDex1",
+			"Text_en": "Belly of the Beast",
+			"Text_ko": "짐승의 소굴(Belly of the Beast)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/bellyofthebeast.dds"
+		},
+		{
+			"Id": "UniqueHelmetDexInt2",
+			"Text_en": "Leer Cast",
+			"Text_ko": "음흉한 시선(Leer Cast)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/HelmetDexInt9x.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrInt3",
+			"Text_en": "Mindspiral",
+			"Text_ko": "정신의 소용돌이(Mindspiral)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Mindspiral.dds"
+		},
+		{
+			"Id": "UniqueBootsDex5",
+			"Text_en": "Seven-League Step",
+			"Text_ko": "바람의 걸음(Seven-League Step)",
+			"DDSFile": "Art/2DItems/Armours/Boots/BootsDexUnique3.dds"
+		},
+		{
+			"Id": "UniqueBootsStrDex3",
+			"Text_en": "Dusktoe",
+			"Text_ko": "황혼의 끝자락(Dusktoe)",
+			"DDSFile": "Art/2DItems/Armours/Boots/BootsStrDexUnique3.dds"
+		},
+		{
+			"Id": "UniqueTwoHandAxe5",
+			"Text_en": "Wideswing",
+			"Text_ko": "넓은 자루 도끼(Wideswing)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandAxes/Wideswing.dds"
+		},
+		{
+			"Id": "UniqueTwoHandMace7",
+			"Text_en": "Quecholli",
+			"Text_ko": "퀘촐리(Quecholli)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace5Unique.dds"
+		},
+		{
+			"Id": "UniqueTwoHandSword5",
+			"Text_en": "Mordhau",
+			"Text_ko": "모드하우(Mordhau)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandSwords/Mordhau.dds"
+		},
+		{
+			"Id": "UniqueDagger5",
+			"Text_en": "Maligaro's Etcher",
+			"Text_ko": "말리가로의 부각사(Maligaro's Etcher)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/Felltooth.dds"
+		},
+		{
+			"Id": "UniqueDagger6",
+			"Text_en": "Felltooth",
+			"Text_ko": "펠투스(Felltooth)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/Heartbreaker.dds"
+		},
+		{
+			"Id": "UniqueRapier3",
+			"Text_en": "Galla's Riposte",
+			"Text_ko": "갈라의 반격(Galla's Riposte)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/GallasRiposte.dds"
+		},
+		{
+			"Id": "UniqueSceptre4",
+			"Text_en": "Pagan Geis",
+			"Text_ko": "이교도의 응고제(Pagan Geis)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/PaganGeis.dds"
+		},
+		{
+			"Id": "UniqueSceptre5",
+			"Text_en": "Stillwater",
+			"Text_ko": "잔잔한 수면(Stillwater)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/scepter8unique.dds"
+		},
+		{
+			"Id": "UniqueBow10",
+			"Text_en": "Voltaxic Rift",
+			"Text_ko": "전도성 균열(Voltaxic Rift)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/Voidshaft.dds"
+		},
+		{
+			"Id": "UniqueFlask2",
+			"Text_en": "Doedre's Elixir",
+			"Text_ko": "도이드리의 묘약(Doedre's Elixir)",
+			"DDSFile": "Art/2DItems/Flasks/yFlask4.dds"
+		},
+		{
+			"Id": "UniqueAmulet17",
+			"Text_en": "Marylene's Fallacy",
+			"Text_ko": "마릴린의 오산(Marylene's Fallacy)",
+			"DDSFile": "Art/2DItems/Amulets/MarylenesFallacy.dds"
+		},
+		{
+			"Id": "UniqueBodyDex7",
+			"Text_en": "Briskwrap",
+			"Text_ko": "활력의 겉옷(Briskwrap)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Briskwrap.dds"
+		},
+		{
+			"Id": "UniqueTwoHandSword6",
+			"Text_en": "Oro's Sacrifice",
+			"Text_ko": "오로의 희생(Oro's Sacrifice)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandSwords/OrosSacrifice.dds"
+		},
+		{
+			"Id": "UniqueClaw7",
+			"Text_en": "Cybil's Paw",
+			"Text_ko": "시빌의 발(Cybil's Paw)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/CybilsClaw.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword5",
+			"Text_en": "Prismatic Eclipse",
+			"Text_ko": "분광 월식(Prismatic Eclipse)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/PrismaticEclipse.dds"
+		},
+		{
+			"Id": "UniqueBodyStrDex3",
+			"Text_en": "Daresso's Defiance",
+			"Text_ko": "다레소의 저항(Daresso's Defiance)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/DaressosDefiance.dds"
+		},
+		{
+			"Id": "UniqueShieldStrInt6",
+			"Text_en": "Santoni's Faith",
+			"Text_ko": "산토니의 믿음(Santoni's Faith)",
+			"DDSFile": "Art/2DItems/Armours/Shields/SantonisFaith.dds"
+		},
+		{
+			"Id": "UniqueRing16",
+			"Text_en": "Ming's Heart",
+			"Text_ko": "밍의 심장(Ming's Heart)",
+			"DDSFile": "Art/2DItems/Rings/MingsHeart.dds"
+		},
+		{
+			"Id": "UniqueBodyStrDex2",
+			"Text_en": "Lightning Coil",
+			"Text_ko": "번개 도선(Lightning Coil)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/LightningCoil.dds"
+		},
+		{
+			"Id": "UniqueRing17",
+			"Text_en": "Romira's Banquet",
+			"Text_ko": "로미라의 연회(Romira's Banquet)",
+			"DDSFile": "Art/2DItems/Rings/RomirasBanquet.dds"
+		},
+		{
+			"Id": "UniqueOneHandAxe2",
+			"Text_en": "Dyadus",
+			"Text_ko": "디아두스(Dyadus)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandAxes/Dyadus.dds"
+		},
+		{
+			"Id": "UniqueBelt6",
+			"Text_en": "Sunblast",
+			"Text_ko": "태양의 파동(Sunblast)",
+			"DDSFile": "Art/2DItems/Belts/Belt8.dds"
+		},
+		{
+			"Id": "UniqueBootsDex6",
+			"Text_en": "Deerstalker",
+			"Text_ko": "사슴 추적자(Deerstalker)",
+			"DDSFile": "Art/2DItems/Armours/Boots/BootsDexUnique1.dds"
+		},
+		{
+			"Id": "UniqueRing18",
+			"Text_en": "Berek's Pass",
+			"Text_ko": "베렉의 길(Berek's Pass)",
+			"DDSFile": "Art/2DItems/Rings/BereksPass.dds"
+		},
+		{
+			"Id": "UniqueRing19",
+			"Text_en": "Berek's Grip",
+			"Text_ko": "베렉의 손아귀(Berek's Grip)",
+			"DDSFile": "Art/2DItems/Rings/BereksGrip.dds"
+		},
+		{
+			"Id": "UniqueRing20",
+			"Text_en": "Berek's Respite",
+			"Text_ko": "베렉의 유예(Berek's Respite)",
+			"DDSFile": "Art/2DItems/Rings/BereksRespite.dds"
+		},
+		{
+			"Id": "UniqueRing21",
+			"Text_en": "The Taming",
+			"Text_ko": "조련(The Taming)",
+			"DDSFile": "Art/2DItems/Rings/TheTaming.dds"
+		},
+		{
+			"Id": "UniqueFlask3",
+			"Text_en": "Blood of the Karui",
+			"Text_ko": "카루이의 피(Blood of the Karui)",
+			"DDSFile": "Art/2DItems/Flasks/BloodOfTheKarui.dds"
+		},
+		{
+			"Id": "UniqueFlask4",
+			"Text_en": "Lavianga's Spirit",
+			"Text_ko": "라비앙가의 혼백(Lavianga's Spirit)",
+			"DDSFile": "Art/2DItems/Flasks/LaviangasOil.dds"
+		},
+		{
+			"Id": "UniqueHelmetDexInt3",
+			"Text_en": "The Gull",
+			"Text_ko": "갈매기(The Gull)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/TheGull.dds"
+		},
+		{
+			"Id": "UniqueBelt7",
+			"Text_en": "Headhunter",
+			"Text_ko": "헤드헌터(Headhunter)",
+			"DDSFile": "Art/2DItems/Belts/Headhunter.dds"
+		},
+		{
+			"Id": "UniqueBelt8",
+			"Text_en": "Immortal Flesh",
+			"Text_ko": "불멸의 육체(Immortal Flesh)",
+			"DDSFile": "Art/2DItems/Belts/ImmortalFlesh.dds"
+		},
+		{
+			"Id": "UniqueBodyDexInt2",
+			"Text_en": "Cloak of Defiance",
+			"Text_ko": "저항의 망토(Cloak of Defiance)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/CloakOfDefiance.dds"
+		},
+		{
+			"Id": "UniqueDescentDagger1",
+			"Text_en": "Fragment of Eternity",
+			"Text_ko": "영원의 조각(Fragment of Eternity)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/Dagger1.dds"
+		},
+		{
+			"Id": "UniqueDescentWand1",
+			"Text_en": "Splinter of the Moon",
+			"Text_ko": "달의 파편(Splinter of the Moon)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/Wand1.dds"
+		},
+		{
+			"Id": "UniqueDescentShield1",
+			"Text_en": "Remnant of Empires",
+			"Text_ko": "제국의 유물(Remnant of Empires)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldDex1.dds"
+		},
+		{
+			"Id": "UniqueDescentOneHandAxe1",
+			"Text_en": "Rust of Winter",
+			"Text_ko": "부패한 겨울(Rust of Winter)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe1.dds"
+		},
+		{
+			"Id": "UniqueDescentOneHandMace1",
+			"Text_en": "Ashes of the Sun",
+			"Text_ko": "태양의 재(Ashes of the Sun)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandMaces/OneHandMace1.dds"
+		},
+		{
+			"Id": "UniqueDescentTwoHandSword1",
+			"Text_en": "Thunder of the Dawn",
+			"Text_ko": "새벽의 천둥(Thunder of the Dawn)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword1.dds"
+		},
+		{
+			"Id": "UniqueDescentStaff1",
+			"Text_en": "Vestige of Divinity",
+			"Text_ko": "신성의 자취(Vestige of Divinity)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/Staff1.dds"
+		},
+		{
+			"Id": "UniqueDescentBow1",
+			"Text_en": "Relic of the Cycle",
+			"Text_ko": "순환의 유물(Relic of the Cycle)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/Bow1.dds"
+		},
+		{
+			"Id": "UniqueDescentHelmet1",
+			"Text_en": "Tear of Entropy",
+			"Text_ko": "엔트로피의 눈물(Tear of Entropy)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/HelmetStr1.dds"
+		},
+		{
+			"Id": "UniqueDescentBelt1",
+			"Text_en": "Chains of Time",
+			"Text_ko": "시간의 사슬(Chains of Time)",
+			"DDSFile": "Art/2DItems/Belts/Belt1.dds"
+		},
+		{
+			"Id": "UniqueDescentQuiver1",
+			"Text_en": "Slivers of Providence",
+			"Text_ko": "섭리의 편린 화살통(Slivers of Providence)",
+			"DDSFile": "Art/2DItems/Quivers/QuiverSerrated.dds"
+		},
+		{
+			"Id": "UniqueWand4",
+			"Text_en": "Lifesprig",
+			"Text_ko": "생명의 가지(Lifesprig)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/LifeSprig.dds"
+		},
+		{
+			"Id": "UniqueSceptre6",
+			"Text_en": "Doon Cuebiyari",
+			"Text_ko": "둔 큐비야리(Doon Cuebiyari)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandMaces/DoonCuebiyari.dds"
+		},
+		{
+			"Id": "UniqueGlovesDemigods1",
+			"Text_en": "Demigod's Touch",
+			"Text_ko": "반신의 손길(Demigod's Touch)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/DemigodsTouch.dds"
+		},
+		{
+			"Id": "UniqueBootsStrDex4",
+			"Text_en": "Ghostmarch",
+			"Text_ko": "유령의 행진(Ghostmarch)",
+			"DDSFile": "Art/2DItems/Armours/Boots/BootsStrDexUnique1.dds"
+		},
+		{
+			"Id": "UniqueBodyStr4",
+			"Text_en": "Solaris Lorica",
+			"Text_ko": "솔라리스 흉갑(Solaris Lorica)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/tornfleshofgods.dds"
+		},
+		{
+			"Id": "UniqueShieldDex4",
+			"Text_en": "Chalice of Horrors",
+			"Text_ko": "공포의 성배(Chalice of Horrors)",
+			"DDSFile": "Art/2DItems/Armours/Shields/Chaliceofhorrors.dds"
+		},
+		{
+			"Id": "UniqueShieldInt3",
+			"Text_en": "Death Rattle",
+			"Text_ko": "죽음의 소란(Death Rattle)",
+			"DDSFile": "Art/2DItems/Armours/Shields/Deathrattle.dds"
+		},
+		{
+			"Id": "UniqueShieldStrDex2",
+			"Text_en": "Wheel of the Stormsail",
+			"Text_ko": "거친 항해의 타륜(Wheel of the Stormsail)",
+			"DDSFile": "Art/2DItems/Armours/Shields/Wheelofthestormsail.dds"
+		},
+		{
+			"Id": "UniqueShieldStrInt7",
+			"Text_en": "Alkem Eira",
+			"Text_ko": "알켐 에이라(Alkem Eira)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldStrIntUnique3.dds"
+		},
+		{
+			"Id": "UniqueGlovesDex3",
+			"Text_en": "Ironweld",
+			"Text_ko": "쇠 용접(Ironweld)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/GlovesDexUnique1.dds"
+		},
+		{
+			"Id": "UniqueDagger7",
+			"Text_en": "Celestial Fragment",
+			"Text_ko": "천공의 조각(Celestial Fragment)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/Dagger1unique.dds"
+		},
+		{
+			"Id": "UniqueOneHandAxe3",
+			"Text_en": "The Screaming Eagle",
+			"Text_ko": "울부짖는 독수리(The Screaming Eagle)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandAxes/Screamingeagle.dds"
+		},
+		{
+			"Id": "UniqueOneHandAxe4",
+			"Text_en": "Boreal Shepherd",
+			"Text_ko": "북쪽의 양치기(Boreal Shepherd)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe5Unique.dds"
+		},
+		{
+			"Id": "UniqueOneHandMace2",
+			"Text_en": "Bartek's Finger",
+			"Text_ko": "바텍의 손가락(Bartek's Finger)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandMaces/Barteksfinger.dds"
+		},
+		{
+			"Id": "UniqueWand5",
+			"Text_en": "Stormblast",
+			"Text_ko": "태풍 파열(Stormblast)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/Stormblast.dds"
+		},
+		{
+			"Id": "UniqueStaff4",
+			"Text_en": "Fencoil",
+			"Text_ko": "늪 가지(Fencoil)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/Staff1unique.dds"
+		},
+		{
+			"Id": "UniqueDagger8",
+			"Text_en": "Bino's Kitchen Knife",
+			"Text_ko": "비노의 부엌칼(Bino's Kitchen Knife)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/BinosKitchenKnife.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrInt4",
+			"Text_en": "Veil of the Night",
+			"Text_ko": "밤의 장막(Veil of the Night)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/VeilOfTheNight.dds"
+		},
+		{
+			"Id": "UniqueFishingRod1",
+			"Text_en": "Song of the Sirens",
+			"Text_ko": "사이렌의 노래(Song of the Sirens)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/FishingRods/UniqueFishingRod1.dds"
+		},
+		{
+			"Id": "UniqueHelmetDexInt4",
+			"Text_en": "The Three Dragons",
+			"Text_ko": "세 마리의 용(The Three Dragons)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/ThreeDragons.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrInt1",
+			"Text_en": "Shackles of the Wretched",
+			"Text_ko": "불운아의 족쇄(Shackles of the Wretched)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/RecallingtheWretched.dds"
+		},
+		{
+			"Id": "UniqueOneHandMace3",
+			"Text_en": "Mj?lner",
+			"Text_ko": "묠니르(Mj?lner)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandMaces/Mjolner.dds"
+		},
+		{
+			"Id": "UniqueStaff5",
+			"Text_en": "Dying Breath",
+			"Text_ko": "죽어가는 숨결(Dying Breath)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/DyingBreath.dds"
+		},
+		{
+			"Id": "UniqueGlovesDexInt5",
+			"Text_en": "Snakebite",
+			"Text_ko": "뱀 이빨(Snakebite)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/frenzygloves.dds"
+		},
+		{
+			"Id": "UniqueBootsStrInt2",
+			"Text_en": "Alberon's Warpath",
+			"Text_ko": "알베른의 적대(Alberon's Warpath)",
+			"DDSFile": "Art/2DItems/Armours/Boots/Alberonswarpath.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrDex5",
+			"Text_en": "Skullhead",
+			"Text_ko": "두개골 투구(Skullhead)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Skullhead.dds"
+		},
+		{
+			"Id": "UniqueRing23",
+			"Text_en": "Voideye",
+			"Text_ko": "공허의 눈(Voideye)",
+			"DDSFile": "Art/2DItems/Rings/unused4.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrDex4",
+			"Text_en": "Vaal Caress",
+			"Text_ko": "바알의 손길(Vaal Caress)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/VaalCaress.dds"
+		},
+		{
+			"Id": "UniqueQuiver3",
+			"Text_en": "Drillneck",
+			"Text_ko": "치명적 송곳(Drillneck)",
+			"DDSFile": "Art/2DItems/Quivers/Drillneck.dds"
+		},
+		{
+			"Id": "UniqueQuiver4",
+			"Text_en": "Rearguard",
+			"Text_ko": "후위 경계(Rearguard)",
+			"DDSFile": "Art/2DItems/Quivers/Rearguard.dds"
+		},
+		{
+			"Id": "UniqueStaff6_",
+			"Text_en": "Pledge of Hands",
+			"Text_ko": "손으로 맺은 서약(Pledge of Hands)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/PledgeofHands.dds"
+		},
+		{
+			"Id": "UniqueBootsDex7",
+			"Text_en": "Atziri's Step",
+			"Text_ko": "앗지리의 걸음(Atziri's Step)",
+			"DDSFile": "Art/2DItems/Armours/Boots/AtzirisStep.dds"
+		},
+		{
+			"Id": "UniqueBelt9",
+			"Text_en": "Doryani's Invitation",
+			"Text_ko": "도리아니의 초대(Doryani's Invitation)",
+			"DDSFile": "Art/2DItems/Belts/DoryanisInvitation.dds"
+		},
+		{
+			"Id": "UniqueFlask5",
+			"Text_en": "Atziri's Promise",
+			"Text_ko": "앗지리의 약속(Atziri's Promise)",
+			"DDSFile": "Art/2DItems/Flasks/AtzirisPromise.dds"
+		},
+		{
+			"Id": "UniqueGlovesStr3",
+			"Text_en": "Atziri's Acuity",
+			"Text_ko": "앗지리의 예리함(Atziri's Acuity)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/AtzirisAcuity.dds"
+		},
+		{
+			"Id": "UniqueBodyStrDexInt1",
+			"Text_en": "Atziri's Splendour",
+			"Text_ko": "앗지리의 위풍(Atziri's Splendour)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/AtzirisSplendour.dds"
+		},
+		{
+			"Id": "UniqueHelmetDexInt5",
+			"Text_en": "The Vertex",
+			"Text_ko": "최정점(The Vertex)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/TheVertex.dds"
+		},
+		{
+			"Id": "UniqueTwoHandAxe7",
+			"Text_en": "Atziri's Disfavour",
+			"Text_ko": "앗지리의 경멸(Atziri's Disfavour)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandAxes/AtzirisDisfavour.dds"
+		},
+		{
+			"Id": "UniqueBodyInt9",
+			"Text_en": "Vis Mortis",
+			"Text_ko": "비스 모티스(Vis Mortis)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/VisMortis.dds"
+		},
+		{
+			"Id": "UniqueSceptre7",
+			"Text_en": "Doryani's Catalyst",
+			"Text_ko": "도리아니의 기폭제(Doryani's Catalyst)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/DoryanisCatalyst.dds"
+		},
+		{
+			"Id": "UniqueWand6",
+			"Text_en": "Piscator's Vigil",
+			"Text_ko": "피스카토의 기도(Piscator's Vigil)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/PiscatorsVigil.dds"
+		},
+		{
+			"Id": "UniqueBeltDemigods1",
+			"Text_en": "Demigod's Bounty",
+			"Text_ko": "반신의 하사품(Demigod's Bounty)",
+			"DDSFile": "Art/2DItems/Belts/Demibelt1.dds"
+		},
+		{
+			"Id": "UniqueQuiver5",
+			"Text_en": "Asphyxia's Wrath",
+			"Text_ko": "질식의 진노(Asphyxia's Wrath)",
+			"DDSFile": "Art/2DItems/Quivers/AsphyxiasWrath.dds"
+		},
+		{
+			"Id": "UniqueBodyStrInt5",
+			"Text_en": "Incandescent Heart",
+			"Text_ko": "백열하는 심장(Incandescent Heart)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Illuminatis.dds"
+		},
+		{
+			"Id": "UniqueQuiver6",
+			"Text_en": "Hyrri's Bite",
+			"Text_ko": "하이리의 이빨(Hyrri's Bite)",
+			"DDSFile": "Art/2DItems/Quivers/HryyisBite.dds"
+		},
+		{
+			"Id": "UniqueBow11",
+			"Text_en": "Doomfletch",
+			"Text_ko": "죽음의 깃(Doomfletch)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/DoomFletch.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword6",
+			"Text_en": "Hyaon's Fury",
+			"Text_ko": "하야온의 광분(Hyaon's Fury)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/HyaonsFury.dds"
+		},
+		{
+			"Id": "UniqueBootsStr2",
+			"Text_en": "Kaom's Roots",
+			"Text_ko": "카옴의 근본(Kaom's Roots)",
+			"DDSFile": "Art/2DItems/Armours/Boots/KaomsRoots.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword7",
+			"Text_en": "Fidelitas' Spike",
+			"Text_ko": "피델리타스의 가시(Fidelitas' Spike)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/FidelitasSpike.dds"
+		},
+		{
+			"Id": "UniqueQuiver7",
+			"Text_en": "Soul Strike",
+			"Text_ko": "영혼의 일격(Soul Strike)",
+			"DDSFile": "Art/2DItems/Quivers/Soulstrike.dds"
+		},
+		{
+			"Id": "UniqueFlask6",
+			"Text_en": "Forbidden Taste",
+			"Text_ko": "금단의 맛(Forbidden Taste)",
+			"DDSFile": "Art/2DItems/Flasks/PhantomBlood.dds"
+		},
+		{
+			"Id": "UniqueDescentOneHandSword1",
+			"Text_en": "Blood of Summer",
+			"Text_ko": "여름날의 피(Blood of Summer)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/OneHandSword1.dds"
+		},
+		{
+			"Id": "UniqueDescentClaw1",
+			"Text_en": "Scar of Fate",
+			"Text_ko": "운명의 흉터(Scar of Fate)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/Claw1.dds"
+		},
+		{
+			"Id": "UniqueStaff7",
+			"Text_en": "Hegemony's Era",
+			"Text_ko": "패권의 시대(Hegemony's Era)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/HegemonysEra.dds"
+		},
+		{
+			"Id": "UniqueShieldDexInt1",
+			"Text_en": "Jaws of Agony",
+			"Text_ko": "고통의 턱(Jaws of Agony)",
+			"DDSFile": "Art/2DItems/Armours/Shields/BearTrapShield2.dds"
+		},
+		{
+			"Id": "UniqueShieldDex5",
+			"Text_en": "Thousand Teeth Temu",
+			"Text_ko": "천 개의 이빨 테무(Thousand Teeth Temu)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldDexUnique1.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword8",
+			"Text_en": "Fairgraves' Bearing",
+			"Text_ko": "페어그레이브즈의 인내(Fairgraves' Bearing)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Rapiers/Rapier4.dds"
+		},
+		{
+			"Id": "UniqueRing24",
+			"Text_en": "Mokou's Embrace",
+			"Text_ko": "모코우의 포옹(Mokou's Embrace)",
+			"DDSFile": "Art/2DItems/Rings/MokousEmbrace.dds"
+		},
+		{
+			"Id": "UniqueDagger9",
+			"Text_en": "Mark of the Doubting Knight",
+			"Text_ko": "불안한 기사의 징표(Mark of the Doubting Knight)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/DoubtingKnight.dds"
+		},
+		{
+			"Id": "UniqueFlask7",
+			"Text_en": "Rumi's Concoction",
+			"Text_ko": "루미의 혼합물(Rumi's Concoction)",
+			"DDSFile": "Art/2DItems/Flasks/BlockFlask.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword9",
+			"Text_en": "Dreamfeather",
+			"Text_ko": "꿈의 깃털(Dreamfeather)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/Dreamfeather.dds"
+		},
+		{
+			"Id": "UniqueBootsStrInt3",
+			"Text_en": "Gang's Momentum",
+			"Text_ko": "무리의 추진력(Gang's Momentum)",
+			"DDSFile": "Art/2DItems/Armours/Boots/GangsBoots.dds"
+		},
+		{
+			"Id": "UniqueBootsDex8",
+			"Text_en": "Nomic's Storm",
+			"Text_ko": "노믹의 태풍(Nomic's Storm)",
+			"DDSFile": "Art/2DItems/Armours/Boots/NomicsStorm.dds"
+		},
+		{
+			"Id": "UniqueBodyStrDex4",
+			"Text_en": "Cherrubim's Maleficence",
+			"Text_ko": "체루빔의 악행(Cherrubim's Maleficence)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/CherrubimsCrave.dds"
+		},
+		{
+			"Id": "UniqueWand7",
+			"Text_en": "Apep's Rage",
+			"Text_ko": "아펩의 격노(Apep's Rage)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/ApepsRage.dds"
+		},
+		{
+			"Id": "UniqueOneHandAxe5",
+			"Text_en": "Jack, the Axe",
+			"Text_ko": "도끼마 잭(Jack, the Axe)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandAxes/Jacktheaxe.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrInt2",
+			"Text_en": "Null and Void",
+			"Text_ko": "무효와 공허(Null and Void)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/NullAndVoid.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrDex5",
+			"Text_en": "Flesh and Spirit",
+			"Text_ko": "육체와 영혼(Flesh and Spirit)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/FleshAndSpirit.dds"
+		},
+		{
+			"Id": "UniqueGlovesDexInt6",
+			"Text_en": "Shadows and Dust",
+			"Text_ko": "그림자와 먼지(Shadows and Dust)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/ShadowsAndDust.dds"
+		},
+		{
+			"Id": "UniqueTwoHandAxe8",
+			"Text_en": "The Harvest",
+			"Text_ko": "수확(The Harvest)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandAxes/TheExtractor.dds"
+		},
+		{
+			"Id": "UniqueTwoHandSword7",
+			"Text_en": "Edge of Madness",
+			"Text_ko": "광기의 칼날(Edge of Madness)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandSwords/EdgeOfMadness.dds"
+		},
+		{
+			"Id": "UniqueSceptre8",
+			"Text_en": "The Dark Seer",
+			"Text_ko": "어둠 예견자(The Dark Seer)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/VoidGaze.dds"
+		},
+		{
+			"Id": "UniqueQuiver8",
+			"Text_en": "Craghead",
+			"Text_ko": "바위 화살촉(Craghead)",
+			"DDSFile": "Art/2DItems/Quivers/QuiverUnique4.dds"
+		},
+		{
+			"Id": "UniqueRing25",
+			"Text_en": "Malachai's Artifice",
+			"Text_ko": "말라카이의 책략(Malachai's Artifice)",
+			"DDSFile": "Art/2DItems/Rings/MalachaisArtifice.dds"
+		},
+		{
+			"Id": "UniqueShieldInt4",
+			"Text_en": "Sentari's Answer",
+			"Text_ko": "센타리의 응답(Sentari's Answer)",
+			"DDSFile": "Art/2DItems/Armours/Shields/SantarisAnswer.dds"
+		},
+		{
+			"Id": "UniqueTwoHandSword8",
+			"Text_en": "Doomsower",
+			"Text_ko": "멸망 유발자(Doomsower)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandSwords/DoomSower.dds"
+		},
+		{
+			"Id": "UniqueShieldDex6",
+			"Text_en": "Great Old One's Ward",
+			"Text_ko": "위대한 고대 신의 수호(Great Old One's Ward)",
+			"DDSFile": "Art/2DItems/Armours/Shields/GreatOldOnesWard.dds"
+		},
+		{
+			"Id": "UniqueRingDemigods1",
+			"Text_en": "Demigod's Eye",
+			"Text_ko": "반신의 눈(Demigod's Eye)",
+			"DDSFile": "Art/2DItems/Rings/DemigodsBand.dds"
+		},
+		{
+			"Id": "UniqueStaff8",
+			"Text_en": "Agnerod",
+			"Text_ko": "아그네로드(Agnerod)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/Staff6unique.dds"
+		},
+		{
+			"Id": "UniqueAmuletVictor1",
+			"Text_en": "Talisman of the Victor",
+			"Text_ko": "승리자의 부적(Talisman of the Victor)",
+			"DDSFile": "Art/2DItems/Amulets/TalismanoftheVictor.dds"
+		},
+		{
+			"Id": "UniqueStaff9",
+			"Text_en": "The Blood Thorn",
+			"Text_ko": "피의 가시(The Blood Thorn)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/TheBloodThorn.dds"
+		},
+		{
+			"Id": "UniqueBelt10",
+			"Text_en": "Prismweave",
+			"Text_ko": "빛의 매듭(Prismweave)",
+			"DDSFile": "Art/2DItems/Belts/Prismweave.dds"
+		},
+		{
+			"Id": "UniqueBelt11",
+			"Text_en": "Bated Breath",
+			"Text_ko": "약해진 숨결(Bated Breath)",
+			"DDSFile": "Art/2DItems/Belts/BatedBreath.dds"
+		},
+		{
+			"Id": "UniqueRing26",
+			"Text_en": "Kikazaru",
+			"Text_ko": "키카자루(Kikazaru)",
+			"DDSFile": "Art/2DItems/Rings/Kikazaru.dds"
+		},
+		{
+			"Id": "UniqueWand8",
+			"Text_en": "Reverberation Rod",
+			"Text_ko": "울림의 막대(Reverberation Rod)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/ReverberationRod.dds"
+		},
+		{
+			"Id": "UniqueAmulet18",
+			"Text_en": "Ungil's Harmony",
+			"Text_ko": "웅힐의 조화(Ungil's Harmony)",
+			"DDSFile": "Art/2DItems/Amulets/UngilsHarmony.dds"
+		},
+		{
+			"Id": "UniqueShieldDexInt2",
+			"Text_en": "Maligaro's Lens",
+			"Text_ko": "말리가로의 렌즈(Maligaro's Lens)",
+			"DDSFile": "Art/2DItems/Armours/Shields/MaligarosLens.dds"
+		},
+		{
+			"Id": "UniqueBelt12",
+			"Text_en": "Maligaro's Restraint",
+			"Text_ko": "말리가로의 속박(Maligaro's Restraint)",
+			"DDSFile": "Art/2DItems/Belts/MaligarosRestraint.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrInt5",
+			"Text_en": "The Broken Crown",
+			"Text_ko": "부서진 왕관(The Broken Crown)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/BrokenCrown.dds"
+		},
+		{
+			"Id": "UniqueQuiver9",
+			"Text_en": "Maloney's Nightfall",
+			"Text_ko": "말로니의 해질녘(Maloney's Nightfall)",
+			"DDSFile": "Art/2DItems/Quivers/MaloneysNightfall.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrDex6",
+			"Text_en": "Surgebinders",
+			"Text_ko": "몰려드는 격동(Surgebinders)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/SurgeBinders.dds"
+		},
+		{
+			"Id": "UniqueBelt13",
+			"Text_en": "Belt of the Deceiver",
+			"Text_ko": "기만자의 허리띠(Belt of the Deceiver)",
+			"DDSFile": "Art/2DItems/Belts/BeltOfTheDeciever.dds"
+		},
+		{
+			"Id": "UniqueRing27",
+			"Text_en": "Timeclasp",
+			"Text_ko": "시간의 속박(Timeclasp)",
+			"DDSFile": "Art/2DItems/Rings/Timeclasp.dds"
+		},
+		{
+			"Id": "UniqueRing28",
+			"Text_en": "Bloodboil",
+			"Text_ko": "끓는 피(Bloodboil)",
+			"DDSFile": "Art/2DItems/Rings/BloodBoil.dds"
+		},
+		{
+			"Id": "UniqueBow12",
+			"Text_en": "Null's Inclination",
+			"Text_ko": "몰살 의지(Null's Inclination)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/NullBow.dds"
+		},
+		{
+			"Id": "UniqueAmulet19",
+			"Text_en": "Rashkaldor's Patience",
+			"Text_ko": "라시칼도어의 인내(Rashkaldor's Patience)",
+			"DDSFile": "Art/2DItems/Amulets/RashkaldorsPatience.dds"
+		},
+		{
+			"Id": "UniqueRing29",
+			"Text_en": "Valako's Sign",
+			"Text_ko": "발라코의 표식(Valako's Sign)",
+			"DDSFile": "Art/2DItems/Rings/ValakosSign.dds"
+		},
+		{
+			"Id": "UniqueRing30",
+			"Text_en": "Tasalio's Sign",
+			"Text_ko": "타살리오의 표식(Tasalio's Sign)",
+			"DDSFile": "Art/2DItems/Rings/TasaliosSign.dds"
+		},
+		{
+			"Id": "UniqueRing31",
+			"Text_en": "Ngamahu's Sign",
+			"Text_ko": "나마후의 표식(Ngamahu's Sign)",
+			"DDSFile": "Art/2DItems/Rings/NgamahusSign.dds"
+		},
+		{
+			"Id": "UniqueBodyStrDex5",
+			"Text_en": "The Rat Cage",
+			"Text_ko": "쥐덫(The Rat Cage)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/TheRatCage.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt8",
+			"Text_en": "Scold's Bridle",
+			"Text_ko": "꾸짖음의 굴레(Scold's Bridle)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/ScoldsBridle.dds"
+		},
+		{
+			"Id": "UniqueSceptre9",
+			"Text_en": "Brutus' Lead Sprinkler",
+			"Text_ko": "브루투스의 리드 스플링쿨러(Brutus' Lead Sprinkler)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandMaces/TheLeadSprinkler.dds"
+		},
+		{
+			"Id": "UniqueFlask8",
+			"Text_en": "Taste of Hate",
+			"Text_ko": "증오의 맛(Taste of Hate)",
+			"DDSFile": "Art/2DItems/Flasks/TasteOfHate.dds"
+		},
+		{
+			"Id": "UniqueBodyStr5",
+			"Text_en": "Greed's Embrace",
+			"Text_ko": "탐욕의 포옹(Greed's Embrace)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/GreedsEmbrace.dds"
+		},
+		{
+			"Id": "UniqueAmulet20",
+			"Text_en": "Warped Timepiece",
+			"Text_ko": "뒤틀린 시계(Warped Timepiece)",
+			"DDSFile": "Art/2DItems/Amulets/WarpedTimepiece.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt9",
+			"Text_en": "Doedre's Scorn",
+			"Text_ko": "도이드리의 멸시(Doedre's Scorn)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/DoedresScorn.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrDex6",
+			"Text_en": "Black Sun Crest",
+			"Text_ko": "검은 태양 문양(Black Sun Crest)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Blacksuncrest.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrInt3",
+			"Text_en": "Southbound",
+			"Text_ko": "남행(Southbound)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/Northbound.dds"
+		},
+		{
+			"Id": "UniqueRing32",
+			"Text_en": "Ventor's Gamble",
+			"Text_ko": "벤토의 도박(Ventor's Gamble)",
+			"DDSFile": "Art/2DItems/Rings/DieOfDestiny.dds"
+		},
+		{
+			"Id": "UniqueRing33",
+			"Text_en": "Heartbound Loop",
+			"Text_ko": "마음에 묶인 고리(Heartbound Loop)",
+			"DDSFile": "Art/2DItems/Rings/HeartboundRing.dds"
+		},
+		{
+			"Id": "UniqueBelt14",
+			"Text_en": "Dyadian Dawn",
+			"Text_ko": "쌍둥이의 여명(Dyadian Dawn)",
+			"DDSFile": "Art/2DItems/Belts/MotherDyadus.dds"
+		},
+		{
+			"Id": "UniqueStaff10",
+			"Text_en": "Sire of Shards",
+			"Text_ko": "파편의 영주(Sire of Shards)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/Radience.dds"
+		},
+		{
+			"Id": "UniqueBodyDexInt4",
+			"Text_en": "Victario's Influence",
+			"Text_ko": "빅타리오의 영향력(Victario's Influence)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/VictariosJacket.dds"
+		},
+		{
+			"Id": "UniqueDagger10",
+			"Text_en": "The Consuming Dark",
+			"Text_ko": "타들어 가는 어둠(The Consuming Dark)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/ConsumingtheDark.dds"
+		},
+		{
+			"Id": "UniqueAmulet21",
+			"Text_en": "Shaper's Seed",
+			"Text_ko": "쉐이퍼의 씨앗(Shaper's Seed)",
+			"DDSFile": "Art/2DItems/Amulets/ShapersSeed.dds"
+		},
+		{
+			"Id": "UniqueStaff11",
+			"Text_en": "Tremor Rod",
+			"Text_ko": "전율의 막대(Tremor Rod)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/MineStaff.dds"
+		},
+		{
+			"Id": "UniqueOneHandAxe6",
+			"Text_en": "Relentless Fury",
+			"Text_ko": "맹렬한 광분(Relentless Fury)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandAxes/RelentlessFury.dds"
+		},
+		{
+			"Id": "UniqueOneHandMace4",
+			"Text_en": "Cameria's Maul",
+			"Text_ko": "카메리아의 대형 망치(Cameria's Maul)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandMaces/AmericsMaul.dds"
+		},
+		{
+			"Id": "UniqueGlovesStr4",
+			"Text_en": "Doryani's Fist",
+			"Text_ko": "도리아니의 주먹(Doryani's Fist)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/DoryanisFist.dds"
+		},
+		{
+			"Id": "UniqueOneHandMace5",
+			"Text_en": "Callinellus Malleus",
+			"Text_ko": "집게발 쇠망치(Callinellus Malleus)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandMaces/CallinellusMalleus.dds"
+		},
+		{
+			"Id": "UniqueSceptre10",
+			"Text_en": "Death's Hand",
+			"Text_ko": "죽음의 손길(Death's Hand)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/EndOfEra.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword10",
+			"Text_en": "The Goddess Unleashed",
+			"Text_ko": "해방된 여신(The Goddess Unleashed)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/TheGoddessUnleashed.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword11",
+			"Text_en": "Ichimonji",
+			"Text_ko": "이치몬지(Ichimonji)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/BladeOfVastri.dds"
+		},
+		{
+			"Id": "UniqueGlovesStr5",
+			"Text_en": "Empire's Grasp",
+			"Text_ko": "제국의 손아귀(Empire's Grasp)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/Hither.dds"
+		},
+		{
+			"Id": "UniqueBodyDexInt3",
+			"Text_en": "The Restless Ward",
+			"Text_ko": "끊임없는 수호(The Restless Ward)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/TheRestlessWard.dds"
+		},
+		{
+			"Id": "UniqueFlask9",
+			"Text_en": "Lion's Roar",
+			"Text_ko": "사자의 포효(Lion's Roar)",
+			"DDSFile": "Art/2DItems/Flasks/yFlask5.dds"
+		},
+		{
+			"Id": "UniqueClaw8",
+			"Text_en": "Ornament of the East",
+			"Text_ko": "동방의 장신구(Ornament of the East)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/OrnamentOfTheEast.dds"
+		},
+		{
+			"Id": "UniqueStaff12",
+			"Text_en": "The Whispering Ice",
+			"Text_ko": "속삭이는 얼음(The Whispering Ice)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/Staff8unique.dds"
+		},
+		{
+			"Id": "UniqueAmulet22",
+			"Text_en": "Tear of Purity",
+			"Text_ko": "정화의 눈물(Tear of Purity)",
+			"DDSFile": "Art/2DItems/Amulets/TearOfPurity.dds"
+		},
+		{
+			"Id": "UniqueAmulet23",
+			"Text_en": "Blood of Corruption",
+			"Text_ko": "타락의 피(Blood of Corruption)",
+			"DDSFile": "Art/2DItems/Amulets/HeartOfCorruption.dds"
+		},
+		{
+			"Id": "UniqueBodyStr6",
+			"Text_en": "Lioneye's Vision",
+			"Text_ko": "라이온아이의 시각(Lioneye's Vision)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/LioneyesArmour.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrInt4",
+			"Text_en": "Repentance",
+			"Text_ko": "참회(Repentance)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/Repentance.dds"
+		},
+		{
+			"Id": "UniqueWand9",
+			"Text_en": "Twyzel",
+			"Text_ko": "트위즐(Twyzel)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/Wand1Unique.dds"
+		},
+		{
+			"Id": "UniqueTwoHandAxe9",
+			"Text_en": "Kingmaker",
+			"Text_ko": "실세(Kingmaker)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandAxes/Alexaxeandheartbreaker.dds"
+		},
+		{
+			"Id": "UniqueJewel1",
+			"Text_en": "To Dust",
+			"Text_ko": "먼지처럼 사라져라(To Dust)",
+			"DDSFile": "Art/2DItems/Jewels/unique8.dds"
+		},
+		{
+			"Id": "UniqueRingVictors",
+			"Text_en": "Band of the Victor",
+			"Text_ko": "승리자의 반지(Band of the Victor)",
+			"DDSFile": "Art/2DItems/Rings/RingoftheVictor.dds"
+		},
+		{
+			"Id": "UniqueJewel2",
+			"Text_en": "Eldritch Knowledge",
+			"Text_ko": "섬뜩한 지식(Eldritch Knowledge)",
+			"DDSFile": "Art/2DItems/Jewels/unique9.dds"
+		},
+		{
+			"Id": "UniqueJewel3",
+			"Text_en": "Inspired Learning",
+			"Text_ko": "탁월한 학습(Inspired Learning)",
+			"DDSFile": "Art/2DItems/Jewels/unique7.dds"
+		},
+		{
+			"Id": "UniqueJewel4",
+			"Text_en": "Martial Artistry",
+			"Text_ko": "무도가의 기교(Martial Artistry)",
+			"DDSFile": "Art/2DItems/Jewels/unique5.dds"
+		},
+		{
+			"Id": "UniqueJewel5",
+			"Text_en": "Lioneye's Fall",
+			"Text_ko": "라이온아이의 몰락(Lioneye's Fall)",
+			"DDSFile": "Art/2DItems/Jewels/LioneyesFall.dds"
+		},
+		{
+			"Id": "UniqueJewel6",
+			"Text_en": "Intuitive Leap",
+			"Text_ko": "직관의 도약(Intuitive Leap)",
+			"DDSFile": "Art/2DItems/Jewels/unique6.dds"
+		},
+		{
+			"Id": "UniqueJewel7",
+			"Text_en": "Selfless Leadership",
+			"Text_ko": "이타적인 통솔력(Selfless Leadership)",
+			"DDSFile": "Art/2DItems/Jewels/unique1.dds"
+		},
+		{
+			"Id": "UniqueJewel8",
+			"Text_en": "Survival Skills",
+			"Text_ko": "생존 기술(Survival Skills)",
+			"DDSFile": "Art/2DItems/Jewels/unique4.dds"
+		},
+		{
+			"Id": "UniqueJewel9",
+			"Text_en": "Survival Instincts",
+			"Text_ko": "생존 본능(Survival Instincts)",
+			"DDSFile": "Art/2DItems/Jewels/unique4.dds"
+		},
+		{
+			"Id": "UniqueJewel10",
+			"Text_en": "Survival Secrets",
+			"Text_ko": "생존 비결(Survival Secrets)",
+			"DDSFile": "Art/2DItems/Jewels/unique12.dds"
+		},
+		{
+			"Id": "UniqueJewel11",
+			"Text_en": "Fertile Mind",
+			"Text_ko": "풍요로운 마음(Fertile Mind)",
+			"DDSFile": "Art/2DItems/Jewels/DEXtoINT.dds"
+		},
+		{
+			"Id": "UniqueJewel13_",
+			"Text_en": "Fluid Motion",
+			"Text_ko": "유체 운동(Fluid Motion)",
+			"DDSFile": "Art/2DItems/Jewels/STRtoDEX.dds"
+		},
+		{
+			"Id": "UniqueJewel14",
+			"Text_en": "Cannibalistic Habits",
+			"Text_ko": "야만적 습성(Cannibalistic Habits)",
+			"DDSFile": "Art/2DItems/Jewels/unique15.dds"
+		},
+		{
+			"Id": "UniqueJewel15",
+			"Text_en": "Spire of Stone",
+			"Text_ko": "첨탑(Spire of Stone)",
+			"DDSFile": "Art/2DItems/Jewels/RedKarui2.dds"
+		},
+		{
+			"Id": "UniqueJewel16",
+			"Text_en": "Apparitions",
+			"Text_ko": "유령(Apparitions)",
+			"DDSFile": "Art/2DItems/Jewels/unique10.dds"
+		},
+		{
+			"Id": "UniqueJewel17",
+			"Text_en": "Mantra of Flames",
+			"Text_ko": "화염의 주문(Mantra of Flames)",
+			"DDSFile": "Art/2DItems/Jewels/unique16.dds"
+		},
+		{
+			"Id": "UniqueJewel18",
+			"Text_en": "Fortified Legion",
+			"Text_ko": "견고한 부대(Fortified Legion)",
+			"DDSFile": "Art/2DItems/Jewels/BlueJewel4.dds"
+		},
+		{
+			"Id": "UniqueJewel19",
+			"Text_en": "Vampire's Might",
+			"Text_ko": "흡혈귀의 완력(Vampire's Might)",
+			"DDSFile": "Art/2DItems/Jewels/RedJewel1.dds"
+		},
+		{
+			"Id": "UniqueJewel20",
+			"Text_en": "Hotfooted",
+			"Text_ko": "핫풋(Hotfooted)",
+			"DDSFile": "Art/2DItems/Jewels/unique14.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel1",
+			"Text_en": "Combustibles",
+			"Text_ko": "가연성 보석(Combustibles)",
+			"DDSFile": "Art/2DItems/Jewels/RedCorrupt4.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel2",
+			"Text_en": "Weight of Sin",
+			"Text_ko": "죄의 무게(Weight of Sin)",
+			"DDSFile": "Art/2DItems/Jewels/GreenCorrupt4.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel3",
+			"Text_en": "Fevered Mind",
+			"Text_ko": "흥분한 마음(Fevered Mind)",
+			"DDSFile": "Art/2DItems/Jewels/BlueCorrupt4.dds"
+		},
+		{
+			"Id": "UniqueJewel24",
+			"Text_en": "Fragile Bloom",
+			"Text_ko": "가냘픈 꽃(Fragile Bloom)",
+			"DDSFile": "Art/2DItems/Jewels/unique20.dds"
+		},
+		{
+			"Id": "UniqueJewel25",
+			"Text_en": "Hidden Potential",
+			"Text_ko": "숨겨진 잠재력(Hidden Potential)",
+			"DDSFile": "Art/2DItems/Jewels/unique17.dds"
+		},
+		{
+			"Id": "UniqueJewel26",
+			"Text_en": "Rain of Splinters",
+			"Text_ko": "파편의 비(Rain of Splinters)",
+			"DDSFile": "Art/2DItems/Jewels/RedKarui.dds"
+		},
+		{
+			"Id": "UniqueJewel28",
+			"Text_en": "Malicious Intent",
+			"Text_ko": "불순한 의도(Malicious Intent)",
+			"DDSFile": "Art/2DItems/Jewels/BlueJewel3.dds"
+		},
+		{
+			"Id": "UniqueJewel29",
+			"Text_en": "Brawn",
+			"Text_ko": "근육(Brawn)",
+			"DDSFile": "Art/2DItems/Jewels/RedJewel2.dds"
+		},
+		{
+			"Id": "UniqueJewel30",
+			"Text_en": "Clear Mind",
+			"Text_ko": "맑은 정신(Clear Mind)",
+			"DDSFile": "Art/2DItems/Jewels/unique13.dds"
+		},
+		{
+			"Id": "UniqueJewel32_",
+			"Text_en": "Specialised",
+			"Text_ko": "특별한(Specialised)",
+			"DDSFile": "Art/2DItems/Jewels/basicdex.dds"
+		},
+		{
+			"Id": "UniqueJewel33",
+			"Text_en": "Miser of Misery",
+			"Text_ko": "불행의 수전노(Miser of Misery)",
+			"DDSFile": "Art/2DItems/Jewels/GreenJewel4.dds"
+		},
+		{
+			"Id": "UniqueJewel34",
+			"Text_en": "Efficient Training",
+			"Text_ko": "효율적인 훈련(Efficient Training)",
+			"DDSFile": "Art/2DItems/Jewels/INTtoSTR.dds"
+		},
+		{
+			"Id": "UniqueJewel35",
+			"Text_en": "Brute Force Solution",
+			"Text_ko": "완력 해결(Brute Force Solution)",
+			"DDSFile": "Art/2DItems/Jewels/STRtoINT.dds"
+		},
+		{
+			"Id": "UniqueJewel36",
+			"Text_en": "Inertia",
+			"Text_ko": "관성(Inertia)",
+			"DDSFile": "Art/2DItems/Jewels/INTtoDEX.dds"
+		},
+		{
+			"Id": "UniqueJewel37",
+			"Text_en": "Careful Planning",
+			"Text_ko": "철저한 계획(Careful Planning)",
+			"DDSFile": "Art/2DItems/Jewels/DEXtoSTR.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel4",
+			"Text_en": "Sacrificial Harvest",
+			"Text_ko": "희생의 수확(Sacrificial Harvest)",
+			"DDSFile": "Art/2DItems/Jewels/GreenCorrupt1.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel5",
+			"Text_en": "Atziri's Reign",
+			"Text_ko": "앗지리의 치세(Atziri's Reign)",
+			"DDSFile": "Art/2DItems/Jewels/RedCorrupt1.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel6",
+			"Text_en": "Vaal Sentencing",
+			"Text_ko": "바알의 판결(Vaal Sentencing)",
+			"DDSFile": "Art/2DItems/Jewels/BlueCorrupt1.dds"
+		},
+		{
+			"Id": "UniqueJewel41",
+			"Text_en": "Poacher's Aim",
+			"Text_ko": "밀렵꾼의 조준(Poacher's Aim)",
+			"DDSFile": "Art/2DItems/Jewels/MidQuestRewardGreen.dds"
+		},
+		{
+			"Id": "UniqueJewel42",
+			"Text_en": "Warlord's Reach",
+			"Text_ko": "전쟁군주의 역량(Warlord's Reach)",
+			"DDSFile": "Art/2DItems/Jewels/MidQuestRewardRed.dds"
+		},
+		{
+			"Id": "UniqueJewel43",
+			"Text_en": "Assassin's Haste",
+			"Text_ko": "암살자의 신속함(Assassin's Haste)",
+			"DDSFile": "Art/2DItems/Jewels/MidQuestRewardBlue.dds"
+		},
+		{
+			"Id": "UniqueJewel44",
+			"Text_en": "Conqueror's Efficiency",
+			"Text_ko": "정복자의 효율(Conqueror's Efficiency)",
+			"DDSFile": "Art/2DItems/Jewels/HighQuestRewardRed.dds"
+		},
+		{
+			"Id": "UniqueJewel45",
+			"Text_en": "Conqueror's Potency",
+			"Text_ko": "정복자의 능력(Conqueror's Potency)",
+			"DDSFile": "Art/2DItems/Jewels/HighQuestRewardBlue.dds"
+		},
+		{
+			"Id": "UniqueJewel46_",
+			"Text_en": "Conqueror's Longevity",
+			"Text_ko": "정복자의 수명(Conqueror's Longevity)",
+			"DDSFile": "Art/2DItems/Jewels/HighQuestRewardGreen.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel7",
+			"Text_en": "Ancient Waystones",
+			"Text_ko": "고대 경로석(Ancient Waystones)",
+			"DDSFile": "Art/2DItems/Jewels/GreenCorrupt2.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel8",
+			"Text_en": "Chill of Corruption",
+			"Text_ko": "타락의 한기(Chill of Corruption)",
+			"DDSFile": "Art/2DItems/Jewels/RedCorrupt2.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel9",
+			"Text_en": "Mutated Growth",
+			"Text_ko": "변이한 종양(Mutated Growth)",
+			"DDSFile": "Art/2DItems/Jewels/BlueCorrupt2.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel10",
+			"Text_en": "Hungry Abyss",
+			"Text_ko": "굶주린 심연(Hungry Abyss)",
+			"DDSFile": "Art/2DItems/Jewels/GreenCorrupt3.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel11",
+			"Text_en": "Zerphi's Youth",
+			"Text_ko": "제르피의 젊음(Zerphi's Youth)",
+			"DDSFile": "Art/2DItems/Jewels/RedCorrupt3.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel12",
+			"Text_en": "Corrupted Energy",
+			"Text_ko": "타락한 에너지(Corrupted Energy)",
+			"DDSFile": "Art/2DItems/Jewels/BlueCorrupt3.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel13",
+			"Text_en": "Self-Flagellation",
+			"Text_ko": "자학 채찍질(Self-Flagellation)",
+			"DDSFile": "Art/2DItems/Jewels/GreenCorrupt5.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel14",
+			"Text_en": "Blood Sacrifice",
+			"Text_ko": "피의 희생(Blood Sacrifice)",
+			"DDSFile": "Art/2DItems/Jewels/RedCorrupt5.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel15",
+			"Text_en": "Brittle Barrier",
+			"Text_ko": "부실한 방어막(Brittle Barrier)",
+			"DDSFile": "Art/2DItems/Jewels/BlueCorrupt5.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel16",
+			"Text_en": "Pacifism",
+			"Text_ko": "평화주의(Pacifism)",
+			"DDSFile": "Art/2DItems/Jewels/GreenCorrupt6.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel17",
+			"Text_en": "Fragility",
+			"Text_ko": "허약(Fragility)",
+			"DDSFile": "Art/2DItems/Jewels/RedCorrupt6.dds"
+		},
+		{
+			"Id": "UniqueCorruptedJewel18",
+			"Text_en": "Powerlessness",
+			"Text_ko": "무력함(Powerlessness)",
+			"DDSFile": "Art/2DItems/Jewels/BlueCorrupt6.dds"
+		},
+		{
+			"Id": "UniqueRing34",
+			"Text_en": "Call of the Brotherhood",
+			"Text_ko": "형제의 부름(Call of the Brotherhood)",
+			"DDSFile": "Art/2DItems/Rings/Brotherhood.dds"
+		},
+		{
+			"Id": "UniqueJewel47",
+			"Text_en": "Pugilist",
+			"Text_ko": "권투가(Pugilist)",
+			"DDSFile": "Art/2DItems/Jewels/GreenJewel6.dds"
+		},
+		{
+			"Id": "UniqueJewel48",
+			"Text_en": "Cold Steel",
+			"Text_ko": "냉기의 강철(Cold Steel)",
+			"DDSFile": "Art/2DItems/Jewels/GreenJewel5.dds"
+		},
+		{
+			"Id": "UniqueJewel49",
+			"Text_en": "Fireborn",
+			"Text_ko": "불의 체질(Fireborn)",
+			"DDSFile": "Art/2DItems/Jewels/RedJewel6.dds"
+		},
+		{
+			"Id": "UniqueJewel50",
+			"Text_en": "Energised Armour",
+			"Text_ko": "활력의 방어구(Energised Armour)",
+			"DDSFile": "Art/2DItems/Jewels/RedJewel5.dds"
+		},
+		{
+			"Id": "UniqueJewel51",
+			"Text_en": "Energy From Within",
+			"Text_ko": "내재한 에너지(Energy From Within)",
+			"DDSFile": "Art/2DItems/Jewels/BlueJewel6.dds"
+		},
+		{
+			"Id": "UniqueJewel52",
+			"Text_en": "Anatomical Knowledge",
+			"Text_ko": "육체에 대한 지식(Anatomical Knowledge)",
+			"DDSFile": "Art/2DItems/Jewels/BlueJewel5.dds"
+		},
+		{
+			"Id": "UniqueJewel53",
+			"Text_en": "Static Electricity",
+			"Text_ko": "정전기(Static Electricity)",
+			"DDSFile": "Art/2DItems/Jewels/GreenJewel7.dds"
+		},
+		{
+			"Id": "UniqueJewel54",
+			"Text_en": "Healthy Mind",
+			"Text_ko": "건강한 마음(Healthy Mind)",
+			"DDSFile": "Art/2DItems/Jewels/BlueJewel7.dds"
+		},
+		{
+			"Id": "UniqueJewel55",
+			"Text_en": "Might in All Forms",
+			"Text_ko": "만물의 힘(Might in All Forms)",
+			"DDSFile": "Art/2DItems/Jewels/RedJewel7.dds"
+		},
+		{
+			"Id": "UniqueBodyStrInt6",
+			"Text_en": "Kingsguard",
+			"Text_ko": "왕의 보호구(Kingsguard)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Kingsguard.dds"
+		},
+		{
+			"Id": "UniqueDagger11",
+			"Text_en": "Goredrill",
+			"Text_ko": "유혈 관통(Goredrill)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/Goredrill.dds"
+		},
+		{
+			"Id": "UniqueDagger12",
+			"Text_en": "Bloodplay",
+			"Text_ko": "피의 오락(Bloodplay)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/BloodPlay.dds"
+		},
+		{
+			"Id": "UniqueWand10",
+			"Text_en": "Abberath's Horn",
+			"Text_ko": "아버라스의 뿔(Abberath's Horn)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/Wychverge.dds"
+		},
+		{
+			"Id": "UniqueStaff13",
+			"Text_en": "Realmshaper",
+			"Text_ko": "영역 형성자(Realmshaper)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/Staff5unique.dds"
+		},
+		{
+			"Id": "UniqueClaw9",
+			"Text_en": "Wildslash",
+			"Text_ko": "거친 베기(Wildslash)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/Wildslash.dds"
+		},
+		{
+			"Id": "UniqueShieldStrDex3",
+			"Text_en": "The Deep One's Hide",
+			"Text_ko": "심해의 가죽(The Deep One's Hide)",
+			"DDSFile": "Art/2DItems/Armours/Shields/Chitinhull.dds"
+		},
+		{
+			"Id": "UniqueOneHandAxe7",
+			"Text_en": "Dreadarc",
+			"Text_ko": "접근하는 공포(Dreadarc)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandAxes/Dreadarc.dds"
+		},
+		{
+			"Id": "UniqueOneHandAxe8",
+			"Text_en": "Moonbender's Wing",
+			"Text_ko": "달을 구부리는 자의 날개(Moonbender's Wing)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandAxes/MoonbendersWing.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword12",
+			"Text_en": "The Princess",
+			"Text_ko": "공주(The Princess)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/OneHandSword3Unique.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword13",
+			"Text_en": "Lakishu's Blade",
+			"Text_ko": "라키슈의 검(Lakishu's Blade)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/OneHandSword5Unique.dds"
+		},
+		{
+			"Id": "UniqueOneHandMace6",
+			"Text_en": "Gorebreaker",
+			"Text_ko": "유혈 분쇄기(Gorebreaker)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandMaces/OneHandMace3Unique.dds"
+		},
+		{
+			"Id": "UniqueOneHandMace7",
+			"Text_en": "Lavianga's Wisdom",
+			"Text_ko": "라비앙가의 지혜(Lavianga's Wisdom)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandMaces/OneHandMace3a.dds"
+		},
+		{
+			"Id": "UniqueOneHandMace8",
+			"Text_en": "Flesh-Eater",
+			"Text_ko": "식인종(Flesh-Eater)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandMaces/OneHandMace6Unique.dds"
+		},
+		{
+			"Id": "UniqueStaff14",
+			"Text_en": "The Stormheart",
+			"Text_ko": "태풍의 눈(The Stormheart)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/Staff8uniqueX.dds"
+		},
+		{
+			"Id": "UniqueRing35",
+			"Text_en": "Brinerot Mark",
+			"Text_ko": "부패한 염수단 징표(Brinerot Mark)",
+			"DDSFile": "Art/2DItems/Rings/Brinerot.dds"
+		},
+		{
+			"Id": "UniqueRing36",
+			"Text_en": "Redblade Band",
+			"Text_ko": "적검단 가락지(Redblade Band)",
+			"DDSFile": "Art/2DItems/Rings/Redblade.dds"
+		},
+		{
+			"Id": "UniqueRing37",
+			"Text_en": "Mutewind Seal",
+			"Text_ko": "고요한 바람단 봉인(Mutewind Seal)",
+			"DDSFile": "Art/2DItems/Rings/Mutewind.dds"
+		},
+		{
+			"Id": "UniqueShieldInt5",
+			"Text_en": "Brinerot Flag",
+			"Text_ko": "부패한 염수단 깃발(Brinerot Flag)",
+			"DDSFile": "Art/2DItems/Armours/Shields/BrinerotFlag.dds"
+		},
+		{
+			"Id": "UniqueShieldStr4",
+			"Text_en": "Redblade Banner",
+			"Text_ko": "적검단 깃발(Redblade Banner)",
+			"DDSFile": "Art/2DItems/Armours/Shields/RedbladeBanner.dds"
+		},
+		{
+			"Id": "UniqueShieldDex7",
+			"Text_en": "Mutewind Pennant",
+			"Text_ko": "고요한 바람단 페넌트(Mutewind Pennant)",
+			"DDSFile": "Art/2DItems/Armours/Shields/MutewindPennant.dds"
+		},
+		{
+			"Id": "UniqueShieldDemigods",
+			"Text_en": "Demigod's Beacon",
+			"Text_ko": "반신의 횃불(Demigod's Beacon)",
+			"DDSFile": "Art/2DItems/Armours/Shields/DemigodsShield.dds"
+		},
+		{
+			"Id": "UniqueBootsDexInt4",
+			"Text_en": "Brinerot Whalers",
+			"Text_ko": "부패한 염수단 고래잡이 신발(Brinerot Whalers)",
+			"DDSFile": "Art/2DItems/Armours/Boots/Reefscourge.dds"
+		},
+		{
+			"Id": "UniqueBootsStrDex5",
+			"Text_en": "Mutewind Whispersteps",
+			"Text_ko": "고요한 바람단의 속삭임 신발(Mutewind Whispersteps)",
+			"DDSFile": "Art/2DItems/Armours/Boots/Targemtabi.dds"
+		},
+		{
+			"Id": "UniqueBootsStr3",
+			"Text_en": "Redblade Tramplers",
+			"Text_ko": "적검단 유린자(Redblade Tramplers)",
+			"DDSFile": "Art/2DItems/Armours/Boots/Rumblestep.dds"
+		},
+		{
+			"Id": "UniqueShieldStr5",
+			"Text_en": "Trolltimber Spire",
+			"Text_ko": "트롤나무 꼭대기(Trolltimber Spire)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldStrUnique3.dds"
+		},
+		{
+			"Id": "UniqueTwoHandMace8",
+			"Text_en": "Jorrhast's Blacksteel",
+			"Text_ko": "요르하스트의 강철(Jorrhast's Blacksteel)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/JorrhastsBlacksteel.dds"
+		},
+		{
+			"Id": "UniqueHelmetDexInt6",
+			"Text_en": "Crown of the Pale King",
+			"Text_ko": "창백한 왕의 왕관(Crown of the Pale King)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/CrownofthePaleKing.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt10",
+			"Text_en": "Ylfeban's Trickery",
+			"Text_ko": "일프밴의 계략(Ylfeban's Trickery)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Ylfeban.dds"
+		},
+		{
+			"Id": "UniqueRing38",
+			"Text_en": "Emberwake",
+			"Text_ko": "잉걸불 지피기(Emberwake)",
+			"DDSFile": "Art/2DItems/Rings/Ring10.dds"
+		},
+		{
+			"Id": "UniqueClaw10",
+			"Text_en": "Allure",
+			"Text_ko": "매혹(Allure)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/Allure.dds"
+		},
+		{
+			"Id": "UniqueBootsInt6",
+			"Text_en": "Steppan Eard",
+			"Text_ko": "스테판 야드(Steppan Eard)",
+			"DDSFile": "Art/2DItems/Armours/Boots/Assedaisfervor.dds"
+		},
+		{
+			"Id": "UniqueShieldStrInt8",
+			"Text_en": "Broken Faith",
+			"Text_ko": "부서진 믿음(Broken Faith)",
+			"DDSFile": "Art/2DItems/Armours/Shields/SantonisFaith.dds"
+		},
+		{
+			"Id": "UniqueRing39",
+			"Text_en": "The Pariah",
+			"Text_ko": "부랑자(The Pariah)",
+			"DDSFile": "Art/2DItems/Rings/ThePariah.dds"
+		},
+		{
+			"Id": "UniqueFlask10",
+			"Text_en": "Coruscating Elixir",
+			"Text_ko": "빛나는 묘약(Coruscating Elixir)",
+			"DDSFile": "Art/2DItems/Flasks/CorusElixir.dds"
+		},
+		{
+			"Id": "UniqueAmulet24",
+			"Text_en": "The Aylardex",
+			"Text_ko": "에일러덱스(The Aylardex)",
+			"DDSFile": "Art/2DItems/Amulets/Xedralyas.dds"
+		},
+		{
+			"Id": "UniqueJewel56",
+			"Text_en": "Shattered Chains",
+			"Text_ko": "바스라진 사슬(Shattered Chains)",
+			"DDSFile": "Art/2DItems/Jewels/GlacialHammerModifier.dds"
+		},
+		{
+			"Id": "UniqueJewel57",
+			"Text_en": "Weight of the Empire",
+			"Text_ko": "제국의 무게(Weight of the Empire)",
+			"DDSFile": "Art/2DItems/Jewels/DoubleDamageModifier.dds"
+		},
+		{
+			"Id": "UniqueJewel58",
+			"Text_en": "Pitch Darkness",
+			"Text_ko": "칠흑 같은 어둠(Pitch Darkness)",
+			"DDSFile": "Art/2DItems/Jewels/BurningArrowModifier.dds"
+		},
+		{
+			"Id": "UniqueJewel59",
+			"Text_en": "Steel Spirit",
+			"Text_ko": "강철 혼백(Steel Spirit)",
+			"DDSFile": "Art/2DItems/Jewels/SpectralThrowModifier.dds"
+		},
+		{
+			"Id": "UniqueJewel60",
+			"Text_en": "Growing Agony",
+			"Text_ko": "심해지는 고통(Growing Agony)",
+			"DDSFile": "Art/2DItems/Jewels/PoisonDamageModifier.dds"
+		},
+		{
+			"Id": "UniqueBelt15",
+			"Text_en": "Feastbind",
+			"Text_ko": "연회의 속박(Feastbind)",
+			"DDSFile": "Art/2DItems/Belts/Feastbind.dds"
+		},
+		{
+			"Id": "UniqueBelt16",
+			"Text_en": "Faminebind",
+			"Text_ko": "기근의 속박(Faminebind)",
+			"DDSFile": "Art/2DItems/Belts/Faminebind.dds"
+		},
+		{
+			"Id": "UniqueBelt17",
+			"Text_en": "The Retch",
+			"Text_ko": "레치(The Retch)",
+			"DDSFile": "Art/2DItems/Belts/TheRetch.dds"
+		},
+		{
+			"Id": "UniqueAmulet25",
+			"Text_en": "Bloodgrip",
+			"Text_ko": "피의 지배(Bloodgrip)",
+			"DDSFile": "Art/2DItems/Amulets/BloodAmulet.dds"
+		},
+		{
+			"Id": "UniqueTwoHandAxe10",
+			"Text_en": "Hezmana's Bloodlust",
+			"Text_ko": "헤즈마나의 유혈 충동(Hezmana's Bloodlust)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandAxes/HezmanasBloodlust.dds"
+		},
+		{
+			"Id": "UniqueFlask11",
+			"Text_en": "Vessel of Vinktar",
+			"Text_ko": "빙타의 그릇(Vessel of Vinktar)",
+			"DDSFile": "Art/2DItems/Flasks/VinktarFlask.dds"
+		},
+		{
+			"Id": "UniqueShieldInt6",
+			"Text_en": "Kongming's Stratagem",
+			"Text_ko": "공명의 계략(Kongming's Stratagem)",
+			"DDSFile": "Art/2DItems/Armours/Shields/KongmingsStratagem.dds"
+		},
+		{
+			"Id": "UniqueBootsInt7",
+			"Text_en": "Skyforth",
+			"Text_ko": "하늘 달리기(Skyforth)",
+			"DDSFile": "Art/2DItems/Armours/Boots/Skyforth.dds"
+		},
+		{
+			"Id": "UniqueJewel61",
+			"Text_en": "Reckless Defence",
+			"Text_ko": "무모한 방어(Reckless Defence)",
+			"DDSFile": "Art/2DItems/Jewels/RecklessDefense.dds"
+		},
+		{
+			"Id": "UniqueBow13",
+			"Text_en": "Roth's Reach",
+			"Text_ko": "로스의 역량(Roth's Reach)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/SarkhamsReach.dds"
+		},
+		{
+			"Id": "UniqueGlovesStr6",
+			"Text_en": "Winds of Change",
+			"Text_ko": "변화의 바람(Winds of Change)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/GlovesStr6.dds"
+		},
+		{
+			"Id": "UniqueFlask12",
+			"Text_en": "Rotgut",
+			"Text_ko": "썩은 내장(Rotgut)",
+			"DDSFile": "Art/2DItems/Flasks/Rotgut.dds"
+		},
+		{
+			"Id": "UniqueJewel62",
+			"Text_en": "The Vigil",
+			"Text_ko": "철야 기도(The Vigil)",
+			"DDSFile": "Art/2DItems/Jewels/VigilanteModifier.dds"
+		},
+		{
+			"Id": "UniqueJewel63",
+			"Text_en": "Rolling Flames",
+			"Text_ko": "몰려오는 불꽃(Rolling Flames)",
+			"DDSFile": "Art/2DItems/Jewels/FireballModifier.dds"
+		},
+		{
+			"Id": "UniqueJewel64",
+			"Text_en": "Winter's Bounty",
+			"Text_ko": "겨울의 하사품(Winter's Bounty)",
+			"DDSFile": "Art/2DItems/Jewels/ColdSnapModifier.dds"
+		},
+		{
+			"Id": "UniqueJewel65",
+			"Text_en": "Spirited Response",
+			"Text_ko": "맹렬한 응답(Spirited Response)",
+			"DDSFile": "Art/2DItems/Jewels/InspiringCryModifier.dds"
+		},
+		{
+			"Id": "UniqueStaff15",
+			"Text_en": "Femurs of the Saints",
+			"Text_ko": "성자의 대퇴골(Femurs of the Saints)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/FemursoftheSaints.dds"
+		},
+		{
+			"Id": "UniqueWand11",
+			"Text_en": "Obliteration",
+			"Text_ko": "말살(Obliteration)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/Maledict.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrDex7",
+			"Text_en": "Wyrmsign",
+			"Text_ko": "아룡의 징조(Wyrmsign)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/WyrmsignGloves.dds"
+		},
+		{
+			"Id": "UniqueSceptre11",
+			"Text_en": "Spine of the First Claimant",
+			"Text_ko": "최초 선구자의 척추(Spine of the First Claimant)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/Oathkeeper.dds"
+		},
+		{
+			"Id": "UniqueJewel66",
+			"Text_en": "Izaro's Turmoil",
+			"Text_ko": "이자로의 혼란(Izaro's Turmoil)",
+			"DDSFile": "Art/2DItems/Jewels/unique21.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword14",
+			"Text_en": "Chitus' Needle",
+			"Text_ko": "치투스의 바늘(Chitus' Needle)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Rapiers/UniqueRapier1.dds"
+		},
+		{
+			"Id": "UniqueOneHandClaw11",
+			"Text_en": "Izaro's Dilemma",
+			"Text_ko": "이자로의 난제(Izaro's Dilemma)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/Edgeoftheempire.dds"
+		},
+		{
+			"Id": "UniqueAmulet26",
+			"Text_en": "Extractor Mentis",
+			"Text_ko": "정신 추출기(Extractor Mentis)",
+			"DDSFile": "Art/2DItems/Amulets/ExtractorMentis.dds"
+		},
+		{
+			"Id": "UniqueTwoHandSword9",
+			"Text_en": "The Dancing Dervish",
+			"Text_ko": "춤추는 수도승(The Dancing Dervish)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandSwords/Rhysblade.dds"
+		},
+		{
+			"Id": "UniqueJewel67",
+			"Text_en": "Dead Reckoning",
+			"Text_ko": "망자의 판단(Dead Reckoning)",
+			"DDSFile": "Art/2DItems/Jewels/AdditionalSkeletonMagesModifier.dds"
+		},
+		{
+			"Id": "UniqueJewel68",
+			"Text_en": "Rapid Expansion",
+			"Text_ko": "신속한 확장(Rapid Expansion)",
+			"DDSFile": "Art/2DItems/Jewels/GroundSlamModifier.dds"
+		},
+		{
+			"Id": "UniqueJewel69",
+			"Text_en": "Volley Fire",
+			"Text_ko": "불세례(Volley Fire)",
+			"DDSFile": "Art/2DItems/Jewels/BarrageModifier.dds"
+		},
+		{
+			"Id": "UniqueJewel70",
+			"Text_en": "Spirit Guards",
+			"Text_ko": "혼백의 수호(Spirit Guards)",
+			"DDSFile": "Art/2DItems/Jewels/AnimateWeaponModifier.dds"
+		},
+		{
+			"Id": "UniqueBow14",
+			"Text_en": "Iron Commander",
+			"Text_ko": "철의 지휘관(Iron Commander)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/IronCommendant.dds"
+		},
+		{
+			"Id": "UniqueWand12",
+			"Text_en": "Storm Prison",
+			"Text_ko": "태풍 감옥(Storm Prison)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/StormPrison.dds"
+		},
+		{
+			"Id": "UniqueWand13",
+			"Text_en": "Eclipse Solaris",
+			"Text_ko": "솔라리스의 쇠퇴(Eclipse Solaris)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/WandUnique1.dds"
+		},
+		{
+			"Id": "UniqueSceptre12",
+			"Text_en": "Disjunction",
+			"Text_ko": "분열(Disjunction)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/Blackstorm.dds"
+		},
+		{
+			"Id": "UniqueSceptre13",
+			"Text_en": "Singularity",
+			"Text_ko": "중력 붕괴(Singularity)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/Gloomeye.dds"
+		},
+		{
+			"Id": "UniqueSceptre14",
+			"Text_en": "Bitterdream",
+			"Text_ko": "악몽(Bitterdream)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/scepter8unique2.dds"
+		},
+		{
+			"Id": "UniqueBelt18",
+			"Text_en": "Soulthirst",
+			"Text_ko": "목마른 영혼(Soulthirst)",
+			"DDSFile": "Art/2DItems/Belts/Soulthirst.dds"
+		},
+		{
+			"Id": "UniqueTalisman1",
+			"Text_en": "Night's Hold",
+			"Text_ko": "밤의 연장(Night's Hold)",
+			"DDSFile": "Art/2DItems/Amulets/SocketedTalisman.dds"
+		},
+		{
+			"Id": "UniqueRing40",
+			"Text_en": "Essence Worm",
+			"Text_ko": "에센스 웜(Essence Worm)",
+			"DDSFile": "Art/2DItems/Rings/EssenceWorm.dds"
+		},
+		{
+			"Id": "UniqueAmulet27",
+			"Text_en": "Star of Wraeclast",
+			"Text_ko": "레이클라스트의 별(Star of Wraeclast)",
+			"DDSFile": "Art/2DItems/Amulets/RubyAmulet.dds"
+		},
+		{
+			"Id": "UniqueTalisman2",
+			"Text_en": "Blightwell",
+			"Text_ko": "황폐한 샘(Blightwell)",
+			"DDSFile": "Art/2DItems/Amulets/TaintedSprings.dds"
+		},
+		{
+			"Id": "UniqueTalisman3",
+			"Text_en": "Natural Hierarchy",
+			"Text_ko": "순수의 지배(Natural Hierarchy)",
+			"DDSFile": "Art/2DItems/Amulets/TalismanUnique2.dds"
+		},
+		{
+			"Id": "UniqueTalisman4",
+			"Text_en": "Rigwald's Curse",
+			"Text_ko": "리그월드의 저주(Rigwald's Curse)",
+			"DDSFile": "Art/2DItems/Amulets/UniqueDireClawTalisman.dds"
+		},
+		{
+			"Id": "UniqueTalisman5",
+			"Text_en": "Eyes of the Greatwolf",
+			"Text_ko": "위대한 늑대의 눈(Eyes of the Greatwolf)",
+			"DDSFile": "Art/2DItems/Amulets/RigwaldsTalisman.dds"
+		},
+		{
+			"Id": "UniqueRing41",
+			"Text_en": "Rigwald's Crest",
+			"Text_ko": "리그월드의 문양(Rigwald's Crest)",
+			"DDSFile": "Art/2DItems/Rings/RigwaldsCrest.dds"
+		},
+		{
+			"Id": "UniqueOneHandAxe9",
+			"Text_en": "Rigwald's Savagery",
+			"Text_ko": "리그월드의 야만(Rigwald's Savagery)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandAxes/RigwarlAxe.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword15",
+			"Text_en": "Rigwald's Command",
+			"Text_ko": "리그월드의 명령(Rigwald's Command)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/RigwarlSword.dds"
+		},
+		{
+			"Id": "UniqueQuiver10",
+			"Text_en": "Rigwald's Quills",
+			"Text_ko": "리그월드의 화살(Rigwald's Quills)",
+			"DDSFile": "Art/2DItems/Quivers/RigwaldsQuills.dds"
+		},
+		{
+			"Id": "UniqueAmulet28",
+			"Text_en": "Winterheart",
+			"Text_ko": "겨울심장(Winterheart)",
+			"DDSFile": "Art/2DItems/Amulets/WinterHeartALT.dds"
+		},
+		{
+			"Id": "UniqueBodyDemigods",
+			"Text_en": "Demigod's Dominance",
+			"Text_ko": "반신의 지배(Demigod's Dominance)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/DemigodsArmour.dds"
+		},
+		{
+			"Id": "UniqueFlask13",
+			"Text_en": "The Writhing Jar",
+			"Text_ko": "꿈틀거리는 단지(The Writhing Jar)",
+			"DDSFile": "Art/2DItems/Flasks/WrithingJar.dds"
+		},
+		{
+			"Id": "UniqueTwoHandAxe14",
+			"Text_en": "Ngamahu's Flame",
+			"Text_ko": "나마후의 불꽃(Ngamahu's Flame)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/RiriTeNgamahu.dds"
+		},
+		{
+			"Id": "UniqueShieldInt7",
+			"Text_en": "Malachai's Loop",
+			"Text_ko": "말라카이의 고리(Malachai's Loop)",
+			"DDSFile": "Art/2DItems/Armours/Shields/MalachaiLoop.dds"
+		},
+		{
+			"Id": "UniqueSceptre15",
+			"Text_en": "Borrowed Power",
+			"Text_ko": "융통된 힘(Borrowed Power)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/BorrowedPower.dds"
+		},
+		{
+			"Id": "UniqueBelt19",
+			"Text_en": "Umbilicus Immortalis",
+			"Text_ko": "불멸의 탯줄(Umbilicus Immortalis)",
+			"DDSFile": "Art/2DItems/Belts/UmbilicusImmortalis.dds"
+		},
+		{
+			"Id": "UniqueAmulet29",
+			"Text_en": "Frost Unbroken",
+			"Text_ko": "온전한 서리(Frost Unbroken)",
+			"DDSFile": "Art/2DItems/Amulets/WinterHeart.dds"
+		},
+		{
+			"Id": "UniqueOneHandClaw12",
+			"Text_en": "Advancing Fortress",
+			"Text_ko": "전진하는 요새(Advancing Fortress)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/Clawshield3.dds"
+		},
+		{
+			"Id": "UniqueStaff16",
+			"Text_en": "Xirgil's Crank",
+			"Text_ko": "저글의 손잡이(Xirgil's Crank)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/Staff7unique.dds"
+		},
+		{
+			"Id": "UniqueTwoHandMace10",
+			"Text_en": "Trypanon",
+			"Text_ko": "트리파논(Trypanon)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/Trypanon.dds"
+		},
+		{
+			"Id": "UniqueDagger13",
+			"Text_en": "Widowmaker",
+			"Text_ko": "위도우메이커(Widowmaker)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/Widowmaker.dds"
+		},
+		{
+			"Id": "UniqueOneHandMace9",
+			"Text_en": "Clayshaper",
+			"Text_ko": "클레이쉐이퍼(Clayshaper)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandMaces/ClayShaper.dds"
+		},
+		{
+			"Id": "UniqueOneHandMace10",
+			"Text_en": "Frostbreath",
+			"Text_ko": "서리 숨결(Frostbreath)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandMaces/FrostBreath.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword16",
+			"Text_en": "The Tempestuous Steel",
+			"Text_ko": "격렬한 강철(The Tempestuous Steel)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/TempestuousSteel.dds"
+		},
+		{
+			"Id": "UniqueRapier4",
+			"Text_en": "Daresso's Passion",
+			"Text_ko": "다레소의 열정(Daresso's Passion)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Rapiers/Daressos.dds"
+		},
+		{
+			"Id": "UniqueWand14",
+			"Text_en": "Ashcaller",
+			"Text_ko": "재의 소환사(Ashcaller)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/Ashwaker.dds"
+		},
+		{
+			"Id": "UniqueFishingRod2",
+			"Text_en": "Reefbane",
+			"Text_ko": "암초의 파멸(Reefbane)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/FishingRods/Reefbane.dds"
+		},
+		{
+			"Id": "UniqueFlask15",
+			"Text_en": "The Sorrow of the Divine",
+			"Text_ko": "신의 슬픔(The Sorrow of the Divine)",
+			"DDSFile": "Art/2DItems/Flasks/SorrowOfTheDivine.dds"
+		},
+		{
+			"Id": "UniqueBodyStrInt7",
+			"Text_en": "Geofri's Sanctuary",
+			"Text_ko": "조프리의 성역(Geofri's Sanctuary)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/GeofriSanctuary.dds"
+		},
+		{
+			"Id": "UniqueSceptre16_",
+			"Text_en": "Axiom Perpetuum",
+			"Text_ko": "액시옴의 무기징역(Axiom Perpetuum)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/AxiomPerpetuum.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword17",
+			"Text_en": "Varunastra",
+			"Text_ko": "바루나스트라(Varunastra)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/Varunastra.dds"
+		},
+		{
+			"Id": "UniqueBodyStrDex6",
+			"Text_en": "Viper's Scales",
+			"Text_ko": "독사의 비늘(Viper's Scales)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Scalesoftheserpent.dds"
+		},
+		{
+			"Id": "UniqueBootsDex10",
+			"Text_en": "Abberath's Hooves",
+			"Text_ko": "아버라스의 발굽(Abberath's Hooves)",
+			"DDSFile": "Art/2DItems/Armours/Boots/AbberathsHooves.dds"
+		},
+		{
+			"Id": "UniqueBodyInt10",
+			"Text_en": "The Beast Fur Shawl",
+			"Text_ko": "야수 모피 숄(The Beast Fur Shawl)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/BeastFurShawl.dds"
+		},
+		{
+			"Id": "UniqueFlask16",
+			"Text_en": "Zerphi's Last Breath",
+			"Text_ko": "제르피의 마지막 숨결(Zerphi's Last Breath)",
+			"DDSFile": "Art/2DItems/Flasks/ZerphisLastBreath.dds"
+		},
+		{
+			"Id": "UniqueClaw13",
+			"Text_en": "Rive",
+			"Text_ko": "리브(Rive)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/BleedClaw.dds"
+		},
+		{
+			"Id": "UniqueJewel71",
+			"Text_en": "Cheap Construction",
+			"Text_ko": "저렴한 건축(Cheap Construction)",
+			"DDSFile": "Art/2DItems/Jewels/GreenJewel1.dds"
+		},
+		{
+			"Id": "UniqueShieldDexInt3",
+			"Text_en": "Glitterdisc",
+			"Text_ko": "빛나는 원반(Glitterdisc)",
+			"DDSFile": "Art/2DItems/Armours/Shields/Glitterdisk.dds"
+		},
+		{
+			"Id": "UniqueJewel72",
+			"Text_en": "Hair Trigger",
+			"Text_ko": "민감한 반응(Hair Trigger)",
+			"DDSFile": "Art/2DItems/Jewels/GreenJewel2.dds"
+		},
+		{
+			"Id": "UniqueBow15",
+			"Text_en": "Nuro's Harp",
+			"Text_ko": "누로의 하프(Nuro's Harp)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/NurosPurifyingHarp.dds"
+		},
+		{
+			"Id": "UniqueJewel73",
+			"Text_en": "Coated Shrapnel",
+			"Text_ko": "뒤덮은 파편(Coated Shrapnel)",
+			"DDSFile": "Art/2DItems/Jewels/RedJewel10.dds"
+		},
+		{
+			"Id": "UniqueJewel74",
+			"Text_en": "Unstable Payload",
+			"Text_ko": "불안정한 하중(Unstable Payload)",
+			"DDSFile": "Art/2DItems/Jewels/BlueJewel1.dds"
+		},
+		{
+			"Id": "UniqueHelmetDexInt7",
+			"Text_en": "Heretic's Veil",
+			"Text_ko": "이단자의 면사포(Heretic's Veil)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/FaceOfDivinity.dds"
+		},
+		{
+			"Id": "UniqueJewelLabyrinth1",
+			"Text_en": "Emperor's Cunning",
+			"Text_ko": "황제의 잔꾀(Emperor's Cunning)",
+			"DDSFile": "Art/2DItems/Jewels/Cunning.dds"
+		},
+		{
+			"Id": "UniqueJewelLabyrinth2",
+			"Text_en": "Emperor's Wit",
+			"Text_ko": "황제의 재치(Emperor's Wit)",
+			"DDSFile": "Art/2DItems/Jewels/Wit.dds"
+		},
+		{
+			"Id": "UniqueJewelLabyrinth3",
+			"Text_en": "Emperor's Might",
+			"Text_ko": "황제의 완력(Emperor's Might)",
+			"DDSFile": "Art/2DItems/Jewels/Might.dds"
+		},
+		{
+			"Id": "UniqueJewelLabyrinth4",
+			"Text_en": "Emperor's Mastery",
+			"Text_ko": "황제의 숙련(Emperor's Mastery)",
+			"DDSFile": "Art/2DItems/Jewels/Mastery.dds"
+		},
+		{
+			"Id": "UniqueBelt20",
+			"Text_en": "Victario's Charity",
+			"Text_ko": "빅타리오의 자비(Victario's Charity)",
+			"DDSFile": "Art/2DItems/Belts/Turncoatsfortune.dds"
+		},
+		{
+			"Id": "UniqueShieldStrInt9",
+			"Text_en": "Victario's Charity",
+			"Text_ko": "빅타리오의 자비(Victario's Charity)",
+			"DDSFile": "Art/2DItems/Armours/Shields/VictarosCharity.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword18",
+			"Text_en": "Innsbury Edge",
+			"Text_ko": "인스뷰리 칼날(Innsbury Edge)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/ElderSword.dds"
+		},
+		{
+			"Id": "UniqueAmulet30",
+			"Text_en": "Duskwing",
+			"Text_ko": "황혼 날개(Duskwing)",
+			"DDSFile": "Art/2DItems/Amulets/Duskwing.dds"
+		},
+		{
+			"Id": "UniqueDagger14",
+			"Text_en": "Bloodletter",
+			"Text_ko": "사혈자(Bloodletter)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/Bloodletter.dds"
+		},
+		{
+			"Id": "UniqueBootsDex9",
+			"Text_en": "Three-step Assault",
+			"Text_ko": "삼단 공격(Three-step Assault)",
+			"DDSFile": "Art/2DItems/Armours/Boots/ThreeStepAssault.dds"
+		},
+		{
+			"Id": "UniqueShieldStr6",
+			"Text_en": "The Rack",
+			"Text_ko": "선반(The Rack)",
+			"DDSFile": "Art/2DItems/Armours/Shields/TheRack.dds"
+		},
+		{
+			"Id": "UniqueBodyInt11",
+			"Text_en": "Cloak of Tawm'r Isley",
+			"Text_ko": "탐위르 이슬리의 망토(Cloak of Tawm'r Isley)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/TomOReillyCloak.dds"
+		},
+		{
+			"Id": "UniqueJewel75",
+			"Text_en": "Grand Spectrum Cobalt Jewel",
+			"Text_ko": "장대한 파장(Grand Spectrum) 진홍색 주얼",
+			"DDSFile": "Art/2DItems/Jewels/RedGrandSpectrum.dds"
+		},
+		{
+			"Id": "UniqueJewel76",
+			"Text_en": "Grand Spectrum Crimson Jewel",
+			"Text_ko": "장대한 파장(Grand Spectrum) 코발트색 주얼",
+			"DDSFile": "Art/2DItems/Jewels/BlueGrandSpectrum.dds"
+		},
+		{
+			"Id": "UniqueJewel77",
+			"Text_en": "Grand Spectrum Viridian Jewel",
+			"Text_ko": "장대한 파장(Grand Spectrum) 진청록색 주얼",
+			"DDSFile": "Art/2DItems/Jewels/GreenGrandSpectrum.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt11",
+			"Text_en": "Mind of the Council",
+			"Text_ko": "의회의 정신(Mind of the Council)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/ThunderingWhispers.dds"
+		},
+		{
+			"Id": "UniqueAmulet31",
+			"Text_en": "Hinekora's Sight",
+			"Text_ko": "히네코라의 통찰력(Hinekora's Sight)",
+			"DDSFile": "Art/2DItems/Amulets/HinekorasSight.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrInt6",
+			"Text_en": "Kitava's Thirst",
+			"Text_ko": "키타바의 갈증(Kitava's Thirst)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/KitavasThirst.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword19",
+			"Text_en": "Scaeva",
+			"Text_ko": "스카이바(Scaeva)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/Scaeva.dds"
+		},
+		{
+			"Id": "UniqueFlask17",
+			"Text_en": "The Overflowing Chalice",
+			"Text_ko": "넘치는 성배(The Overflowing Chalice)",
+			"DDSFile": "Art/2DItems/Flasks/OverflowingChalice.dds"
+		},
+		{
+			"Id": "UniqueQuiver11",
+			"Text_en": "Saemus' Gift",
+			"Text_ko": "새무스의 선물(Saemus' Gift)",
+			"DDSFile": "Art/2DItems/Quivers/SeamusGift.dds"
+		},
+		{
+			"Id": "UniqueGlovesStr7",
+			"Text_en": "Veruso's Battering Rams",
+			"Text_ko": "베루소의 공성추(Veruso's Battering Rams)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/VerusosBatteringRams.dds"
+		},
+		{
+			"Id": "UniqueBodyDex8",
+			"Text_en": "Kintsugi",
+			"Text_ko": "킨츠키(Kintsugi)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Kintsugi.dds"
+		},
+		{
+			"Id": "UniqueBootsStr5",
+			"Text_en": "Rumblemarch",
+			"Text_ko": "요란한 행진(Rumblemarch)",
+			"DDSFile": "Art/2DItems/Armours/Boots/Rumblemarch.dds"
+		},
+		{
+			"Id": "UniqueJewel78",
+			"Text_en": "Underdog's Fury",
+			"Text_ko": "패배자의 광분(Underdog's Fury)",
+			"DDSFile": "Art/2DItems/Jewels/Might.dds"
+		},
+		{
+			"Id": "UniqueClaw14",
+			"Text_en": "Touch of Anguish",
+			"Text_ko": "비통의 손길(Touch of Anguish)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/TouchOfAnguish.dds"
+		},
+		{
+			"Id": "UniqueBodyStrInt8",
+			"Text_en": "Spiritskin",
+			"Text_ko": "영혼가죽(Spiritskin)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Spiritskin.dds"
+		},
+		{
+			"Id": "UniqueTwoHandSword10",
+			"Text_en": "Hiltless",
+			"Text_ko": "고통의 검(Hiltless)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandSwords/Hiltless.dds"
+		},
+		{
+			"Id": "UniqueRapier5",
+			"Text_en": "Ewar's Mirage",
+			"Text_ko": "이워의 신기루(Ewar's Mirage)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Rapiers/EwarsMirage.dds"
+		},
+		{
+			"Id": "UniqueShieldStr7",
+			"Text_en": "Lycosidae",
+			"Text_ko": "늑대 거미(Lycosidae)",
+			"DDSFile": "Art/2DItems/Armours/Shields/Lycosidae.dds"
+		},
+		{
+			"Id": "UniqueJewel79",
+			"Text_en": "The Anima Stone",
+			"Text_ko": "생명의 돌(The Anima Stone)",
+			"DDSFile": "Art/2DItems/Jewels/GolemChaos.dds"
+		},
+		{
+			"Id": "UniqueHelmStrInt7",
+			"Text_en": "Voll's Vision",
+			"Text_ko": "볼의 시각(Voll's Vision)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/VollsVision.dds"
+		},
+		{
+			"Id": "UniqueHelmStrInt8",
+			"Text_en": "Malachai's Vision",
+			"Text_ko": "말라카이의 시각(Malachai's Vision)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/MalachaisVision.dds"
+		},
+		{
+			"Id": "UniqueBodyDex9",
+			"Text_en": "Cospri's Will",
+			"Text_ko": "코스프리의 의지(Cospri's Will)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/CosprisWill.dds"
+		},
+		{
+			"Id": "UniqueAmulet32",
+			"Text_en": "The Ascetic",
+			"Text_ko": "고행자(The Ascetic)",
+			"DDSFile": "Art/2DItems/Amulets/Amulet13.dds"
+		},
+		{
+			"Id": "UniqueQuiver12",
+			"Text_en": "Skirmish",
+			"Text_ko": "접전(Skirmish)",
+			"DDSFile": "Art/2DItems/Quivers/TheSkirmish.dds"
+		},
+		{
+			"Id": "UniqueAmulet33",
+			"Text_en": "The Learning Stone",
+			"Text_ko": "배움의 돌(The Learning Stone)",
+			"DDSFile": "Art/2DItems/Amulets/TheLearningStone.dds"
+		},
+		{
+			"Id": "UniqueGlovesInt7",
+			"Text_en": "Grip of the Council",
+			"Text_ko": "의회의 장악(Grip of the Council)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/GlovesInt3Unique2.dds"
+		},
+		{
+			"Id": "UniqueFlask18",
+			"Text_en": "Kiara's Determination",
+			"Text_ko": "키아라의 결의(Kiara's Determination)",
+			"DDSFile": "Art/2DItems/Flasks/KiarasDetermination.dds"
+		},
+		{
+			"Id": "UniqueBodyDexInt5",
+			"Text_en": "Tinkerskin",
+			"Text_ko": "톱니의 보호(Tinkerskin)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/TrapperArmour.dds"
+		},
+		{
+			"Id": "UniqueBootsStrInt4",
+			"Text_en": "Death's Door",
+			"Text_ko": "죽음의 문턱(Death's Door)",
+			"DDSFile": "Art/2DItems/Armours/Boots/Deathsdoor.dds"
+		},
+		{
+			"Id": "UniqueBow16",
+			"Text_en": "Reach of the Council",
+			"Text_ko": "의회의 역량(Reach of the Council)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/BowOfTheCouncil.dds"
+		},
+		{
+			"Id": "UniqueScepter17",
+			"Text_en": "Breath of the Council",
+			"Text_ko": "의회의 숨결(Breath of the Council)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/Plaguebringer.dds"
+		},
+		{
+			"Id": "FatedUnique1",
+			"Text_en": "Kaom's Way",
+			"Text_ko": "카옴의 길(Kaom's Way)",
+			"DDSFile": "Art/2DItems/Rings/Ring2Unique.dds"
+		},
+		{
+			"Id": "FatedUnique2",
+			"Text_en": "Karui Charge",
+			"Text_ko": "카루이의 돌진(Karui Charge)",
+			"DDSFile": "Art/2DItems/Amulets/Amulet4Unique.dds"
+		},
+		{
+			"Id": "FatedUnique3",
+			"Text_en": "Wall of Brambles",
+			"Text_ko": "가시나무 벽(Wall of Brambles)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Bramblejack.dds"
+		},
+		{
+			"Id": "FatedUnique4",
+			"Text_en": "Shavronne's Gambit",
+			"Text_ko": "샤브론의 책략(Shavronne's Gambit)",
+			"DDSFile": "Art/2DItems/Armours/Boots/ShavronnesPace.dds"
+		},
+		{
+			"Id": "FatedUnique5",
+			"Text_en": "Death's Opus",
+			"Text_ko": "죽음의 작품(Death's Opus)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/Deathsharp.dds"
+		},
+		{
+			"Id": "FatedUnique6",
+			"Text_en": "Voidheart",
+			"Text_ko": "공허의 심장(Voidheart)",
+			"DDSFile": "Art/2DItems/Rings/Ring1Unique.dds"
+		},
+		{
+			"Id": "FatedUnique7",
+			"Text_en": "Cragfall",
+			"Text_ko": "바위 폭포(Cragfall)",
+			"DDSFile": "Art/2DItems/Quivers/QuiverUnique4.dds"
+		},
+		{
+			"Id": "FatedUnique8",
+			"Text_en": "The Signal Fire",
+			"Text_ko": "봉화(The Signal Fire)",
+			"DDSFile": "Art/2DItems/Quivers/QuiverUnique1.dds"
+		},
+		{
+			"Id": "FatedUnique9",
+			"Text_en": "Ngamahu Tiki",
+			"Text_ko": "나마후 티키(Ngamahu Tiki)",
+			"DDSFile": "Art/2DItems/Amulets/Amulet2Unique.dds"
+		},
+		{
+			"Id": "FatedUnique10",
+			"Text_en": "Hrimburn",
+			"Text_ko": "흐림번(Hrimburn)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/Hrimsorrow.dds"
+		},
+		{
+			"Id": "FatedUnique11",
+			"Text_en": "Martyr's Crown",
+			"Text_ko": "순교자의 왕관(Martyr's Crown)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/CrownofThorns.dds"
+		},
+		{
+			"Id": "FatedUnique12",
+			"Text_en": "Ezomyte Hold",
+			"Text_ko": "에조미어의 방호(Ezomyte Hold)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/EzomytePeak.dds"
+		},
+		{
+			"Id": "FatedUnique13",
+			"Text_en": "Deidbellow",
+			"Text_ko": "죽음의 괘종(Deidbellow)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Deidbell.dds"
+		},
+		{
+			"Id": "FatedUnique14",
+			"Text_en": "Thirst for Horrors",
+			"Text_ko": "공포에 대한 갈증(Thirst for Horrors)",
+			"DDSFile": "Art/2DItems/Armours/Shields/Chaliceofhorrors.dds"
+		},
+		{
+			"Id": "FatedUnique15",
+			"Text_en": "The Oak",
+			"Text_ko": "참나무(The Oak)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldStrIntUnique2.dds"
+		},
+		{
+			"Id": "FatedUnique16",
+			"Text_en": "Kaltensoul",
+			"Text_ko": "붙잡은 영혼(Kaltensoul)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldDexUnique6.dds"
+		},
+		{
+			"Id": "FatedUnique17",
+			"Text_en": "The Gryphon",
+			"Text_ko": "그리폰(The Gryphon)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandAxes/Screamingeagle.dds"
+		},
+		{
+			"Id": "FatedUnique18",
+			"Text_en": "The Cauteriser",
+			"Text_ko": "소각로(The Cauteriser)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe_spare.dds"
+		},
+		{
+			"Id": "FatedUnique19_",
+			"Text_en": "Doomfletch's Prism",
+			"Text_ko": "죽음의 깃의 분광기(Doomfletch's Prism)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/DoomFletch.dds"
+		},
+		{
+			"Id": "FatedUnique20",
+			"Text_en": "Silverbough",
+			"Text_ko": "은빛 나뭇가지(Silverbough)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/Bow1Unique.dds"
+		},
+		{
+			"Id": "FatedUnique21",
+			"Text_en": "The Tempest",
+			"Text_ko": "폭풍(The Tempest)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/Stormcloud.dds"
+		},
+		{
+			"Id": "FatedUnique22",
+			"Text_en": "Hrimnor's Dirge",
+			"Text_ko": "흐림노르의 만가(Hrimnor's Dirge)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace6Unique.dds"
+		},
+		{
+			"Id": "FatedUnique23",
+			"Text_en": "Amplification Rod",
+			"Text_ko": "증폭 막대(Amplification Rod)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/ReverberationRod.dds"
+		},
+		{
+			"Id": "FatedUnique24",
+			"Text_en": "Realm Ender",
+			"Text_ko": "종결자(Realm Ender)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/Staff5unique.dds"
+		},
+		{
+			"Id": "FatedUnique25",
+			"Text_en": "Queen's Escape",
+			"Text_ko": "여왕의 탈주(Queen's Escape)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSwordUnique3.dds"
+		},
+		{
+			"Id": "FatedUnique26",
+			"Text_en": "Duskblight",
+			"Text_ko": "황혼의 황폐(Duskblight)",
+			"DDSFile": "Art/2DItems/Armours/Boots/BootsStrDexUnique3.dds"
+		},
+		{
+			"Id": "FatedUnique27",
+			"Text_en": "Atziri's Reflection",
+			"Text_ko": "앗지리의 성찰(Atziri's Reflection)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldDex5Unique.dds"
+		},
+		{
+			"Id": "FatedUnique28",
+			"Text_en": "Doedre's Malevolence",
+			"Text_ko": "도이드리의 악의(Doedre's Malevolence)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/DoedresTenure.dds"
+		},
+		{
+			"Id": "FatedUnique29_",
+			"Text_en": "The Stormwall",
+			"Text_ko": "태풍의 장벽(The Stormwall)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/Staff8uniqueX.dds"
+		},
+		{
+			"Id": "FatedUnique30",
+			"Text_en": "Meginord's Vigour",
+			"Text_ko": "메기노드의 활력(Meginord's Vigour)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/GlovesStr5.dds"
+		},
+		{
+			"Id": "FatedUnique31",
+			"Text_en": "Wildwrap",
+			"Text_ko": "황야의 겉옷(Wildwrap)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Briskwrap.dds"
+		},
+		{
+			"Id": "FatedUnique32",
+			"Text_en": "Crystal Vault",
+			"Text_ko": "수정 금고(Crystal Vault)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Icetomb.dds"
+		},
+		{
+			"Id": "FatedUnique33",
+			"Text_en": "Greedtrap",
+			"Text_ko": "탐욕의 발판(Greedtrap)",
+			"DDSFile": "Art/2DItems/Armours/Boots/Wondertrap.dds"
+		},
+		{
+			"Id": "FatedUnique34",
+			"Text_en": "Sunspite",
+			"Text_ko": "태양의 원한(Sunspite)",
+			"DDSFile": "Art/2DItems/Armours/Boots/Sundance.dds"
+		},
+		{
+			"Id": "FatedUnique35",
+			"Text_en": "Windshriek",
+			"Text_ko": "바람의 비명(Windshriek)",
+			"DDSFile": "Art/2DItems/Armours/Boots/Windscream.dds"
+		},
+		{
+			"Id": "FatedUnique36",
+			"Text_en": "Frostferno",
+			"Text_ko": "서리와 화염(Frostferno)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Heatshiver.dds"
+		},
+		{
+			"Id": "FatedUnique37",
+			"Text_en": "Timetwist",
+			"Text_ko": "시간 왜곡(Timetwist)",
+			"DDSFile": "Art/2DItems/Rings/Timeclasp.dds"
+		},
+		{
+			"Id": "FatedUnique38",
+			"Text_en": "Panquetzaliztli",
+			"Text_ko": "판케찰리스틀리(Panquetzaliztli)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace5Unique.dds"
+		},
+		{
+			"Id": "FatedUnique39",
+			"Text_en": "Mirebough",
+			"Text_ko": "늪 가지(Mirebough)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/Staff1unique.dds"
+		},
+		{
+			"Id": "FatedUnique40",
+			"Text_en": "Fox's Fortune",
+			"Text_ko": "여우의 행운(Fox's Fortune)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Foxshade.dds"
+		},
+		{
+			"Id": "FatedUnique41",
+			"Text_en": "Asenath's Chant",
+			"Text_ko": "아세나스의 노래(Asenath's Chant)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/HyrrisMark.dds"
+		},
+		{
+			"Id": "FatedUnique42",
+			"Text_en": "Malachai's Awakening",
+			"Text_ko": "말라카이의 각성(Malachai's Awakening)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/MalachaisSimula.dds"
+		},
+		{
+			"Id": "FatedUnique43",
+			"Text_en": "Honourhold",
+			"Text_ko": "명예의 지배(Honourhold)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Honourhome.dds"
+		},
+		{
+			"Id": "FatedUnique44",
+			"Text_en": "Sidhebite",
+			"Text_ko": "요정의 이빨(Sidhebite)",
+			"DDSFile": "Art/2DItems/Amulets/Amulet1Unique.dds"
+		},
+		{
+			"Id": "FatedUnique45",
+			"Text_en": "The Effigon",
+			"Text_ko": "에피곤(The Effigon)",
+			"DDSFile": "Art/2DItems/Amulets/Amulet6Unique.dds"
+		},
+		{
+			"Id": "FatedUnique46",
+			"Text_en": "The Tactician",
+			"Text_ko": "전술가(The Tactician)",
+			"DDSFile": "Art/2DItems/Belts/BuckledBeltUnique.dds"
+		},
+		{
+			"Id": "FatedUnique47",
+			"Text_en": "The Nomad",
+			"Text_ko": "유목민(The Nomad)",
+			"DDSFile": "Art/2DItems/Belts/BuckledBeltUnique.dds"
+		},
+		{
+			"Id": "FatedUnique48",
+			"Text_en": "Winterweave",
+			"Text_ko": "겨울 매듭(Winterweave)",
+			"DDSFile": "Art/2DItems/Rings/BloodBoil.dds"
+		},
+		{
+			"Id": "FatedUnique49",
+			"Text_en": "Hyrri's Demise",
+			"Text_ko": "하이리의 소멸(Hyrri's Demise)",
+			"DDSFile": "Art/2DItems/Quivers/HryyisBite.dds"
+		},
+		{
+			"Id": "FatedUnique50",
+			"Text_en": "Dreadsurge",
+			"Text_ko": "밀려드는 공포(Dreadsurge)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandAxes/Dreadarc.dds"
+		},
+		{
+			"Id": "FatedUnique51",
+			"Text_en": "Sanguine Gambol",
+			"Text_ko": "핏빛 장난(Sanguine Gambol)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/Goredrill.dds"
+		},
+		{
+			"Id": "FatedUnique52",
+			"Text_en": "Geofri's Devotion",
+			"Text_ko": "조프리의 헌신(Geofri's Devotion)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace7Unique.dds"
+		},
+		{
+			"Id": "FatedUnique53",
+			"Text_en": "Cameria's Avarice",
+			"Text_ko": "카메리아의 탐욕(Cameria's Avarice)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandMaces/AmericsMaul.dds"
+		},
+		{
+			"Id": "FatedUnique54",
+			"Text_en": "Dreadbeak",
+			"Text_ko": "공포의 부리(Dreadbeak)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/OneHandSword1Unique.dds"
+		},
+		{
+			"Id": "FatedUnique55",
+			"Text_en": "Corona Solaris",
+			"Text_ko": "솔라리스의 광환(Corona Solaris)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/WandUnique1.dds"
+		},
+		{
+			"Id": "FatedUnique56",
+			"Text_en": "The Dancing Duo",
+			"Text_ko": "춤추는 한 쌍(The Dancing Duo)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandSwords/Rhysblade.dds"
+		},
+		{
+			"Id": "FatedUnique57",
+			"Text_en": "The Iron Fortress",
+			"Text_ko": "철의 요새(The Iron Fortress)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/IronHeart Final.dds"
+		},
+		{
+			"Id": "FatedUnique58",
+			"Text_en": "Chaber Cairn",
+			"Text_ko": "차버 케른(Chaber Cairn)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/ChoberChaber.dds"
+		},
+		{
+			"Id": "FatedUnique59_",
+			"Text_en": "Ullr's Advent",
+			"Text_ko": "울러의 출현(Ullr's Advent)",
+			"DDSFile": "Art/2DItems/Armours/Boots/bootunique.dds"
+		},
+		{
+			"Id": "FatedUnique60",
+			"Text_en": "Geofri's Legacy",
+			"Text_ko": "조프리의 유산(Geofri's Legacy)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/GeofrisCrest.dds"
+		},
+		{
+			"Id": "FatedUnique61",
+			"Text_en": "Whakatutuki o Matua",
+			"Text_ko": "와카투투키 오 마투아(Whakatutuki o Matua)",
+			"DDSFile": "Art/2DItems/Armours/Shields/Matuatupuna.dds"
+		},
+		{
+			"Id": "UniqueRing42",
+			"Text_en": "Praxis",
+			"Text_ko": "관습(Praxis)",
+			"DDSFile": "Art/2DItems/Rings/Praxis.dds"
+		},
+		{
+			"Id": "UniqueTwoHandSword11",
+			"Text_en": "Kondo's Pride",
+			"Text_ko": "콘도의 자부심(Kondo's Pride)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandSwords/KondosPride.dds"
+		},
+		{
+			"Id": "UniqueRing43",
+			"Text_en": "Valyrium",
+			"Text_ko": "발리륨(Valyrium)",
+			"DDSFile": "Art/2DItems/Rings/Valyrium.dds"
+		},
+		{
+			"Id": "UniqueBodyStr7",
+			"Text_en": "The Brass Dome",
+			"Text_ko": "황동 철갑(The Brass Dome)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/DomeOfBrass.dds"
+		},
+		{
+			"Id": "UniqueTwoHandMace11",
+			"Text_en": "Brain Rattler",
+			"Text_ko": "요동치는 두뇌(Brain Rattler)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/BrainScrambler.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword20",
+			"Text_en": "Razor of the Seventh Sun",
+			"Text_ko": "날카로운 일곱 번째 태양(Razor of the Seventh Sun)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/RazorOfTheSeventhSun.dds"
+		},
+		{
+			"Id": "UniqueAmulet35",
+			"Text_en": "Eye of Innocence",
+			"Text_ko": "결백의 눈(Eye of Innocence)",
+			"DDSFile": "Art/2DItems/Amulets/EyeOfInnocence.dds"
+		},
+		{
+			"Id": "UniqueBow17",
+			"Text_en": "Slivertongue",
+			"Text_ko": "슬리버텅(Slivertongue)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/SilverTongue.dds"
+		},
+		{
+			"Id": "UniqueHelmetDex7",
+			"Text_en": "Obscurantis",
+			"Text_ko": "몽매주의(Obscurantis)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Obscurantis.dds"
+		},
+		{
+			"Id": "UniqueRing44",
+			"Text_en": "Snakepit",
+			"Text_ko": "뱀 구덩이(Snakepit)",
+			"DDSFile": "Art/2DItems/Rings/Serpentseed.dds"
+		},
+		{
+			"Id": "UniqueClaw15",
+			"Text_en": "The Scourge",
+			"Text_ko": "재앙(The Scourge)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/TheScourge.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword21",
+			"Text_en": "Cospri's Malice",
+			"Text_ko": "코스프리의 장난(Cospri's Malice)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandSwords/CosprisMalice.dds"
+		},
+		{
+			"Id": "UniqueTwoHandSword12",
+			"Text_en": "Starforge",
+			"Text_ko": "별의 탄생(Starforge)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandSwords/Starforge.dds"
+		},
+		{
+			"Id": "UniqueJewel80",
+			"Text_en": "Unending Hunger",
+			"Text_ko": "끝없는 허기(Unending Hunger)",
+			"DDSFile": "Art/2DItems/Jewels/SpectreJewel.dds"
+		},
+		{
+			"Id": "UniqueBootsDexInt5",
+			"Text_en": "Voidwalker",
+			"Text_ko": "공허 보행자(Voidwalker)",
+			"DDSFile": "Art/2DItems/Armours/Boots/CrossingTheVoid.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrInt5",
+			"Text_en": "Shaper's Touch",
+			"Text_ko": "쉐이퍼의 손길(Shaper's Touch)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/ShapersGloves.dds"
+		},
+		{
+			"Id": "UniqueRing45",
+			"Text_en": "The Warden's Brand",
+			"Text_ko": "간수의 낙인(The Warden's Brand)",
+			"DDSFile": "Art/2DItems/Rings/TheWardensBand.dds"
+		},
+		{
+			"Id": "UniqueFlask19",
+			"Text_en": "Witchfire Brew",
+			"Text_ko": "불타는 마녀의 술(Witchfire Brew)",
+			"DDSFile": "Art/2DItems/Flasks/WitchFireBrew.dds"
+		},
+		{
+			"Id": "UniqueFlask20",
+			"Text_en": "Dying Sun",
+			"Text_ko": "죽어가는 해(Dying Sun)",
+			"DDSFile": "Art/2DItems/Flasks/ShapersFlask.dds"
+		},
+		{
+			"Id": "UniqueJewel81",
+			"Text_en": "Primordial Harmony",
+			"Text_ko": "태고의 조화(Primordial Harmony)",
+			"DDSFile": "Art/2DItems/Jewels/GolemInfernal.dds"
+		},
+		{
+			"Id": "UniqueJewel82",
+			"Text_en": "Primordial Might",
+			"Text_ko": "태고의 완력(Primordial Might)",
+			"DDSFile": "Art/2DItems/Jewels/GolemArctic.dds"
+		},
+		{
+			"Id": "UniqueJewel83",
+			"Text_en": "Primordial Eminence",
+			"Text_ko": "태고의 고귀(Primordial Eminence)",
+			"DDSFile": "Art/2DItems/Jewels/GolemTempest.dds"
+		},
+		{
+			"Id": "UniqueBow18",
+			"Text_en": "Xoph's Inception",
+			"Text_ko": "조프의 시초(Xoph's Inception)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/BloodPerigree.dds"
+		},
+		{
+			"Id": "UniqueBow19",
+			"Text_en": "Xoph's Nurture",
+			"Text_ko": "조프의 보살핌(Xoph's Nurture)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/BloodPerigreeBREACH.dds"
+		},
+		{
+			"Id": "UniqueHelmetStr4",
+			"Text_en": "The Formless Flame",
+			"Text_ko": "무형의 불꽃(The Formless Flame)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/FormlessInFlames.dds"
+		},
+		{
+			"Id": "UniqueHelmetStr5",
+			"Text_en": "The Formless Inferno",
+			"Text_ko": "무형의 지옥불(The Formless Inferno)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/FormlessInFlamesUPGRADE.dds"
+		},
+		{
+			"Id": "UniqueAmulet37",
+			"Text_en": "Xoph's Heart",
+			"Text_ko": "조프의 심장(Xoph's Heart)",
+			"DDSFile": "Art/2DItems/Amulets/YphethakksHeart.dds"
+		},
+		{
+			"Id": "UniqueAmulet38",
+			"Text_en": "Xoph's Blood",
+			"Text_ko": "조프의 피(Xoph's Blood)",
+			"DDSFile": "Art/2DItems/Amulets/YphethakksHeartUpgrade.dds"
+		},
+		{
+			"Id": "UniqueWand15",
+			"Text_en": "Tulborn",
+			"Text_ko": "툴의 탄생(Tulborn)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/Tulborn.dds"
+		},
+		{
+			"Id": "UniqueWand16",
+			"Text_en": "Tulfall",
+			"Text_ko": "툴의 몰락(Tulfall)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/TulbornUpgraded.dds"
+		},
+		{
+			"Id": "UniqueBodyDex10",
+			"Text_en": "The Snowblind Grace",
+			"Text_ko": "설맹의 은총(The Snowblind Grace)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/TheSnowblindGrace.dds"
+		},
+		{
+			"Id": "UniqueBodyDex11",
+			"Text_en": "The Perfect Form",
+			"Text_ko": "완벽한 구조(The Perfect Form)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/ThePerfectForm.dds"
+		},
+		{
+			"Id": "UniqueAmulet39",
+			"Text_en": "The Halcyon",
+			"Text_ko": "평온(The Halcyon)",
+			"DDSFile": "Art/2DItems/Amulets/GlacierCacoon.dds"
+		},
+		{
+			"Id": "UniqueAmulet40",
+			"Text_en": "The Pandemonius",
+			"Text_ko": "대혼란(The Pandemonius)",
+			"DDSFile": "Art/2DItems/Amulets/GlacierCacoonUpgrade.dds"
+		},
+		{
+			"Id": "UniqueClaw16",
+			"Text_en": "Hand of Thought and Motion",
+			"Text_ko": "사고와 움직임의 손아귀(Hand of Thought and Motion)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/ThoughtMotion1.dds"
+		},
+		{
+			"Id": "UniqueClaw17",
+			"Text_en": "Hand of Wisdom and Action",
+			"Text_ko": "지혜와 행동의 손아귀(Hand of Wisdom and Action)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/ThoughtMotion2.dds"
+		},
+		{
+			"Id": "UniqueShieldInt8",
+			"Text_en": "Esh's Mirror",
+			"Text_ko": "에쉬의 거울(Esh's Mirror)",
+			"DDSFile": "Art/2DItems/Armours/Shields/EshsMirror.dds"
+		},
+		{
+			"Id": "UniqueShieldInt9",
+			"Text_en": "Esh's Visage",
+			"Text_ko": "에쉬의 얼굴(Esh's Visage)",
+			"DDSFile": "Art/2DItems/Armours/Shields/EshsMirrorUpgraded.dds"
+		},
+		{
+			"Id": "UniqueAmulet41",
+			"Text_en": "Voice of the Storm",
+			"Text_ko": "태풍의 목소리(Voice of the Storm)",
+			"DDSFile": "Art/2DItems/Amulets/VoiceOfTheStorm.dds"
+		},
+		{
+			"Id": "UniqueAmulet42",
+			"Text_en": "Choir of the Storm",
+			"Text_ko": "태풍의 합창(Choir of the Storm)",
+			"DDSFile": "Art/2DItems/Amulets/VoiceOfTheStormUpgrade.dds"
+		},
+		{
+			"Id": "UniqueBootsStr6",
+			"Text_en": "The Infinite Pursuit",
+			"Text_ko": "끝없는 추적(The Infinite Pursuit)",
+			"DDSFile": "Art/2DItems/Armours/Boots/TwoTonedBootsALT3.dds"
+		},
+		{
+			"Id": "UniqueBootsStr7",
+			"Text_en": "The Red Trail",
+			"Text_ko": "붉은 발자취(The Red Trail)",
+			"DDSFile": "Art/2DItems/Armours/Boots/TheInfinitePursuit.dds"
+		},
+		{
+			"Id": "UniqueTwoHandAxe11",
+			"Text_en": "Uul-Netol's Kiss",
+			"Text_ko": "울네톨의 입맞춤(Uul-Netol's Kiss)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandAxes/UulNetolsKiss.dds"
+		},
+		{
+			"Id": "UniqueTwoHandAxe12",
+			"Text_en": "Uul-Netol's Embrace",
+			"Text_ko": "울네톨의 포옹(Uul-Netol's Embrace)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandAxes/UulNetolsKissUpgraded.dds"
+		},
+		{
+			"Id": "UniqueShieldStr8",
+			"Text_en": "The Anticipation",
+			"Text_ko": "기대(The Anticipation)",
+			"DDSFile": "Art/2DItems/Armours/Shields/Longing1.dds"
+		},
+		{
+			"Id": "UniqueShieldStr9",
+			"Text_en": "The Surrender",
+			"Text_ko": "포기(The Surrender)",
+			"DDSFile": "Art/2DItems/Armours/Shields/Longing2.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword22",
+			"Text_en": "Severed in Sleep",
+			"Text_ko": "야습(Severed in Sleep)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/EternalSleep1.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword23",
+			"Text_en": "United in Dream",
+			"Text_ko": "꿈속의 연합(United in Dream)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/EternalSleep2.dds"
+		},
+		{
+			"Id": "UniqueBodyInt13",
+			"Text_en": "Skin of the Loyal",
+			"Text_ko": "충신의 가죽(Skin of the Loyal)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/MyriadGrasp.dds"
+		},
+		{
+			"Id": "UniqueBodyInt14",
+			"Text_en": "Skin of the Lords",
+			"Text_ko": "군주의 가죽(Skin of the Lords)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/MyriadGraspGrand.dds"
+		},
+		{
+			"Id": "UniqueJewel85",
+			"Text_en": "The Red Dream",
+			"Text_ko": "붉은 꿈(The Red Dream)",
+			"DDSFile": "Art/2DItems/Jewels/TheRedDream.dds"
+		},
+		{
+			"Id": "UniqueJewel86",
+			"Text_en": "The Red Nightmare",
+			"Text_ko": "붉은 악몽(The Red Nightmare)",
+			"DDSFile": "Art/2DItems/Jewels/TheRedDreamUpgrade.dds"
+		},
+		{
+			"Id": "UniqueJewel87",
+			"Text_en": "The Green Dream",
+			"Text_ko": "녹색 꿈(The Green Dream)",
+			"DDSFile": "Art/2DItems/Jewels/TheGreenDream.dds"
+		},
+		{
+			"Id": "UniqueJewel88_",
+			"Text_en": "The Green Nightmare",
+			"Text_ko": "녹색 악몽(The Green Nightmare)",
+			"DDSFile": "Art/2DItems/Jewels/TheGreenDreamUpgrade.dds"
+		},
+		{
+			"Id": "UniqueJewel89",
+			"Text_en": "The Blue Dream",
+			"Text_ko": "파란 꿈(The Blue Dream)",
+			"DDSFile": "Art/2DItems/Jewels/TheBlueDream.dds"
+		},
+		{
+			"Id": "UniqueJewel90",
+			"Text_en": "The Blue Nightmare",
+			"Text_ko": "파란 악몽(The Blue Nightmare)",
+			"DDSFile": "Art/2DItems/Jewels/TheBlueDreamUpgrade.dds"
+		},
+		{
+			"Id": "UniqueShieldStr10",
+			"Text_en": "Tukohama's Fortress",
+			"Text_ko": "투코하마의 요새(Tukohama's Fortress)",
+			"DDSFile": "Art/2DItems/Armours/Shields/TukohamasFortress.dds"
+		},
+		{
+			"Id": "UniqueRing46",
+			"Text_en": "Angler's Plait",
+			"Text_ko": "낚시꾼의 고리(Angler's Plait)",
+			"DDSFile": "Art/2DItems/Rings/AnglersPlait.dds"
+		},
+		{
+			"Id": "UniqueWand17",
+			"Text_en": "Shade of Solaris",
+			"Text_ko": "솔라리스의 그늘(Shade of Solaris)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/SolarisWand.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrInt8",
+			"Text_en": "The Brine Crown",
+			"Text_ko": "염수 왕관(The Brine Crown)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/TheBrineCrown.dds"
+		},
+		{
+			"Id": "UniqueFlask21",
+			"Text_en": "Sin's Rebirth",
+			"Text_ko": "씬의 부활(Sin's Rebirth)",
+			"DDSFile": "Art/2DItems/Flasks/Sin.dds"
+		},
+		{
+			"Id": "UniqueShieldInt10",
+			"Text_en": "Light of Lunaris",
+			"Text_ko": "루나리스의 빛(Light of Lunaris)",
+			"DDSFile": "Art/2DItems/Armours/Shields/Lunaris.dds"
+		},
+		{
+			"Id": "UniqueTwoHandAxe13",
+			"Text_en": "Kitava's Feast",
+			"Text_ko": "키타바의 연회(Kitava's Feast)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandAxes/KitavasHunger.dds"
+		},
+		{
+			"Id": "UniqueStaff17",
+			"Text_en": "Duskdawn",
+			"Text_ko": "황혼의 아침(Duskdawn)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/SolarisLunarisStaff.dds"
+		},
+		{
+			"Id": "UniqueBelt22",
+			"Text_en": "Perseverance",
+			"Text_ko": "인내(Perseverance)",
+			"DDSFile": "Art/2DItems/Belts/Perserverance.dds"
+		},
+		{
+			"Id": "UniqueDagger15",
+			"Text_en": "Arakaali's Fang",
+			"Text_ko": "아라칼리의 송곳니(Arakaali's Fang)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/FangUnique.dds"
+		},
+		{
+			"Id": "UniqueBodyStrDex7",
+			"Text_en": "Gruthkul's Pelt",
+			"Text_ko": "그루스컬의 가죽(Gruthkul's Pelt)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/WilefangsPelt.dds"
+		},
+		{
+			"Id": "UniqueAmulet43",
+			"Text_en": "Presence of Chayula",
+			"Text_ko": "차율라의 존재(Presence of Chayula)",
+			"DDSFile": "Art/2DItems/Amulets/PresenceOfChayula.dds"
+		},
+		{
+			"Id": "UniqueBootsDex11",
+			"Text_en": "Garukhan's Flight",
+			"Text_ko": "가루칸의 비행(Garukhan's Flight)",
+			"DDSFile": "Art/2DItems/Armours/Boots/TwoTonedBootsALT.dds"
+		},
+		{
+			"Id": "UniqueBodyStr8",
+			"Text_en": "Prospero's Vault",
+			"Text_ko": "프로스페로의 금고(Prospero's Vault)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/ProsperosVault.dds"
+		},
+		{
+			"Id": "UniqueAmulet36",
+			"Text_en": "Bisco's Collar",
+			"Text_ko": "비스코의 목걸이(Bisco's Collar)",
+			"DDSFile": "Art/2DItems/Amulets/BiscosCollar.dds"
+		},
+		{
+			"Id": "UniqueBelt23",
+			"Text_en": "Bisco's Leash",
+			"Text_ko": "비스코의 가죽끈(Bisco's Leash)",
+			"DDSFile": "Art/2DItems/Belts/BiscosLeash.dds"
+		},
+		{
+			"Id": "UniqueTwoHandMace12",
+			"Text_en": "Tidebreaker",
+			"Text_ko": "물결 분쇄기(Tidebreaker)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/Tidebreaker.dds"
+		},
+		{
+			"Id": "UniqueJewel91",
+			"Text_en": "Collateral Damage",
+			"Text_ko": "부가적 피해(Collateral Damage)",
+			"DDSFile": "Art/2DItems/Jewels/ShrapnelShotThreshold.dds"
+		},
+		{
+			"Id": "UniqueJewel92",
+			"Text_en": "Sudden Ignition",
+			"Text_ko": "기습적인 점화(Sudden Ignition)",
+			"DDSFile": "Art/2DItems/Jewels/BurningArrowThreshold.dds"
+		},
+		{
+			"Id": "UniqueJewel93",
+			"Text_en": "Overwhelming Odds",
+			"Text_ko": "압도적인 확률(Overwhelming Odds)",
+			"DDSFile": "Art/2DItems/Jewels/CleaveThreshold.dds"
+		},
+		{
+			"Id": "UniqueJewel94",
+			"Text_en": "First Snow",
+			"Text_ko": "첫눈(First Snow)",
+			"DDSFile": "Art/2DItems/Jewels/FreezingPulseThreshold.dds"
+		},
+		{
+			"Id": "UniqueJewel95",
+			"Text_en": "Omen on the Winds",
+			"Text_ko": "바람에 실린 전조(Omen on the Winds)",
+			"DDSFile": "Art/2DItems/Jewels/IceShotThreshold.dds"
+		},
+		{
+			"Id": "UniqueJewel96",
+			"Text_en": "Wildfire",
+			"Text_ko": "도깨비불(Wildfire)",
+			"DDSFile": "Art/2DItems/Jewels/MoltenStrikeThreshold.dds"
+		},
+		{
+			"Id": "UniqueJewel97",
+			"Text_en": "Fight for Survival",
+			"Text_ko": "처절한 분투(Fight for Survival)",
+			"DDSFile": "Art/2DItems/Jewels/FrostBladesThreshold.dds"
+		},
+		{
+			"Id": "UniqueJewel98",
+			"Text_en": "Might and Influence",
+			"Text_ko": "권력과 영향력(Might and Influence)",
+			"DDSFile": "Art/2DItems/Jewels/DualStrikeThreshold.dds"
+		},
+		{
+			"Id": "UniqueJewel99",
+			"Text_en": "Frozen Trail",
+			"Text_ko": "얼어붙은 길(Frozen Trail)",
+			"DDSFile": "Art/2DItems/Jewels/FrostboltThreshold.dds"
+		},
+		{
+			"Id": "UniqueJewel100",
+			"Text_en": "Ring of Blades",
+			"Text_ko": "칼날 경기장(Ring of Blades)",
+			"DDSFile": "Art/2DItems/Jewels/EtherealKnivesThreshold.dds"
+		},
+		{
+			"Id": "UniqueJewel101",
+			"Text_en": "Boundless Grasp",
+			"Text_ko": "끝없는 장악(Boundless Grasp)",
+			"DDSFile": "Art/2DItems/Jewels/LightningTendrilsThreshold.dds"
+		},
+		{
+			"Id": "UniqueJewel102",
+			"Text_en": "Inevitability",
+			"Text_ko": "필연(Inevitability)",
+			"DDSFile": "Art/2DItems/Jewels/MagmaOrbThreshold.dds"
+		},
+		{
+			"Id": "UniqueJewel103",
+			"Text_en": "Winter Burial",
+			"Text_ko": "한겨울의 장례식(Winter Burial)",
+			"DDSFile": "Art/2DItems/Jewels/GlacialHammerThreshold.dds"
+		},
+		{
+			"Id": "UniqueJewel104",
+			"Text_en": "Spreading Rot",
+			"Text_ko": "퍼져가는 부패(Spreading Rot)",
+			"DDSFile": "Art/2DItems/Jewels/BlightThreshold.dds"
+		},
+		{
+			"Id": "UniqueJewel105",
+			"Text_en": "Violent Dead",
+			"Text_ko": "난폭한 망자(Violent Dead)",
+			"DDSFile": "Art/2DItems/Jewels/RaiseZombieThreshold.dds"
+		},
+		{
+			"Id": "UniqueJewel106",
+			"Text_en": "Hazardous Research",
+			"Text_ko": "위험한 연구(Hazardous Research)",
+			"DDSFile": "Art/2DItems/Jewels/SparkThreshold.dds"
+		},
+		{
+			"Id": "UniqueJewel107",
+			"Text_en": "Choking Ash",
+			"Text_ko": "숨막히는 잿더미(Choking Ash)",
+			"DDSFile": "Art/2DItems/Jewels/unique11.dds"
+		},
+		{
+			"Id": "UniqueJewel108",
+			"Text_en": "Straight and True",
+			"Text_ko": "정직한 진실(Straight and True)",
+			"DDSFile": "Art/2DItems/Jewels/FireTrapThreshhold.dds"
+		},
+		{
+			"Id": "UniqueStaff18",
+			"Text_en": "Martyr of Innocence",
+			"Text_ko": "결백한 순교자(Martyr of Innocence)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/MartyrInnocence.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrDex8",
+			"Text_en": "Haemophilia",
+			"Text_ko": "혈우병(Haemophilia)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/bleedgloves.dds"
+		},
+		{
+			"Id": "UniqueHelmetStr6",
+			"Text_en": "The Baron",
+			"Text_ko": "남작(The Baron)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/TheBaron.dds"
+		},
+		{
+			"Id": "UniqueBodyDexInt7",
+			"Text_en": "Bloodbond",
+			"Text_ko": "피붙이(Bloodbond)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/CommunalFlesh.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword24",
+			"Text_en": "Ahn's Might",
+			"Text_ko": "안의 완력(Ahn's Might)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/AhnsMight.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrInt9",
+			"Text_en": "Ahn's Contempt",
+			"Text_ko": "안의 경멸(Ahn's Contempt)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/AhnsContempt.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrInt7",
+			"Text_en": "Speaker's Wreath",
+			"Text_ko": "연설가의 화관(Speaker's Wreath)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/MinionHelmet.dds"
+		},
+		{
+			"Id": "UniqueBodyDexInt6",
+			"Text_en": "Inpulsa's Broken Heart",
+			"Text_ko": "인펄사의 상심(Inpulsa's Broken Heart)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/OnShocked.dds"
+		},
+		{
+			"Id": "UniqueSceptre17",
+			"Text_en": "Balefire",
+			"Text_ko": "대화재(Balefire)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/Baelfire.dds"
+		},
+		{
+			"Id": "UniqueTwoHandAxe15",
+			"Text_en": "Debeon's Dirge",
+			"Text_ko": "데비온의 장승곡(Debeon's Dirge)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandAxes/StringAxe.dds"
+		},
+		{
+			"Id": "UniqueBodyInt12",
+			"Text_en": "The Coming Calamity",
+			"Text_ko": "다가오는 대재난(The Coming Calamity)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/SpiritHarness.dds"
+		},
+		{
+			"Id": "UniqueClaw18",
+			"Text_en": "The Wasp Nest",
+			"Text_ko": "말벌의 독침(The Wasp Nest)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Claws/Leviathanivory.dds"
+		},
+		{
+			"Id": "UniqueDagger16",
+			"Text_en": "Taproot",
+			"Text_ko": "흡혈 뿌리(Taproot)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/MarrowGasher.dds"
+		},
+		{
+			"Id": "UniqueAmulet44",
+			"Text_en": "Maligaro's Cruelty",
+			"Text_ko": "말리가로의 잔혹성(Maligaro's Cruelty)",
+			"DDSFile": "Art/2DItems/Amulets/Amulet15.dds"
+		},
+		{
+			"Id": "UniqueBodyDexInt8",
+			"Text_en": "Dendrobate",
+			"Text_ko": "화살독 갑옷(Dendrobate)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Dendrobatis.dds"
+		},
+		{
+			"Id": "UniqueGlovesDexInt7",
+			"Text_en": "The Embalmer",
+			"Text_ko": "시체처리사의 장갑(The Embalmer)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/Allelopathy.dds"
+		},
+		{
+			"Id": "UniqueGlovesInt8",
+			"Text_en": "Allelopathy",
+			"Text_ko": "생존 경쟁(Allelopathy)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/EmbalmersGloves.dds"
+		},
+		{
+			"Id": "UniqueBootsInt8",
+			"Text_en": "Inya's Epiphany",
+			"Text_ko": "이냐의 통찰(Inya's Epiphany)",
+			"DDSFile": "Art/2DItems/Armours/Boots/PaleCouncilBoots.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrInt6",
+			"Text_en": "Volkuur's Guidance",
+			"Text_ko": "볼쿠르의 인도(Volkuur's Guidance)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/PaleCouncilGloves.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt12",
+			"Text_en": "Eber's Unification",
+			"Text_ko": "이버의 통합(Eber's Unification)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/PaleCouncilHelmet.dds"
+		},
+		{
+			"Id": "UniqueBodyDex12",
+			"Text_en": "Yriel's Fostering",
+			"Text_ko": "이리엘의 훈육(Yriel's Fostering)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/PaleCouncilArmour.dds"
+		},
+		{
+			"Id": "UniqueBodyInt16",
+			"Text_en": "Dialla's Malefaction",
+			"Text_ko": "디알라의 악행(Dialla's Malefaction)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/DiallasMalefaction.dds"
+		},
+		{
+			"Id": "UniqueGlovesDexInt8",
+			"Text_en": "Malachai's Mark",
+			"Text_ko": "말라카이의 징표(Malachai's Mark)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/MalachaisMark.dds"
+		},
+		{
+			"Id": "UniqueBelt24",
+			"Text_en": "Ryslatha's Coil",
+			"Text_ko": "리슬라사의 감개(Ryslatha's Coil)",
+			"DDSFile": "Art/2DItems/Belts/RyuslathasClutches.dds"
+		},
+		{
+			"Id": "UniqueBelt21",
+			"Text_en": "Soul Tether",
+			"Text_ko": "영혼 올가미(Soul Tether)",
+			"DDSFile": "Art/2DItems/Belts/SoulTether.dds"
+		},
+		{
+			"Id": "UniqueShieldStrDex4",
+			"Text_en": "Vix Lunaris",
+			"Text_ko": "불굴의 달(Vix Lunaris)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ShieldStrDexUnique4.dds"
+		},
+		{
+			"Id": "UniqueShieldStrInt11",
+			"Text_en": "Invictus Solaris",
+			"Text_ko": "지지 않는 태양(Invictus Solaris)",
+			"DDSFile": "Art/2DItems/Armours/Shields/Invictus.dds"
+		},
+		{
+			"Id": "UniqueShieldStr11",
+			"Text_en": "Ahn's Heritage",
+			"Text_ko": "안의 유산(Ahn's Heritage)",
+			"DDSFile": "Art/2DItems/Armours/Shields/AhnsHeritage.dds"
+		},
+		{
+			"Id": "UniqueFlask22",
+			"Text_en": "The Wise Oak",
+			"Text_ko": "지혜의 참나무(The Wise Oak)",
+			"DDSFile": "Art/2DItems/Flasks/TheWiseOak.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword25",
+			"Text_en": "The Rippling Thoughts",
+			"Text_ko": "퍼져나가는 생각(The Rippling Thoughts)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/HarbingerLeagueSword.dds"
+		},
+		{
+			"Id": "UniqueJewel1b",
+			"Text_en": "To Dust",
+			"Text_ko": "먼지처럼 사라져라(To Dust)",
+			"DDSFile": "Art/2DItems/Jewels/unique8.dds"
+		},
+		{
+			"Id": "UniqueJewel107b",
+			"Text_en": "From Dust",
+			"Text_ko": "먼지처럼 나타나라(From Dust)",
+			"DDSFile": "Art/2DItems/Jewels/unique11.dds"
+		},
+		{
+			"Id": "UniqueBootsStr9",
+			"Text_en": "Stormcharger",
+			"Text_ko": "태풍 돌격대(Stormcharger)",
+			"DDSFile": "Art/2DItems/Armours/Boots/Stormcharger.dds"
+		},
+		{
+			"Id": "UniqueGlovesStr8",
+			"Text_en": "Giantsbane",
+			"Text_ko": "거대한 파멸(Giantsbane)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/Deathforge.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt13",
+			"Text_en": "Wraithlord",
+			"Text_ko": "망령 군주(Wraithlord)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Wraithlord.dds"
+		},
+		{
+			"Id": "UniqueStaff21",
+			"Text_en": "Cane of Unravelling",
+			"Text_ko": "해결의 지팡이(Cane of Unravelling)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/CaneOfUnravelling.dds"
+		},
+		{
+			"Id": "UniqueBelt25",
+			"Text_en": "The Flow Untethered",
+			"Text_ko": "얽매이지 않은 흐름(The Flow Untethered)",
+			"DDSFile": "Art/2DItems/Belts/HarbingerBelt.dds"
+		},
+		{
+			"Id": "UniqueShieldStrInt10",
+			"Text_en": "The Unshattered Will",
+			"Text_ko": "불굴의 의지(The Unshattered Will)",
+			"DDSFile": "Art/2DItems/Armours/Shields/Channeling Shield.dds"
+		},
+		{
+			"Id": "UniqueQuiver13",
+			"Text_en": "The Fracturing Spinner",
+			"Text_ko": "분쇄형 회전기(The Fracturing Spinner)",
+			"DDSFile": "Art/2DItems/Quivers/HarbingerQuiver.dds"
+		},
+		{
+			"Id": "UniqueHelmetDexInt8",
+			"Text_en": "The Tempest's Binding",
+			"Text_ko": "폭풍의 속박(The Tempest's Binding)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/ChillShockHarbingerMask.dds"
+		},
+		{
+			"Id": "UniqueStaff20",
+			"Text_en": "The Enmity Divine",
+			"Text_ko": "증오의 신(The Enmity Divine)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/Rage Staff.dds"
+		},
+		{
+			"Id": "UniqueBootsStrInt5",
+			"Text_en": "Ralakesh's Impatience",
+			"Text_ko": "랄라케쉬의 조바심(Ralakesh's Impatience)",
+			"DDSFile": "Art/2DItems/Armours/Boots/RalakeshsImpatience.dds"
+		},
+		{
+			"Id": "UniqueRing48",
+			"Text_en": "The Hungry Loop",
+			"Text_ko": "허기진 고리(The Hungry Loop)",
+			"DDSFile": "Art/2DItems/Rings/TheHungryLoop.dds"
+		},
+		{
+			"Id": "UniqueWand18",
+			"Text_en": "The Poet's Pen",
+			"Text_ko": "시인의 펜(The Poet's Pen)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/PoetsPen.dds"
+		},
+		{
+			"Id": "UniqueJewel110",
+			"Text_en": "The Long Winter",
+			"Text_ko": "기나긴 겨울(The Long Winter)",
+			"DDSFile": "Art/2DItems/Jewels/GlacialCascadeThreshold.dds"
+		},
+		{
+			"Id": "UniqueJewel111",
+			"Text_en": "Pure Talent",
+			"Text_ko": "타고난 재능(Pure Talent)",
+			"DDSFile": "Art/2DItems/Jewels/PureTalent.dds"
+		},
+		{
+			"Id": "UniqueBootsStr8",
+			"Text_en": "Doryani's Delusion Titan Greaves",
+			"Text_ko": "도리아니의 기만(Doryani's Delusion) 거신 각반",
+			"DDSFile": "Art/2DItems/Armours/Boots/DoriyanisRed.dds"
+		},
+		{
+			"Id": "UniqueBootsDex12",
+			"Text_en": "Doryani's Delusion Slink Boots",
+			"Text_ko": "도리아니의 기만(Doryani's Delusion) 송아지 가죽 장화",
+			"DDSFile": "Art/2DItems/Armours/Boots/DoriyanisGreen.dds"
+		},
+		{
+			"Id": "UniqueBootsInt9",
+			"Text_en": "Doryani's Delusion Sorcerer Boots",
+			"Text_ko": "도리아니의 기만(Doryani's Delusion) 악령술사 장화",
+			"DDSFile": "Art/2DItems/Armours/Boots/DoriyanisBlue.dds"
+		},
+		{
+			"Id": "UniqueFlask23",
+			"Text_en": "Coralito's Signature",
+			"Text_ko": "코랄리토의 서명(Coralito's Signature)",
+			"DDSFile": "Art/2DItems/Flasks/GorgonsFlask.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrInt10",
+			"Text_en": "Memory Vault",
+			"Text_ko": "기억의 금고(Memory Vault)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/ElderGuardian.dds"
+		},
+		{
+			"Id": "UniqueShieldDexInt4",
+			"Text_en": "Leper's Alms",
+			"Text_ko": "나병 환자의 자선(Leper's Alms)",
+			"DDSFile": "Art/2DItems/Armours/Shields/LepersAlms.dds"
+		},
+		{
+			"Id": "UniqueFlask24",
+			"Text_en": "Sands of Shakari",
+			"Text_ko": "샤카리의 모래(Sands of Shakari)",
+			"DDSFile": "Art/2DItems/Flasks/SandsOfShakiri.dds"
+		},
+		{
+			"Id": "UniqueDagger17",
+			"Text_en": "White Wind",
+			"Text_ko": "눈바람(White Wind)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/WhiteWind.dds"
+		},
+		{
+			"Id": "UniqueBow20",
+			"Text_en": "Arborix",
+			"Text_ko": "아보릭스(Arborix)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/VerdantGuardianBow.dds"
+		},
+		{
+			"Id": "UniqueAmulet46",
+			"Text_en": "Yoke of Suffering",
+			"Text_ko": "고통의 멍에(Yoke of Suffering)",
+			"DDSFile": "Art/2DItems/Amulets/YokeOfSuffering.dds"
+		},
+		{
+			"Id": "UniqueJewel112",
+			"Text_en": "Might of the Meek",
+			"Text_ko": "온유의 힘(Might of the Meek)",
+			"DDSFile": "Art/2DItems/Jewels/PotencyOfTheUnremarkable.dds"
+		},
+		{
+			"Id": "UniqueJewel113",
+			"Text_en": "The Golden Rule",
+			"Text_ko": "황금 법칙(The Golden Rule)",
+			"DDSFile": "Art/2DItems/Jewels/TheGoldenRule.dds"
+		},
+		{
+			"Id": "UniqueBootsDexInt6",
+			"Text_en": "Bubonic Trail",
+			"Text_ko": "죽음의 자취(Bubonic Trail)",
+			"DDSFile": "Art/2DItems/Armours/Boots/AbyssBoots.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrDex9",
+			"Text_en": "Tombfist",
+			"Text_ko": "툼피스트(Tombfist)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/AbyssGloves.dds"
+		},
+		{
+			"Id": "UniqueBelt27",
+			"Text_en": "Darkness Enthroned",
+			"Text_ko": "어둠에 대한 경외(Darkness Enthroned)",
+			"DDSFile": "Art/2DItems/Belts/DarknessEnthroned.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrInt11",
+			"Text_en": "Lightpoacher",
+			"Text_ko": "빛의 밀렵꾼(Lightpoacher)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/AbyssHelmet.dds"
+		},
+		{
+			"Id": "UniqueBodyDexInt9",
+			"Text_en": "Shroud of the Lightless",
+			"Text_ko": "무광의 연막(Shroud of the Lightless)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/AbyssBody.dds"
+		},
+		{
+			"Id": "UniqueGlovesDex4",
+			"Text_en": "Oskarm",
+			"Text_ko": "오스캄(Oskarm)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/ZenoGloves.dds"
+		},
+		{
+			"Id": "UniqueJewel114",
+			"Text_en": "Soul's Wick",
+			"Text_ko": "영혼의 심지(Soul's Wick)",
+			"DDSFile": "Art/2DItems/Jewels/SoulsWick.dds"
+		},
+		{
+			"Id": "UniqueBodyInt15",
+			"Text_en": "Doedre's Skin",
+			"Text_ko": "도이드리의 가죽(Doedre's Skin)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/DoedresSkin.dds"
+		},
+		{
+			"Id": "UniqueBodyStr9",
+			"Text_en": "Iron Heart",
+			"Text_ko": "철 심장(Iron Heart)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/IronHeart Final.dds"
+		},
+		{
+			"Id": "UniqueAmulet45",
+			"Text_en": "Impresence",
+			"Text_ko": "무존재(Impresence)",
+			"DDSFile": "Art/2DItems/Amulets/ElderCold.dds"
+		},
+		{
+			"Id": "UniqueBelt26",
+			"Text_en": "Cyclopean Coil",
+			"Text_ko": "키클로프의 고리(Cyclopean Coil)",
+			"DDSFile": "Art/2DItems/Belts/ElderBelt.dds"
+		},
+		{
+			"Id": "UniqueJewel115",
+			"Text_en": "Watcher's Eye",
+			"Text_ko": "감시자의 눈(Watcher's Eye)",
+			"DDSFile": "Art/2DItems/Jewels/ElderJewel.dds"
+		},
+		{
+			"Id": "UniqueGlovesDexInt9",
+			"Text_en": "Blasphemer's Grasp",
+			"Text_ko": "신성 모독자의 장악(Blasphemer's Grasp)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/ElderGloves.dds"
+		},
+		{
+			"Id": "UniqueOneHandMace11",
+			"Text_en": "Nebuloch",
+			"Text_ko": "네뷸록(Nebuloch)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandMaces/ElderMace.dds"
+		},
+		{
+			"Id": "UniqueBow21",
+			"Text_en": "Hopeshredder",
+			"Text_ko": "희망 종결자(Hopeshredder)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/ElderBow.dds"
+		},
+		{
+			"Id": "UniqueWand19",
+			"Text_en": "Shimmeron",
+			"Text_ko": "쉬머론(Shimmeron)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Wands/ElderWand.dds"
+		},
+		{
+			"Id": "UniqueHelmetDexInt9",
+			"Text_en": "Gorgon's Gaze",
+			"Text_ko": "고르곤의 응시(Gorgon's Gaze)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/PillarsOfArun.dds"
+		},
+		{
+			"Id": "UniqueShieldStr12",
+			"Text_en": "Magna Eclipsis",
+			"Text_ko": "커다란 일식(Magna Eclipsis)",
+			"DDSFile": "Art/2DItems/Armours/Shields/MagnisEclipsis.dds"
+		},
+		{
+			"Id": "UniqueSceptre18",
+			"Text_en": "Augyre",
+			"Text_ko": "오귀르(Augyre)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/ElderSceptre.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword27",
+			"Text_en": "Grelwood Shank",
+			"Text_ko": "그렐나무 자루(Grelwood Shank)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/VerdantGuardianSword1.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword28",
+			"Text_en": "Beltimber Blade",
+			"Text_ko": "벨팀버 검(Beltimber Blade)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/VerdantGuardianSword2.dds"
+		},
+		{
+			"Id": "UniqueDagger18",
+			"Text_en": "Vulconus",
+			"Text_ko": "불커누스(Vulconus)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Daggers/Vulconus.dds"
+		},
+		{
+			"Id": "UniqueAmulet47",
+			"Text_en": "Gloomfang",
+			"Text_ko": "그롬팡(Gloomfang)",
+			"DDSFile": "Art/2DItems/Amulets/ShadowRay.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword26",
+			"Text_en": "Oni-Goroshi",
+			"Text_ko": "오니고로시(Oni-Goroshi)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/TheGoddessUnleashed.dds"
+		},
+		{
+			"Id": "UniqueRing49",
+			"Text_en": "Mark of the Elder",
+			"Text_ko": "엘더의 징표(Mark of the Elder)",
+			"DDSFile": "Art/2DItems/Rings/UberElderRing.dds"
+		},
+		{
+			"Id": "UniqueRing50",
+			"Text_en": "Mark of the Shaper",
+			"Text_ko": "쉐이퍼의 징표(Mark of the Shaper)",
+			"DDSFile": "Art/2DItems/Rings/UberShaperRing.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt14",
+			"Text_en": "Indigon",
+			"Text_ko": "인디곤(Indigon)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/UberElderHelmet.dds"
+		},
+		{
+			"Id": "UniqueStaff22",
+			"Text_en": "Disintegrator",
+			"Text_ko": "파쇄자(Disintegrator)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/ElderStaff.dds"
+		},
+		{
+			"Id": "UniqueTwoHandSword13",
+			"Text_en": "Voidforge",
+			"Text_ko": "무효화(Voidforge)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandSwords/Starforge.dds"
+		},
+		{
+			"Id": "UniqueQuiver14",
+			"Text_en": "Voidfletcher",
+			"Text_ko": "공허 화살깃(Voidfletcher)",
+			"DDSFile": "Art/2DItems/Quivers/EldarQuiver.dds"
+		},
+		{
+			"Id": "UniqueBodyStr10",
+			"Text_en": "Craiceann's Carapace",
+			"Text_ko": "크라칸의 등딱지(Craiceann's Carapace)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/CrabUnique.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrInt12",
+			"Text_en": "Craiceann's Chitin",
+			"Text_ko": "크라칸의 키틴질(Craiceann's Chitin)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/CrabUniqueHelmet.dds"
+		},
+		{
+			"Id": "UniqueGlovesStr9",
+			"Text_en": "Craiceann's Pincers",
+			"Text_ko": "크라칸의 집게(Craiceann's Pincers)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/CrabUniqueGloves.dds"
+		},
+		{
+			"Id": "UniqueBootsStr10",
+			"Text_en": "Craiceann's Tracks",
+			"Text_ko": "크라칸의 발자국(Craiceann's Tracks)",
+			"DDSFile": "Art/2DItems/Armours/Boots/CrabUniqueBoots.dds"
+		},
+		{
+			"Id": "UniqueBodyStrInt10",
+			"Text_en": "Chains of Command",
+			"Text_ko": "지휘관의 사슬(Chains of Command)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/ChainsOfCommand.dds"
+		},
+		{
+			"Id": "UniqueBodyStrDex8",
+			"Text_en": "Farrul's Fur",
+			"Text_ko": "페룰의 모피(Farrul's Fur)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/TigerBodyArmour.dds"
+		},
+		{
+			"Id": "UniqueHelmetDexInt10",
+			"Text_en": "Farrul's Bite",
+			"Text_ko": "페룰의 이빨(Farrul's Bite)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/TigerHelmet.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrDex10",
+			"Text_en": "Farrul's Pounce",
+			"Text_ko": "페룰의 급습(Farrul's Pounce)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/TigerGloves.dds"
+		},
+		{
+			"Id": "UniqueBootsDex13",
+			"Text_en": "Farrul's Chase",
+			"Text_ko": "페룰의 추적(Farrul's Chase)",
+			"DDSFile": "Art/2DItems/Armours/Boots/TigerBoots.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrInt7",
+			"Text_en": "Saqawal's Winds",
+			"Text_ko": "사카왈의 바람(Saqawal's Winds)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/AvianGloves.dds"
+		},
+		{
+			"Id": "UniqueBodyDexInt10",
+			"Text_en": "Saqawal's Nest",
+			"Text_ko": "사카왈의 둥지(Saqawal's Nest)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/AvianBodyArmour.dds"
+		},
+		{
+			"Id": "UniqueBootsStrDex6",
+			"Text_en": "Saqawal's Talons",
+			"Text_ko": "사카왈의 발톱(Saqawal's Talons)",
+			"DDSFile": "Art/2DItems/Armours/Boots/AvianBoots.dds"
+		},
+		{
+			"Id": "UniqueHelmetDex8",
+			"Text_en": "Saqawal's Flock",
+			"Text_ko": "사카왈의 무리(Saqawal's Flock)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/AvianHelmet.dds"
+		},
+		{
+			"Id": "UniqueBodyInt17",
+			"Text_en": "Fenumus' Shroud",
+			"Text_ko": "페누무스의 연막(Fenumus' Shroud)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/SpiderArmourBody.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt16",
+			"Text_en": "Fenumus' Toxins",
+			"Text_ko": "페누무스의 독소(Fenumus' Toxins)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/SpiderArmourHelmet.dds"
+		},
+		{
+			"Id": "UniqueGlovesDexInt10",
+			"Text_en": "Fenumus' Weave",
+			"Text_ko": "페누무스의 매듭(Fenumus' Weave)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/SpiderArmour Gloves.dds"
+		},
+		{
+			"Id": "UniqueBootsDexInt7",
+			"Text_en": "Fenumus' Spinnerets",
+			"Text_ko": "페누무스의 방사 돌기(Fenumus' Spinnerets)",
+			"DDSFile": "Art/2DItems/Armours/Boots/SpiderArmourBoots.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt15",
+			"Text_en": "Mark of the Red Covenant",
+			"Text_ko": "붉은 계약의 징표(Mark of the Red Covenant)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/PhantasmlaFlame.dds"
+		},
+		{
+			"Id": "UniqueBodyStrInt9",
+			"Text_en": "Loreweave",
+			"Text_ko": "지식의 매듭(Loreweave)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/Loreweave.dds"
+		},
+		{
+			"Id": "UniqueRing51",
+			"Text_en": "Stormfire",
+			"Text_ko": "태풍불길(Stormfire)",
+			"DDSFile": "Art/2DItems/Rings/StormFire.dds"
+		},
+		{
+			"Id": "UniqueBelt28",
+			"Text_en": "Gluttony",
+			"Text_ko": "폭식(Gluttony)",
+			"DDSFile": "Art/2DItems/Belts/Gluttony.dds"
+		},
+		{
+			"Id": "UniqueGlovesDexInt11",
+			"Text_en": "Architect's Hand",
+			"Text_ko": "건축가의 손길(Architect's Hand)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/ArchitectsHand.dds"
+		},
+		{
+			"Id": "UniqueGlovesDexInt12",
+			"Text_en": "Slavedriver's Hand",
+			"Text_ko": "노예 감독관의 손길(Slavedriver's Hand)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/SlavedriversHand.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrInt13",
+			"Text_en": "Mask of the Spirit Drinker",
+			"Text_ko": "영혼 흡수자의 가면(Mask of the Spirit Drinker)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/MaskoftheSpiritDrinker.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrInt14",
+			"Text_en": "Mask of the Stitched Demon",
+			"Text_ko": "꿰맨 악마의 가면(Mask of the Stitched Demon)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/MaskoftheStitchedDemon.dds"
+		},
+		{
+			"Id": "UniqueShieldInt11",
+			"Text_en": "Apep's Slumber",
+			"Text_ko": "아펩의 수면(Apep's Slumber)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ApepsSlumber.dds"
+		},
+		{
+			"Id": "UniqueShieldInt12",
+			"Text_en": "Apep's Supremacy",
+			"Text_ko": "아펩의 패권(Apep's Supremacy)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ApepsSupremacy.dds"
+		},
+		{
+			"Id": "UniqueBodyStrDexInt2",
+			"Text_en": "Shadowstitch",
+			"Text_ko": "그림자 봉합(Shadowstitch)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/ShadowStitch.dds"
+		},
+		{
+			"Id": "UniqueAmulet48",
+			"Text_en": "Sacrificial Heart",
+			"Text_ko": "희생의 심장(Sacrificial Heart)",
+			"DDSFile": "Art/2DItems/Amulets/Sacrificial_Heart.dds"
+		},
+		{
+			"Id": "UniqueAmulet49",
+			"Text_en": "Zerphi's Heart",
+			"Text_ko": "제르피의 심장(Zerphi's Heart)",
+			"DDSFile": "Art/2DItems/Amulets/ZerphisHeart.dds"
+		},
+		{
+			"Id": "UniqueJewel116",
+			"Text_en": "Tempered Flesh",
+			"Text_ko": "조절된 육체(Tempered Flesh)",
+			"DDSFile": "Art/2DItems/Jewels/TemperedRed.dds"
+		},
+		{
+			"Id": "UniqueJewel117",
+			"Text_en": "Tempered Spirit",
+			"Text_ko": "조절된 정신(Tempered Spirit)",
+			"DDSFile": "Art/2DItems/Jewels/TemperedGreen.dds"
+		},
+		{
+			"Id": "UniqueJewel118",
+			"Text_en": "Tempered Mind",
+			"Text_ko": "조절된 마음(Tempered Mind)",
+			"DDSFile": "Art/2DItems/Jewels/TemperedBlue.dds"
+		},
+		{
+			"Id": "UniqueJewel119",
+			"Text_en": "Transcendent Flesh",
+			"Text_ko": "초월한 육체(Transcendent Flesh)",
+			"DDSFile": "Art/2DItems/Jewels/TranscendentRed.dds"
+		},
+		{
+			"Id": "UniqueJewel120",
+			"Text_en": "Transcendent Spirit",
+			"Text_ko": "초월한 정신(Transcendent Spirit)",
+			"DDSFile": "Art/2DItems/Jewels/TranscendentGreen.dds"
+		},
+		{
+			"Id": "UniqueJewel121",
+			"Text_en": "Transcendent Mind",
+			"Text_ko": "초월한 마음(Transcendent Mind)",
+			"DDSFile": "Art/2DItems/Jewels/TranscendentBlue.dds"
+		},
+		{
+			"Id": "UniqueFlask25",
+			"Text_en": "Soul Catcher",
+			"Text_ko": "영혼 포획자(Soul Catcher)",
+			"DDSFile": "Art/2DItems/Flasks/SoulCatcher.dds"
+		},
+		{
+			"Id": "UniqueFlask26",
+			"Text_en": "Soul Ripper",
+			"Text_ko": "영혼 수확자(Soul Ripper)",
+			"DDSFile": "Art/2DItems/Flasks/SoulRipper.dds"
+		},
+		{
+			"Id": "UniqueBelt29",
+			"Text_en": "String of Servitude",
+			"Text_ko": "노예의 끈(String of Servitude)",
+			"DDSFile": "Art/2DItems/Belts/String_of_Servitude.dds"
+		},
+		{
+			"Id": "UniqueBootsDexInt8",
+			"Text_en": "Dance of the Offered",
+			"Text_ko": "제물의 춤(Dance of the Offered)",
+			"DDSFile": "Art/2DItems/Armours/Boots/DanceOfTheOffered.dds"
+		},
+		{
+			"Id": "UniqueBootsDexInt9",
+			"Text_en": "Omeyocan",
+			"Text_ko": "오메이오칸(Omeyocan)",
+			"DDSFile": "Art/2DItems/Armours/Boots/Omeyocan.dds"
+		},
+		{
+			"Id": "UniqueBelt30",
+			"Text_en": "Coward's Chains",
+			"Text_ko": "겁쟁이의 사슬(Coward's Chains)",
+			"DDSFile": "Art/2DItems/Belts/Coward's Chains.dds"
+		},
+		{
+			"Id": "UniqueBelt31",
+			"Text_en": "Coward's Legacy",
+			"Text_ko": "겁쟁이의 유물(Coward's Legacy)",
+			"DDSFile": "Art/2DItems/Belts/Coward's Legacy.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword29",
+			"Text_en": "Story of the Vaal",
+			"Text_ko": "바알의 사연(Story of the Vaal)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/StoryOfTheVaal.dds"
+		},
+		{
+			"Id": "UniqueOneHandSword30",
+			"Text_en": "Fate of the Vaal",
+			"Text_ko": "바알의 운명(Fate of the Vaal)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/OneHandSwords/FateOfTheVaal.dds"
+		},
+		{
+			"Id": "UniqueTwoHandAxe16",
+			"Text_en": "Sinvicta's Mettle",
+			"Text_ko": "신빅타의 패기(Sinvicta's Mettle)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandAxes/SinvictasMettle.dds"
+		},
+		{
+			"Id": "UniqueSceptre19",
+			"Text_en": "Earendel's Embrace",
+			"Text_ko": "에아렌델의 포옹(Earendel's Embrace)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/EarendelsEmbrace.dds"
+		},
+		{
+			"Id": "UniqueShieldDexInt5",
+			"Text_en": "Zeel's Amplifier",
+			"Text_ko": "질의 증폭기(Zeel's Amplifier)",
+			"DDSFile": "Art/2DItems/Armours/Shields/ZealsAmplifier.dds"
+		},
+		{
+			"Id": "UniqueShieldStrInt12",
+			"Text_en": "Unyielding Flame",
+			"Text_ko": "완고한 불꽃(Unyielding Flame)",
+			"DDSFile": "Art/2DItems/Armours/Shields/DamnatioAeterna.dds"
+		},
+		{
+			"Id": "UniqueJewel122",
+			"Text_en": "Combat Focus Crimson Jewel",
+			"Text_ko": "집중 전투(Combat Focus) 진홍색 주얼",
+			"DDSFile": "Art/2DItems/Jewels/ElementalHitCold.dds"
+		},
+		{
+			"Id": "UniqueJewel123",
+			"Text_en": "Combat Focus Viridian Jewel",
+			"Text_ko": "집중 전투(Combat Focus) 진청록색 주얼",
+			"DDSFile": "Art/2DItems/Jewels/ElementalHitLightening.dds"
+		},
+		{
+			"Id": "UniqueJewel124",
+			"Text_en": "Combat Focus Cobalt Jewel",
+			"Text_ko": "집중 전투(Combat Focus) 코발트색 주얼",
+			"DDSFile": "Art/2DItems/Jewels/ElementalHitFire.dds"
+		},
+		{
+			"Id": "UniqueAmulet50",
+			"Text_en": "Malachai's Brilliance",
+			"Text_ko": "말라카이의 광채(Malachai's Brilliance)",
+			"DDSFile": "Art/2DItems/Amulets/Malachai's BrillianceAmulet.dds"
+		},
+		{
+			"Id": "UniqueJewel125",
+			"Text_en": "Unnatural Instinct",
+			"Text_ko": "기이한 본능(Unnatural Instinct)",
+			"DDSFile": "Art/2DItems/Jewels/UnnaturalInstinct.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrDex7",
+			"Text_en": "Lawbreaker",
+			"Text_ko": "범법자(Lawbreaker)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/TheThornPainted.dds"
+		},
+		{
+			"Id": "UniqueGlovesInt10",
+			"Text_en": "Demon Stitcher",
+			"Text_ko": "악마 봉합자(Demon Stitcher)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/DemonSticher.dds"
+		},
+		{
+			"Id": "UniqueRing52",
+			"Text_en": "Mark of Submission",
+			"Text_ko": "복종의 징표(Mark of Submission)",
+			"DDSFile": "Art/2DItems/Rings/RedBrandRing.dds"
+		},
+		{
+			"Id": "UniqueStaff23",
+			"Text_en": "Soulwrest",
+			"Text_ko": "영혼 착취(Soulwrest)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/TopDownStaveIcon.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrInt8",
+			"Text_en": "Command of the Pit",
+			"Text_ko": "구덩이의 지배자(Command of the Pit)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/CommandofthePit.dds"
+		},
+		{
+			"Id": "UniqueStaff24",
+			"Text_en": "The Grey Spire",
+			"Text_ko": "회색 가지(The Grey Spire)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Staves/TheGreySpire.dds"
+		},
+		{
+			"Id": "UniqueAmulet51",
+			"Text_en": "The Primordial Chain",
+			"Text_ko": "태고의 사슬(The Primordial Chain)",
+			"DDSFile": "Art/2DItems/Amulets/ThePrimordialChain.dds"
+		},
+		{
+			"Id": "UniqueGlovesInt9",
+			"Text_en": "Vixen's Entrapment",
+			"Text_ko": "암여우의 함정(Vixen's Entrapment)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/VixensEntrapment.dds"
+		},
+		{
+			"Id": "UniqueAmulet52",
+			"Text_en": "Perquil's Toe",
+			"Text_ko": "퍼퀼의 발가락(Perquil's Toe)",
+			"DDSFile": "Art/2DItems/Amulets/PerquilsToe.dds"
+		},
+		{
+			"Id": "UniqueShieldInt13",
+			"Text_en": "The Eternal Apple",
+			"Text_ko": "영원한 사과(The Eternal Apple)",
+			"DDSFile": "Art/2DItems/Armours/Shields/TheEternalApple.dds"
+		},
+		{
+			"Id": "UniqueHelmetDexInt11",
+			"Text_en": "Curtain Call",
+			"Text_ko": "커튼콜(Curtain Call)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/CurtainCall.dds"
+		},
+		{
+			"Id": "UniqueSceptre20",
+			"Text_en": "Cerberus Limb",
+			"Text_ko": "케르베로스의 발(Cerberus Limb)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/Cerebus Limb.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt17",
+			"Text_en": "Hale Negator",
+			"Text_ko": "건장한 부정자(Hale Negator)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/HaleNegator.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrInt15",
+			"Text_en": "Crown of the Tyrant",
+			"Text_ko": "폭군의 왕관(Crown of the Tyrant)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/TheImposing Crown.dds"
+		},
+		{
+			"Id": "UniqueAmulet53",
+			"Text_en": "Aul's Uprising",
+			"Text_ko": "아울의 반란(Aul's Uprising)",
+			"DDSFile": "Art/2DItems/Amulets/Ahn Artifact.dds"
+		},
+		{
+			"Id": "UniqueRing53a",
+			"Text_en": "Ahkeli's Mountain",
+			"Text_ko": "아켈리의 산(Ahkeli's Mountain)",
+			"DDSFile": "Art/2DItems/Rings/RedComponent.dds"
+		},
+		{
+			"Id": "UniqueRing53b",
+			"Text_en": "Ahkeli's Meadow",
+			"Text_ko": "아켈리의 초원(Ahkeli's Meadow)",
+			"DDSFile": "Art/2DItems/Rings/RedComponent2.dds"
+		},
+		{
+			"Id": "UniqueRing53c",
+			"Text_en": "Ahkeli's Valley",
+			"Text_ko": "아켈리의 계곡(Ahkeli's Valley)",
+			"DDSFile": "Art/2DItems/Rings/RedComponent3.dds"
+		},
+		{
+			"Id": "UniqueRing53d",
+			"Text_en": "Uzaza's Mountain",
+			"Text_ko": "우자자의 산(Uzaza's Mountain)",
+			"DDSFile": "Art/2DItems/Rings/GreenComponent.dds"
+		},
+		{
+			"Id": "UniqueRing53e",
+			"Text_en": "Uzaza's Meadow",
+			"Text_ko": "우자자의 초원(Uzaza's Meadow)",
+			"DDSFile": "Art/2DItems/Rings/GreenComponent2.dds"
+		},
+		{
+			"Id": "UniqueRing53f",
+			"Text_en": "Uzaza's Valley",
+			"Text_ko": "우자자의 계곡(Uzaza's Valley)",
+			"DDSFile": "Art/2DItems/Rings/GreenComponent3.dds"
+		},
+		{
+			"Id": "UniqueRing53g",
+			"Text_en": "Putembo's Mountain",
+			"Text_ko": "푸템보의 산(Putembo's Mountain)",
+			"DDSFile": "Art/2DItems/Rings/BlueComponent.dds"
+		},
+		{
+			"Id": "UniqueRing53h",
+			"Text_en": "Putembo's Meadow",
+			"Text_ko": "푸템보의 초원(Putembo's Meadow)",
+			"DDSFile": "Art/2DItems/Rings/BlueComponent2.dds"
+		},
+		{
+			"Id": "UniqueRing53i",
+			"Text_en": "Putembo's Valley",
+			"Text_ko": "푸템보의 계곡(Putembo's Valley)",
+			"DDSFile": "Art/2DItems/Rings/BlueComponent3.dds"
+		},
+		{
+			"Id": "UniqueRing54a",
+			"Text_en": "Precursor's Emblem Ruby Ring",
+			"Text_ko": "선구자의 상징(Precursor's Emblem) 루비 반지",
+			"DDSFile": "Art/2DItems/Rings/CombinedRedRing.dds"
+		},
+		{
+			"Id": "UniqueRing54b",
+			"Text_en": "Precursor's Emblem Sapphire Ring",
+			"Text_ko": "선구자의 상징(Precursor's Emblem) 사파이어 반지",
+			"DDSFile": "Art/2DItems/Rings/CombinedGreenRing.dds"
+		},
+		{
+			"Id": "UniqueRing54c_",
+			"Text_en": "Precursor's Emblem Topaz Ring",
+			"Text_ko": "선구자의 상징(Precursor's Emblem) 토파즈 반지",
+			"DDSFile": "Art/2DItems/Rings/CombinedBlueRing.dds"
+		},
+		{
+			"Id": "UniqueRing54d",
+			"Text_en": "Precursor's Emblem Two-Stone Ring",
+			"Text_ko": "선구자의 상징(Precursor's Emblem) 쌍보석 반지",
+			"DDSFile": "Art/2DItems/Rings/CombinedRedGreenRing.dds"
+		},
+		{
+			"Id": "UniqueRing54e",
+			"Text_en": "Precursor's Emblem Two-Stone Ring",
+			"Text_ko": "선구자의 상징(Precursor's Emblem) 쌍보석 반지",
+			"DDSFile": "Art/2DItems/Rings/CombinedGreenBlueRing.dds"
+		},
+		{
+			"Id": "UniqueRing54f",
+			"Text_en": "Precursor's Emblem Two-Stone Ring",
+			"Text_ko": "선구자의 상징(Precursor's Emblem) 쌍보석 반지",
+			"DDSFile": "Art/2DItems/Rings/CombinedRedBlueRing.dds"
+		},
+		{
+			"Id": "UniqueRing54g",
+			"Text_en": "Precursor's Emblem Prismatic Ring",
+			"Text_ko": "선구자의 상징(Precursor's Emblem) 분광 반지",
+			"DDSFile": "Art/2DItems/Rings/CombinedPrismaticRing.dds"
+		},
+		{
+			"Id": "UniqueJewel127",
+			"Text_en": "Toxic Vapours",
+			"Text_ko": "맹독성 증기(Toxic Vapours)",
+			"DDSFile": "Art/2DItems/Jewels/CausticArrowJewel.dds"
+		},
+		{
+			"Id": "UniqueShieldInt14",
+			"Text_en": "Bitterbind Point",
+			"Text_ko": "쓰라린 속박의 끝(Bitterbind Point)",
+			"DDSFile": "Art/2DItems/Armours/Shields/MastersFocus.dds"
+		},
+		{
+			"Id": "UniqueAmulet54",
+			"Text_en": "Solstice Vigil",
+			"Text_ko": "동짓날 밤(Solstice Vigil)",
+			"DDSFile": "Art/2DItems/Amulets/ShapersPresence.dds"
+		},
+		{
+			"Id": "UniqueBow22",
+			"Text_en": "The Crimson Storm",
+			"Text_ko": "진홍색 태풍(The Crimson Storm)",
+			"DDSFile": "Art/2DItems/Weapons/TwoHandWeapons/Bows/FortificationsUnique.dds"
+		},
+		{
+			"Id": "UniqueRing55",
+			"Text_en": "Vivinsect",
+			"Text_ko": "생체 해부(Vivinsect)",
+			"DDSFile": "Art/2DItems/Rings/BetrayalExperimentationRing.dds"
+		},
+		{
+			"Id": "UniqueFlask27",
+			"Text_en": "Cinderswallow Urn",
+			"Text_ko": "잿더미 단지(Cinderswallow Urn)",
+			"DDSFile": "Art/2DItems/Flasks/VialofUnlife.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrDex11",
+			"Text_en": "Waycarver",
+			"Text_ko": "개척가(Waycarver)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/ExplorersGauntlet1.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrDex12_",
+			"Text_en": "Worldcarver",
+			"Text_ko": "세계분쇄기(Worldcarver)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/ExplorersGauntlet2.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt18",
+			"Text_en": "Farsight",
+			"Text_ko": "멀리 보는 자(Farsight)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/ExplorersVision.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt19a",
+			"Text_en": "Flamesight",
+			"Text_ko": "불꽃 시야(Flamesight)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/ExplorersVisionFire.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt19b",
+			"Text_en": "Galesight",
+			"Text_ko": "강풍 시야(Galesight)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/ExplorersVisionCold.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt19c",
+			"Text_en": "Thundersight",
+			"Text_ko": "천둥 시야(Thundersight)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/ExplorersVisionLightning.dds"
+		},
+		{
+			"Id": "UniqueBodyDexInt11",
+			"Text_en": "The Eternity Shroud",
+			"Text_ko": "영원의 연막(The Eternity Shroud)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/MantleOfDismantling.dds"
+		},
+		{
+			"Id": "UniqueRapier6",
+			"Text_en": "Paradoxica",
+			"Text_ko": "모순(Paradoxica)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Rapiers/AssassinationUnique2.dds"
+		},
+		{
+			"Id": "UniqueBelt32",
+			"Text_en": "Hyperboreus",
+			"Text_ko": "북방 주민(Hyperboreus)",
+			"DDSFile": "Art/2DItems/Belts/Betrayal_Unique_Transport_Belt.dds"
+		},
+		{
+			"Id": "UniqueBodyInt18",
+			"Text_en": "The Queen's Hunger",
+			"Text_ko": "여왕의 갈망(The Queen's Hunger)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/TheQueensHunger.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt20",
+			"Text_en": "The Devouring Diadem",
+			"Text_ko": "걸신들린 왕관(The Devouring Diadem)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/TheDevouringDiadem.dds"
+		},
+		{
+			"Id": "UniqueSceptre21",
+			"Text_en": "Nebulis",
+			"Text_ko": "성운(Nebulis)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/SceptreOfMemories.dds"
+		},
+		{
+			"Id": "UniqueFlask28",
+			"Text_en": "Bottled Faith",
+			"Text_ko": "병에 담긴 믿음(Bottled Faith)",
+			"DDSFile": "Art/2DItems/Flasks/BottledPurity.dds"
+		},
+		{
+			"Id": "UniqueGlovesStrInt9",
+			"Text_en": "Offering to the Serpent",
+			"Text_ko": "독사에게 바치는 공물(Offering to the Serpent)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/GripOfTheCobra.dds"
+		},
+		{
+			"Id": "UniqueBodyInt19",
+			"Text_en": "Garb of the Ephemeral",
+			"Text_ko": "덧없는 자의 의복(Garb of the Ephemeral)",
+			"DDSFile": "Art/2DItems/Armours/BodyArmours/TheTemplarsRobes.dds"
+		},
+		{
+			"Id": "UniqueGlovesDexInt13",
+			"Text_en": "Storm's Gift",
+			"Text_ko": "태풍의 선물(Storm's Gift)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/StormGloves.dds"
+		},
+		{
+			"Id": "UniqueHelmetStrInt16",
+			"Text_en": "Mask of the Tribunal",
+			"Text_ko": "재판소의 가면(Mask of the Tribunal)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/HelmetOfDominance2.dds"
+		},
+		{
+			"Id": "UniqueRing56",
+			"Text_en": "Circle of Anguish",
+			"Text_ko": "비통의 고리(Circle of Anguish)",
+			"DDSFile": "Art/2DItems/Rings/SynthesisFire.dds"
+		},
+		{
+			"Id": "UniqueRing57",
+			"Text_en": "Circle of Fear",
+			"Text_ko": "두려움의 고리(Circle of Fear)",
+			"DDSFile": "Art/2DItems/Rings/SynthesisCold.dds"
+		},
+		{
+			"Id": "UniqueRing58",
+			"Text_en": "Circle of Regret",
+			"Text_ko": "후회의 고리(Circle of Regret)",
+			"DDSFile": "Art/2DItems/Rings/SynthesisLightning.dds"
+		},
+		{
+			"Id": "UniqueRing59",
+			"Text_en": "Circle of Nostalgia",
+			"Text_ko": "그리움의 고리(Circle of Nostalgia)",
+			"DDSFile": "Art/2DItems/Rings/SynthesisPhysical.dds"
+		},
+		{
+			"Id": "UniqueRing60",
+			"Text_en": "Circle of Guilt",
+			"Text_ko": "유죄의 고리(Circle of Guilt)",
+			"DDSFile": "Art/2DItems/Rings/SynthesisPhysical2.dds"
+		},
+		{
+			"Id": "UniqueAmulet55",
+			"Text_en": "Hyrri's Truth",
+			"Text_ko": "하이리의 진리(Hyrri's Truth)",
+			"DDSFile": "Art/2DItems/Amulets/SynthesisAccuracyAmulet.dds"
+		},
+		{
+			"Id": "UniqueShieldDexInt6",
+			"Text_en": "Perepiteia",
+			"Text_ko": "영구장치(Perepiteia)",
+			"DDSFile": "Art/2DItems/Armours/Shields/LightningShield.dds"
+		},
+		{
+			"Id": "UniqueBootsStrInt6",
+			"Text_en": "March of the Legion",
+			"Text_ko": "군단의 행진(March of the Legion)",
+			"DDSFile": "Art/2DItems/Armours/Boots/AuraBoots.dds"
+		},
+		{
+			"Id": "UniqueQuiver15",
+			"Text_en": "Maloney's Mechanism",
+			"Text_ko": "말로니의 기계 장치(Maloney's Mechanism)",
+			"DDSFile": "Art/2DItems/Quivers/TriggerQuiverBase.dds"
+		},
+		{
+			"Id": "UniqueHelmetDemigods1",
+			"Text_en": "Demigod's Immortality",
+			"Text_ko": "반신의 불멸(Demigod's Immortality) ",
+			"DDSFile": "Art/2DItems/Armours/Helmets/DemigodsImmortality.dds"
+		},
+		{
+			"Id": "UniqueGlovesDexInt14",
+			"Text_en": "Aukuna's Will",
+			"Text_ko": "아우카나의 의지(Aukuna's Will)",
+			"DDSFile": "Art/2DItems/Armours/Gloves/AukunasWill.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt21",
+			"Text_en": "Maw of Conquest",
+			"Text_ko": "정복지의 구렁텅이(Maw of Conquest)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/MawOfConquest.dds"
+		},
+		{
+			"Id": "UniqueAmulet56",
+			"Text_en": "Tavukai",
+			"Text_ko": "타부카이(Tavukai)",
+			"DDSFile": "Art/2DItems/Amulets/Tavukai.dds"
+		},
+		{
+			"Id": "UniqueHelmetDexInt12",
+			"Text_en": "Fractal Thoughts",
+			"Text_ko": "프랙털 사상(Fractal Thoughts)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Fractalthoughts.dds"
+		},
+		{
+			"Id": "UniqueHelmetInt22",
+			"Text_en": "Wreath of Phrecia",
+			"Text_ko": "프레시아의 화관(Wreath of Phrecia)",
+			"DDSFile": "Art/2DItems/Armours/Helmets/Wreath_of_Phrecia.dds"
+		},
+		{
+			"Id": "UniqueSceptre22",
+			"Text_en": "Sign of the Sin Eater",
+			"Text_ko": "신을 먹는 자의 흔적(Sign of the Sin Eater)",
+			"DDSFile": "Art/2DItems/Weapons/OneHandWeapons/Scepters/ScepterOfSuffering.dds"
+		},
+		{
+			"Id": "UniqueJewel128",
+			"Text_en": "Glorious Vanity",
+			"Text_ko": "찬란한 허영심(Glorious Vanity)",
+			"DDSFile": "Art/2DItems/Jewels/VaalCivilization.dds"
+		},
+		{
+			"Id": "UniqueJewel129",
+			"Text_en": "Lethal Pride",
+			"Text_ko": "치명적인 긍지(Lethal Pride)",
+			"DDSFile": "Art/2DItems/Jewels/KaruiCivilization.dds"
+		},
+		{
+			"Id": "UniqueJewel130",
+			"Text_en": "Brutal Restraint",
+			"Text_ko": "잔인한 속박",
+			"DDSFile": "Art/2DItems/Jewels/MarakethCivilization.dds"
+		},
+		{
+			"Id": "UniqueJewel131",
+			"Text_en": "Militant Faith",
+			"Text_ko": "호전적인 신념(Militant Faith)",
+			"DDSFile": "Art/2DItems/Jewels/TemplarCivilization.dds"
+		},
+		{
+			"Id": "UniqueJewel132",
+			"Text_en": "Elegant Hubris",
+			"Text_ko": "고상한 오만(Elegant Hubris)",
+			"DDSFile": "Art/2DItems/Jewels/EternalEmpireCivilization.dds"
+		},
+		{
+			"Id": "UniqueJewel133",
+			"Text_en": "Divide and Conquer",
+			"Text_ko": "분열과 정복(Divide and Conquer)",
+			"DDSFile": "Art/2DItems/Jewels/SpectralThrowThreshold.dds"
+		}
+	]
+}

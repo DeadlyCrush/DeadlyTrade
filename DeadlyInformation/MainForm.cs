@@ -35,7 +35,6 @@ namespace POExileDirection
             Text = "DeadlyTradeForPOE";
 
             Init_Controls();
-            DeadlyZoneInform.InitActZoneDictionary(); // Act, Zone, Currency
         }
 
         #region ⨌⨌ Init. Controls. ⨌⨌
@@ -161,7 +160,6 @@ namespace POExileDirection
 
             btnLangText = String.Format("Act {0} : {1}", actString, zoneName);
             btnLang.Text = btnLangText;
-            btnUILANG.Text = "[" + LauncherForm.g_strUILang + "]";
 
             if (LauncherForm.g_strUILang == "KOR")
                 nUILang = UI_LANG.UI_KOREAN;
@@ -346,7 +344,6 @@ namespace POExileDirection
 
                 btnLangText = String.Format("Act {0} : {1}", actString, zoneName);
                 btnLang.Text = btnLangText;
-                btnUILANG.Text = "[" + LauncherForm.g_strUILang + "]";
             }
         }
 
@@ -509,7 +506,6 @@ namespace POExileDirection
 
             btnLangText = String.Format("Act {0} : {1}", actString, zoneName);
             btnLang.Text = btnLangText;
-            btnUILANG.Text = "[" + LauncherForm.g_strUILang + "]";
         }
 
         private void BtnLang_MouseDown(object sender, MouseEventArgs e)
@@ -523,7 +519,7 @@ namespace POExileDirection
         {
             if (nMoving == 1)
             {
-                this.SetDesktopLocation(MousePosition.X - nMovePosX - 44, MousePosition.Y - nMovePosY);
+                this.SetDesktopLocation(MousePosition.X - nMovePosX - 92, MousePosition.Y - nMovePosY);
             }
         }
 

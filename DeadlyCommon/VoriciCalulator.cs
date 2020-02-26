@@ -43,7 +43,7 @@ namespace POExileDirection
 			public string successChance;
 			public string averageAttempts;
 			public string costPerTry;
-		} 
+		}
 
 		// private static probs[] probsST = new probs[20];
 
@@ -226,8 +226,128 @@ namespace POExileDirection
 			}
 
 			return probsST;
-		}				
-		
+		}
+				
+		private double[] getColorChances(int[] requirements)
+		{
+			double _maxOnColorChance = 0.9;
+
+			var X = 5;
+			var C = 5;
+			var totalRequirements = requirements[0] + requirements[1] + requirements[2];
+			var numberOfRequirements = (requirements[0] > 0 ? 1 : 0) + (requirements[1] > 0 ? 1 : 0) + (requirements[2] > 0 ? 1 : 0);
+
+			bool bStr = false;
+			bool bDex = false;
+			bool bInt = false;
+
+			if (requirements[0] > 0)
+				bStr = true;
+			if (requirements[1] > 0)
+				bDex = true;
+			if (requirements[2] > 0)
+				bInt = true;
+
+			double _str, _dex, _int;
+			if (requirements[0] == 0)
+				_str = 0.5;
+			else
+				_str = (double)requirements[0];
+
+			if (requirements[1] == 0)
+				_dex = 0.5;
+			else
+				_dex = (double)requirements[1];
+
+			if (requirements[2] == 0)
+				_int = 0.5;
+			else
+				_int = (double)requirements[2];
+
+			double sss;
+			double ddd;
+			double iii;
+			switch (numberOfRequirements)
+			{
+				case 1:
+					if (bStr || bDex || bInt)
+					{
+						sss = _maxOnColorChance * (X + C + _str) / (totalRequirements + 3 * X + C);
+						ddd = _maxOnColorChance * (X + C + _dex) / (totalRequirements + 3 * X + C);
+						iii = _maxOnColorChance * (X + C + _int) / (totalRequirements + 3 * X + C);
+
+						requirementToChance = new double[] { sss, ddd, iii };
+					}
+					else
+					{
+						requirementToChance = new double[] { 
+							(1 - _maxOnColorChance) / 2 + _maxOnColorChance * (X / (totalRequirements + 3 * X + C)),
+							(1 - _maxOnColorChance) / 2 + _maxOnColorChance * (X / (totalRequirements + 3 * X + C)),
+							(1 - _maxOnColorChance) / 2 + _maxOnColorChance * (X / (totalRequirements + 3 * X + C))
+						};
+					}
+					break;
+				case 2:
+					if ((bStr && bDex) || (bStr && bInt) || (bDex && bInt))
+					{
+						sss = _maxOnColorChance * _str / totalRequirements;
+						ddd = _maxOnColorChance * _dex / totalRequirements;
+						iii = _maxOnColorChance * _int / totalRequirements;
+
+						requirementToChance = new double[] { sss, ddd, iii };
+					}
+					else
+					{
+						requirementToChance = new double[] { (1 - _maxOnColorChance)*10, (1 - _maxOnColorChance)*10, (1 - _maxOnColorChance)*10 };
+					}
+					break;
+				case 3:
+					requirementToChance = new double[] {
+						_str / totalRequirements,
+						_dex / totalRequirements,
+						_int / totalRequirements 
+					};
+					break;
+			}
+
+			return requirementToChance;
+		}
+
+		private double multinomial(double[] colorChances, int[] desired, int free, int pos = 1)
+		{
+			int[][] Colored = new int[1][];
+
+			double lnResult;
+			if (free > 0)
+			{
+				double aaa = pos <= 1 ? multinomial(colorChances, Colored[0] = new int[3] { desired[0] + 1, desired[1], desired[2] }, free - 1, 1) : 0;
+				double bbb = pos <= 2 ? multinomial(colorChances, Colored[0] = new int[3] { desired[0], desired[1] + 1, desired[2] }, free - 1, 2) : 0;
+				double ccc = multinomial(colorChances, Colored[0] = new int[3] { desired[0], desired[1], desired[2] + 1 }, free - 1, 3);
+				lnResult = aaa + bbb + ccc;
+				return lnResult;
+			}
+			else
+			{
+				// CHK.
+				double aaa = factorialFunc(desired[0]);
+				double bbb = factorialFunc(desired[1]);
+				double ccc = factorialFunc(desired[2]);
+
+				double abc = aaa * bbb * ccc;
+
+				double ddd = Math.Pow(colorChances[0], desired[0]);
+				double eee = Math.Pow(colorChances[1], desired[1]);
+				double fff = Math.Pow(colorChances[2], desired[2]);
+				lnResult = factorialFunc(desired[0] + desired[1] + desired[2])
+							/
+							abc
+							* ddd
+							* eee
+							* fff;
+				return lnResult;
+			}
+		}
+
 		private double calcChromaticBonus(double[] colorChances, int[] desired, int free, int[] rolled = null, int pos = 1)
 		{
 			double lnResult;

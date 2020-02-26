@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelTop = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.listResult = new System.Windows.Forms.ListView();
             this.HideFirstCol = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -42,7 +43,6 @@
             this.btnOLB = new System.Windows.Forms.Button();
             this.btnILT = new System.Windows.Forms.Button();
             this.btnORB = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.labelRegion = new System.Windows.Forms.Label();
             this.panelTop.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -58,6 +58,26 @@
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(472, 18);
             this.panelTop.TabIndex = 3;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(452, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(17, 17);
+            this.btnClose.TabIndex = 4;
+            this.btnClose.TabStop = false;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label2
             // 
@@ -114,13 +134,14 @@
             // 
             // btnIRB
             // 
-            this.btnIRB.BackColor = System.Drawing.Color.Transparent;
+            this.btnIRB.BackColor = System.Drawing.Color.Black;
+            this.btnIRB.BackgroundImage = global::POExileDirection.Properties.Resources.Rest;
+            this.btnIRB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIRB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIRB.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnIRB.FlatAppearance.BorderSize = 0;
             this.btnIRB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIRB.ForeColor = System.Drawing.Color.Silver;
-            this.btnIRB.Image = global::POExileDirection.Properties.Resources.Rest;
             this.btnIRB.Location = new System.Drawing.Point(262, 129);
             this.btnIRB.Name = "btnIRB";
             this.btnIRB.Size = new System.Drawing.Size(121, 22);
@@ -130,13 +151,14 @@
             // 
             // btnOLT
             // 
-            this.btnOLT.BackColor = System.Drawing.Color.Transparent;
+            this.btnOLT.BackColor = System.Drawing.Color.Black;
+            this.btnOLT.BackgroundImage = global::POExileDirection.Properties.Resources.Hamlet;
+            this.btnOLT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnOLT.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOLT.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnOLT.FlatAppearance.BorderSize = 0;
             this.btnOLT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOLT.ForeColor = System.Drawing.Color.Silver;
-            this.btnOLT.Image = global::POExileDirection.Properties.Resources.Hamlet;
             this.btnOLT.Location = new System.Drawing.Point(28, 25);
             this.btnOLT.Name = "btnOLT";
             this.btnOLT.Size = new System.Drawing.Size(121, 22);
@@ -146,13 +168,14 @@
             // 
             // btnILB
             // 
-            this.btnILB.BackColor = System.Drawing.Color.Transparent;
+            this.btnILB.BackColor = System.Drawing.Color.Black;
+            this.btnILB.BackgroundImage = global::POExileDirection.Properties.Resources.Cairns;
+            this.btnILB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnILB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnILB.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnILB.FlatAppearance.BorderSize = 0;
             this.btnILB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnILB.ForeColor = System.Drawing.Color.Silver;
-            this.btnILB.Image = global::POExileDirection.Properties.Resources.Cairns;
             this.btnILB.Location = new System.Drawing.Point(88, 129);
             this.btnILB.Name = "btnILB";
             this.btnILB.Size = new System.Drawing.Size(121, 22);
@@ -162,13 +185,14 @@
             // 
             // btnORT
             // 
-            this.btnORT.BackColor = System.Drawing.Color.Transparent;
+            this.btnORT.BackColor = System.Drawing.Color.Black;
+            this.btnORT.BackgroundImage = global::POExileDirection.Properties.Resources.Lex;
+            this.btnORT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnORT.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnORT.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnORT.FlatAppearance.BorderSize = 0;
             this.btnORT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnORT.ForeColor = System.Drawing.Color.Silver;
-            this.btnORT.Image = global::POExileDirection.Properties.Resources.Lex;
             this.btnORT.Location = new System.Drawing.Point(322, 25);
             this.btnORT.Name = "btnORT";
             this.btnORT.Size = new System.Drawing.Size(121, 22);
@@ -178,13 +202,14 @@
             // 
             // btnIRT
             // 
-            this.btnIRT.BackColor = System.Drawing.Color.Transparent;
+            this.btnIRT.BackColor = System.Drawing.Color.Black;
+            this.btnIRT.BackgroundImage = global::POExileDirection.Properties.Resources.Proxima;
+            this.btnIRT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIRT.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIRT.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnIRT.FlatAppearance.BorderSize = 0;
             this.btnIRT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIRT.ForeColor = System.Drawing.Color.Silver;
-            this.btnIRT.Image = global::POExileDirection.Properties.Resources.Proxima;
             this.btnIRT.Location = new System.Drawing.Point(262, 68);
             this.btnIRT.Name = "btnIRT";
             this.btnIRT.Size = new System.Drawing.Size(121, 22);
@@ -195,13 +220,14 @@
             // 
             // btnOLB
             // 
-            this.btnOLB.BackColor = System.Drawing.Color.Transparent;
+            this.btnOLB.BackColor = System.Drawing.Color.Black;
+            this.btnOLB.BackgroundImage = global::POExileDirection.Properties.Resources.New;
+            this.btnOLB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnOLB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOLB.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnOLB.FlatAppearance.BorderSize = 0;
             this.btnOLB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOLB.ForeColor = System.Drawing.Color.Silver;
-            this.btnOLB.Image = global::POExileDirection.Properties.Resources.New;
             this.btnOLB.Location = new System.Drawing.Point(28, 174);
             this.btnOLB.Name = "btnOLB";
             this.btnOLB.Size = new System.Drawing.Size(121, 22);
@@ -211,13 +237,14 @@
             // 
             // btnILT
             // 
-            this.btnILT.BackColor = System.Drawing.Color.Transparent;
+            this.btnILT.BackColor = System.Drawing.Color.Black;
+            this.btnILT.BackgroundImage = global::POExileDirection.Properties.Resources.End;
+            this.btnILT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnILT.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnILT.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnILT.FlatAppearance.BorderSize = 0;
             this.btnILT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnILT.ForeColor = System.Drawing.Color.Silver;
-            this.btnILT.Image = global::POExileDirection.Properties.Resources.End;
             this.btnILT.Location = new System.Drawing.Point(88, 68);
             this.btnILT.Name = "btnILT";
             this.btnILT.Size = new System.Drawing.Size(121, 22);
@@ -227,39 +254,20 @@
             // 
             // btnORB
             // 
-            this.btnORB.BackColor = System.Drawing.Color.Transparent;
+            this.btnORB.BackColor = System.Drawing.Color.Black;
+            this.btnORB.BackgroundImage = global::POExileDirection.Properties.Resources.Lira;
+            this.btnORB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnORB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnORB.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnORB.FlatAppearance.BorderSize = 0;
             this.btnORB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnORB.ForeColor = System.Drawing.Color.Silver;
-            this.btnORB.Image = global::POExileDirection.Properties.Resources.Lira;
             this.btnORB.Location = new System.Drawing.Point(322, 174);
             this.btnORB.Name = "btnORB";
             this.btnORB.Size = new System.Drawing.Size(121, 22);
             this.btnORB.TabIndex = 1;
             this.btnORB.UseVisualStyleBackColor = false;
             this.btnORB.Click += new System.EventHandler(this.btnORB_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(452, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(17, 17);
-            this.btnClose.TabIndex = 4;
-            this.btnClose.TabStop = false;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // labelRegion
             // 

@@ -29,14 +29,14 @@ namespace POExileDirection
 
             if (LauncherForm.g_strUILang == "KOR")
             {
-                btnOLT.Text = "헤이워크 촌락";
-                btnORT.Text = "렉스 에요리스";
-                btnOLB.Text = "뉴 바스티르";
-                btnORB.Text = "리라 아르타인";
-                btnILT.Text = "티른의 끝자락";
-                btnIRT.Text = "렉스 프록시마";
-                btnILB.Text = "글렌나크 돌무덤";
-                btnIRB.Text = "발도의 휴식처";
+                btnOLT.BackgroundImage = Properties.Resources.HamletKR;
+                btnORT.BackgroundImage = Properties.Resources.EjorisKR;
+                btnOLB.BackgroundImage = Properties.Resources.NewKR;
+                btnORB.BackgroundImage = Properties.Resources.LiraArthainKR;
+                btnILT.BackgroundImage = Properties.Resources.TirnKR;
+                btnIRT.BackgroundImage = Properties.Resources.ProximaKR;
+                btnILB.BackgroundImage = Properties.Resources.GairnsKR;
+                btnIRB.BackgroundImage = Properties.Resources.ValdoKR;
             }
         }
 
@@ -388,7 +388,7 @@ namespace POExileDirection
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
             //SendKeys.SendWait("{ENTER}");
 
-            iSim = null;
+            //iSim = null;
 
             labelRegion.Text = strSendString + " (Double click listed item to search.)";
         }

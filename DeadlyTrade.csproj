@@ -21,6 +21,10 @@
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -97,9 +101,6 @@
     <Reference Include="CircularProgressBar, Version=2.7.0.7, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
       <HintPath>..\packages\CircularProgressBar.2.7.0.7\lib\net40\CircularProgressBar.dll</HintPath>
     </Reference>
-    <Reference Include="Gma.System.MouseKeyHook, Version=5.6.130.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MouseKeyHook.5.6.0\lib\net40\Gma.System.MouseKeyHook.dll</HintPath>
-    </Reference>
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
     </Reference>
@@ -120,10 +121,10 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
-      <HintPath>..\packages\DockPanelSuite.3.0.6\lib\net40\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
-    </Reference>
     <Reference Include="WindowsBase" />
+    <Reference Include="WindowsHook, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsHook.1.0.1\lib\net40\WindowsHook.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsInput, Version=1.0.4.0, Culture=neutral, PublicKeyToken=9b287f7dc5073cad, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\WindowsInput.dll</HintPath>
@@ -167,6 +168,12 @@
     </Compile>
     <Compile Include="DeadlyCommon\DeadlyEventHandler.cs" />
     <Compile Include="DeadlyCommon\NinjaTranslation.cs" />
+    <Compile Include="DeadlyNotification\NotificationContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeadlyNotification\NotificationContainer.Designer.cs">
+      <DependentUpon>NotificationContainer.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeadlyNotification\RemainingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +192,19 @@
     <Compile Include="DeadlyOverlay\FlaskTimerCircleForm.designer.cs">
       <DependentUpon>FlaskTimerCircleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeadlyOverlay\LabyOverlayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeadlyOverlay\LabyOverlayForm.designer.cs">
+      <DependentUpon>LabyOverlayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlyOverlay\LaunchedOverlayIMAGEForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeadlyOverlay\LaunchedOverlayIMAGEForm.designer.cs">
+      <DependentUpon>LaunchedOverlayIMAGEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlyPriceCheck\DeadlyPriceAPI.cs" />
     <Compile Include="DeadlyUtility\AwakenedRegionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,17 +257,11 @@
     </Compile>
     <Compile Include="DeadlyCommon\IniParser.cs" />
     <Compile Include="DeadlyCommon\InteropCommon.cs" />
-    <Compile Include="DeadlyUtility\ITEMIndicatorForm.cs">
+    <Compile Include="DeadlyNotification\ITEMIndicatorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeadlyUtility\ITEMIndicatorForm.Designer.cs">
+    <Compile Include="DeadlyNotification\ITEMIndicatorForm.Designer.cs">
       <DependentUpon>ITEMIndicatorForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DeadlyOverlay\LabyOverlayForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DeadlyOverlay\LabyOverlayForm.Designer.cs">
-      <DependentUpon>LabyOverlayForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="LauncherForm.cs">
@@ -331,8 +345,17 @@
       <DependentUpon>StashGrid.cs</DependentUpon>
     </Compile>
     <Compile Include="DeadlyCommon\VoriciCalulator.cs" />
+    <Compile Include="SettingsOverhaul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsOverhaul.Designer.cs">
+      <DependentUpon>SettingsOverhaul.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Authentication\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeadlyNotification\NotificationContainer.resx">
+      <DependentUpon>NotificationContainer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyNotification\RemainingForm.resx">
       <DependentUpon>RemainingForm.cs</DependentUpon>
@@ -342,6 +365,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyOverlay\FlaskTimerCircleForm.resx">
       <DependentUpon>FlaskTimerCircleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeadlyOverlay\LabyOverlayForm.resx">
+      <DependentUpon>LabyOverlayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeadlyOverlay\LaunchedOverlayIMAGEForm.resx">
+      <DependentUpon>LaunchedOverlayIMAGEForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyUtility\AwakenedRegionForm.resx">
       <DependentUpon>AwakenedRegionForm.cs</DependentUpon>
@@ -367,11 +396,8 @@
     <EmbeddedResource Include="DeadlyOverlay\ImageOverlayForm.resx">
       <DependentUpon>ImageOverlayForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DeadlyUtility\ITEMIndicatorForm.resx">
+    <EmbeddedResource Include="DeadlyNotification\ITEMIndicatorForm.resx">
       <DependentUpon>ITEMIndicatorForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DeadlyOverlay\LabyOverlayForm.resx">
-      <DependentUpon>LabyOverlayForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LauncherForm.resx">
       <DependentUpon>LauncherForm.cs</DependentUpon>
@@ -413,6 +439,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyUtility\StashGrid.resx">
       <DependentUpon>StashGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsOverhaul.resx">
+      <DependentUpon>SettingsOverhaul.cs</DependentUpon>
     </EmbeddedResource>
     <None Include=".editorconfig" />
     <None Include="app.manifest" />
@@ -717,6 +746,54 @@
     <None Include="Resources\Map_off.png" />
     <None Include="Resources\Map_on.png" />
     <None Include="Resources\find.png" />
+    <None Include="Resources\annoint.png" />
+    <None Include="Resources\31.png" />
+    <None Include="Resources\EjorisKR.png" />
+    <None Include="Resources\GairnsKR.png" />
+    <None Include="Resources\HamletKR.png" />
+    <None Include="Resources\LiraArthainKR.png" />
+    <None Include="Resources\NewKR.png" />
+    <None Include="Resources\ProximaKR.png" />
+    <None Include="Resources\TirnKR.png" />
+    <None Include="Resources\ValdoKR.png" />
+    <None Include="Resources\panel_sold.png" />
+    <None Include="Resources\panel_wait.png" />
+    <None Include="Resources\panel_thx.png" />
+    <None Include="Resources\panel_bottom_line.png" />
+    <None Include="Resources\QuestionMark_24px.png" />
+    <None Include="Resources\QuestionMark_20px.png" />
+    <None Include="Resources\panel_bg_clock.png" />
+    <None Include="Resources\panel_bg_man.png" />
+    <None Include="Resources\top_bar_bg_noline.png" />
+    <None Include="Resources\top_bar_close.png" />
+    <None Include="Resources\top_bar_resend.png" />
+    <None Include="Resources\top_bar_whisper.png" />
+    <None Include="Resources\top_bar_partyinvite.png" />
+    <None Include="Resources\top_bar_partyinvite1.png" />
+    <None Include="Resources\top_bar_partyinvite2.png" />
+    <None Include="Resources\top_bar_partyleave.png" />
+    <None Include="Resources\top_bar_partyleave1.png" />
+    <None Include="Resources\trade-icon.png" />
+    <None Include="Resources\top_bar_traderequest.png" />
+    <None Include="Resources\top_bar_home.png" />
+    <None Include="Resources\top_bar_arrow_up.png" />
+    <None Include="Resources\top_bar_arrow_down.png" />
+    <None Include="Resources\top_bar_line.png" />
+    <None Include="Resources\top_bar_minimize.png" />
+    <None Include="Resources\top_bar_close1.png" />
+    <None Include="Resources\Button_bg.png" />
+    <None Include="Resources\to_bar_bg.png" />
+    <None Include="Resources\top_bar_size-control.png" />
+    <None Include="Resources\top_bar_Transaction.png" />
+    <None Include="Resources\top_bar_partyexit.png" />
+    <None Include="Resources\top_bar_partyadd.png" />
+    <None Include="Resources\top_bar_resend1.png" />
+    <None Include="Resources\panel_whisper.png" />
+    <None Include="Resources\panel_time.png" />
+    <None Include="Resources\top_bar_arrow.png" />
+    <None Include="Resources\bg1.png" />
+    <None Include="Resources\message_whisper.png" />
+    <None Include="Resources\message_whois.png" />
     <Content Include="res\Currency\curr_alch.png" />
     <Content Include="res\Currency\curr_alt.png" />
     <Content Include="res\Currency\curr_ancient.png" />

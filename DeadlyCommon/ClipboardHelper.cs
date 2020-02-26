@@ -93,7 +93,7 @@ namespace POExileDirection
                     var text = Encoding.Unicode.GetString(buff).TrimEnd('\0');
 
                     if (text == OldData)
-                        return null;
+                        return text; // EOCS_MODIFIED //return null;
 
                     OldData = text;
                     return text;
@@ -140,7 +140,7 @@ namespace POExileDirection
                     var text = Encoding.ASCII.GetString(buff).TrimEnd('\0');
 
                     if (text == OldData)
-                        return null;
+                        return text; // EOCS_MODIFIED //return null;
 
                     OldData = text;
                     return text;

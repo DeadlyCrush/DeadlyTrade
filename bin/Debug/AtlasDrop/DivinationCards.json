@@ -1,0 +1,1600 @@
+{
+	"DivinationCards": [
+		{
+			"Id": "DivinationCardThreeFacesInTheDark",
+			"Name_en": "Three Faces in the Dark",
+			"Name_ko": "어둠 속의 세 얼굴",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheDoctor",
+			"Name_en": "The Doctor",
+			"Name_ko": "의사",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheHermit",
+			"Name_en": "The Hermit",
+			"Name_ko": "은둔자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardLantadorsLostLove",
+			"Name_en": "Lantador's Lost Love",
+			"Name_ko": "란타도어의 죽은 연인",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheMetalsmithsGift",
+			"Name_en": "The Metalsmith's Gift",
+			"Name_ko": "금속 세공사의 선물",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheBattleBorn",
+			"Name_en": "The Battle Born",
+			"Name_ko": "타고난 전투원",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheGladiator",
+			"Name_en": "The Gladiator",
+			"Name_ko": "검투사",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheScholar",
+			"Name_en": "The Scholar",
+			"Name_ko": "학자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheBrittleEmperor",
+			"Name_en": "The Brittle Emperor",
+			"Name_ko": "말라붙은 황제",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardThePoet",
+			"Name_en": "The Poet",
+			"Name_ko": "시인",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheCarrionCrow",
+			"Name_en": "The Carrion Crow",
+			"Name_ko": "까마귀",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardHope",
+			"Name_en": "Hope",
+			"Name_ko": "희망",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheFiend",
+			"Name_en": "The Fiend",
+			"Name_ko": "마귀",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardBirthOfTheThree",
+			"Name_en": "Birth of the Three",
+			"Name_ko": "세 여신의 탄생",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardViniasToken",
+			"Name_en": "Vinia's Token",
+			"Name_ko": "비니아의 증표",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheSummoner",
+			"Name_en": "The Summoner",
+			"Name_ko": "소환자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheCataclysm",
+			"Name_en": "The Cataclysm",
+			"Name_ko": "대재앙",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheHunger",
+			"Name_en": "The Hunger",
+			"Name_ko": "굶주림",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheHoarder",
+			"Name_en": "The Hoarder",
+			"Name_ko": "비축가",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheDrunkenAristocrat",
+			"Name_en": "The Drunken Aristocrat",
+			"Name_ko": "만취한 귀족",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheSun",
+			"Name_en": "The Sun",
+			"Name_ko": "태양",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheWarden",
+			"Name_en": "The Warden",
+			"Name_ko": "간수",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheScarredMeadow",
+			"Name_en": "The Scarred Meadow",
+			"Name_ko": "상처 입은 초원",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheDarkMage",
+			"Name_en": "The Dark Mage",
+			"Name_ko": "어둠 마법사",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheGemcutter",
+			"Name_en": "The Gemcutter",
+			"Name_ko": "세공사",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheGambler",
+			"Name_en": "The Gambler",
+			"Name_ko": "도박꾼",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheLover",
+			"Name_en": "The Lover",
+			"Name_ko": "연인",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardChaoticDisposition",
+			"Name_en": "Chaotic Disposition",
+			"Name_ko": "혼돈의 결정",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheRoadToPower",
+			"Name_en": "The Road to Power",
+			"Name_ko": "힘에 이르는 길",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheAvenger",
+			"Name_en": "The Avenger",
+			"Name_ko": "복수자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardEmperorsLuck",
+			"Name_en": "Emperor's Luck",
+			"Name_ko": "황제의 행운",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTimeLostRelic",
+			"Name_en": "Time-Lost Relic",
+			"Name_ko": "오래된 유물",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardLuckyConnections",
+			"Name_en": "Lucky Connections",
+			"Name_ko": "행운의 연결",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheFeast",
+			"Name_en": "The Feast",
+			"Name_ko": "연회",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardRainOfChaos",
+			"Name_en": "Rain of Chaos",
+			"Name_ko": "카오스의 비",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheWatcher",
+			"Name_en": "The Watcher",
+			"Name_ko": "감시자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheIncantation",
+			"Name_en": "The Incantation",
+			"Name_ko": "주문",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardCovetedPossession",
+			"Name_en": "Coveted Possession",
+			"Name_ko": "갈망하던 소유",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheKingsHeart",
+			"Name_en": "The King's Heart",
+			"Name_ko": "왕의 심장",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardAbandonedWealth",
+			"Name_en": "Abandoned Wealth",
+			"Name_ko": "버려진 재산",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheWind",
+			"Name_en": "The Wind",
+			"Name_ko": "바람",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardThePact",
+			"Name_en": "The Pact",
+			"Name_ko": "계약",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardGemcuttersPromise",
+			"Name_en": "Gemcutter's Promise",
+			"Name_ko": "세공사의 약속",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheCelestialJusticar",
+			"Name_en": "The Celestial Justicar",
+			"Name_ko": "천공의 심판관",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheChainsThatBind",
+			"Name_en": "The Chains that Bind",
+			"Name_ko": "속박의 사슬",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheArtist",
+			"Name_en": "The Artist",
+			"Name_ko": "예술가",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheInventor",
+			"Name_en": "The Inventor",
+			"Name_ko": "발명가",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardThePackLeader",
+			"Name_en": "The Pack Leader",
+			"Name_ko": "무리의 우두머리",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardJackInTheBox",
+			"Name_en": "Jack in the Box",
+			"Name_ko": "깜짝 상자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheUnion",
+			"Name_en": "The Union",
+			"Name_ko": "결합",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheQueen",
+			"Name_en": "The Queen",
+			"Name_ko": "여왕",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardHumility",
+			"Name_en": "Humility",
+			"Name_ko": "겸손",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheExplorer",
+			"Name_en": "The Explorer",
+			"Name_ko": "탐험가",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheSpoiledPrince",
+			"Name_en": "The Spoiled Prince",
+			"Name_ko": "버릇 없이 자란 왕자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheBetrayal",
+			"Name_en": "The Betrayal",
+			"Name_ko": "배신",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheFlorasGift",
+			"Name_en": "The Flora's Gift",
+			"Name_ko": "식물의 선물",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheSiren",
+			"Name_en": "The Siren",
+			"Name_ko": "사이렌",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheOneWithAll",
+			"Name_en": "The One With All",
+			"Name_ko": "만인과 함께하는 자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheLastOneStanding",
+			"Name_en": "The Last One Standing",
+			"Name_ko": "최후의 승자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardDoedresMadness",
+			"Name_en": "Doedre's Madness",
+			"Name_ko": "도이드리의 광기",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheEncroachingDarkness",
+			"Name_en": "The Encroaching Darkness",
+			"Name_ko": "잠식해오는 어둠",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheWrath",
+			"Name_en": "The Wrath",
+			"Name_ko": "진노",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheKingsBlade",
+			"Name_en": "The King's Blade",
+			"Name_ko": "왕의 검",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheTrial",
+			"Name_en": "The Trial",
+			"Name_ko": "시험",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheGentleman",
+			"Name_en": "The Gentleman",
+			"Name_ko": "신사",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardHouseOfMirrors",
+			"Name_en": "House of Mirrors",
+			"Name_ko": "거울의 집",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardWealthAndPower",
+			"Name_en": "Wealth and Power",
+			"Name_ko": "부와 권력",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheCatalyst",
+			"Name_en": "The Catalyst",
+			"Name_ko": "기폭제",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheVast",
+			"Name_en": "The Vast",
+			"Name_ko": "광대함",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardGiftOfTheGemlingQueen",
+			"Name_en": "Gift of the Gemling Queen",
+			"Name_ko": "마석 여왕의 선물",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheDragonsHeart",
+			"Name_en": "The Dragon's Heart",
+			"Name_ko": "용의 심장",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheFox",
+			"Name_en": "The Fox",
+			"Name_ko": "여우",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheDoppelganger",
+			"Name_en": "The Doppelganger",
+			"Name_ko": "분신",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheSurvivalist",
+			"Name_en": "The Survivalist",
+			"Name_ko": "생존주의자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardDeath",
+			"Name_en": "Death",
+			"Name_ko": "죽음",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardGraveKnowledge",
+			"Name_en": "Grave Knowledge",
+			"Name_ko": "무덤의 지식",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheJester",
+			"Name_en": "The Jester",
+			"Name_ko": "어릿광대",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheMercenary",
+			"Name_en": "The Mercenary",
+			"Name_ko": "용병",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheInoculated",
+			"Name_en": "The Inoculated",
+			"Name_ko": "접종자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardLoyalty",
+			"Name_en": "Loyalty",
+			"Name_ko": "충성심",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardPrideBeforeTheFall",
+			"Name_en": "Pride Before the Fall",
+			"Name_ko": "몰락 직전의 긍지",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardAudacity",
+			"Name_en": "Audacity",
+			"Name_ko": "대담성",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardAssassinsFavour",
+			"Name_en": "Assassin's Favour",
+			"Name_ko": "암살자의 호의",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardHuntersResolve",
+			"Name_en": "Hunter's Resolve",
+			"Name_ko": "사냥꾼의 결의",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardScholarOfTheSeas",
+			"Name_en": "Scholar of the Seas",
+			"Name_ko": "바다의 학자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheConduit",
+			"Name_en": "The Conduit",
+			"Name_ko": "도관",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheTower",
+			"Name_en": "The Tower",
+			"Name_ko": "탑",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheTwins",
+			"Name_en": "The Twins",
+			"Name_ko": "쌍둥이",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardAnarchysPrice",
+			"Name_en": "Anarchy's Price",
+			"Name_ko": "혼란의 가치",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheLich",
+			"Name_en": "The Lich",
+			"Name_ko": "리치",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheThaumaturgist",
+			"Name_en": "The Thaumaturgist",
+			"Name_ko": "마석학자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheAesthete",
+			"Name_en": "The Aesthete",
+			"Name_ko": "탐미주의자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheEnlightened",
+			"Name_en": "The Enlightened",
+			"Name_ko": "계몽된 자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardHuntersReward",
+			"Name_en": "Hunter's Reward",
+			"Name_ko": "사냥꾼의 보상",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheFletcher",
+			"Name_en": "The Fletcher",
+			"Name_ko": "화살 제조자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheSurveyor",
+			"Name_en": "The Surveyor",
+			"Name_ko": "측량사",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardBowyersDream",
+			"Name_en": "Bowyer's Dream",
+			"Name_ko": "활장이의 꿈",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheSurgeon",
+			"Name_en": "The Surgeon",
+			"Name_ko": "외과의사",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardVolatilePower",
+			"Name_en": "Volatile Power",
+			"Name_ko": "불안한 권력",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardLastHope",
+			"Name_en": "Last Hope",
+			"Name_ko": "최후의 희망",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardHubris",
+			"Name_en": "Hubris",
+			"Name_ko": "오만",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardBlindVenture",
+			"Name_en": "Blind Venture",
+			"Name_ko": "무모한 모험",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardMercilessArmament",
+			"Name_en": "Merciless Armament",
+			"Name_ko": "무자비한 병기",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheCartographer",
+			"Name_en": "The Cartographer",
+			"Name_ko": "지도제작자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheWarlord",
+			"Name_en": "The Warlord",
+			"Name_ko": "전쟁군주",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheDemoness",
+			"Name_en": "The Demoness",
+			"Name_ko": "여악마",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheTraitor",
+			"Name_en": "The Traitor",
+			"Name_ko": "배반자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheOffering",
+			"Name_en": "The Offering",
+			"Name_ko": "공물",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardLostWorlds",
+			"Name_en": "Lost Worlds",
+			"Name_ko": "잃어버린 세계",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheLordInBlack",
+			"Name_en": "The Lord in Black",
+			"Name_ko": "어둠 속의 군주",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardAMothersPartingGift",
+			"Name_en": "A Mother's Parting Gift",
+			"Name_ko": "어머니의 이별 선물",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheBody",
+			"Name_en": "The Body",
+			"Name_ko": "몸통",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTurnTheOtherCheek",
+			"Name_en": "Turn the Other Cheek",
+			"Name_ko": "다른 뺨을 내밀라",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardGlimmerOfHope",
+			"Name_en": "Glimmer of Hope",
+			"Name_ko": "희망의 빛",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheEthereal",
+			"Name_en": "The Ethereal",
+			"Name_ko": "천상에 속한 자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardProsperity",
+			"Name_en": "Prosperity",
+			"Name_ko": "번영",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheSigil",
+			"Name_en": "The Sigil",
+			"Name_ko": "부적",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheDapperProdigy",
+			"Name_en": "The Dapper Prodigy",
+			"Name_ko": "말쑥한 영재",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheRabidRhoa",
+			"Name_en": "The Rabid Rhoa",
+			"Name_ko": "광포한 로아",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheSoul",
+			"Name_en": "The Soul",
+			"Name_ko": "망혼",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheLion",
+			"Name_en": "The Lion",
+			"Name_ko": "사자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheDragon",
+			"Name_en": "The Dragon",
+			"Name_ko": "용",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardRats",
+			"Name_en": "Rats",
+			"Name_ko": "쥐",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheRisk",
+			"Name_en": "The Risk",
+			"Name_ko": "위험",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTranquillity",
+			"Name_en": "Tranquillity",
+			"Name_ko": "평온",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardHerMask",
+			"Name_en": "Her Mask",
+			"Name_ko": "그녀의 가면",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTreasureHunter",
+			"Name_en": "Treasure Hunter",
+			"Name_ko": "보물 사냥꾼",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardEarthDrinker",
+			"Name_en": "Earth Drinker",
+			"Name_ko": "대지 흡수자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheWolfsShadow",
+			"Name_en": "The Wolf's Shadow",
+			"Name_ko": "늑대의 그림자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheArenaChampion",
+			"Name_en": "The Arena Champion",
+			"Name_ko": "투기장의 용사",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheSephirot",
+			"Name_en": "The Sephirot",
+			"Name_ko": "세피로트",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheVisionary",
+			"Name_en": "The Visionary",
+			"Name_ko": "공상가",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardThunderousSkies",
+			"Name_en": "Thunderous Skies",
+			"Name_ko": "천둥 치는 하늘",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardDyingAnguish",
+			"Name_en": "Dying Anguish",
+			"Name_ko": "죽음의 비통함",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheImmortal",
+			"Name_en": "The Immortal",
+			"Name_ko": "불멸자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheThrone",
+			"Name_en": "The Throne",
+			"Name_ko": "왕좌",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardBoundlessRealms",
+			"Name_en": "Boundless Realms",
+			"Name_ko": "무한한 영역",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheDevastator",
+			"Name_en": "The Devastator",
+			"Name_ko": "파괴자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardDestinedToCrumble",
+			"Name_en": "Destined to Crumble",
+			"Name_ko": "무너질 운명",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardShardOfFate",
+			"Name_en": "Shard of Fate",
+			"Name_ko": "운명의 파편",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardHeterochromia",
+			"Name_en": "Heterochromia",
+			"Name_ko": "이색증",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardRainTempter",
+			"Name_en": "Rain Tempter",
+			"Name_ko": "비 유혹자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheVoid",
+			"Name_en": "The Void",
+			"Name_ko": "공허",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheTyrant",
+			"Name_en": "The Tyrant",
+			"Name_ko": "폭군",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheWeb",
+			"Name_en": "The Web",
+			"Name_ko": "거미줄",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheHarvester",
+			"Name_en": "The Harvester",
+			"Name_ko": "수확자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheLunarisPriestess",
+			"Name_en": "The Lunaris Priestess",
+			"Name_ko": "루나리스 여사제",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardEmperorOfPurity",
+			"Name_en": "Emperor of Purity",
+			"Name_ko": "정화의 황제",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheCursedKing",
+			"Name_en": "The Cursed King",
+			"Name_ko": "저주받은 왕",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheStormcaller",
+			"Name_en": "The Stormcaller",
+			"Name_ko": "폭풍 소환사",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardLysahsRespite",
+			"Name_en": "Lysah's Respite",
+			"Name_ko": "라이사의 휴식",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardCartographersDelight",
+			"Name_en": "Cartographer's Delight",
+			"Name_ko": "지도제작자의 기쁨",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardDeck",
+			"Name_en": "Stacked Deck",
+			"Name_ko": "카드 묶음",
+			"DDSFile": "Art/2DItems/Divination/Deck.dds"
+		},
+		{
+			"Id": "DivinationCardLuckyDeck",
+			"Name_en": "Lucky Deck",
+			"Name_ko": "행운의 카드 묶음",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardLightAndTruth",
+			"Name_en": "Light and Truth",
+			"Name_ko": "빛과 진실",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardLuckOfTheVaal",
+			"Name_en": "Luck of the Vaal",
+			"Name_ko": "바알의 행운",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheEndurance",
+			"Name_en": "The Endurance",
+			"Name_ko": "인내",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardThePenitent",
+			"Name_en": "The Penitent",
+			"Name_ko": "참회자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheWolf",
+			"Name_en": "The Wolf",
+			"Name_ko": "늑대",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardDiallasSubjugation",
+			"Name_en": "Dialla's Subjugation",
+			"Name_ko": "디알라의 예속",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheCalling",
+			"Name_en": "The Calling",
+			"Name_ko": "소명",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheValkyrie",
+			"Name_en": "The Valkyrie",
+			"Name_ko": "발키리",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheFormlessSea",
+			"Name_en": "The Formless Sea",
+			"Name_ko": "무형의 바다",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheOath",
+			"Name_en": "The Oath",
+			"Name_ko": "서약",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheScavenger",
+			"Name_en": "The Scavenger",
+			"Name_ko": "시체 청소부",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardMawrBlaidd",
+			"Name_en": "Mawr Blaidd",
+			"Name_ko": "모어 블레이드",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardThePorcupine",
+			"Name_en": "The Porcupine",
+			"Name_ko": "호저",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheComingStorm",
+			"Name_en": "The Coming Storm",
+			"Name_ko": "다가오는 태풍",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardThePolymath",
+			"Name_en": "The Polymath",
+			"Name_ko": "박식가",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheWolverine",
+			"Name_en": "The Wolverine",
+			"Name_ko": "오소리",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardMitts",
+			"Name_en": "Mitts",
+			"Name_ko": "미트",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheWretched",
+			"Name_en": "The Wretched",
+			"Name_ko": "불운아",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheWolvenKingsBite",
+			"Name_en": "The Wolven King's Bite",
+			"Name_ko": "늑대왕의 이빨",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheStandoff",
+			"Name_en": "The Standoff",
+			"Name_ko": "교착 상태",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheForsaken",
+			"Name_en": "The Forsaken",
+			"Name_ko": "버림받은 자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheGarishPower",
+			"Name_en": "The Garish Power",
+			"Name_ko": "화려한 힘",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardLingeringRemnants",
+			"Name_en": "Lingering Remnants",
+			"Name_ko": "지속되는 유물",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheSparkAndTheFlame",
+			"Name_en": "The Spark and the Flame",
+			"Name_ko": "불꽃과 화염",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheSaintsTreasure",
+			"Name_en": "The Saint's Treasure",
+			"Name_ko": "성자의 보물",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardCallToTheFirstOnes",
+			"Name_en": "Call to the First Ones",
+			"Name_ko": "최초의 존재들에게 외치다",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheValleyOfSteelBoxes",
+			"Name_en": "The Valley of Steel Boxes",
+			"Name_ko": "강철 상자의 계곡",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardMightIsRight",
+			"Name_en": "Might is Right",
+			"Name_ko": "힘이 정의다",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheOpulecent",
+			"Name_en": "The Opulent",
+			"Name_ko": "호화로움",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardStruckByLightning",
+			"Name_en": "Struck by Lightning",
+			"Name_ko": "번개에 맞다",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardAtzirisArsenal",
+			"Name_en": "Atziri's Arsenal",
+			"Name_ko": "앗지리의 병기창",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheRuthlessCeinture",
+			"Name_en": "The Ruthless Ceinture",
+			"Name_ko": "무정한 허리띠",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardNoTraces",
+			"Name_en": "No Traces",
+			"Name_ko": "흔적 없음",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheRealm",
+			"Name_en": "The Realm",
+			"Name_ko": "영역",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheEyeOfTheDragon",
+			"Name_en": "The Eye of the Dragon",
+			"Name_ko": "용의 눈",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheBlazingFire",
+			"Name_en": "The Blazing Fire",
+			"Name_ko": "맹렬한 화염",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardLeftToFate",
+			"Name_en": "Left to Fate",
+			"Name_ko": "운명에 맡기다",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardRebirth",
+			"Name_en": "Rebirth",
+			"Name_ko": "부활",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheInsatiable",
+			"Name_en": "The Insatiable",
+			"Name_ko": "만족을 모르는 자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheObscured",
+			"Name_en": "The Obscured",
+			"Name_ko": "가려진 자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheIronBard",
+			"Name_en": "The Iron Bard",
+			"Name_ko": "철의 음유시인",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardForbiddenPower",
+			"Name_en": "Forbidden Power",
+			"Name_ko": "금지된 힘",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheBreach",
+			"Name_en": "The Breach",
+			"Name_ko": "균열",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheDreamer",
+			"Name_en": "The Dreamer",
+			"Name_ko": "몽상가",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheWorldEater",
+			"Name_en": "The World Eater",
+			"Name_ko": "세계를 먹는 자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheDeceiver",
+			"Name_en": "The Deceiver",
+			"Name_ko": "기만자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardBlessingOfGod",
+			"Name_en": "Blessing of God",
+			"Name_ko": "신의 축복",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardThePuzzle",
+			"Name_en": "The Puzzle",
+			"Name_ko": "수수께끼",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheWitch",
+			"Name_en": "The Witch",
+			"Name_ko": "마녀",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardImmortalResolve",
+			"Name_en": "Immortal Resolve",
+			"Name_ko": "불멸의 결의",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheJewellersBoon",
+			"Name_en": "The Jeweller's Boon",
+			"Name_ko": "보석 상인의 은혜",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheDarkestDream",
+			"Name_en": "The Darkest Dream",
+			"Name_ko": "암울한 꿈",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheMaster",
+			"Name_en": "The Master",
+			"Name_ko": "대가",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheFathomlessDepths",
+			"Name_en": "The Fathomless Depths",
+			"Name_ko": "깊이 모를 심연",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheUndaunted",
+			"Name_en": "The Undaunted",
+			"Name_ko": "의연한 자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheAdmirer",
+			"Name_en": "The Admirer",
+			"Name_ko": "숭배자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheSwordKingsSalute",
+			"Name_en": "The Sword King's Salute",
+			"Name_ko": "검의 제왕의 경례",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheArmyOfBlood",
+			"Name_en": "The Army of Blood",
+			"Name_ko": "피의 군대",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheCelestialStone",
+			"Name_en": "The Celestial Stone",
+			"Name_ko": "천공의 돌",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardPerfection",
+			"Name_en": "Perfection",
+			"Name_ko": "완벽",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheDreamland",
+			"Name_en": "The Dreamland",
+			"Name_ko": "꿈의 세계",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardHarmonyOfSouls",
+			"Name_en": "Harmony of Souls",
+			"Name_ko": "영혼의 조화",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheSamuraisEye",
+			"Name_en": "The Samurai's Eye",
+			"Name_ko": "사무라이의 눈",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheHaleHeart",
+			"Name_en": "The Hale Heart",
+			"Name_ko": "건강한 심장",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheMayor",
+			"Name_en": "The Mayor",
+			"Name_ko": "시장",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheUndisputed",
+			"Name_en": "The Undisputed",
+			"Name_ko": "모두가 인정하는 자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheRiteOfElements",
+			"Name_en": "The Rite of Elements",
+			"Name_ko": "원소의 의식",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardThreeVoices",
+			"Name_en": "Three Voices",
+			"Name_ko": "3개의 목소리",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheProfessor",
+			"Name_en": "The Professor",
+			"Name_ko": "교수",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheBeast",
+			"Name_en": "The Beast",
+			"Name_ko": "짐승",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheInnocent",
+			"Name_en": "The Innocent",
+			"Name_ko": "결백한 자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheWiltedRose",
+			"Name_en": "The Wilted Rose",
+			"Name_ko": "시들은 장미",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheEndlessDarkness",
+			"Name_en": "The Endless Darkness",
+			"Name_ko": "끝없는 어둠",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardBeautyThroughDeath",
+			"Name_en": "Beauty Through Death",
+			"Name_ko": "죽음을 지나온 아름다움",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardThePriceOfProtection",
+			"Name_en": "The Price of Protection",
+			"Name_ko": "보호의 대가",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardBoonOfTheFirstOnes",
+			"Name_en": "Boon of the First Ones",
+			"Name_ko": "최초의 존재들의 은혜",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheTwilightMoon",
+			"Name_en": "The Twilight Moon",
+			"Name_ko": "황혼의 달",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheCacophony",
+			"Name_en": "The Cacophony",
+			"Name_ko": "불협화음",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheSacrifice",
+			"Name_en": "The Sacrifice",
+			"Name_ko": "희생",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardADabOfInk",
+			"Name_en": "A Dab of Ink",
+			"Name_ko": "약간의 잉크",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheNurse",
+			"Name_en": "The Nurse",
+			"Name_ko": "간호사",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheMasterArtisan",
+			"Name_en": "The Master Artisan",
+			"Name_ko": "장인",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheLifeThief",
+			"Name_en": "The Life Thief",
+			"Name_ko": "생명력 도둑",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheSeeker",
+			"Name_en": "The Seeker",
+			"Name_ko": "탐색자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheMessenger",
+			"Name_en": "The Messenger",
+			"Name_ko": "전달자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheMadKing",
+			"Name_en": "The Mad King",
+			"Name_ko": "미치광이 왕",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardBoonOfJustice",
+			"Name_en": "Boon of Justice",
+			"Name_ko": "정의의 은혜",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheJourney",
+			"Name_en": "The Journey",
+			"Name_ko": "여행",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardArroganceOfTheVaal",
+			"Name_en": "Arrogance of the Vaal",
+			"Name_ko": "바알의 오만",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheLanding",
+			"Name_en": "The Landing",
+			"Name_ko": "상륙",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheMountain",
+			"Name_en": "The Mountain",
+			"Name_ko": "산",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardSevenYearsBadLuck",
+			"Name_en": "Seven Years Bad Luck",
+			"Name_ko": "7년 간의 불운",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheGoldenEra",
+			"Name_en": "The Golden Era",
+			"Name_ko": "황금시대",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardMonochrome",
+			"Name_en": "Monochrome",
+			"Name_ko": "단색화",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardDarkTemptation",
+			"Name_en": "Dark Temptation",
+			"Name_ko": "어둠의 유혹",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardAloneInTheDarkness",
+			"Name_en": "Alone in the Darkness",
+			"Name_ko": "어둠 속에서 홀로",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardSambodhisVow",
+			"Name_en": "Sambodhi's Vow",
+			"Name_ko": "삼보디의 맹세",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheLordOfCelebration",
+			"Name_en": "The Lord of Celebration",
+			"Name_ko": "축제의 군주",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardVanity",
+			"Name_en": "Vanity",
+			"Name_ko": "자만심",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardImperialLegacy",
+			"Name_en": "Imperial Legacy",
+			"Name_ko": "제국의 유산",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardBurningBlood",
+			"Name_en": "Burning Blood",
+			"Name_ko": "불타는 피",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardThePrimordial",
+			"Name_en": "The Primordial",
+			"Name_ko": "태고",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardEchoesOfLove",
+			"Name_en": "Echoes of Love",
+			"Name_ko": "사랑의 메아리",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardThirstForKnowledge",
+			"Name_en": "Thirst for Knowledge",
+			"Name_ko": "불타는 지식욕",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardAlluringBounty",
+			"Name_en": "Alluring Bounty",
+			"Name_ko": "유혹의 하사품",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheFool",
+			"Name_en": "The Fool",
+			"Name_ko": "어리석은 자",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardPrideOfTheFirstOnes",
+			"Name_en": "Pride of the First Ones",
+			"Name_ko": "최초의 존재들의 자부심",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheDeepOnes",
+			"Name_en": "The Deep Ones",
+			"Name_ko": "심해의 존재",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardTheArchmagesRightHand",
+			"Name_en": "The Archmage's Right Hand",
+			"Name_ko": "대마법사의 심복",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardDarkDreams",
+			"Name_en": "Dark Dreams",
+			"Name_ko": "암흑의 꿈",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardBuriedTreasure",
+			"Name_en": "Buried Treasure",
+			"Name_ko": "파묻힌 보물",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		},
+		{
+			"Id": "DivinationCardDemigodsWager",
+			"Name_en": "Demigod's Wager",
+			"Name_ko": "반신의 내기",
+			"DDSFile": "Art/2DItems/Divination/InventoryIcon.dds"
+		}
+	]
+}

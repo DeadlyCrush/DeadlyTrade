@@ -38,21 +38,10 @@ namespace POExileDirection
         {
             Visible = false;
 
-            if (LauncherForm.g_strUILang == "ENG")
-            {
-                labelTop1.Text = "Word seperator is ';'";
-                labelTop2.Text = "(ex: wts;sell;wtb;buy)";
-                labelInclude.Text = "Include";
-                labelExclude.Text = "Exclude";
-                btnClear.Text = "Clear";
-                btnWhisper.Text = "Whisper";
-                btnWhois.Text = "Who is?";
-                btnHide.Text = "Close";
-            }
-
             listViewChat.View = View.Details;
             listViewChat.GridLines = true;
             listViewChat.FullRowSelect = true;
+            listViewChat.
 
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
 
@@ -166,24 +155,6 @@ namespace POExileDirection
             this.Close();
         }
 
-        private void BtnMinMax_Click(object sender, EventArgs e)
-        {
-            if (bIsMin)
-            {
-                // Maximize
-                btnMinMax.BackgroundImage = Properties.Resources.MinButton;
-                bIsMin = false;
-                Height = 359;
-            }
-            else
-            {
-                // Minimize
-                btnMinMax.BackgroundImage = Properties.Resources.MaxButton;
-                bIsMin = true;
-                Height = 36;
-            }
-        }
-
         private void BtnScan_MouseDown(object sender, MouseEventArgs e)
         {
             nMoving = 1;
@@ -194,7 +165,7 @@ namespace POExileDirection
         private void BtnScan_MouseMove(object sender, MouseEventArgs e)
         {
             if (nMoving == 1)
-                this.SetDesktopLocation(MousePosition.X - nMovePosX -3, MousePosition.Y - nMovePosY);
+                this.SetDesktopLocation(MousePosition.X - nMovePosX, MousePosition.Y - nMovePosY);
         }
 
         private void BtnScan_MouseUp(object sender, MouseEventArgs e)
@@ -279,7 +250,7 @@ namespace POExileDirection
 
             iSim.Keyboard.KeyPress(VirtualKeyCode.SPACE);
 
-            iSim = null;
+            //iSim = null;
         }
 
         private void ListViewChat_MouseClick(object sender, MouseEventArgs e)
@@ -322,7 +293,7 @@ namespace POExileDirection
 
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
 
-            iSim = null;
+            //iSim = null;
         }
     }
 }

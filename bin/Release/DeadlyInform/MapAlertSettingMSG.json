@@ -1,0 +1,21 @@
+{   "MapAlertMSG": [
+  {
+    "Id": "RED",
+    "Msg": [
+      "reflect",
+      "of elemental damage",
+      "hexproof",
+      "extra damage as",
+      "cannot regen",
+      "% increased critical"
+    ]
+  },
+  {
+    "Id": "GREEN",
+    "Msg": [
+      "two Unique Bosses",
+      "Nemesis",
+      "bloodline"
+    ]
+  }
+] }

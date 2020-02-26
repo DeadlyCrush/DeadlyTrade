@@ -141,9 +141,9 @@
             // 
             this.btnLang.BackColor = System.Drawing.Color.Transparent;
             this.btnLang.ForeColor = System.Drawing.Color.White;
-            this.btnLang.Location = new System.Drawing.Point(87, 0);
+            this.btnLang.Location = new System.Drawing.Point(92, 0);
             this.btnLang.Name = "btnLang";
-            this.btnLang.Size = new System.Drawing.Size(423, 22);
+            this.btnLang.Size = new System.Drawing.Size(411, 22);
             this.btnLang.TabIndex = 18;
             this.btnLang.Text = "Zone Information.";
             this.btnLang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -160,9 +160,9 @@
             this.btnUILANG.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnUILANG.Location = new System.Drawing.Point(-1, -1);
             this.btnUILANG.Name = "btnUILANG";
-            this.btnUILANG.Size = new System.Drawing.Size(73, 22);
+            this.btnUILANG.Size = new System.Drawing.Size(92, 22);
             this.btnUILANG.TabIndex = 17;
-            this.btnUILANG.Text = "KOR";
+            this.btnUILANG.Text = "Swap PART";
             this.btnUILANG.UseVisualStyleBackColor = false;
             this.btnUILANG.Click += new System.EventHandler(this.btnUILANG_Click);
             // 

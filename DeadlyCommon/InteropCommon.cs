@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -40,13 +41,11 @@ namespace POExileDirection
         [DllImport("user32.dll")]
         public static extern bool SetLayeredWindowAttributes(IntPtr hwnd, uint crKey, byte bAlpha, uint dwFlags);
 
-        public static string GetPathFromHandle(IntPtr hwnd)
-        {
-            uint pid = 0;
-            int nRet = GetWindowThreadProcessId(hwnd, out pid);
-            Process procInform = Process.GetProcessById((int)pid);
-            return procInform.MainModule.FileName.ToString();
-        }
+        [DllImport("user32.dll")]
+        static extern short GetKeyState(int ctrlKey = 0x11);
+
+        [DllImport("user32.dll")]
+        public static extern bool GetCursorPos(out POINT lpPoint);
 
         [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Auto)]
         public static extern int GetClassName(IntPtr hWnd, StringBuilder lpClassName, int nMaxCount);
@@ -64,6 +63,59 @@ namespace POExileDirection
         private static extern bool GetWindowRect(IntPtr hwnd, out RECT lpRect);
 
         #endregion
+
+        public static bool IsCtrlPressed()
+        {
+            var result = GetKeyState();
+
+            bool bctrlKeyPressed = false;
+            switch (result)
+            {
+                case 0:
+                    bctrlKeyPressed = false;
+                    break;
+
+                case 1:
+                    bctrlKeyPressed = false;
+                    break;
+
+                default:
+                    bctrlKeyPressed = true;
+                    break;
+            }
+
+            return bctrlKeyPressed;
+        }
+
+        public static string GetPathFromHandle(IntPtr hwnd)
+        {
+            uint pid = 0;
+            int nRet = GetWindowThreadProcessId(hwnd, out pid);
+            Process procInform = Process.GetProcessById((int)pid);
+            return procInform.MainModule.FileName.ToString();
+        }
+
+        [StructLayout(LayoutKind.Sequential)]
+        public struct POINT
+        {
+            public int X;
+            public int Y;
+
+            public static implicit operator Point(POINT point)
+            {
+                return new Point(point.X, point.Y);
+            }
+        }
+
+        public static Point GetCursorPosition()
+        {
+            POINT lpPoint;
+            GetCursorPos(out lpPoint);
+            //bool success = User32.GetCursorPos(out lpPoint);
+            // if (!success)
+
+            return lpPoint;
+        }
 
         public static string GetActiveWindowTitle()
         {

@@ -83,7 +83,6 @@ namespace POExileDirection
             catch (Exception ex)
             {
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-
             }
         }
 
@@ -139,9 +138,13 @@ namespace POExileDirection
             IniParser parser = new IniParser(strINIPath);
 
             string sZoom = parser.GetSetting("LOCATIONIMGMAP", "ZOOM");
-            // img = resizeImage(img, new Size(img.Width + Int32.Parse(sZoom), img.Height + Int32.Parse(sZoom)));
-            img = DeadlyImageCommon.ScaleImage(img, img.Width + Int32.Parse(sZoom), img.Height + Int32.Parse(sZoom));
-         }
+            img = resizeImage(img, new Size(img.Width + Int32.Parse(sZoom), img.Height + Int32.Parse(sZoom)));
+        }
+
+        private static Image resizeImage(Image imgToResize, Size size)
+        {
+            return (Image)(new Bitmap(imgToResize, size));
+        }
 
         private void ImageOverlayFormMap_Paint(object sender, PaintEventArgs e)
         {
@@ -201,11 +204,6 @@ namespace POExileDirection
             }
             */
             #endregion
-        }
-
-        public static Image resizeImage(Image imgToResize, Size size)
-        {
-            return (Image)(new Bitmap(imgToResize, size));
         }
 
         private void Panel1_MouseDown(object sender, MouseEventArgs e)
@@ -277,15 +275,21 @@ namespace POExileDirection
             nZoom = nZoom - 100;
             if (img.Width + nZoom >= 320 && img.Height + nZoom >= 258)
             {
-                //img = resizeImage(img, new Size(img.Width + nZoom, img.Height + nZoom));
-                img = DeadlyImageCommon.ScaleImage(img, img.Width + nZoom, img.Height + nZoom);
+                try
+                {
+                    img = resizeImage(img, new Size(img.Width + nZoom, img.Height + nZoom));
 
-                parser.AddSetting("LOCATIONIMGMAP", "ZOOM", nZoom.ToString());
-                parser.SaveSettings();
+                    parser.AddSetting("LOCATIONIMGMAP", "ZOOM", nZoom.ToString());
+                    parser.SaveSettings();
 
-                this.Invalidate();
-                this.Update();
-                this.Refresh();
+                    this.Invalidate();
+                    this.Update();
+                    this.Refresh();
+                }
+                catch (Exception ex)
+                {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+                }
             }
         }
 
@@ -313,15 +317,23 @@ namespace POExileDirection
             nZoom = nZoom + 100;
             if (img.Width + nZoom <= 1901 && img.Height + nZoom <= 1154)
             {
+                try
                 //img = resizeImage(img, new Size(img.Width + nZoom, img.Height + nZoom));
-                img = DeadlyImageCommon.ScaleImage(img, img.Width + nZoom, img.Height + nZoom);
+                //img = DeadlyImageCommon.ScaleImage(img, img.Width + nZoom, img.Height + nZoom);
+                {
+                    img = resizeImage(img, new Size(img.Width + nZoom, img.Height + nZoom));
 
-                parser.AddSetting("LOCATIONIMGMAP", "ZOOM", nZoom.ToString());
-                parser.SaveSettings();
+                    parser.AddSetting("LOCATIONIMGMAP", "ZOOM", nZoom.ToString());
+                    parser.SaveSettings();
 
-                this.Invalidate();
-                this.Update();
-                this.Refresh();
+                    this.Invalidate();
+                    this.Update();
+                    this.Refresh();
+                }
+                catch (Exception ex)
+                {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+                }
             }
         }
 

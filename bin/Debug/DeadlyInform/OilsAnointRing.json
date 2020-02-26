@@ -1,0 +1,393 @@
+{
+	"OilsRingAnoint": [{
+			"Oils": ["Clear Oil", "Clear Oil"],
+			"Effect": "Your Chilling Towers deal 25% increased Damage",
+			"EffectKR": "냉각의 탑이 주는 피해 25% 증가"
+		},
+		{
+			"Oils": ["Clear Oil", "Sepia Oil"],
+			"Effect": "Your Freezebolt Towers deal 25% increased Damage",
+			"EffectKR": "동결탄 탑이 주는 피해 25% 증가"
+		},
+		{
+			"Oils": ["Sepia Oil", "Sepia Oil"],
+			"Effect": "Your Glacial Cage Towers have 25% increased Duration",
+			"EffectKR": "빙하 창살 탑의 지속시간 25% 증가"
+		},
+		{
+			"Oils": ["Clear Oil", "Amber Oil"],
+			"Effect": "Your Fireball Towers deal 25% increased Damage",
+			"EffectKR": "화염구 탑이 주는 피해 25% 증가"
+		},
+		{
+			"Oils": ["Sepia Oil", "Amber Oil"],
+			"Effect": "Your Flamethrower Towers deal 25% increased Damage",
+			"EffectKR": "화염방사기 탑이 주는 피해 25% 증가"
+		},
+		{
+			"Oils": ["Clear Oil", "Verdant Oil"],
+			"Effect": "Your Meteor Towers deal 25% increased Damage",
+			"EffectKR": "유성 탑의 피해 25% 증가"
+		},
+		{
+			"Oils": ["Sepia Oil", "Verdant Oil"],
+			"Effect": "Minions summoned by Your Summoning Towers have 25% increased Damage",
+			"EffectKR": "소환의 탑이 소환한 소환수가 주는 피해 25% 증가"
+		},
+		{
+			"Oils": ["Amber Oil", "Amber Oil"],
+			"Effect": "Minions summoned by Your Scout Towers have 25% increased Damage",
+			"EffectKR": "정찰병 탑이 소환한 소환수의 피해 25% 증가"
+		},
+		{
+			"Oils": ["Clear Oil", "Teal Oil"],
+			"Effect": "Minions summoned by Your Sentinel Towers have 25% increased Damage",
+			"EffectKR": "파수꾼 탑이 소환한 소환수가 주는 피해 25% 증가"
+		},
+		{
+			"Oils": ["Amber Oil", "Verdant Oil"],
+			"Effect": "Your Shock Nova Towers deal 25% increased Damage",
+			"EffectKR": "충격 폭발 탑이 주는 피해 25% 증가"
+		},
+		{
+			"Oils": ["Sepia Oil", "Teal Oil"],
+			"Effect": "Your Lightning Storm Towers deal 25% increased Damage",
+			"EffectKR": "번개 태풍 탑이 주는 피해 25% 증가"
+		},
+		{
+			"Oils": ["Verdant Oil", "Verdant Oil"],
+			"Effect": "Your Arc Towers deal 25% increased Damage",
+			"EffectKR": "연쇄 번개 탑이 주는 피해 25% 증가"
+		},
+		{
+			"Oils": ["Amber Oil", "Teal Oil"],
+			"Effect": "Your Seismic Towers deal 25% increased Damage",
+			"EffectKR": "지진의 탑 피해 25% 증가"
+		},
+		{
+			"Oils": ["Clear Oil", "Azure Oil"],
+			"Effect": "Your Temporal Towers have 25% increased Effect",
+			"EffectKR": "시간의 탑이 부여하는 효과 25% 증가"
+		},
+		{
+			"Oils": ["Verdant Oil", "Teal Oil"],
+			"Effect": "Your Stone Gaze Towers have 25% increased Duration",
+			"EffectKR": "돌의 응시 탑 지속시간 25% 증가"
+		},
+		{
+			"Oils": ["Sepia Oil", "Azure Oil"],
+			"Effect": "Your Empowering Towers have 25% increased Effect",
+			"EffectKR": "강화의 탑 효과 범위 25% 증가"
+		},
+		{
+			"Oils": ["Amber Oil", "Azure Oil"],
+			"Effect": "Your Imbuing Towers have 25% increased Effect",
+			"EffectKR": "부여의 탑으로 부여하는 효과 25% 증가"
+		},
+		{
+			"Oils": ["Teal Oil", "Teal Oil"],
+			"Effect": "Your Smothering Towers have 25% increased Effect",
+			"EffectKR": "질식의 탑이 부여하는 효과 25% 증가"
+		},
+		{
+			"Oils": ["Verdant Oil", "Azure Oil"],
+			"Effect": "Your Chilling Towers have 25% increased Range",
+			"EffectKR": "냉각의 탑 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Clear Oil", "Violet Oil"],
+			"Effect": "Your Freezebolt Towers have 25% increased Range",
+			"EffectKR": "동결탄 탑의 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Teal Oil", "Azure Oil"],
+			"Effect": "Your Glacial Cage Towers have 25% increased Range",
+			"EffectKR": "빙하 창살 탑의 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Sepia Oil", "Violet Oil"],
+			"Effect": "Your Fireball Towers have 25% increased Range",
+			"EffectKR": "화염구 탑의 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Amber Oil", "Violet Oil"],
+			"Effect": "Your Flamethrower Towers have 25% increased Range",
+			"EffectKR": "화염방사기 탑의 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Verdant Oil", "Violet Oil"],
+			"Effect": "Your Meteor Towers have 25% increased Range",
+			"EffectKR": "유성 탑의 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Azure Oil", "Azure Oil"],
+			"Effect": "Your Summoning Towers have 25% increased Range",
+			"EffectKR": "소환의 탑 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Teal Oil", "Violet Oil"],
+			"Effect": "Your Scout Towers have 25% increased Range",
+			"EffectKR": "정찰병 탑의 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Azure Oil", "Violet Oil"],
+			"Effect": "Your Sentinel Towers have 25% increased Range",
+			"EffectKR": "파수꾼 탑의 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Clear Oil", "Crimson Oil"],
+			"Effect": "Your Shock Nova Towers have 25% increased Range",
+			"EffectKR": "충격 폭발 탑의 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Sepia Oil", "Crimson Oil"],
+			"Effect": "Your Lightning Storm Towers have 25% increased Range",
+			"EffectKR": "번개 태풍 탑의 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Amber Oil", "Crimson Oil"],
+			"Effect": "Your Arc Towers have 25% increased Range",
+			"EffectKR": "연쇄 번개 탑의 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Violet Oil", "Violet Oil"],
+			"Effect": "Your Chilling Towers have 25% increased effect of Chill",
+			"EffectKR": "냉각의 탑이 부여하는 냉각 효과 25% 증가"
+		},
+		{
+			"Oils": ["Verdant Oil", "Crimson Oil"],
+			"Effect": "Your Freezebolt Tower deal full damage to Cold Enemies",
+			"EffectKR": "동결탄 탑이 냉기 속성 적한테도 고스란히 피해를 줌"
+		},
+		{
+			"Oils": ["Teal Oil", "Crimson Oil"],
+			"Effect": "Your Glacial Cage Towers have 20% increased Cooldown Recovery",
+			"EffectKR": "빙하 창살 탑의 재사용 대기시간 회복 20% 증가"
+		},
+		{
+			"Oils": ["Azure Oil", "Crimson Oil"],
+			"Effect": "Your Fireball Towers have 15% increased Cast Speed",
+			"EffectKR": "화염구 탑 시전 속도 15% 증가"
+		},
+		{
+			"Oils": ["Violet Oil", "Crimson Oil"],
+			"Effect": "Your Flamethrower Towers deal full damage to Fire Enemies",
+			"EffectKR": "화염방사기 탑이 화염 속성 적한테도 고스란히 피해를 줌"
+		},
+		{
+			"Oils": ["Crimson Oil", "Crimson Oil"],
+			"Effect": "Your Meteor Towers always Stun",
+			"EffectKR": "유성 탑의 공격 적중 시 항시 기절"
+		},
+		{
+			"Oils": ["Clear Oil", "Black Oil"],
+			"Effect": "Your Seismic Towers have 25% increased Range",
+			"EffectKR": "지진의 탑 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Sepia Oil", "Black Oil"],
+			"Effect": "Your Temporal Towers have 25% increased Range",
+			"EffectKR": "시간의 탑 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Amber Oil", "Black Oil"],
+			"Effect": "Your Stone Gaze Cage Towers have 25% increased Range",
+			"EffectKR": "돌의 응시 창살 탑 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Verdant Oil", "Black Oil"],
+			"Effect": "Your Empowering Towers have 25% increased Range",
+			"EffectKR": "강화의 탑 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Teal Oil", "Black Oil"],
+			"Effect": "Your Imbuing Towers have 25% increased Range",
+			"EffectKR": "부여의 탑 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Azure Oil", "Black Oil"],
+			"Effect": "Your Smothering Towers have 25% increased Range",
+			"EffectKR": "질식의 탑 사거리 25% 증가"
+		},
+		{
+			"Oils": ["Violet Oil", "Black Oil"],
+			"Effect": "Your Chilling Towers have 25% increased Duration",
+			"EffectKR": "냉각의 탑 지속시간 25% 증가"
+		},
+		{
+			"Oils": ["Crimson Oil", "Black Oil"],
+			"Effect": "Your Freezebolt Towers fire 2 additional Projectiles",
+			"EffectKR": "동결탄 탑이 투사체 2개 추가 발사"
+		},
+		{
+			"Oils": ["Clear Oil", "Opalescent Oil"],
+			"Effect": "Enemies inside Glacial Cage take 10% increased Damage",
+			"EffectKR": "빙하 창살에 갇힌 적이 받는 피해 10% 증가"
+		},
+		{
+			"Oils": ["Sepia Oil", "Opalescent Oil"],
+			"Effect": "Your Fireball Towers fire an additional 2 Projectiles",
+			"EffectKR": "화염구 탑이 투사체 2개 추가 발사"
+		},
+		{
+			"Oils": ["Amber Oil", "Opalescent Oil"],
+			"Effect": "Your Flamethrower Towers have 15% increased Cast Speed",
+			"EffectKR": "화염방사기 탑의 시전 속도 15% 증가"
+		},
+		{
+			"Oils": ["Verdant Oil", "Opalescent Oil"],
+			"Effect": "Your Meteor Towers drop an additional Meteor",
+			"EffectKR": "유성 탑이 유성 1개 추가 소환"
+		},
+		{
+			"Oils": ["Teal Oil", "Opalescent Oil"],
+			"Effect": "Minions summoned by Your Summoning Towers have 25% increased Movement Speed",
+			"EffectKR": "소환의 탑이 소환한 소환수의 이동 속도 25% 증가"
+		},
+		{
+			"Oils": ["Azure Oil", "Opalescent Oil"],
+			"Effect": "Minions summoned by Your Scout Towers have 25% increased Movement Speed",
+			"EffectKR": "정찰병 탑이 소환한 소환수의 이동 속도 25% 증가"
+		},
+		{
+			"Oils": ["Violet Oil", "Opalescent Oil"],
+			"Effect": "Minions summoned by Your Sentinel Towers have 25% increased Movement Speed",
+			"EffectKR": "파수꾼 탑이 소환한 소환수의 이동 속도 25% 증가"
+		},
+		{
+			"Oils": ["Crimson Oil", "Opalescent Oil"],
+			"Effect": "Your Shock Nova Towers deal full damage to Lightning Enemies",
+			"EffectKR": "충격 폭발 탑이 번개 속성 적한테도 고스란히 피해를 줌"
+		},
+		{
+			"Oils": ["Black Oil", "Black Oil"],
+			"Effect": "Your Lightning Storm Towers have 25% reduced Impact Delay",
+			"EffectKR": "번개 태풍 탑의 충격 지연시간 25% 감소"
+		},
+		{
+			"Oils": ["Clear Oil", "Silver Oil"],
+			"Effect": "Your Arc Towers repeats 1 additional Times",
+			"EffectKR": "연쇄 번개 탑이 1회 추가 반복"
+		},
+		{
+			"Oils": ["Sepia Oil", "Silver Oil"],
+			"Effect": "Your Seismic Towers have 25% increased Stun Duration",
+			"EffectKR": "지진의 탑이 부여하는 기절 지속시간 25% 증가"
+		},
+		{
+			"Oils": ["Amber Oil", "Silver Oil"],
+			"Effect": "Your Temporal Towers effects decay 25% slower",
+			"EffectKR": "시간의 탑이 부패 속도 25% 감소시킴"
+		},
+		{
+			"Oils": ["Verdant Oil", "Silver Oil"],
+			"Effect": "Your Stone Gaze Towers have 20% increased Cooldown Recovery",
+			"EffectKR": "돌의 응시 탑 재사용 대기시간 회복 속도 20% 증가"
+		},
+		{
+			"Oils": ["Teal Oil", "Silver Oil"],
+			"Effect": "Minions summoned by Your Summoning Towers have 50% increased Life",
+			"EffectKR": "소환의 탑이 소환한 소환수의 생명력 50% 증가"
+		},
+		{
+			"Oils": ["Azure Oil", "Silver Oil"],
+			"Effect": "Minions summoned by Your Scout Towers have 50% increased Life",
+			"EffectKR": "정찰병 탑이 소환한 소환수의 생명력 50% 증가"
+		},
+		{
+			"Oils": ["Black Oil", "Opalescent Oil"],
+			"Effect": "Minions summoned by Your Sentinel Towers have 50% increased Life",
+			"EffectKR": "파수꾼 탑이 소환한 소환수의 생명력 50% 증가"
+		},
+		{
+			"Oils": ["Violet Oil", "Silver Oil"],
+			"Effect": "Your Empowering Towers also grant 20% increased Cast Speed",
+			"EffectKR": "강화의 탑이 시전 속도 20% 증가 효과 부여"
+		},
+		{
+			"Oils": ["Crimson Oil", "Silver Oil"],
+			"Effect": "Your Imbuing Towers also grant 50% increased Critical Strike Chance",
+			"EffectKR": "부여의 탑이 치명타 확률 50% 증가 효과 부여"
+		},
+		{
+			"Oils": ["Opalescent Oil", "Opalescent Oil"],
+			"Effect": "Your Smothering Towers also grant 20% reduced Movement Speed",
+			"EffectKR": "질식의 탑이 이동 속도 20% 감소 효과 부여"
+		},
+		{
+			"Oils": ["Clear Oil", "Golden Oil"],
+			"Effect": "Your Shock Nova Towers have 25% increased effect of Shock",
+			"EffectKR": "충격 폭발 탑이 부여하는 감전 지속시간 25%증가"
+		},
+		{
+			"Oils": ["Sepia Oil", "Golden Oil"],
+			"Effect": "Your Lightning Storm Towers have 25% increased explosion Area of Effect",
+			"EffectKR": "번개 태풍 탑의 폭발 효과 범위 25% 증가"
+		},
+		{
+			"Oils": ["Amber Oil", "Golden Oil"],
+			"Effect": "Your Arc Towers have 3 additional chains",
+			"EffectKR": "연쇄 번개 탑이 추가 연쇄 반응을 3회 발생시킴"
+		},
+		{
+			"Oils": ["Verdant Oil", "Golden Oil"],
+			"Effect": "Your Seismic Towers have an additional Cascade",
+			"EffectKR": "지진의 탑이 지진파 1개 추가 생성"
+		},
+		{
+			"Oils": ["Teal Oil", "Golden Oil"],
+			"Effect": "Your Temporal Towers also grant you 20% increased action speed",
+			"EffectKR": "시간의 탑이 당신한테 동작 속도 20% 증가 효과 부여"
+		},
+		{
+			"Oils": ["Azure Oil", "Golden Oil"],
+			"Effect": "Your Stone Gaze Towers have 20% reduced Petrification Delay",
+			"EffectKR": "돌의 응시 탑이 부여하는 석화 지연시간 20% 감소"
+		},
+		{
+			"Oils": ["Black Oil", "Silver Oil"],
+			"Effect": "Your Empowering Towers also grant 25% increased Damage",
+			"EffectKR": "강화의 탑이 피해 25% 증가 효과 부여"
+		},
+		{
+			"Oils": ["Violet Oil", "Golden Oil"],
+			"Effect": "Your Imbuing Towers also grant 50% increased Damage",
+			"EffectKR": "부여의 탑이 피해 50% 증가 효과 부여"
+		},
+		{
+			"Oils": ["Crimson Oil", "Golden Oil"],
+			"Effect": "Your Smothering Towers also grant 10% reduced Damage",
+			"EffectKR": "질식의 탑이 피해 10% 감소 효과 부여"
+		},
+		{
+			"Oils": ["Opalescent Oil", "Silver Oil"],
+			"Effect": "Your Chilling Towers freeze enemies for 0.2 seconds while they are affected by chilling beams",
+			"EffectKR": "냉각의 탑이 냉각 광선에 영향을 받는 적을 0.2초 동안 동결"
+		},
+		{
+			"Oils": ["Black Oil", "Golden Oil"],
+			"Effect": "Your Shock Nova Towers have 30% increased area of effect per repeat, Your Shock Nova Towers repeats 2 additional Times",
+			"EffectKR": "충격 폭발 탑이 반복할 때마다 효과 범위 30% 증가, 충격 폭발 탑 2회 추가 반복"
+		},
+		{
+			"Oils": ["Silver Oil", "Silver Oil"],
+			"Effect": "Your Summoning Towers summon 2 additional Minions",
+			"EffectKR": "소환의 탑이 2마리의 소환수 추가 소환"
+		},
+		{
+			"Oils": ["Opalescent Oil", "Golden Oil"],
+			"Effect": "Your Fireball Towers fire an additional 8 Projectiles, Your Fireball Towers Projectiles fire in a circle",
+			"EffectKR": "화염구 탑이 투사체 8개 추가 발사, 화염구 탑이 원형으로 투사체 발사"
+		},
+		{
+			"Oils": ["Silver Oil", "Golden Oil"],
+			"Effect": "Your Seismic Towers have 100% increased length and range of Cascades",
+			"EffectKR": "지진의 탑이 생성한 지진파의 너비와 사거리 100% 증가"
+		},
+		{
+			"Oils": ["Golden Oil", "Golden Oil"],
+			"Effect": "All Towers in range of your Empowering Towers have 50% chance to deal Double Damage",
+			"EffectKR": "강화의 탑의 사거리 내에 위치한 모든 탑이 50% 확률로 2배의 피해를 줌"
+		}
+	]
+}

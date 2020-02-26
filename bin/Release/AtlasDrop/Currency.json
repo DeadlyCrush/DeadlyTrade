@@ -1,0 +1,1510 @@
+{
+	"Currency": [
+		{
+			"Id": "CurrencyWeaponQuality",
+			"Name_en": "Blacksmith's Whetstone",
+			"Name_ko": "대장장이의 숫돌",
+			"DDSFile": "Art/2DItems/Currency/CurrencyWeaponQuality.dds"
+		},
+		{
+			"Id": "CurrencyIdentification",
+			"Name_en": "Scroll of Wisdom",
+			"Name_ko": "감정 주문서",
+			"DDSFile": "Art/2DItems/Currency/CurrencyIdentification.dds"
+		},
+		{
+			"Id": "CurrencyRerollRare",
+			"Name_en": "Chaos Orb",
+			"Name_ko": "카오스 오브",
+			"DDSFile": "Art/2DItems/Currency/CurrencyRerollRare.dds"
+		},
+		{
+			"Id": "CurrencyArmourQuality",
+			"Name_en": "Armourer's Scrap",
+			"Name_ko": "방어구 장인의 고철",
+			"DDSFile": "Art/2DItems/Currency/CurrencyArmourQuality.dds"
+		},
+		{
+			"Id": "CurrencyDuplicate",
+			"Name_en": "Mirror of Kalandra",
+			"Name_ko": "칼란드라의 거울",
+			"DDSFile": "Art/2DItems/Currency/CurrencyDuplicate.dds"
+		},
+		{
+			"Id": "CurrencyUpgradeToRare",
+			"Name_en": "Orb of Alchemy",
+			"Name_ko": "연금술의 오브",
+			"DDSFile": "Art/2DItems/Currency/CurrencyUpgradeToRare.dds"
+		},
+		{
+			"Id": "CurrencyUpgradeRandomly",
+			"Name_en": "Orb of Chance",
+			"Name_ko": "기회의 오브",
+			"DDSFile": "Art/2DItems/Currency/CurrencyUpgradeRandomly.dds"
+		},
+		{
+			"Id": "CurrencyPassiveRefund",
+			"Name_en": "Orb of Regret",
+			"Name_ko": "후회의 오브",
+			"DDSFile": "Art/2DItems/Currency/CurrencyPassiveSkillRefund.dds"
+		},
+		{
+			"Id": "CurrencyUpgradeToMagic",
+			"Name_en": "Orb of Transmutation",
+			"Name_ko": "진화의 오브",
+			"DDSFile": "Art/2DItems/Currency/CurrencyUpgradeToMagic.dds"
+		},
+		{
+			"Id": "CurrencyRerollMagic",
+			"Name_en": "Orb of Alteration",
+			"Name_ko": "변화의 오브",
+			"DDSFile": "Art/2DItems/Currency/CurrencyRerollMagic.dds"
+		},
+		{
+			"Id": "CurrencyConvertToNormal",
+			"Name_en": "Orb of Scouring",
+			"Name_ko": "정제의 오브",
+			"DDSFile": "Art/2DItems/Currency/CurrencyConvertToNormal.dds"
+		},
+		{
+			"Id": "CurrencyAddModToRare",
+			"Name_en": "Exalted Orb",
+			"Name_ko": "엑잘티드 오브",
+			"DDSFile": "Art/2DItems/Currency/CurrencyAddModToRare.dds"
+		},
+		{
+			"Id": "CurrencyUpgradeMagicToRare",
+			"Name_en": "Regal Orb",
+			"Name_ko": "제왕의 오브",
+			"DDSFile": "Art/2DItems/Currency/CurrencyUpgradeMagicToRare.dds"
+		},
+		{
+			"Id": "CurrencyAddModToMagic",
+			"Name_en": "Orb of Augmentation",
+			"Name_ko": "확장의 오브",
+			"DDSFile": "Art/2DItems/Currency/CurrencyAddModToMagic.dds"
+		},
+		{
+			"Id": "CurrencyPortal",
+			"Name_en": "Portal Scroll",
+			"Name_ko": "포탈 주문서",
+			"DDSFile": "Art/2DItems/Currency/CurrencyPortal.dds"
+		},
+		{
+			"Id": "CurrencyFlaskQuality",
+			"Name_en": "Glassblower's Bauble",
+			"Name_ko": "유리직공의 방울",
+			"DDSFile": "Art/2DItems/Currency/CurrencyFlaskQuality.dds"
+		},
+		{
+			"Id": "CurrencyGemQuality",
+			"Name_en": "Gemcutter's Prism",
+			"Name_ko": "세공사의 프리즘",
+			"DDSFile": "Art/2DItems/Currency/CurrencyGemQuality.dds"
+		},
+		{
+			"Id": "CurrencyRerollSocketColours",
+			"Name_en": "Chromatic Orb",
+			"Name_ko": "색채의 오브",
+			"DDSFile": "Art/2DItems/Currency/CurrencyRerollSocketColours.dds"
+		},
+		{
+			"Id": "CurrencyRerollSocketLinks",
+			"Name_en": "Orb of Fusing",
+			"Name_ko": "연결의 오브",
+			"DDSFile": "Art/2DItems/Currency/CurrencyRerollSocketLinks.dds"
+		},
+		{
+			"Id": "CurrencyRerollSocketNumbers",
+			"Name_en": "Jeweller's Orb",
+			"Name_ko": "쥬얼러 오브",
+			"DDSFile": "Art/2DItems/Currency/CurrencyRerollSocketNumbers.dds"
+		},
+		{
+			"Id": "CurrencyModValues",
+			"Name_en": "Divine Orb",
+			"Name_ko": "신성한 오브",
+			"DDSFile": "Art/2DItems/Currency/CurrencyModValues.dds"
+		},
+		{
+			"Id": "CurrencyRerollImplicit",
+			"Name_en": "Blessed Orb",
+			"Name_ko": "축복의 오브",
+			"DDSFile": "Art/2DItems/Currency/CurrencyImplicitMod.dds"
+		},
+		{
+			"Id": "CurrencyMapQuality",
+			"Name_en": "Cartographer's Chisel",
+			"Name_ko": "지도제작자의 끌",
+			"DDSFile": "Art/2DItems/Currency/CurrencyMapQuality.dds"
+		},
+		{
+			"Id": "CurrencyIdentificationShard",
+			"Name_en": "Scroll Fragment",
+			"Name_ko": "주문서 조각",
+			"DDSFile": "Art/2DItems/Currency/CurrencyIdentificationFragment.dds"
+		},
+		{
+			"Id": "CurrencyUpgradeToMagicShard",
+			"Name_en": "Transmutation Shard",
+			"Name_ko": "진화의 파편",
+			"DDSFile": "Art/2DItems/Currency/CurrencyUpgradeToMagicShard.dds"
+		},
+		{
+			"Id": "CurrencyRerollMagicShard",
+			"Name_en": "Alteration Shard",
+			"Name_ko": "변화의 파편",
+			"DDSFile": "Art/2DItems/Currency/CurrencyRerollMagicShard.dds"
+		},
+		{
+			"Id": "CurrencyUpgradeToRareShard",
+			"Name_en": "Alchemy Shard",
+			"Name_ko": "연금술의 파편",
+			"DDSFile": "Art/2DItems/Currency/CurrencyUpgradeToRareShard.dds"
+		},
+		{
+			"Id": "CurrencyRhoaFeather",
+			"Name_en": "Albino Rhoa Feather",
+			"Name_ko": "흰 로아 깃털",
+			"DDSFile": "Art/2DItems/Currency/CurrencyRhoaFeather.dds"
+		},
+		{
+			"Id": "CurrencyImprintOrb",
+			"Name_en": "Eternal Orb",
+			"Name_ko": "영원의 오브",
+			"DDSFile": "Art/2DItems/Currency/CurrencyImprintOrb.dds"
+		},
+		{
+			"Id": "CurrencyImprint",
+			"Name_en": "Imprint",
+			"Name_ko": "각인",
+			"DDSFile": "Art/2DItems/Currency/CurrencyImprint.dds"
+		},
+		{
+			"Id": "CurrencyCorrupt",
+			"Name_en": "Vaal Orb",
+			"Name_ko": "바알 오브",
+			"DDSFile": "Art/2DItems/Currency/CurrencyVaal.dds"
+		},
+		{
+			"Id": "CurrencyPerandusCoin",
+			"Name_en": "Perandus Coin",
+			"Name_ko": "페란두스 코인",
+			"DDSFile": "Art/2DItems/Currency/CurrencyCoin.dds"
+		},
+		{
+			"Id": "CurrencySilverCoin",
+			"Name_en": "Silver Coin",
+			"Name_ko": "실버 코인",
+			"DDSFile": "Art/2DItems/Currency/SilverObol.dds"
+		},
+		{
+			"Id": "CurrencyItemisedProphecy",
+			"Name_en": "Prophecy",
+			"Name_ko": "예언",
+			"DDSFile": "Art/2DItems/Currency/ProphecyOrbRed.dds"
+		},
+		{
+			"Id": "CurrencyItemiseCapturedMonster",
+			"Name_en": "Bestiary Orb",
+			"Name_ko": "야수의 오브",
+			"DDSFile": "Art/2DItems/Currency/BestiaryOrbEmpty.dds"
+		},
+		{
+			"Id": "CurrencyItemisedCapturedMonster",
+			"Name_en": "Imprinted Bestiary Orb",
+			"Name_ko": "각인된 야수의 오브",
+			"DDSFile": "Art/2DItems/Currency/BestiaryOrbFull.dds"
+		},
+		{
+			"Id": "CurrencyEssenceHatred1",
+			"Name_en": "Whispering Essence of Hatred",
+			"Name_ko": "속삭이는 증오의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Hatred1.dds"
+		},
+		{
+			"Id": "CurrencyEssenceHatred2",
+			"Name_en": "Muttering Essence of Hatred",
+			"Name_ko": "불평하는 증오의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Hatred2.dds"
+		},
+		{
+			"Id": "CurrencyEssenceHatred3",
+			"Name_en": "Weeping Essence of Hatred",
+			"Name_ko": "흐느끼는 증오의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Hatred3.dds"
+		},
+		{
+			"Id": "CurrencyEssenceHatred4",
+			"Name_en": "Wailing Essence of Hatred",
+			"Name_ko": "울부짖는 증오의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Hatred4.dds"
+		},
+		{
+			"Id": "CurrencyEssenceHatred5",
+			"Name_en": "Screaming Essence of Hatred",
+			"Name_ko": "절규하는 증오의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Hatred5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceHatred6",
+			"Name_en": "Shrieking Essence of Hatred",
+			"Name_ko": "악을 쓰는 증오의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Hatred6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceHatred7",
+			"Name_en": "Deafening Essence of Hatred",
+			"Name_ko": "귀를 찢는 증오의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Hatred7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceWoe1",
+			"Name_en": "Whispering Essence of Woe",
+			"Name_ko": "속삭이는 비애의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Woe1.dds"
+		},
+		{
+			"Id": "CurrencyEssenceWoe2",
+			"Name_en": "Muttering Essence of Woe",
+			"Name_ko": "불평하는 비애의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Woe2.dds"
+		},
+		{
+			"Id": "CurrencyEssenceWoe3",
+			"Name_en": "Weeping Essence of Woe",
+			"Name_ko": "흐느끼는 비애의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Woe3.dds"
+		},
+		{
+			"Id": "CurrencyEssenceWoe4",
+			"Name_en": "Wailing Essence of Woe",
+			"Name_ko": "울부짖는 비애의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Woe4.dds"
+		},
+		{
+			"Id": "CurrencyEssenceWoe5",
+			"Name_en": "Screaming Essence of Woe",
+			"Name_ko": "절규하는 비애의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Woe5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceWoe6",
+			"Name_en": "Shrieking Essence of Woe",
+			"Name_ko": "악을 쓰는 비애의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Woe6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceWoe7",
+			"Name_en": "Deafening Essence of Woe",
+			"Name_ko": "귀를 찢는 비애의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Woe7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceGreed1",
+			"Name_en": "Whispering Essence of Greed",
+			"Name_ko": "속삭이는 탐욕의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Greed1.dds"
+		},
+		{
+			"Id": "CurrencyEssenceGreed2",
+			"Name_en": "Muttering Essence of Greed",
+			"Name_ko": "불평하는 탐욕의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Greed2.dds"
+		},
+		{
+			"Id": "CurrencyEssenceGreed3",
+			"Name_en": "Weeping Essence of Greed",
+			"Name_ko": "흐느끼는 탐욕의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Greed3.dds"
+		},
+		{
+			"Id": "CurrencyEssenceGreed4",
+			"Name_en": "Wailing Essence of Greed",
+			"Name_ko": "울부짖는 탐욕의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Greed4.dds"
+		},
+		{
+			"Id": "CurrencyEssenceGreed5",
+			"Name_en": "Screaming Essence of Greed",
+			"Name_ko": "절규하는 탐욕의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Greed5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceGreed6",
+			"Name_en": "Shrieking Essence of Greed",
+			"Name_ko": "악을 쓰는 탐욕의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Greed6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceGreed7",
+			"Name_en": "Deafening Essence of Greed",
+			"Name_ko": "귀를 찢는 탐욕의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Greed7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceContempt1",
+			"Name_en": "Whispering Essence of Contempt",
+			"Name_ko": "속삭이는 경멸의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Contempt1.dds"
+		},
+		{
+			"Id": "CurrencyEssenceContempt2",
+			"Name_en": "Muttering Essence of Contempt",
+			"Name_ko": "불평하는 경멸의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Contempt2.dds"
+		},
+		{
+			"Id": "CurrencyEssenceContempt3",
+			"Name_en": "Weeping Essence of Contempt",
+			"Name_ko": "흐느끼는 경멸의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Contempt3.dds"
+		},
+		{
+			"Id": "CurrencyEssenceContempt4",
+			"Name_en": "Wailing Essence of Contempt",
+			"Name_ko": "울부짖는 경멸의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Contempt4.dds"
+		},
+		{
+			"Id": "CurrencyEssenceContempt5",
+			"Name_en": "Screaming Essence of Contempt",
+			"Name_ko": "절규하는 경멸의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Contempt5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceContempt6",
+			"Name_en": "Shrieking Essence of Contempt",
+			"Name_ko": "악을 쓰는 경멸의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Contempt6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceContempt7",
+			"Name_en": "Deafening Essence of Contempt",
+			"Name_ko": "귀를 찢는 경멸의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Contempt7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceSorrow1",
+			"Name_en": "Muttering Essence of Sorrow",
+			"Name_ko": "불평하는 슬픔의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Sorrow2.dds"
+		},
+		{
+			"Id": "CurrencyEssenceSorrow2",
+			"Name_en": "Weeping Essence of Sorrow",
+			"Name_ko": "흐느끼는 슬픔의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Sorrow3.dds"
+		},
+		{
+			"Id": "CurrencyEssenceSorrow3",
+			"Name_en": "Wailing Essence of Sorrow",
+			"Name_ko": "울부짖는 슬픔의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Sorrow4.dds"
+		},
+		{
+			"Id": "CurrencyEssenceSorrow4",
+			"Name_en": "Screaming Essence of Sorrow",
+			"Name_ko": "절규하는 슬픔의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Sorrow5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceSorrow5",
+			"Name_en": "Shrieking Essence of Sorrow",
+			"Name_ko": "악을 쓰는 슬픔의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Sorrow6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceSorrow6",
+			"Name_en": "Deafening Essence of Sorrow",
+			"Name_ko": "귀를 찢는 슬픔의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Sorrow7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceAnger1",
+			"Name_en": "Muttering Essence of Anger",
+			"Name_ko": "불평하는 분노의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Anger2.dds"
+		},
+		{
+			"Id": "CurrencyEssenceAnger2",
+			"Name_en": "Weeping Essence of Anger",
+			"Name_ko": "흐느끼는 분노의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Anger3.dds"
+		},
+		{
+			"Id": "CurrencyEssenceAnger3",
+			"Name_en": "Wailing Essence of Anger",
+			"Name_ko": "울부짖는 분노의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Anger4.dds"
+		},
+		{
+			"Id": "CurrencyEssenceAnger4",
+			"Name_en": "Screaming Essence of Anger",
+			"Name_ko": "절규하는 분노의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Anger5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceAnger5",
+			"Name_en": "Shrieking Essence of Anger",
+			"Name_ko": "악을 쓰는 분노의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Anger6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceAnger6",
+			"Name_en": "Deafening Essence of Anger",
+			"Name_ko": "귀를 찢는 분노의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Anger7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceTorment1",
+			"Name_en": "Muttering Essence of Torment",
+			"Name_ko": "불평하는 고뇌의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Torment2.dds"
+		},
+		{
+			"Id": "CurrencyEssenceTorment2",
+			"Name_en": "Weeping Essence of Torment",
+			"Name_ko": "흐느끼는 고뇌의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Torment3.dds"
+		},
+		{
+			"Id": "CurrencyEssenceTorment3",
+			"Name_en": "Wailing Essence of Torment",
+			"Name_ko": "울부짖는 고뇌의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Torment4.dds"
+		},
+		{
+			"Id": "CurrencyEssenceTorment4",
+			"Name_en": "Screaming Essence of Torment",
+			"Name_ko": "절규하는 고뇌의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Torment5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceTorment5",
+			"Name_en": "Shrieking Essence of Torment",
+			"Name_ko": "악을 쓰는 고뇌의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Torment6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceTorment6",
+			"Name_en": "Deafening Essence of Torment",
+			"Name_ko": "귀를 찢는 고뇌의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Torment7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceFear1",
+			"Name_en": "Muttering Essence of Fear",
+			"Name_ko": "불평하는 두려움의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Fear2.dds"
+		},
+		{
+			"Id": "CurrencyEssenceFear2",
+			"Name_en": "Weeping Essence of Fear",
+			"Name_ko": "흐느끼는 두려움의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Fear3.dds"
+		},
+		{
+			"Id": "CurrencyEssenceFear3",
+			"Name_en": "Wailing Essence of Fear",
+			"Name_ko": "울부짖는 두려움의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Fear4.dds"
+		},
+		{
+			"Id": "CurrencyEssenceFear4",
+			"Name_en": "Screaming Essence of Fear",
+			"Name_ko": "절규하는 두려움의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Fear5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceFear5",
+			"Name_en": "Shrieking Essence of Fear",
+			"Name_ko": "악을 쓰는 두려움의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Fear6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceFear6",
+			"Name_en": "Deafening Essence of Fear",
+			"Name_ko": "귀를 찢는 두려움의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Fear7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceSuffering1",
+			"Name_en": "Weeping Essence of Suffering",
+			"Name_ko": "흐느끼는 고통의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Suffering3.dds"
+		},
+		{
+			"Id": "CurrencyEssenceSuffering2",
+			"Name_en": "Wailing Essence of Suffering",
+			"Name_ko": "울부짖는 고통의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Suffering4.dds"
+		},
+		{
+			"Id": "CurrencyEssenceSuffering3",
+			"Name_en": "Screaming Essence of Suffering",
+			"Name_ko": "절규하는 고통의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Suffering5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceSuffering4",
+			"Name_en": "Shrieking Essence of Suffering",
+			"Name_ko": "악을 쓰는 고통의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Suffering6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceSuffering5",
+			"Name_en": "Deafening Essence of Suffering",
+			"Name_ko": "귀를 찢는 고통의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Suffering7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceRage1",
+			"Name_en": "Weeping Essence of Rage",
+			"Name_ko": "흐느끼는 격노의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Rage3.dds"
+		},
+		{
+			"Id": "CurrencyEssenceRage2",
+			"Name_en": "Wailing Essence of Rage",
+			"Name_ko": "울부짖는 격노의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Rage4.dds"
+		},
+		{
+			"Id": "CurrencyEssenceRage3",
+			"Name_en": "Screaming Essence of Rage",
+			"Name_ko": "절규하는 격노의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Rage5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceRage4",
+			"Name_en": "Shrieking Essence of Rage",
+			"Name_ko": "악을 쓰는 격노의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Rage6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceRage5",
+			"Name_en": "Deafening Essence of Rage",
+			"Name_ko": "귀를 찢는 격노의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Rage7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceWrath1",
+			"Name_en": "Weeping Essence of Wrath",
+			"Name_ko": "흐느끼는 진노의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Wrath3.dds"
+		},
+		{
+			"Id": "CurrencyEssenceWrath2",
+			"Name_en": "Wailing Essence of Wrath",
+			"Name_ko": "울부짖는 진노의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Wrath4.dds"
+		},
+		{
+			"Id": "CurrencyEssenceWrath3",
+			"Name_en": "Screaming Essence of Wrath",
+			"Name_ko": "절규하는 진노의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Wrath5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceWrath4",
+			"Name_en": "Shrieking Essence of Wrath",
+			"Name_ko": "악을 쓰는 진노의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Wrath6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceWrath5",
+			"Name_en": "Deafening Essence of Wrath",
+			"Name_ko": "귀를 찢는 진노의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Wrath7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceDoubt1",
+			"Name_en": "Weeping Essence of Doubt",
+			"Name_ko": "흐느끼는 의심의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Doubt3.dds"
+		},
+		{
+			"Id": "CurrencyEssenceDoubt2",
+			"Name_en": "Wailing Essence of Doubt",
+			"Name_ko": "울부짖는 의심의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Doubt4.dds"
+		},
+		{
+			"Id": "CurrencyEssenceDoubt3",
+			"Name_en": "Screaming Essence of Doubt",
+			"Name_ko": "절규하는 의심의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Doubt5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceDoubt4",
+			"Name_en": "Shrieking Essence of Doubt",
+			"Name_ko": "악을 쓰는 의심의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Doubt6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceDoubt5",
+			"Name_en": "Deafening Essence of Doubt",
+			"Name_ko": "귀를 찢는 의심의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Doubt7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceAnguish1",
+			"Name_en": "Wailing Essence of Anguish",
+			"Name_ko": "울부짖는 비통의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Anguish4.dds"
+		},
+		{
+			"Id": "CurrencyEssenceAnguish2",
+			"Name_en": "Screaming Essence of Anguish",
+			"Name_ko": "절규하는 비통의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Anguish5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceAnguish3",
+			"Name_en": "Shrieking Essence of Anguish",
+			"Name_ko": "악을 쓰는 비통의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Anguish6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceAnguish4",
+			"Name_en": "Deafening Essence of Anguish",
+			"Name_ko": "귀를 찢는 비통의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Anguish7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceLoathing1",
+			"Name_en": "Wailing Essence of Loathing",
+			"Name_ko": "울부짖는 혐오의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Loathing4.dds"
+		},
+		{
+			"Id": "CurrencyEssenceLoathing2",
+			"Name_en": "Screaming Essence of Loathing",
+			"Name_ko": "절규하는 혐오의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Loathing5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceLoathing3",
+			"Name_en": "Shrieking Essence of Loathing",
+			"Name_ko": "악을 쓰는 혐오의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Loathing6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceLoathing4",
+			"Name_en": "Deafening Essence of Loathing",
+			"Name_ko": "귀를 찢는 혐오의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Loathing7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceSpite1",
+			"Name_en": "Wailing Essence of Spite",
+			"Name_ko": "울부짖는 악의의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Spite4.dds"
+		},
+		{
+			"Id": "CurrencyEssenceSpite2",
+			"Name_en": "Screaming Essence of Spite",
+			"Name_ko": "절규하는 악의의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Spite5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceSpite3",
+			"Name_en": "Shrieking Essence of Spite",
+			"Name_ko": "악을 쓰는 악의의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Spite6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceSpite4",
+			"Name_en": "Deafening Essence of Spite",
+			"Name_ko": "귀를 찢는 악의의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Spite7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceZeal1",
+			"Name_en": "Wailing Essence of Zeal",
+			"Name_ko": "울부짖는 열의의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Zeal4.dds"
+		},
+		{
+			"Id": "CurrencyEssenceZeal2",
+			"Name_en": "Screaming Essence of Zeal",
+			"Name_ko": "절규하는 열의의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Zeal5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceZeal3",
+			"Name_en": "Shrieking Essence of Zeal",
+			"Name_ko": "악을 쓰는 열의의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Zeal6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceZeal4",
+			"Name_en": "Deafening Essence of Zeal",
+			"Name_ko": "귀를 찢는 열의의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Zeal7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceMisery1",
+			"Name_en": "Screaming Essence of Misery",
+			"Name_ko": "절규하는 비참의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Misery5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceMisery2",
+			"Name_en": "Shrieking Essence of Misery",
+			"Name_ko": "악을 쓰는 비참의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Misery6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceMisery3",
+			"Name_en": "Deafening Essence of Misery",
+			"Name_ko": "귀를 찢는 비참의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Misery7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceDread1",
+			"Name_en": "Screaming Essence of Dread",
+			"Name_ko": "절규하는 불안의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Dread5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceDread2",
+			"Name_en": "Shrieking Essence of Dread",
+			"Name_ko": "악을 쓰는 불안의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Dread6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceDread3",
+			"Name_en": "Deafening Essence of Dread",
+			"Name_ko": "귀를 찢는 불안의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Dread7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceScorn1",
+			"Name_en": "Screaming Essence of Scorn",
+			"Name_ko": "절규하는 멸시의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Scorn5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceScorn2",
+			"Name_en": "Shrieking Essence of Scorn",
+			"Name_ko": "악을 쓰는 멸시의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Scorn6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceScorn3",
+			"Name_en": "Deafening Essence of Scorn",
+			"Name_ko": "귀를 찢는 멸시의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Scorn7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceEnvy1",
+			"Name_en": "Screaming Essence of Envy",
+			"Name_ko": "절규하는 선망의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Envy5.dds"
+		},
+		{
+			"Id": "CurrencyEssenceEnvy2",
+			"Name_en": "Shrieking Essence of Envy",
+			"Name_ko": "악을 쓰는 선망의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Envy6.dds"
+		},
+		{
+			"Id": "CurrencyEssenceEnvy3",
+			"Name_en": "Deafening Essence of Envy",
+			"Name_ko": "귀를 찢는 선망의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Envy7.dds"
+		},
+		{
+			"Id": "CurrencyEssenceHysteria1",
+			"Name_en": "Essence of Hysteria",
+			"Name_ko": "발작의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Terror1.dds"
+		},
+		{
+			"Id": "CurrencyEssenceInsanity1",
+			"Name_en": "Essence of Insanity",
+			"Name_ko": "광기의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Insanity1.dds"
+		},
+		{
+			"Id": "CurrencyEssenceHorror1",
+			"Name_en": "Essence of Horror",
+			"Name_ko": "경악의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Horror1.dds"
+		},
+		{
+			"Id": "CurrencyEssenceDelirium1",
+			"Name_en": "Essence of Delirium",
+			"Name_ko": "섬망의 에센스",
+			"DDSFile": "Art/2DItems/Currency/Essence/Madness1.dds"
+		},
+		{
+			"Id": "CurrencyCorruptMonolith",
+			"Name_en": "Remnant of Corruption",
+			"Name_ko": "타락의 유물",
+			"DDSFile": "Art/2DItems/Currency/Essence/EssenceCorrupt.dds"
+		},
+		{
+			"Id": "CurrencyAddAtlasMod",
+			"Name_en": "Apprentice Cartographer's Sextant",
+			"Name_ko": "수습 지도제작자의 육분의",
+			"DDSFile": "Art/2DItems/Currency/AtlasRadiusWhite.dds"
+		},
+		{
+			"Id": "CurrencyAddAtlasModMid",
+			"Name_en": "Journeyman Cartographer's Sextant",
+			"Name_ko": "숙련 지도제작자의 육분의",
+			"DDSFile": "Art/2DItems/Currency/AtlasRadiusYellow.dds"
+		},
+		{
+			"Id": "CurrencyAddAtlasModHigh",
+			"Name_en": "Master Cartographer's Sextant",
+			"Name_ko": "대가 지도제작자의 육분의",
+			"DDSFile": "Art/2DItems/Currency/AtlasRadiusRed.dds"
+		},
+		{
+			"Id": "CurrencySealMapLow",
+			"Name_en": "Apprentice Cartographer's Seal",
+			"Name_ko": "수습 지도제작자의 봉인",
+			"DDSFile": "Art/2DItems/Currency/SealWhite.dds"
+		},
+		{
+			"Id": "CurrencySealMapMid",
+			"Name_en": "Journeyman Cartographer's Seal",
+			"Name_ko": "숙련 지도제작자의 봉인",
+			"DDSFile": "Art/2DItems/Currency/SealYellow.dds"
+		},
+		{
+			"Id": "CurrencySealMapHigh",
+			"Name_en": "Master Cartographer's Seal",
+			"Name_ko": "대가 지도제작자의 봉인",
+			"DDSFile": "Art/2DItems/Currency/SealRed.dds"
+		},
+		{
+			"Id": "CurrencyRespecShapersOrb",
+			"Name_en": "Unshaping Orb",
+			"Name_ko": "강등의 오브",
+			"DDSFile": "Art/2DItems/Currency/AtlasDowngrade.dds"
+		},
+		{
+			"Id": "CurrencyBreachFireShard",
+			"Name_en": "Splinter of Xoph",
+			"Name_ko": "조프의 파편",
+			"DDSFile": "Art/2DItems/Currency/Breach/BreachShardFire.dds"
+		},
+		{
+			"Id": "CurrencyBreachColdShard",
+			"Name_en": "Splinter of Tul",
+			"Name_ko": "툴의 파편",
+			"DDSFile": "Art/2DItems/Currency/Breach/BreachShardCold.dds"
+		},
+		{
+			"Id": "CurrencyBreachLightningShard",
+			"Name_en": "Splinter of Esh",
+			"Name_ko": "에쉬의 파편",
+			"DDSFile": "Art/2DItems/Currency/Breach/BreachShardLightning.dds"
+		},
+		{
+			"Id": "CurrencyBreachPhysicalShard",
+			"Name_en": "Splinter of Uul-Netol",
+			"Name_ko": "울네톨의 파편",
+			"DDSFile": "Art/2DItems/Currency/Breach/BreachShardPhysical.dds"
+		},
+		{
+			"Id": "CurrencyBreachChaosShard",
+			"Name_en": "Splinter of Chayula",
+			"Name_ko": "차율라의 파편",
+			"DDSFile": "Art/2DItems/Currency/Breach/BreachShardChaos.dds"
+		},
+		{
+			"Id": "CurrencyBreachUpgradeUniqueFire",
+			"Name_en": "Blessing of Xoph",
+			"Name_ko": "조프의 축복",
+			"DDSFile": "Art/2DItems/Currency/Breach/BreachUpgraderFire.dds"
+		},
+		{
+			"Id": "CurrencyBreachUpgradeUniqueCold",
+			"Name_en": "Blessing of Tul",
+			"Name_ko": "툴의 축복",
+			"DDSFile": "Art/2DItems/Currency/Breach/BreachUpgraderCold.dds"
+		},
+		{
+			"Id": "CurrencyBreachUpgradeUniqueLightning",
+			"Name_en": "Blessing of Esh",
+			"Name_ko": "에쉬의 축복",
+			"DDSFile": "Art/2DItems/Currency/Breach/BreachUpgraderLightning.dds"
+		},
+		{
+			"Id": "CurrencyBreachUpgradeUniquePhysical",
+			"Name_en": "Blessing of Uul-Netol",
+			"Name_ko": "울네톨의 축복",
+			"DDSFile": "Art/2DItems/Currency/Breach/BreachUpgraderPhysical.dds"
+		},
+		{
+			"Id": "CurrencyBreachUpgradeUniqueChaos",
+			"Name_en": "Blessing of Chayula",
+			"Name_ko": "차율라의 축복",
+			"DDSFile": "Art/2DItems/Currency/Breach/BreachUpgraderChaos.dds"
+		},
+		{
+			"Id": "CurrencyLegionKaruiShard",
+			"Name_en": "Timeless Karui Splinter",
+			"Name_ko": "무궁한 카루이 파편",
+			"DDSFile": "Art/2DItems/Maps/KaruiShard.dds"
+		},
+		{
+			"Id": "CurrencyLegionMarakethShard",
+			"Name_en": "Timeless Maraketh Splinter",
+			"Name_ko": "무궁한 마라케스 파편",
+			"DDSFile": "Art/2DItems/Maps/MarakethShard.dds"
+		},
+		{
+			"Id": "CurrencyLegionEternalEmpireShard",
+			"Name_en": "Timeless Eternal Empire Splinter",
+			"Name_ko": "무궁한 영원한 제국 파편",
+			"DDSFile": "Art/2DItems/Maps/EternalEmpireShard.dds"
+		},
+		{
+			"Id": "CurrencyLegionTemplarShard",
+			"Name_en": "Timeless Templar Splinter",
+			"Name_ko": "무궁한 템플러 파편",
+			"DDSFile": "Art/2DItems/Maps/TemplarShard.dds"
+		},
+		{
+			"Id": "CurrencyLegionVaalShard",
+			"Name_en": "Timeless Vaal Splinter",
+			"Name_ko": "무궁한 바알 파편",
+			"DDSFile": "Art/2DItems/Maps/VaalShard.dds"
+		},
+		{
+			"Id": "CurrencyRemoveMod",
+			"Name_en": "Orb of Annulment",
+			"Name_ko": "소멸의 오브",
+			"DDSFile": "Art/2DItems/Currency/AnnullOrb.dds"
+		},
+		{
+			"Id": "CurrencyUpgradeToRareAndSetSockets",
+			"Name_en": "Orb of Binding",
+			"Name_ko": "속박의 오브",
+			"DDSFile": "Art/2DItems/Currency/BindingOrb.dds"
+		},
+		{
+			"Id": "CurrencyRerollMapType",
+			"Name_en": "Orb of Horizons",
+			"Name_ko": "지평의 오브",
+			"DDSFile": "Art/2DItems/Currency/HorizonOrb.dds"
+		},
+		{
+			"Id": "CurrencyUpgradeMapTier",
+			"Name_en": "Harbinger's Orb",
+			"Name_ko": "선구자의 오브",
+			"DDSFile": "Art/2DItems/Currency/HarbingerOrb.dds"
+		},
+		{
+			"Id": "CurrencyStrongboxQuality",
+			"Name_en": "Engineer's Orb",
+			"Name_ko": "기술자의 오브",
+			"DDSFile": "Art/2DItems/Currency/EngineersOrb.dds"
+		},
+		{
+			"Id": "CurrencyRerollUnique",
+			"Name_en": "Ancient Orb",
+			"Name_ko": "고대의 오브",
+			"DDSFile": "Art/2DItems/Currency/AncientOrb.dds"
+		},
+		{
+			"Id": "CurrencyRerollUnique",
+			"Name_en": "Stacked Deck",
+			"Name_ko": "카드 묶음",
+			"DDSFile": "Art/2DItems/Currency/AncientOrb.dds"
+		},
+		{
+			"Id": "CurrencyRemoveModShard",
+			"Name_en": "Annulment Shard",
+			"Name_ko": "소멸의 파편",
+			"DDSFile": "Art/2DItems/Currency/AnnullShard.dds"
+		},
+		{
+			"Id": "CurrencyUpgradeToRareAndSetSocketsShard",
+			"Name_en": "Binding Shard",
+			"Name_ko": "속박의 파편",
+			"DDSFile": "Art/2DItems/Currency/BindingShard.dds"
+		},
+		{
+			"Id": "CurrencyRerollMapTypeShard",
+			"Name_en": "Horizon Shard",
+			"Name_ko": "지평의 파편",
+			"DDSFile": "Art/2DItems/Currency/HorizonShard.dds"
+		},
+		{
+			"Id": "CurrencyUpgradeMapTierShard",
+			"Name_en": "Harbinger's Shard",
+			"Name_ko": "선구자의 파편",
+			"DDSFile": "Art/2DItems/Currency/HarbingerShard.dds"
+		},
+		{
+			"Id": "CurrencyStrongboxQualityShard",
+			"Name_en": "Engineer's Shard",
+			"Name_ko": "기술자의 파편",
+			"DDSFile": "Art/2DItems/Currency/EngineersShard.dds"
+		},
+		{
+			"Id": "CurrencyRerollUniqueShard",
+			"Name_en": "Ancient Shard",
+			"Name_ko": "고대의 파편",
+			"DDSFile": "Art/2DItems/Currency/AncientShard.dds"
+		},
+		{
+			"Id": "CurrencyRerollRareShard",
+			"Name_en": "Chaos Shard",
+			"Name_ko": "카오스 파편",
+			"DDSFile": "Art/2DItems/Currency/ChaosShard.dds"
+		},
+		{
+			"Id": "CurrencyDuplicateShard",
+			"Name_en": "Mirror Shard",
+			"Name_ko": "거울 파편",
+			"DDSFile": "Art/2DItems/Currency/MirrorShard.dds"
+		},
+		{
+			"Id": "CurrencyAddModToRareShard",
+			"Name_en": "Exalted Shard",
+			"Name_ko": "엑잘티드 파편",
+			"DDSFile": "Art/2DItems/Currency/ExaltedShard.dds"
+		},
+		{
+			"Id": "CurrencyUpgradeMagicToRareShard",
+			"Name_en": "Regal Shard",
+			"Name_ko": "제왕의 파편",
+			"DDSFile": "Art/2DItems/Currency/RegalShard.dds"
+		},
+		{
+			"Id": "Bestiary",
+			"Name_en": "Simple Rope Net",
+			"Name_ko": "단순한 밧줄 그물",
+			"DDSFile": "Art/2DItems/Currency/BestiaryTrap1.dds"
+		},
+		{
+			"Id": "Bestiary",
+			"Name_en": "Reinforced Rope Net",
+			"Name_ko": "강화 밧줄 그물",
+			"DDSFile": "Art/2DItems/Currency/BestiaryTrap2.dds"
+		},
+		{
+			"Id": "Bestiary",
+			"Name_en": "Strong Rope Net",
+			"Name_ko": "강력한 밧줄 그물",
+			"DDSFile": "Art/2DItems/Currency/BestiaryTrap3.dds"
+		},
+		{
+			"Id": "Bestiary",
+			"Name_en": "Simple Iron Net",
+			"Name_ko": "단순한 철 그물",
+			"DDSFile": "Art/2DItems/Currency/BestiaryTrap4.dds"
+		},
+		{
+			"Id": "Bestiary",
+			"Name_en": "Reinforced Iron Net",
+			"Name_ko": "강화 철 그물",
+			"DDSFile": "Art/2DItems/Currency/BestiaryTrap5.dds"
+		},
+		{
+			"Id": "Bestiary",
+			"Name_en": "Strong Iron Net",
+			"Name_ko": "강력한 철 그물",
+			"DDSFile": "Art/2DItems/Currency/BestiaryTrap6.dds"
+		},
+		{
+			"Id": "Bestiary",
+			"Name_en": "Simple Steel Net",
+			"Name_ko": "단순한 강철 그물",
+			"DDSFile": "Art/2DItems/Currency/BestiaryTrap7.dds"
+		},
+		{
+			"Id": "Bestiary",
+			"Name_en": "Reinforced Steel Net",
+			"Name_ko": "강화 강철 그물",
+			"DDSFile": "Art/2DItems/Currency/BestiaryTrap8.dds"
+		},
+		{
+			"Id": "Bestiary",
+			"Name_en": "Strong Steel Net",
+			"Name_ko": "강력한 강철 그물",
+			"DDSFile": "Art/2DItems/Currency/BestiaryTrap9.dds"
+		},
+		{
+			"Id": "Bestiary",
+			"Name_en": "Thaumaturgical Net",
+			"Name_ko": "마석학 그물",
+			"DDSFile": "Art/2DItems/Currency/BestiaryTrap10.dds"
+		},
+		{
+			"Id": "Bestiary",
+			"Name_en": "Necromancy Net",
+			"Name_ko": "강령술 그물",
+			"DDSFile": "Art/2DItems/Currency/Necronet.dds"
+		},
+		{
+			"Id": "CurrencyIncursionVialTrap",
+			"Name_en": "Vial of Dominance",
+			"Name_ko": "지배의 시약",
+			"DDSFile": "Art/2DItems/Currency/VialArchitectsHand.dds"
+		},
+		{
+			"Id": "CurrencyIncursionVialHealing",
+			"Name_en": "Vial of Summoning",
+			"Name_ko": "소환의 시약",
+			"DDSFile": "Art/2DItems/Currency/VialSpiritDrinker.dds"
+		},
+		{
+			"Id": "CurrencyIncursionVialPoison",
+			"Name_en": "Vial of Awakening",
+			"Name_ko": "각성의 시약",
+			"DDSFile": "Art/2DItems/Currency/VialSlumber.dds"
+		},
+		{
+			"Id": "CurrencyIncursionVialLightning",
+			"Name_en": "Vial of the Ritual",
+			"Name_ko": "의식의 시약",
+			"DDSFile": "Art/2DItems/Currency/VialDanceOffered.dds"
+		},
+		{
+			"Id": "CurrencyIncursionVialFire",
+			"Name_en": "Vial of Fate",
+			"Name_ko": "운명의 시약",
+			"DDSFile": "Art/2DItems/Currency/VialStoryVaal.dds"
+		},
+		{
+			"Id": "CurrencyIncursionVialMinion",
+			"Name_en": "Vial of Consequence",
+			"Name_ko": "결과의 시약",
+			"DDSFile": "Art/2DItems/Currency/VialCowardsChains.dds"
+		},
+		{
+			"Id": "CurrencyIncursionVialBossFlask",
+			"Name_en": "Vial of the Ghost",
+			"Name_ko": "유령의 시약",
+			"DDSFile": "Art/2DItems/Currency/VialSoulCatcher.dds"
+		},
+		{
+			"Id": "CurrencyIncursionVialBossJewel",
+			"Name_en": "Vial of Transcendence",
+			"Name_ko": "초월의 시약",
+			"DDSFile": "Art/2DItems/Currency/VialTemperedFlesh.dds"
+		},
+		{
+			"Id": "CurrencyIncursionVialBossAmulet",
+			"Name_en": "Vial of Sacrifice",
+			"Name_ko": "희생의 시약",
+			"DDSFile": "Art/2DItems/Currency/VialSacrificialHeart.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingFire",
+			"Name_en": "Scorched Fossil",
+			"Name_ko": "그을린 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/AmberFireFly.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingCold",
+			"Name_en": "Frigid Fossil",
+			"Name_ko": "차디찬 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/AmberFang.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingLightning",
+			"Name_en": "Metallic Fossil",
+			"Name_ko": "금속성 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/MetallicFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingPhysical",
+			"Name_en": "Jagged Fossil",
+			"Name_ko": "뾰족한 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/JaggedFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingChaos",
+			"Name_en": "Aberrant Fossil",
+			"Name_ko": "특이한 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/AbberantFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingLife",
+			"Name_en": "Pristine Fossil",
+			"Name_ko": "온전한 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/PristineFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingDefences",
+			"Name_en": "Dense Fossil",
+			"Name_ko": "조밀한 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/DenseFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingBleedPoison",
+			"Name_en": "Corroded Fossil",
+			"Name_ko": "부식된 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/CorrodedFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingElemental",
+			"Name_en": "Prismatic Fossil",
+			"Name_ko": "분광 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/PrismaticFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingCasterMods",
+			"Name_en": "Aetheric Fossil",
+			"Name_ko": "에테르 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/AethericFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingAttackMods",
+			"Name_en": "Serrated Fossil",
+			"Name_ko": "톱니 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/SerratedFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingMana",
+			"Name_en": "Lucent Fossil",
+			"Name_ko": "빛나는 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/LucentFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingSpeed",
+			"Name_en": "Shuddering Fossil",
+			"Name_ko": "전율의 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/ShudderingFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingMinionsAuras",
+			"Name_en": "Bound Fossil",
+			"Name_ko": "속박의 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/ResonatingFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingQuality",
+			"Name_en": "Perfect Fossil",
+			"Name_ko": "완벽한 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/PerfectFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingEnchant",
+			"Name_en": "Enchanted Fossil",
+			"Name_ko": "인챈트된 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/EnchantedFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingSockets",
+			"Name_en": "Encrusted Fossil",
+			"Name_ko": "뒤덮인 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/EncrustedFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingGemLevel",
+			"Name_en": "Faceted Fossil",
+			"Name_ko": "연마한 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/FacetedFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingVaal",
+			"Name_en": "Bloodstained Fossil",
+			"Name_ko": "피얼룩 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/BloodstainedFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingAbyss",
+			"Name_en": "Hollow Fossil",
+			"Name_ko": "공허의 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/AmberEye.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingMirror",
+			"Name_en": "Fractured Fossil",
+			"Name_ko": "분열된 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/FracturedFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingCorruptEssence",
+			"Name_en": "Glyphic Fossil",
+			"Name_ko": "상형 문자 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/GlyphicFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingRandom",
+			"Name_en": "Tangled Fossil",
+			"Name_ko": "얽혀든 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/TangledFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingLuckyModRolls",
+			"Name_en": "Sanctified Fossil",
+			"Name_ko": "축성된 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/GildedFossil.dds"
+		},
+		{
+			"Id": "CurrencyDelveCraftingSellPrice",
+			"Name_en": "Gilded Fossil",
+			"Name_ko": "도금된 화석",
+			"DDSFile": "Art/2DItems/Currency/Delve/SanctifiedFossil.dds"
+		},
+		{
+			"Id": "CurrencyIncubationEssence",
+			"Name_en": "Whispering Incubator",
+			"Name_ko": "속삭이는 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationEssence.dds"
+		},
+		{
+			"Id": "CurrencyIncubationCurrency",
+			"Name_en": "Fine Incubator",
+			"Name_ko": "양질의 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationCurrency.dds"
+		},
+		{
+			"Id": "CurrencyIncubationUniques",
+			"Name_en": "Singular Incubator",
+			"Name_ko": "비범한 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationUniques.dds"
+		},
+		{
+			"Id": "CurrencyIncubationMaps",
+			"Name_en": "Cartographer's Incubator",
+			"Name_ko": "지도제작자의 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationMaps.dds"
+		},
+		{
+			"Id": "CurrencyIncubationUniqueMaps",
+			"Name_en": "Otherworldly Incubator",
+			"Name_ko": "이계의 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationMaps.dds"
+		},
+		{
+			"Id": "CurrencyIncubationAbyss",
+			"Name_en": "Abyssal Incubator",
+			"Name_ko": "심연의 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationAbyss.dds"
+		},
+		{
+			"Id": "CurrencyIncubationFragments",
+			"Name_en": "Fragmented Incubator",
+			"Name_ko": "조각난 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationFragments.dds"
+		},
+		{
+			"Id": "CurrencyIncubationScarabs",
+			"Name_en": "Skittering Incubator",
+			"Name_ko": "달리는 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationScarabs.dds"
+		},
+		{
+			"Id": "CurrencyIncubationEssenceHigh",
+			"Name_en": "Infused Incubator",
+			"Name_ko": "주입된 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationEssence.dds"
+		},
+		{
+			"Id": "CurrencyIncubationFossils",
+			"Name_en": "Fossilised Incubator",
+			"Name_ko": "화석화된 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationFossils.dds"
+		},
+		{
+			"Id": "CurrencyIncubationPerandus",
+			"Name_en": "Decadent Incubator",
+			"Name_ko": "스러져가는 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationPerandus.dds"
+		},
+		{
+			"Id": "CurrencyIncubationDivination",
+			"Name_en": "Diviner's Incubator",
+			"Name_ko": "신성자의 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationDivinationCards.dds"
+		},
+		{
+			"Id": "CurrencyIncubationTalismans",
+			"Name_en": "Primal Incubator",
+			"Name_ko": "원시 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationTalismans.dds"
+		},
+		{
+			"Id": "CurrencyIncubationLabyrinthHelm",
+			"Name_en": "Enchanted Incubator",
+			"Name_ko": "인챈트된 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationLabyrinth.dds"
+		},
+		{
+			"Id": "CurrencyIncubationArmour6Linked",
+			"Name_en": "Geomancer's Incubator",
+			"Name_ko": "대지술사의 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationArmour.dds"
+		},
+		{
+			"Id": "CurrencyIncubationCurrencyMid",
+			"Name_en": "Ornate Incubator",
+			"Name_ko": "화려한 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationCurrency.dds"
+		},
+		{
+			"Id": "CurrencyIncubationUniqueLeague",
+			"Name_en": "Time-Lost Incubator",
+			"Name_ko": "오래된 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationUniques.dds"
+		},
+		{
+			"Id": "CurrencyIncubationArmourShaperElder",
+			"Name_en": "Celestial Armoursmith's Incubator",
+			"Name_ko": "천공의 갑옷제작자의 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationArmour.dds"
+		},
+		{
+			"Id": "CurrencyIncubationWeaponShaperElder",
+			"Name_en": "Celestial Blacksmith's Incubator",
+			"Name_ko": "천공의 대장장이의 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationWeapons.dds"
+		},
+		{
+			"Id": "CurrencyIncubationTrinketShaperElder",
+			"Name_en": "Celestial Jeweller's Incubator",
+			"Name_ko": "천공의 보석상의 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationTrinkets.dds"
+		},
+		{
+			"Id": "CurrencyIncubationMapElder",
+			"Name_en": "Eldritch Incubator",
+			"Name_ko": "섬뜩한 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationMaps.dds"
+		},
+		{
+			"Id": "CurrencyIncubationBreach",
+			"Name_en": "Obscured Incubator",
+			"Name_ko": "가려진 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationBreach.dds"
+		},
+		{
+			"Id": "CurrencyIncubationHarbingerShard",
+			"Name_en": "Foreboding Incubator",
+			"Name_ko": "불길한 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationHarbinger.dds"
+		},
+		{
+			"Id": "CurrencyIncubationGem",
+			"Name_en": "Thaumaturge's Incubator",
+			"Name_ko": "마석학자의 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationGems.dds"
+		},
+		{
+			"Id": "CurrencyIncubationGeneric",
+			"Name_en": "Mysterious Incubator",
+			"Name_ko": "수수께끼의 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationGeneric.dds"
+		},
+		{
+			"Id": "CurrencyIncubationGemLow",
+			"Name_en": "Gemcutter's Incubator",
+			"Name_ko": "세공사의 인큐베이터",
+			"DDSFile": "Art/2DItems/Currency/Incubation/IncubationGems.dds"
+		}
+	]
+}

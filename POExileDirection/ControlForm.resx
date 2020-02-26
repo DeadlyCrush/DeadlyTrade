@@ -117,10 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="DeadlyLOGParingTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnExpandCollapse.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJNSURBVDhPZZLLTlNRGIX3YxgK9H7a01aplrb0fgeh
+        BgqcnpZTWijlUpAaZoaBcaZGn0MnjnRgYuJTaDQpvoCBOHDiVhOzXPt0RBz8aU6zv3+tvdYWVtKDftaN
+        RmwaWwtubKU9aKfc6GT4f96HvYKGw1IAo1oIJ1Udh+UgRI+HmolZLM9NYz02i1aSoA150cv5sJ31ocfZ
+        LwZwwOnnNQgz6aSCk0pOGAkXWgQsLuplfNjJ+bFboFrRjz7VlIoChcmDzdgM1ucJJV0wOUrJSnnR4XSz
+        XuzQ5m6RNitBDKu0114gFJ9GY34Wm3EnWvxW97FSHmynaZFAl/b6vNsRoaOKDjHI+8fmPJWo1oy78P7Z
+        Jq7ejv6bDy+aVNFxUgtJ0c9pY5NBNGzIif2Shq8vD64B6vvB3QiOae1+TZeim/GODUJrtGdQqcMQHlsJ
+        XL45tQH1+7SXxpC2VBDDMqFOynNh0N4alYz4JIA2wVfnKzb0+tE9HBM4prV91VlBk4KXvTDiyh6VEk60
+        WbDJUbG/e7LB7TpGi2FCIbuCftYvxaCgfWlSafX2DFT86jUomy1G32F66kWcLUfsEHYK/r+DsvZD7JW0
+        T5uMvB51UGVy2GAgdsGMWm3fZvyqq4NK8Newpn8TTOtz444DSxEHC56kqGaDYJML1BLV14DlMozfJ5XQ
+        pTithT6qZ1TSb2Dp5hTqcw7UbzmwMjdlF65AK+2eQFX9DwO5Eu1c+PnZYlB2026OR/ayXsnHKrsZj+RB
+        ye3ysByQo+WwfLgW/Xm+Gv3+D5lRZEpU/bNxAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="DeadlyToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>169, 0</value>
+  </metadata>
+  <metadata name="timerInit.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>308, 15</value>
+  </metadata>
+  <metadata name="timerParser.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>406, 15</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAMDAAAAEAIACoJQAAFgAAACgAAAAwAAAAYAAAAAEAIAAAAAAAACQAAMIOAADCDgAAAAAAAAAA

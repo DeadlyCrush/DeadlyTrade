@@ -104,7 +104,6 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -145,18 +144,6 @@
     </Compile>
     <Compile Include="ControlForm.Designer.cs">
       <DependentUpon>ControlForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FlaskTimerForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FlaskTimerForm.Designer.cs">
-      <DependentUpon>FlaskTimerForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GuideGridForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GuideGridForm.Designer.cs">
-      <DependentUpon>GuideGridForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ImageOverlayFormMap.cs">
       <SubType>Form</SubType>
@@ -224,12 +211,6 @@
     </Compile>
     <EmbeddedResource Include="ControlForm.resx">
       <DependentUpon>ControlForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FlaskTimerForm.resx">
-      <DependentUpon>FlaskTimerForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GuideGridForm.resx">
-      <DependentUpon>GuideGridForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ImageOverlayFormMap.resx">
       <DependentUpon>ImageOverlayFormMap.cs</DependentUpon>
@@ -312,20 +293,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="POExileDirection.ico" />
-    <None Include="res\Notification\Others\calculator.png" />
-    <None Include="res\TopMostMain\Re_SendMessage_24px.png" />
-    <None Include="res\TopMostMain\Search_24px.png" />
-    <None Include="res\TopMostMain\QuestionMark_24px.png" />
-    <None Include="res\TopMostMain\Hideout_24px.png" />
-    <None Include="res\TopMostMain\Soldout_Warning_24px.png" />
-    <None Include="res\TopMostMain\TradeAccepted_24px.png" />
-    <None Include="res\TopMostMain\Soldout_24px.png" />
-    <None Include="res\TopMostMain\TradeCommand_24px.png" />
-    <None Include="res\TopMostMain\KickFromParty_24px.png" />
-    <None Include="res\TopMostMain\Invite_24px.png" />
-    <None Include="res\TopMostMain\WaitPlz_45_45_48_24px.png" />
-    <None Include="res\Currency\chaos.png" />
-    <None Include="res\Currency\Chaos Orb.png" />
     <Content Include="res\Currency\curr_alch.png" />
     <Content Include="res\Currency\curr_alt.png" />
     <Content Include="res\Currency\curr_ancient.png" />
@@ -380,13 +347,6 @@
     <Content Include="res\Currency\curr_tra.png" />
     <Content Include="res\Currency\curr_vaal.png" />
     <Content Include="res\Currency\curr_wis.png" />
-    <None Include="res\TopMostMain\CloseButton_45_45_48_24px.png" />
-    <None Include="res\TopMostMain\Minimize_45_45_48_24px.png" />
-    <None Include="res\TopMostMain\PinLock_45_45_48_24px.png" />
-    <None Include="res\Notification\Button6ColorTypes\button_pink_heart.png" />
-    <None Include="res\TopMostMain\Tasks.ico" />
-    <None Include="res\TopMostMain\Arrow_up.png" />
-    <None Include="res\TopMostMain\Arrow_Down.png" />
     <None Include="res\Notification\Button6ColorTypes\button_green_heart.png" />
     <None Include="res\TopMostMain\Power_Blue.png" />
     <None Include="res\TopMostMain\Close.png" />

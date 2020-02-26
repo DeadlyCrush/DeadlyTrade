@@ -33,5 +33,6 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CE627A2C-8798-4704-8C2B-63F8D0D5BFCC}
+		VisualSVNWorkingCopyRoot = .
 	EndGlobalSection
 EndGlobal

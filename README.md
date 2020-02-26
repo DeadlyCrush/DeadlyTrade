@@ -4,28 +4,6 @@ Overhaul ver. build / 1.4.0.0 ver. First time user count (Real-time) / Before 1.
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) / [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]() / [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]()
 
-## [ DeadlyTrade Overhaul 1.4.0.0 version. ]
-
-## New Features.
-- Trade Minimize
-- Additional Flask Timer Sound
-- Selectable Flask Type Images
-- Ability to look up custom Oil Anoints for Amulets, Rings and Maps
-
-## Improvements.
-- Main HUD icon Re-Design
-- Timer, DND on/off View Re-Design
-- Ninja Data Speed Up
-- Oil Anointing Overhaul
-
-## Bug fixes ( and All Update Note )
-
-> More detail information (Join Our Discord please) : https://discord.gg/Gd7MjCz
-
-## Full Version Download
-1. Github : https://github.com/DeadlyCrush/DeadlyTradeOverhaul/releases/download/1.4.0.0/DeadlyTradeOvehaul_1.4.0.0.zip
-2. Our Site : https://www.jumpleasure.me/deadlytrade/repository/DeadlyTradeOvehaul_1.4.0.0.zip
-
 ### Main HUD rework.
 ![Main HUD](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FnEVUM%2FbtqB10JTI9i%2FJhmAdkoH4eelxJOJk7QJ81%2Fimg.jpg)
 

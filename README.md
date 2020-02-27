@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-2020.02.15 Released 1.4.0.0 ver. First time user count (Real-time) / Before 1.4.0.0 ver. user count (Real-time )
+Released 2020.02.15 ver.1.4.0.0 First time user count (Real-time) / Before 1.4.0.0 ver. user count (Real-time )
 
 [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]() 
 [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]()

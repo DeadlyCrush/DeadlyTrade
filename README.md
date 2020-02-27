@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-[1.4.0.0 ver. First time user count (Real-time)[Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]()
+[![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]() 1.4.0.0 ver. First time user count (Real-time)
 
 [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]() : Before 1.4.0.0 ver. user count (Real-time)
 

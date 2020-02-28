@@ -129,4 +129,4 @@ DeadlyTrade / Deadly KOR Team >
 - KAKAO Open Talk - https://open.kakao.com/o/gylOSztb
 ## Thank you all. Good Luck Exile~!
 Please let me know about any bugs you encounter or if you have any suggestions.
-Thank you for your interest and support.
+Thank you for your interest and support. 

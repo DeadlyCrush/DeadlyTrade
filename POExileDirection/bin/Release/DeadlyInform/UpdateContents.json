@@ -1,9 +1,0 @@
-{
-	"Notice": [{
-		"Version": "1.3.9.1",
-		"Title": "This is Title",
-		"TitleKR": "제목입니다",
-		"Contents": ["Fixed A", "Fixed B"],
-		"ContentsKR": ["A 수정완료", "B 수정완료"]
-	}]
-}

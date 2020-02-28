@@ -41,7 +41,7 @@ namespace POExileDirection
             listViewChat.View = View.Details;
             listViewChat.GridLines = true;
             listViewChat.FullRowSelect = true;
-            listViewChat.
+            //listViewChat.
 
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
 

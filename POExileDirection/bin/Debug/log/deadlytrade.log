@@ -453,3 +453,770 @@ System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다
 2020-02-26 22:36:57,948 [1] INFO POExileDirection.DeadlyLog4Net - MoveNext RESOLUTION : G:\ReposNew\POExileDirection\bin\Debug\ConfigPath.ini
 2020-02-26 23:36:58,693 [1] INFO POExileDirection.DeadlyLog4Net - strRead : 1.4.0.0 Your version : 1.4.0.0
 2020-02-26 23:36:58,949 [1] INFO POExileDirection.DeadlyLog4Net - MoveNext RESOLUTION : G:\ReposNew\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 00:24:14,113 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↓↓↓ Launcher Load ↓↓↓ 〓〓〓〓〓
+2020-02-28 00:24:14,171 [1] INFO POExileDirection.DeadlyLog4Net - FONT Exist
+2020-02-28 00:24:14,258 [1] INFO POExileDirection.DeadlyLog4Net - Show Local Chat : True
+2020-02-28 00:24:14,258 [1] INFO POExileDirection.DeadlyLog4Net - UI Language : ENG
+2020-02-28 00:24:14,258 [1] INFO POExileDirection.DeadlyLog4Net - Flask Keys #1 49, #2 50, #3 51, #4 52, #5 53
+2020-02-28 00:24:14,258 [1] INFO POExileDirection.DeadlyLog4Net - Skill Keys #Q 81, #W 87, #E 69, #R 82, #T 84
+2020-02-28 00:24:14,259 [1] INFO POExileDirection.DeadlyLog4Net - resolution_height : 1080, resolution_width : 1920
+2020-02-28 00:24:14,268 [1] INFO POExileDirection.DeadlyLog4Net - 112.161.83.15574D43511C23B
+2020-02-28 00:24:14,872 [1] INFO POExileDirection.DeadlyLog4Net - LOGIN Welcome : 112.161.83.15574D43511C23B
+2020-02-28 00:24:17,283 [1] INFO POExileDirection.DeadlyLog4Net - Get_NinjaData RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 00:24:17,286 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL Checked : Y
+2020-02-28 00:24:17,292 [1] INFO POExileDirection.DeadlyLog4Net - checkUseWheelStash : Y
+2020-02-28 00:24:17,293 [1] INFO POExileDirection.DeadlyLog4Net - EMERGENCYKEY Checked : Y
+2020-02-28 00:24:17,297 [1] INFO POExileDirection.DeadlyLog4Net - checkEmergency : Y
+2020-02-28 00:24:17,298 [1] INFO POExileDirection.DeadlyLog4Net - REMAININGKEY Checked : Y
+2020-02-28 00:24:17,305 [1] INFO POExileDirection.DeadlyLog4Net - checkRemaining : Y
+2020-02-28 00:24:17,306 [1] INFO POExileDirection.DeadlyLog4Net - FINDBYPOSITIONKEY Checked : Y
+2020-02-28 00:24:17,310 [1] INFO POExileDirection.DeadlyLog4Net - checkFindbyPosition : Y
+2020-02-28 00:24:17,311 [1] INFO POExileDirection.DeadlyLog4Net - JUNKEY Checked : Y
+2020-02-28 00:24:17,315 [1] INFO POExileDirection.DeadlyLog4Net - checkSyndicateJUN : Y
+2020-02-28 00:24:17,316 [1] INFO POExileDirection.DeadlyLog4Net - HIDEOUTKEY Checked : Y
+2020-02-28 00:24:17,321 [1] INFO POExileDirection.DeadlyLog4Net - checkHideout : Y
+2020-02-28 00:24:17,322 [1] INFO POExileDirection.DeadlyLog4Net - ALVAKEY Checked : Y
+2020-02-28 00:24:17,326 [1] INFO POExileDirection.DeadlyLog4Net - checkTempleALVA : Y
+2020-02-28 00:24:17,327 [1] INFO POExileDirection.DeadlyLog4Net - AtlasZANAKEY Checked : Y
+2020-02-28 00:24:17,331 [1] INFO POExileDirection.DeadlyLog4Net - checkAtlasZANA : Y
+2020-02-28 00:24:17,331 [1] INFO POExileDirection.DeadlyLog4Net - PUSHPINLOCK = Y
+2020-02-28 00:24:17,924 [1] INFO POExileDirection.DeadlyLog4Net - LOGOUT : 112.161.83.15574D43511C23B Elapsedminute : 0
+2020-02-28 00:24:17,924 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↑↑↑ Launcher END ↑↑↑ 〓〓〓〓〓
+2020-02-28 00:56:00,502 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↓↓↓ Launcher Load ↓↓↓ 〓〓〓〓〓
+2020-02-28 00:56:00,536 [1] INFO POExileDirection.DeadlyLog4Net - FONT Exist
+2020-02-28 00:56:00,654 [1] INFO POExileDirection.DeadlyLog4Net - Show Local Chat : True
+2020-02-28 00:56:00,655 [1] INFO POExileDirection.DeadlyLog4Net - UI Language : ENG
+2020-02-28 00:56:00,655 [1] INFO POExileDirection.DeadlyLog4Net - Flask Keys #1 49, #2 50, #3 51, #4 52, #5 53
+2020-02-28 00:56:00,655 [1] INFO POExileDirection.DeadlyLog4Net - Skill Keys #Q 81, #W 87, #E 69, #R 82, #T 84
+2020-02-28 00:56:00,655 [1] INFO POExileDirection.DeadlyLog4Net - resolution_height : 1080, resolution_width : 1920
+2020-02-28 00:56:00,657 [1] INFO POExileDirection.DeadlyLog4Net - 112.161.83.15574D43511C23B
+2020-02-28 00:56:00,754 [1] INFO POExileDirection.DeadlyLog4Net - Check_Authentication  : 112.161.83.15574D43511C23B
+2020-02-28 00:56:01,315 [1] INFO POExileDirection.DeadlyLog4Net - LOGIN Welcome : 112.161.83.15574D43511C23B
+2020-02-28 00:56:03,221 [1] INFO POExileDirection.DeadlyLog4Net - Get_NinjaData RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 00:56:03,225 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL Checked : Y
+2020-02-28 00:56:03,238 [1] INFO POExileDirection.DeadlyLog4Net - checkUseWheelStash : Y
+2020-02-28 00:56:03,239 [1] INFO POExileDirection.DeadlyLog4Net - EMERGENCYKEY Checked : Y
+2020-02-28 00:56:03,252 [1] INFO POExileDirection.DeadlyLog4Net - checkEmergency : Y
+2020-02-28 00:56:03,253 [1] INFO POExileDirection.DeadlyLog4Net - REMAININGKEY Checked : Y
+2020-02-28 00:56:03,270 [1] INFO POExileDirection.DeadlyLog4Net - checkRemaining : Y
+2020-02-28 00:56:03,271 [1] INFO POExileDirection.DeadlyLog4Net - FINDBYPOSITIONKEY Checked : Y
+2020-02-28 00:56:03,276 [1] INFO POExileDirection.DeadlyLog4Net - checkFindbyPosition : Y
+2020-02-28 00:56:03,277 [1] INFO POExileDirection.DeadlyLog4Net - JUNKEY Checked : Y
+2020-02-28 00:56:03,283 [1] INFO POExileDirection.DeadlyLog4Net - checkSyndicateJUN : Y
+2020-02-28 00:56:03,284 [1] INFO POExileDirection.DeadlyLog4Net - HIDEOUTKEY Checked : Y
+2020-02-28 00:56:03,288 [1] INFO POExileDirection.DeadlyLog4Net - checkHideout : Y
+2020-02-28 00:56:03,288 [1] INFO POExileDirection.DeadlyLog4Net - ALVAKEY Checked : Y
+2020-02-28 00:56:03,294 [1] INFO POExileDirection.DeadlyLog4Net - checkTempleALVA : Y
+2020-02-28 00:56:03,295 [1] INFO POExileDirection.DeadlyLog4Net - AtlasZANAKEY Checked : Y
+2020-02-28 00:56:03,299 [1] INFO POExileDirection.DeadlyLog4Net - checkAtlasZANA : Y
+2020-02-28 00:56:03,299 [1] INFO POExileDirection.DeadlyLog4Net - PUSHPINLOCK = Y
+2020-02-28 00:56:17,642 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 00:56:17,662 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick CTRL+MOUSEWHEEL : Y
+2020-02-28 00:56:17,700 [1] ERROR POExileDirection.DeadlyLog4Net - catch RunDeadlyTradeManager
+System.ComponentModel.Win32Exception (0x80004005): 지정된 파일을 찾을 수 없습니다
+   위치: System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   위치: System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   위치: POExileDirection.LauncherForm.RunDeadlyTradeManager() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\LauncherForm.cs:줄 1547
+2020-02-28 00:58:55,718 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Started
+2020-02-28 00:58:55,730 [1] ERROR POExileDirection.DeadlyLog4Net - catch GetCurrencyCalcDictionary
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: POExileDirection.ControlForm.GetCurrencyCalcDictionary() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\ControlForm.cs:줄 282
+2020-02-28 00:58:55,766 [1] INFO POExileDirection.DeadlyLog4Net - Validate_POELogFile RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 00:58:55,898 [1] INFO POExileDirection.DeadlyLog4Net - Init_ControlFormPosition RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 00:58:58,242 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL : Y
+2020-02-28 01:54:26,958 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↓↓↓ Launcher Load ↓↓↓ 〓〓〓〓〓
+2020-02-28 01:54:26,980 [1] INFO POExileDirection.DeadlyLog4Net - FONT Exist
+2020-02-28 01:54:27,075 [1] INFO POExileDirection.DeadlyLog4Net - Show Local Chat : True
+2020-02-28 01:54:27,075 [1] INFO POExileDirection.DeadlyLog4Net - UI Language : ENG
+2020-02-28 01:54:27,075 [1] INFO POExileDirection.DeadlyLog4Net - Flask Keys #1 49, #2 50, #3 51, #4 52, #5 53
+2020-02-28 01:54:27,075 [1] INFO POExileDirection.DeadlyLog4Net - Skill Keys #Q 81, #W 87, #E 69, #R 82, #T 84
+2020-02-28 01:54:27,076 [1] INFO POExileDirection.DeadlyLog4Net - resolution_height : 1080, resolution_width : 1920
+2020-02-28 01:54:27,077 [1] INFO POExileDirection.DeadlyLog4Net - 112.161.83.15574D43511C23B
+2020-02-28 01:54:27,198 [1] INFO POExileDirection.DeadlyLog4Net - Check_Authentication  : 112.161.83.15574D43511C23B
+2020-02-28 01:54:27,723 [1] INFO POExileDirection.DeadlyLog4Net - LOGIN Welcome : 112.161.83.15574D43511C23B
+2020-02-28 01:54:29,612 [1] INFO POExileDirection.DeadlyLog4Net - Get_NinjaData RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 01:54:29,614 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL Checked : Y
+2020-02-28 01:54:29,625 [1] INFO POExileDirection.DeadlyLog4Net - checkUseWheelStash : Y
+2020-02-28 01:54:29,626 [1] INFO POExileDirection.DeadlyLog4Net - EMERGENCYKEY Checked : Y
+2020-02-28 01:54:29,647 [1] INFO POExileDirection.DeadlyLog4Net - checkEmergency : Y
+2020-02-28 01:54:29,647 [1] INFO POExileDirection.DeadlyLog4Net - REMAININGKEY Checked : Y
+2020-02-28 01:54:29,669 [1] INFO POExileDirection.DeadlyLog4Net - checkRemaining : Y
+2020-02-28 01:54:29,670 [1] INFO POExileDirection.DeadlyLog4Net - FINDBYPOSITIONKEY Checked : Y
+2020-02-28 01:54:29,675 [1] INFO POExileDirection.DeadlyLog4Net - checkFindbyPosition : Y
+2020-02-28 01:54:29,675 [1] INFO POExileDirection.DeadlyLog4Net - JUNKEY Checked : Y
+2020-02-28 01:54:29,680 [1] INFO POExileDirection.DeadlyLog4Net - checkSyndicateJUN : Y
+2020-02-28 01:54:29,680 [1] INFO POExileDirection.DeadlyLog4Net - HIDEOUTKEY Checked : Y
+2020-02-28 01:54:29,685 [1] INFO POExileDirection.DeadlyLog4Net - checkHideout : Y
+2020-02-28 01:54:29,685 [1] INFO POExileDirection.DeadlyLog4Net - ALVAKEY Checked : Y
+2020-02-28 01:54:29,690 [1] INFO POExileDirection.DeadlyLog4Net - checkTempleALVA : Y
+2020-02-28 01:54:29,690 [1] INFO POExileDirection.DeadlyLog4Net - AtlasZANAKEY Checked : Y
+2020-02-28 01:54:29,695 [1] INFO POExileDirection.DeadlyLog4Net - checkAtlasZANA : Y
+2020-02-28 01:54:29,695 [1] INFO POExileDirection.DeadlyLog4Net - PUSHPINLOCK = Y
+2020-02-28 01:54:44,274 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 01:54:44,287 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick CTRL+MOUSEWHEEL : Y
+2020-02-28 01:54:44,366 [1] ERROR POExileDirection.DeadlyLog4Net - catch RunDeadlyTradeManager
+System.ComponentModel.Win32Exception (0x80004005): 지정된 파일을 찾을 수 없습니다
+   위치: System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   위치: System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   위치: POExileDirection.LauncherForm.RunDeadlyTradeManager() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\LauncherForm.cs:줄 1547
+2020-02-28 01:54:49,853 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Started
+2020-02-28 01:54:49,881 [1] INFO POExileDirection.DeadlyLog4Net - Validate_POELogFile RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 01:54:50,018 [1] INFO POExileDirection.DeadlyLog4Net - Init_ControlFormPosition RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 01:54:52,359 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL : Y
+2020-02-28 01:56:50,875 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↓↓↓ Launcher Load ↓↓↓ 〓〓〓〓〓
+2020-02-28 01:56:50,897 [1] INFO POExileDirection.DeadlyLog4Net - FONT Exist
+2020-02-28 01:56:50,999 [1] INFO POExileDirection.DeadlyLog4Net - Show Local Chat : True
+2020-02-28 01:56:50,999 [1] INFO POExileDirection.DeadlyLog4Net - UI Language : ENG
+2020-02-28 01:56:50,999 [1] INFO POExileDirection.DeadlyLog4Net - Flask Keys #1 49, #2 50, #3 51, #4 52, #5 53
+2020-02-28 01:56:51,000 [1] INFO POExileDirection.DeadlyLog4Net - Skill Keys #Q 81, #W 87, #E 69, #R 82, #T 84
+2020-02-28 01:56:51,000 [1] INFO POExileDirection.DeadlyLog4Net - resolution_height : 1080, resolution_width : 1920
+2020-02-28 01:56:51,001 [1] INFO POExileDirection.DeadlyLog4Net - 112.161.83.15574D43511C23B
+2020-02-28 01:56:51,154 [1] INFO POExileDirection.DeadlyLog4Net - Check_Authentication  : 112.161.83.15574D43511C23B
+2020-02-28 01:56:51,656 [1] INFO POExileDirection.DeadlyLog4Net - LOGIN Welcome : 112.161.83.15574D43511C23B
+2020-02-28 01:56:53,482 [1] INFO POExileDirection.DeadlyLog4Net - Get_NinjaData RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 01:56:53,484 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL Checked : Y
+2020-02-28 01:56:53,500 [1] INFO POExileDirection.DeadlyLog4Net - checkUseWheelStash : Y
+2020-02-28 01:56:53,501 [1] INFO POExileDirection.DeadlyLog4Net - EMERGENCYKEY Checked : Y
+2020-02-28 01:56:53,505 [1] INFO POExileDirection.DeadlyLog4Net - checkEmergency : Y
+2020-02-28 01:56:53,506 [1] INFO POExileDirection.DeadlyLog4Net - REMAININGKEY Checked : Y
+2020-02-28 01:56:53,512 [1] INFO POExileDirection.DeadlyLog4Net - checkRemaining : Y
+2020-02-28 01:56:53,513 [1] INFO POExileDirection.DeadlyLog4Net - FINDBYPOSITIONKEY Checked : Y
+2020-02-28 01:56:53,517 [1] INFO POExileDirection.DeadlyLog4Net - checkFindbyPosition : Y
+2020-02-28 01:56:53,518 [1] INFO POExileDirection.DeadlyLog4Net - JUNKEY Checked : Y
+2020-02-28 01:56:53,522 [1] INFO POExileDirection.DeadlyLog4Net - checkSyndicateJUN : Y
+2020-02-28 01:56:53,523 [1] INFO POExileDirection.DeadlyLog4Net - HIDEOUTKEY Checked : Y
+2020-02-28 01:56:53,538 [1] INFO POExileDirection.DeadlyLog4Net - checkHideout : Y
+2020-02-28 01:56:53,539 [1] INFO POExileDirection.DeadlyLog4Net - ALVAKEY Checked : Y
+2020-02-28 01:56:53,567 [1] INFO POExileDirection.DeadlyLog4Net - checkTempleALVA : Y
+2020-02-28 01:56:53,568 [1] INFO POExileDirection.DeadlyLog4Net - AtlasZANAKEY Checked : Y
+2020-02-28 01:56:53,572 [1] INFO POExileDirection.DeadlyLog4Net - checkAtlasZANA : Y
+2020-02-28 01:56:53,572 [1] INFO POExileDirection.DeadlyLog4Net - PUSHPINLOCK = Y
+2020-02-28 01:57:07,691 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 01:57:07,695 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick CTRL+MOUSEWHEEL : Y
+2020-02-28 01:57:07,730 [1] ERROR POExileDirection.DeadlyLog4Net - catch RunDeadlyTradeManager
+System.ComponentModel.Win32Exception (0x80004005): 지정된 파일을 찾을 수 없습니다
+   위치: System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   위치: System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   위치: POExileDirection.LauncherForm.RunDeadlyTradeManager() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\LauncherForm.cs:줄 1547
+2020-02-28 01:57:08,686 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Started
+2020-02-28 01:57:08,714 [1] INFO POExileDirection.DeadlyLog4Net - Validate_POELogFile RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 01:57:08,850 [1] INFO POExileDirection.DeadlyLog4Net - Init_ControlFormPosition RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 01:57:11,176 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL : Y
+2020-02-28 01:58:52,628 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↓↓↓ Launcher Load ↓↓↓ 〓〓〓〓〓
+2020-02-28 01:58:52,650 [1] INFO POExileDirection.DeadlyLog4Net - FONT Exist
+2020-02-28 01:58:52,743 [1] INFO POExileDirection.DeadlyLog4Net - Show Local Chat : True
+2020-02-28 01:58:52,743 [1] INFO POExileDirection.DeadlyLog4Net - UI Language : ENG
+2020-02-28 01:58:52,743 [1] INFO POExileDirection.DeadlyLog4Net - Flask Keys #1 49, #2 50, #3 51, #4 52, #5 53
+2020-02-28 01:58:52,743 [1] INFO POExileDirection.DeadlyLog4Net - Skill Keys #Q 81, #W 87, #E 69, #R 82, #T 84
+2020-02-28 01:58:52,743 [1] INFO POExileDirection.DeadlyLog4Net - resolution_height : 1080, resolution_width : 1920
+2020-02-28 01:58:52,745 [1] INFO POExileDirection.DeadlyLog4Net - 112.161.83.15574D43511C23B
+2020-02-28 01:58:52,861 [1] INFO POExileDirection.DeadlyLog4Net - Check_Authentication  : 112.161.83.15574D43511C23B
+2020-02-28 01:58:53,309 [1] INFO POExileDirection.DeadlyLog4Net - LOGIN Welcome : 112.161.83.15574D43511C23B
+2020-02-28 01:58:55,139 [1] INFO POExileDirection.DeadlyLog4Net - Get_NinjaData RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 01:58:55,141 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL Checked : Y
+2020-02-28 01:58:55,146 [1] INFO POExileDirection.DeadlyLog4Net - checkUseWheelStash : Y
+2020-02-28 01:58:55,147 [1] INFO POExileDirection.DeadlyLog4Net - EMERGENCYKEY Checked : Y
+2020-02-28 01:58:55,152 [1] INFO POExileDirection.DeadlyLog4Net - checkEmergency : Y
+2020-02-28 01:58:55,153 [1] INFO POExileDirection.DeadlyLog4Net - REMAININGKEY Checked : Y
+2020-02-28 01:58:55,159 [1] INFO POExileDirection.DeadlyLog4Net - checkRemaining : Y
+2020-02-28 01:58:55,160 [1] INFO POExileDirection.DeadlyLog4Net - FINDBYPOSITIONKEY Checked : Y
+2020-02-28 01:58:55,164 [1] INFO POExileDirection.DeadlyLog4Net - checkFindbyPosition : Y
+2020-02-28 01:58:55,165 [1] INFO POExileDirection.DeadlyLog4Net - JUNKEY Checked : Y
+2020-02-28 01:58:55,169 [1] INFO POExileDirection.DeadlyLog4Net - checkSyndicateJUN : Y
+2020-02-28 01:58:55,170 [1] INFO POExileDirection.DeadlyLog4Net - HIDEOUTKEY Checked : Y
+2020-02-28 01:58:55,174 [1] INFO POExileDirection.DeadlyLog4Net - checkHideout : Y
+2020-02-28 01:58:55,175 [1] INFO POExileDirection.DeadlyLog4Net - ALVAKEY Checked : Y
+2020-02-28 01:58:55,179 [1] INFO POExileDirection.DeadlyLog4Net - checkTempleALVA : Y
+2020-02-28 01:58:55,180 [1] INFO POExileDirection.DeadlyLog4Net - AtlasZANAKEY Checked : Y
+2020-02-28 01:58:55,184 [1] INFO POExileDirection.DeadlyLog4Net - checkAtlasZANA : Y
+2020-02-28 01:58:55,184 [1] INFO POExileDirection.DeadlyLog4Net - PUSHPINLOCK = Y
+2020-02-28 01:59:09,268 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 01:59:09,277 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick CTRL+MOUSEWHEEL : Y
+2020-02-28 01:59:09,331 [1] ERROR POExileDirection.DeadlyLog4Net - catch RunDeadlyTradeManager
+System.ComponentModel.Win32Exception (0x80004005): 지정된 파일을 찾을 수 없습니다
+   위치: System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   위치: System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   위치: POExileDirection.LauncherForm.RunDeadlyTradeManager() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\LauncherForm.cs:줄 1547
+2020-02-28 01:59:10,534 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Started
+2020-02-28 01:59:10,562 [1] INFO POExileDirection.DeadlyLog4Net - Validate_POELogFile RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 01:59:10,699 [1] INFO POExileDirection.DeadlyLog4Net - Init_ControlFormPosition RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 01:59:13,037 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL : Y
+2020-02-28 02:02:32,287 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↓↓↓ Launcher Load ↓↓↓ 〓〓〓〓〓
+2020-02-28 02:02:32,380 [1] INFO POExileDirection.DeadlyLog4Net - FONT Exist
+2020-02-28 02:02:33,135 [1] INFO POExileDirection.DeadlyLog4Net - Show Local Chat : True
+2020-02-28 02:02:33,135 [1] INFO POExileDirection.DeadlyLog4Net - UI Language : ENG
+2020-02-28 02:02:33,135 [1] INFO POExileDirection.DeadlyLog4Net - Flask Keys #1 49, #2 50, #3 51, #4 52, #5 53
+2020-02-28 02:02:33,135 [1] INFO POExileDirection.DeadlyLog4Net - Skill Keys #Q 81, #W 87, #E 69, #R 82, #T 84
+2020-02-28 02:02:33,136 [1] INFO POExileDirection.DeadlyLog4Net - resolution_height : 1080, resolution_width : 1920
+2020-02-28 02:02:33,137 [1] INFO POExileDirection.DeadlyLog4Net - 112.161.83.15574D43511C23B
+2020-02-28 02:02:33,619 [1] INFO POExileDirection.DeadlyLog4Net - Check_Authentication  : 112.161.83.15574D43511C23B
+2020-02-28 02:02:34,322 [1] INFO POExileDirection.DeadlyLog4Net - LOGIN Welcome : 112.161.83.15574D43511C23B
+2020-02-28 02:02:36,507 [1] INFO POExileDirection.DeadlyLog4Net - Get_NinjaData RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 02:02:36,510 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL Checked : Y
+2020-02-28 02:02:36,527 [1] INFO POExileDirection.DeadlyLog4Net - checkUseWheelStash : Y
+2020-02-28 02:02:36,528 [1] INFO POExileDirection.DeadlyLog4Net - EMERGENCYKEY Checked : Y
+2020-02-28 02:02:36,532 [1] INFO POExileDirection.DeadlyLog4Net - checkEmergency : Y
+2020-02-28 02:02:36,533 [1] INFO POExileDirection.DeadlyLog4Net - REMAININGKEY Checked : Y
+2020-02-28 02:02:36,540 [1] INFO POExileDirection.DeadlyLog4Net - checkRemaining : Y
+2020-02-28 02:02:36,541 [1] INFO POExileDirection.DeadlyLog4Net - FINDBYPOSITIONKEY Checked : Y
+2020-02-28 02:02:36,546 [1] INFO POExileDirection.DeadlyLog4Net - checkFindbyPosition : Y
+2020-02-28 02:02:36,547 [1] INFO POExileDirection.DeadlyLog4Net - JUNKEY Checked : Y
+2020-02-28 02:02:36,551 [1] INFO POExileDirection.DeadlyLog4Net - checkSyndicateJUN : Y
+2020-02-28 02:02:36,552 [1] INFO POExileDirection.DeadlyLog4Net - HIDEOUTKEY Checked : Y
+2020-02-28 02:02:36,557 [1] INFO POExileDirection.DeadlyLog4Net - checkHideout : Y
+2020-02-28 02:02:36,558 [1] INFO POExileDirection.DeadlyLog4Net - ALVAKEY Checked : Y
+2020-02-28 02:02:36,562 [1] INFO POExileDirection.DeadlyLog4Net - checkTempleALVA : Y
+2020-02-28 02:02:36,563 [1] INFO POExileDirection.DeadlyLog4Net - AtlasZANAKEY Checked : Y
+2020-02-28 02:02:36,568 [1] INFO POExileDirection.DeadlyLog4Net - checkAtlasZANA : Y
+2020-02-28 02:02:36,568 [1] INFO POExileDirection.DeadlyLog4Net - PUSHPINLOCK = Y
+2020-02-28 02:02:51,110 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 02:02:51,115 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick CTRL+MOUSEWHEEL : Y
+2020-02-28 02:02:51,315 [1] ERROR POExileDirection.DeadlyLog4Net - catch RunDeadlyTradeManager
+System.ComponentModel.Win32Exception (0x80004005): 지정된 파일을 찾을 수 없습니다
+   위치: System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   위치: System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   위치: POExileDirection.LauncherForm.RunDeadlyTradeManager() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\LauncherForm.cs:줄 1547
+2020-02-28 02:02:52,406 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Started
+2020-02-28 02:02:52,434 [1] INFO POExileDirection.DeadlyLog4Net - Validate_POELogFile RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 02:02:52,574 [1] INFO POExileDirection.DeadlyLog4Net - Init_ControlFormPosition RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 02:04:30,573 [11] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing Start =============
+2020-02-28 02:04:30,573 [11] INFO POExileDirection.DeadlyLog4Net - Rarity: Rare
+Agony Roost
+Core Map
+
+2020-02-28 02:04:30,573 [11] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing End =============
+2020-02-28 02:04:30,609 [11] ERROR POExileDirection.DeadlyLog4Net - Parse ItemClipboardText GetItemDataFromClipboard
+System.ArgumentOutOfRangeException: 인덱스 및 길이는 문자열 내의 위치를 참조해야 합니다.
+매개 변수 이름: length
+   위치: System.String.Substring(Int32 startIndex, Int32 length)
+   위치: POExileDirection.DeadlyPriceAPI.GetItemDataFromClipboard(String strItemClipboardText) 파일 D:\GitDesk\DeadlyTrade\POExileDirection\DeadlyPriceCheck\DeadlyPriceAPI.cs:줄 196
+2020-02-28 02:04:31,962 [11] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing Start =============
+2020-02-28 02:04:31,962 [11] INFO POExileDirection.DeadlyLog4Net - Rarity: Rare
+Agony Roost
+Core Map
+
+2020-02-28 02:04:31,962 [11] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing End =============
+2020-02-28 02:04:31,975 [11] ERROR POExileDirection.DeadlyLog4Net - Parse ItemClipboardText GetItemDataFromClipboard
+System.ArgumentOutOfRangeException: 인덱스 및 길이는 문자열 내의 위치를 참조해야 합니다.
+매개 변수 이름: length
+   위치: System.String.Substring(Int32 startIndex, Int32 length)
+   위치: POExileDirection.DeadlyPriceAPI.GetItemDataFromClipboard(String strItemClipboardText) 파일 D:\GitDesk\DeadlyTrade\POExileDirection\DeadlyPriceCheck\DeadlyPriceAPI.cs:줄 196
+2020-02-28 02:05:20,300 [14] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing Start =============
+2020-02-28 02:05:20,301 [14] INFO POExileDirection.DeadlyLog4Net - Rarity: Rare
+Agony Roost
+Core Map
+
+2020-02-28 02:05:20,301 [14] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing End =============
+2020-02-28 02:10:01,834 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↓↓↓ Launcher Load ↓↓↓ 〓〓〓〓〓
+2020-02-28 02:10:01,860 [1] INFO POExileDirection.DeadlyLog4Net - FONT Exist
+2020-02-28 02:10:02,055 [1] INFO POExileDirection.DeadlyLog4Net - Show Local Chat : True
+2020-02-28 02:10:02,056 [1] INFO POExileDirection.DeadlyLog4Net - UI Language : ENG
+2020-02-28 02:10:02,056 [1] INFO POExileDirection.DeadlyLog4Net - Flask Keys #1 49, #2 50, #3 51, #4 52, #5 53
+2020-02-28 02:10:02,056 [1] INFO POExileDirection.DeadlyLog4Net - Skill Keys #Q 81, #W 87, #E 69, #R 82, #T 84
+2020-02-28 02:10:02,056 [1] INFO POExileDirection.DeadlyLog4Net - resolution_height : 1080, resolution_width : 1920
+2020-02-28 02:10:02,058 [1] INFO POExileDirection.DeadlyLog4Net - 112.161.83.15574D43511C23B
+2020-02-28 02:10:02,207 [1] INFO POExileDirection.DeadlyLog4Net - Check_Authentication  : 112.161.83.15574D43511C23B
+2020-02-28 02:10:02,813 [1] INFO POExileDirection.DeadlyLog4Net - LOGIN Welcome : 112.161.83.15574D43511C23B
+2020-02-28 02:10:04,691 [1] INFO POExileDirection.DeadlyLog4Net - Get_NinjaData RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 02:10:04,693 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL Checked : Y
+2020-02-28 02:10:04,710 [1] INFO POExileDirection.DeadlyLog4Net - checkUseWheelStash : Y
+2020-02-28 02:10:04,711 [1] INFO POExileDirection.DeadlyLog4Net - EMERGENCYKEY Checked : Y
+2020-02-28 02:10:04,739 [1] INFO POExileDirection.DeadlyLog4Net - checkEmergency : Y
+2020-02-28 02:10:04,740 [1] INFO POExileDirection.DeadlyLog4Net - REMAININGKEY Checked : Y
+2020-02-28 02:10:04,772 [1] INFO POExileDirection.DeadlyLog4Net - checkRemaining : Y
+2020-02-28 02:10:04,773 [1] INFO POExileDirection.DeadlyLog4Net - FINDBYPOSITIONKEY Checked : Y
+2020-02-28 02:10:04,778 [1] INFO POExileDirection.DeadlyLog4Net - checkFindbyPosition : Y
+2020-02-28 02:10:04,778 [1] INFO POExileDirection.DeadlyLog4Net - JUNKEY Checked : Y
+2020-02-28 02:10:04,783 [1] INFO POExileDirection.DeadlyLog4Net - checkSyndicateJUN : Y
+2020-02-28 02:10:04,783 [1] INFO POExileDirection.DeadlyLog4Net - HIDEOUTKEY Checked : Y
+2020-02-28 02:10:04,788 [1] INFO POExileDirection.DeadlyLog4Net - checkHideout : Y
+2020-02-28 02:10:04,788 [1] INFO POExileDirection.DeadlyLog4Net - ALVAKEY Checked : Y
+2020-02-28 02:10:04,793 [1] INFO POExileDirection.DeadlyLog4Net - checkTempleALVA : Y
+2020-02-28 02:10:04,793 [1] INFO POExileDirection.DeadlyLog4Net - AtlasZANAKEY Checked : Y
+2020-02-28 02:10:04,798 [1] INFO POExileDirection.DeadlyLog4Net - checkAtlasZANA : Y
+2020-02-28 02:10:04,798 [1] INFO POExileDirection.DeadlyLog4Net - PUSHPINLOCK = Y
+2020-02-28 02:10:19,018 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 02:10:19,052 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick CTRL+MOUSEWHEEL : Y
+2020-02-28 02:10:19,140 [1] ERROR POExileDirection.DeadlyLog4Net - catch RunDeadlyTradeManager
+System.ComponentModel.Win32Exception (0x80004005): 지정된 파일을 찾을 수 없습니다
+   위치: System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   위치: System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   위치: POExileDirection.LauncherForm.RunDeadlyTradeManager() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\LauncherForm.cs:줄 1547
+2020-02-28 02:10:19,983 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Started
+2020-02-28 02:10:20,010 [1] INFO POExileDirection.DeadlyLog4Net - Validate_POELogFile RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 02:10:20,145 [1] INFO POExileDirection.DeadlyLog4Net - Init_ControlFormPosition RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 02:10:22,474 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL : Y
+2020-02-28 02:10:24,063 [11] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing Start =============
+2020-02-28 02:10:24,063 [11] INFO POExileDirection.DeadlyLog4Net - Rarity: Rare
+Agony Roost
+Core Map
+
+2020-02-28 02:10:24,063 [11] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing End =============
+2020-02-28 02:10:24,063 [11] INFO POExileDirection.DeadlyLog4Net - Rare Agony Roost Core Map
+2020-02-28 02:10:24,063 [11] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing Start =============
+2020-02-28 02:10:24,063 [11] INFO POExileDirection.DeadlyLog4Net - 
+Map Tier: 11
+Atlas Region: Lex Ejoris
+Item Quantity: +94% (augmented)
+Item Rarity: +43% (augmented)
+Monster Pack Size: +28% (augmented)
+Quality: +20% (augmented)
+
+2020-02-28 02:10:24,063 [11] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing End =============
+2020-02-28 02:10:24,063 [11] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing Start =============
+2020-02-28 02:10:24,063 [11] INFO POExileDirection.DeadlyLog4Net - 
+Item Level: 83
+
+2020-02-28 02:10:24,063 [11] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing End =============
+2020-02-28 02:10:24,064 [11] ERROR POExileDirection.DeadlyLog4Net - Parse ItemClipboardText GetItemDataFromClipboard
+System.IndexOutOfRangeException: 인덱스가 배열 범위를 벗어났습니다.
+   위치: POExileDirection.DeadlyPriceAPI.GetItemDataFromClipboard(String strItemClipboardText) 파일 D:\GitDesk\DeadlyTrade\POExileDirection\DeadlyPriceCheck\DeadlyPriceAPI.cs:줄 197
+2020-02-28 02:10:36,449 [9] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing Start =============
+2020-02-28 02:10:36,449 [9] INFO POExileDirection.DeadlyLog4Net - Rarity: Rare
+Agony Roost
+Core Map
+
+2020-02-28 02:10:36,449 [9] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing End =============
+2020-02-28 02:10:36,449 [9] INFO POExileDirection.DeadlyLog4Net - Rare Agony Roost Core Map
+2020-02-28 02:10:36,449 [9] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing Start =============
+2020-02-28 02:10:36,449 [9] INFO POExileDirection.DeadlyLog4Net - 
+Map Tier: 11
+Atlas Region: Lex Ejoris
+Item Quantity: +94% (augmented)
+Item Rarity: +43% (augmented)
+Monster Pack Size: +28% (augmented)
+Quality: +20% (augmented)
+
+2020-02-28 02:10:36,449 [9] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing End =============
+2020-02-28 02:10:36,449 [9] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing Start =============
+2020-02-28 02:10:36,449 [9] INFO POExileDirection.DeadlyLog4Net - 
+Item Level: 83
+
+2020-02-28 02:10:36,449 [9] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing End =============
+2020-02-28 02:10:36,449 [9] ERROR POExileDirection.DeadlyLog4Net - Parse ItemClipboardText GetItemDataFromClipboard
+System.IndexOutOfRangeException: 인덱스가 배열 범위를 벗어났습니다.
+   위치: POExileDirection.DeadlyPriceAPI.GetItemDataFromClipboard(String strItemClipboardText) 파일 D:\GitDesk\DeadlyTrade\POExileDirection\DeadlyPriceCheck\DeadlyPriceAPI.cs:줄 197
+2020-02-28 02:10:49,761 [11] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing Start =============
+2020-02-28 02:10:49,761 [11] INFO POExileDirection.DeadlyLog4Net - Rarity: Rare
+Agony Roost
+Core Map
+
+2020-02-28 02:10:49,761 [11] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing End =============
+2020-02-28 02:10:49,761 [11] INFO POExileDirection.DeadlyLog4Net - Rare Agony Roost Core Map
+2020-02-28 02:10:49,761 [11] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing Start =============
+2020-02-28 02:10:49,761 [11] INFO POExileDirection.DeadlyLog4Net - 
+Map Tier: 11
+Atlas Region: Lex Ejoris
+Item Quantity: +94% (augmented)
+Item Rarity: +43% (augmented)
+Monster Pack Size: +28% (augmented)
+Quality: +20% (augmented)
+
+2020-02-28 02:10:49,761 [11] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing End =============
+2020-02-28 02:10:49,761 [11] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing Start =============
+2020-02-28 02:10:49,761 [11] INFO POExileDirection.DeadlyLog4Net - 
+Item Level: 83
+
+2020-02-28 02:10:49,761 [11] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing End =============
+2020-02-28 02:10:49,761 [11] ERROR POExileDirection.DeadlyLog4Net - Parse ItemClipboardText GetItemDataFromClipboard
+System.IndexOutOfRangeException: 인덱스가 배열 범위를 벗어났습니다.
+   위치: POExileDirection.DeadlyPriceAPI.GetItemDataFromClipboard(String strItemClipboardText) 파일 D:\GitDesk\DeadlyTrade\POExileDirection\DeadlyPriceCheck\DeadlyPriceAPI.cs:줄 197
+2020-02-28 02:11:38,904 [1] INFO POExileDirection.DeadlyLog4Net - LOGOUT : 112.161.83.15574D43511C23B Elapsedminute : 0
+2020-02-28 02:11:38,905 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↑↑↑ Launcher END ↑↑↑ 〓〓〓〓〓
+2020-02-28 02:11:39,141 [1] INFO POExileDirection.DeadlyLog4Net - LOGOUT : 112.161.83.15574D43511C23B Elapsedminute : 0
+2020-02-28 02:11:39,143 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Closed
+2020-02-28 02:11:42,894 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↓↓↓ Launcher Load ↓↓↓ 〓〓〓〓〓
+2020-02-28 02:11:42,967 [1] INFO POExileDirection.DeadlyLog4Net - FONT Exist
+2020-02-28 02:11:43,468 [1] INFO POExileDirection.DeadlyLog4Net - Show Local Chat : True
+2020-02-28 02:11:43,468 [1] INFO POExileDirection.DeadlyLog4Net - UI Language : ENG
+2020-02-28 02:11:43,468 [1] INFO POExileDirection.DeadlyLog4Net - Flask Keys #1 49, #2 50, #3 51, #4 52, #5 53
+2020-02-28 02:11:43,468 [1] INFO POExileDirection.DeadlyLog4Net - Skill Keys #Q 81, #W 87, #E 69, #R 82, #T 84
+2020-02-28 02:11:43,469 [1] INFO POExileDirection.DeadlyLog4Net - resolution_height : 1080, resolution_width : 1920
+2020-02-28 02:11:43,470 [1] INFO POExileDirection.DeadlyLog4Net - 112.161.83.15574D43511C23B
+2020-02-28 02:11:44,367 [1] INFO POExileDirection.DeadlyLog4Net - Check_Authentication  : 112.161.83.15574D43511C23B
+2020-02-28 02:11:45,232 [1] INFO POExileDirection.DeadlyLog4Net - LOGIN Welcome : 112.161.83.15574D43511C23B
+2020-02-28 02:11:47,967 [1] INFO POExileDirection.DeadlyLog4Net - Get_NinjaData RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 02:11:47,970 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL Checked : Y
+2020-02-28 02:11:47,974 [1] INFO POExileDirection.DeadlyLog4Net - checkUseWheelStash : Y
+2020-02-28 02:11:47,975 [1] INFO POExileDirection.DeadlyLog4Net - EMERGENCYKEY Checked : Y
+2020-02-28 02:11:47,979 [1] INFO POExileDirection.DeadlyLog4Net - checkEmergency : Y
+2020-02-28 02:11:47,980 [1] INFO POExileDirection.DeadlyLog4Net - REMAININGKEY Checked : Y
+2020-02-28 02:11:47,991 [1] INFO POExileDirection.DeadlyLog4Net - checkRemaining : Y
+2020-02-28 02:11:47,992 [1] INFO POExileDirection.DeadlyLog4Net - FINDBYPOSITIONKEY Checked : Y
+2020-02-28 02:11:47,996 [1] INFO POExileDirection.DeadlyLog4Net - checkFindbyPosition : Y
+2020-02-28 02:11:47,997 [1] INFO POExileDirection.DeadlyLog4Net - JUNKEY Checked : Y
+2020-02-28 02:11:48,001 [1] INFO POExileDirection.DeadlyLog4Net - checkSyndicateJUN : Y
+2020-02-28 02:11:48,002 [1] INFO POExileDirection.DeadlyLog4Net - HIDEOUTKEY Checked : Y
+2020-02-28 02:11:48,007 [1] INFO POExileDirection.DeadlyLog4Net - checkHideout : Y
+2020-02-28 02:11:48,007 [1] INFO POExileDirection.DeadlyLog4Net - ALVAKEY Checked : Y
+2020-02-28 02:11:48,012 [1] INFO POExileDirection.DeadlyLog4Net - checkTempleALVA : Y
+2020-02-28 02:11:48,013 [1] INFO POExileDirection.DeadlyLog4Net - AtlasZANAKEY Checked : Y
+2020-02-28 02:11:48,018 [1] INFO POExileDirection.DeadlyLog4Net - checkAtlasZANA : Y
+2020-02-28 02:11:48,018 [1] INFO POExileDirection.DeadlyLog4Net - PUSHPINLOCK = Y
+2020-02-28 02:12:02,362 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 02:12:02,368 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick CTRL+MOUSEWHEEL : Y
+2020-02-28 02:12:02,502 [1] ERROR POExileDirection.DeadlyLog4Net - catch RunDeadlyTradeManager
+System.ComponentModel.Win32Exception (0x80004005): 지정된 파일을 찾을 수 없습니다
+   위치: System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   위치: System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   위치: POExileDirection.LauncherForm.RunDeadlyTradeManager() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\LauncherForm.cs:줄 1547
+2020-02-28 02:12:03,496 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Started
+2020-02-28 02:12:03,524 [1] INFO POExileDirection.DeadlyLog4Net - Validate_POELogFile RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 02:12:03,676 [1] INFO POExileDirection.DeadlyLog4Net - Init_ControlFormPosition RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 02:12:09,190 [9] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing Start =============
+2020-02-28 02:12:09,190 [9] INFO POExileDirection.DeadlyLog4Net - Rarity: Rare
+Agony Roost
+Core Map
+
+2020-02-28 02:12:09,190 [9] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing End =============
+2020-02-28 02:12:42,242 [9] INFO POExileDirection.DeadlyLog4Net - Rare Agony Roost Core Map
+2020-02-28 02:12:44,480 [9] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing Start =============
+2020-02-28 02:12:44,480 [9] INFO POExileDirection.DeadlyLog4Net - 
+Map Tier: 11
+Atlas Region: Lex Ejoris
+Item Quantity: +94% (augmented)
+Item Rarity: +43% (augmented)
+Monster Pack Size: +28% (augmented)
+Quality: +20% (augmented)
+
+2020-02-28 02:12:44,480 [9] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing End =============
+2020-02-28 02:12:46,231 [9] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing Start =============
+2020-02-28 02:12:46,231 [9] INFO POExileDirection.DeadlyLog4Net - 
+Item Level: 83
+
+2020-02-28 02:12:46,231 [9] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing End =============
+2020-02-28 02:12:47,520 [9] ERROR POExileDirection.DeadlyLog4Net - Parse ItemClipboardText GetItemDataFromClipboard
+System.IndexOutOfRangeException: 인덱스가 배열 범위를 벗어났습니다.
+   위치: POExileDirection.DeadlyPriceAPI.GetItemDataFromClipboard(String strItemClipboardText) 파일 D:\GitDesk\DeadlyTrade\POExileDirection\DeadlyPriceCheck\DeadlyPriceAPI.cs:줄 197
+2020-02-28 02:15:03,449 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 02:15:26,497 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 02:56:03,055 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↓↓↓ Launcher Load ↓↓↓ 〓〓〓〓〓
+2020-02-28 02:56:03,078 [1] INFO POExileDirection.DeadlyLog4Net - FONT Exist
+2020-02-28 02:56:03,146 [1] INFO POExileDirection.DeadlyLog4Net - Show Local Chat : True
+2020-02-28 02:56:03,146 [1] INFO POExileDirection.DeadlyLog4Net - UI Language : ENG
+2020-02-28 02:56:03,147 [1] INFO POExileDirection.DeadlyLog4Net - Flask Keys #1 49, #2 50, #3 51, #4 52, #5 53
+2020-02-28 02:56:03,147 [1] INFO POExileDirection.DeadlyLog4Net - Skill Keys #Q 81, #W 87, #E 69, #R 82, #T 84
+2020-02-28 02:56:03,147 [1] INFO POExileDirection.DeadlyLog4Net - resolution_height : 1080, resolution_width : 1920
+2020-02-28 02:56:03,149 [1] INFO POExileDirection.DeadlyLog4Net - 112.161.83.15574D43511C23B
+2020-02-28 02:56:03,251 [1] INFO POExileDirection.DeadlyLog4Net - Check_Authentication  : 112.161.83.15574D43511C23B
+2020-02-28 02:56:03,761 [1] INFO POExileDirection.DeadlyLog4Net - LOGIN Welcome : 112.161.83.15574D43511C23B
+2020-02-28 02:56:05,607 [1] INFO POExileDirection.DeadlyLog4Net - Get_NinjaData RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 02:56:05,609 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL Checked : Y
+2020-02-28 02:56:05,624 [1] INFO POExileDirection.DeadlyLog4Net - checkUseWheelStash : Y
+2020-02-28 02:56:05,625 [1] INFO POExileDirection.DeadlyLog4Net - EMERGENCYKEY Checked : Y
+2020-02-28 02:56:05,634 [1] INFO POExileDirection.DeadlyLog4Net - checkEmergency : Y
+2020-02-28 02:56:05,634 [1] INFO POExileDirection.DeadlyLog4Net - REMAININGKEY Checked : Y
+2020-02-28 02:56:05,646 [1] INFO POExileDirection.DeadlyLog4Net - checkRemaining : Y
+2020-02-28 02:56:05,647 [1] INFO POExileDirection.DeadlyLog4Net - FINDBYPOSITIONKEY Checked : Y
+2020-02-28 02:56:05,651 [1] INFO POExileDirection.DeadlyLog4Net - checkFindbyPosition : Y
+2020-02-28 02:56:05,652 [1] INFO POExileDirection.DeadlyLog4Net - JUNKEY Checked : Y
+2020-02-28 02:56:05,656 [1] INFO POExileDirection.DeadlyLog4Net - checkSyndicateJUN : Y
+2020-02-28 02:56:05,657 [1] INFO POExileDirection.DeadlyLog4Net - HIDEOUTKEY Checked : Y
+2020-02-28 02:56:05,661 [1] INFO POExileDirection.DeadlyLog4Net - checkHideout : Y
+2020-02-28 02:56:05,662 [1] INFO POExileDirection.DeadlyLog4Net - ALVAKEY Checked : Y
+2020-02-28 02:56:05,666 [1] INFO POExileDirection.DeadlyLog4Net - checkTempleALVA : Y
+2020-02-28 02:56:05,667 [1] INFO POExileDirection.DeadlyLog4Net - AtlasZANAKEY Checked : Y
+2020-02-28 02:56:05,671 [1] INFO POExileDirection.DeadlyLog4Net - checkAtlasZANA : Y
+2020-02-28 02:56:05,671 [1] INFO POExileDirection.DeadlyLog4Net - PUSHPINLOCK = Y
+2020-02-28 02:56:28,307 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 02:56:28,344 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick CTRL+MOUSEWHEEL : Y
+2020-02-28 02:56:28,482 [1] ERROR POExileDirection.DeadlyLog4Net - catch RunDeadlyTradeManager
+System.ComponentModel.Win32Exception (0x80004005): 지정된 파일을 찾을 수 없습니다
+   위치: System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   위치: System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   위치: POExileDirection.LauncherForm.RunDeadlyTradeManager() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\LauncherForm.cs:줄 1547
+2020-02-28 02:56:30,962 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Started
+2020-02-28 02:56:30,990 [1] INFO POExileDirection.DeadlyLog4Net - Validate_POELogFile RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 02:56:31,129 [1] INFO POExileDirection.DeadlyLog4Net - Init_ControlFormPosition RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 02:56:33,469 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL : Y
+2020-02-28 03:02:16,262 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 03:03:06,366 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 03:03:06,582 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 03:03:31,190 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 03:04:01,845 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 03:06:39,238 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 03:17:44,447 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 03:24:28,382 [1] INFO POExileDirection.DeadlyLog4Net - LOGOUT : 112.161.83.15574D43511C23B Elapsedminute : 0
+2020-02-28 03:24:28,382 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↑↑↑ Launcher END ↑↑↑ 〓〓〓〓〓
+2020-02-28 03:24:28,623 [1] INFO POExileDirection.DeadlyLog4Net - LOGOUT : 112.161.83.15574D43511C23B Elapsedminute : 0
+2020-02-28 03:24:28,625 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Closed
+2020-02-28 03:25:00,224 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↓↓↓ Launcher Load ↓↓↓ 〓〓〓〓〓
+2020-02-28 03:25:00,248 [1] INFO POExileDirection.DeadlyLog4Net - FONT Exist
+2020-02-28 03:25:00,340 [1] INFO POExileDirection.DeadlyLog4Net - Show Local Chat : True
+2020-02-28 03:25:00,340 [1] INFO POExileDirection.DeadlyLog4Net - UI Language : ENG
+2020-02-28 03:25:00,341 [1] INFO POExileDirection.DeadlyLog4Net - Flask Keys #1 49, #2 50, #3 51, #4 52, #5 53
+2020-02-28 03:25:00,341 [1] INFO POExileDirection.DeadlyLog4Net - Skill Keys #Q 81, #W 87, #E 69, #R 82, #T 84
+2020-02-28 03:25:00,341 [1] INFO POExileDirection.DeadlyLog4Net - resolution_height : 1080, resolution_width : 1920
+2020-02-28 03:25:00,343 [1] INFO POExileDirection.DeadlyLog4Net - 112.161.83.15574D43511C23B
+2020-02-28 03:25:00,449 [1] INFO POExileDirection.DeadlyLog4Net - Check_Authentication  : 112.161.83.15574D43511C23B
+2020-02-28 03:25:00,906 [1] INFO POExileDirection.DeadlyLog4Net - LOGIN Welcome : 112.161.83.15574D43511C23B
+2020-02-28 03:25:02,849 [1] INFO POExileDirection.DeadlyLog4Net - Get_NinjaData RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 03:25:02,854 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL Checked : Y
+2020-02-28 03:25:02,909 [1] INFO POExileDirection.DeadlyLog4Net - checkUseWheelStash : Y
+2020-02-28 03:25:02,911 [1] INFO POExileDirection.DeadlyLog4Net - EMERGENCYKEY Checked : Y
+2020-02-28 03:25:02,941 [1] INFO POExileDirection.DeadlyLog4Net - checkEmergency : Y
+2020-02-28 03:25:02,942 [1] INFO POExileDirection.DeadlyLog4Net - REMAININGKEY Checked : Y
+2020-02-28 03:25:02,978 [1] INFO POExileDirection.DeadlyLog4Net - checkRemaining : Y
+2020-02-28 03:25:02,986 [1] INFO POExileDirection.DeadlyLog4Net - FINDBYPOSITIONKEY Checked : Y
+2020-02-28 03:25:03,007 [1] INFO POExileDirection.DeadlyLog4Net - checkFindbyPosition : Y
+2020-02-28 03:25:03,012 [1] INFO POExileDirection.DeadlyLog4Net - JUNKEY Checked : Y
+2020-02-28 03:25:03,067 [1] INFO POExileDirection.DeadlyLog4Net - checkSyndicateJUN : Y
+2020-02-28 03:25:03,068 [1] INFO POExileDirection.DeadlyLog4Net - HIDEOUTKEY Checked : Y
+2020-02-28 03:25:03,083 [1] INFO POExileDirection.DeadlyLog4Net - checkHideout : Y
+2020-02-28 03:25:03,083 [1] INFO POExileDirection.DeadlyLog4Net - ALVAKEY Checked : Y
+2020-02-28 03:25:03,131 [1] INFO POExileDirection.DeadlyLog4Net - checkTempleALVA : Y
+2020-02-28 03:25:03,131 [1] INFO POExileDirection.DeadlyLog4Net - AtlasZANAKEY Checked : Y
+2020-02-28 03:25:03,169 [1] INFO POExileDirection.DeadlyLog4Net - checkAtlasZANA : Y
+2020-02-28 03:25:03,169 [1] INFO POExileDirection.DeadlyLog4Net - PUSHPINLOCK = Y
+2020-02-28 03:25:25,597 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 03:25:25,621 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick CTRL+MOUSEWHEEL : Y
+2020-02-28 03:25:25,677 [1] ERROR POExileDirection.DeadlyLog4Net - catch RunDeadlyTradeManager
+System.ComponentModel.Win32Exception (0x80004005): 지정된 파일을 찾을 수 없습니다
+   위치: System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   위치: System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   위치: POExileDirection.LauncherForm.RunDeadlyTradeManager() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\LauncherForm.cs:줄 1547
+2020-02-28 03:25:30,979 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Started
+2020-02-28 03:25:30,991 [1] ERROR POExileDirection.DeadlyLog4Net - catch GetCurrencyCalcDictionary
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: POExileDirection.ControlForm.GetCurrencyCalcDictionary() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\ControlForm.cs:줄 282
+2020-02-28 03:25:31,005 [1] INFO POExileDirection.DeadlyLog4Net - Validate_POELogFile RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 03:25:31,154 [1] INFO POExileDirection.DeadlyLog4Net - Init_ControlFormPosition RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 03:25:33,491 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL : Y
+2020-02-28 03:39:18,498 [1] INFO POExileDirection.DeadlyLog4Net - LOGOUT : 112.161.83.15574D43511C23B Elapsedminute : 0
+2020-02-28 03:39:18,498 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↑↑↑ Launcher END ↑↑↑ 〓〓〓〓〓
+2020-02-28 03:39:18,734 [1] INFO POExileDirection.DeadlyLog4Net - LOGOUT : 112.161.83.15574D43511C23B Elapsedminute : 0
+2020-02-28 03:39:18,736 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Closed
+2020-02-28 03:39:31,575 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↓↓↓ Launcher Load ↓↓↓ 〓〓〓〓〓
+2020-02-28 03:39:31,598 [1] INFO POExileDirection.DeadlyLog4Net - FONT Exist
+2020-02-28 03:39:31,693 [1] INFO POExileDirection.DeadlyLog4Net - Show Local Chat : True
+2020-02-28 03:39:31,693 [1] INFO POExileDirection.DeadlyLog4Net - UI Language : ENG
+2020-02-28 03:39:31,693 [1] INFO POExileDirection.DeadlyLog4Net - Flask Keys #1 49, #2 50, #3 51, #4 52, #5 53
+2020-02-28 03:39:31,693 [1] INFO POExileDirection.DeadlyLog4Net - Skill Keys #Q 81, #W 87, #E 69, #R 82, #T 84
+2020-02-28 03:39:31,694 [1] INFO POExileDirection.DeadlyLog4Net - resolution_height : 1080, resolution_width : 1920
+2020-02-28 03:39:31,695 [1] INFO POExileDirection.DeadlyLog4Net - 112.161.83.15574D43511C23B
+2020-02-28 03:39:31,791 [1] INFO POExileDirection.DeadlyLog4Net - Check_Authentication  : 112.161.83.15574D43511C23B
+2020-02-28 03:39:32,298 [1] INFO POExileDirection.DeadlyLog4Net - LOGIN Welcome : 112.161.83.15574D43511C23B
+2020-02-28 03:39:34,213 [1] INFO POExileDirection.DeadlyLog4Net - Get_NinjaData RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 03:39:34,216 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL Checked : Y
+2020-02-28 03:39:34,241 [1] INFO POExileDirection.DeadlyLog4Net - checkUseWheelStash : Y
+2020-02-28 03:39:34,241 [1] INFO POExileDirection.DeadlyLog4Net - EMERGENCYKEY Checked : Y
+2020-02-28 03:39:34,285 [1] INFO POExileDirection.DeadlyLog4Net - checkEmergency : Y
+2020-02-28 03:39:34,286 [1] INFO POExileDirection.DeadlyLog4Net - REMAININGKEY Checked : Y
+2020-02-28 03:39:34,319 [1] INFO POExileDirection.DeadlyLog4Net - checkRemaining : Y
+2020-02-28 03:39:34,320 [1] INFO POExileDirection.DeadlyLog4Net - FINDBYPOSITIONKEY Checked : Y
+2020-02-28 03:39:34,324 [1] INFO POExileDirection.DeadlyLog4Net - checkFindbyPosition : Y
+2020-02-28 03:39:34,325 [1] INFO POExileDirection.DeadlyLog4Net - JUNKEY Checked : Y
+2020-02-28 03:39:34,329 [1] INFO POExileDirection.DeadlyLog4Net - checkSyndicateJUN : Y
+2020-02-28 03:39:34,330 [1] INFO POExileDirection.DeadlyLog4Net - HIDEOUTKEY Checked : Y
+2020-02-28 03:39:34,334 [1] INFO POExileDirection.DeadlyLog4Net - checkHideout : Y
+2020-02-28 03:39:34,335 [1] INFO POExileDirection.DeadlyLog4Net - ALVAKEY Checked : Y
+2020-02-28 03:39:34,339 [1] INFO POExileDirection.DeadlyLog4Net - checkTempleALVA : Y
+2020-02-28 03:39:34,340 [1] INFO POExileDirection.DeadlyLog4Net - AtlasZANAKEY Checked : Y
+2020-02-28 03:39:34,345 [1] INFO POExileDirection.DeadlyLog4Net - checkAtlasZANA : Y
+2020-02-28 03:39:34,345 [1] INFO POExileDirection.DeadlyLog4Net - PUSHPINLOCK = Y
+2020-02-28 03:39:48,737 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 03:39:48,741 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick CTRL+MOUSEWHEEL : Y
+2020-02-28 03:39:48,790 [1] ERROR POExileDirection.DeadlyLog4Net - catch RunDeadlyTradeManager
+System.ComponentModel.Win32Exception (0x80004005): 지정된 파일을 찾을 수 없습니다
+   위치: System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   위치: System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   위치: POExileDirection.LauncherForm.RunDeadlyTradeManager() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\LauncherForm.cs:줄 1547
+2020-02-28 03:39:49,762 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Started
+2020-02-28 03:39:49,790 [1] INFO POExileDirection.DeadlyLog4Net - Validate_POELogFile RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 03:39:49,924 [1] INFO POExileDirection.DeadlyLog4Net - Init_ControlFormPosition RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 03:39:52,255 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL : Y
+2020-02-28 03:43:36,337 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 03:45:38,132 [1] ERROR POExileDirection.DeadlyLog4Net - catch SetIndicatorPictureBox
+System.ArgumentException: 경로의 형식이 잘못되었습니다.
+   위치: System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   위치: System.IO.Path.GetFullPathInternal(String path)
+   위치: System.IO.Path.GetFullPath(String path)
+   위치: System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   위치: System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   위치: System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   위치: POExileDirection.ITEMIndicatorForm.SetIndicatorPictureBox() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\DeadlyNotification\ITEMIndicatorForm.cs:줄 186
+2020-02-28 03:47:46,969 [1] INFO POExileDirection.DeadlyLog4Net - btnDeadlyTrade_MouseUp RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 03:50:32,375 [1] INFO POExileDirection.DeadlyLog4Net - LOGOUT : 112.161.83.15574D43511C23B Elapsedminute : 0
+2020-02-28 03:50:32,383 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Closed
+2020-02-28 04:04:09,758 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↓↓↓ Launcher Load ↓↓↓ 〓〓〓〓〓
+2020-02-28 04:04:09,781 [1] INFO POExileDirection.DeadlyLog4Net - FONT Exist
+2020-02-28 04:04:09,852 [1] INFO POExileDirection.DeadlyLog4Net - Show Local Chat : True
+2020-02-28 04:04:09,852 [1] INFO POExileDirection.DeadlyLog4Net - UI Language : ENG
+2020-02-28 04:04:09,852 [1] INFO POExileDirection.DeadlyLog4Net - Flask Keys #1 49, #2 50, #3 51, #4 52, #5 53
+2020-02-28 04:04:09,852 [1] INFO POExileDirection.DeadlyLog4Net - Skill Keys #Q 81, #W 87, #E 69, #R 82, #T 84
+2020-02-28 04:04:09,852 [1] INFO POExileDirection.DeadlyLog4Net - resolution_height : 1080, resolution_width : 1920
+2020-02-28 04:04:09,854 [1] INFO POExileDirection.DeadlyLog4Net - 112.161.83.15574D43511C23B
+2020-02-28 04:04:10,440 [1] INFO POExileDirection.DeadlyLog4Net - LOGIN Welcome : 112.161.83.15574D43511C23B
+2020-02-28 04:04:12,337 [1] INFO POExileDirection.DeadlyLog4Net - Get_NinjaData RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 04:04:12,339 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL Checked : Y
+2020-02-28 04:04:12,352 [1] INFO POExileDirection.DeadlyLog4Net - checkUseWheelStash : Y
+2020-02-28 04:04:12,352 [1] INFO POExileDirection.DeadlyLog4Net - EMERGENCYKEY Checked : Y
+2020-02-28 04:04:12,358 [1] INFO POExileDirection.DeadlyLog4Net - checkEmergency : Y
+2020-02-28 04:04:12,359 [1] INFO POExileDirection.DeadlyLog4Net - REMAININGKEY Checked : Y
+2020-02-28 04:04:12,378 [1] INFO POExileDirection.DeadlyLog4Net - checkRemaining : Y
+2020-02-28 04:04:12,379 [1] INFO POExileDirection.DeadlyLog4Net - FINDBYPOSITIONKEY Checked : Y
+2020-02-28 04:04:12,383 [1] INFO POExileDirection.DeadlyLog4Net - checkFindbyPosition : Y
+2020-02-28 04:04:12,383 [1] INFO POExileDirection.DeadlyLog4Net - JUNKEY Checked : Y
+2020-02-28 04:04:12,388 [1] INFO POExileDirection.DeadlyLog4Net - checkSyndicateJUN : Y
+2020-02-28 04:04:12,388 [1] INFO POExileDirection.DeadlyLog4Net - HIDEOUTKEY Checked : Y
+2020-02-28 04:04:12,394 [1] INFO POExileDirection.DeadlyLog4Net - checkHideout : Y
+2020-02-28 04:04:12,394 [1] INFO POExileDirection.DeadlyLog4Net - ALVAKEY Checked : Y
+2020-02-28 04:04:12,399 [1] INFO POExileDirection.DeadlyLog4Net - checkTempleALVA : Y
+2020-02-28 04:04:12,400 [1] INFO POExileDirection.DeadlyLog4Net - AtlasZANAKEY Checked : Y
+2020-02-28 04:04:12,405 [1] INFO POExileDirection.DeadlyLog4Net - checkAtlasZANA : Y
+2020-02-28 04:04:12,405 [1] INFO POExileDirection.DeadlyLog4Net - PUSHPINLOCK = Y
+2020-02-28 04:04:27,178 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 04:04:27,183 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick CTRL+MOUSEWHEEL : Y
+2020-02-28 04:04:27,273 [1] ERROR POExileDirection.DeadlyLog4Net - catch RunDeadlyTradeManager
+System.ComponentModel.Win32Exception (0x80004005): 지정된 파일을 찾을 수 없습니다
+   위치: System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   위치: System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   위치: POExileDirection.LauncherForm.RunDeadlyTradeManager() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\LauncherForm.cs:줄 1547
+2020-02-28 04:04:29,119 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Started
+2020-02-28 04:04:29,147 [1] INFO POExileDirection.DeadlyLog4Net - Validate_POELogFile RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 04:04:29,284 [1] INFO POExileDirection.DeadlyLog4Net - Init_ControlFormPosition RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 04:04:31,629 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL : Y
+2020-02-28 04:05:52,408 [1] INFO POExileDirection.DeadlyLog4Net - LOGOUT : 112.161.83.15574D43511C23B Elapsedminute : 0
+2020-02-28 04:05:52,417 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Closed
+2020-02-28 04:06:04,322 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↓↓↓ Launcher Load ↓↓↓ 〓〓〓〓〓
+2020-02-28 04:06:04,441 [1] INFO POExileDirection.DeadlyLog4Net - FONT Exist
+2020-02-28 04:06:05,121 [1] INFO POExileDirection.DeadlyLog4Net - Show Local Chat : True
+2020-02-28 04:06:05,121 [1] INFO POExileDirection.DeadlyLog4Net - UI Language : ENG
+2020-02-28 04:06:05,121 [1] INFO POExileDirection.DeadlyLog4Net - Flask Keys #1 49, #2 50, #3 51, #4 52, #5 53
+2020-02-28 04:06:05,122 [1] INFO POExileDirection.DeadlyLog4Net - Skill Keys #Q 81, #W 87, #E 69, #R 82, #T 84
+2020-02-28 04:06:05,122 [1] INFO POExileDirection.DeadlyLog4Net - resolution_height : 1080, resolution_width : 1920
+2020-02-28 04:06:05,123 [1] INFO POExileDirection.DeadlyLog4Net - 112.161.83.15574D43511C23B
+2020-02-28 04:06:05,890 [1] INFO POExileDirection.DeadlyLog4Net - Check_Authentication  : 112.161.83.15574D43511C23B
+2020-02-28 04:06:06,567 [1] INFO POExileDirection.DeadlyLog4Net - LOGIN Welcome : 112.161.83.15574D43511C23B
+2020-02-28 04:06:08,680 [1] INFO POExileDirection.DeadlyLog4Net - Get_NinjaData RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 04:06:08,683 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL Checked : Y
+2020-02-28 04:06:08,708 [1] INFO POExileDirection.DeadlyLog4Net - checkUseWheelStash : Y
+2020-02-28 04:06:08,709 [1] INFO POExileDirection.DeadlyLog4Net - EMERGENCYKEY Checked : Y
+2020-02-28 04:06:08,714 [1] INFO POExileDirection.DeadlyLog4Net - checkEmergency : Y
+2020-02-28 04:06:08,715 [1] INFO POExileDirection.DeadlyLog4Net - REMAININGKEY Checked : Y
+2020-02-28 04:06:08,743 [1] INFO POExileDirection.DeadlyLog4Net - checkRemaining : Y
+2020-02-28 04:06:08,743 [1] INFO POExileDirection.DeadlyLog4Net - FINDBYPOSITIONKEY Checked : Y
+2020-02-28 04:06:08,748 [1] INFO POExileDirection.DeadlyLog4Net - checkFindbyPosition : Y
+2020-02-28 04:06:08,748 [1] INFO POExileDirection.DeadlyLog4Net - JUNKEY Checked : Y
+2020-02-28 04:06:08,753 [1] INFO POExileDirection.DeadlyLog4Net - checkSyndicateJUN : Y
+2020-02-28 04:06:08,753 [1] INFO POExileDirection.DeadlyLog4Net - HIDEOUTKEY Checked : Y
+2020-02-28 04:06:08,758 [1] INFO POExileDirection.DeadlyLog4Net - checkHideout : Y
+2020-02-28 04:06:08,758 [1] INFO POExileDirection.DeadlyLog4Net - ALVAKEY Checked : Y
+2020-02-28 04:06:08,763 [1] INFO POExileDirection.DeadlyLog4Net - checkTempleALVA : Y
+2020-02-28 04:06:08,763 [1] INFO POExileDirection.DeadlyLog4Net - AtlasZANAKEY Checked : Y
+2020-02-28 04:06:08,768 [1] INFO POExileDirection.DeadlyLog4Net - checkAtlasZANA : Y
+2020-02-28 04:06:08,768 [1] INFO POExileDirection.DeadlyLog4Net - PUSHPINLOCK = Y
+2020-02-28 04:06:27,368 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 04:06:27,377 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick CTRL+MOUSEWHEEL : Y
+2020-02-28 04:06:27,540 [1] ERROR POExileDirection.DeadlyLog4Net - catch RunDeadlyTradeManager
+System.ComponentModel.Win32Exception (0x80004005): 지정된 파일을 찾을 수 없습니다
+   위치: System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   위치: System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   위치: POExileDirection.LauncherForm.RunDeadlyTradeManager() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\LauncherForm.cs:줄 1547
+2020-02-28 04:06:28,138 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Started
+2020-02-28 04:06:28,166 [1] INFO POExileDirection.DeadlyLog4Net - Validate_POELogFile RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 04:06:28,311 [1] INFO POExileDirection.DeadlyLog4Net - Init_ControlFormPosition RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 04:14:27,589 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↓↓↓ Launcher Load ↓↓↓ 〓〓〓〓〓
+2020-02-28 04:14:27,723 [1] INFO POExileDirection.DeadlyLog4Net - FONT Exist
+2020-02-28 04:14:28,660 [1] INFO POExileDirection.DeadlyLog4Net - Show Local Chat : True
+2020-02-28 04:14:28,661 [1] INFO POExileDirection.DeadlyLog4Net - UI Language : ENG
+2020-02-28 04:14:28,661 [1] INFO POExileDirection.DeadlyLog4Net - Flask Keys #1 49, #2 50, #3 51, #4 52, #5 53
+2020-02-28 04:14:28,661 [1] INFO POExileDirection.DeadlyLog4Net - Skill Keys #Q 81, #W 87, #E 69, #R 82, #T 84
+2020-02-28 04:14:28,661 [1] INFO POExileDirection.DeadlyLog4Net - resolution_height : 1080, resolution_width : 1920
+2020-02-28 04:14:28,663 [1] INFO POExileDirection.DeadlyLog4Net - 112.161.83.15574D43511C23B
+2020-02-28 04:14:29,688 [1] INFO POExileDirection.DeadlyLog4Net - Check_Authentication  : 112.161.83.15574D43511C23B
+2020-02-28 04:14:30,889 [1] INFO POExileDirection.DeadlyLog4Net - LOGIN Welcome : 112.161.83.15574D43511C23B
+2020-02-28 04:14:33,024 [1] INFO POExileDirection.DeadlyLog4Net - Get_NinjaData RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 04:14:33,027 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL Checked : Y
+2020-02-28 04:14:33,032 [1] INFO POExileDirection.DeadlyLog4Net - checkUseWheelStash : Y
+2020-02-28 04:14:33,033 [1] INFO POExileDirection.DeadlyLog4Net - EMERGENCYKEY Checked : Y
+2020-02-28 04:14:33,037 [1] INFO POExileDirection.DeadlyLog4Net - checkEmergency : Y
+2020-02-28 04:14:33,038 [1] INFO POExileDirection.DeadlyLog4Net - REMAININGKEY Checked : Y
+2020-02-28 04:14:33,047 [1] INFO POExileDirection.DeadlyLog4Net - checkRemaining : Y
+2020-02-28 04:14:33,047 [1] INFO POExileDirection.DeadlyLog4Net - FINDBYPOSITIONKEY Checked : Y
+2020-02-28 04:14:33,052 [1] INFO POExileDirection.DeadlyLog4Net - checkFindbyPosition : Y
+2020-02-28 04:14:33,053 [1] INFO POExileDirection.DeadlyLog4Net - JUNKEY Checked : Y
+2020-02-28 04:14:33,059 [1] INFO POExileDirection.DeadlyLog4Net - checkSyndicateJUN : Y
+2020-02-28 04:14:33,060 [1] INFO POExileDirection.DeadlyLog4Net - HIDEOUTKEY Checked : Y
+2020-02-28 04:14:33,064 [1] INFO POExileDirection.DeadlyLog4Net - checkHideout : Y
+2020-02-28 04:14:33,065 [1] INFO POExileDirection.DeadlyLog4Net - ALVAKEY Checked : Y
+2020-02-28 04:14:33,074 [1] INFO POExileDirection.DeadlyLog4Net - checkTempleALVA : Y
+2020-02-28 04:14:33,075 [1] INFO POExileDirection.DeadlyLog4Net - AtlasZANAKEY Checked : Y
+2020-02-28 04:14:33,080 [1] INFO POExileDirection.DeadlyLog4Net - checkAtlasZANA : Y
+2020-02-28 04:14:33,080 [1] INFO POExileDirection.DeadlyLog4Net - PUSHPINLOCK = Y
+2020-02-28 04:14:54,944 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 04:14:54,952 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick CTRL+MOUSEWHEEL : Y
+2020-02-28 04:14:55,103 [1] ERROR POExileDirection.DeadlyLog4Net - catch RunDeadlyTradeManager
+System.ComponentModel.Win32Exception (0x80004005): 지정된 파일을 찾을 수 없습니다
+   위치: System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   위치: System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   위치: POExileDirection.LauncherForm.RunDeadlyTradeManager() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\LauncherForm.cs:줄 1547
+2020-02-28 04:14:55,950 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Started
+2020-02-28 04:14:55,978 [1] INFO POExileDirection.DeadlyLog4Net - Validate_POELogFile RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 04:14:56,120 [1] INFO POExileDirection.DeadlyLog4Net - Init_ControlFormPosition RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 04:14:58,496 [12] ERROR POExileDirection.DeadlyLog4Net - catch logFileParserThread
+System.InvalidOperationException: 크로스 스레드 작업이 잘못되었습니다. 'NotificationContainer' 컨트롤이 자신이 만들어진 스레드가 아닌 스레드에서 액세스되었습니다.
+   위치: System.Windows.Forms.Control.get_Handle()
+   위치: System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   위치: System.Windows.Forms.Control.Show()
+   위치: POExileDirection.ControlForm.ShowHide_Addon_Forms(Boolean bShow) 파일 D:\GitDesk\DeadlyTrade\POExileDirection\ControlForm.cs:줄 1231
+   위치: POExileDirection.ControlForm.logFileParserThread() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\ControlForm.cs:줄 1752
+2020-02-28 04:15:50,712 [1] INFO POExileDirection.DeadlyLog4Net - LOGOUT : 112.161.83.15574D43511C23B Elapsedminute : 0
+2020-02-28 04:15:50,721 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Closed
+2020-02-28 04:21:39,577 [1] INFO POExileDirection.DeadlyLog4Net - 〓〓〓〓〓 ↓↓↓ Launcher Load ↓↓↓ 〓〓〓〓〓
+2020-02-28 04:21:39,640 [1] INFO POExileDirection.DeadlyLog4Net - FONT Exist
+2020-02-28 04:21:39,761 [1] INFO POExileDirection.DeadlyLog4Net - Show Local Chat : True
+2020-02-28 04:21:39,762 [1] INFO POExileDirection.DeadlyLog4Net - UI Language : ENG
+2020-02-28 04:21:39,762 [1] INFO POExileDirection.DeadlyLog4Net - Flask Keys #1 49, #2 50, #3 51, #4 52, #5 53
+2020-02-28 04:21:39,762 [1] INFO POExileDirection.DeadlyLog4Net - Skill Keys #Q 81, #W 87, #E 69, #R 82, #T 84
+2020-02-28 04:21:39,763 [1] INFO POExileDirection.DeadlyLog4Net - resolution_height : 1080, resolution_width : 1920
+2020-02-28 04:21:39,765 [1] INFO POExileDirection.DeadlyLog4Net - 112.161.83.15574D43511C23B
+2020-02-28 04:21:39,953 [1] INFO POExileDirection.DeadlyLog4Net - Check_Authentication  : 112.161.83.15574D43511C23B
+2020-02-28 04:21:40,505 [1] INFO POExileDirection.DeadlyLog4Net - LOGIN Welcome : 112.161.83.15574D43511C23B
+2020-02-28 04:21:42,356 [1] INFO POExileDirection.DeadlyLog4Net - Get_NinjaData RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 04:21:42,359 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL Checked : Y
+2020-02-28 04:21:42,371 [1] INFO POExileDirection.DeadlyLog4Net - checkUseWheelStash : Y
+2020-02-28 04:21:42,372 [1] INFO POExileDirection.DeadlyLog4Net - EMERGENCYKEY Checked : Y
+2020-02-28 04:21:42,378 [1] INFO POExileDirection.DeadlyLog4Net - checkEmergency : Y
+2020-02-28 04:21:42,379 [1] INFO POExileDirection.DeadlyLog4Net - REMAININGKEY Checked : Y
+2020-02-28 04:21:42,387 [1] INFO POExileDirection.DeadlyLog4Net - checkRemaining : Y
+2020-02-28 04:21:42,387 [1] INFO POExileDirection.DeadlyLog4Net - FINDBYPOSITIONKEY Checked : Y
+2020-02-28 04:21:42,392 [1] INFO POExileDirection.DeadlyLog4Net - checkFindbyPosition : Y
+2020-02-28 04:21:42,393 [1] INFO POExileDirection.DeadlyLog4Net - JUNKEY Checked : Y
+2020-02-28 04:21:42,408 [1] INFO POExileDirection.DeadlyLog4Net - checkSyndicateJUN : Y
+2020-02-28 04:21:42,416 [1] INFO POExileDirection.DeadlyLog4Net - HIDEOUTKEY Checked : Y
+2020-02-28 04:21:42,429 [1] INFO POExileDirection.DeadlyLog4Net - checkHideout : Y
+2020-02-28 04:21:42,430 [1] INFO POExileDirection.DeadlyLog4Net - ALVAKEY Checked : Y
+2020-02-28 04:21:42,445 [1] INFO POExileDirection.DeadlyLog4Net - checkTempleALVA : Y
+2020-02-28 04:21:42,445 [1] INFO POExileDirection.DeadlyLog4Net - AtlasZANAKEY Checked : Y
+2020-02-28 04:21:42,450 [1] INFO POExileDirection.DeadlyLog4Net - checkAtlasZANA : Y
+2020-02-28 04:21:42,450 [1] INFO POExileDirection.DeadlyLog4Net - PUSHPINLOCK = Y
+2020-02-28 04:21:57,456 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 04:21:57,467 [1] INFO POExileDirection.DeadlyLog4Net - TimerDetect_Tick CTRL+MOUSEWHEEL : Y
+2020-02-28 04:21:57,496 [1] ERROR POExileDirection.DeadlyLog4Net - catch RunDeadlyTradeManager
+System.ComponentModel.Win32Exception (0x80004005): 지정된 파일을 찾을 수 없습니다
+   위치: System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   위치: System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   위치: POExileDirection.LauncherForm.RunDeadlyTradeManager() 파일 D:\GitDesk\DeadlyTrade\POExileDirection\LauncherForm.cs:줄 1547
+2020-02-28 04:22:00,375 [1] INFO POExileDirection.DeadlyLog4Net - ▶ DeadlyTrade Main Control Form Started
+2020-02-28 04:22:00,403 [1] INFO POExileDirection.DeadlyLog4Net - Validate_POELogFile RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 04:22:00,546 [1] INFO POExileDirection.DeadlyLog4Net - Init_ControlFormPosition RESOLUTION : D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\ConfigPath.ini
+2020-02-28 04:22:03,097 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+MOUSEWHEEL : Y
+2020-02-28 04:45:40,567 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 04:46:08,304 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 04:47:08,151 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 04:51:51,472 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 04:52:27,736 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 04:52:38,968 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 04:54:03,000 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 04:54:35,968 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 04:54:44,569 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 04:55:35,824 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 05:03:50,873 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 05:03:56,617 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 05:03:58,425 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 05:10:33,569 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 05:13:15,042 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 05:20:07,875 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 05:24:46,563 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading
+2020-02-28 05:33:05,756 [1] INFO POExileDirection.DeadlyLog4Net - CTRL+C for Trading

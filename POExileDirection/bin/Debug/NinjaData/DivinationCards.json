@@ -16,14 +16,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.71,
-          0.78,
-          1.97,
-          4.9,
-          5.3,
-          5.23
+          0.07,
+          1.24,
+          4.15,
+          4.56,
+          4.2,
+          4.72
         ],
-        "TotalChange": 5.23
+        "TotalChange": 4.72
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -34,9 +34,9 @@
       ],
       "FlavourText": "What do you see in the mirror?",
       "ItemType": "Unknown",
-      "ChaosValue": 5664.96,
+      "ChaosValue": 5677.76,
       "ExaltedValue": 32.0,
-      "Count": 73
+      "Count": 72
     },
     {
       "Id": 1476,
@@ -54,14 +54,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          1.72,
-          0.74,
-          0.9,
-          0.68,
-          -2.23,
-          -3.1
+          -0.96,
+          -0.81,
+          -1.02,
+          -3.88,
+          -4.84,
+          -8.1
         ],
-        "TotalChange": -3.1
+        "TotalChange": -8.1
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -72,8 +72,8 @@
       ],
       "FlavourText": "\"They said I needed my head examined, but I'd rather just take yours.\" - Klopek the Cannibal",
       "ItemType": "Unknown",
-      "ChaosValue": 1416.24,
-      "ExaltedValue": 8.0,
+      "ChaosValue": 1366.21,
+      "ExaltedValue": 7.7,
       "Count": 99
     },
     {
@@ -92,14 +92,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -0.93,
-          -7.0,
-          -14.58,
-          -14.39,
-          -19.31,
-          -15.23
+          -6.13,
+          -13.78,
+          -13.59,
+          -18.56,
+          -14.44,
+          -14.25
         ],
-        "TotalChange": -15.23
+        "TotalChange": -14.25
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -110,7 +110,7 @@
       ],
       "FlavourText": "A man who hears voices may not necessarily be crazy.",
       "ItemType": "Unknown",
-      "ChaosValue": 1310.02,
+      "ChaosValue": 1312.98,
       "ExaltedValue": 7.4,
       "Count": 99
     },
@@ -130,14 +130,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.66,
-          -1.7,
-          -3.82,
-          -6.13,
-          -6.2,
-          -6.55
+          -2.34,
+          -4.45,
+          -6.74,
+          -6.82,
+          -7.86,
+          -12.03
         ],
-        "TotalChange": -6.55
+        "TotalChange": -12.03
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -148,8 +148,8 @@
       ],
       "FlavourText": "<size:31>{Your era is now,\nyour power unwavered, \nsoon we will see\nwho the gods truly favoured.}",
       "ItemType": "Unknown",
-      "ChaosValue": 973.66,
-      "ExaltedValue": 5.5,
+      "ChaosValue": 922.64,
+      "ExaltedValue": 5.2,
       "Count": 99
     },
     {
@@ -168,14 +168,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.72,
-          0.75,
-          1.18,
-          2.09,
-          2.25,
-          1.94
+          0.04,
+          0.46,
+          1.36,
+          1.52,
+          1.08,
+          3.81
         ],
-        "TotalChange": 1.94
+        "TotalChange": 3.81
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -186,9 +186,9 @@
       ],
       "FlavourText": "<size:30>{\"Greetings! Just because you think I'm greedy doesn't mean I'm not willing to share. You'll just have to kill me first.\"\n-Grandmaster Dy'Ness}",
       "ItemType": "Unknown",
-      "ChaosValue": 531.09,
-      "ExaltedValue": 3.0,
-      "Count": 28
+      "ChaosValue": 544.71,
+      "ExaltedValue": 3.07,
+      "Count": 31
     },
     {
       "Id": 7437,
@@ -206,14 +206,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.19,
-          -3.23,
-          -3.52,
-          -6.81,
-          -3.39,
-          -2.57
+          -3.41,
+          -3.7,
+          -6.98,
+          -3.58,
+          -2.86,
+          -2.54
         ],
-        "TotalChange": -2.57
+        "TotalChange": -2.54
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -224,7 +224,7 @@
       ],
       "FlavourText": "Her beauty did not fade \nher humanity did not survive.",
       "ItemType": "Unknown",
-      "ChaosValue": 389.47,
+      "ChaosValue": 390.35,
       "ExaltedValue": 2.2,
       "Count": 99
     },
@@ -244,14 +244,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.71,
-          0.75,
-          1.18,
-          1.39,
-          2.21,
-          -0.54
+          0.03,
+          0.46,
+          0.67,
+          1.49,
+          0.84,
+          1.45
         ],
-        "TotalChange": -0.54
+        "TotalChange": 1.45
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -262,8 +262,8 @@
       ],
       "FlavourText": "Blessed is the blood of the beholden disciple. The earth is anointed by his step. The damnable are sanctified by his strike.",
       "ItemType": "Unknown",
-      "ChaosValue": 379.97,
-      "ExaltedValue": 2.15,
+      "ChaosValue": 390.35,
+      "ExaltedValue": 2.2,
       "Count": 99
     },
     {
@@ -282,14 +282,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          1.53,
-          0.0,
-          0.0,
-          2.5,
-          3.06,
-          3.23
+          -1.51,
+          -1.51,
+          0.96,
+          1.51,
+          1.43,
+          -5.34
         ],
-        "TotalChange": 3.23
+        "TotalChange": -5.34
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -300,8 +300,8 @@
       ],
       "FlavourText": "<size:28>{A treasure worth killing for \nis a treasure worth dying for.}",
       "ItemType": "Unknown",
-      "ChaosValue": 247.76,
-      "ExaltedValue": 1.4,
+      "ChaosValue": 230.66,
+      "ExaltedValue": 1.3,
       "Count": 99
     },
     {
@@ -320,14 +320,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          2.49,
-          2.86,
-          2.71,
-          1.15,
-          3.81,
-          4.08
+          0.37,
+          0.22,
+          -1.3,
+          1.29,
+          1.45,
+          1.79
         ],
-        "TotalChange": 4.08
+        "TotalChange": 1.79
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -338,7 +338,7 @@
       ],
       "FlavourText": "<size:24>{Do the simple words used \nalone cause men to cheer? \nOne hundred others might \njust as soon make a jeer. \nPerchance it was the turn \nof the tone in this bit. \nSee how their hearts shone once, \nby my song, they were lit.}",
       "ItemType": "Unknown",
-      "ChaosValue": 212.44,
+      "ChaosValue": 212.92,
       "ExaltedValue": 1.2,
       "Count": 99
     },
@@ -358,14 +358,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -0.13,
-          -0.53,
-          -0.07,
-          -7.18,
-          0.21,
-          -3.7
+          -0.4,
+          0.06,
+          -7.06,
+          0.33,
+          0.67,
+          1.23
         ],
-        "TotalChange": -3.7
+        "TotalChange": 1.23
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -376,46 +376,8 @@
       ],
       "FlavourText": "At night, when the seas are calm, and the skies dark, he can see it. The formless fiend that took his eye, and fractured his mind.",
       "ItemType": "Unknown",
-      "ChaosValue": 202.37,
-      "ExaltedValue": 1.14,
-      "Count": 99
-    },
-    {
-      "Id": 21582,
-      "Name": "Pride of the First Ones",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 7,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "PrideOfTheFirstOnes",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.79,
-          0.83,
-          1.26,
-          2.17,
-          2.55,
-          12.22
-        ],
-        "TotalChange": 12.22
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Farrul's Fur}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "Upon silent paws and masked by the reeds, \nFarrul's hunt begins as the light recedes.",
-      "ItemType": "Unknown",
-      "ChaosValue": 194.73,
-      "ExaltedValue": 1.1,
+      "ChaosValue": 212.47,
+      "ExaltedValue": 1.2,
       "Count": 99
     },
     {
@@ -434,14 +396,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.7,
-          0.75,
-          1.22,
-          2.09,
-          2.25,
-          1.93
+          0.06,
+          0.51,
+          1.38,
+          1.54,
+          1.13,
+          1.46
         ],
-        "TotalChange": 1.93
+        "TotalChange": 1.46
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -452,7 +414,45 @@
       ],
       "FlavourText": "If enough people believe something to be true, whether or not it is becomes irrelevant.",
       "ItemType": "Unknown",
-      "ChaosValue": 177.02,
+      "ChaosValue": 177.43,
+      "ExaltedValue": 1.0,
+      "Count": 99
+    },
+    {
+      "Id": 21582,
+      "Name": "Pride of the First Ones",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 7,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "PrideOfTheFirstOnes",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.04,
+          0.46,
+          1.37,
+          1.75,
+          1.22,
+          1.45
+        ],
+        "TotalChange": 1.45
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Farrul's Fur}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Upon silent paws and masked by the reeds, \nFarrul's hunt begins as the light recedes.",
+      "ItemType": "Unknown",
+      "ChaosValue": 177.43,
       "ExaltedValue": 1.0,
       "Count": 99
     },
@@ -472,14 +472,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          1.88,
-          0.64,
-          1.07,
-          1.96,
-          2.13,
-          0.66
+          -1.22,
+          -0.8,
+          0.08,
+          0.24,
+          -10.05,
+          -5.79
         ],
-        "TotalChange": 0.66
+        "TotalChange": -5.79
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -490,8 +490,46 @@
       ],
       "FlavourText": "We tried to tell him to get his head checked.",
       "ItemType": "Unknown",
-      "ChaosValue": 175.0,
-      "ExaltedValue": 0.99,
+      "ChaosValue": 166.87,
+      "ExaltedValue": 0.94,
+      "Count": 99
+    },
+    {
+      "Id": 22460,
+      "Name": "The Damned",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 6,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheDamned",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          2.27,
+          2.27,
+          5.32,
+          4.52,
+          7.3,
+          31.18
+        ],
+        "TotalChange": 31.18
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Soul Ripper}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<size:28>{Souls along a conduit of blood, \nfrom one vessel to the next.}",
+      "ItemType": "Unknown",
+      "ChaosValue": 115.44,
+      "ExaltedValue": 0.65,
       "Count": 99
     },
     {
@@ -510,14 +548,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          3.09,
-          3.09,
-          3.09,
-          5.15,
-          7.22,
-          6.69
+          0.0,
+          0.0,
+          2.0,
+          4.0,
+          3.35,
+          3.0
         ],
-        "TotalChange": 6.69
+        "TotalChange": 3.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -528,7 +566,7 @@
       ],
       "FlavourText": "When the world burned, the greedy burned with it, while the clever left as paupers.",
       "ItemType": "Unknown",
-      "ChaosValue": 103.49,
+      "ChaosValue": 103.0,
       "ExaltedValue": 0.58,
       "Count": 99
     },
@@ -548,14 +586,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -0.7,
-          0.0,
-          -0.14,
-          -3.31,
-          -5.0,
-          -6.07
+          0.7,
+          0.56,
+          -2.63,
+          -4.33,
+          -4.33,
+          -4.33
         ],
-        "TotalChange": -6.07
+        "TotalChange": -4.33
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -566,122 +604,8 @@
       ],
       "FlavourText": "\"Forge me a carapace from their skin, imbued with their soul. Then feed their flesh to the hounds.\"",
       "ItemType": "Unknown",
-      "ChaosValue": 93.93,
-      "ExaltedValue": 0.53,
-      "Count": 99
-    },
-    {
-      "Id": 22460,
-      "Name": "The Damned",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 6,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheDamned",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          3.53,
-          5.88,
-          5.88,
-          9.04,
-          8.21,
-          9.41
-        ],
-        "TotalChange": 9.41
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Soul Ripper}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<size:28>{Souls along a conduit of blood, \nfrom one vessel to the next.}",
-      "ItemType": "Unknown",
-      "ChaosValue": 93.0,
-      "ExaltedValue": 0.53,
-      "Count": 99
-    },
-    {
-      "Id": 6942,
-      "Name": "Immortal Resolve",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 6,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "ImmortalResolve",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          3.9,
-          2.29,
-          3.9,
-          3.9
-        ],
-        "TotalChange": 3.9
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<prophecy>{Fated Connections}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "The threads of fate are the strongest ties.",
-      "ItemType": "Unknown",
-      "ChaosValue": 80.0,
-      "ExaltedValue": 0.45,
-      "Count": 99
-    },
-    {
-      "Id": 1850,
-      "Name": "Wealth and Power",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 11,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "WealthAndPower",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.8,
-          0.8,
-          -0.03,
-          -0.53,
-          -0.53,
-          -0.53
-        ],
-        "TotalChange": -0.53
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<gemitem>{Level 4 Enlighten}\n<corrupted>{Corrupted}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<size:31>{The greatness of a man is not in how much wealth or power he acquires, but in his integrity and his ability to positively affect those around him.}",
-      "ItemType": "Unknown",
-      "ChaosValue": 75.0,
-      "ExaltedValue": 0.42,
+      "ChaosValue": 95.0,
+      "ExaltedValue": 0.54,
       "Count": 99
     },
     {
@@ -701,13 +625,13 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
           -5.54,
           1.72,
           1.13,
-          2.78
+          0.9,
+          0.0
         ],
-        "TotalChange": 2.78
+        "TotalChange": 0.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -718,8 +642,46 @@
       ],
       "FlavourText": "<size:28>{Every skull was once a person. \nThough 'Who?' is rarely asked. \nFriends, who wear \nthe crown of Nook, \nNever need to ask. \nThey remember.}",
       "ItemType": "Unknown",
-      "ChaosValue": 74.0,
-      "ExaltedValue": 0.42,
+      "ChaosValue": 72.0,
+      "ExaltedValue": 0.41,
+      "Count": 99
+    },
+    {
+      "Id": 6942,
+      "Name": "Immortal Resolve",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 6,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "ImmortalResolve",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          3.9,
+          2.29,
+          3.9,
+          3.9,
+          -7.83
+        ],
+        "TotalChange": -7.83
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<prophecy>{Fated Connections}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "The threads of fate are the strongest ties.",
+      "ItemType": "Unknown",
+      "ChaosValue": 70.97,
+      "ExaltedValue": 0.4,
       "Count": 99
     },
     {
@@ -738,14 +700,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -1.41,
-          -1.41,
-          -1.41,
-          -1.41,
-          -8.13,
-          -3.55
+          0.0,
+          0.0,
+          0.0,
+          -6.81,
+          -2.34,
+          -1.73
         ],
-        "TotalChange": -3.55
+        "TotalChange": -1.73
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -756,7 +718,45 @@
       ],
       "FlavourText": "When sky meets ground the flames can be found, but who has the will to tame them.",
       "ItemType": "Unknown",
-      "ChaosValue": 68.48,
+      "ChaosValue": 68.79,
+      "ExaltedValue": 0.39,
+      "Count": 99
+    },
+    {
+      "Id": 1850,
+      "Name": "Wealth and Power",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 11,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "WealthAndPower",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          -0.82,
+          -1.32,
+          -1.32,
+          -1.79,
+          -9.61
+        ],
+        "TotalChange": -9.61
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<gemitem>{Level 4 Enlighten}\n<corrupted>{Corrupted}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<size:31>{The greatness of a man is not in how much wealth or power he acquires, but in his integrity and his ability to positively affect those around him.}",
+      "ItemType": "Unknown",
+      "ChaosValue": 68.7,
       "ExaltedValue": 0.39,
       "Count": 99
     },
@@ -776,14 +776,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.93,
-          -1.13,
-          -1.55,
-          -1.19,
-          0.76,
-          1.49
+          -2.04,
+          -2.45,
+          -2.09,
+          -0.16,
+          0.56,
+          -11.27
         ],
-        "TotalChange": 1.49
+        "TotalChange": -11.27
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -794,8 +794,8 @@
       ],
       "FlavourText": "They say when a dragon dies, the flesh smoulders and burns until all that remains is the still, white-hot, heart.",
       "ItemType": "Unknown",
-      "ChaosValue": 68.0,
-      "ExaltedValue": 0.38,
+      "ChaosValue": 60.0,
+      "ExaltedValue": 0.34,
       "Count": 99
     },
     {
@@ -814,14 +814,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -1.79,
-          -1.7,
-          -1.79,
-          -0.6,
-          -0.27,
-          0.0
+          0.09,
+          0.0,
+          1.21,
+          1.55,
+          1.82,
+          1.56
         ],
-        "TotalChange": 0.0
+        "TotalChange": 1.56
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -832,8 +832,46 @@
       ],
       "FlavourText": "To tame a beast, you first must subdue its heart.",
       "ItemType": "Unknown",
-      "ChaosValue": 56.0,
-      "ExaltedValue": 0.32,
+      "ChaosValue": 55.86,
+      "ExaltedValue": 0.31,
+      "Count": 99
+    },
+    {
+      "Id": 22476,
+      "Name": "Void of the Elements",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 3,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "VoidOfTheElements",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -4.26,
+          -4.26,
+          -4.26,
+          2.13,
+          4.4,
+          6.38
+        ],
+        "TotalChange": 6.38
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<magicitem>{Overpowering Opal Ring}\n<default>{Item Level:} <normal>{100}\n<default>{Elder Item}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Though the forces of nature are mighty and intimidating, it is their absence which should be feared.",
+      "ItemType": "Unknown",
+      "ChaosValue": 50.0,
+      "ExaltedValue": 0.28,
       "Count": 99
     },
     {
@@ -853,13 +891,13 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
           0.92,
           0.32,
           0.0,
-          1.84
+          0.76,
+          0.0
         ],
-        "TotalChange": 1.84
+        "TotalChange": 0.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -870,45 +908,7 @@
       ],
       "FlavourText": "The Lord of Chaos dreams as his Eye gazes, unblinking, at his prize. And soon, all shall tremble before his waking form.",
       "ItemType": "Unknown",
-      "ChaosValue": 50.92,
-      "ExaltedValue": 0.29,
-      "Count": 99
-    },
-    {
-      "Id": 22476,
-      "Name": "Void of the Elements",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 3,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "VoidOfTheElements",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          2.17,
-          -2.17,
-          -2.17,
-          -2.17,
-          4.35,
-          6.37
-        ],
-        "TotalChange": 6.37
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<magicitem>{Overpowering Opal Ring}\n<default>{Item Level:} <normal>{100}\n<default>{Elder Item}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "Though the forces of nature are mighty and intimidating, it is their absence which should be feared.",
-      "ItemType": "Unknown",
-      "ChaosValue": 48.93,
+      "ChaosValue": 50.0,
       "ExaltedValue": 0.28,
       "Count": 99
     },
@@ -928,11 +928,11 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
           5.52,
           14.29,
           14.29,
           11.92,
+          14.29,
           14.29
         ],
         "TotalChange": 14.29
@@ -968,12 +968,12 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           2.5,
           -5.0,
-          -5.48
+          -5.28,
+          -5.0
         ],
-        "TotalChange": -5.48
+        "TotalChange": -5.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -984,7 +984,7 @@
       ],
       "FlavourText": "The power of the world, \nlies upon your hands.",
       "ItemType": "Unknown",
-      "ChaosValue": 37.81,
+      "ChaosValue": 38.0,
       "ExaltedValue": 0.21,
       "Count": 99
     },
@@ -1004,11 +1004,11 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
           1.61,
           3.03,
           2.67,
           3.03,
+          0.0,
           0.0
         ],
         "TotalChange": 0.0
@@ -1024,6 +1024,82 @@
       "ItemType": "Unknown",
       "ChaosValue": 33.0,
       "ExaltedValue": 0.19,
+      "Count": 99
+    },
+    {
+      "Id": 6966,
+      "Name": "The Celestial Stone",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 10,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheCelestialStone",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          4.0,
+          4.0,
+          3.52,
+          0.0,
+          0.0,
+          1.76
+        ],
+        "TotalChange": 1.76
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<whiteitem>{Opal Ring}\n<default>{Item Level:} <normal>{100}\n<default>{Shaper Item}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Stare into its depths too long, and you may lose yourself entirely.",
+      "ItemType": "Unknown",
+      "ChaosValue": 25.44,
+      "ExaltedValue": 0.14,
+      "Count": 99
+    },
+    {
+      "Id": 6963,
+      "Name": "The Mayor",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 5,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheMayor",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          1.45,
+          3.78,
+          4.55,
+          4.14,
+          4.55,
+          5.14
+        ],
+        "TotalChange": 5.14
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{The Perandus Manor}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "A ruler is only as powerful as he is wealthy. \nControl the coin, control the empire.",
+      "ItemType": "Unknown",
+      "ChaosValue": 23.13,
+      "ExaltedValue": 0.13,
       "Count": 99
     },
     {
@@ -1043,13 +1119,13 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
           -22.67,
           -17.97,
           -0.13,
-          -3.13
+          -22.77,
+          -22.9
         ],
-        "TotalChange": -3.13
+        "TotalChange": -22.9
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1060,121 +1136,7 @@
       ],
       "FlavourText": "In the pursuit of power, as in that of wealth, anything goes.",
       "ItemType": "Unknown",
-      "ChaosValue": 29.06,
-      "ExaltedValue": 0.16,
-      "Count": 99
-    },
-    {
-      "Id": 6966,
-      "Name": "The Celestial Stone",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 10,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheCelestialStone",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          4.0,
-          4.0,
-          3.52,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<whiteitem>{Opal Ring}\n<default>{Item Level:} <normal>{100}\n<default>{Shaper Item}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "Stare into its depths too long, and you may lose yourself entirely.",
-      "ItemType": "Unknown",
-      "ChaosValue": 25.0,
-      "ExaltedValue": 0.14,
-      "Count": 99
-    },
-    {
-      "Id": 1615,
-      "Name": "The Soul",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 9,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheSoul",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          10.0,
-          15.0,
-          15.0,
-          12.78,
-          12.5,
-          15.0
-        ],
-        "TotalChange": 15.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Soul Taker}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "\"Most people only have one. I'm a bit of a hoarder.\"",
-      "ItemType": "Unknown",
-      "ChaosValue": 23.0,
-      "ExaltedValue": 0.13,
-      "Count": 99
-    },
-    {
-      "Id": 6963,
-      "Name": "The Mayor",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 5,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheMayor",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          1.45,
-          3.78,
-          4.55,
-          4.14,
-          4.55
-        ],
-        "TotalChange": 4.55
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{The Perandus Manor}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "A ruler is only as powerful as he is wealthy. \nControl the coin, control the empire.",
-      "ItemType": "Unknown",
-      "ChaosValue": 23.0,
+      "ChaosValue": 23.13,
       "ExaltedValue": 0.13,
       "Count": 99
     },
@@ -1194,14 +1156,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          4.62,
-          -4.76,
-          -4.76,
-          -3.57,
-          3.29,
-          9.52
+          -8.97,
+          -8.97,
+          -7.83,
+          -1.27,
+          4.69,
+          5.28
         ],
-        "TotalChange": 9.52
+        "TotalChange": 5.28
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1212,8 +1174,84 @@
       ],
       "FlavourText": "\"Our rulers are being ridiculous, and we are suffering.\"",
       "ItemType": "Unknown",
+      "ChaosValue": 23.13,
+      "ExaltedValue": 0.13,
+      "Count": 99
+    },
+    {
+      "Id": 1615,
+      "Name": "The Soul",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 9,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheSoul",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          4.55,
+          4.55,
+          2.52,
+          2.27,
+          4.55,
+          4.55
+        ],
+        "TotalChange": 4.55
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Soul Taker}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "\"Most people only have one. I'm a bit of a hoarder.\"",
+      "ItemType": "Unknown",
       "ChaosValue": 23.0,
       "ExaltedValue": 0.13,
+      "Count": 99
+    },
+    {
+      "Id": 1603,
+      "Name": "The Sephirot",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 11,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheSephirot",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -4.76,
+          -4.76,
+          -4.76,
+          -4.76,
+          -2.09,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<currencyitem>{10x Divine Orb}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "If the path to divinity were simple, we'd all be gods.",
+      "ItemType": "Unknown",
+      "ChaosValue": 21.0,
+      "ExaltedValue": 0.12,
       "Count": 99
     },
     {
@@ -1232,9 +1270,9 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
           5.0,
           0.0,
+          5.0,
           5.0,
           5.0,
           5.0
@@ -1255,40 +1293,40 @@
       "Count": 99
     },
     {
-      "Id": 1603,
-      "Name": "The Sephirot",
+      "Id": 6951,
+      "Name": "The Undaunted",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
       "MapTier": 0,
       "LevelRequired": 0,
       "BaseType": null,
-      "StackSize": 11,
+      "StackSize": 5,
       "Variant": null,
       "ProphecyText": null,
-      "ArtFilename": "TheSephirot",
+      "ArtFilename": "TheUndaunted",
       "Links": 0,
       "ItemClass": 6,
       "Sparkline": {
         "Data": [
           0.0,
           0.0,
-          -4.76,
-          -4.76,
-          -4.76,
-          -4.76,
-          -4.71
+          0.0,
+          5.56,
+          5.56,
+          0.0,
+          5.11
         ],
-        "TotalChange": -4.71
+        "TotalChange": 5.11
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "Text": "<currencyitem>{10x Divine Orb}",
+          "Text": "<uniqueitem>{Nemesis Item}\n<corrupted>{Corrupted}",
           "Optional": false
         }
       ],
-      "FlavourText": "If the path to divinity were simple, we'd all be gods.",
+      "FlavourText": "<size:29>{\"Fate was always my nemesis... \nBut it didn't stop me then, and it won't stop me now.\"\n- Kjetilbrann, The Undaunted}",
       "ItemType": "Unknown",
-      "ChaosValue": 20.01,
+      "ChaosValue": 18.92,
       "ExaltedValue": 0.11,
       "Count": 99
     },
@@ -1308,14 +1346,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -5.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
+          5.26,
+          5.26,
+          5.26,
+          5.26,
+          5.26,
+          -5.26
         ],
-        "TotalChange": 0.0
+        "TotalChange": -5.26
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1326,45 +1364,83 @@
       ],
       "FlavourText": "Weaving the six,\na serpent stands tall.\nWearing a crown,\nthe thousand petals call.",
       "ItemType": "Unknown",
-      "ChaosValue": 20.0,
-      "ExaltedValue": 0.11,
+      "ChaosValue": 18.0,
+      "ExaltedValue": 0.1,
       "Count": 99
     },
     {
-      "Id": 6951,
-      "Name": "The Undaunted",
+      "Id": 4915,
+      "Name": "The World Eater",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
       "MapTier": 0,
       "LevelRequired": 0,
       "BaseType": null,
-      "StackSize": 5,
+      "StackSize": 8,
       "Variant": null,
       "ProphecyText": null,
-      "ArtFilename": "TheUndaunted",
+      "ArtFilename": "TheWorldEater",
       "Links": 0,
       "ItemClass": 6,
       "Sparkline": {
         "Data": [
           0.0,
           0.0,
-          0.0,
-          0.0,
-          5.56,
-          5.56,
-          2.33
+          -5.56,
+          -5.56,
+          -5.56,
+          -8.72,
+          0.0
         ],
-        "TotalChange": 2.33
+        "TotalChange": 0.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "Text": "<uniqueitem>{Nemesis Item}\n<corrupted>{Corrupted}",
+          "Text": "<uniqueitem>{Starforge}",
           "Optional": false
         }
       ],
-      "FlavourText": "<size:29>{\"Fate was always my nemesis... \nBut it didn't stop me then, and it won't stop me now.\"\n- Kjetilbrann, The Undaunted}",
+      "FlavourText": "Its body knows no limits. Its appetite knows no bounds.",
       "ItemType": "Unknown",
-      "ChaosValue": 18.42,
+      "ChaosValue": 18.0,
+      "ExaltedValue": 0.1,
+      "Count": 99
+    },
+    {
+      "Id": 22463,
+      "Name": "Azyran's Reward",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 9,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "AzyransReward",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          1.45,
+          5.56,
+          5.56,
+          -5.56,
+          -16.67,
+          -3.78
+        ],
+        "TotalChange": -3.78
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Prismatic Jewel}\n<corrupted>{Corrupted}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Method transcends shape and size. Do something in parallel long enough, and you will always find \nanother way.",
+      "ItemType": "Unknown",
+      "ChaosValue": 17.32,
       "ExaltedValue": 0.1,
       "Count": 99
     },
@@ -1389,9 +1465,9 @@
           0.0,
           0.0,
           0.0,
-          0.0
+          -6.25
         ],
-        "TotalChange": 0.0
+        "TotalChange": -6.25
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1402,46 +1478,8 @@
       ],
       "FlavourText": "<size:27>{As Kaom slew the last of his kin,\nsomething deep inside him broke.\nAnd through the cracks, corruption,\npure and black, spread forth.}",
       "ItemType": "Unknown",
-      "ChaosValue": 16.0,
-      "ExaltedValue": 0.09,
-      "Count": 99
-    },
-    {
-      "Id": 22463,
-      "Name": "Azyran's Reward",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 9,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "AzyransReward",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          5.88,
-          7.41,
-          11.76,
-          11.76,
-          0.0,
-          -6.24
-        ],
-        "TotalChange": -6.24
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Prismatic Jewel}\n<corrupted>{Corrupted}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "Method transcends shape and size. Do something in parallel long enough, and you will always find \nanother way.",
-      "ItemType": "Unknown",
-      "ChaosValue": 15.94,
-      "ExaltedValue": 0.09,
+      "ChaosValue": 15.0,
+      "ExaltedValue": 0.08,
       "Count": 99
     },
     {
@@ -1460,14 +1498,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -1.8,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
+          1.83,
+          1.83,
+          1.83,
+          1.83,
+          1.83,
+          1.83
         ],
-        "TotalChange": 0.0
+        "TotalChange": 1.83
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1480,120 +1518,6 @@
       "ItemType": "Unknown",
       "ChaosValue": 15.0,
       "ExaltedValue": 0.08,
-      "Count": 99
-    },
-    {
-      "Id": 4915,
-      "Name": "The World Eater",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 8,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheWorldEater",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          -5.56,
-          -5.56,
-          -5.56,
-          -16.72
-        ],
-        "TotalChange": -16.72
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Starforge}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "Its body knows no limits. Its appetite knows no bounds.",
-      "ItemType": "Unknown",
-      "ChaosValue": 14.99,
-      "ExaltedValue": 0.08,
-      "Count": 99
-    },
-    {
-      "Id": 22502,
-      "Name": "Remembrance",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 8,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "Remembrance",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          -6.69,
-          -7.69,
-          7.62,
-          7.69,
-          5.15
-        ],
-        "TotalChange": 5.15
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Precursor's Emblem}\n<corrupted>{Corrupted}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<size:28>{\"For all your struggles, all your achievements, even for the greatest of us, a story is all that remains. Write it well.\" \n\n-Julius Perandus, Father of Chitus}",
-      "ItemType": "Unknown",
-      "ChaosValue": 13.67,
-      "ExaltedValue": 0.08,
-      "Count": 99
-    },
-    {
-      "Id": 4911,
-      "Name": "Blessing of God",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 3,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "BlessingOfGod",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          -9.33,
-          -8.33,
-          22.25,
-          12.08,
-          8.33,
-          9.17
-        ],
-        "TotalChange": 9.17
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<magicitem>{Elreon's Jewellery}\n<default>{Item Level:} <normal>{85}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "When the darkness weighs upon you, grow light from within.",
-      "ItemType": "Unknown",
-      "ChaosValue": 13.1,
-      "ExaltedValue": 0.07,
       "Count": 99
     },
     {
@@ -1612,14 +1536,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -13.57,
-          -13.57,
-          -6.8,
-          28.69,
-          29.65,
-          12.79
+          0.0,
+          7.84,
+          48.9,
+          50.0,
+          45.04,
+          50.0
         ],
-        "TotalChange": 12.79
+        "TotalChange": 50.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1630,46 +1554,46 @@
       ],
       "FlavourText": "Hear me, fish! I love and respect you, but before this day ends I will kill you dead.",
       "ItemType": "Unknown",
-      "ChaosValue": 13.05,
-      "ExaltedValue": 0.07,
-      "Count": 59
+      "ChaosValue": 15.0,
+      "ExaltedValue": 0.08,
+      "Count": 50
     },
     {
-      "Id": 1524,
-      "Name": "The Hoarder",
+      "Id": 22502,
+      "Name": "Remembrance",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
       "MapTier": 0,
       "LevelRequired": 0,
       "BaseType": null,
-      "StackSize": 12,
+      "StackSize": 8,
       "Variant": null,
       "ProphecyText": null,
-      "ArtFilename": "TheHoarder",
+      "ArtFilename": "Remembrance",
       "Links": 0,
       "ItemClass": 6,
       "Sparkline": {
         "Data": [
           0.0,
-          -3.38,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
+          -6.69,
+          -7.69,
+          7.62,
+          7.69,
+          6.0,
+          7.69
         ],
-        "TotalChange": 0.0
+        "TotalChange": 7.69
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "Text": "<currencyitem>{Exalted Orb}",
+          "Text": "<uniqueitem>{Precursor's Emblem}\n<corrupted>{Corrupted}",
           "Optional": false
         }
       ],
-      "FlavourText": "\"More! I want more!\" - Faendris, the Insatiable",
+      "FlavourText": "<size:28>{\"For all your struggles, all your achievements, even for the greatest of us, a story is all that remains. Write it well.\" \n\n-Julius Perandus, Father of Chitus}",
       "ItemType": "Unknown",
-      "ChaosValue": 13.0,
-      "ExaltedValue": 0.07,
+      "ChaosValue": 14.0,
+      "ExaltedValue": 0.08,
       "Count": 99
     },
     {
@@ -1691,11 +1615,11 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           6.7,
-          26.6
+          26.6,
+          30.0
         ],
-        "TotalChange": 26.6
+        "TotalChange": 30.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1706,9 +1630,9 @@
       ],
       "FlavourText": "Rigwald believed he'd seized great power, but it was the great power that had seized Rigwald",
       "ItemType": "Unknown",
-      "ChaosValue": 12.66,
+      "ChaosValue": 13.0,
       "ExaltedValue": 0.07,
-      "Count": 87
+      "Count": 85
     },
     {
       "Id": 1457,
@@ -1726,14 +1650,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
           -4.46,
           0.0,
           0.0,
           -7.69,
-          -7.69
+          0.0,
+          0.0
         ],
-        "TotalChange": -7.69
+        "TotalChange": 0.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1744,7 +1668,83 @@
       ],
       "FlavourText": "Wrapped in the glory of the heavens, she comes to mete out justice for the fallen.",
       "ItemType": "Unknown",
-      "ChaosValue": 12.0,
+      "ChaosValue": 13.0,
+      "ExaltedValue": 0.07,
+      "Count": 99
+    },
+    {
+      "Id": 4911,
+      "Name": "Blessing of God",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 3,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "BlessingOfGod",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          1.1,
+          34.84,
+          23.62,
+          19.49,
+          19.49,
+          19.49
+        ],
+        "TotalChange": 19.49
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<magicitem>{Elreon's Jewellery}\n<default>{Item Level:} <normal>{85}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "When the darkness weighs upon you, grow light from within.",
+      "ItemType": "Unknown",
+      "ChaosValue": 13.0,
+      "ExaltedValue": 0.07,
+      "Count": 99
+    },
+    {
+      "Id": 1524,
+      "Name": "The Hoarder",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 12,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheHoarder",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          3.5,
+          3.5,
+          3.5,
+          3.5,
+          3.51,
+          1.35
+        ],
+        "TotalChange": 1.35
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<currencyitem>{Exalted Orb}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "\"More! I want more!\" - Faendris, the Insatiable",
+      "ItemType": "Unknown",
+      "ChaosValue": 12.73,
       "ExaltedValue": 0.07,
       "Count": 99
     },
@@ -1764,14 +1764,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.56,
-          9.09,
-          9.09,
-          9.09,
-          9.09,
-          9.09
+          8.49,
+          8.49,
+          8.49,
+          8.49,
+          8.49,
+          8.49
         ],
-        "TotalChange": 9.09
+        "TotalChange": 8.49
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1784,6 +1784,158 @@
       "ItemType": "Unknown",
       "ChaosValue": 12.0,
       "ExaltedValue": 0.07,
+      "Count": 99
+    },
+    {
+      "Id": 1653,
+      "Name": "The Vast",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 7,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheVast",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -12.66,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Song of the Sirens}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<size:30>{Can you hear the siren's calls,\nJust beyond the sea?\nA voice which hearts\nof men enthralls,\nI too am hooked to thee.}",
+      "ItemType": "Unknown",
+      "ChaosValue": 10.0,
+      "ExaltedValue": 0.06,
+      "Count": 31
+    },
+    {
+      "Id": 2041,
+      "Name": "The Wolven King's Bite",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 8,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheWolvenKingsBite",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          9.31,
+          -7.92,
+          -7.92,
+          -7.92,
+          -17.13,
+          -7.92
+        ],
+        "TotalChange": -7.92
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Rigwald's Quills}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<size:31>{A wolf does not bite his mate as he does his prey, yet both begin with bared teeth. Know who you are, and you will know the meaning of the bite.}",
+      "ItemType": "Unknown",
+      "ChaosValue": 10.0,
+      "ExaltedValue": 0.06,
+      "Count": 99
+    },
+    {
+      "Id": 6937,
+      "Name": "The Rite of Elements",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 5,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheRiteofElements",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          9.5,
+          11.56,
+          12.5,
+          12.5,
+          25.0
+        ],
+        "TotalChange": 25.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<gemitem>{Level 21 Golem Gem}\n<corrupted>{Corrupted}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<size:29>{A mind as quick as lightning, \nfists as hard as stone, \na heart that burns with fury, \nand eyes that chill to the bone.}",
+      "ItemType": "Unknown",
+      "ChaosValue": 10.0,
+      "ExaltedValue": 0.06,
+      "Count": 99
+    },
+    {
+      "Id": 22441,
+      "Name": "Akil's Prophecy",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 3,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "AkilsProphecy",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          11.11,
+          0.0,
+          0.0,
+          11.11
+        ],
+        "TotalChange": 11.11
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<prophecy>{Fated Unique Item}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<size:28>{The hatungo know many answers to the same question, \nfor time itself is a tangled web.}",
+      "ItemType": "Unknown",
+      "ChaosValue": 10.0,
+      "ExaltedValue": 0.06,
       "Count": 99
     },
     {
@@ -1802,14 +1954,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          7.69,
-          7.69,
-          -0.54,
-          -11.08,
-          -15.38,
-          -23.08
+          0.0,
+          -7.64,
+          -17.43,
+          -21.43,
+          -28.57,
+          -28.57
         ],
-        "TotalChange": -23.08
+        "TotalChange": -28.57
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1822,7 +1974,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 10.0,
       "ExaltedValue": 0.06,
-      "Count": 99
+      "Count": 91
     },
     {
       "Id": 1651,
@@ -1863,158 +2015,6 @@
       "Count": 99
     },
     {
-      "Id": 2041,
-      "Name": "The Wolven King's Bite",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 8,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheWolvenKingsBite",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          8.6,
-          18.71,
-          0.0,
-          0.0,
-          0.0,
-          -10.0
-        ],
-        "TotalChange": -10.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Rigwald's Quills}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<size:31>{A wolf does not bite his mate as he does his prey, yet both begin with bared teeth. Know who you are, and you will know the meaning of the bite.}",
-      "ItemType": "Unknown",
-      "ChaosValue": 9.0,
-      "ExaltedValue": 0.05,
-      "Count": 99
-    },
-    {
-      "Id": 6937,
-      "Name": "The Rite of Elements",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 5,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheRiteofElements",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          9.5,
-          11.56,
-          12.5,
-          12.5
-        ],
-        "TotalChange": 12.5
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<gemitem>{Level 21 Golem Gem}\n<corrupted>{Corrupted}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<size:29>{A mind as quick as lightning, \nfists as hard as stone, \na heart that burns with fury, \nand eyes that chill to the bone.}",
-      "ItemType": "Unknown",
-      "ChaosValue": 9.0,
-      "ExaltedValue": 0.05,
-      "Count": 99
-    },
-    {
-      "Id": 22441,
-      "Name": "Akil's Prophecy",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 3,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "AkilsProphecy",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          11.11,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<prophecy>{Fated Unique Item}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<size:28>{The hatungo know many answers to the same question, \nfor time itself is a tangled web.}",
-      "ItemType": "Unknown",
-      "ChaosValue": 9.0,
-      "ExaltedValue": 0.05,
-      "Count": 99
-    },
-    {
-      "Id": 1653,
-      "Name": "The Vast",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 7,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheVast",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          -11.6
-        ],
-        "TotalChange": -11.6
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Song of the Sirens}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<size:30>{Can you hear the siren's calls,\nJust beyond the sea?\nA voice which hearts\nof men enthralls,\nI too am hooked to thee.}",
-      "ItemType": "Unknown",
-      "ChaosValue": 8.84,
-      "ExaltedValue": 0.05,
-      "Count": 39
-    },
-    {
       "Id": 257,
       "Name": "Chaotic Disposition",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
@@ -2030,14 +2030,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          56.37,
-          76.68,
-          59.01,
-          67.34,
-          63.43,
-          41.34
+          12.99,
+          1.69,
+          7.02,
+          4.52,
+          -7.8,
+          -9.61
         ],
-        "TotalChange": 41.34
+        "TotalChange": -9.61
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -2050,7 +2050,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 8.0,
       "ExaltedValue": 0.05,
-      "Count": 71
+      "Count": 63
     },
     {
       "Id": 1421,
@@ -2108,7 +2108,7 @@
           0.0,
           0.0,
           0.0,
-          0.0,
+          14.29,
           14.29,
           14.29,
           14.29
@@ -2146,7 +2146,7 @@
           0.0,
           0.0,
           0.0,
-          0.0,
+          14.29,
           14.29,
           14.29,
           14.29
@@ -2184,12 +2184,12 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           -12.5,
           -12.5,
-          -19.62
+          -19.59,
+          -12.5
         ],
-        "TotalChange": -19.62
+        "TotalChange": -12.5
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -2200,9 +2200,9 @@
       ],
       "FlavourText": "\"The process of eternal youth is a give and take. You give them death and take their youth.\"\n- Zerphi of the Vaal",
       "ItemType": "Unknown",
-      "ChaosValue": 6.43,
+      "ChaosValue": 7.0,
       "ExaltedValue": 0.04,
-      "Count": 99
+      "Count": 95
     },
     {
       "Id": 23238,
@@ -2221,13 +2221,13 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
           -12.5,
           -24.25,
           -14.12,
-          -25.0
+          -25.0,
+          -12.5
         ],
-        "TotalChange": -25.0
+        "TotalChange": -12.5
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -2238,45 +2238,45 @@
       ],
       "FlavourText": "Many sought the Goddess' blessing. Few survived the Labyrinth to receive it.",
       "ItemType": "Unknown",
-      "ChaosValue": 6.0,
-      "ExaltedValue": 0.03,
+      "ChaosValue": 7.0,
+      "ExaltedValue": 0.04,
       "Count": 99
     },
     {
-      "Id": 1663,
-      "Name": "The Warlord",
+      "Id": 1803,
+      "Name": "Volatile Power",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
       "MapTier": 0,
       "LevelRequired": 0,
       "BaseType": null,
-      "StackSize": 6,
+      "StackSize": 9,
       "Variant": null,
       "ProphecyText": null,
-      "ArtFilename": "TheWarlord",
+      "ArtFilename": "VolatilePower",
       "Links": 0,
       "ItemClass": 6,
       "Sparkline": {
         "Data": [
           0.0,
           0.0,
-          -0.83,
+          20.0,
+          20.0,
           0.0,
           0.0,
-          0.0,
-          -15.0
+          20.0
         ],
-        "TotalChange": -15.0
+        "TotalChange": 20.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "Text": "<whiteitem>{Six-Link Coronal Maul}\n<default>{Item Level:} <normal>{83}",
+          "Text": "<gemitem>{Superior Vaal Gem}\n<default>{Quality:} <augmented>{+20%}\n<corrupted>{Corrupted}",
           "Optional": false
         }
       ],
-      "FlavourText": "To cure the Goddess,\nand break the chains of corruption,\nyou must shatter the world.",
+      "FlavourText": "Unlimited power is apt to corrupt the minds of those who possess it.",
       "ItemType": "Unknown",
-      "ChaosValue": 5.1,
+      "ChaosValue": 6.0,
       "ExaltedValue": 0.03,
       "Count": 99
     },
@@ -2297,7 +2297,7 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
+          25.0,
           25.0,
           25.0,
           25.0,
@@ -2335,9 +2335,9 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
           -5.0,
           -13.8,
+          0.0,
           0.0,
           0.0
         ],
@@ -2357,16 +2357,16 @@
       "Count": 99
     },
     {
-      "Id": 1803,
-      "Name": "Volatile Power",
+      "Id": 7387,
+      "Name": "The Wilted Rose",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
       "MapTier": 0,
       "LevelRequired": 0,
       "BaseType": null,
-      "StackSize": 9,
+      "StackSize": 7,
       "Variant": null,
       "ProphecyText": null,
-      "ArtFilename": "VolatilePower",
+      "ArtFilename": "TheWiltedRose",
       "Links": 0,
       "ItemClass": 6,
       "Sparkline": {
@@ -2374,21 +2374,59 @@
           0.0,
           0.0,
           0.0,
-          20.0,
-          20.0,
           0.0,
-          0.0
+          0.0,
+          8.75,
+          25.0
         ],
-        "TotalChange": 0.0
+        "TotalChange": 25.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "Text": "<gemitem>{Superior Vaal Gem}\n<default>{Quality:} <augmented>{+20%}\n<corrupted>{Corrupted}",
+          "Text": "<gemitem>{Level 21 Aura Gem}\n<corrupted>{Corrupted}",
           "Optional": false
         }
       ],
-      "FlavourText": "Unlimited power is apt to corrupt the minds of those who possess it.",
+      "FlavourText": "Though the path to divinity is fraught with peril, hope may bloom from within.",
+      "ItemType": "Unknown",
+      "ChaosValue": 5.0,
+      "ExaltedValue": 0.03,
+      "Count": 99
+    },
+    {
+      "Id": 20716,
+      "Name": "The Mad King",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 7,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheMadKing",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          33.33,
+          40.69,
+          66.67,
+          66.0,
+          66.67
+        ],
+        "TotalChange": 66.67
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<prophecy>{The King's Path}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Fear the man who lusts for power, for he will do anything to get it.",
       "ItemType": "Unknown",
       "ChaosValue": 5.0,
       "ExaltedValue": 0.03,
@@ -2433,6 +2471,44 @@
       "Count": 99
     },
     {
+      "Id": 22439,
+      "Name": "The Skeleton",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 6,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheSkeleton",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -3.75,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          25.0
+        ],
+        "TotalChange": 25.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<gemitem>{Level 1 Summon Skeletons}\n<default>{Quality:} <augmented>{+23%}\n<corrupted>{Corrupted}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "They stand among us, and within us.",
+      "ItemType": "Unknown",
+      "ChaosValue": 5.0,
+      "ExaltedValue": 0.03,
+      "Count": 99
+    },
+    {
       "Id": 23245,
       "Name": "The Bones",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
@@ -2450,7 +2526,7 @@
           0.0,
           0.0,
           0.0,
-          0.0,
+          25.0,
           25.0,
           25.0,
           25.0
@@ -2486,8 +2562,8 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
           -20.0,
+          0.0,
           0.0,
           0.0,
           0.0,
@@ -2524,14 +2600,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          16.55,
-          16.55,
-          16.55,
-          16.55,
-          16.55,
-          16.55
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ],
-        "TotalChange": 16.55
+        "TotalChange": 0.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -2585,6 +2661,120 @@
       "Count": 99
     },
     {
+      "Id": 22350,
+      "Name": "Vile Power",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 5,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "VilePower",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          33.33,
+          33.33,
+          33.33,
+          63.33
+        ],
+        "TotalChange": 63.33
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<prophecy>{Ancient Doom}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<size:24>{Dread and danger \nmakes the air feel thin. \nAbove, power slumbers, tempting fate. \nGreed and ambition \ndraws countless in, \nFor those who seek power \ncan never wait.}",
+      "ItemType": "Unknown",
+      "ChaosValue": 4.9,
+      "ExaltedValue": 0.03,
+      "Count": 99
+    },
+    {
+      "Id": 1663,
+      "Name": "The Warlord",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 6,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheWarlord",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -0.83,
+          0.0,
+          0.0,
+          0.0,
+          -16.67,
+          -25.5
+        ],
+        "TotalChange": -25.5
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<whiteitem>{Six-Link Coronal Maul}\n<default>{Item Level:} <normal>{83}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "To cure the Goddess,\nand break the chains of corruption,\nyou must shatter the world.",
+      "ItemType": "Unknown",
+      "ChaosValue": 4.47,
+      "ExaltedValue": 0.03,
+      "Count": 99
+    },
+    {
+      "Id": 188,
+      "Name": "Bowyer's Dream",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 6,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "BowyersDream",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          29.33,
+          33.33
+        ],
+        "TotalChange": 33.33
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<whiteitem>{Six-Link Harbinger Bow}\n<default>{Item Level:} <normal>{91}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "If this is my dream, I don't wish to wake.",
+      "ItemType": "Unknown",
+      "ChaosValue": 4.0,
+      "ExaltedValue": 0.02,
+      "Count": 88
+    },
+    {
       "Id": 1451,
       "Name": "The Cartographer",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
@@ -2623,6 +2813,44 @@
       "Count": 99
     },
     {
+      "Id": 1452,
+      "Name": "The Cataclysm",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 13,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheCataclysm",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          -33.33,
+          -33.33,
+          -33.33,
+          0.0,
+          33.33
+        ],
+        "TotalChange": 33.33
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<gemitem>{Level 21 Spell Gem}\n<corrupted>{Corrupted}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<size:27>{The mighty warriors traded in blows, the nimble archers in arrows, yet it was the brazen thaumaturgists who would bring catastrophe to all.}",
+      "ItemType": "Unknown",
+      "ChaosValue": 4.0,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
       "Id": 1589,
       "Name": "The Risk",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
@@ -2638,14 +2866,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          26.18,
-          -5.36,
-          8.52,
-          26.18,
-          26.18,
-          26.18
+          -25.0,
+          -14.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ],
-        "TotalChange": 26.18
+        "TotalChange": 0.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -2699,6 +2927,44 @@
       "Count": 99
     },
     {
+      "Id": 2595,
+      "Name": "Rebirth",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 27,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "BirthOfTheThree",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          25.0,
+          25.0,
+          17.25,
+          -0.75,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Charan's Sword}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "He shattered Her smile\nScattered the fragments like ash\nAll she did was laugh",
+      "ItemType": "Unknown",
+      "ChaosValue": 4.0,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
       "Id": 6902,
       "Name": "The Jeweller's Boon",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
@@ -2714,9 +2980,9 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
           -25.0,
           -2.0,
+          0.0,
           0.0,
           0.0,
           0.0
@@ -2731,44 +2997,6 @@
         }
       ],
       "FlavourText": "The jeweller's true talent is the capacity to see a jewel's beauty before they draw it out.",
-      "ItemType": "Unknown",
-      "ChaosValue": 4.0,
-      "ExaltedValue": 0.02,
-      "Count": 99
-    },
-    {
-      "Id": 7387,
-      "Name": "The Wilted Rose",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 7,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheWiltedRose",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<gemitem>{Level 21 Aura Gem}\n<corrupted>{Corrupted}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "Though the path to divinity is fraught with peril, hope may bloom from within.",
       "ItemType": "Unknown",
       "ChaosValue": 4.0,
       "ExaltedValue": 0.02,
@@ -2794,7 +3022,7 @@
           0.0,
           0.0,
           0.0,
-          0.0,
+          -20.0,
           -20.0
         ],
         "TotalChange": -20.0
@@ -2807,44 +3035,6 @@
         }
       ],
       "FlavourText": "For some, the price of power is never too great.",
-      "ItemType": "Unknown",
-      "ChaosValue": 4.0,
-      "ExaltedValue": 0.02,
-      "Count": 99
-    },
-    {
-      "Id": 20716,
-      "Name": "The Mad King",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 7,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheMadKing",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          33.33,
-          40.69,
-          66.67,
-          33.33
-        ],
-        "TotalChange": 33.33
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<prophecy>{The King's Path}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "Fear the man who lusts for power, for he will do anything to get it.",
       "ItemType": "Unknown",
       "ChaosValue": 4.0,
       "ExaltedValue": 0.02,
@@ -2942,14 +3132,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          1.27,
-          1.27,
-          1.27,
-          1.27,
-          -9.11,
-          1.27
+          0.0,
+          0.0,
+          0.0,
+          -10.25,
+          0.0,
+          0.0
         ],
-        "TotalChange": 1.27
+        "TotalChange": 0.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -2959,82 +3149,6 @@
         }
       ],
       "FlavourText": "No one ever truly understood what she meant when she said she wanted to raise a family.",
-      "ItemType": "Unknown",
-      "ChaosValue": 4.0,
-      "ExaltedValue": 0.02,
-      "Count": 99
-    },
-    {
-      "Id": 22350,
-      "Name": "Vile Power",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 5,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "VilePower",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          33.33,
-          33.33,
-          33.33
-        ],
-        "TotalChange": 33.33
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<prophecy>{Ancient Doom}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<size:24>{Dread and danger \nmakes the air feel thin. \nAbove, power slumbers, tempting fate. \nGreed and ambition \ndraws countless in, \nFor those who seek power \ncan never wait.}",
-      "ItemType": "Unknown",
-      "ChaosValue": 4.0,
-      "ExaltedValue": 0.02,
-      "Count": 99
-    },
-    {
-      "Id": 22439,
-      "Name": "The Skeleton",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 6,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheSkeleton",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          -3.75,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<gemitem>{Level 1 Summon Skeletons}\n<default>{Quality:} <augmented>{+23%}\n<corrupted>{Corrupted}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "They stand among us, and within us.",
       "ItemType": "Unknown",
       "ChaosValue": 4.0,
       "ExaltedValue": 0.02,
@@ -3117,120 +3231,6 @@
       "Count": 99
     },
     {
-      "Id": 188,
-      "Name": "Bowyer's Dream",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 6,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "BowyersDream",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          31.33
-        ],
-        "TotalChange": 31.33
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<whiteitem>{Six-Link Harbinger Bow}\n<default>{Item Level:} <normal>{91}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "If this is my dream, I don't wish to wake.",
-      "ItemType": "Unknown",
-      "ChaosValue": 3.94,
-      "ExaltedValue": 0.02,
-      "Count": 99
-    },
-    {
-      "Id": 2595,
-      "Name": "Rebirth",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 27,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "BirthOfTheThree",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          25.0,
-          25.0,
-          17.25,
-          -17.5
-        ],
-        "TotalChange": -17.5
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Charan's Sword}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "He shattered Her smile\nScattered the fragments like ash\nAll she did was laugh",
-      "ItemType": "Unknown",
-      "ChaosValue": 3.3,
-      "ExaltedValue": 0.02,
-      "Count": 99
-    },
-    {
-      "Id": 6920,
-      "Name": "Perfection",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 5,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "Perfection",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ],
-        "TotalChange": 1.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<rareitem>{Jewellery}\n<default>{Item Level:} <normal>{100}\n<default>{Shaper Item}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "There are countless worlds, but only those with limitless potential will be able to achieve perfection.",
-      "ItemType": "Unknown",
-      "ChaosValue": 3.03,
-      "ExaltedValue": 0.02,
-      "Count": 99
-    },
-    {
       "Id": 186,
       "Name": "Boundless Realms",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
@@ -3246,14 +3246,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -24.53,
-          -4.15,
-          -24.53,
-          10.38,
-          13.21,
-          13.21
+          27.0,
+          0.0,
+          46.25,
+          50.0,
+          50.0,
+          57.0
         ],
-        "TotalChange": 13.21
+        "TotalChange": 57.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -3263,6 +3263,82 @@
         }
       ],
       "FlavourText": "Boundless is the distance between where we start and where we start again.",
+      "ItemType": "Unknown",
+      "ChaosValue": 3.14,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
+      "Id": 229,
+      "Name": "Cartographer's Delight",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 3,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "CartographersDelight",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -9.75,
+          -15.26,
+          10.16,
+          27.11,
+          -15.26,
+          27.11
+        ],
+        "TotalChange": 27.11
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<normal>{Map}\n<default>{Map Tier:} <normal>{5}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<size:28>{A map is similar\nto a pair of eyes,\nwithout one you stumble\naround, unable to find your way.}",
+      "ItemType": "Unknown",
+      "ChaosValue": 3.0,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
+      "Id": 620,
+      "Name": "Heterochromia",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 2,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "Heterochromia",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          21.5,
+          39.5,
+          50.0
+        ],
+        "TotalChange": 50.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Two-Stone Ring}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<size:26>{Black and White, Silver and Gold\nLet us see the world Unfold\nRed and Blue, Yellow and Green\nLet us remake it in colours Unseen}",
       "ItemType": "Unknown",
       "ChaosValue": 3.0,
       "ExaltedValue": 0.02,
@@ -3285,10 +3361,10 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
           -33.33,
           -33.33,
           -5.67,
+          0.0,
           0.0
         ],
         "TotalChange": 0.0
@@ -3301,6 +3377,44 @@
         }
       ],
       "FlavourText": "Justice comes swift \nEqual to the crime \nRevenge is a gift \nLife for a life \nEye for an eye",
+      "ItemType": "Unknown",
+      "ChaosValue": 3.0,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
+      "Id": 1471,
+      "Name": "The Dapper Prodigy",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 6,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheDapperProdigy",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<whiteitem>{Six-Link Body Armour}\n<default>{Item Level:} <normal>{100}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "\"Many believe murder is a grisly, grim, and grotesque crime. Then there are those who simply make art of it.\"",
       "ItemType": "Unknown",
       "ChaosValue": 3.0,
       "ExaltedValue": 0.02,
@@ -3323,9 +3437,9 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
           50.0,
           0.0,
+          50.0,
           50.0,
           50.0
         ],
@@ -3400,8 +3514,8 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           -20.25,
+          -25.0,
           -25.0,
           -25.0
         ],
@@ -3433,9 +3547,9 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           -25.32,
           -7.32,
+          0.0,
           0.0
         ],
         "TotalChange": 0.0
@@ -3472,7 +3586,7 @@
           0.0,
           0.0,
           0.0,
-          0.0,
+          50.0,
           50.0,
           50.0
         ],
@@ -3486,6 +3600,44 @@
         }
       ],
       "FlavourText": "\"The most valuable treasures should be hidden in plain sight.\" \n- Ina, Keeper of Goods",
+      "ItemType": "Unknown",
+      "ChaosValue": 3.0,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
+      "Id": 2038,
+      "Name": "The Wretched",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 6,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheWretched",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -25.0,
+          -25.0,
+          -46.36,
+          -46.24,
+          -25.0,
+          -25.0
+        ],
+        "TotalChange": -25.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Belt}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Necromancers, believe me, are more terrifying than their thralls.",
       "ItemType": "Unknown",
       "ChaosValue": 3.0,
       "ExaltedValue": 0.02,
@@ -3509,8 +3661,8 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           -9.67,
+          0.0,
           0.0,
           0.0
         ],
@@ -3583,14 +3735,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          24.47,
-          24.47,
-          24.47,
-          24.47,
-          24.47,
-          24.47
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ],
-        "TotalChange": 24.47
+        "TotalChange": 0.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -3600,6 +3752,44 @@
         }
       ],
       "FlavourText": "Though the years weakened his mind, his body remained deadly as ever.",
+      "ItemType": "Unknown",
+      "ChaosValue": 3.0,
+      "ExaltedValue": 0.02,
+      "Count": 87
+    },
+    {
+      "Id": 6920,
+      "Name": "Perfection",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 5,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "Perfection",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<rareitem>{Jewellery}\n<default>{Item Level:} <normal>{100}\n<default>{Shaper Item}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "There are countless worlds, but only those with limitless potential will be able to achieve perfection.",
       "ItemType": "Unknown",
       "ChaosValue": 3.0,
       "ExaltedValue": 0.02,
@@ -3644,6 +3834,44 @@
       "Count": 99
     },
     {
+      "Id": 7393,
+      "Name": "The Endless Darkness",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 9,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheEndlessDarkness",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          50.0
+        ],
+        "TotalChange": 50.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Voidforge}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Gaze towards the stars, but beware what gazes back.",
+      "ItemType": "Unknown",
+      "ChaosValue": 3.0,
+      "ExaltedValue": 0.02,
+      "Count": 99
+    },
+    {
       "Id": 22411,
       "Name": "The Heroic Shot",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
@@ -3659,8 +3887,8 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
           -4.67,
+          0.0,
           0.0,
           0.0,
           0.0,
@@ -3679,7 +3907,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 3.0,
       "ExaltedValue": 0.02,
-      "Count": 90
+      "Count": 87
     },
     {
       "Id": 23251,
@@ -3720,16 +3948,16 @@
       "Count": 99
     },
     {
-      "Id": 620,
-      "Name": "Heterochromia",
+      "Id": 2475,
+      "Name": "Left to Fate",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
       "MapTier": 0,
       "LevelRequired": 0,
       "BaseType": null,
-      "StackSize": 2,
+      "StackSize": 4,
       "Variant": null,
       "ProphecyText": null,
-      "ArtFilename": "Heterochromia",
+      "ArtFilename": "LeftToFate",
       "Links": 0,
       "ItemClass": 6,
       "Sparkline": {
@@ -3739,7 +3967,45 @@
           0.0,
           0.0,
           0.0,
-          21.5,
+          0.0,
+          34.0
+        ],
+        "TotalChange": 34.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<rareitem>{Map}\n<default>{Map Tier:} <normal>{16}\n<corrupted>{Unidentified Corrupted}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<size:30>{Many strive for greatness,\nbut it is challenge, unforseen,\nthat forges heroes.}",
+      "ItemType": "Unknown",
+      "ChaosValue": 2.68,
+      "ExaltedValue": 0.02,
+      "Count": 75
+    },
+    {
+      "Id": 480,
+      "Name": "Emperor of Purity",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 7,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "EmperorOfPurity",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
           33.0
         ],
         "TotalChange": 33.0
@@ -3747,51 +4013,51 @@
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "Text": "<uniqueitem>{Two-Stone Ring}",
+          "Text": "<whiteitem>{Six-Link Holy Chainmail}\n<default>{Item Level:} <normal>{60}",
           "Optional": false
         }
       ],
-      "FlavourText": "<size:26>{Black and White, Silver and Gold\nLet us see the world Unfold\nRed and Blue, Yellow and Green\nLet us remake it in colours Unseen}",
+      "FlavourText": "True to his title,\nVoll, newly crowned,\nhad many of the\nEternal Empire's signature\nextravagances destroyed.",
       "ItemType": "Unknown",
       "ChaosValue": 2.66,
-      "ExaltedValue": 0.02,
+      "ExaltedValue": 0.01,
       "Count": 99
     },
     {
-      "Id": 1452,
-      "Name": "The Cataclysm",
+      "Id": 1489,
+      "Name": "The Explorer",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
       "MapTier": 0,
       "LevelRequired": 0,
       "BaseType": null,
-      "StackSize": 13,
+      "StackSize": 6,
       "Variant": null,
       "ProphecyText": null,
-      "ArtFilename": "TheCataclysm",
+      "ArtFilename": "TheExplorer",
       "Links": 0,
       "ItemClass": 6,
       "Sparkline": {
         "Data": [
           0.0,
-          50.0,
-          50.0,
           0.0,
           0.0,
           0.0,
-          30.0
+          0.0,
+          100.0,
+          110.0
         ],
-        "TotalChange": 30.0
+        "TotalChange": 110.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "Text": "<gemitem>{Level 21 Spell Gem}\n<corrupted>{Corrupted}",
+          "Text": "<rareitem>{Map}\n<corrupted>{Corrupted}",
           "Optional": false
         }
       ],
-      "FlavourText": "<size:27>{The mighty warriors traded in blows, the nimble archers in arrows, yet it was the brazen thaumaturgists who would bring catastrophe to all.}",
+      "FlavourText": "A map is only useful if you know where you stand.",
       "ItemType": "Unknown",
-      "ChaosValue": 2.6,
+      "ChaosValue": 2.1,
       "ExaltedValue": 0.01,
       "Count": 99
     },
@@ -3815,10 +4081,10 @@
           0.0,
           0.0,
           0.0,
-          0.0,
-          8.0
+          8.0,
+          4.0
         ],
-        "TotalChange": 8.0
+        "TotalChange": 4.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -3829,123 +4095,9 @@
       ],
       "FlavourText": "To create something truly spectacular, you must risk total failure.",
       "ItemType": "Unknown",
-      "ChaosValue": 2.16,
+      "ChaosValue": 2.08,
       "ExaltedValue": 0.01,
-      "Count": 57
-    },
-    {
-      "Id": 2038,
-      "Name": "The Wretched",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 6,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheWretched",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          -25.0,
-          -25.0,
-          -46.36,
-          -46.24,
-          -48.75
-        ],
-        "TotalChange": -48.75
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Belt}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "Necromancers, believe me, are more terrifying than their thralls.",
-      "ItemType": "Unknown",
-      "ChaosValue": 2.05,
-      "ExaltedValue": 0.01,
-      "Count": 99
-    },
-    {
-      "Id": 229,
-      "Name": "Cartographer's Delight",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 3,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "CartographersDelight",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          18.0,
-          6.5,
-          0.0,
-          30.0,
-          50.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<normal>{Map}\n<default>{Map Tier:} <normal>{5}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<size:28>{A map is similar\nto a pair of eyes,\nwithout one you stumble\naround, unable to find your way.}",
-      "ItemType": "Unknown",
-      "ChaosValue": 2.0,
-      "ExaltedValue": 0.01,
-      "Count": 99
-    },
-    {
-      "Id": 480,
-      "Name": "Emperor of Purity",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 7,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "EmperorOfPurity",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          -33.33,
-          -33.33,
-          -33.33,
-          -33.33,
-          -33.33,
-          -33.33
-        ],
-        "TotalChange": -33.33
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<whiteitem>{Six-Link Holy Chainmail}\n<default>{Item Level:} <normal>{60}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "True to his title,\nVoll, newly crowned,\nhad many of the\nEternal Empire's signature\nextravagances destroyed.",
-      "ItemType": "Unknown",
-      "ChaosValue": 2.0,
-      "ExaltedValue": 0.01,
-      "Count": 99
+      "Count": 52
     },
     {
       "Id": 645,
@@ -3963,14 +4115,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          25.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
+          -20.0,
+          -20.0,
+          -20.0,
+          -20.0,
+          -20.0,
+          -20.0
         ],
-        "TotalChange": 0.0
+        "TotalChange": -20.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -4021,7 +4173,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 2.0,
       "ExaltedValue": 0.01,
-      "Count": 98
+      "Count": 89
     },
     {
       "Id": 1261,
@@ -4039,14 +4191,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          41.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
+          41.84,
+          41.84,
+          41.84,
+          41.84,
+          41.84,
+          41.84
         ],
-        "TotalChange": 100.0
+        "TotalChange": 41.84
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -4077,14 +4229,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -19.0,
-          -0.5,
-          0.0,
-          0.0,
-          0.0,
-          0.0
+          22.83,
+          23.45,
+          23.45,
+          23.45,
+          23.45,
+          23.45
         ],
-        "TotalChange": 0.0
+        "TotalChange": 23.45
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -4138,120 +4290,6 @@
       "Count": 99
     },
     {
-      "Id": 1458,
-      "Name": "The Chains that Bind",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 11,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheChainsThatBind",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          -20.97,
-          6.69,
-          58.06,
-          58.06,
-          -20.97,
-          58.06
-        ],
-        "TotalChange": 58.06
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<whiteitem>{Six-Link Body Armour}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "Scarier than any criminal is an innocent man in chains, for when he breaks free, his revenge will be justified.",
-      "ItemType": "Unknown",
-      "ChaosValue": 2.0,
-      "ExaltedValue": 0.01,
-      "Count": 99
-    },
-    {
-      "Id": 1468,
-      "Name": "The Cursed King",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 8,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheCursedKing",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Rigwald's Curse}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "The First Ones\nmay be blasphemy,\nbut they are\npowerful blasphemy.",
-      "ItemType": "Unknown",
-      "ChaosValue": 2.0,
-      "ExaltedValue": 0.01,
-      "Count": 99
-    },
-    {
-      "Id": 1471,
-      "Name": "The Dapper Prodigy",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 6,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheDapperProdigy",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          -33.33
-        ],
-        "TotalChange": -33.33
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<whiteitem>{Six-Link Body Armour}\n<default>{Item Level:} <normal>{100}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "\"Many believe murder is a grisly, grim, and grotesque crime. Then there are those who simply make art of it.\"",
-      "ItemType": "Unknown",
-      "ChaosValue": 2.0,
-      "ExaltedValue": 0.01,
-      "Count": 99
-    },
-    {
       "Id": 1485,
       "Name": "The Encroaching Darkness",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
@@ -4269,9 +4307,9 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           -28.0,
           -31.5,
+          0.0,
           0.0
         ],
         "TotalChange": 0.0
@@ -4306,7 +4344,7 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
+          100.0,
           100.0,
           100.0,
           100.0,
@@ -4404,6 +4442,44 @@
       "Count": 99
     },
     {
+      "Id": 1617,
+      "Name": "The Spoiled Prince",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 4,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheSpoiledPrince",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          17.0,
+          100.0
+        ],
+        "TotalChange": 100.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<magicitem>{Dictator's Prophecy Wand}\n<default>{Item Level:} <normal>{100}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "A boy who grows up with everything learns to appreciate nothing.",
+      "ItemType": "Unknown",
+      "ChaosValue": 2.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
       "Id": 1625,
       "Name": "The Surveyor",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
@@ -4419,9 +4495,9 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
           -1.5,
           -8.0,
+          0.0,
           0.0,
           0.0,
           0.0
@@ -4436,82 +4512,6 @@
         }
       ],
       "FlavourText": "Exploring lands made of flesh and sorrow, we'll reap and plunder like there's no tomorrow.",
-      "ItemType": "Unknown",
-      "ChaosValue": 2.0,
-      "ExaltedValue": 0.01,
-      "Count": 99
-    },
-    {
-      "Id": 1633,
-      "Name": "The Thaumaturgist",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 8,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheThaumaturgist",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          100.0,
-          100.0,
-          98.0,
-          100.0,
-          100.0
-        ],
-        "TotalChange": 100.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Shavronne's Revelation}\n<corrupted>{Corrupted}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<size:31>{\"Mastery of thaumaturgy is like any other pursuit; it requires dedication and sacrifice. Sometimes several sacrifices.\"\n- Shavronne of Umbra}",
-      "ItemType": "Unknown",
-      "ChaosValue": 2.0,
-      "ExaltedValue": 0.01,
-      "Count": 50
-    },
-    {
-      "Id": 1650,
-      "Name": "The Union",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 7,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheUnion",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          -26.0,
-          -46.0,
-          -5.99,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<currencyitem>{10x Gemcutter's Prism}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "On the 21st of Eterni, \ntwo become one, \ntheir light outshines \nthe setting sun.",
       "ItemType": "Unknown",
       "ChaosValue": 2.0,
       "ExaltedValue": 0.01,
@@ -4553,7 +4553,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 2.0,
       "ExaltedValue": 0.01,
-      "Count": 76
+      "Count": 73
     },
     {
       "Id": 2044,
@@ -4571,14 +4571,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          69.1,
-          82.04,
-          0.0,
-          100.0,
-          100.0,
-          100.0
+          7.65,
+          -40.86,
+          18.27,
+          18.27,
+          18.27,
+          18.27
         ],
-        "TotalChange": 100.0
+        "TotalChange": 18.27
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -4592,44 +4592,6 @@
       "ChaosValue": 2.0,
       "ExaltedValue": 0.01,
       "Count": 99
-    },
-    {
-      "Id": 2475,
-      "Name": "Left to Fate",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 4,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "LeftToFate",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<rareitem>{Map}\n<default>{Map Tier:} <normal>{16}\n<corrupted>{Unidentified Corrupted}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<size:30>{Many strive for greatness,\nbut it is challenge, unforseen,\nthat forges heroes.}",
-      "ItemType": "Unknown",
-      "ChaosValue": 2.0,
-      "ExaltedValue": 0.01,
-      "Count": 88
     },
     {
       "Id": 4874,
@@ -4667,7 +4629,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 2.0,
       "ExaltedValue": 0.01,
-      "Count": 53
+      "Count": 46
     },
     {
       "Id": 4900,
@@ -4685,14 +4647,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -50.0,
-          -32.0,
-          -50.0,
-          -50.0,
-          -50.0,
-          0.0
+          36.01,
+          0.0,
+          0.0,
+          0.0,
+          100.0,
+          100.0
         ],
-        "TotalChange": 0.0
+        "TotalChange": 100.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -4761,14 +4723,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -25.61,
-          -0.84,
-          -33.0,
-          -33.0,
-          -33.0,
-          -33.0
+          33.31,
+          -9.93,
+          -9.93,
+          -9.93,
+          -9.93,
+          -9.93
         ],
-        "TotalChange": -33.0
+        "TotalChange": -9.93
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -4799,14 +4761,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -26.0,
-          -33.33,
-          -33.33,
-          -33.33,
-          -33.33,
-          -33.33
+          -9.91,
+          -9.91,
+          -9.91,
+          -9.91,
+          -9.91,
+          -9.91
         ],
-        "TotalChange": -33.33
+        "TotalChange": -9.91
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -4895,7 +4857,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 2.0,
       "ExaltedValue": 0.01,
-      "Count": 99
+      "Count": 93
     },
     {
       "Id": 21569,
@@ -4913,14 +4875,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -16.5,
-          -50.0,
-          -50.0,
-          0.0,
-          0.0,
-          0.0
+          -40.12,
+          -40.12,
+          19.76,
+          19.76,
+          19.76,
+          19.76
         ],
-        "TotalChange": 0.0
+        "TotalChange": 19.76
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -4936,118 +4898,118 @@
       "Count": 99
     },
     {
-      "Id": 1489,
-      "Name": "The Explorer",
+      "Id": 1503,
+      "Name": "The Formless Sea",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
       "MapTier": 0,
       "LevelRequired": 0,
       "BaseType": null,
-      "StackSize": 6,
+      "StackSize": 7,
       "Variant": null,
       "ProphecyText": null,
-      "ArtFilename": "TheExplorer",
+      "ArtFilename": "TheFormlessSea",
       "Links": 0,
       "ItemClass": 6,
       "Sparkline": {
         "Data": [
           0.0,
+          49.78,
+          100.0,
+          100.0,
           0.0,
           0.0,
-          0.0,
-          0.0,
-          0.0,
-          89.0
+          96.0
         ],
-        "TotalChange": 89.0
+        "TotalChange": 96.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "Text": "<rareitem>{Map}\n<corrupted>{Corrupted}",
+          "Text": "<uniqueitem>{Varunastra}",
           "Optional": false
         }
       ],
-      "FlavourText": "A map is only useful if you know where you stand.",
+      "FlavourText": "Formless might,\nWild beauty tamed,\nThe brine of gods,\nThe seas restrained.",
       "ItemType": "Unknown",
-      "ChaosValue": 1.89,
+      "ChaosValue": 1.96,
+      "ExaltedValue": 0.01,
+      "Count": 56
+    },
+    {
+      "Id": 1458,
+      "Name": "The Chains that Bind",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 11,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheChainsThatBind",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          35.0,
+          100.0,
+          100.0,
+          0.0,
+          100.0,
+          37.0
+        ],
+        "TotalChange": 37.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<whiteitem>{Six-Link Body Armour}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Scarier than any criminal is an innocent man in chains, for when he breaks free, his revenge will be justified.",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.37,
       "ExaltedValue": 0.01,
       "Count": 99
     },
     {
-      "Id": 7393,
-      "Name": "The Endless Darkness",
+      "Id": 1633,
+      "Name": "The Thaumaturgist",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
       "MapTier": 0,
       "LevelRequired": 0,
       "BaseType": null,
-      "StackSize": 9,
+      "StackSize": 8,
       "Variant": null,
       "ProphecyText": null,
-      "ArtFilename": "TheEndlessDarkness",
+      "ArtFilename": "TheThaumaturgist",
       "Links": 0,
       "ItemClass": 6,
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          -10.0
+          100.0,
+          100.0,
+          98.0,
+          100.0,
+          100.0,
+          30.0
         ],
-        "TotalChange": -10.0
+        "TotalChange": 30.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "Text": "<uniqueitem>{Voidforge}",
+          "Text": "<uniqueitem>{Shavronne's Revelation}\n<corrupted>{Corrupted}",
           "Optional": false
         }
       ],
-      "FlavourText": "Gaze towards the stars, but beware what gazes back.",
+      "FlavourText": "<size:31>{\"Mastery of thaumaturgy is like any other pursuit; it requires dedication and sacrifice. Sometimes several sacrifices.\"\n- Shavronne of Umbra}",
       "ItemType": "Unknown",
-      "ChaosValue": 1.8,
+      "ChaosValue": 1.3,
       "ExaltedValue": 0.01,
-      "Count": 99
-    },
-    {
-      "Id": 1617,
-      "Name": "The Spoiled Prince",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 4,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheSpoiledPrince",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          48.0
-        ],
-        "TotalChange": 48.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<magicitem>{Dictator's Prophecy Wand}\n<default>{Item Level:} <normal>{100}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "A boy who grows up with everything learns to appreciate nothing.",
-      "ItemType": "Unknown",
-      "ChaosValue": 1.48,
-      "ExaltedValue": 0.01,
-      "Count": 99
+      "Count": 45
     },
     {
       "Id": 2292,
@@ -5069,10 +5031,10 @@
           0.0,
           0.0,
           0.0,
-          0.0,
-          -43.0
+          -37.5,
+          -36.0
         ],
-        "TotalChange": -43.0
+        "TotalChange": -36.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -5083,7 +5045,83 @@
       ],
       "FlavourText": "<size:31>{There is no mistake so great that it cannot be undone.}",
       "ItemType": "Unknown",
+      "ChaosValue": 1.28,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 20734,
+      "Name": "Alone in the Darkness",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 5,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "AloneintheDarkness",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -50.0,
+          -50.0,
+          -50.0,
+          -50.0,
+          -50.0,
+          -43.0
+        ],
+        "TotalChange": -43.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Delve Item}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "\"Sometimes, the most beautiful treasures...are the ones you cannot have.\" \n- Beryl, Survivor from the Azurite Mines",
+      "ItemType": "Unknown",
       "ChaosValue": 1.14,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1678,
+      "Name": "The Wrath",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 8,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheWrath",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          7.0,
+          0.0,
+          56.0,
+          78.02,
+          10.0
+        ],
+        "TotalChange": 10.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<currencyitem>{10x Chaos Orb}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<size:31>{\"Daughter of catastrophe, mother of pain. Amongst the filth of Wraeclast, she wanders, and her wrath follows.\" - Quintoon the Returned}",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.1,
       "ExaltedValue": 0.01,
       "Count": 99
     },
@@ -5105,8 +5143,8 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           -7.0,
+          0.0,
           0.0,
           0.0
         ],
@@ -5199,7 +5237,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
-      "Count": 67
+      "Count": 65
     },
     {
       "Id": 170,
@@ -5294,9 +5332,9 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
           -6.96,
           -78.0,
+          0.0,
           0.0,
           0.0
         ],
@@ -5348,6 +5386,44 @@
         }
       ],
       "FlavourText": "<size:30>{\"Let us not forget the most important lesson the Vaal taught us:\nNothing is eternal.\"\n- Siosa Foaga, Imperial Scholar}",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 428,
+      "Name": "Doedre's Madness",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 9,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "DoedresMadness",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -20.99,
+          -73.0,
+          -60.0,
+          0.0,
+          -29.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Doedre Item}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "\"Hold your tongue before I claim it.\" - Doedre Darktongue",
       "ItemType": "Unknown",
       "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
@@ -5597,14 +5673,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -49.0,
-          0.0,
-          0.0,
-          -17.0,
-          -30.0,
-          0.0
+          96.08,
+          96.08,
+          62.75,
+          37.25,
+          96.08,
+          96.08
         ],
-        "TotalChange": 0.0
+        "TotalChange": 96.08
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -5655,7 +5731,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
-      "Count": 99
+      "Count": 95
     },
     {
       "Id": 644,
@@ -6453,7 +6529,45 @@
       "ItemType": "Unknown",
       "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
-      "Count": 96
+      "Count": 99
+    },
+    {
+      "Id": 1468,
+      "Name": "The Cursed King",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 8,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheCursedKing",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -50.0
+        ],
+        "TotalChange": -50.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Rigwald's Curse}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "The First Ones\nmay be blasphemy,\nbut they are\npowerful blasphemy.",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
     },
     {
       "Id": 1475,
@@ -6682,44 +6796,6 @@
       "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
       "Count": 99
-    },
-    {
-      "Id": 1503,
-      "Name": "The Formless Sea",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 7,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheFormlessSea",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          49.78,
-          100.0,
-          100.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Varunastra}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "Formless might,\nWild beauty tamed,\nThe brine of gods,\nThe seas restrained.",
-      "ItemType": "Unknown",
-      "ChaosValue": 1.0,
-      "ExaltedValue": 0.01,
-      "Count": 60
     },
     {
       "Id": 1506,
@@ -6965,14 +7041,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -33.67,
-          -49.75,
-          -49.75,
-          -49.75,
-          -49.75,
-          -49.75
+          -24.24,
+          -24.24,
+          -24.24,
+          -24.24,
+          -24.24,
+          -24.24
         ],
-        "TotalChange": -49.75
+        "TotalChange": -24.24
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -7003,10 +7079,10 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
           -14.0,
           0.0,
           -11.95,
+          0.0,
           0.0,
           0.0
         ],
@@ -7137,7 +7213,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
-      "Count": 97
+      "Count": 92
     },
     {
       "Id": 1542,
@@ -7383,14 +7459,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -2.91,
-          -2.91,
-          -2.91,
-          -2.91,
-          -2.91,
-          -2.91
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ],
-        "TotalChange": -2.91
+        "TotalChange": 0.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -7631,45 +7707,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
-      "Count": 85
-    },
-    {
-      "Id": 1591,
-      "Name": "The Scarred Meadow",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 9,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheScarredMeadow",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Wake of Destruction}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "The earth offers nourishment, growth and healing. Unless, of course, the sky has other plans.",
-      "ItemType": "Unknown",
-      "ChaosValue": 1.0,
-      "ExaltedValue": 0.01,
-      "Count": 99
+      "Count": 88
     },
     {
       "Id": 1592,
@@ -7748,44 +7786,6 @@
       "Count": 99
     },
     {
-      "Id": 1606,
-      "Name": "The Sigil",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 3,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheSigil",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<magicitem>{Unassailable Amulet}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<size:29>{Three men travel\nthrough the gate;\nthey carry a protective ward.\nA faction conspires\nagainst their fate,\nbut magic unravels the sword.}",
-      "ItemType": "Unknown",
-      "ChaosValue": 1.0,
-      "ExaltedValue": 0.01,
-      "Count": 99
-    },
-    {
       "Id": 1612,
       "Name": "The Siren",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
@@ -7821,7 +7821,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
-      "Count": 77
+      "Count": 70
     },
     {
       "Id": 1619,
@@ -8014,44 +8014,6 @@
       "Count": 99
     },
     {
-      "Id": 1636,
-      "Name": "The Tower",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 6,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheTower",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Staff}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "A tower built of the strongest stone is not eternal; a towering intellect is not enlightened.",
-      "ItemType": "Unknown",
-      "ChaosValue": 1.0,
-      "ExaltedValue": 0.01,
-      "Count": 99
-    },
-    {
       "Id": 1637,
       "Name": "The Traitor",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
@@ -8163,79 +8125,41 @@
       "ItemType": "Unknown",
       "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
-      "Count": 99
+      "Count": 96
     },
     {
-      "Id": 1657,
-      "Name": "The Visionary",
+      "Id": 1650,
+      "Name": "The Union",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
       "MapTier": 0,
       "LevelRequired": 0,
       "BaseType": null,
-      "StackSize": 6,
+      "StackSize": 7,
       "Variant": null,
       "ProphecyText": null,
-      "ArtFilename": "TheVisionary",
+      "ArtFilename": "TheUnion",
       "Links": 0,
       "ItemClass": 6,
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
+          -27.03,
+          27.04,
+          35.14,
+          35.14,
+          35.14,
+          -32.43
         ],
-        "TotalChange": 0.0
+        "TotalChange": -32.43
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "Text": "<uniqueitem>{Lioneye's Vision}",
+          "Text": "<currencyitem>{10x Gemcutter's Prism}",
           "Optional": false
         }
       ],
-      "FlavourText": "Lioneye looked to the heights of glorious victory. And thus he missed the defeat right under his nose.",
-      "ItemType": "Unknown",
-      "ChaosValue": 1.0,
-      "ExaltedValue": 0.01,
-      "Count": 99
-    },
-    {
-      "Id": 1668,
-      "Name": "The Watcher",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 12,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheWatcher",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Crown of Eyes}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<size:31>{Strange eyes on top of spines \nGaze beyond the veil of time \nDeep down below the mines \nA dream of crimson and of grime}",
+      "FlavourText": "On the 21st of Eterni, \ntwo become one, \ntheir light outshines \nthe setting sun.",
       "ItemType": "Unknown",
       "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
@@ -8350,44 +8274,6 @@
         }
       ],
       "FlavourText": "\"If I fall, we will fall together with my fangs in your throat.\"",
-      "ItemType": "Unknown",
-      "ChaosValue": 1.0,
-      "ExaltedValue": 0.01,
-      "Count": 99
-    },
-    {
-      "Id": 1678,
-      "Name": "The Wrath",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 8,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheWrath",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          7.0,
-          0.0,
-          56.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<currencyitem>{10x Chaos Orb}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<size:31>{\"Daughter of catastrophe, mother of pain. Amongst the filth of Wraeclast, she wanders, and her wrath follows.\" - Quintoon the Returned}",
       "ItemType": "Unknown",
       "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
@@ -8847,7 +8733,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
-      "Count": 83
+      "Count": 77
     },
     {
       "Id": 2083,
@@ -9207,14 +9093,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          51.02,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
+          -33.78,
+          -33.78,
+          -33.78,
+          -33.78,
+          -33.78,
+          -33.78
         ],
-        "TotalChange": 0.0
+        "TotalChange": -33.78
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -9382,44 +9268,6 @@
       "Count": 99
     },
     {
-      "Id": 6921,
-      "Name": "The Sword King's Salute",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 7,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheSwordKingsSalute",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Daresso's Salute}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<size:26>{Many were slain by the sword king \nTheir blood decorating his ring \nThose who retreated were slaughtered \nThose who fought bravely were honoured}",
-      "ItemType": "Unknown",
-      "ChaosValue": 1.0,
-      "ExaltedValue": 0.01,
-      "Count": 99
-    },
-    {
       "Id": 6926,
       "Name": "The Master",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
@@ -9437,9 +9285,9 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           31.0,
           28.0,
+          0.0,
           0.0
         ],
         "TotalChange": 0.0
@@ -9876,44 +9724,6 @@
       "Count": 99
     },
     {
-      "Id": 20734,
-      "Name": "Alone in the Darkness",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 5,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "AloneintheDarkness",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          -50.0,
-          -50.0,
-          -50.0,
-          -50.0,
-          -50.0
-        ],
-        "TotalChange": -50.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Delve Item}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "\"Sometimes, the most beautiful treasures...are the ones you cannot have.\" \n- Beryl, Survivor from the Azurite Mines",
-      "ItemType": "Unknown",
-      "ChaosValue": 1.0,
-      "ExaltedValue": 0.01,
-      "Count": 99
-    },
-    {
       "Id": 20739,
       "Name": "The Lord of Celebration",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
@@ -10060,6 +9870,44 @@
         }
       ],
       "FlavourText": "Before gemlings, before thaumaturgy, a simple court magician could enthrall the masses.",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.0,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 20798,
+      "Name": "Boon of Justice",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 6,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "BoonofJustice",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -74.0,
+          -49.0,
+          -25.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<whiteitem>{Offering to the Goddess}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Some gifts are obligations while others are simply opportunities.",
       "ItemType": "Unknown",
       "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
@@ -10484,82 +10332,6 @@
       "Count": 99
     },
     {
-      "Id": 111,
-      "Name": "Assassin's Favour",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 9,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "AssassinsFavor",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          -5.0,
-          -31.0,
-          -2.0
-        ],
-        "TotalChange": -2.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Dagger}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "By the time their eyes meet, \nthe dark deal has long since been made, \nand his fate long since sealed.",
-      "ItemType": "Unknown",
-      "ChaosValue": 0.98,
-      "ExaltedValue": 0.01,
-      "Count": 99
-    },
-    {
-      "Id": 20798,
-      "Name": "Boon of Justice",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 6,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "BoonofJustice",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          -74.0,
-          -49.0,
-          -14.0
-        ],
-        "TotalChange": -14.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<whiteitem>{Offering to the Goddess}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "Some gifts are obligations while others are simply opportunities.",
-      "ItemType": "Unknown",
-      "ChaosValue": 0.86,
-      "ExaltedValue": 0.0,
-      "Count": 99
-    },
-    {
       "Id": 1553,
       "Name": "The Metalsmith's Gift",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
@@ -10577,12 +10349,12 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           -65.0,
           -70.0,
-          -21.0
+          -26.0,
+          -4.0
         ],
-        "TotalChange": -21.0
+        "TotalChange": -4.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -10593,13 +10365,13 @@
       ],
       "FlavourText": "<size:31>{A month's work, a year's wages, a foolish shortcut through a Rhoa's nest, and a grieving bride-to-be, who never received her betrothed's great gift.}",
       "ItemType": "Unknown",
-      "ChaosValue": 0.79,
-      "ExaltedValue": 0.0,
+      "ChaosValue": 0.96,
+      "ExaltedValue": 0.01,
       "Count": 99
     },
     {
-      "Id": 428,
-      "Name": "Doedre's Madness",
+      "Id": 1591,
+      "Name": "The Scarred Meadow",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
       "MapTier": 0,
       "LevelRequired": 0,
@@ -10607,31 +10379,563 @@
       "StackSize": 9,
       "Variant": null,
       "ProphecyText": null,
-      "ArtFilename": "DoedresMadness",
+      "ArtFilename": "TheScarredMeadow",
       "Links": 0,
       "ItemClass": 6,
       "Sparkline": {
         "Data": [
           0.0,
           0.0,
-          -20.99,
-          -73.0,
-          -60.0,
           0.0,
-          -45.0
+          0.0,
+          0.0,
+          -5.0,
+          -6.0
         ],
-        "TotalChange": -45.0
+        "TotalChange": -6.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "Text": "<uniqueitem>{Doedre Item}",
+          "Text": "<uniqueitem>{Wake of Destruction}",
           "Optional": false
         }
       ],
-      "FlavourText": "\"Hold your tongue before I claim it.\" - Doedre Darktongue",
+      "FlavourText": "The earth offers nourishment, growth and healing. Unless, of course, the sky has other plans.",
       "ItemType": "Unknown",
-      "ChaosValue": 0.55,
+      "ChaosValue": 0.94,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 6921,
+      "Name": "The Sword King's Salute",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 7,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheSwordKingsSalute",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -7.0
+        ],
+        "TotalChange": -7.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Daresso's Salute}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<size:26>{Many were slain by the sword king \nTheir blood decorating his ring \nThose who retreated were slaughtered \nThose who fought bravely were honoured}",
+      "ItemType": "Unknown",
+      "ChaosValue": 0.93,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1657,
+      "Name": "The Visionary",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 6,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheVisionary",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -21.99,
+          -8.0
+        ],
+        "TotalChange": -8.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Lioneye's Vision}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Lioneye looked to the heights of glorious victory. And thus he missed the defeat right under his nose.",
+      "ItemType": "Unknown",
+      "ChaosValue": 0.92,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 1606,
+      "Name": "The Sigil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 3,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheSigil",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -31.0
+        ],
+        "TotalChange": -31.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<magicitem>{Unassailable Amulet}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<size:29>{Three men travel\nthrough the gate;\nthey carry a protective ward.\nA faction conspires\nagainst their fate,\nbut magic unravels the sword.}",
+      "ItemType": "Unknown",
+      "ChaosValue": 0.69,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 1636,
+      "Name": "The Tower",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 6,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheTower",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -35.0
+        ],
+        "TotalChange": -35.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Staff}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "A tower built of the strongest stone is not eternal; a towering intellect is not enlightened.",
+      "ItemType": "Unknown",
+      "ChaosValue": 0.65,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 1549,
+      "Name": "The Lover",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 2,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheLover",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -33.34,
+          -57.33,
+          -76.0,
+          -58.67,
+          -56.01,
+          -33.34
+        ],
+        "TotalChange": -33.34
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<rareitem>{Jewellery}\n<default>{Item Level:} <normal>{79}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<size:26>{\"I wanted to give you three things. I've given you my eternal love. I've sung to you my most beautiful song. I'd have given you the moon last, but it couldn't be found. I hope you'll accept this instead.\"}",
+      "ItemType": "Unknown",
+      "ChaosValue": 0.5,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 1668,
+      "Name": "The Watcher",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 12,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheWatcher",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -54.0
+        ],
+        "TotalChange": -54.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Crown of Eyes}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<size:31>{Strange eyes on top of spines \nGaze beyond the veil of time \nDeep down below the mines \nA dream of crimson and of grime}",
+      "ItemType": "Unknown",
+      "ChaosValue": 0.46,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 111,
+      "Name": "Assassin's Favour",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 9,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "AssassinsFavor",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -5.0,
+          -31.0,
+          0.0,
+          -60.0
+        ],
+        "TotalChange": -60.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Dagger}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "By the time their eyes meet, \nthe dark deal has long since been made, \nand his fate long since sealed.",
+      "ItemType": "Unknown",
+      "ChaosValue": 0.4,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 2091,
+      "Name": "Struck by Lightning",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 3,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "StruckbyLightning",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -80.0,
+          -62.0,
+          -50.0,
+          -78.0,
+          -83.0,
+          -65.0
+        ],
+        "TotalChange": -65.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<magicitem>{Electrocuting Jewellery}\n<default>{Item Level:} <normal>{76}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "'Lightning never strikes the same place twice'\nis really just wishful thinking.",
+      "ItemType": "Unknown",
+      "ChaosValue": 0.35,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 1450,
+      "Name": "The Carrion Crow",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 4,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheCarrionCrow",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          82.41,
+          176.47,
+          0.0,
+          0.0,
+          0.0,
+          35.29
+        ],
+        "TotalChange": 35.29
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<magicitem>{Life Armour}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "From death, life. \nFrom life, death. \nThe wheel turns, \nand the corbies wheel overhead.",
+      "ItemType": "Unknown",
+      "ChaosValue": 0.23,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 735,
+      "Name": "Lantador's Lost Love",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 7,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "LantadorsLostLove",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -18.04,
+          -18.04,
+          -70.49,
+          -72.13,
+          -72.13,
+          -73.77
+        ],
+        "TotalChange": -73.77
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<rareitem>{Two-Stone Ring}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<smaller>{They fought the storm together as one, \nUntil the longest of days was done. \nTheir love grew stronger\nwith every breath, \nUntil it was broken apart in death.}",
+      "ItemType": "Unknown",
+      "ChaosValue": 0.16,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 1499,
+      "Name": "The Flora's Gift",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 5,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheFlorasGift",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -56.0,
+          -12.0,
+          -68.5,
+          -83.0,
+          -83.0,
+          -84.0
+        ],
+        "TotalChange": -84.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<whiteitem>{Five-Link Staff}\n<default>{Item Level:} <normal>{66}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Sturdy and strong,\ngrown from the stream.\nThe Flora that live here,\nA combatant's dream.",
+      "ItemType": "Unknown",
+      "ChaosValue": 0.16,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 1523,
+      "Name": "The Hermit",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 9,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheHermit",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -64.07,
+          -71.88,
+          -73.44,
+          -73.44,
+          -59.37,
+          -75.0
+        ],
+        "TotalChange": -75.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Lifesprig}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "The hermit's only friend is the greenery he can find.",
+      "ItemType": "Unknown",
+      "ChaosValue": 0.16,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 1538,
+      "Name": "The King's Blade",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 5,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheKingsBlade",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -70.99,
+          -45.0,
+          -10.0,
+          -67.0,
+          -83.0,
+          -84.0
+        ],
+        "TotalChange": -84.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<size:31>{<magicitem>{Bloodthirsty Eternal Sword}\n<default>{Item Level:} <normal>{66}}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "<size:25>{\"To know for what you fight. To get up again when you've been struck down. To outmanoeuvre someone faster, trick someone smarter, crush someone stronger. That's what it takes to claim the crown.\"\n- Daresso, the King of Swords}",
+      "ItemType": "Unknown",
+      "ChaosValue": 0.16,
+      "ExaltedValue": 0.0,
+      "Count": 99
+    },
+    {
+      "Id": 1550,
+      "Name": "The Lunaris Priestess",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 5,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": "TheLunarisPriestess",
+      "Links": 0,
+      "ItemClass": 6,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -50.0,
+          -43.0,
+          -83.0,
+          -83.0,
+          -83.0,
+          -84.0
+        ],
+        "TotalChange": -84.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "<uniqueitem>{Sire of Shards}",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "Embrace the Light,\nAwait the Morrow,\nNo more Spite,\nAnd no more Sorrow.",
+      "ItemType": "Unknown",
+      "ChaosValue": 0.16,
       "ExaltedValue": 0.0,
       "Count": 99
     },
@@ -10653,12 +10957,12 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           -14.5,
           -12.0,
-          -50.0
+          -82.0,
+          -84.0
         ],
-        "TotalChange": -50.0
+        "TotalChange": -84.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -10669,273 +10973,7 @@
       ],
       "FlavourText": "Two sides of a coin;\nHeads for a friend,\ntails a foe;\nGemini toss up",
       "ItemType": "Unknown",
-      "ChaosValue": 0.5,
-      "ExaltedValue": 0.0,
-      "Count": 99
-    },
-    {
-      "Id": 1550,
-      "Name": "The Lunaris Priestess",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 5,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheLunarisPriestess",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          -50.0,
-          -43.0,
-          -83.0,
-          -83.0,
-          -70.0
-        ],
-        "TotalChange": -70.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Sire of Shards}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "Embrace the Light,\nAwait the Morrow,\nNo more Spite,\nAnd no more Sorrow.",
-      "ItemType": "Unknown",
-      "ChaosValue": 0.3,
-      "ExaltedValue": 0.0,
-      "Count": 99
-    },
-    {
-      "Id": 1523,
-      "Name": "The Hermit",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 9,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheHermit",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          -36.0,
-          -77.0,
-          -82.0,
-          -83.0,
-          -83.0,
-          -73.0
-        ],
-        "TotalChange": -73.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<uniqueitem>{Lifesprig}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "The hermit's only friend is the greenery he can find.",
-      "ItemType": "Unknown",
-      "ChaosValue": 0.27,
-      "ExaltedValue": 0.0,
-      "Count": 99
-    },
-    {
-      "Id": 1549,
-      "Name": "The Lover",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 2,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheLover",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          -18.03,
-          -45.36,
-          -65.02,
-          -80.33,
-          -66.12,
-          -75.96
-        ],
-        "TotalChange": -75.96
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<rareitem>{Jewellery}\n<default>{Item Level:} <normal>{79}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<size:26>{\"I wanted to give you three things. I've given you my eternal love. I've sung to you my most beautiful song. I'd have given you the moon last, but it couldn't be found. I hope you'll accept this instead.\"}",
-      "ItemType": "Unknown",
-      "ChaosValue": 0.22,
-      "ExaltedValue": 0.0,
-      "Count": 99
-    },
-    {
-      "Id": 735,
-      "Name": "Lantador's Lost Love",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 7,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "LantadorsLostLove",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          22.01,
-          0.0,
-          0.0,
-          -64.0,
-          -66.0,
-          -66.0
-        ],
-        "TotalChange": -66.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<rareitem>{Two-Stone Ring}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<smaller>{They fought the storm together as one, \nUntil the longest of days was done. \nTheir love grew stronger\nwith every breath, \nUntil it was broken apart in death.}",
-      "ItemType": "Unknown",
-      "ChaosValue": 0.17,
-      "ExaltedValue": 0.0,
-      "Count": 99
-    },
-    {
-      "Id": 1450,
-      "Name": "The Carrion Crow",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 4,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheCarrionCrow",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          -83.0,
-          -68.99,
-          -53.0,
-          -83.0,
-          -83.0,
-          -83.0
-        ],
-        "TotalChange": -83.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<magicitem>{Life Armour}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "From death, life. \nFrom life, death. \nThe wheel turns, \nand the corbies wheel overhead.",
-      "ItemType": "Unknown",
-      "ChaosValue": 0.17,
-      "ExaltedValue": 0.0,
-      "Count": 99
-    },
-    {
-      "Id": 1499,
-      "Name": "The Flora's Gift",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 5,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheFlorasGift",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          -56.0,
-          -12.0,
-          -68.5,
-          -83.0,
-          -83.0
-        ],
-        "TotalChange": -83.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<whiteitem>{Five-Link Staff}\n<default>{Item Level:} <normal>{66}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "Sturdy and strong,\ngrown from the stream.\nThe Flora that live here,\nA combatant's dream.",
-      "ItemType": "Unknown",
-      "ChaosValue": 0.17,
-      "ExaltedValue": 0.0,
-      "Count": 99
-    },
-    {
-      "Id": 1538,
-      "Name": "The King's Blade",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 5,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "TheKingsBlade",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          -70.99,
-          -45.0,
-          -10.0,
-          -67.0,
-          -83.0
-        ],
-        "TotalChange": -83.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<size:31>{<magicitem>{Bloodthirsty Eternal Sword}\n<default>{Item Level:} <normal>{66}}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "<size:25>{\"To know for what you fight. To get up again when you've been struck down. To outmanoeuvre someone faster, trick someone smarter, crush someone stronger. That's what it takes to claim the crown.\"\n- Daresso, the King of Swords}",
-      "ItemType": "Unknown",
-      "ChaosValue": 0.17,
+      "ChaosValue": 0.16,
       "ExaltedValue": 0.0,
       "Count": 99
     },
@@ -10955,14 +10993,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -71.0,
-          -80.0,
-          -67.0,
-          -66.0,
-          -72.0,
-          -83.0
+          -31.03,
+          13.79,
+          17.24,
+          -3.45,
+          -41.38,
+          -44.83
         ],
-        "TotalChange": -83.0
+        "TotalChange": -44.83
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -10973,7 +11011,7 @@
       ],
       "FlavourText": "<size:31>{Brutus' first innovation as Lord Incarcerator was a weighted chain around every neck so that his prisoners would forever bow to him.}",
       "ItemType": "Unknown",
-      "ChaosValue": 0.17,
+      "ChaosValue": 0.16,
       "ExaltedValue": 0.0,
       "Count": 99
     },
@@ -10993,14 +11031,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          93.18,
-          -47.73,
-          -61.36,
-          -61.36,
-          -61.36,
-          -61.36
+          -72.94,
+          -80.0,
+          -80.0,
+          -80.0,
+          -80.0,
+          -81.18
         ],
-        "TotalChange": -61.36
+        "TotalChange": -81.18
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -11011,45 +11049,7 @@
       ],
       "FlavourText": "<size:30>{Many that have wielded the power of lightning have said that death by electrocution looks like the victim is more alive than ever before.}",
       "ItemType": "Unknown",
-      "ChaosValue": 0.17,
-      "ExaltedValue": 0.0,
-      "Count": 99
-    },
-    {
-      "Id": 2091,
-      "Name": "Struck by Lightning",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Divination/InventoryIcon.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 3,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": "StruckbyLightning",
-      "Links": 0,
-      "ItemClass": 6,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          -80.0,
-          -62.0,
-          -50.0,
-          -78.0,
-          -83.0
-        ],
-        "TotalChange": -83.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "<magicitem>{Electrocuting Jewellery}\n<default>{Item Level:} <normal>{76}",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "'Lightning never strikes the same place twice'\nis really just wishful thinking.",
-      "ItemType": "Unknown",
-      "ChaosValue": 0.17,
+      "ChaosValue": 0.16,
       "ExaltedValue": 0.0,
       "Count": 99
     },
@@ -11071,12 +11071,12 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           -82.0,
           -83.0,
-          -83.0
+          -83.0,
+          -84.0
         ],
-        "TotalChange": -83.0
+        "TotalChange": -84.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -11087,7 +11087,7 @@
       ],
       "FlavourText": "\"Only a fool looks to the occult for power and expects to be spared from its wrath.\" \n- Voll, Emperor of Purity",
       "ItemType": "Unknown",
-      "ChaosValue": 0.17,
+      "ChaosValue": 0.16,
       "ExaltedValue": 0.0,
       "Count": 99
     }

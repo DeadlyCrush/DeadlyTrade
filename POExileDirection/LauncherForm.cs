@@ -23,6 +23,7 @@ namespace POExileDirection
 {
     public partial class LauncherForm : Form
     {
+        #region [[[[[ IP Information ]]]]]
         public class DeadlyIPINFO
         {
 
@@ -50,26 +51,12 @@ namespace POExileDirection
             [JsonProperty("postal")]
             public string Postal { get; set; }
         }
+        #endregion
 
-        public static IntPtr g_handlePathOfExile { get; set; }
-
-        public static string g_strDonator { get; set; }
-
-        NinjaForm frmNinja = null;
-
-        private int nMoving = 0;
-        private int nMovePosX = 0;
-        private int nMovePosY = 0;
-
-        public static readonly int CNT_NINJACATEGORIES = 19;
-        public static int g_NinjaFileMakeAndUpdateCNT = 0; // Make 16 + Update 16 ( 16 = CNT_NINJACATEGORIES )
-        public static string g_NinjaUpdatedTime { get; set; }
-
-        public static string g_CurrentLeague { get; set; }
-        public static string g_POELogPath { get; set; }
-        public static string g_POELogFileName { get; set; }
-        public static string g_strUILang { get; set; }
-        public static bool g_bShowLocalChat { get; set; }
+        public static string _strIPAddress { get; set; }
+        public static string _strMacAddress { get; set; }
+        public static DateTime _dtLogin { get; set; }
+        public static SqlConnection _sqlcon { get; set; }
 
         #region [[[[[ Pre-Check :: MOUSE WHEEL and HOT KEYS ]]]]]
         public static string g_strYNMouseWheelStashTab { get; set; } // Added 1.3.9.6 Ver.
@@ -81,14 +68,6 @@ namespace POExileDirection
         public static string g_strYNUseIncursionALVAHOTKEY { get; set; }
         public static string g_strYNUseAtlasZANAHOTKEY { get; set; }
         #endregion
-
-        public static string g_strExplanationLANG { get; set; }
-
-        private bool g_bCanLaunchAddon = false;
-        private bool g_bAddonLaunched = false;
-        ControlForm frmMainControl = null;
-
-        private string g_NinjaDirectory = null;
 
         #region ⨌⨌ for FLASK TIMER ⨌⨌
         public static int g_Flask1 { get; set; }
@@ -135,29 +114,6 @@ namespace POExileDirection
         public static bool g_bToggleSkill4 { get; set; }
         public static bool g_bToggleSkill5 { get; set; }
         #endregion
-
-        public static string g_strMyNickName { get; set; }
-        public static string g_strTRAutoKick { get; set; }
-
-        public static int resolution_height { get; set; }
-        public static int resolution_width { get; set; }
-
-        public static int g_nGridLeft { get; set; }
-        public static int g_nGridTop { get; set; }
-
-        public static int g_nGridWidth { get; set; }
-        public static int g_nGridHeight { get; set; }
-
-        public static bool g_FocusLosing { get; set; }
-        public static bool g_FocusOnAddon { get; set; }
-
-        public static bool g_pinLOCK { get; set; }
-
-        public static bool g_ZoneInfoExpanded { get; set; }
-
-        public static int g_NotifyVolume { get; set; }
-
-        public static int g_FlaskTimerVolume { get; set; }      
 
         #region ⨌⨌ Declaration for NINJA API ⨌⨌
         // POE.NINJA
@@ -215,8 +171,14 @@ namespace POExileDirection
         }
         #endregion
 
-        
+        NinjaForm frmNinja = null;
+        public static readonly int CNT_NINJACATEGORIES = 19;
+        public static int g_NinjaFileMakeAndUpdateCNT = 0; // Make 16 + Update 16 ( 16 = CNT_NINJACATEGORIES )
+        public static string g_NinjaUpdatedTime { get; set; }
+        public static string g_CurrentLeague { get; set; }
+
         public static NinJaAPIData ninjaData { get; set; }// = new NinJaAPIData();
+        private string g_NinjaDirectory = null;
 
         // DeadlyOverlay : Syndicate, and TO DO...
         /*public class DeadlyOverlay
@@ -256,13 +218,54 @@ namespace POExileDirection
         //}
         //public static DeadlyENGKORMatching matchingENGKORData { get; set; }
 
-        public string g_strAddonUILang { get; set; }
-
-        // NOTIFICATION MESSAGE
+        #region [[[[[ NOTIFICATION MESSAGE ]]]]]
         public static string g_strnotiWAIT { get; set; }
         public static string g_strnotiSOLD { get; set; }
         public static string g_strnotiDONE { get; set; }
         public static string g_strnotiRESEND { get; set; }
+        #endregion
+
+        public static IntPtr g_handlePathOfExile { get; set; }
+        public static string g_strDonator { get; set; }
+
+        private int nMoving = 0;
+        private int nMovePosX = 0;
+        private int nMovePosY = 0;
+
+        public static string g_POELogPath { get; set; }
+        public static string g_POELogFileName { get; set; }
+        public static string g_strUILang { get; set; }
+        public static bool g_bShowLocalChat { get; set; }
+        public static string g_strExplanationLANG { get; set; }
+
+        private bool g_bCanLaunchAddon = false;
+        private bool g_bAddonLaunched = false;
+        ControlForm frmMainControl = null;
+
+        #region [[[[[ Global Variables ]]]]]
+        public static string g_strMyNickName { get; set; }
+        public static string g_strTRAutoKick { get; set; }
+
+        public static int resolution_height { get; set; }
+        public static int resolution_width { get; set; }
+
+        public static int g_nGridLeft { get; set; }
+        public static int g_nGridTop { get; set; }
+
+        public static int g_nGridWidth { get; set; }
+        public static int g_nGridHeight { get; set; }
+
+        public static bool g_FocusLosing { get; set; }
+        public static bool g_FocusOnAddon { get; set; }
+
+        public static bool g_pinLOCK { get; set; }
+
+        public static bool g_ZoneInfoExpanded { get; set; }
+
+        public static int g_NotifyVolume { get; set; }
+
+        public static int g_FlaskTimerVolume { get; set; }
+        #endregion
 
         public static DateTime dtLoggedIn { get; set; }
 
@@ -270,12 +273,6 @@ namespace POExileDirection
         public static List<string> g_strArrGREENAlert { get; set; }
 
         private DateTime ScrollTick;
-
-        public static string _strIPAddress { get; set; }
-        public static string _strMacAddress { get; set; }
-        public static DateTime _dtLogin { get; set; }
-
-        public static SqlConnection _sqlcon { get; set; }
 
         public LauncherForm()
         {            
@@ -1413,6 +1410,10 @@ namespace POExileDirection
             {
                 timerDetect.Stop();
                 Thread.Sleep(100);
+                NinjaTranslation.InitTranslateKOR();
+                Thread.Sleep(400);
+                DeadlyPriceCommon.InitDeadlyPriceCommon();
+                Thread.Sleep(400);
 
                 try
                 {
@@ -1529,9 +1530,26 @@ namespace POExileDirection
                 IsExistPOESettingBackup();
 
                 // Start_ControlForm(); // Added 1.3.9.0 Ver
-                CheckUpdateLoop(); // Added 1.3.9.2 Ver.
+                //CHKCHK CheckUpdateLoop(); // Added 1.3.9.2 Ver.
+                RunDeadlyTradeManager();
+                Thread.Sleep(100);
             }
             #endregion
+        }
+
+        private void RunDeadlyTradeManager()
+        {
+            try
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo();
+                startInfo.FileName = "aaa.EXE";
+                //startInfo.Arguments = file;
+                Process.Start(startInfo);
+            }
+            catch (Exception ex)
+            {
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+            }
         }
 
         #region [[[[[ Real Time Supporters Scrolling ]]]]]

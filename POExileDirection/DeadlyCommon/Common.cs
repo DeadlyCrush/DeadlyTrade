@@ -292,60 +292,6 @@ namespace POExileDirection
         Window = 0x0008,
     }
 
-    public class ConvertKOR
-    {
-        public class RootObject
-        {
-            public List<EnkrDataCollections> EnkrData { get; set; }
-        }
-
-        public class EnkrDataCollections
-        {
-            public string id { get; set; }
-            public string kr { get; set; }
-            public string en { get; set; }
-            public string DDSFile { get; set; }
-        }
-    }
-    
-    public class Syndicate
-    {
-        public class SyndiDataCollections
-        {
-            public List<string> word { get; set; }
-            public string kr { get; set; }
-            public string en { get; set; }
-            public string tier { get; set; }
-            public List<string> choice { get; set; }
-            public List<string> T { get; set; }
-            public List<string> F { get; set; }
-            public List<string> R { get; set; }
-            public List<string> I { get; set; }
-        }
-
-        public class RootObject
-        {
-            public List<SyndiDataCollections> SyndiData { get; set; }
-        }
-    }
-
-    public class DeadlyTradeUpdate
-    {
-        public class Notice
-        {
-            public string Version { get; set; }
-            public string Title { get; set; }
-            public string TitleKR { get; set; }
-            public List<string> Contents { get; set; }
-            public List<string> ContentsKR { get; set; }
-        }
-
-        public class RootObjectNotice
-        {
-            public List<Notice> Notice { get; set; }
-        }
-    }
-
     public class DeadlyAtlas
     {
         public class FossilInformation

@@ -20,6 +20,17 @@ namespace POExileDirection
         private string sLeft = String.Empty;
         private string sTop = String.Empty;
 
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                // turn on WS_EX_TOOLWINDOW style bit
+                cp.ExStyle |= 0x80;
+                return cp;
+            }
+        }
+
         public NotificationContainer()
         {
             InitializeComponent();
@@ -52,6 +63,7 @@ namespace POExileDirection
 
         public void AddNotifyForm(NotificationForm frmNotifyPanel)
         {
+            Height = Height + 114;
             try
             {
                 if (frmNotifyPanel != null)
@@ -94,6 +106,9 @@ namespace POExileDirection
             Panel parentPanel = ((Form)sender).Parent as Panel;
             parentPanel.Visible = false;
             parentPanel.Dispose();
+
+            if(Height > 113)
+                Height = Height - 114;
         }
 
         private void PanelAdjust(Panel newPanel)

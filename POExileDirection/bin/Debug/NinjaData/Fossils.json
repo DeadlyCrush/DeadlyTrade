@@ -16,26 +16,26 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.92,
-          0.92,
-          0.92,
-          4.52,
-          8.12,
-          6.25
+          0.0,
+          0.0,
+          3.57,
+          7.14,
+          5.71,
+          3.61
         ],
-        "TotalChange": 6.25
+        "TotalChange": 3.61
       },
       "LowConfidenceSparkline": {
         "Data": [
           0.0,
-          0.92,
-          0.92,
-          0.92,
-          4.52,
-          8.12,
-          6.25
+          0.0,
+          0.0,
+          3.57,
+          7.14,
+          5.71,
+          3.61
         ],
-        "TotalChange": 6.25
+        "TotalChange": 3.61
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -49,8 +49,8 @@
       "GemLevel": 0,
       "GemQuality": 0,
       "ItemType": 0,
-      "ChaosValue": 147.4,
-      "ExaltedValue": 0.83,
+      "ChaosValue": 145.06,
+      "ExaltedValue": 0.82,
       "Count": 99,
       "DetailsId": "fractured-fossil"
     },
@@ -70,26 +70,26 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -0.95,
-          -0.95,
-          -0.95,
           0.0,
           0.0,
-          0.5
+          0.96,
+          0.96,
+          1.89,
+          5.77
         ],
-        "TotalChange": 0.5
+        "TotalChange": 5.77
       },
       "LowConfidenceSparkline": {
         "Data": [
           0.0,
-          -0.95,
-          -0.95,
-          -0.95,
           0.0,
           0.0,
-          0.5
+          0.96,
+          0.96,
+          1.89,
+          5.77
         ],
-        "TotalChange": 0.5
+        "TotalChange": 5.77
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -103,8 +103,8 @@
       "GemLevel": 0,
       "GemQuality": 0,
       "ItemType": 0,
-      "ChaosValue": 105.52,
-      "ExaltedValue": 0.6,
+      "ChaosValue": 110.0,
+      "ExaltedValue": 0.62,
       "Count": 99,
       "DetailsId": "faceted-fossil"
     },
@@ -124,26 +124,26 @@
       "Sparkline": {
         "Data": [
           0.0,
-          1.49,
-          5.55,
-          4.19,
-          1.49,
-          1.49,
-          1.49
+          4.0,
+          2.67,
+          0.0,
+          0.0,
+          0.0,
+          -1.33
         ],
-        "TotalChange": 1.49
+        "TotalChange": -1.33
       },
       "LowConfidenceSparkline": {
         "Data": [
           0.0,
-          1.49,
-          5.55,
-          4.19,
-          1.49,
-          1.49,
-          1.49
+          4.0,
+          2.67,
+          0.0,
+          0.0,
+          0.0,
+          -1.33
         ],
-        "TotalChange": 1.49
+        "TotalChange": -1.33
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -157,7 +157,7 @@
       "GemLevel": 0,
       "GemQuality": 0,
       "ItemType": 0,
-      "ChaosValue": 75.0,
+      "ChaosValue": 74.0,
       "ExaltedValue": 0.42,
       "Count": 99,
       "DetailsId": "hollow-fossil"
@@ -178,26 +178,26 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -3.67,
-          0.0,
-          0.6,
-          2.27,
-          2.27,
-          0.0
+          3.81,
+          4.44,
+          6.17,
+          6.17,
+          6.17,
+          6.17
         ],
-        "TotalChange": 0.0
+        "TotalChange": 6.17
       },
       "LowConfidenceSparkline": {
         "Data": [
           0.0,
-          -3.67,
-          0.0,
-          0.6,
-          2.27,
-          2.27,
-          0.0
+          3.81,
+          4.44,
+          6.17,
+          6.17,
+          6.17,
+          6.17
         ],
-        "TotalChange": 0.0
+        "TotalChange": 6.17
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -211,9 +211,9 @@
       "GemLevel": 0,
       "GemQuality": 0,
       "ItemType": 0,
-      "ChaosValue": 44.0,
+      "ChaosValue": 45.0,
       "ExaltedValue": 0.25,
-      "Count": 99,
+      "Count": 98,
       "DetailsId": "glyphic-fossil"
     },
     {
@@ -233,25 +233,25 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
           -5.0,
           -5.0,
           -5.0,
-          -5.8
+          -5.68,
+          -1.88
         ],
-        "TotalChange": -5.8
+        "TotalChange": -1.88
       },
       "LowConfidenceSparkline": {
         "Data": [
           0.0,
           0.0,
-          0.0,
           -5.0,
           -5.0,
           -5.0,
-          -5.8
+          -5.68,
+          -1.88
         ],
-        "TotalChange": -5.8
+        "TotalChange": -1.88
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -265,10 +265,64 @@
       "GemLevel": 0,
       "GemQuality": 0,
       "ItemType": 0,
-      "ChaosValue": 37.68,
-      "ExaltedValue": 0.21,
+      "ChaosValue": 39.25,
+      "ExaltedValue": 0.22,
       "Count": 99,
       "DetailsId": "bloodstained-fossil"
+    },
+    {
+      "Id": 7653,
+      "Name": "Sanctified Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/GildedFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 10,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          9.52,
+          4.76,
+          4.76,
+          4.76,
+          7.2,
+          9.52
+        ],
+        "TotalChange": 9.52
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          9.52,
+          4.76,
+          4.76,
+          4.76,
+          7.2,
+          9.52
+        ],
+        "TotalChange": 9.52
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Numeric modifier values are lucky\nHigh Level modifiers are more common",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 23.0,
+      "ExaltedValue": 0.13,
+      "Count": 99,
+      "DetailsId": "sanctified-fossil"
     },
     {
       "Id": 7658,
@@ -287,25 +341,25 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
           -1.52,
           0.0,
           -4.0,
-          -4.72
+          -8.0,
+          -8.0
         ],
-        "TotalChange": -4.72
+        "TotalChange": -8.0
       },
       "LowConfidenceSparkline": {
         "Data": [
           0.0,
           0.0,
-          0.0,
           -1.52,
           0.0,
           -4.0,
-          -4.72
+          -8.0,
+          -8.0
         ],
-        "TotalChange": -4.72
+        "TotalChange": -8.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -319,64 +373,10 @@
       "GemLevel": 0,
       "GemQuality": 0,
       "ItemType": 0,
-      "ChaosValue": 23.82,
+      "ChaosValue": 23.0,
       "ExaltedValue": 0.13,
       "Count": 99,
       "DetailsId": "serrated-fossil"
-    },
-    {
-      "Id": 7653,
-      "Name": "Sanctified Fossil",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/GildedFossil.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 10,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 5,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          -4.55,
-          4.55,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "LowConfidenceSparkline": {
-        "Data": [
-          0.0,
-          -4.55,
-          4.55,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "Numeric modifier values are lucky\nHigh Level modifiers are more common",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "",
-      "Corrupted": false,
-      "GemLevel": 0,
-      "GemQuality": 0,
-      "ItemType": 0,
-      "ChaosValue": 22.0,
-      "ExaltedValue": 0.12,
-      "Count": 99,
-      "DetailsId": "sanctified-fossil"
     },
     {
       "Id": 7664,
@@ -394,26 +394,26 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -4.3,
-          -5.0,
-          -5.0,
-          -0.7,
-          -5.0,
-          -5.0
+          -0.73,
+          -0.73,
+          3.76,
+          -0.73,
+          -0.73,
+          -1.2
         ],
-        "TotalChange": -5.0
+        "TotalChange": -1.2
       },
       "LowConfidenceSparkline": {
         "Data": [
           0.0,
-          -4.3,
-          -5.0,
-          -5.0,
-          -0.7,
-          -5.0,
-          -5.0
+          -0.73,
+          -0.73,
+          3.76,
+          -0.73,
+          -0.73,
+          -1.2
         ],
-        "TotalChange": -5.0
+        "TotalChange": -1.2
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -427,10 +427,64 @@
       "GemLevel": 0,
       "GemQuality": 0,
       "ItemType": 0,
-      "ChaosValue": 19.0,
+      "ChaosValue": 18.91,
       "ExaltedValue": 0.11,
       "Count": 99,
       "DetailsId": "tangled-fossil"
+    },
+    {
+      "Id": 7638,
+      "Name": "Gilded Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/SanctifiedFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 10,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          -8.33,
+          -0.71,
+          -8.33,
+          -3.16,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          -8.33,
+          -0.71,
+          -8.33,
+          -3.16,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "Item is overvalued by vendors",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 12.0,
+      "ExaltedValue": 0.07,
+      "Count": 99,
+      "DetailsId": "gilded-fossil"
     },
     {
       "Id": 7651,
@@ -449,7 +503,7 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
+          -8.33,
           -8.33,
           -8.33,
           -8.33,
@@ -461,7 +515,7 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
+          -8.33,
           -8.33,
           -8.33,
           -8.33,
@@ -487,60 +541,6 @@
       "DetailsId": "enchanted-fossil"
     },
     {
-      "Id": 7638,
-      "Name": "Gilded Fossil",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/SanctifiedFossil.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 10,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 5,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          9.09,
-          9.09,
-          0.0,
-          8.32,
-          0.0,
-          -2.55
-        ],
-        "TotalChange": -2.55
-      },
-      "LowConfidenceSparkline": {
-        "Data": [
-          0.0,
-          9.09,
-          9.09,
-          0.0,
-          8.32,
-          0.0,
-          -2.55
-        ],
-        "TotalChange": -2.55
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "Item is overvalued by vendors",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "",
-      "Corrupted": false,
-      "GemLevel": 0,
-      "GemQuality": 0,
-      "ItemType": 0,
-      "ChaosValue": 10.72,
-      "ExaltedValue": 0.06,
-      "Count": 99,
-      "DetailsId": "gilded-fossil"
-    },
-    {
       "Id": 7634,
       "Name": "Perfect Fossil",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/PerfectFossil.png?scale=1&w=1&h=1",
@@ -557,7 +557,7 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
+          -10.0,
           -10.0,
           -10.0,
           -10.0,
@@ -569,7 +569,7 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
+          -10.0,
           -10.0,
           -10.0,
           -10.0,
@@ -612,24 +612,24 @@
           0.0,
           0.0,
           0.0,
+          -14.29,
+          -14.29,
           0.0,
-          -14.29,
-          -14.29,
-          -10.86
+          0.0
         ],
-        "TotalChange": -10.86
+        "TotalChange": 0.0
       },
       "LowConfidenceSparkline": {
         "Data": [
           0.0,
           0.0,
           0.0,
+          -14.29,
+          -14.29,
           0.0,
-          -14.29,
-          -14.29,
-          -10.86
+          0.0
         ],
-        "TotalChange": -10.86
+        "TotalChange": 0.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -643,10 +643,64 @@
       "GemLevel": 0,
       "GemQuality": 0,
       "ItemType": 0,
-      "ChaosValue": 6.24,
+      "ChaosValue": 7.0,
       "ExaltedValue": 0.04,
       "Count": 99,
       "DetailsId": "shuddering-fossil"
+    },
+    {
+      "Id": 7649,
+      "Name": "Prismatic Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/PrismaticFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -1.71,
+          -14.29,
+          -14.29,
+          -14.29
+        ],
+        "TotalChange": -14.29
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -1.71,
+          -14.29,
+          -14.29,
+          -14.29
+        ],
+        "TotalChange": -14.29
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More Elemental modifiers\nNo Poison or Bleeding modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 6.0,
+      "ExaltedValue": 0.03,
+      "Count": 99,
+      "DetailsId": "prismatic-fossil"
     },
     {
       "Id": 7637,
@@ -669,9 +723,9 @@
           0.0,
           0.0,
           0.0,
-          0.0
+          -8.67
         ],
-        "TotalChange": 0.0
+        "TotalChange": -8.67
       },
       "LowConfidenceSparkline": {
         "Data": [
@@ -681,9 +735,9 @@
           0.0,
           0.0,
           0.0,
-          0.0
+          -8.67
         ],
-        "TotalChange": 0.0
+        "TotalChange": -8.67
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -697,64 +751,10 @@
       "GemLevel": 0,
       "GemQuality": 0,
       "ItemType": 0,
-      "ChaosValue": 6.0,
+      "ChaosValue": 5.48,
       "ExaltedValue": 0.03,
       "Count": 99,
       "DetailsId": "aetheric-fossil"
-    },
-    {
-      "Id": 7649,
-      "Name": "Prismatic Fossil",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/PrismaticFossil.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 20,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 5,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          -1.71,
-          -14.29,
-          -14.29
-        ],
-        "TotalChange": -14.29
-      },
-      "LowConfidenceSparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          -1.71,
-          -14.29,
-          -14.29
-        ],
-        "TotalChange": -14.29
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "More Elemental modifiers\nNo Poison or Bleeding modifiers",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "",
-      "Corrupted": false,
-      "GemLevel": 0,
-      "GemQuality": 0,
-      "ItemType": 0,
-      "ChaosValue": 6.0,
-      "ExaltedValue": 0.03,
-      "Count": 99,
-      "DetailsId": "prismatic-fossil"
     },
     {
       "Id": 7654,
@@ -939,9 +939,9 @@
           0.0,
           0.0,
           0.0,
-          50.0
+          0.0
         ],
-        "TotalChange": 50.0
+        "TotalChange": 0.0
       },
       "LowConfidenceSparkline": {
         "Data": [
@@ -951,9 +951,9 @@
           0.0,
           0.0,
           0.0,
-          50.0
+          0.0
         ],
-        "TotalChange": 50.0
+        "TotalChange": 0.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -967,8 +967,8 @@
       "GemLevel": 0,
       "GemQuality": 0,
       "ItemType": 0,
-      "ChaosValue": 3.0,
-      "ExaltedValue": 0.02,
+      "ChaosValue": 2.0,
+      "ExaltedValue": 0.01,
       "Count": 99,
       "DetailsId": "jagged-fossil"
     },
@@ -993,9 +993,9 @@
           0.0,
           0.0,
           0.0,
-          0.0
+          -33.33
         ],
-        "TotalChange": 0.0
+        "TotalChange": -33.33
       },
       "LowConfidenceSparkline": {
         "Data": [
@@ -1005,9 +1005,9 @@
           0.0,
           0.0,
           0.0,
-          0.0
+          -33.33
         ],
-        "TotalChange": 0.0
+        "TotalChange": -33.33
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1021,8 +1021,8 @@
       "GemLevel": 0,
       "GemQuality": 0,
       "ItemType": 0,
-      "ChaosValue": 3.0,
-      "ExaltedValue": 0.02,
+      "ChaosValue": 2.0,
+      "ExaltedValue": 0.01,
       "Count": 99,
       "DetailsId": "dense-fossil"
     },
@@ -1135,60 +1135,6 @@
       "DetailsId": "frigid-fossil"
     },
     {
-      "Id": 7645,
-      "Name": "Metallic Fossil",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/MetallicFossil.png?scale=1&w=1&h=1",
-      "MapTier": 0,
-      "LevelRequired": 0,
-      "BaseType": null,
-      "StackSize": 20,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 5,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          -20.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "LowConfidenceSparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          -20.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "Text": "More Lightning modifiers\nNo Physical modifiers",
-          "Optional": false
-        }
-      ],
-      "FlavourText": "",
-      "Corrupted": false,
-      "GemLevel": 0,
-      "GemQuality": 0,
-      "ItemType": 0,
-      "ChaosValue": 0.5,
-      "ExaltedValue": 0.0,
-      "Count": 99,
-      "DetailsId": "metallic-fossil"
-    },
-    {
       "Id": 7641,
       "Name": "Aberrant Fossil",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/AbberantFossil.png?scale=1&w=1&h=1",
@@ -1207,11 +1153,11 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           -21.96,
-          -4.0
+          0.0,
+          -36.0
         ],
-        "TotalChange": -4.0
+        "TotalChange": -36.0
       },
       "LowConfidenceSparkline": {
         "Data": [
@@ -1219,11 +1165,11 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           -21.96,
-          -4.0
+          0.0,
+          -36.0
         ],
-        "TotalChange": -4.0
+        "TotalChange": -36.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1237,10 +1183,64 @@
       "GemLevel": 0,
       "GemQuality": 0,
       "ItemType": 0,
-      "ChaosValue": 0.48,
+      "ChaosValue": 0.32,
       "ExaltedValue": 0.0,
       "Count": 99,
       "DetailsId": "aberrant-fossil"
+    },
+    {
+      "Id": 7645,
+      "Name": "Metallic Fossil",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Delve/MetallicFossil.png?scale=1&w=1&h=1",
+      "MapTier": 0,
+      "LevelRequired": 0,
+      "BaseType": null,
+      "StackSize": 20,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 5,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -20.0,
+          0.0,
+          0.0,
+          -36.0
+        ],
+        "TotalChange": -36.0
+      },
+      "LowConfidenceSparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -20.0,
+          0.0,
+          0.0,
+          -36.0
+        ],
+        "TotalChange": -36.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "Text": "More Lightning modifiers\nNo Physical modifiers",
+          "Optional": false
+        }
+      ],
+      "FlavourText": "",
+      "Corrupted": false,
+      "GemLevel": 0,
+      "GemQuality": 0,
+      "ItemType": 0,
+      "ChaosValue": 0.32,
+      "ExaltedValue": 0.0,
+      "Count": 99,
+      "DetailsId": "metallic-fossil"
     },
     {
       "Id": 7655,
@@ -1258,26 +1258,26 @@
       "Sparkline": {
         "Data": [
           0.0,
-          47.06,
-          47.06,
-          41.21,
-          23.77,
-          17.65,
-          23.53
+          0.0,
+          -3.98,
+          -15.84,
+          -20.0,
+          -10.0,
+          -40.0
         ],
-        "TotalChange": 23.53
+        "TotalChange": -40.0
       },
       "LowConfidenceSparkline": {
         "Data": [
           0.0,
-          47.06,
-          47.06,
-          41.21,
-          23.77,
-          17.65,
-          23.53
+          0.0,
+          -3.98,
+          -15.84,
+          -20.0,
+          -10.0,
+          -40.0
         ],
-        "TotalChange": 23.53
+        "TotalChange": -40.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1291,7 +1291,7 @@
       "GemLevel": 0,
       "GemQuality": 0,
       "ItemType": 0,
-      "ChaosValue": 0.42,
+      "ChaosValue": 0.3,
       "ExaltedValue": 0.0,
       "Count": 99,
       "DetailsId": "lucent-fossil"
@@ -1316,10 +1316,10 @@
           0.0,
           0.0,
           0.0,
-          0.0,
-          -46.0
+          -27.99,
+          -48.0
         ],
-        "TotalChange": -46.0
+        "TotalChange": -48.0
       },
       "LowConfidenceSparkline": {
         "Data": [
@@ -1328,10 +1328,10 @@
           0.0,
           0.0,
           0.0,
-          0.0,
-          -46.0
+          -27.99,
+          -48.0
         ],
-        "TotalChange": -46.0
+        "TotalChange": -48.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1345,7 +1345,7 @@
       "GemLevel": 0,
       "GemQuality": 0,
       "ItemType": 0,
-      "ChaosValue": 0.27,
+      "ChaosValue": 0.26,
       "ExaltedValue": 0.0,
       "Count": 99,
       "DetailsId": "scorched-fossil"

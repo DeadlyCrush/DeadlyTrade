@@ -107,8 +107,8 @@
             this.btnWhois.FlatAppearance.BorderSize = 0;
             this.btnWhois.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWhois.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnWhois.Image = global::POExileDirection.Properties.Resources.message_whisper;
-            this.btnWhois.Location = new System.Drawing.Point(151, 77);
+            this.btnWhois.Image = global::POExileDirection.Properties.Resources.message_whois;
+            this.btnWhois.Location = new System.Drawing.Point(5, 77);
             this.btnWhois.Name = "btnWhois";
             this.btnWhois.Size = new System.Drawing.Size(59, 18);
             this.btnWhois.TabIndex = 5;
@@ -122,8 +122,8 @@
             this.btnWhisper.FlatAppearance.BorderSize = 0;
             this.btnWhisper.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWhisper.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnWhisper.Image = global::POExileDirection.Properties.Resources.message_whois;
-            this.btnWhisper.Location = new System.Drawing.Point(5, 77);
+            this.btnWhisper.Image = global::POExileDirection.Properties.Resources.message_whisper;
+            this.btnWhisper.Location = new System.Drawing.Point(151, 77);
             this.btnWhisper.Name = "btnWhisper";
             this.btnWhisper.Size = new System.Drawing.Size(59, 18);
             this.btnWhisper.TabIndex = 5;
@@ -134,7 +134,6 @@
             // 
             this.panelLeftTopAnchor.BackColor = System.Drawing.Color.DarkGray;
             this.panelLeftTopAnchor.BackgroundImage = global::POExileDirection.Properties.Resources.bg2;
-            this.panelLeftTopAnchor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelLeftTopAnchor.Controls.Add(this.btnLANG2);
             this.panelLeftTopAnchor.Controls.Add(this.textBoxExclude);
             this.panelLeftTopAnchor.Controls.Add(this.button1);
@@ -171,6 +170,7 @@
             // 
             this.textBoxExclude.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
             this.textBoxExclude.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxExclude.ForeColor = System.Drawing.Color.Bisque;
             this.textBoxExclude.Location = new System.Drawing.Point(92, 163);
             this.textBoxExclude.Name = "textBoxExclude";
             this.textBoxExclude.Size = new System.Drawing.Size(190, 14);
@@ -220,6 +220,7 @@
             // 
             this.textBoxInclude.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
             this.textBoxInclude.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxInclude.ForeColor = System.Drawing.Color.Bisque;
             this.textBoxInclude.Location = new System.Drawing.Point(92, 126);
             this.textBoxInclude.Name = "textBoxInclude";
             this.textBoxInclude.Size = new System.Drawing.Size(190, 14);

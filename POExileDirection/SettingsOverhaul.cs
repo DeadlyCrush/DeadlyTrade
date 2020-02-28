@@ -12,6 +12,20 @@ namespace POExileDirection
 {
     public partial class SettingsOverhaul : Form
     {
+        #region [[[[[ Global Variables ]]]]]
+        #endregion
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                // turn on WS_EX_TOOLWINDOW style bit
+                cp.ExStyle |= 0x80;
+                return cp;
+            }
+        }
+
         public SettingsOverhaul()
         {
             InitializeComponent();
@@ -19,6 +33,12 @@ namespace POExileDirection
 
         private void SettingsOverhaul_Load(object sender, EventArgs e)
         {
+            Init_Controls();
+        }
+
+        private void Init_Controls()
+        {
+            ;
         }
 
         private void Init_Tabs()

@@ -16,31 +16,31 @@
       "sparkline": {
         "data": [
           0.0,
-          0.0,
           -37.98,
           -39.0,
           -27.57,
           -26.95,
-          -25.0
+          -25.0,
+          -6.6
         ],
-        "totalChange": -25.0
+        "totalChange": -6.6
       },
       "lowConfidenceSparkline": {
         "data": [
           0.0,
-          0.0,
           -37.98,
           -39.0,
           -27.57,
           -26.95,
-          -25.0
+          -25.0,
+          -6.6
         ],
-        "totalChange": -25.0
+        "totalChange": -6.6
       },
       "implicitModifiers": [],
       "explicitModifiers": [
         {
-          "text": "Adds an incubated Currency item to an equippable item\nItem drops after killing (2050-3124) monsters",
+          "text": "Adds an incubated Currency item to an equippable item\nItem drops after killing (2050-3168) monsters",
           "optional": false
         }
       ],
@@ -49,9 +49,9 @@
       "gemLevel": 0,
       "gemQuality": 0,
       "itemType": "Unknown",
-      "chaosValue": 77.99,
-      "exaltedValue": 0.44,
-      "count": 9,
+      "chaosValue": 97.12,
+      "exaltedValue": 0.55,
+      "count": 8,
       "detailsId": "fine-incubator"
     },
     {
@@ -70,11 +70,11 @@
       "sparkline": {
         "data": [
           0.0,
-          0.0,
           -0.64,
           -12.89,
           -9.16,
           -8.42,
+          -9.43,
           -9.31
         ],
         "totalChange": -9.31
@@ -82,11 +82,11 @@
       "lowConfidenceSparkline": {
         "data": [
           0.0,
-          0.0,
           -0.64,
           -12.89,
           -9.16,
           -8.42,
+          -9.43,
           -9.31
         ],
         "totalChange": -9.31
@@ -105,7 +105,7 @@
       "itemType": "Unknown",
       "chaosValue": 62.47,
       "exaltedValue": 0.35,
-      "count": 24,
+      "count": 25,
       "detailsId": "gemcutters-incubator"
     },
     {
@@ -124,26 +124,26 @@
       "sparkline": {
         "data": [
           0.0,
-          5.26,
-          0.0,
-          0.0,
-          -2.89,
-          0.0,
-          -3.47
+          -5.0,
+          -5.0,
+          -7.75,
+          -5.0,
+          -5.0,
+          -5.0
         ],
-        "totalChange": -3.47
+        "totalChange": -5.0
       },
       "lowConfidenceSparkline": {
         "data": [
           0.0,
-          5.26,
-          0.0,
-          0.0,
-          -2.89,
-          0.0,
-          -3.47
+          -5.0,
+          -5.0,
+          -7.75,
+          -5.0,
+          -5.0,
+          -5.0
         ],
-        "totalChange": -3.47
+        "totalChange": -5.0
       },
       "implicitModifiers": [],
       "explicitModifiers": [
@@ -157,10 +157,64 @@
       "gemLevel": 0,
       "gemQuality": 0,
       "itemType": "Unknown",
-      "chaosValue": 18.34,
-      "exaltedValue": 0.1,
+      "chaosValue": 19.0,
+      "exaltedValue": 0.11,
       "count": 99,
       "detailsId": "geomancers-incubator"
+    },
+    {
+      "id": 21688,
+      "name": "Thaumaturge's Incubator",
+      "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationGems.png?scale=1&w=1&h=1",
+      "mapTier": 0,
+      "levelRequired": 0,
+      "baseType": null,
+      "stackSize": 0,
+      "variant": null,
+      "prophecyText": null,
+      "artFilename": null,
+      "links": 0,
+      "itemClass": 0,
+      "sparkline": {
+        "data": [
+          0.0,
+          5.56,
+          5.56,
+          -2.33,
+          -5.56,
+          -5.56,
+          -5.56
+        ],
+        "totalChange": -5.56
+      },
+      "lowConfidenceSparkline": {
+        "data": [
+          0.0,
+          5.56,
+          5.56,
+          -2.33,
+          -5.56,
+          -5.56,
+          -5.56
+        ],
+        "totalChange": -5.56
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Adds an incubated high level Corrupted Gem or valuable Gem item to an equippable item\nItem drops after killing (12289-15030) monsters",
+          "optional": false
+        }
+      ],
+      "flavourText": "",
+      "corrupted": false,
+      "gemLevel": 0,
+      "gemQuality": 0,
+      "itemType": "Unknown",
+      "chaosValue": 17.0,
+      "exaltedValue": 0.1,
+      "count": 99,
+      "detailsId": "thaumaturges-incubator"
     },
     {
       "id": 21685,
@@ -217,114 +271,6 @@
       "detailsId": "time-lost-incubator"
     },
     {
-      "id": 21688,
-      "name": "Thaumaturge's Incubator",
-      "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationGems.png?scale=1&w=1&h=1",
-      "mapTier": 0,
-      "levelRequired": 0,
-      "baseType": null,
-      "stackSize": 0,
-      "variant": null,
-      "prophecyText": null,
-      "artFilename": null,
-      "links": 0,
-      "itemClass": 0,
-      "sparkline": {
-        "data": [
-          0.0,
-          -8.73,
-          -3.66,
-          -3.66,
-          -10.86,
-          -13.8,
-          -18.87
-        ],
-        "totalChange": -18.87
-      },
-      "lowConfidenceSparkline": {
-        "data": [
-          0.0,
-          -8.73,
-          -3.66,
-          -3.66,
-          -10.86,
-          -13.8,
-          -18.87
-        ],
-        "totalChange": -18.87
-      },
-      "implicitModifiers": [],
-      "explicitModifiers": [
-        {
-          "text": "Adds an incubated high level Corrupted Gem or valuable Gem item to an equippable item\nItem drops after killing (12289-15030) monsters",
-          "optional": false
-        }
-      ],
-      "flavourText": "",
-      "corrupted": false,
-      "gemLevel": 0,
-      "gemQuality": 0,
-      "itemType": "Unknown",
-      "chaosValue": 16.0,
-      "exaltedValue": 0.09,
-      "count": 99,
-      "detailsId": "thaumaturges-incubator"
-    },
-    {
-      "id": 21691,
-      "name": "Foreboding Incubator",
-      "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationHarbinger.png?scale=1&w=1&h=1",
-      "mapTier": 0,
-      "levelRequired": 0,
-      "baseType": null,
-      "stackSize": 0,
-      "variant": null,
-      "prophecyText": null,
-      "artFilename": null,
-      "links": 0,
-      "itemClass": 0,
-      "sparkline": {
-        "data": [
-          0.0,
-          0.0,
-          7.69,
-          0.0,
-          7.69,
-          0.0,
-          -7.69
-        ],
-        "totalChange": -7.69
-      },
-      "lowConfidenceSparkline": {
-        "data": [
-          0.0,
-          0.0,
-          7.69,
-          0.0,
-          7.69,
-          0.0,
-          -7.69
-        ],
-        "totalChange": -7.69
-      },
-      "implicitModifiers": [],
-      "explicitModifiers": [
-        {
-          "text": "Adds incubated valuable Currency Shards or a Harbinger item to an equippable item\nItem drops after killing (8610-10530) monsters",
-          "optional": false
-        }
-      ],
-      "flavourText": "",
-      "corrupted": false,
-      "gemLevel": 0,
-      "gemQuality": 0,
-      "itemType": "Unknown",
-      "chaosValue": 12.0,
-      "exaltedValue": 0.07,
-      "count": 99,
-      "detailsId": "foreboding-incubator"
-    },
-    {
       "id": 21684,
       "name": "Diviner's Incubator",
       "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationDivinationCards.png?scale=1&w=1&h=1",
@@ -340,11 +286,11 @@
       "sparkline": {
         "data": [
           0.0,
-          0.0,
           7.69,
           0.0,
           -7.69,
           -7.69,
+          -15.38,
           -15.38
         ],
         "totalChange": -15.38
@@ -352,11 +298,11 @@
       "lowConfidenceSparkline": {
         "data": [
           0.0,
-          0.0,
           7.69,
           0.0,
           -7.69,
           -7.69,
+          -15.38,
           -15.38
         ],
         "totalChange": -15.38
@@ -379,6 +325,60 @@
       "detailsId": "diviners-incubator"
     },
     {
+      "id": 21691,
+      "name": "Foreboding Incubator",
+      "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationHarbinger.png?scale=1&w=1&h=1",
+      "mapTier": 0,
+      "levelRequired": 0,
+      "baseType": null,
+      "stackSize": 0,
+      "variant": null,
+      "prophecyText": null,
+      "artFilename": null,
+      "links": 0,
+      "itemClass": 0,
+      "sparkline": {
+        "data": [
+          0.0,
+          7.69,
+          0.0,
+          7.69,
+          0.0,
+          -7.69,
+          -15.38
+        ],
+        "totalChange": -15.38
+      },
+      "lowConfidenceSparkline": {
+        "data": [
+          0.0,
+          7.69,
+          0.0,
+          7.69,
+          0.0,
+          -7.69,
+          -15.38
+        ],
+        "totalChange": -15.38
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Adds incubated valuable Currency Shards or a Harbinger item to an equippable item\nItem drops after killing (8610-10530) monsters",
+          "optional": false
+        }
+      ],
+      "flavourText": "",
+      "corrupted": false,
+      "gemLevel": 0,
+      "gemQuality": 0,
+      "itemType": "Unknown",
+      "chaosValue": 11.0,
+      "exaltedValue": 0.06,
+      "count": 99,
+      "detailsId": "foreboding-incubator"
+    },
+    {
       "id": 21683,
       "name": "Skittering Incubator",
       "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationScarabs.png?scale=1&w=1&h=1",
@@ -394,26 +394,26 @@
       "sparkline": {
         "data": [
           0.0,
-          0.0,
           -33.33,
           -17.99,
           -0.33,
           0.0,
-          -16.67
+          -16.66,
+          0.0
         ],
-        "totalChange": -16.67
+        "totalChange": 0.0
       },
       "lowConfidenceSparkline": {
         "data": [
           0.0,
-          0.0,
           -33.33,
           -17.99,
           -0.33,
           0.0,
-          -16.67
+          -16.66,
+          0.0
         ],
-        "totalChange": -16.67
+        "totalChange": 0.0
       },
       "implicitModifiers": [],
       "explicitModifiers": [
@@ -427,10 +427,64 @@
       "gemLevel": 0,
       "gemQuality": 0,
       "itemType": "Unknown",
-      "chaosValue": 2.5,
-      "exaltedValue": 0.01,
+      "chaosValue": 3.0,
+      "exaltedValue": 0.02,
       "count": 99,
       "detailsId": "skittering-incubator"
+    },
+    {
+      "id": 21692,
+      "name": "Otherworldly Incubator",
+      "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationMaps.png?scale=1&w=1&h=1",
+      "mapTier": 0,
+      "levelRequired": 0,
+      "baseType": null,
+      "stackSize": 0,
+      "variant": null,
+      "prophecyText": null,
+      "artFilename": null,
+      "links": 0,
+      "itemClass": 0,
+      "sparkline": {
+        "data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -9.0,
+          -33.33,
+          -10.0
+        ],
+        "totalChange": -10.0
+      },
+      "lowConfidenceSparkline": {
+        "data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -9.0,
+          -33.33,
+          -10.0
+        ],
+        "totalChange": -10.0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Adds an incubated Unique Map item to an equippable item\nItem drops after killing (6157-7530) monsters",
+          "optional": false
+        }
+      ],
+      "flavourText": "",
+      "corrupted": false,
+      "gemLevel": 0,
+      "gemQuality": 0,
+      "itemType": "Unknown",
+      "chaosValue": 2.7,
+      "exaltedValue": 0.02,
+      "count": 99,
+      "detailsId": "otherworldly-incubator"
     },
     {
       "id": 21679,
@@ -449,25 +503,25 @@
         "data": [
           0.0,
           0.0,
-          0.0,
           3.5,
           0.0,
           3.0,
-          0.0
+          0.0,
+          11.0
         ],
-        "totalChange": 0.0
+        "totalChange": 11.0
       },
       "lowConfidenceSparkline": {
         "data": [
           0.0,
           0.0,
-          0.0,
           3.5,
           0.0,
           3.0,
-          0.0
+          0.0,
+          11.0
         ],
-        "totalChange": 0.0
+        "totalChange": 11.0
       },
       "implicitModifiers": [],
       "explicitModifiers": [
@@ -481,10 +535,118 @@
       "gemLevel": 0,
       "gemQuality": 0,
       "itemType": "Unknown",
-      "chaosValue": 2.0,
+      "chaosValue": 2.22,
       "exaltedValue": 0.01,
       "count": 99,
       "detailsId": "celestial-jewellers-incubator"
+    },
+    {
+      "id": 21696,
+      "name": "Fragmented Incubator",
+      "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationFragments.png?scale=1&w=1&h=1",
+      "mapTier": 0,
+      "levelRequired": 0,
+      "baseType": null,
+      "stackSize": 0,
+      "variant": null,
+      "prophecyText": null,
+      "artFilename": null,
+      "links": 0,
+      "itemClass": 0,
+      "sparkline": {
+        "data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          112.0
+        ],
+        "totalChange": 112.0
+      },
+      "lowConfidenceSparkline": {
+        "data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          112.0
+        ],
+        "totalChange": 112.0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Adds an incubated Fragment item to an equippable item\nItem drops after killing (7383-9030) monsters",
+          "optional": false
+        }
+      ],
+      "flavourText": "",
+      "corrupted": false,
+      "gemLevel": 0,
+      "gemQuality": 0,
+      "itemType": "Unknown",
+      "chaosValue": 2.12,
+      "exaltedValue": 0.01,
+      "count": 99,
+      "detailsId": "fragmented-incubator"
+    },
+    {
+      "id": 21674,
+      "name": "Ornate Incubator",
+      "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationCurrency.png?scale=1&w=1&h=1",
+      "mapTier": 0,
+      "levelRequired": 0,
+      "baseType": null,
+      "stackSize": 0,
+      "variant": null,
+      "prophecyText": null,
+      "artFilename": null,
+      "links": 0,
+      "itemClass": 0,
+      "sparkline": {
+        "data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -47.0,
+          0.0
+        ],
+        "totalChange": 0.0
+      },
+      "lowConfidenceSparkline": {
+        "data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -47.0,
+          0.0
+        ],
+        "totalChange": 0.0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Adds an incubated Currency item to an equippable item\nItem drops after killing (3458-4230) monsters",
+          "optional": false
+        }
+      ],
+      "flavourText": "",
+      "corrupted": false,
+      "gemLevel": 0,
+      "gemQuality": 0,
+      "itemType": "Unknown",
+      "chaosValue": 2.0,
+      "exaltedValue": 0.01,
+      "count": 99,
+      "detailsId": "ornate-incubator"
     },
     {
       "id": 21686,
@@ -503,8 +665,8 @@
         "data": [
           0.0,
           0.0,
-          0.0,
           28.0,
+          0.0,
           0.0,
           0.0,
           0.0
@@ -515,8 +677,8 @@
         "data": [
           0.0,
           0.0,
-          0.0,
           28.0,
+          0.0,
           0.0,
           0.0,
           0.0
@@ -541,222 +703,6 @@
       "detailsId": "fossilised-incubator"
     },
     {
-      "id": 21692,
-      "name": "Otherworldly Incubator",
-      "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationMaps.png?scale=1&w=1&h=1",
-      "mapTier": 0,
-      "levelRequired": 0,
-      "baseType": null,
-      "stackSize": 0,
-      "variant": null,
-      "prophecyText": null,
-      "artFilename": null,
-      "links": 0,
-      "itemClass": 0,
-      "sparkline": {
-        "data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          -9.0,
-          -33.33
-        ],
-        "totalChange": -33.33
-      },
-      "lowConfidenceSparkline": {
-        "data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          -9.0,
-          -33.33
-        ],
-        "totalChange": -33.33
-      },
-      "implicitModifiers": [],
-      "explicitModifiers": [
-        {
-          "text": "Adds an incubated Unique Map item to an equippable item\nItem drops after killing (6157-7530) monsters",
-          "optional": false
-        }
-      ],
-      "flavourText": "",
-      "corrupted": false,
-      "gemLevel": 0,
-      "gemQuality": 0,
-      "itemType": "Unknown",
-      "chaosValue": 2.0,
-      "exaltedValue": 0.01,
-      "count": 99,
-      "detailsId": "otherworldly-incubator"
-    },
-    {
-      "id": 21687,
-      "name": "Abyssal Incubator",
-      "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationAbyss.png?scale=1&w=1&h=1",
-      "mapTier": 0,
-      "levelRequired": 0,
-      "baseType": null,
-      "stackSize": 0,
-      "variant": null,
-      "prophecyText": null,
-      "artFilename": null,
-      "links": 0,
-      "itemClass": 0,
-      "sparkline": {
-        "data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          80.0
-        ],
-        "totalChange": 80.0
-      },
-      "lowConfidenceSparkline": {
-        "data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          80.0
-        ],
-        "totalChange": 80.0
-      },
-      "implicitModifiers": [],
-      "explicitModifiers": [
-        {
-          "text": "Adds an incubated Rare Abyss item to an equippable item\nItem drops after killing (6971-9030) monsters",
-          "optional": false
-        }
-      ],
-      "flavourText": "",
-      "corrupted": false,
-      "gemLevel": 0,
-      "gemQuality": 0,
-      "itemType": "Unknown",
-      "chaosValue": 1.8,
-      "exaltedValue": 0.01,
-      "count": 99,
-      "detailsId": "abyssal-incubator"
-    },
-    {
-      "id": 21678,
-      "name": "Primal Incubator",
-      "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationTalismans.png?scale=1&w=1&h=1",
-      "mapTier": 0,
-      "levelRequired": 0,
-      "baseType": null,
-      "stackSize": 0,
-      "variant": null,
-      "prophecyText": null,
-      "artFilename": null,
-      "links": 0,
-      "itemClass": 0,
-      "sparkline": {
-        "data": [
-          0.0,
-          18.34,
-          7.69,
-          18.34,
-          -1.76,
-          -74.54,
-          101.17
-        ],
-        "totalChange": 101.17
-      },
-      "lowConfidenceSparkline": {
-        "data": [
-          0.0,
-          18.34,
-          7.69,
-          18.34,
-          -1.76,
-          -74.54,
-          101.17
-        ],
-        "totalChange": 101.17
-      },
-      "implicitModifiers": [],
-      "explicitModifiers": [
-        {
-          "text": "Adds an incubated Talisman item to an equippable item\nItem drops after killing (3704-4530) monsters",
-          "optional": false
-        }
-      ],
-      "flavourText": "",
-      "corrupted": false,
-      "gemLevel": 0,
-      "gemQuality": 0,
-      "itemType": "Unknown",
-      "chaosValue": 1.7,
-      "exaltedValue": 0.01,
-      "count": 99,
-      "detailsId": "primal-incubator"
-    },
-    {
-      "id": 21674,
-      "name": "Ornate Incubator",
-      "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationCurrency.png?scale=1&w=1&h=1",
-      "mapTier": 0,
-      "levelRequired": 0,
-      "baseType": null,
-      "stackSize": 0,
-      "variant": null,
-      "prophecyText": null,
-      "artFilename": null,
-      "links": 0,
-      "itemClass": 0,
-      "sparkline": {
-        "data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          -50.0
-        ],
-        "totalChange": -50.0
-      },
-      "lowConfidenceSparkline": {
-        "data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          -50.0
-        ],
-        "totalChange": -50.0
-      },
-      "implicitModifiers": [],
-      "explicitModifiers": [
-        {
-          "text": "Adds an incubated Currency item to an equippable item\nItem drops after killing (3458-4230) monsters",
-          "optional": false
-        }
-      ],
-      "flavourText": "",
-      "corrupted": false,
-      "gemLevel": 0,
-      "gemQuality": 0,
-      "itemType": "Unknown",
-      "chaosValue": 1.0,
-      "exaltedValue": 0.01,
-      "count": 99,
-      "detailsId": "ornate-incubator"
-    },
-    {
       "id": 21676,
       "name": "Whispering Incubator",
       "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationEssence.png?scale=1&w=1&h=1",
@@ -774,10 +720,10 @@
           0.0,
           0.0,
           0.0,
+          null,
+          null,
           0.0,
-          null,
-          null,
-          0.0
+          null
         ],
         "totalChange": 0.0
       },
@@ -796,7 +742,7 @@
       "implicitModifiers": [],
       "explicitModifiers": [
         {
-          "text": "Adds an incubated Essence item to an equippable item\nItem drops after killing (2002-2647) monsters",
+          "text": "Adds an incubated Essence item to an equippable item\nItem drops after killing (1964-2647) monsters",
           "optional": false
         }
       ],
@@ -807,7 +753,7 @@
       "itemType": "Unknown",
       "chaosValue": 1.0,
       "exaltedValue": 0.01,
-      "count": 5,
+      "count": 4,
       "detailsId": "whispering-incubator"
     },
     {
@@ -850,7 +796,7 @@
       "implicitModifiers": [],
       "explicitModifiers": [
         {
-          "text": "Adds an incubated Unique item to an equippable item\nItem drops after killing (3343-4530) monsters",
+          "text": "Adds an incubated Unique item to an equippable item\nItem drops after killing (2002-4530) monsters",
           "optional": false
         }
       ],
@@ -863,6 +809,60 @@
       "exaltedValue": 0.01,
       "count": 99,
       "detailsId": "singular-incubator"
+    },
+    {
+      "id": 21678,
+      "name": "Primal Incubator",
+      "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationTalismans.png?scale=1&w=1&h=1",
+      "mapTier": 0,
+      "levelRequired": 0,
+      "baseType": null,
+      "stackSize": 0,
+      "variant": null,
+      "prophecyText": null,
+      "artFilename": null,
+      "links": 0,
+      "itemClass": 0,
+      "sparkline": {
+        "data": [
+          0.0,
+          -9.0,
+          0.0,
+          -16.98,
+          -78.48,
+          0.0,
+          0.0
+        ],
+        "totalChange": 0.0
+      },
+      "lowConfidenceSparkline": {
+        "data": [
+          0.0,
+          -9.0,
+          0.0,
+          -16.98,
+          -78.48,
+          0.0,
+          0.0
+        ],
+        "totalChange": 0.0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Adds an incubated Talisman item to an equippable item\nItem drops after killing (3704-4530) monsters",
+          "optional": false
+        }
+      ],
+      "flavourText": "",
+      "corrupted": false,
+      "gemLevel": 0,
+      "gemQuality": 0,
+      "itemType": "Unknown",
+      "chaosValue": 1.0,
+      "exaltedValue": 0.01,
+      "count": 99,
+      "detailsId": "primal-incubator"
     },
     {
       "id": 21680,
@@ -971,6 +971,60 @@
       "exaltedValue": 0.01,
       "count": 99,
       "detailsId": "cartographers-incubator"
+    },
+    {
+      "id": 21687,
+      "name": "Abyssal Incubator",
+      "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationAbyss.png?scale=1&w=1&h=1",
+      "mapTier": 0,
+      "levelRequired": 0,
+      "baseType": null,
+      "stackSize": 0,
+      "variant": null,
+      "prophecyText": null,
+      "artFilename": null,
+      "links": 0,
+      "itemClass": 0,
+      "sparkline": {
+        "data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          9.01,
+          0.0
+        ],
+        "totalChange": 0.0
+      },
+      "lowConfidenceSparkline": {
+        "data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          9.01,
+          0.0
+        ],
+        "totalChange": 0.0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Adds an incubated Rare Abyss item to an equippable item\nItem drops after killing (6971-9030) monsters",
+          "optional": false
+        }
+      ],
+      "flavourText": "",
+      "corrupted": false,
+      "gemLevel": 0,
+      "gemQuality": 0,
+      "itemType": "Unknown",
+      "chaosValue": 1.0,
+      "exaltedValue": 0.01,
+      "count": 99,
+      "detailsId": "abyssal-incubator"
     },
     {
       "id": 21689,
@@ -1189,60 +1243,6 @@
       "detailsId": "infused-incubator"
     },
     {
-      "id": 21696,
-      "name": "Fragmented Incubator",
-      "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationFragments.png?scale=1&w=1&h=1",
-      "mapTier": 0,
-      "levelRequired": 0,
-      "baseType": null,
-      "stackSize": 0,
-      "variant": null,
-      "prophecyText": null,
-      "artFilename": null,
-      "links": 0,
-      "itemClass": 0,
-      "sparkline": {
-        "data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "totalChange": 0.0
-      },
-      "lowConfidenceSparkline": {
-        "data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "totalChange": 0.0
-      },
-      "implicitModifiers": [],
-      "explicitModifiers": [
-        {
-          "text": "Adds an incubated Fragment item to an equippable item\nItem drops after killing (7383-9030) monsters",
-          "optional": false
-        }
-      ],
-      "flavourText": "",
-      "corrupted": false,
-      "gemLevel": 0,
-      "gemQuality": 0,
-      "itemType": "Unknown",
-      "chaosValue": 1.0,
-      "exaltedValue": 0.01,
-      "count": 99,
-      "detailsId": "fragmented-incubator"
-    },
-    {
       "id": 21697,
       "name": "Decadent Incubator",
       "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/Incubation/IncubationPerandus.png?scale=1&w=1&h=1",
@@ -1317,9 +1317,9 @@
           0.0,
           0.0,
           0.0,
-          0.0
+          -1.0
         ],
-        "totalChange": 0.0
+        "totalChange": -1.0
       },
       "lowConfidenceSparkline": {
         "data": [
@@ -1329,9 +1329,9 @@
           0.0,
           0.0,
           0.0,
-          0.0
+          -1.0
         ],
-        "totalChange": 0.0
+        "totalChange": -1.0
       },
       "implicitModifiers": [],
       "explicitModifiers": [
@@ -1345,7 +1345,7 @@
       "gemLevel": 0,
       "gemQuality": 0,
       "itemType": "Unknown",
-      "chaosValue": 1.0,
+      "chaosValue": 0.99,
       "exaltedValue": 0.01,
       "count": 99,
       "detailsId": "celestial-blacksmiths-incubator"

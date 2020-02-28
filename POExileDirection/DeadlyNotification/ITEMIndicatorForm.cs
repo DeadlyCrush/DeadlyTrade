@@ -12,7 +12,7 @@ namespace POExileDirection
         // BBBBBB private int nDefaultOffsetX = 3;
         // BBBBBB private int nDefaultOffsetY = 4;
 
-        public bool bIsQuad = false;
+        public bool bIsQuad = false; 
         public int nStashX = 0;
         public int nStashY = 0;
 

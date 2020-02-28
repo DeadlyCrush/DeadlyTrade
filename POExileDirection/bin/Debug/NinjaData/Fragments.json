@@ -7,9 +7,9 @@
         "league_id": 74,
         "pay_currency_id": 97,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
         "count": 11,
-        "value": 0.00215,
+        "value": 0.00214975,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -20,34 +20,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 534.0,
+        "Value": 533.59574265957451,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.0,
           9.46,
           9.46,
           11.98,
           11.98,
-          13.02
+          13.02,
+          13.04
         ],
-        "TotalChange": 13.02
+        "TotalChange": 13.04
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          0.57,
+          0.35,
           0.92,
-          1.5,
-          2.3,
-          2.63,
-          2.3
+          1.71,
+          2.04,
+          1.57,
+          1.64
         ],
-        "TotalChange": 2.3
+        "TotalChange": 1.64
       },
-      "ChaosEquivalent": 499.56
+      "ChaosEquivalent": 499.38
     },
     {
       "CurrencyTypeName": "Chayula's Breachstone",
@@ -56,9 +56,9 @@
         "league_id": 74,
         "pay_currency_id": 70,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
         "count": 13,
-        "value": 0.0035179166666666666,
+        "value": 0.00350152,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -69,34 +69,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 353.36,
+        "Value": 355.730495106383,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.25,
-          3.91,
-          4.45,
-          6.4,
-          6.97,
-          13.42
+          3.65,
+          4.19,
+          6.13,
+          6.7,
+          13.07,
+          13.66
         ],
-        "TotalChange": 13.42
+        "TotalChange": 13.66
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -0.53,
-          2.31,
-          1.89,
-          11.79,
-          11.44,
-          12.97
+          2.85,
+          2.43,
+          12.38,
+          12.04,
+          14.0,
+          14.34
         ],
-        "TotalChange": 12.97
+        "TotalChange": 14.34
       },
-      "ChaosEquivalent": 318.81
+      "ChaosEquivalent": 320.66
     },
     {
       "CurrencyTypeName": "Uul-Netol's Pure Breachstone",
@@ -108,7 +108,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 266.1,
+        "Value": 258.96,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -118,16 +118,16 @@
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          0.0,
           4.17,
           8.33,
           8.33,
           11.25,
-          10.88
+          10.93,
+          7.9
         ],
-        "TotalChange": 10.88
+        "TotalChange": 7.9
       },
-      "ChaosEquivalent": 266.1
+      "ChaosEquivalent": 258.96
     },
     {
       "CurrencyTypeName": "Timeless Maraketh Emblem",
@@ -136,9 +136,9 @@
         "league_id": 74,
         "pay_currency_id": 99,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 14,
-        "value": 0.0043378585858585856,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 11,
+        "value": 0.00428895,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -149,34 +149,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 266.84693877551018,
+        "Value": 266.79787132978726,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.0,
           -0.23,
           -0.46,
           -0.46,
           -0.23,
-          -0.41
+          -0.46,
+          0.72
         ],
-        "TotalChange": -0.41
+        "TotalChange": 0.72
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
           0.57,
-          1.15,
-          1.5,
-          2.3,
-          1.6,
-          2.24
+          0.92,
+          1.71,
+          1.02,
+          1.53,
+          1.64
         ],
-        "TotalChange": 2.24
+        "TotalChange": 1.64
       },
-      "ChaosEquivalent": 248.69
+      "ChaosEquivalent": 249.98
     },
     {
       "CurrencyTypeName": "Chayula's Enriched Breachstone",
@@ -185,9 +185,9 @@
         "league_id": 74,
         "pay_currency_id": 92,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
         "count": 5,
-        "value": 0.0050408163265306125,
+        "value": 0.00498795918367347,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -197,35 +197,35 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 73,
-        "Value": 267.0,
+        "Count": 64,
+        "Value": 266.79787132978726,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.18,
-          4.19,
-          4.79,
-          7.05,
+          4.0,
+          4.6,
+          6.85,
           null,
-          8.51
+          null,
+          9.46
         ],
-        "TotalChange": 8.51
+        "TotalChange": 9.46
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          2.94,
-          3.53,
-          3.53,
-          4.71,
-          4.71,
-          4.71
+          0.57,
+          0.57,
+          1.72,
+          1.71,
+          1.52,
+          1.64
         ],
-        "TotalChange": 4.71
+        "TotalChange": 1.64
       },
-      "ChaosEquivalent": 232.69
+      "ChaosEquivalent": 233.64
     },
     {
       "CurrencyTypeName": "Chayula's Charged Breachstone",
@@ -234,9 +234,9 @@
         "league_id": 74,
         "pay_currency_id": 87,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
         "count": 5,
-        "value": 0.0051124242424242421,
+        "value": 0.0050881632653061223,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -246,35 +246,35 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 55,
-        "Value": 250.0,
+        "Count": 60,
+        "Value": 266.79787132978726,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.35,
-          5.38,
-          5.97,
-          8.19,
+          5.01,
+          5.6,
+          7.81,
           null,
-          11.1
+          10.76,
+          11.24
         ],
-        "TotalChange": 11.1
+        "TotalChange": 11.24
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -2.1,
-          -4.28,
+          -2.23,
+          8.53,
+          6.4,
           6.25,
-          4.17,
-          4.02,
-          4.17
+          8.44,
+          13.54
         ],
-        "TotalChange": 4.17
+        "TotalChange": 13.54
       },
-      "ChaosEquivalent": 222.8
+      "ChaosEquivalent": 231.67
     },
     {
       "CurrencyTypeName": "Fragment of Shape",
@@ -283,9 +283,9 @@
         "league_id": 74,
         "pay_currency_id": 112,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 13,
-        "value": 0.0052982424242424241,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 12,
+        "value": 0.0052914666666666671,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -296,34 +296,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 178.0,
+        "Value": 223.09302325581396,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.93,
-          0.93,
-          1.12,
-          2.84,
-          2.64,
-          2.68
+          0.0,
+          0.19,
+          1.89,
+          1.7,
+          1.7,
+          1.86
         ],
-        "TotalChange": 2.68
+        "TotalChange": 1.86
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -6.98,
-          -18.37,
-          -17.99,
-          -16.55,
-          -17.15,
-          -17.44
+          -12.24,
+          -11.84,
+          -10.28,
+          -10.93,
+          -11.37,
+          11.24
         ],
-        "TotalChange": -17.44
+        "TotalChange": 11.24
       },
-      "ChaosEquivalent": 183.37
+      "ChaosEquivalent": 206.04
     },
     {
       "CurrencyTypeName": "Fragment of Knowledge",
@@ -332,9 +332,9 @@
         "league_id": 74,
         "pay_currency_id": 113,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 11,
-        "value": 0.0054130107526881724,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 10,
+        "value": 0.0055596276595744681,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -345,34 +345,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 178.0,
+        "Value": 177.86524755319149,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          1.01,
-          5.43,
-          6.36,
-          11.48,
-          10.87,
-          11.21
+          4.38,
+          5.3,
+          10.37,
+          9.76,
+          10.17,
+          7.2
         ],
-        "TotalChange": 11.21
+        "TotalChange": 7.2
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
           0.57,
-          1.15,
-          1.5,
-          2.3,
-          2.63,
-          2.3
+          0.92,
+          1.71,
+          2.04,
+          1.57,
+          1.64
         ],
-        "TotalChange": 2.3
+        "TotalChange": 1.64
       },
-      "ChaosEquivalent": 181.37
+      "ChaosEquivalent": 178.87
     },
     {
       "CurrencyTypeName": "Tul's Pure Breachstone",
@@ -381,9 +381,9 @@
         "league_id": 74,
         "pay_currency_id": 94,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 6,
-        "value": 0.00737969387755102,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 7,
+        "value": 0.0073850909090909089,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -400,28 +400,28 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.13,
-          3.02,
-          4.31,
-          4.75,
-          1.21,
-          1.63
+          2.88,
+          4.17,
+          4.61,
+          1.08,
+          1.49,
+          1.42
         ],
-        "TotalChange": 1.63
+        "TotalChange": 1.42
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -9.38,
-          -10.62,
-          -11.25,
-          -9.38,
-          -9.38,
-          -15.62
+          -1.38,
+          -2.07,
+          0.0,
+          0.0,
+          -6.9,
+          -6.9
         ],
-        "TotalChange": -15.62
+        "TotalChange": -6.9
       },
-      "ChaosEquivalent": 135.25
+      "ChaosEquivalent": 135.2
     },
     {
       "CurrencyTypeName": "Timeless Templar Emblem",
@@ -430,9 +430,9 @@
         "league_id": 74,
         "pay_currency_id": 101,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 12,
-        "value": 0.0084183516483516477,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 13,
+        "value": 0.00833,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -443,83 +443,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 143.0,
+        "Value": 140.0,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
-          0.0,
           0.0,
           3.2,
           3.2,
           0.89,
           7.38,
-          7.15
+          7.77,
+          8.28
         ],
-        "TotalChange": 7.15
-      },
-      "ReceiveSparkLine": {
-        "Data": [
-          0.0,
-          3.47,
-          3.47,
-          2.78,
-          0.69,
-          -0.51,
-          -0.69
-        ],
-        "TotalChange": -0.69
-      },
-      "ChaosEquivalent": 130.89
-    },
-    {
-      "CurrencyTypeName": "Xoph's Pure Breachstone",
-      "Pay": {
-        "id": 0,
-        "league_id": 74,
-        "pay_currency_id": 93,
-        "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 4,
-        "value": 0.00857624,
-        "data_point_count": 1,
-        "includes_secondary": false
-      },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 87,
-        "Value": 123.41382978723404,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [
-          0.0,
-          0.12,
-          3.96,
-          null,
-          null,
-          null,
-          null
-        ],
-        "TotalChange": 3.96
+        "TotalChange": 8.28
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
           0.0,
-          0.0,
-          2.5,
-          4.17,
-          4.17,
-          2.84
+          -0.67,
+          -2.68,
+          -3.85,
+          -3.82,
+          -6.04
         ],
-        "TotalChange": 2.84
+        "TotalChange": -6.04
       },
-      "ChaosEquivalent": 120.01
+      "ChaosEquivalent": 130.02
     },
     {
       "CurrencyTypeName": "Esh's Pure Breachstone",
@@ -528,9 +479,9 @@
         "league_id": 74,
         "pay_currency_id": 95,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
         "count": 3,
-        "value": 0.00858823,
+        "value": 0.0085711111111111109,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -540,35 +491,76 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 83,
-        "Value": 119.0,
+        "Count": 65,
+        "Value": 120.0,
         "DataPointCount": 0
       },
       "PaySparkLine": {
-        "Data": [
-          0.0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
+        "Data": [],
         "TotalChange": 0.0
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -0.04,
-          0.97,
-          1.69,
-          1.69,
-          1.38,
-          0.85
+          1.01,
+          1.74,
+          1.74,
+          1.43,
+          0.89,
+          1.74
         ],
-        "TotalChange": 0.85
+        "TotalChange": 1.74
       },
-      "ChaosEquivalent": 117.72
+      "ChaosEquivalent": 118.34
+    },
+    {
+      "CurrencyTypeName": "Xoph's Pure Breachstone",
+      "Pay": {
+        "id": 0,
+        "league_id": 74,
+        "pay_currency_id": 93,
+        "get_currency_id": 1,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 5,
+        "value": 0.0086568,
+        "data_point_count": 1,
+        "includes_secondary": false
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 93,
+        "Value": 120.0,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [
+          0.0,
+          3.84,
+          null,
+          null,
+          null,
+          null,
+          -0.08
+        ],
+        "TotalChange": -0.08
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          0.0,
+          2.5,
+          4.17,
+          4.17,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ChaosEquivalent": 117.76
     },
     {
       "CurrencyTypeName": "Uul-Netol's Enriched Breachstone",
@@ -579,8 +571,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 96,
-        "Value": 99.030303030303031,
+        "Count": 59,
+        "Value": 99.205434782608691,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -590,16 +582,16 @@
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          0.11,
-          0.56,
-          0.56,
-          0.23,
-          0.37,
-          -0.42
+          0.45,
+          0.45,
+          0.12,
+          0.26,
+          -3.79,
+          -0.35
         ],
-        "TotalChange": -0.42
+        "TotalChange": -0.35
       },
-      "ChaosEquivalent": 99.03
+      "ChaosEquivalent": 99.21
     },
     {
       "CurrencyTypeName": "Fragment of the Minotaur",
@@ -608,9 +600,9 @@
         "league_id": 74,
         "pay_currency_id": 42,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 11,
-        "value": 0.020411129032258064,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 13,
+        "value": 0.020159822222222221,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -621,20 +613,20 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 45.0,
+        "Value": 47.0,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          -3.23,
-          -3.23,
-          -6.89,
-          -6.8,
-          -6.31,
-          -4.71
+          0.0,
+          -3.78,
+          -3.69,
+          -3.18,
+          -1.52,
+          -0.3
         ],
-        "TotalChange": -4.71
+        "TotalChange": -0.3
       },
       "ReceiveSparkLine": {
         "Data": [
@@ -644,11 +636,11 @@
           0.0,
           0.0,
           0.0,
-          0.0
+          4.44
         ],
-        "TotalChange": 0.0
+        "TotalChange": 4.44
       },
-      "ChaosEquivalent": 47.0
+      "ChaosEquivalent": 48.3
     },
     {
       "CurrencyTypeName": "Tul's Enriched Breachstone",
@@ -657,9 +649,9 @@
         "league_id": 74,
         "pay_currency_id": 89,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 3,
-        "value": 0.02393006,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 4,
+        "value": 0.02398632,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -670,34 +662,26 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 49.0,
+        "Value": 50.0,
         "DataPointCount": 0
       },
       "PaySparkLine": {
-        "Data": [
-          0.0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
+        "Data": [],
         "TotalChange": 0.0
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -3.19,
-          -3.19,
-          -3.71,
-          -8.78,
-          -8.78,
-          -8.78
+          0.0,
+          -0.54,
+          -5.77,
+          -5.77,
+          -4.73,
+          -3.85
         ],
-        "TotalChange": -8.78
+        "TotalChange": -3.85
       },
-      "ChaosEquivalent": 45.39
+      "ChaosEquivalent": 45.85
     },
     {
       "CurrencyTypeName": "Fragment of the Chimera",
@@ -706,9 +690,9 @@
         "league_id": 74,
         "pay_currency_id": 43,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 10,
-        "value": 0.022194731182795698,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 13,
+        "value": 0.022380727272727274,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -719,34 +703,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 45.0,
+        "Value": 47.0,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          -0.05,
-          -0.14,
-          0.69,
-          0.69,
-          -1.35,
-          -1.37
+          -0.09,
+          0.74,
+          0.74,
+          -1.31,
+          -1.75,
+          -2.15
         ],
-        "TotalChange": -1.37
+        "TotalChange": -2.15
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          2.08,
-          -2.08,
-          -4.17,
-          -2.16,
-          -6.25,
-          -6.25
+          -4.08,
+          -6.12,
+          -4.15,
+          -8.16,
+          -8.16,
+          -4.08
         ],
-        "TotalChange": -6.25
+        "TotalChange": -4.08
       },
-      "ChaosEquivalent": 45.03
+      "ChaosEquivalent": 45.84
     },
     {
       "CurrencyTypeName": "Xoph's Enriched Breachstone",
@@ -755,7 +739,7 @@
         "league_id": 74,
         "pay_currency_id": 88,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
         "count": 4,
         "value": 0.02439,
         "data_point_count": 1,
@@ -768,7 +752,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 48.92,
+        "Value": 49.92,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -778,16 +762,16 @@
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          3.24,
-          0.0,
-          0.0,
-          -2.0,
-          -2.0,
-          -2.16
+          -3.14,
+          -3.14,
+          -5.07,
+          -5.07,
+          -4.47,
+          -3.29
         ],
-        "TotalChange": -2.16
+        "TotalChange": -3.29
       },
-      "ChaosEquivalent": 44.96
+      "ChaosEquivalent": 45.46
     },
     {
       "CurrencyTypeName": "Esh's Enriched Breachstone",
@@ -796,7 +780,7 @@
         "league_id": 74,
         "pay_currency_id": 90,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
         "count": 3,
         "value": 0.02439,
         "data_point_count": 1,
@@ -809,7 +793,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 47.734693877551024,
+        "Value": 48.91,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -821,14 +805,14 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           -4.0,
           -4.0,
-          -4.53
+          -4.0,
+          -2.18
         ],
-        "TotalChange": -4.53
+        "TotalChange": -2.18
       },
-      "ChaosEquivalent": 44.37
+      "ChaosEquivalent": 44.96
     },
     {
       "CurrencyTypeName": "Fragment of Eradication",
@@ -837,9 +821,9 @@
         "league_id": 74,
         "pay_currency_id": 109,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 8,
-        "value": 0.02425225,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 10,
+        "value": 0.024393210526315788,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -850,34 +834,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 42.0,
+        "Value": 43.0,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
           0.0,
-          0.0,
           0.52,
           5.0,
           2.8,
-          3.08
+          2.8,
+          2.49
         ],
-        "TotalChange": 3.08
+        "TotalChange": 2.49
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          0.0,
           5.0,
           5.0,
           5.0,
           0.0,
-          5.0
+          5.0,
+          7.5
         ],
-        "TotalChange": 5.0
+        "TotalChange": 7.5
       },
-      "ChaosEquivalent": 41.62
+      "ChaosEquivalent": 42.0
     },
     {
       "CurrencyTypeName": "Fragment of the Phoenix",
@@ -886,9 +870,9 @@
         "league_id": 74,
         "pay_currency_id": 41,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 12,
-        "value": 0.02667,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 13,
+        "value": 0.027186629213483145,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -905,28 +889,28 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.08,
-          0.46,
-          0.46,
-          0.46,
-          -1.78,
-          -0.86
+          0.38,
+          0.38,
+          0.38,
+          -1.86,
+          -0.94,
+          -2.82
         ],
-        "TotalChange": -0.86
+        "TotalChange": -2.82
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          3.53,
-          0.87,
-          2.33,
-          -1.78,
-          0.87,
-          0.87
+          -2.56,
+          -1.16,
+          -5.13,
+          -2.56,
+          -2.56,
+          -2.56
         ],
-        "TotalChange": 0.87
+        "TotalChange": -2.56
       },
-      "ChaosEquivalent": 37.75
+      "ChaosEquivalent": 37.39
     },
     {
       "CurrencyTypeName": "Fragment of Enslavement",
@@ -935,9 +919,9 @@
         "league_id": 74,
         "pay_currency_id": 108,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
         "count": 7,
-        "value": 0.0288369793814433,
+        "value": 0.02824531,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -954,28 +938,28 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.0,
           0.25,
           0.6,
           0.6,
           -1.08,
-          -1.1
+          -1.04,
+          0.97
         ],
-        "TotalChange": -1.1
+        "TotalChange": 0.97
       },
       "ReceiveSparkLine": {
         "Data": [
-          0.0,
           0.0,
           2.86,
           2.86,
           0.0,
           -2.86,
+          -1.24,
           0.0
         ],
         "TotalChange": 0.0
       },
-      "ChaosEquivalent": 34.84
+      "ChaosEquivalent": 35.2
     },
     {
       "CurrencyTypeName": "Uul-Netol's Charged Breachstone",
@@ -997,14 +981,14 @@
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          2.53,
-          -2.78,
-          -8.36,
-          -8.33,
-          -13.21,
-          -8.33
+          -5.17,
+          -10.62,
+          -10.59,
+          -15.35,
+          -10.59,
+          -10.59
         ],
-        "TotalChange": -8.33
+        "TotalChange": -10.59
       },
       "ChaosEquivalent": 33.0
     },
@@ -1015,9 +999,9 @@
         "league_id": 74,
         "pay_currency_id": 102,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
         "count": 8,
-        "value": 0.029985777777777778,
+        "value": 0.030374969072164949,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -1028,34 +1012,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 30.0,
+        "Value": 32.0,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          -0.22,
-          0.03,
-          6.48,
-          10.06,
-          10.59,
-          7.98
+          0.25,
+          6.71,
+          10.3,
+          10.83,
+          7.52,
+          6.83
         ],
-        "TotalChange": 7.98
+        "TotalChange": 6.83
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          0.5,
-          0.0,
-          -5.56,
-          -9.09,
-          -9.09,
-          -9.09
+          -0.49,
+          -6.02,
+          -9.54,
+          -9.54,
+          -9.54,
+          -3.51
         ],
-        "TotalChange": -9.09
+        "TotalChange": -3.51
       },
-      "ChaosEquivalent": 31.67
+      "ChaosEquivalent": 32.46
     },
     {
       "CurrencyTypeName": "Fragment of the Hydra",
@@ -1064,57 +1048,8 @@
         "league_id": 74,
         "pay_currency_id": 40,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 9,
-        "value": 0.031571494736842107,
-        "data_point_count": 1,
-        "includes_secondary": false
-      },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 100,
-        "Value": 30.0,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [
-          0.0,
-          -0.98,
-          -1.17,
-          -3.13,
-          -2.86,
-          -1.01,
-          -1.02
-        ],
-        "TotalChange": -1.02
-      },
-      "ReceiveSparkLine": {
-        "Data": [
-          0.0,
-          -5.88,
-          -11.76,
-          -8.05,
-          -10.0,
-          -11.76,
-          -11.76
-        ],
-        "TotalChange": -11.76
-      },
-      "ChaosEquivalent": 30.84
-    },
-    {
-      "CurrencyTypeName": "Fragment of Constriction",
-      "Pay": {
-        "id": 0,
-        "league_id": 74,
-        "pay_currency_id": 110,
-        "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 7,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 12,
         "value": 0.03226,
         "data_point_count": 1,
         "includes_secondary": false
@@ -1132,28 +1067,77 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          10.77,
-          11.13,
-          12.17,
-          14.82,
-          14.82,
-          14.82
+          -0.19,
+          -2.17,
+          -1.9,
+          -0.03,
+          -1.53,
+          -2.17
         ],
-        "TotalChange": 14.82
+        "TotalChange": -2.17
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          2.97,
-          6.67,
-          3.33,
-          -0.03,
-          -0.93,
-          0.0
+          -6.25,
+          -2.3,
+          -4.38,
+          -6.25,
+          -6.25,
+          -6.25
         ],
-        "TotalChange": 0.0
+        "TotalChange": -6.25
       },
       "ChaosEquivalent": 30.5
+    },
+    {
+      "CurrencyTypeName": "Fragment of Constriction",
+      "Pay": {
+        "id": 0,
+        "league_id": 74,
+        "pay_currency_id": 110,
+        "get_currency_id": 1,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 9,
+        "value": 0.03204184,
+        "data_point_count": 1,
+        "includes_secondary": false
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 100,
+        "Value": 29.0,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [
+          0.0,
+          0.33,
+          1.27,
+          3.66,
+          3.66,
+          3.66,
+          4.36
+        ],
+        "TotalChange": 4.36
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          3.59,
+          0.35,
+          -2.92,
+          -3.79,
+          -6.12,
+          -6.12
+        ],
+        "TotalChange": -6.12
+      },
+      "ChaosEquivalent": 30.1
     },
     {
       "CurrencyTypeName": "Fragment of Terror",
@@ -1162,9 +1146,9 @@
         "league_id": 74,
         "pay_currency_id": 114,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 6,
-        "value": 0.033939848484848482,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 7,
+        "value": 0.03333,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -1182,27 +1166,27 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
           -2.06,
           -1.77,
           -1.77,
-          -1.8
+          -1.8,
+          0.0
         ],
-        "TotalChange": -1.8
+        "TotalChange": 0.0
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          1.99,
-          8.79,
-          1.99,
-          1.99,
-          1.99,
-          -1.4
+          6.67,
+          0.0,
+          0.0,
+          0.0,
+          -3.33,
+          -3.33
         ],
-        "TotalChange": -1.4
+        "TotalChange": -3.33
       },
-      "ChaosEquivalent": 29.23
+      "ChaosEquivalent": 29.5
     },
     {
       "CurrencyTypeName": "Fragment of Emptiness",
@@ -1211,9 +1195,9 @@
         "league_id": 74,
         "pay_currency_id": 115,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 7,
-        "value": 0.03571,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 9,
+        "value": 0.035327237113402063,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -1230,28 +1214,28 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.0,
           -6.02,
           -6.02,
           -6.02,
           -6.02,
-          -6.02
+          -6.02,
+          -5.0
         ],
-        "TotalChange": -6.02
+        "TotalChange": -5.0
       },
       "ReceiveSparkLine": {
         "Data": [
-          0.0,
           0.0,
           4.01,
           3.33,
           6.67,
           0.0,
+          0.0,
           0.0
         ],
         "TotalChange": 0.0
       },
-      "ChaosEquivalent": 29.0
+      "ChaosEquivalent": 29.15
     },
     {
       "CurrencyTypeName": "Fragment of Purification",
@@ -1260,9 +1244,9 @@
         "league_id": 74,
         "pay_currency_id": 111,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
         "count": 7,
-        "value": 0.03694362,
+        "value": 0.03650667,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -1273,34 +1257,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 29.0,
+        "Value": 29.604166666666668,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          14.67,
-          14.77,
-          12.42,
-          11.99,
-          3.9,
-          3.89
+          0.09,
+          -1.96,
+          -2.33,
+          -9.39,
+          -9.39,
+          -8.32
         ],
-        "TotalChange": 3.89
+        "TotalChange": -8.32
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          4.53,
-          4.53,
-          4.53,
-          16.14,
-          12.27,
-          12.27
+          0.0,
+          0.0,
+          11.11,
+          7.41,
+          7.41,
+          9.65
         ],
-        "TotalChange": 12.27
+        "TotalChange": 9.65
       },
-      "ChaosEquivalent": 28.03
+      "ChaosEquivalent": 28.5
     },
     {
       "CurrencyTypeName": "Uul-Netol's Breachstone",
@@ -1309,9 +1293,9 @@
         "league_id": 74,
         "pay_currency_id": 69,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
         "count": 4,
-        "value": 0.07893274,
+        "value": 0.06425,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -1322,34 +1306,26 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 30.0,
+        "Value": 33.868131868131869,
         "DataPointCount": 0
       },
       "PaySparkLine": {
-        "Data": [
-          0.0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
+        "Data": [],
         "TotalChange": 0.0
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          11.54,
-          19.52,
-          20.0,
-          20.0,
-          28.0,
-          20.0
+          7.15,
+          7.58,
+          7.58,
+          14.75,
+          8.67,
+          21.45
         ],
-        "TotalChange": 20.0
+        "TotalChange": 21.45
       },
-      "ChaosEquivalent": 21.33
+      "ChaosEquivalent": 24.72
     },
     {
       "CurrencyTypeName": "Timeless Eternal Emblem",
@@ -1358,9 +1334,58 @@
         "league_id": 74,
         "pay_currency_id": 100,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
         "count": 8,
-        "value": 0.056315422680412369,
+        "value": 0.057393290322580642,
+        "data_point_count": 1,
+        "includes_secondary": false
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 100,
+        "Value": 19.979591836734695,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [
+          0.0,
+          7.73,
+          14.72,
+          14.72,
+          15.3,
+          12.39,
+          10.29
+        ],
+        "TotalChange": 10.29
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          0.0,
+          -5.0,
+          -5.0,
+          -5.0,
+          -5.0,
+          -0.1
+        ],
+        "TotalChange": -0.1
+      },
+      "ChaosEquivalent": 18.7
+    },
+    {
+      "CurrencyTypeName": "Mortal Ignorance",
+      "Pay": {
+        "id": 0,
+        "league_id": 74,
+        "pay_currency_id": 34,
+        "get_currency_id": 1,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 4,
+        "value": 0.069991,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -1377,57 +1402,8 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          1.97,
-          9.85,
-          16.98,
-          16.98,
-          17.58,
-          14.62
-        ],
-        "TotalChange": 14.62
-      },
-      "ReceiveSparkLine": {
-        "Data": [
           0.0,
-          5.26,
-          5.26,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ChaosEquivalent": 18.38
-    },
-    {
-      "CurrencyTypeName": "Mortal Ignorance",
-      "Pay": {
-        "id": 0,
-        "league_id": 74,
-        "pay_currency_id": 34,
-        "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 3,
-        "value": 0.06889425,
-        "data_point_count": 1,
-        "includes_secondary": false
-      },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 100,
-        "Value": 19.070707070707069,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
+          null,
           null,
           null,
           null,
@@ -1438,65 +1414,16 @@
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          5.88,
-          6.48,
-          11.76,
-          5.88,
-          11.76,
-          12.18
-        ],
-        "TotalChange": 12.18
-      },
-      "ChaosEquivalent": 16.79
-    },
-    {
-      "CurrencyTypeName": "Yriel's Key",
-      "Pay": {
-        "id": 0,
-        "league_id": 74,
-        "pay_currency_id": 37,
-        "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 4,
-        "value": 0.07143,
-        "data_point_count": 1,
-        "includes_secondary": false
-      },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 100,
-        "Value": 16.0,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [
-          null,
-          null,
-          null,
-          null,
-          null,
+          0.57,
+          5.56,
           0.0,
-          null
+          5.56,
+          5.56,
+          5.56
         ],
-        "TotalChange": 0.0
+        "TotalChange": 5.56
       },
-      "ReceiveSparkLine": {
-        "Data": [
-          0.0,
-          0.74,
-          0.74,
-          0.74,
-          0.74,
-          14.17,
-          7.45
-        ],
-        "TotalChange": 7.45
-      },
-      "ChaosEquivalent": 15.0
+      "ChaosEquivalent": 16.64
     },
     {
       "CurrencyTypeName": "Tul's Charged Breachstone",
@@ -1505,8 +1432,8 @@
         "league_id": 74,
         "pay_currency_id": 84,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 2,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 3,
         "value": 0.06667,
         "data_point_count": 1,
         "includes_secondary": false
@@ -1518,7 +1445,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 15.0,
+        "Value": 16.512820512820515,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -1528,16 +1455,65 @@
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -11.19,
-          -0.76,
-          0.0,
-          5.88,
-          2.88,
-          -11.76
+          11.74,
+          12.6,
+          19.22,
+          15.84,
+          -0.65,
+          9.37
         ],
-        "TotalChange": -11.76
+        "TotalChange": 9.37
       },
-      "ChaosEquivalent": 15.0
+      "ChaosEquivalent": 15.76
+    },
+    {
+      "CurrencyTypeName": "Yriel's Key",
+      "Pay": {
+        "id": 0,
+        "league_id": 74,
+        "pay_currency_id": 37,
+        "get_currency_id": 1,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 5,
+        "value": 0.07143,
+        "data_point_count": 1,
+        "includes_secondary": false
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 100,
+        "Value": 17.0,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [
+          null,
+          null,
+          null,
+          null,
+          0.0,
+          null,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          13.33,
+          13.33,
+          13.33
+        ],
+        "TotalChange": 13.33
+      },
+      "ChaosEquivalent": 15.5
     },
     {
       "CurrencyTypeName": "Timeless Karui Emblem",
@@ -1546,9 +1522,9 @@
         "league_id": 74,
         "pay_currency_id": 98,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 10,
-        "value": 0.0702029381443299,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 9,
+        "value": 0.068579877551020407,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -1565,28 +1541,28 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.35,
-          2.39,
-          5.82,
-          5.82,
-          -5.88,
-          1.75
+          2.04,
+          5.45,
+          5.45,
+          -6.21,
+          1.4,
+          3.79
         ],
-        "TotalChange": 1.75
+        "TotalChange": 3.79
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
           0.0,
-          0.0,
           -6.67,
           -13.33,
+          -6.67,
           -6.67,
           -6.67
         ],
         "TotalChange": -6.67
       },
-      "ChaosEquivalent": 14.12
+      "ChaosEquivalent": 14.29
     },
     {
       "CurrencyTypeName": "Volkuur's Key",
@@ -1595,8 +1571,8 @@
         "league_id": 74,
         "pay_currency_id": 39,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 4,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 5,
         "value": 0.07692,
         "data_point_count": 1,
         "includes_secondary": false
@@ -1607,8 +1583,57 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
+        "Count": 89,
+        "Value": 15.0,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -3.26,
+          7.14,
+          7.14,
+          7.14
+        ],
+        "TotalChange": 7.14
+      },
+      "ChaosEquivalent": 14.0
+    },
+    {
+      "CurrencyTypeName": "Inya's Key",
+      "Pay": {
+        "id": 0,
+        "league_id": 74,
+        "pay_currency_id": 38,
+        "get_currency_id": 1,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 4,
+        "value": 0.11547146,
+        "data_point_count": 1,
+        "includes_secondary": false
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 14.0,
+        "Value": 11.0,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -1618,27 +1643,27 @@
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          3.7,
-          3.7,
-          3.7,
-          0.32,
-          11.11,
-          3.7
+          0.0,
+          0.0,
+          0.0,
+          -16.67,
+          -16.67,
+          -8.33
         ],
-        "TotalChange": 3.7
+        "TotalChange": -8.33
       },
-      "ChaosEquivalent": 13.5
+      "ChaosEquivalent": 9.83
     },
     {
-      "CurrencyTypeName": "Inya's Key",
+      "CurrencyTypeName": "Xoph's Charged Breachstone",
       "Pay": {
         "id": 0,
         "league_id": 74,
-        "pay_currency_id": 38,
+        "pay_currency_id": 83,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 3,
-        "value": 0.11398523,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 2,
+        "value": 0.112499,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -1660,105 +1685,15 @@
         "Data": [
           0.0,
           0.0,
+          -8.47,
           0.0,
           0.0,
-          0.0,
-          -16.67,
-          -16.67
-        ],
-        "TotalChange": -16.67
-      },
-      "ChaosEquivalent": 9.39
-    },
-    {
-      "CurrencyTypeName": "Xoph's Charged Breachstone",
-      "Pay": {
-        "id": 0,
-        "league_id": 74,
-        "pay_currency_id": 83,
-        "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 2,
-        "value": 0.112499,
-        "data_point_count": 1,
-        "includes_secondary": false
-      },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 100,
-        "Value": 9.89,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [],
-        "TotalChange": 0.0
-      },
-      "ReceiveSparkLine": {
-        "Data": [
-          0.0,
-          11.11,
-          11.11,
-          1.7,
-          11.11,
-          11.11,
-          9.89
-        ],
-        "TotalChange": 9.89
-      },
-      "ChaosEquivalent": 9.39
-    },
-    {
-      "CurrencyTypeName": "Tul's Breachstone",
-      "Pay": {
-        "id": 0,
-        "league_id": 74,
-        "pay_currency_id": 67,
-        "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 6,
-        "value": 0.14286,
-        "data_point_count": 1,
-        "includes_secondary": false
-      },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 100,
-        "Value": 8.0,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          -5.85,
-          -12.5,
-          -12.5
-        ],
-        "TotalChange": -12.5
-      },
-      "ReceiveSparkLine": {
-        "Data": [
-          0.0,
-          0.0,
-          12.5,
-          -12.5,
-          0.0,
-          -12.5,
+          -0.6,
           0.0
         ],
         "TotalChange": 0.0
       },
-      "ChaosEquivalent": 7.5
+      "ChaosEquivalent": 9.44
     },
     {
       "CurrencyTypeName": "Esh's Charged Breachstone",
@@ -1767,7 +1702,7 @@
         "league_id": 74,
         "pay_currency_id": 85,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
         "count": 2,
         "value": 0.145241,
         "data_point_count": 1,
@@ -1780,7 +1715,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 8.0,
+        "Value": 7.4651162790697674,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -1790,16 +1725,65 @@
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -8.78,
-          -3.95,
-          -42.98,
-          -31.58,
-          -8.78,
-          -8.78
+          5.28,
+          -37.5,
+          -25.0,
+          0.0,
+          -2.01,
+          -6.69
         ],
-        "TotalChange": -8.78
+        "TotalChange": -6.69
       },
-      "ChaosEquivalent": 7.44
+      "ChaosEquivalent": 7.18
+    },
+    {
+      "CurrencyTypeName": "Tul's Breachstone",
+      "Pay": {
+        "id": 0,
+        "league_id": 74,
+        "pay_currency_id": 67,
+        "get_currency_id": 1,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 6,
+        "value": 0.15524601010101011,
+        "data_point_count": 1,
+        "includes_secondary": false
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 100,
+        "Value": 7.0,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -5.85,
+          -12.5,
+          -18.1,
+          -19.48
+        ],
+        "TotalChange": -19.48
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          12.5,
+          -12.5,
+          0.0,
+          -12.5,
+          -12.5,
+          -12.5
+        ],
+        "TotalChange": -12.5
+      },
+      "ChaosEquivalent": 6.72
     },
     {
       "CurrencyTypeName": "Eber's Key",
@@ -1808,9 +1792,9 @@
         "league_id": 74,
         "pay_currency_id": 36,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 3,
-        "value": 0.21085,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 4,
+        "value": 0.2162,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -1825,30 +1809,63 @@
         "DataPointCount": 0
       },
       "PaySparkLine": {
-        "Data": [
-          0.0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
+        "Data": [],
         "TotalChange": 0.0
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -14.29,
-          -14.29,
           0.0,
-          -4.43,
-          -14.29,
-          -14.29
+          16.67,
+          11.5,
+          0.0,
+          0.0,
+          0.0
         ],
-        "TotalChange": -14.29
+        "TotalChange": 0.0
       },
-      "ChaosEquivalent": 5.37
+      "ChaosEquivalent": 5.31
+    },
+    {
+      "CurrencyTypeName": "Mortal Hope",
+      "Pay": {
+        "id": 0,
+        "league_id": 74,
+        "pay_currency_id": 35,
+        "get_currency_id": 1,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 4,
+        "value": 0.27533232,
+        "data_point_count": 1,
+        "includes_secondary": false
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 100,
+        "Value": 4.8989878787878789,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [],
+        "TotalChange": 0.0
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          4.87,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          22.47
+        ],
+        "TotalChange": 22.47
+      },
+      "ChaosEquivalent": 4.27
     },
     {
       "CurrencyTypeName": "Mortal Rage",
@@ -1857,9 +1874,9 @@
         "league_id": 74,
         "pay_currency_id": 33,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 4,
-        "value": 0.236539,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 5,
+        "value": 0.23834545454545455,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -1876,69 +1893,28 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          -0.04,
           null,
           null,
           null,
-          0.77,
-          null
+          0.81,
+          null,
+          0.82
         ],
-        "TotalChange": 0.77
+        "TotalChange": 0.82
       },
       "ReceiveSparkLine": {
         "Data": [
-          0.0,
           0.0,
           0.0,
           0.0,
           -20.0,
           0.0,
+          -20.0,
           -20.0
         ],
         "TotalChange": -20.0
       },
-      "ChaosEquivalent": 4.11
-    },
-    {
-      "CurrencyTypeName": "Mortal Hope",
-      "Pay": {
-        "id": 0,
-        "league_id": 74,
-        "pay_currency_id": 35,
-        "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 3,
-        "value": 0.33333,
-        "data_point_count": 1,
-        "includes_secondary": false
-      },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 100,
-        "Value": 5.0,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [],
-        "TotalChange": 0.0
-      },
-      "ReceiveSparkLine": {
-        "Data": [
-          0.0,
-          0.0,
-          4.87,
-          25.0,
-          25.0,
-          25.0,
-          25.0
-        ],
-        "TotalChange": 25.0
-      },
-      "ChaosEquivalent": 4.0
+      "ChaosEquivalent": 4.1
     },
     {
       "CurrencyTypeName": "Mortal Grief",
@@ -1947,9 +1923,9 @@
         "league_id": 74,
         "pay_currency_id": 32,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 4,
-        "value": 0.40413478787878787,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 5,
+        "value": 0.41735757575757576,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -1968,26 +1944,26 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           null,
           -20.13,
-          null
+          null,
+          -20.13
         ],
         "TotalChange": -20.13
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -33.33,
-          -33.33,
           0.0,
-          0.0,
-          0.0,
-          0.0
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0
         ],
-        "TotalChange": 0.0
+        "TotalChange": 50.0
       },
-      "ChaosEquivalent": 2.74
+      "ChaosEquivalent": 2.7
     },
     {
       "CurrencyTypeName": "Xoph's Breachstone",
@@ -1996,8 +1972,8 @@
         "league_id": 74,
         "pay_currency_id": 66,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 1,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 2,
         "value": 0.5,
         "data_point_count": 1,
         "includes_secondary": false
@@ -2037,8 +2013,8 @@
         "league_id": 74,
         "pay_currency_id": 68,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 2,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 3,
         "value": 0.5,
         "data_point_count": 1,
         "includes_secondary": false
@@ -2050,7 +2026,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 3.0,
+        "Value": 2.1530612244897958,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -2065,11 +2041,11 @@
           0.0,
           0.0,
           0.0,
-          0.0
+          -28.23
         ],
-        "TotalChange": 0.0
+        "TotalChange": -28.23
       },
-      "ChaosEquivalent": 2.5
+      "ChaosEquivalent": 2.08
     },
     {
       "CurrencyTypeName": "Timeless Maraketh Splinter",
@@ -2078,9 +2054,9 @@
         "league_id": 74,
         "pay_currency_id": 104,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 18,
-        "value": 0.44834631034482758,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 16,
+        "value": 0.4745,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -2091,34 +2067,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 2.2213074226804124,
+        "Value": 2.0,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.0,
           0.09,
           -3.96,
           -2.15,
           -2.58,
-          -3.03
+          -3.25,
+          -8.37
         ],
-        "TotalChange": -3.03
+        "TotalChange": -8.37
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          0.23,
-          -10.37,
-          -10.37,
-          -28.29,
-          -28.29,
-          -20.36
+          -10.57,
+          -10.57,
+          -28.46,
+          -28.46,
+          -28.46,
+          -28.46
         ],
-        "TotalChange": -20.36
+        "TotalChange": -28.46
       },
-      "ChaosEquivalent": 2.23
+      "ChaosEquivalent": 2.05
     },
     {
       "CurrencyTypeName": "Divine Vessel",
@@ -2127,9 +2103,9 @@
         "league_id": 74,
         "pay_currency_id": 72,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 2,
-        "value": 1.0545,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 4,
+        "value": 1.0,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -2147,8 +2123,8 @@
         "Data": [
           null,
           null,
-          null,
           0.0,
+          null,
           null,
           null,
           null
@@ -2167,7 +2143,7 @@
         ],
         "TotalChange": 0.0
       },
-      "ChaosEquivalent": 1.47
+      "ChaosEquivalent": 1.5
     },
     {
       "CurrencyTypeName": "Timeless Templar Splinter",
@@ -2176,8 +2152,8 @@
         "league_id": 74,
         "pay_currency_id": 106,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 13,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 17,
         "value": 0.71429,
         "data_point_count": 1,
         "includes_secondary": false
@@ -2207,14 +2183,14 @@
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          28.36,
-          29.12,
-          33.33,
-          33.33,
-          0.0,
-          0.0
+          0.59,
+          3.87,
+          3.87,
+          -22.1,
+          -9.49,
+          -22.1
         ],
-        "TotalChange": 0.0
+        "TotalChange": -22.1
       },
       "ChaosEquivalent": 1.45
     },
@@ -2225,9 +2201,9 @@
         "league_id": 74,
         "pay_currency_id": 29,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 10,
-        "value": 0.97874107142857147,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 9,
+        "value": 0.97233987234042552,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -2244,14 +2220,14 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          -1.75,
-          -1.29,
-          0.21,
+          0.47,
           2.0,
-          -1.17,
-          0.39
+          3.81,
+          0.59,
+          0.42,
+          2.84
         ],
-        "TotalChange": 0.39
+        "TotalChange": 2.84
       },
       "ReceiveSparkLine": {
         "Data": [
@@ -2268,63 +2244,14 @@
       "ChaosEquivalent": 1.01
     },
     {
-      "CurrencyTypeName": "Sacrifice at Noon",
-      "Pay": {
-        "id": 0,
-        "league_id": 74,
-        "pay_currency_id": 31,
-        "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 11,
-        "value": 1.4056701030927834,
-        "data_point_count": 1,
-        "includes_secondary": false
-      },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 100,
-        "Value": 1.0,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [
-          0.0,
-          0.0,
-          14.47,
-          16.61,
-          17.08,
-          -17.17,
-          -16.71
-        ],
-        "TotalChange": -16.71
-      },
-      "ReceiveSparkLine": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ChaosEquivalent": 0.86
-    },
-    {
       "CurrencyTypeName": "Offering to the Goddess",
       "Pay": {
         "id": 0,
         "league_id": 74,
         "pay_currency_id": 44,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 6,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 7,
         "value": 1.5,
         "data_point_count": 1,
         "includes_secondary": false
@@ -2346,7 +2273,7 @@
           0.0,
           0.0,
           0.0,
-          0.0,
+          -33.33,
           -33.33
         ],
         "TotalChange": -33.33
@@ -2366,15 +2293,15 @@
       "ChaosEquivalent": 0.83
     },
     {
-      "CurrencyTypeName": "Sacrifice at Dawn",
+      "CurrencyTypeName": "Sacrifice at Noon",
       "Pay": {
         "id": 0,
         "league_id": 74,
-        "pay_currency_id": 30,
+        "pay_currency_id": 31,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 14,
-        "value": 1.45966586,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 11,
+        "value": 1.66667,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -2385,34 +2312,83 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.95785534883720935,
+        "Value": 1.0,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          18.04,
-          13.74,
-          13.74,
-          15.28,
-          7.07,
-          9.66
+          14.47,
+          16.61,
+          17.08,
+          -17.17,
+          -17.24,
+          -29.75
         ],
-        "TotalChange": 9.66
+        "TotalChange": -29.75
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -1.5,
-          0.04,
-          0.65,
-          0.04,
-          0.04,
-          -2.55
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ],
-        "TotalChange": -2.55
+        "TotalChange": 0.0
       },
-      "ChaosEquivalent": 0.82
+      "ChaosEquivalent": 0.8
+    },
+    {
+      "CurrencyTypeName": "Sacrifice at Dawn",
+      "Pay": {
+        "id": 0,
+        "league_id": 74,
+        "pay_currency_id": 30,
+        "get_currency_id": 1,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 15,
+        "value": 1.4898987878787879,
+        "data_point_count": 1,
+        "includes_secondary": false
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 100,
+        "Value": 0.91865247422680407,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [
+          0.0,
+          -3.64,
+          -3.64,
+          -2.34,
+          -9.29,
+          -10.63,
+          -8.98
+        ],
+        "TotalChange": -8.98
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          1.57,
+          2.19,
+          1.57,
+          1.57,
+          0.12,
+          -5.11
+        ],
+        "TotalChange": -5.11
+      },
+      "ChaosEquivalent": 0.79
     },
     {
       "CurrencyTypeName": "Sacrifice at Dusk",
@@ -2421,58 +2397,9 @@
         "league_id": 74,
         "pay_currency_id": 28,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 10,
-        "value": 3.1908163265306122,
-        "data_point_count": 1,
-        "includes_secondary": false
-      },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 100,
-        "Value": 0.51234518518518524,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          -5.58,
-          -5.98
-        ],
-        "TotalChange": -5.98
-      },
-      "ReceiveSparkLine": {
-        "Data": [
-          0.0,
-          7.43,
-          20.44,
-          20.44,
-          -9.67,
-          -9.67,
-          -7.44
-        ],
-        "TotalChange": -7.44
-      },
-      "ChaosEquivalent": 0.41
-    },
-    {
-      "CurrencyTypeName": "Timeless Vaal Splinter",
-      "Pay": {
-        "id": 0,
-        "league_id": 74,
-        "pay_currency_id": 107,
-        "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 6,
-        "value": 3.2680117676767675,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 11,
+        "value": 3.274193548387097,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -2490,27 +2417,76 @@
         "Data": [
           0.0,
           0.0,
-          0.05,
-          -2.14,
-          0.3,
-          0.75,
-          4.81
+          0.0,
+          0.0,
+          -5.58,
+          -7.25,
+          -8.37
         ],
-        "TotalChange": 4.81
+        "TotalChange": -8.37
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          0.84,
-          0.09,
-          1.96,
-          2.58,
-          2.7,
-          2.7
+          12.11,
+          12.11,
+          -15.92,
+          -15.92,
+          -15.92,
+          -15.92
         ],
-        "TotalChange": 2.7
+        "TotalChange": -15.92
       },
       "ChaosEquivalent": 0.4
+    },
+    {
+      "CurrencyTypeName": "Timeless Vaal Splinter",
+      "Pay": {
+        "id": 0,
+        "league_id": 74,
+        "pay_currency_id": 107,
+        "get_currency_id": 1,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 5,
+        "value": 3.4010396875,
+        "data_point_count": 1,
+        "includes_secondary": false
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 100,
+        "Value": 0.4800946875,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [
+          0.0,
+          0.05,
+          -2.14,
+          0.3,
+          0.75,
+          4.81,
+          0.71
+        ],
+        "TotalChange": 0.71
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          -0.74,
+          1.11,
+          1.73,
+          1.85,
+          1.85,
+          -2.21
+        ],
+        "TotalChange": -2.21
+      },
+      "ChaosEquivalent": 0.39
     },
     {
       "CurrencyTypeName": "Timeless Eternal Empire Splinter",
@@ -2519,9 +2495,9 @@
         "league_id": 74,
         "pay_currency_id": 105,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
         "count": 3,
-        "value": 7.0,
+        "value": 7.2191919191919194,
         "data_point_count": 1,
         "includes_secondary": false
       },
@@ -2538,7 +2514,7 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.0,
+          null,
           null,
           null,
           null,
@@ -2568,8 +2544,8 @@
         "league_id": 74,
         "pay_currency_id": 103,
         "get_currency_id": 1,
-        "sample_time_utc": "2020-02-26T09:20:02.5911113Z",
-        "count": 3,
+        "sample_time_utc": "2020-02-27T19:13:48.4341281Z",
+        "count": 4,
         "value": 9.0,
         "data_point_count": 1,
         "includes_secondary": false
@@ -2581,13 +2557,13 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.265764375,
+        "Value": 0.27297121951219511,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.0,
+          null,
           null,
           null,
           null,
@@ -2599,14 +2575,14 @@
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -0.13,
-          3.15,
-          10.5,
-          0.46,
-          0.36,
-          2.79
+          3.28,
+          10.65,
+          0.59,
+          0.5,
+          7.92,
+          5.72
         ],
-        "TotalChange": 2.79
+        "TotalChange": 5.72
       },
       "ChaosEquivalent": 0.19
     }

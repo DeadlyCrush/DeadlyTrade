@@ -267,7 +267,6 @@ namespace POExileDirection
                 Check_UILanguageWrapping();
                 Set_TradeMessageRegEx();
 
-                NinjaTranslation.InitTranslateKOR();
                 Thread.Sleep(100);
             }
         }
@@ -384,7 +383,7 @@ namespace POExileDirection
             timerInit.Start();
 
             gCF_bIsTextFocused = false;
-            
+
             Init_ControlFormPosition();
 
             Register_HotKeys();
@@ -473,9 +472,24 @@ namespace POExileDirection
                 ShowAvailabeUpdatePanel();
         }
 
-        private async void _keymouseHooks_MouseWheelExt(object sender, MouseEventExtArgs e)
+        private void MouseWheelThread(object sender, MouseEventExtArgs e)
         {
-            await Task.Run(() => MouseWheelExt(sender, e)).ConfigureAwait(false);
+            MouseWheelExtDelegate delegateInstance =
+                            new MouseWheelExtDelegate(MouseWheelExt);
+            delegateInstance.BeginInvoke(sender, e, null, null);
+        }
+        private delegate void MouseWheelExtDelegate(object sender, MouseEventExtArgs e);
+
+        private void _keymouseHooks_MouseWheelExt(object sender, MouseEventExtArgs e)
+        {
+            ThreadStartWithEvent(sender, e);
+        }
+
+        private Thread ThreadStartWithEvent(object sender, MouseEventExtArgs e)
+        {
+            Thread t = new Thread(() => MouseWheelThread(sender, e));
+            t.Start();
+            return t;
         }
 
         private void MouseWheelExt(object sender, MouseEventExtArgs e)
@@ -495,11 +509,17 @@ namespace POExileDirection
                     else
                     {
                         if (e.Delta > 0)
+                        {
                             iSim.Keyboard.KeyDown(VirtualKeyCode.LEFT);
+                            iSim.Keyboard.KeyUp(VirtualKeyCode.LEFT);
+                        }
                         else
-                            iSim.Keyboard.KeyDown(VirtualKeyCode.RIGHT);// SendKeys.SendWait("{LEFT}");//iSim.Keyboard.KeyPress(VirtualKeyCode.RIGHT);
-                                                                        //Thread.Sleep(50); // CHKCHKCHK
-
+                        {
+                            iSim.Keyboard.KeyDown(VirtualKeyCode.RIGHT);
+                            iSim.Keyboard.KeyUp(VirtualKeyCode.RIGHT);
+                        }
+                        // SendKeys.SendWait("{LEFT}");//iSim.Keyboard.KeyPress(VirtualKeyCode.RIGHT);
+                        //Thread.Sleep(50); // CHKCHKCHK
                     }
                 }
             }
@@ -509,13 +529,47 @@ namespace POExileDirection
                 //Task.Factory.StartNew(() =>
             }
         }
+        
+        private void GetItemDataThread()
+        {
+            GetItemDataFromClipboardDelegate delegateInstance =
+                            new GetItemDataFromClipboardDelegate(DeadlyPriceAPI.GetItemDataFromClipboard);
+            delegateInstance.BeginInvoke(m_strClipboardBUY, null, null);
+        }
+        private delegate void GetItemDataFromClipboardDelegate(string strItemClipboardText);
 
         // KEY HOOK
         private void _keymouseHooks_KeyDown(object sender, WindowsHook.KeyEventArgs e)
         {
-            // Hook Working Only Exile Focused.
-            if (!LauncherForm.g_FocusLosing)
+            // CTRL + C
+            if (LauncherForm.g_FocusLosing && e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
             {
+                // is it trade whiper?
+                DeadlyLog4Net._log.Info("CTRL+C for Trading");
+                return;
+            }
+            else if (!LauncherForm.g_FocusLosing) // Only Exile Focused.
+            {
+                // CTRL + C
+                if (e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
+                {
+                    // is it price checking?
+                    try
+                    {
+                        m_strClipboardBUY = ClipboardHelper.GetUnicodeText();
+                        if (m_strClipboardBUY.Contains("--------"))
+                        {
+                            Thread t = new Thread(new ThreadStart(GetItemDataThread));
+                            t.Start();
+                        }
+                        return;
+                    }
+                    catch (InvalidOperationException ex)
+                    {
+                        DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+                        return;
+                    }
+                }
                 // CTRL + V
                 if (e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.V)
                 {
@@ -532,16 +586,18 @@ namespace POExileDirection
                                 {
                                     ClipboardParsingEvent(this, new EventArgs());
                                     InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-                                    return;
                                 }
                             }
                             // TTTT MessageBox.Show(m_strClipboardBUY);
                             // bExistClipboard = true;
+
+                            return;
                         }
                     }
                     catch (InvalidOperationException ex)
                     {
                         DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+                        return;
                     }
                     #endregion
                 }
@@ -1704,7 +1760,7 @@ namespace POExileDirection
 
         private static long gln_LastRead = 0;
 
-        private void timerParser_Tick(object sender, EventArgs e)
+        private void TimerParser_Tick(object sender, EventArgs e)
         {
             CheckFocusLosing();
 
@@ -2579,6 +2635,7 @@ namespace POExileDirection
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
 
             //iSim = null;
+            Text = "DeadlyTradeForPOE";
         }
         #endregion
 

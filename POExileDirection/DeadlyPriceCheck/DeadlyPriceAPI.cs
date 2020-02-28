@@ -174,12 +174,13 @@ namespace POExileDirection
             2020-02-20 04:30:38,626 [1] INFO POExileDirection.DeadlyLog4Net - ============= Check Parsing End =============
             */
             #endregion
-            int nSectionCNT = 0;
+            
             string strRarity = string.Empty;
             string strName = string.Empty;
             string strBase = string.Empty;
             try
             {
+                int nSection = 1;
                 string[] arrSplitItemText = strItemClipboardText.Trim().Split(arrSeparator, StringSplitOptions.None);
                 foreach(var item in arrSplitItemText)
                 {
@@ -187,38 +188,43 @@ namespace POExileDirection
                     DeadlyLog4Net._log.Info(item.ToString());
                     DeadlyLog4Net._log.Info("============= Check Parsing End =============");
 
-                    if (nSectionCNT == 0)
+                    switch (nSection)
                     {
-                        string[] arr1stSection = item.Trim().Split(arrLineSeparator, StringSplitOptions.None);
-                        // Rarity,Name,Item Base or class(item,map,properchies,divination cards,...)
-                        for (int nIndex = 0; nIndex < arr1stSection.Length; nIndex++)
-                        {
-                            string strTemp = arr1stSection[nIndex];
-                            if (nIndex == 0)
-                                strRarity = strTemp.Split(':')[1].Trim();
-                            else if (nIndex == 1)
-                                strName = strTemp;
-                            else
+                        case 1:
+                            #region [[[[[ Check - Rarity : Normal, Magic, Rare, Unique, ... ]]]]]
+                            // 1st Section : Rarity,Name,Item Base or class(item,map,properchies,divination cards,...)
+                            string[] arr1stSection = item.Trim().Split(arrLineSeparator, StringSplitOptions.None);
+                            if (arr1stSection.Length > 0)
                             {
-                                strBase = strTemp;
-                                if (String.IsNullOrEmpty(strBase))
+                                strRarity = arr1stSection[0].Split(':')[1].Trim();
+                                strName = arr1stSection[1];
+                                strBase = arr1stSection[2];
+                                if (DeadlyPriceCommon.itemRarity.ContainsKey(strRarity))
                                 {
-                                    if (NinjaTranslation.transWhiteMaps.ContainsKey(strBase))
-                                        strBase = "MAP";
-                                    else if (NinjaTranslation.transUniqueMaps.ContainsKey(strBase))
-                                        strBase = "MAP";
+                                    DeadlyLog4Net._log.Info(strRarity + " / " + strName + " / " + strBase);
                                 }
+                                //else if (nSplitCNT == 1)
+                                //{
+
+                                //}
                             }
-
-                            DeadlyLog4Net._log.Info(strRarity + " " + strName + " " + strBase);
-                        }
-                        nSectionCNT = nSectionCNT + 1;
+                            #endregion
+                            break;
+                        case 2:
+                            #region [[[[[ Check - Rarity : Normal, Magic, Rare, Unique, ... ]]]]]
+                            /*
+                            Rune Dagger
+                            Physical Damage: 16-64
+                            Critical Strike Chance: 6.30%
+                            Attacks per Second: 1.45
+                            Weapon Range: 10
+                            */
+                            #endregion
+                            break;
+                        default:
+                            break;
                     }
-                    else if (nSectionCNT == 1)
-                    {
-
-                    }
-
+                    
                     // Item Type or Map Tier, Default Options, Requirements or Item(Zone)Level
 
                     // Prefix Suffix or Detail map options

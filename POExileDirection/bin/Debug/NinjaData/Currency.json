@@ -9,7 +9,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 52,
-        "Value": 1.99368E-05,
+        "Value": 1.9775E-05,
         "DataPointCount": 0
       },
       "Receive": {
@@ -18,8 +18,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 37,
-        "Value": 51086.0,
+        "Count": 29,
+        "Value": 50981.627974624105,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -30,23 +30,23 @@
           0.0,
           0.0,
           0.0,
-          0.32
+          1.14
         ],
-        "TotalChange": 0.32
+        "TotalChange": 1.14
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          0.57,
-          0.8,
-          0.77,
-          1.65,
-          2.26,
-          1.94
+          0.22,
+          0.2,
+          1.07,
+          1.68,
+          1.4,
+          1.15
         ],
-        "TotalChange": 1.94
+        "TotalChange": 1.15
       },
-      "ChaosEquivalent": 50622.25
+      "ChaosEquivalent": 50775.26
     },
     {
       "CurrencyTypeName": "Mirror Shard",
@@ -57,7 +57,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 14,
-        "Value": 0.000426529092,
+        "Value": 0.00042521582908163267,
         "DataPointCount": 0
       },
       "Receive": {
@@ -66,8 +66,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 16,
-        "Value": 1169.7142857142858,
+        "Count": 15,
+        "Value": 2188.0501520642661,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -76,25 +76,25 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           2.33,
-          3.16
+          2.33,
+          3.48
         ],
-        "TotalChange": 3.16
+        "TotalChange": 3.48
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          1.29,
-          1.67,
-          2.59,
-          3.38,
-          3.71,
-          -51.44
+          0.37,
+          1.28,
+          2.06,
+          2.39,
+          -0.49,
+          -10.31
         ],
-        "TotalChange": -51.44
+        "TotalChange": -10.31
       },
-      "ChaosEquivalent": 1757.11
+      "ChaosEquivalent": 2269.9
     },
     {
       "CurrencyTypeName": "Hunter's Exalted Orb",
@@ -105,7 +105,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 1,
-        "Value": 0.00284,
+        "Value": 0.002825,
         "DataPointCount": 0
       },
       "Receive": {
@@ -115,7 +115,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 445.0,
+        "Value": 444.54385736842107,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -125,29 +125,20 @@
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          0.96,
-          -15.18,
-          -31.92,
-          -14.69,
-          -14.42,
-          -14.42
+          -15.99,
+          -32.57,
+          -15.5,
+          -15.24,
+          -15.38,
+          -15.32
         ],
-        "TotalChange": -14.42
+        "TotalChange": -15.32
       },
-      "ChaosEquivalent": 398.56
+      "ChaosEquivalent": 399.26
     },
     {
       "CurrencyTypeName": "Awakener's Orb",
-      "Pay": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 1,
-        "Value": 0.00345,
-        "DataPointCount": 0
-      },
+      "Pay": null,
       "Receive": {
         "Id": 0,
         "LeagueId": 0,
@@ -155,7 +146,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 267.0,
+        "Value": 266.72631442105262,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -165,16 +156,16 @@
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          0.96,
-          1.33,
-          1.82,
-          2.68,
-          2.94,
-          2.69
+          0.37,
+          0.85,
+          1.7,
+          1.96,
+          1.54,
+          1.61
         ],
-        "TotalChange": 2.69
+        "TotalChange": 1.61
       },
-      "ChaosEquivalent": 278.43
+      "ChaosEquivalent": 266.73
     },
     {
       "CurrencyTypeName": "Warlord's Exalted Orb",
@@ -185,7 +176,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 1,
-        "Value": 0.00568,
+        "Value": 0.00565,
         "DataPointCount": 0
       },
       "Receive": {
@@ -195,7 +186,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 345.81395348837208,
+        "Value": 266.72631442105262,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -205,16 +196,16 @@
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          1.07,
-          1.39,
-          1.51,
-          1.89,
-          -7.75,
-          -0.13
+          0.31,
+          0.43,
+          0.81,
+          -8.73,
+          -1.14,
+          -23.79
         ],
-        "TotalChange": -0.13
+        "TotalChange": -23.79
       },
-      "ChaosEquivalent": 260.94
+      "ChaosEquivalent": 221.86
     },
     {
       "CurrencyTypeName": "Redeemer's Exalted Orb",
@@ -225,7 +216,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 1,
-        "Value": 0.00568,
+        "Value": 0.00565,
         "DataPointCount": 0
       },
       "Receive": {
@@ -235,7 +226,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 203.9736842105263,
+        "Value": 235.0,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -245,16 +236,16 @@
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          5.1,
-          1.82,
-          2.04,
-          -26.94,
-          -26.94,
-          -16.75
+          -3.13,
+          -2.91,
+          -30.49,
+          -30.49,
+          -10.68,
+          -8.74
         ],
-        "TotalChange": -16.75
+        "TotalChange": -8.74
       },
-      "ChaosEquivalent": 190.02
+      "ChaosEquivalent": 206.0
     },
     {
       "CurrencyTypeName": "Crusader's Exalted Orb",
@@ -266,7 +257,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 178.0,
+        "Value": 177.81754294736842,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -276,16 +267,16 @@
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -1.36,
-          -23.48,
-          -23.27,
-          -22.62,
-          -22.4,
-          -22.61
+          -22.42,
+          -22.21,
+          -21.56,
+          -21.33,
+          -21.67,
+          -21.62
         ],
-        "TotalChange": -22.61
+        "TotalChange": -21.62
       },
-      "ChaosEquivalent": 178.0
+      "ChaosEquivalent": 177.82
     },
     {
       "CurrencyTypeName": "Exalted Orb",
@@ -296,7 +287,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.00568,
+        "Value": 0.00565,
         "DataPointCount": 0
       },
       "Receive": {
@@ -306,34 +297,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 178.0,
+        "Value": 177.81754294736842,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          1.23,
-          0.52,
-          1.23,
-          1.76,
-          2.3,
-          1.76
+          -0.7,
+          0.0,
+          0.53,
+          1.06,
+          0.53,
+          1.06
         ],
-        "TotalChange": 1.76
+        "TotalChange": 1.06
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
           0.57,
-          1.15,
-          1.43,
-          2.28,
-          2.58,
-          2.3
+          0.85,
+          1.7,
+          1.99,
+          1.54,
+          1.61
         ],
-        "TotalChange": 2.3
+        "TotalChange": 1.61
       },
-      "ChaosEquivalent": 177.03
+      "ChaosEquivalent": 177.4
     },
     {
       "CurrencyTypeName": "Ancient Orb",
@@ -343,8 +334,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 40,
-        "Value": 0.01429,
+        "Count": 43,
+        "Value": 0.01408,
         "DataPointCount": 0
       },
       "Receive": {
@@ -354,34 +345,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 65.622448979591837,
+        "Value": 65.044943820224717,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          -1.41,
-          -2.7,
-          -6.72,
-          -7.24,
-          -6.72,
-          -6.72
+          -1.31,
+          -5.39,
+          -5.92,
+          -5.39,
+          -5.39,
+          -3.98
         ],
-        "TotalChange": -6.72
+        "TotalChange": -3.98
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -2.82,
-          -4.23,
-          -8.62,
-          -8.45,
-          -8.45,
-          -7.57
+          -1.45,
+          -5.97,
+          -5.8,
+          -5.8,
+          -4.35,
+          -5.73
         ],
-        "TotalChange": -7.57
+        "TotalChange": -5.73
       },
-      "ChaosEquivalent": 67.8
+      "ChaosEquivalent": 68.03
     },
     {
       "CurrencyTypeName": "Blessing of Chayula",
@@ -391,8 +382,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 6,
-        "Value": 0.0211877,
+        "Count": 4,
+        "Value": 0.02222,
         "DataPointCount": 0
       },
       "Receive": {
@@ -402,20 +393,20 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 50.0,
+        "Value": 49.91,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          -0.05,
-          -1.27,
-          -1.27,
-          -1.27,
-          -1.27,
-          -1.26
+          -1.23,
+          -1.23,
+          -1.23,
+          -1.23,
+          -0.1,
+          null
         ],
-        "TotalChange": -1.26
+        "TotalChange": -0.1
       },
       "ReceiveSparkLine": {
         "Data": [
@@ -425,11 +416,11 @@
           0.0,
           0.0,
           0.0,
-          0.0
+          -0.18
         ],
-        "TotalChange": 0.0
+        "TotalChange": -0.18
       },
-      "ChaosEquivalent": 48.6
+      "ChaosEquivalent": 47.46
     },
     {
       "CurrencyTypeName": "Divine Orb",
@@ -440,7 +431,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.04348,
+        "Value": 0.04301,
         "DataPointCount": 0
       },
       "Receive": {
@@ -456,28 +447,28 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.37,
-          -2.04,
-          -5.53,
-          -5.29,
-          -6.12,
-          -6.12
+          -2.4,
+          -5.88,
+          -5.64,
+          -6.46,
+          -6.46,
+          -5.44
         ],
-        "TotalChange": -6.12
+        "TotalChange": -5.44
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -1.32,
-          -2.66,
-          -6.72,
-          -6.72,
-          -7.47,
-          -6.72
+          -1.35,
+          -5.46,
+          -5.46,
+          -6.23,
+          -5.46,
+          -5.46
         ],
-        "TotalChange": -6.72
+        "TotalChange": -5.46
       },
-      "ChaosEquivalent": 23.0
+      "ChaosEquivalent": 23.13
     },
     {
       "CurrencyTypeName": "Fertile Catalyst",
@@ -487,8 +478,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 31,
-        "Value": 0.04762,
+        "Count": 33,
+        "Value": 0.04556284,
         "DataPointCount": 0
       },
       "Receive": {
@@ -504,14 +495,14 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          1.99,
-          1.99,
-          1.99,
-          1.99,
-          3.23,
-          3.21
+          0.0,
+          0.0,
+          0.0,
+          1.22,
+          1.2,
+          5.77
         ],
-        "TotalChange": 3.21
+        "TotalChange": 5.77
       },
       "ReceiveSparkLine": {
         "Data": [
@@ -525,7 +516,7 @@
         ],
         "TotalChange": 0.0
       },
-      "ChaosEquivalent": 20.5
+      "ChaosEquivalent": 20.97
     },
     {
       "CurrencyTypeName": "Prismatic Catalyst",
@@ -535,8 +526,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 28,
-        "Value": 0.049295868131868134,
+        "Count": 32,
+        "Value": 0.04762,
         "DataPointCount": 0
       },
       "Receive": {
@@ -546,34 +537,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 20.0,
+        "Value": 18.291666666666668,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.12,
-          0.28,
-          0.26,
-          1.03,
-          1.01,
-          1.43
+          0.16,
+          0.14,
+          0.91,
+          0.89,
+          0.91,
+          4.87
         ],
-        "TotalChange": 1.43
+        "TotalChange": 4.87
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -1.25,
-          -5.26,
-          0.0,
-          0.0,
-          0.0,
-          5.26
+          -4.07,
+          1.26,
+          1.26,
+          1.26,
+          6.59,
+          -2.51
         ],
-        "TotalChange": 5.26
+        "TotalChange": -2.51
       },
-      "ChaosEquivalent": 20.14
+      "ChaosEquivalent": 19.65
     },
     {
       "CurrencyTypeName": "Orb of Annulment",
@@ -583,8 +574,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 75,
-        "Value": 0.05882,
+        "Count": 83,
+        "Value": 0.0566,
         "DataPointCount": 0
       },
       "Receive": {
@@ -600,28 +591,28 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.17,
-          0.0,
-          2.99,
-          3.04,
-          3.04,
-          3.04
+          -0.16,
+          2.82,
+          2.87,
+          2.87,
+          2.87,
+          6.91
         ],
-        "TotalChange": 3.04
+        "TotalChange": 6.91
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -6.01,
-          -0.5,
-          -6.25,
-          -6.25,
-          0.0,
-          0.0
+          5.86,
+          -0.26,
+          -0.26,
+          6.39,
+          6.39,
+          6.39
         ],
-        "TotalChange": 0.0
+        "TotalChange": 6.39
       },
-      "ChaosEquivalent": 16.5
+      "ChaosEquivalent": 16.83
     },
     {
       "CurrencyTypeName": "Harbinger's Orb",
@@ -631,7 +622,7 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 27,
+        "Count": 29,
         "Value": 0.08333,
         "DataPointCount": 0
       },
@@ -642,34 +633,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 11.0,
+        "Value": 12.0,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          -3.19,
-          -3.19,
-          -3.19,
-          -3.19,
-          -3.19,
-          -3.19
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ],
-        "TotalChange": -3.19
+        "TotalChange": 0.0
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          10.0,
-          20.0,
-          20.0,
-          10.0,
-          10.0,
-          10.0
+          9.09,
+          9.09,
+          0.0,
+          0.0,
+          0.0,
+          9.09
         ],
-        "TotalChange": 10.0
+        "TotalChange": 9.09
       },
-      "ChaosEquivalent": 11.5
+      "ChaosEquivalent": 12.0
     },
     {
       "CurrencyTypeName": "Exalted Shard",
@@ -679,7 +670,7 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 23,
+        "Count": 25,
         "Value": 0.125,
         "DataPointCount": 0
       },
@@ -696,26 +687,26 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          -11.11,
-          -11.11,
-          -11.11,
-          -11.11,
-          -11.11,
-          -11.11
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ],
-        "TotalChange": -11.11
+        "TotalChange": 0.0
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -5.63,
-          5.88,
-          5.88,
-          5.88,
-          5.88,
-          5.88
+          12.2,
+          12.2,
+          12.2,
+          12.2,
+          12.2,
+          12.2
         ],
-        "TotalChange": 5.88
+        "TotalChange": 12.2
       },
       "ChaosEquivalent": 8.5
     },
@@ -727,8 +718,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 13,
-        "Value": 0.16667,
+        "Count": 14,
+        "Value": 0.16289862,
         "DataPointCount": 0
       },
       "Receive": {
@@ -738,34 +729,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 5.0,
+        "Value": 7.0,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
           0.0,
-          0.0,
           0.13,
           0.08,
           0.0,
-          0.0
+          0.0,
+          2.32
         ],
-        "TotalChange": 0.0
+        "TotalChange": 2.32
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
           0.0,
-          0.0,
           8.17,
           0.0,
           0.0,
-          -16.67
+          -16.67,
+          16.67
         ],
-        "TotalChange": -16.67
+        "TotalChange": 16.67
       },
-      "ChaosEquivalent": 5.5
+      "ChaosEquivalent": 6.57
     },
     {
       "CurrencyTypeName": "Stacked Deck",
@@ -777,7 +768,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 5.0,
+        "Value": 4.4848484848484844,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -792,11 +783,11 @@
           0.0,
           0.0,
           0.0,
-          0.0
+          -10.3
         ],
-        "TotalChange": 0.0
+        "TotalChange": -10.3
       },
-      "ChaosEquivalent": 5.0
+      "ChaosEquivalent": 4.48
     },
     {
       "CurrencyTypeName": "Awakened Sextant",
@@ -806,8 +797,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 59,
-        "Value": 0.27778,
+        "Count": 55,
+        "Value": 0.27027,
         "DataPointCount": 0
       },
       "Receive": {
@@ -817,7 +808,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 3.5386666666666668,
+        "Value": 3.5,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -826,25 +817,25 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           -2.7,
-          -2.7
+          -2.7,
+          0.0
         ],
-        "TotalChange": -2.7
+        "TotalChange": 0.0
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -7.39,
-          -6.14,
-          -7.39,
-          -5.82,
-          -6.21,
-          -6.37
+          1.35,
+          0.0,
+          1.7,
+          1.27,
+          0.0,
+          0.0
         ],
-        "TotalChange": -6.37
+        "TotalChange": 0.0
       },
-      "ChaosEquivalent": 3.57
+      "ChaosEquivalent": 3.6
     },
     {
       "CurrencyTypeName": "Splinter of Chayula",
@@ -865,15 +856,15 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 3.0,
+        "Value": 3.5,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.0,
           4.17,
           5.07,
+          8.33,
           8.33,
           8.33,
           8.33
@@ -888,11 +879,59 @@
           0.0,
           0.0,
           0.0,
+          16.67
+        ],
+        "TotalChange": 16.67
+      },
+      "ChaosEquivalent": 3.05
+    },
+    {
+      "CurrencyTypeName": "Turbulent Catalyst",
+      "Pay": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 11,
+        "Value": 0.400531914893617,
+        "DataPointCount": 0
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 100,
+        "Value": 2.0,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.51,
+          0.0,
+          0.0,
+          24.83
+        ],
+        "TotalChange": 24.83
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
           0.0
         ],
         "TotalChange": 0.0
       },
-      "ChaosEquivalent": 2.8
+      "ChaosEquivalent": 2.25
     },
     {
       "CurrencyTypeName": "Blessing of Uul-Netol",
@@ -912,60 +951,12 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 89,
+        "Count": 98,
         "Value": 3.0,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [],
-        "TotalChange": 0.0
-      },
-      "ReceiveSparkLine": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "TotalChange": 0.0
-      },
-      "ChaosEquivalent": 2.0
-    },
-    {
-      "CurrencyTypeName": "Turbulent Catalyst",
-      "Pay": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 9,
-        "Value": 0.5,
-        "DataPointCount": 0
-      },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 100,
-        "Value": 2.0,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.51,
-          0.0,
-          0.0
-        ],
         "TotalChange": 0.0
       },
       "ReceiveSparkLine": {
@@ -1007,8 +998,8 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.0,
           17.04,
+          25.0,
           25.0,
           25.0,
           25.0,
@@ -1038,8 +1029,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 61,
-        "Value": 0.64490444444444439,
+        "Count": 59,
+        "Value": 0.7,
         "DataPointCount": 0
       },
       "Receive": {
@@ -1049,82 +1040,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 1.7364583333333334,
+        "Value": 1.5,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          -3.11,
-          -1.97,
-          -1.97,
-          -1.97,
-          -1.97,
-          -1.19
+          1.18,
+          1.18,
+          1.18,
+          1.18,
+          1.94,
+          -6.05
         ],
-        "TotalChange": -1.19
+        "TotalChange": -6.05
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          4.11,
-          4.04,
-          -0.3,
-          -0.51,
-          -6.07,
-          1.7
+          -0.07,
+          -4.24,
+          -4.43,
+          -9.77,
+          -9.39,
+          -15.61
         ],
-        "TotalChange": 1.7
+        "TotalChange": -15.61
       },
-      "ChaosEquivalent": 1.64
-    },
-    {
-      "CurrencyTypeName": "Prime Sextant",
-      "Pay": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 28,
-        "Value": 0.71429,
-        "DataPointCount": 0
-      },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 100,
-        "Value": 1.2033586046511628,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [
-          0.0,
-          -0.87,
-          -3.35,
-          -3.35,
-          -3.35,
-          -3.35,
-          -3.35
-        ],
-        "TotalChange": -3.35
-      },
-      "ReceiveSparkLine": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          36.3,
-          30.26,
-          0.0,
-          20.34
-        ],
-        "TotalChange": 20.34
-      },
-      "ChaosEquivalent": 1.3
+      "ChaosEquivalent": 1.46
     },
     {
       "CurrencyTypeName": "Abrasive Catalyst",
@@ -1134,7 +1077,7 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 12,
+        "Count": 13,
         "Value": 0.66667,
         "DataPointCount": 0
       },
@@ -1151,14 +1094,14 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.15,
-          -3.98,
-          -6.07,
-          -4.56,
-          -4.56,
-          -4.56
+          -4.13,
+          -6.22,
+          -4.71,
+          -4.71,
+          -4.71,
+          -4.71
         ],
-        "TotalChange": -4.56
+        "TotalChange": -4.71
       },
       "ReceiveSparkLine": {
         "Data": [
@@ -1175,6 +1118,54 @@
       "ChaosEquivalent": 1.25
     },
     {
+      "CurrencyTypeName": "Prime Sextant",
+      "Pay": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 30,
+        "Value": 0.78926197916666663,
+        "DataPointCount": 0
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 100,
+        "Value": 1.0,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [
+          0.0,
+          -2.51,
+          -2.51,
+          -2.51,
+          -2.51,
+          -3.22,
+          -11.77
+        ],
+        "TotalChange": -11.77
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          0.0,
+          36.3,
+          30.26,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ChaosEquivalent": 1.13
+    },
+    {
       "CurrencyTypeName": "Blessing of Xoph",
       "Pay": null,
       "Receive": {
@@ -1184,7 +1175,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 1.0,
+        "Value": 1.1263157894736842,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -1199,11 +1190,11 @@
           0.0,
           0.0,
           0.0,
-          0.0
+          12.63
         ],
-        "TotalChange": 0.0
+        "TotalChange": 12.63
       },
-      "ChaosEquivalent": 1.0
+      "ChaosEquivalent": 1.13
     },
     {
       "CurrencyTypeName": "Blessing of Tul",
@@ -1276,7 +1267,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 11,
-        "Value": 0.99863635,
+        "Value": 1.0,
         "DataPointCount": 0
       },
       "Receive": {
@@ -1292,14 +1283,14 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.81,
-          3.68,
-          3.88,
-          0.23,
-          0.0,
-          0.14
+          2.85,
+          3.05,
+          -0.57,
+          -0.8,
+          -0.8,
+          -0.8
         ],
-        "TotalChange": 0.14
+        "TotalChange": -0.8
       },
       "ReceiveSparkLine": {
         "Data": [
@@ -1324,7 +1315,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 65,
-        "Value": 1.5195142424242425,
+        "Value": 1.5800661052631579,
         "DataPointCount": 0
       },
       "Receive": {
@@ -1334,82 +1325,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.71429,
+        "Value": 0.70718578947368416,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
-          0.0,
           0.0,
           0.0,
           0.0,
           0.0,
           -0.35,
-          -1.28
+          -2.96,
+          -5.07
         ],
-        "TotalChange": -1.28
+        "TotalChange": -5.07
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          0.44,
-          -1.35,
-          -6.42,
-          -12.66,
-          -12.66,
-          -6.42
+          -1.78,
+          -6.83,
+          -13.04,
+          -13.04,
+          -11.03,
+          -7.76
         ],
-        "TotalChange": -6.42
+        "TotalChange": -7.76
       },
-      "ChaosEquivalent": 0.69
-    },
-    {
-      "CurrencyTypeName": "Orb of Regret",
-      "Pay": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 40,
-        "Value": 1.7,
-        "DataPointCount": 0
-      },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 100,
-        "Value": 0.66667,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          -5.48,
-          -9.23,
-          -11.76,
-          -11.76
-        ],
-        "TotalChange": -11.76
-      },
-      "ReceiveSparkLine": {
-        "Data": [
-          0.0,
-          -6.53,
-          -11.67,
-          -13.45,
-          -19.28,
-          -21.84,
-          -11.67
-        ],
-        "TotalChange": -11.67
-      },
-      "ChaosEquivalent": 0.63
+      "ChaosEquivalent": 0.67
     },
     {
       "CurrencyTypeName": "Annulment Shard",
@@ -1419,7 +1362,7 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 2,
+        "Count": 1,
         "Value": 4.0,
         "DataPointCount": 0
       },
@@ -1429,7 +1372,7 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 90,
+        "Count": 94,
         "Value": 1.0,
         "DataPointCount": 0
       },
@@ -1452,15 +1395,15 @@
       "ChaosEquivalent": 0.62
     },
     {
-      "CurrencyTypeName": "Orb of Scouring",
+      "CurrencyTypeName": "Orb of Regret",
       "Pay": {
         "Id": 0,
         "LeagueId": 0,
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 54,
-        "Value": 1.8,
+        "Count": 39,
+        "Value": 1.77778,
         "DataPointCount": 0
       },
       "Receive": {
@@ -1470,34 +1413,82 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.59906666666666664,
+        "Value": 0.58333,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          -0.32,
-          -5.86,
-          -8.17,
-          -11.08,
-          -11.11,
-          -11.11
+          0.0,
+          -5.48,
+          -9.23,
+          -11.76,
+          -11.76,
+          -15.63
         ],
-        "TotalChange": -11.11
+        "TotalChange": -15.63
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -6.52,
-          -12.46,
-          -13.23,
-          -17.13,
-          -15.03,
-          -10.14
+          -5.49,
+          -7.4,
+          -13.64,
+          -16.37,
+          -5.56,
+          -17.31
         ],
-        "TotalChange": -10.14
+        "TotalChange": -17.31
       },
-      "ChaosEquivalent": 0.58
+      "ChaosEquivalent": 0.57
+    },
+    {
+      "CurrencyTypeName": "Orb of Scouring",
+      "Pay": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 58,
+        "Value": 1.7959318131868132,
+        "DataPointCount": 0
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 100,
+        "Value": 0.58824,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [
+          0.0,
+          -5.56,
+          -7.87,
+          -10.8,
+          -10.83,
+          -10.8,
+          -10.63
+        ],
+        "TotalChange": -10.63
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          -6.36,
+          -7.18,
+          -11.35,
+          -9.11,
+          -6.11,
+          -5.61
+        ],
+        "TotalChange": -5.61
+      },
+      "ChaosEquivalent": 0.57
     },
     {
       "CurrencyTypeName": "Orb of Horizons",
@@ -1507,8 +1498,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 29,
-        "Value": 2.441875,
+        "Count": 24,
+        "Value": 2.5,
         "DataPointCount": 0
       },
       "Receive": {
@@ -1518,34 +1509,74 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.73939545454545452,
+        "Value": 0.5,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
           0.0,
-          0.0,
           0.42,
           0.0,
           0.0,
-          2.38
+          2.3,
+          0.0
         ],
-        "TotalChange": 2.38
+        "TotalChange": 0.0
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -0.26,
-          2.73,
-          43.83,
-          5.78,
-          2.73,
-          51.92
+          3.0,
+          44.2,
+          6.05,
+          3.0,
+          41.26,
+          3.0
         ],
-        "TotalChange": 51.92
+        "TotalChange": 3.0
       },
-      "ChaosEquivalent": 0.57
+      "ChaosEquivalent": 0.45
+    },
+    {
+      "CurrencyTypeName": "Splinter of Uul-Netol",
+      "Pay": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 1,
+        "Value": 5.88235,
+        "DataPointCount": 0
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 100,
+        "Value": 0.47838063829787236,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [],
+        "TotalChange": 0.0
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          -16.45,
+          -9.6,
+          -3.4,
+          -0.53,
+          1.61,
+          19.91
+        ],
+        "TotalChange": 19.91
+      },
+      "ChaosEquivalent": 0.32
     },
     {
       "CurrencyTypeName": "Cartographer's Chisel",
@@ -1555,49 +1586,10 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 61,
-        "Value": 3.1781484615384614,
+        "Count": 59,
+        "Value": 3.5,
         "DataPointCount": 0
       },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 100,
-        "Value": 0.33601908045977014,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [
-          0.0,
-          -3.49,
-          -9.23,
-          -10.0,
-          -10.14,
-          -13.54,
-          -15.04
-        ],
-        "TotalChange": -15.04
-      },
-      "ReceiveSparkLine": {
-        "Data": [
-          0.0,
-          0.0,
-          3.16,
-          3.71,
-          -1.33,
-          -6.67,
-          -5.91
-        ],
-        "TotalChange": -5.91
-      },
-      "ChaosEquivalent": 0.33
-    },
-    {
-      "CurrencyTypeName": "Splinter of Uul-Netol",
-      "Pay": null,
       "Receive": {
         "Id": 0,
         "LeagueId": 0,
@@ -1609,22 +1601,30 @@
         "DataPointCount": 0
       },
       "PaySparkLine": {
-        "Data": [],
-        "TotalChange": 0.0
+        "Data": [
+          0.0,
+          -5.94,
+          -6.74,
+          -6.89,
+          -10.41,
+          -12.25,
+          -20.07
+        ],
+        "TotalChange": -20.07
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          0.79,
-          -15.79,
-          -8.89,
-          -2.63,
-          0.26,
-          -15.79
+          3.16,
+          3.71,
+          -1.33,
+          -6.67,
+          -6.67,
+          -6.67
         ],
-        "TotalChange": -15.79
+        "TotalChange": -6.67
       },
-      "ChaosEquivalent": 0.33
+      "ChaosEquivalent": 0.31
     },
     {
       "CurrencyTypeName": "Orb of Fusing",
@@ -1634,8 +1634,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 70,
-        "Value": 3.4611091666666667,
+        "Count": 76,
+        "Value": 3.48291935483871,
         "DataPointCount": 0
       },
       "Receive": {
@@ -1651,39 +1651,39 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          -3.48,
-          -4.69,
-          -6.21,
-          -6.72,
-          -7.71,
-          -7.6
+          -1.26,
+          -2.83,
+          -3.37,
+          -4.38,
+          -4.57,
+          -4.87
         ],
-        "TotalChange": -7.6
+        "TotalChange": -4.87
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -4.59,
-          -2.55,
-          -1.56,
-          -0.69,
-          -0.48,
-          1.61
+          2.14,
+          3.17,
+          4.08,
+          4.31,
+          6.5,
+          6.5
         ],
-        "TotalChange": 1.61
+        "TotalChange": 6.5
       },
-      "ChaosEquivalent": 0.31
+      "ChaosEquivalent": 0.3
     },
     {
-      "CurrencyTypeName": "Splinter of Tul",
+      "CurrencyTypeName": "Simple Sextant",
       "Pay": {
         "Id": 0,
         "LeagueId": 0,
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 4,
-        "Value": 13.634343434343434,
+        "Count": 21,
+        "Value": 5.9268817204301074,
         "DataPointCount": 0
       },
       "Receive": {
@@ -1693,45 +1693,45 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.33333,
+        "Value": 0.18182,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
+          -7.08,
+          -14.83,
+          -9.61,
+          -14.83,
+          2.89,
+          0.59
         ],
-        "TotalChange": 0.0
+        "TotalChange": 0.59
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          7.25,
-          7.52,
-          10.98,
-          25.44,
-          25.44,
-          25.44
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.97,
+          9.09
         ],
-        "TotalChange": 25.44
+        "TotalChange": 9.09
       },
-      "ChaosEquivalent": 0.2
+      "ChaosEquivalent": 0.18
     },
     {
-      "CurrencyTypeName": "Orb of Binding",
+      "CurrencyTypeName": "Splinter of Tul",
       "Pay": {
         "Id": 0,
         "LeagueId": 0,
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 1,
-        "Value": 5.0,
+        "Count": 3,
+        "Value": 13.438383838383839,
         "DataPointCount": 0
       },
       "Receive": {
@@ -1740,8 +1740,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 84,
-        "Value": 0.16667,
+        "Count": 100,
+        "Value": 0.29183,
         "DataPointCount": 0
       },
       "PaySparkLine": {
@@ -1751,14 +1751,14 @@
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          0.18,
-          0.18,
-          0.18,
-          0.18,
-          0.18,
-          0.18
+          0.25,
+          3.47,
+          16.96,
+          16.96,
+          16.96,
+          2.4
         ],
-        "TotalChange": 0.18
+        "TotalChange": 2.4
       },
       "ChaosEquivalent": 0.18
     },
@@ -1770,8 +1770,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 46,
-        "Value": 6.5980519480519479,
+        "Count": 49,
+        "Value": 6.4301975257731963,
         "DataPointCount": 0
       },
       "Receive": {
@@ -1781,80 +1781,32 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.19745616161616161,
+        "Value": 0.17544,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          3.09,
-          0.0,
-          0.0,
-          -0.74,
-          -2.48,
-          -1.49
+          -2.99,
+          -2.99,
+          -3.72,
+          -5.4,
+          -4.03,
+          -1.94
         ],
-        "TotalChange": -1.49
+        "TotalChange": -1.94
       },
       "ReceiveSparkLine": {
         "Data": [
-          0.0,
           0.0,
           -0.9,
           -0.01,
           5.24,
           0.0,
-          8.6
+          3.91,
+          -3.51
         ],
-        "TotalChange": 8.6
-      },
-      "ChaosEquivalent": 0.17
-    },
-    {
-      "CurrencyTypeName": "Simple Sextant",
-      "Pay": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 17,
-        "Value": 5.6289411764705886,
-        "DataPointCount": 0
-      },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 100,
-        "Value": 0.16902384615384616,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [
-          0.0,
-          0.64,
-          -6.49,
-          -14.29,
-          -9.03,
-          -14.29,
-          6.59
-        ],
-        "TotalChange": 6.59
-      },
-      "ReceiveSparkLine": {
-        "Data": [
-          0.0,
-          -29.43,
-          -29.43,
-          -29.43,
-          -29.43,
-          -29.43,
-          -28.44
-        ],
-        "TotalChange": -28.44
+        "TotalChange": -3.51
       },
       "ChaosEquivalent": 0.17
     },
@@ -1890,15 +1842,24 @@
       "ChaosEquivalent": 0.17
     },
     {
-      "CurrencyTypeName": "Engineer's Orb",
-      "Pay": null,
+      "CurrencyTypeName": "Orb of Binding",
+      "Pay": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 2,
+        "Value": 5.981,
+        "DataPointCount": 0
+      },
       "Receive": {
         "Id": 0,
         "LeagueId": 0,
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 100,
+        "Count": 84,
         "Value": 0.16667,
         "DataPointCount": 0
       },
@@ -1910,15 +1871,63 @@
         "Data": [
           0.0,
           0.0,
-          2.7,
-          10.37,
-          5.88,
+          0.0,
+          0.0,
+          0.0,
           0.0,
           0.0
         ],
         "TotalChange": 0.0
       },
       "ChaosEquivalent": 0.17
+    },
+    {
+      "CurrencyTypeName": "Orb of Alteration",
+      "Pay": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 77,
+        "Value": 7.3,
+        "DataPointCount": 0
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 100,
+        "Value": 0.16393,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [
+          0.0,
+          -9.09,
+          -14.29,
+          -14.29,
+          -17.35,
+          -17.65,
+          -17.81
+        ],
+        "TotalChange": -17.81
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          0.95,
+          -2.2,
+          0.11,
+          -3.71,
+          2.35,
+          2.6
+        ],
+        "TotalChange": 2.6
+      },
+      "ChaosEquivalent": 0.15
     },
     {
       "CurrencyTypeName": "Orb of Chance",
@@ -1928,8 +1937,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 32,
-        "Value": 7.2,
+        "Count": 39,
+        "Value": 7.1,
         "DataPointCount": 0
       },
       "Receive": {
@@ -1939,80 +1948,32 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.182494,
+        "Value": 0.16667,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          -15.53,
-          -18.15,
-          -18.48,
-          -18.21,
-          -17.61,
-          -18.21
+          -3.1,
+          -3.49,
+          -3.17,
+          -2.46,
+          -2.49,
+          -1.81
         ],
-        "TotalChange": -18.21
+        "TotalChange": -1.81
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -0.04,
-          -1.64,
-          -1.64,
-          -1.22,
-          0.0,
-          9.49
+          -1.61,
+          -1.61,
+          -1.19,
+          0.04,
+          0.04,
+          0.04
         ],
-        "TotalChange": 9.49
-      },
-      "ChaosEquivalent": 0.16
-    },
-    {
-      "CurrencyTypeName": "Silver Coin",
-      "Pay": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 24,
-        "Value": 7.4510112359550558,
-        "DataPointCount": 0
-      },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 100,
-        "Value": 0.16279857142857143,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [
-          0.0,
-          4.67,
-          4.67,
-          2.67,
-          -2.31,
-          -2.06,
-          -1.67
-        ],
-        "TotalChange": -1.67
-      },
-      "ReceiveSparkLine": {
-        "Data": [
-          0.0,
-          0.0,
-          4.65,
-          10.28,
-          7.69,
-          6.98,
-          13.96
-        ],
-        "TotalChange": 13.96
+        "TotalChange": 0.04
       },
       "ChaosEquivalent": 0.15
     },
@@ -2035,45 +1996,45 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.1559304,
+        "Value": 0.16433846153846154,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          -1.66,
-          -3.97,
-          -9.22,
-          -12.25,
-          -15.31,
-          -15.71
+          -2.35,
+          -7.69,
+          -10.77,
+          -13.88,
+          -14.29,
+          -14.29
         ],
-        "TotalChange": -15.71
+        "TotalChange": -14.29
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -4.76,
-          -0.56,
-          -5.14,
-          -5.06,
-          -7.69,
-          -6.44
+          4.42,
+          -0.39,
+          -0.32,
+          -3.07,
+          -0.17,
+          3.53
         ],
-        "TotalChange": -6.44
+        "TotalChange": 3.53
       },
       "ChaosEquivalent": 0.15
     },
     {
-      "CurrencyTypeName": "Orb of Alteration",
+      "CurrencyTypeName": "Silver Coin",
       "Pay": {
         "Id": 0,
         "LeagueId": 0,
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 71,
-        "Value": 7.3,
+        "Count": 24,
+        "Value": 7.6687179487179487,
         "DataPointCount": 0
       },
       "Receive": {
@@ -2083,32 +2044,32 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.15058882352941177,
+        "Value": 0.14460315789473685,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          -1.67,
-          -10.61,
-          -15.71,
-          -15.71,
-          -18.73,
-          -19.18
+          0.0,
+          -1.91,
+          -6.67,
+          -6.43,
+          -6.55,
+          -8.72
         ],
-        "TotalChange": -19.18
+        "TotalChange": -8.72
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -4.14,
-          -3.23,
-          -6.25,
-          -4.04,
-          -7.69,
-          -9.65
+          4.65,
+          10.28,
+          7.69,
+          6.98,
+          13.68,
+          1.22
         ],
-        "TotalChange": -9.65
+        "TotalChange": 1.22
       },
       "ChaosEquivalent": 0.14
     },
@@ -2135,8 +2096,8 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           -6.41,
+          0.0,
           0.0
         ],
         "TotalChange": 0.0
@@ -2151,8 +2112,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 25,
-        "Value": 9.7,
+        "Count": 28,
+        "Value": 9.5,
         "DataPointCount": 0
       },
       "Receive": {
@@ -2162,32 +2123,72 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.14397677777777779,
+        "Value": 0.14251298969072165,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          -8.36,
-          1.8,
-          -3.28,
-          4.67,
-          7.98,
-          7.91
+          11.08,
+          5.54,
+          14.21,
+          17.83,
+          17.74,
+          20.22
         ],
-        "TotalChange": 7.91
+        "TotalChange": 20.22
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          11.73,
-          13.14,
-          -4.33,
-          -11.8,
-          5.83,
-          14.29
+          1.26,
+          -14.38,
+          -21.06,
+          -5.29,
+          1.49,
+          1.25
         ],
-        "TotalChange": 14.29
+        "TotalChange": 1.25
+      },
+      "ChaosEquivalent": 0.12
+    },
+    {
+      "CurrencyTypeName": "Engineer's Orb",
+      "Pay": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 1,
+        "Value": 14.0,
+        "DataPointCount": 0
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 100,
+        "Value": 0.16667,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [],
+        "TotalChange": 0.0
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          2.7,
+          10.37,
+          5.88,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TotalChange": 0.0
       },
       "ChaosEquivalent": 0.12
     },
@@ -2199,8 +2200,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 8,
-        "Value": 11.99578947368421,
+        "Count": 11,
+        "Value": 12.076086956521738,
         "DataPointCount": 0
       },
       "Receive": {
@@ -2210,32 +2211,32 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.099331818181818188,
+        "Value": 0.10306666666666667,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.0,
           19.71,
           26.67,
           -0.63,
           37.81,
-          58.39
+          46.97,
+          57.34
         ],
-        "TotalChange": 58.39
+        "TotalChange": 57.34
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          14.61,
-          11.68,
-          12.5,
-          1.71,
-          -5.97,
-          -20.53
+          -2.55,
+          -1.84,
+          -11.25,
+          -17.95,
+          -23.43,
+          -28.06
         ],
-        "TotalChange": -20.53
+        "TotalChange": -28.06
       },
       "ChaosEquivalent": 0.09
     },
@@ -2247,7 +2248,7 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 40,
+        "Count": 43,
         "Value": 15.0,
         "DataPointCount": 0
       },
@@ -2258,32 +2259,32 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.067870333333333338,
+        "Value": 0.07692,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          -2.4,
-          -3.16,
-          -3.57,
-          -3.57,
-          -3.69,
-          -10.0
+          -0.78,
+          -1.2,
+          -1.2,
+          -1.32,
+          -7.79,
+          -7.79
         ],
-        "TotalChange": -10.0
+        "TotalChange": -7.79
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -5.4,
-          -7.08,
-          -4.42,
-          -3.88,
-          -11.12,
-          -11.71
+          -1.77,
+          1.03,
+          1.61,
+          -6.05,
+          -1.44,
+          5.78
         ],
-        "TotalChange": -11.71
+        "TotalChange": 5.78
       },
       "ChaosEquivalent": 0.07
     },
@@ -2295,8 +2296,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 4,
-        "Value": 28.296969696969697,
+        "Count": 5,
+        "Value": 28.408163265306122,
         "DataPointCount": 0
       },
       "Receive": {
@@ -2306,32 +2307,32 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.08333,
+        "Value": 0.0824841935483871,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          1.84,
-          11.09,
+          9.08,
           null,
           null,
           null,
-          null
+          2.08,
+          2.08
         ],
-        "TotalChange": 11.09
+        "TotalChange": 2.08
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -0.07,
-          -1.63,
-          -0.74,
-          -0.1,
-          -0.16,
-          0.0
+          -1.56,
+          -0.67,
+          -0.02,
+          -0.08,
+          0.07,
+          -0.94
         ],
-        "TotalChange": 0.0
+        "TotalChange": -0.94
       },
       "ChaosEquivalent": 0.06
     },
@@ -2343,8 +2344,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 11,
-        "Value": 30.0,
+        "Count": 12,
+        "Value": 30.746938775510205,
         "DataPointCount": 0
       },
       "Receive": {
@@ -2354,178 +2355,34 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.063005632183908047,
+        "Value": 0.066287291666666665,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          -2.66,
-          -5.04,
-          -5.04,
-          -3.74,
-          -3.13,
-          -5.04
+          -2.44,
+          -2.44,
+          -1.11,
+          -0.49,
+          -2.44,
+          -4.81
         ],
-        "TotalChange": -5.04
+        "TotalChange": -4.81
       },
       "ReceiveSparkLine": {
         "Data": [
-          0.0,
           0.0,
           -0.03,
           -0.66,
           -0.01,
           -0.06,
-          -5.5
+          -2.4,
+          -0.57
         ],
-        "TotalChange": -5.5
+        "TotalChange": -0.57
       },
       "ChaosEquivalent": 0.05
-    },
-    {
-      "CurrencyTypeName": "Portal Scroll",
-      "Pay": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 11,
-        "Value": 29.143617021276597,
-        "DataPointCount": 0
-      },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 100,
-        "Value": 0.06061,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [
-          0.0,
-          -2.19,
-          0.68,
-          8.61,
-          -3.59,
-          -5.83,
-          -10.56
-        ],
-        "TotalChange": -10.56
-      },
-      "ReceiveSparkLine": {
-        "Data": [
-          0.0,
-          -0.08,
-          -1.42,
-          -0.58,
-          -1.84,
-          -4.4,
-          -3.02
-        ],
-        "TotalChange": -3.02
-      },
-      "ChaosEquivalent": 0.05
-    },
-    {
-      "CurrencyTypeName": "Blacksmith's Whetstone",
-      "Pay": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 14,
-        "Value": 42.188761608247425,
-        "DataPointCount": 0
-      },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 100,
-        "Value": 0.06667,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [
-          0.0,
-          0.0,
-          0.85,
-          0.76,
-          -23.53,
-          -8.81,
-          -28.89
-        ],
-        "TotalChange": -28.89
-      },
-      "ReceiveSparkLine": {
-        "Data": [
-          0.0,
-          0.0,
-          -1.13,
-          0.0,
-          0.0,
-          0.0,
-          -6.66
-        ],
-        "TotalChange": -6.66
-      },
-      "ChaosEquivalent": 0.05
-    },
-    {
-      "CurrencyTypeName": "Blessed Orb",
-      "Pay": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 9,
-        "Value": 24.456565656565658,
-        "DataPointCount": 0
-      },
-      "Receive": {
-        "Id": 0,
-        "LeagueId": 0,
-        "PayCurrencyId": 0,
-        "GetCurrencyId": 0,
-        "SampleTimeUtc": null,
-        "Count": 100,
-        "Value": 0.03333,
-        "DataPointCount": 0
-      },
-      "PaySparkLine": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          -2.57,
-          -36.89,
-          22.67
-        ],
-        "TotalChange": 22.67
-      },
-      "ReceiveSparkLine": {
-        "Data": [
-          0.0,
-          -0.7,
-          0.39,
-          0.97,
-          4.41,
-          0.39,
-          -13.0
-        ],
-        "TotalChange": -13.0
-      },
-      "ChaosEquivalent": 0.04
     },
     {
       "CurrencyTypeName": "Orb of Transmutation",
@@ -2535,8 +2392,56 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 13,
-        "Value": 38.0,
+        "Count": 12,
+        "Value": 40.0,
+        "DataPointCount": 0
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 100,
+        "Value": 0.0599695744680851,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [
+          0.0,
+          0.0,
+          1.32,
+          -7.63,
+          -13.58,
+          -28.95,
+          -32.5
+        ],
+        "TotalChange": -32.5
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          -3.21,
+          0.87,
+          6.78,
+          -3.21,
+          2.09,
+          -1.32
+        ],
+        "TotalChange": -1.32
+      },
+      "ChaosEquivalent": 0.04
+    },
+    {
+      "CurrencyTypeName": "Portal Scroll",
+      "Pay": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 12,
+        "Value": 41.725252525252522,
         "DataPointCount": 0
       },
       "Receive": {
@@ -2552,31 +2457,31 @@
       "PaySparkLine": {
         "Data": [
           0.0,
-          0.0,
-          0.0,
-          1.32,
-          -7.63,
-          -13.58,
-          -28.95
+          2.94,
+          11.04,
+          -1.43,
+          -3.71,
+          -8.93,
+          -36.13
         ],
-        "TotalChange": -28.95
+        "TotalChange": -36.13
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -8.41,
-          -11.35,
-          -7.61,
-          -2.2,
-          -11.35,
-          -11.35
+          -1.35,
+          -0.5,
+          -1.76,
+          -4.32,
+          -2.95,
+          -5.81
         ],
-        "TotalChange": -11.35
+        "TotalChange": -5.81
       },
       "ChaosEquivalent": 0.04
     },
     {
-      "CurrencyTypeName": "Scroll of Wisdom",
+      "CurrencyTypeName": "Blacksmith's Whetstone",
       "Pay": {
         "Id": 0,
         "LeagueId": 0,
@@ -2584,7 +2489,7 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 15,
-        "Value": 94.95,
+        "Value": 47.468421052631577,
         "DataPointCount": 0
       },
       "Receive": {
@@ -2594,32 +2499,128 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.023837951807228915,
+        "Value": 0.06667,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          -1.86,
-          -8.59,
-          25.3,
-          10.96,
-          11.71,
-          15.1
+          0.85,
+          0.76,
+          -23.53,
+          -8.81,
+          -30.28,
+          -36.8
         ],
-        "TotalChange": 15.1
+        "TotalChange": -36.8
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          1.99,
-          -0.97,
-          10.81,
-          11.78,
-          18.66,
-          21.56
+          -1.13,
+          0.0,
+          0.0,
+          0.0,
+          -6.66,
+          -6.66
         ],
-        "TotalChange": 21.56
+        "TotalChange": -6.66
+      },
+      "ChaosEquivalent": 0.04
+    },
+    {
+      "CurrencyTypeName": "Blessed Orb",
+      "Pay": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 12,
+        "Value": 32.381443298969074,
+        "DataPointCount": 0
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 100,
+        "Value": 0.037595714285714288,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [
+          0.0,
+          0.0,
+          0.0,
+          -2.57,
+          -36.89,
+          -8.54,
+          -7.35
+        ],
+        "TotalChange": -7.35
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          1.1,
+          1.68,
+          5.15,
+          1.1,
+          -2.05,
+          -1.17
+        ],
+        "TotalChange": -1.17
+      },
+      "ChaosEquivalent": 0.03
+    },
+    {
+      "CurrencyTypeName": "Scroll of Wisdom",
+      "Pay": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 16,
+        "Value": 97.173913043478265,
+        "DataPointCount": 0
+      },
+      "Receive": {
+        "Id": 0,
+        "LeagueId": 0,
+        "PayCurrencyId": 0,
+        "GetCurrencyId": 0,
+        "SampleTimeUtc": null,
+        "Count": 100,
+        "Value": 0.023970615384615385,
+        "DataPointCount": 0
+      },
+      "PaySparkLine": {
+        "Data": [
+          0.0,
+          -6.86,
+          27.67,
+          13.06,
+          13.83,
+          17.22,
+          14.59
+        ],
+        "TotalChange": 14.59
+      },
+      "ReceiveSparkLine": {
+        "Data": [
+          0.0,
+          -2.9,
+          8.65,
+          9.6,
+          16.35,
+          19.95,
+          19.85
+        ],
+        "TotalChange": 19.85
       },
       "ChaosEquivalent": 0.02
     },
@@ -2631,8 +2632,8 @@
         "PayCurrencyId": 0,
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
-        "Count": 11,
-        "Value": 194.87113402061857,
+        "Count": 12,
+        "Value": 201.84615384615384,
         "DataPointCount": 0
       },
       "Receive": {
@@ -2642,32 +2643,32 @@
         "GetCurrencyId": 0,
         "SampleTimeUtc": null,
         "Count": 100,
-        "Value": 0.00667,
+        "Value": 0.006333076923076923,
         "DataPointCount": 0
       },
       "PaySparkLine": {
         "Data": [
           0.0,
-          -1.88,
-          -7.51,
-          -7.19,
-          -7.38,
-          -3.84,
-          8.68
+          -5.74,
+          -5.41,
+          -5.6,
+          -1.99,
+          6.94,
+          6.94
         ],
-        "TotalChange": 8.68
+        "TotalChange": 6.94
       },
       "ReceiveSparkLine": {
         "Data": [
           0.0,
-          -5.22,
-          -4.67,
-          -5.36,
-          -7.55,
-          -5.49,
-          -8.38
+          0.58,
+          -0.14,
+          -2.46,
+          -0.29,
+          -3.33,
+          -8.22
         ],
-        "TotalChange": -8.38
+        "TotalChange": -8.22
       },
       "ChaosEquivalent": 0.01
     }

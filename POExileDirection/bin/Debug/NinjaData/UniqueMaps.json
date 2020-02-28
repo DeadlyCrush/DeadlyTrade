@@ -16,14 +16,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          2.25,
-          7.25,
-          0.99,
-          1.8,
-          1.95,
-          1.65
+          4.89,
+          -1.23,
+          -0.44,
+          -0.29,
+          -0.43,
+          -0.37
         ],
-        "TotalChange": 1.65
+        "TotalChange": -0.37
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -46,7 +46,7 @@
       ],
       "FlavourText": "Though my life is gone, my purpose is not.\nMy will remains, emboldened and empowered\nby the righteousness of my cause.",
       "ItemType": "Unknown",
-      "ChaosValue": 531.09,
+      "ChaosValue": 532.29,
       "ExaltedValue": 3.0,
       "Count": 99
     },
@@ -66,14 +66,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.71,
-          1.15,
-          14.88,
-          36.1,
-          36.32,
-          35.92
+          0.44,
+          14.07,
+          35.14,
+          35.36,
+          34.8,
+          35.26
         ],
-        "TotalChange": 35.92
+        "TotalChange": 35.26
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -92,9 +92,9 @@
       ],
       "FlavourText": "We are ever the makers of our own undoing.",
       "ItemType": "Unknown",
-      "ChaosValue": 354.06,
+      "ChaosValue": 354.86,
       "ExaltedValue": 2.0,
-      "Count": 50
+      "Count": 44
     },
     {
       "Id": 23250,
@@ -112,14 +112,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          8.49,
-          16.64,
-          16.93,
-          18.19,
-          18.37,
-          18.02
+          7.51,
+          7.77,
+          8.94,
+          9.11,
+          8.59,
+          9.03
         ],
-        "TotalChange": 18.02
+        "TotalChange": 9.03
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -146,7 +146,7 @@
       ],
       "FlavourText": "Forget kings and emperors;\nHe who holds the coin holds all the power.",
       "ItemType": "Unknown",
-      "ChaosValue": 177.03,
+      "ChaosValue": 177.43,
       "ExaltedValue": 1.0,
       "Count": 99
     },
@@ -166,14 +166,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -5.84,
-          -11.54,
-          -15.38,
-          -13.32,
-          -7.69,
-          -1.57
+          -6.05,
+          -10.14,
+          -7.95,
+          -1.97,
+          2.12,
+          6.2
         ],
-        "TotalChange": -1.57
+        "TotalChange": 6.2
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -216,8 +216,8 @@
       ],
       "FlavourText": "For his sins he was hunted in his sleep,\njudgement wrought of twisted nightmare.\nThe Coward bound his dreams to stone, awaiting\nanother to walk the path of true atonement.",
       "ItemType": "Unknown",
-      "ChaosValue": 127.96,
-      "ExaltedValue": 0.72,
+      "ChaosValue": 130.0,
+      "ExaltedValue": 0.73,
       "Count": 99
     },
     {
@@ -236,14 +236,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.75,
-          0.75,
-          0.55,
-          0.66,
-          0.12,
-          4.99
+          0.0,
+          -0.2,
+          -0.09,
+          -0.62,
+          4.21,
+          4.83
         ],
-        "TotalChange": 4.99
+        "TotalChange": 4.83
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -270,17 +270,17 @@
       ],
       "FlavourText": "To the east, \nit cannot be seen.\nTo the west, \nit cannot be touched.\nTo the south, \nit cannot be remembered.\nAnd to the north, \nit cannot be contained.",
       "ItemType": "Unknown",
-      "ChaosValue": 93.79,
+      "ChaosValue": 94.35,
       "ExaltedValue": 0.53,
-      "Count": 8
+      "Count": 10
     },
     {
-      "Id": 23299,
-      "Name": "Twisted Distant Memory",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/SynthesisLightningGuardianMap.png?scale=1&w=1&h=1",
-      "MapTier": 4,
+      "Id": 20759,
+      "Name": "The Vinktar Square",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/TheVinktarSquare.png?scale=1&w=1&h=1",
+      "MapTier": 13,
       "LevelRequired": 0,
-      "BaseType": "Park Map",
+      "BaseType": "Courtyard Map",
       "StackSize": 0,
       "Variant": null,
       "ProphecyText": null,
@@ -290,72 +290,43 @@
       "Sparkline": {
         "Data": [
           0.0,
-          3.3,
-          -3.16,
-          -3.16,
-          1.42,
-          -1.91,
-          3.4
+          10.4,
+          9.03,
+          9.03,
+          10.98,
+          21.18,
+          35.82
         ],
-        "TotalChange": 3.4
+        "TotalChange": 35.82
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "text": "100% increased Experience gain",
+          "text": "20% more Monster Life",
           "optional": false
         },
         {
-          "text": "Monster Level: 80",
+          "text": "Monsters cannot be Shocked",
           "optional": false
         },
         {
-          "text": "Map has (3-5) additional random Modifiers",
+          "text": "20% increased Monster Damage",
           "optional": false
         },
         {
-          "text": "Map has (2-4) additional Synthesis Global Modifiers",
+          "text": "+35% Monster Lightning Resistance",
+          "optional": false
+        },
+        {
+          "text": "Monsters deal 35% extra Damage as Lightning",
           "optional": false
         }
       ],
-      "FlavourText": "Without our strict rule, man's destructive side would take hold.\nOur beautiful public spaces, our services for the ill and the needy,\nall of it would crumble.",
+      "FlavourText": "To the east, \nit cannot be seen.\nTo the west, \nit cannot be touched.\nTo the south, \nit cannot be remembered.\nAnd to the north, \nit cannot be contained.",
       "ItemType": "Unknown",
-      "ChaosValue": 80.08,
-      "ExaltedValue": 0.45,
-      "Count": 99
-    },
-    {
-      "Id": 2245,
-      "Name": "The Beachhead",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/HarbingerRed.png?scale=1&w=1&h=1",
-      "MapTier": 15,
-      "LevelRequired": 0,
-      "BaseType": "Harbinger Map",
-      "StackSize": 0,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 3,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.7,
-          4.83,
-          -1.34,
-          -1.34,
-          -1.34,
-          -7.5
-        ],
-        "TotalChange": -7.5
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [],
-      "FlavourText": "<<HBGAa>><<HBG01>><<HBGAf>><<HBG02>><<HBGAm>><<HBG03>><<HBGAo>>\n<<HBG02>><<HBGAt>><<HBG03>><<HBGAy>>",
-      "ItemType": "Unknown",
-      "ChaosValue": 75.0,
-      "ExaltedValue": 0.42,
-      "Count": 99
+      "ChaosValue": 81.49,
+      "ExaltedValue": 0.46,
+      "Count": 7
     },
     {
       "Id": 25266,
@@ -373,14 +344,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          1.94,
-          3.02,
-          12.81,
-          6.16,
-          26.33,
-          29.07
+          1.06,
+          10.66,
+          4.14,
+          23.92,
+          26.61,
+          37.57
         ],
-        "TotalChange": 29.07
+        "TotalChange": 37.57
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -423,9 +394,220 @@
       ],
       "FlavourText": "For his sins he was hunted in his sleep,\njudgement wrought of twisted nightmare.\nThe Coward bound his dreams to stone, awaiting\nanother to walk the path of true atonement.",
       "ItemType": "Unknown",
-      "ChaosValue": 74.37,
+      "ChaosValue": 80.81,
+      "ExaltedValue": 0.46,
+      "Count": 12
+    },
+    {
+      "Id": 20630,
+      "Name": "The Coward's Trial",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/UndeadSiege.png?scale=1&w=1&h=1",
+      "MapTier": 9,
+      "LevelRequired": 0,
+      "BaseType": "Cursed Crypt Map",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -5.32,
+          1.18,
+          24.62,
+          25.87,
+          19.92,
+          27.47
+        ],
+        "TotalChange": 27.47
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Contains waves of Monsters",
+          "optional": false
+        },
+        {
+          "text": "Contains additional waves of Undead Monsters",
+          "optional": false
+        },
+        {
+          "text": "Area contains additional waves of Ghosts",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Oriathan Zombies",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Phantasms",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Bone Rhoas",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Raging Spirits",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Ravager Maws",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Zombies",
+          "optional": true
+        }
+      ],
+      "FlavourText": "For his sins he was hunted in his sleep,\njudgement wrought of twisted nightmare.\nThe Coward bound his dreams to stone, awaiting\nanother to walk the path of true atonement.",
+      "ItemType": "Unknown",
+      "ChaosValue": 76.48,
+      "ExaltedValue": 0.43,
+      "Count": 14
+    },
+    {
+      "Id": 25096,
+      "Name": "The Putrid Cloister",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/PutridCloister.png?scale=1&w=1&h=1",
+      "MapTier": 10,
+      "LevelRequired": 0,
+      "BaseType": "Museum Map",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -7.69,
+          -30.77,
+          -30.77,
+          -30.77,
+          -19.85,
+          17.32
+        ],
+        "TotalChange": 17.32
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Players are Cursed with Vulnerability",
+          "optional": false
+        },
+        {
+          "text": "Players are Cursed with Conductivity",
+          "optional": false
+        },
+        {
+          "text": "Players are Cursed with Flammability",
+          "optional": false
+        },
+        {
+          "text": "Players are Cursed with Frostbite",
+          "optional": false
+        },
+        {
+          "text": "Players are Cursed with Projectile Weakness",
+          "optional": false
+        },
+        {
+          "text": "Unique Boss drops divination cards",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Please take out your blades,\nyour whips, and your spikes.\nClass is now in session.",
+      "ItemType": "Unknown",
+      "ChaosValue": 76.26,
+      "ExaltedValue": 0.43,
+      "Count": 13
+    },
+    {
+      "Id": 2245,
+      "Name": "The Beachhead",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/HarbingerRed.png?scale=1&w=1&h=1",
+      "MapTier": 15,
+      "LevelRequired": 0,
+      "BaseType": "Harbinger Map",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          4.1,
+          -2.02,
+          -2.02,
+          -2.02,
+          -8.14,
+          -8.14
+        ],
+        "TotalChange": -8.14
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "<<HBGAa>><<HBG01>><<HBGAf>><<HBG02>><<HBGAm>><<HBG03>><<HBGAo>>\n<<HBG02>><<HBGAt>><<HBG03>><<HBGAy>>",
+      "ItemType": "Unknown",
+      "ChaosValue": 75.0,
       "ExaltedValue": 0.42,
-      "Count": 11
+      "Count": 99
+    },
+    {
+      "Id": 23299,
+      "Name": "Twisted Distant Memory",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/SynthesisLightningGuardianMap.png?scale=1&w=1&h=1",
+      "MapTier": 4,
+      "LevelRequired": 0,
+      "BaseType": "Park Map",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -6.25,
+          -6.25,
+          -1.82,
+          -5.04,
+          0.0,
+          -6.96
+        ],
+        "TotalChange": -6.96
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "100% increased Experience gain",
+          "optional": false
+        },
+        {
+          "text": "Monster Level: 80",
+          "optional": false
+        },
+        {
+          "text": "Map has (3-5) additional random Modifiers",
+          "optional": false
+        },
+        {
+          "text": "Map has (2-4) additional Synthesis Global Modifiers",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Without our strict rule, man's destructive side would take hold.\nOur beautiful public spaces, our services for the ill and the needy,\nall of it would crumble.",
+      "ItemType": "Unknown",
+      "ChaosValue": 74.43,
+      "ExaltedValue": 0.42,
+      "Count": 99
     },
     {
       "Id": 37937,
@@ -443,9 +625,9 @@
       "Sparkline": {
         "Data": [
           null,
+          0.0,
+          0.0,
           null,
-          0.0,
-          0.0,
           null,
           null,
           null
@@ -477,133 +659,9 @@
       ],
       "FlavourText": "To the east, \nit cannot be seen.\nTo the west, \nit cannot be touched.\nTo the south, \nit cannot be remembered.\nAnd to the north, \nit cannot be contained.",
       "ItemType": "Unknown",
-      "ChaosValue": 73.73,
-      "ExaltedValue": 0.42,
-      "Count": 3
-    },
-    {
-      "Id": 20759,
-      "Name": "The Vinktar Square",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/TheVinktarSquare.png?scale=1&w=1&h=1",
-      "MapTier": 13,
-      "LevelRequired": 0,
-      "BaseType": "Courtyard Map",
-      "StackSize": 0,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 3,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          10.4,
-          9.03,
-          9.03,
-          10.98,
-          21.18
-        ],
-        "TotalChange": 21.18
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "text": "20% more Monster Life",
-          "optional": false
-        },
-        {
-          "text": "Monsters cannot be Shocked",
-          "optional": false
-        },
-        {
-          "text": "20% increased Monster Damage",
-          "optional": false
-        },
-        {
-          "text": "+35% Monster Lightning Resistance",
-          "optional": false
-        },
-        {
-          "text": "Monsters deal 35% extra Damage as Lightning",
-          "optional": false
-        }
-      ],
-      "FlavourText": "To the east, \nit cannot be seen.\nTo the west, \nit cannot be touched.\nTo the south, \nit cannot be remembered.\nAnd to the north, \nit cannot be contained.",
-      "ItemType": "Unknown",
-      "ChaosValue": 72.71,
-      "ExaltedValue": 0.41,
-      "Count": 10
-    },
-    {
-      "Id": 20630,
-      "Name": "The Coward's Trial",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/UndeadSiege.png?scale=1&w=1&h=1",
-      "MapTier": 9,
-      "LevelRequired": 0,
-      "BaseType": "Cursed Crypt Map",
-      "StackSize": 0,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 3,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          -5.32,
-          1.18,
-          24.62,
-          25.87,
-          19.92
-        ],
-        "TotalChange": 19.92
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "text": "Contains waves of Monsters",
-          "optional": false
-        },
-        {
-          "text": "Contains additional waves of Undead Monsters",
-          "optional": false
-        },
-        {
-          "text": "Area contains additional waves of Ghosts",
-          "optional": true
-        },
-        {
-          "text": "Area contains additional waves of Oriathan Zombies",
-          "optional": true
-        },
-        {
-          "text": "Area contains additional waves of Phantasms",
-          "optional": true
-        },
-        {
-          "text": "Area contains additional waves of Bone Rhoas",
-          "optional": true
-        },
-        {
-          "text": "Area contains additional waves of Raging Spirits",
-          "optional": true
-        },
-        {
-          "text": "Area contains additional waves of Zombies",
-          "optional": true
-        },
-        {
-          "text": "Area contains additional waves of Ravager Maws",
-          "optional": true
-        }
-      ],
-      "FlavourText": "For his sins he was hunted in his sleep,\njudgement wrought of twisted nightmare.\nThe Coward bound his dreams to stone, awaiting\nanother to walk the path of true atonement.",
-      "ItemType": "Unknown",
-      "ChaosValue": 71.95,
-      "ExaltedValue": 0.41,
-      "Count": 14
+      "ChaosValue": 70.0,
+      "ExaltedValue": 0.39,
+      "Count": 1
     },
     {
       "Id": 25380,
@@ -621,14 +679,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.82,
-          0.0,
-          4.25,
-          4.62,
-          4.2,
-          1.54
+          -0.81,
+          3.4,
+          3.77,
+          3.36,
+          0.72,
+          -0.81
         ],
-        "TotalChange": 1.54
+        "TotalChange": -0.81
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -659,9 +717,9 @@
       ],
       "FlavourText": "Please take out your blades,\nyour whips, and your spikes.\nClass is now in session.",
       "ItemType": "Unknown",
-      "ChaosValue": 66.0,
+      "ChaosValue": 65.0,
       "ExaltedValue": 0.37,
-      "Count": 99
+      "Count": 90
     },
     {
       "Id": 23256,
@@ -679,14 +737,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -0.85,
-          -3.5,
-          -4.87,
-          -10.39,
-          -10.39,
-          -10.39
+          -2.67,
+          -4.06,
+          -9.62,
+          -9.62,
+          -9.66,
+          -11.01
         ],
-        "TotalChange": -10.39
+        "TotalChange": -11.01
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -709,8 +767,8 @@
       ],
       "FlavourText": "The winters of my youth were cold and harsh.\nWe had nothing, yet to my mother's credit, I wanted for so little.",
       "ItemType": "Unknown",
-      "ChaosValue": 65.0,
-      "ExaltedValue": 0.37,
+      "ChaosValue": 64.0,
+      "ExaltedValue": 0.36,
       "Count": 99
     },
     {
@@ -729,14 +787,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -4.8,
-          2.15,
-          -7.54,
-          -12.45,
-          -12.45,
-          -12.45
+          7.29,
+          -2.88,
+          -8.03,
+          -8.03,
+          -8.03,
+          -8.03
         ],
-        "TotalChange": -12.45
+        "TotalChange": -8.03
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -764,6 +822,114 @@
       "Count": 99
     },
     {
+      "Id": 24325,
+      "Name": "Augmented Distant Memory",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/SynthesisFireGuardianMap.png?scale=1&w=1&h=1",
+      "MapTier": 9,
+      "LevelRequired": 0,
+      "BaseType": "Courthouse Map",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -0.43,
+          -10.37,
+          -15.75,
+          -15.75,
+          -15.74,
+          -8.09
+        ],
+        "TotalChange": -8.09
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "100% increased Experience gain",
+          "optional": false
+        },
+        {
+          "text": "Monster Level: 80",
+          "optional": false
+        },
+        {
+          "text": "Map has (3-5) additional random Modifiers",
+          "optional": false
+        },
+        {
+          "text": "Map has (2-4) additional Synthesis Global Modifiers",
+          "optional": false
+        }
+      ],
+      "FlavourText": "What had seemed sacred and infallible\nso quickly became flawed out of necessity.\nCreated from compromises. Vulnerable to mortal whims.",
+      "ItemType": "Unknown",
+      "ChaosValue": 60.0,
+      "ExaltedValue": 0.34,
+      "Count": 99
+    },
+    {
+      "Id": 25564,
+      "Name": "The Putrid Cloister",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/PutridCloister.png?scale=1&w=1&h=1",
+      "MapTier": 12,
+      "LevelRequired": 0,
+      "BaseType": "Museum Map",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -2.96,
+          -0.31,
+          5.71,
+          0.0,
+          0.0,
+          9.09
+        ],
+        "TotalChange": 9.09
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Players are Cursed with Vulnerability",
+          "optional": false
+        },
+        {
+          "text": "Players are Cursed with Conductivity",
+          "optional": false
+        },
+        {
+          "text": "Players are Cursed with Flammability",
+          "optional": false
+        },
+        {
+          "text": "Players are Cursed with Frostbite",
+          "optional": false
+        },
+        {
+          "text": "Players are Cursed with Projectile Weakness",
+          "optional": false
+        },
+        {
+          "text": "Unique Boss drops divination cards",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Please take out your blades,\nyour whips, and your spikes.\nClass is now in session.",
+      "ItemType": "Unknown",
+      "ChaosValue": 60.0,
+      "ExaltedValue": 0.34,
+      "Count": 6
+    },
+    {
       "Id": 25648,
       "Name": "The Coward's Trial",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/UndeadSiege.png?scale=1&w=1&h=1",
@@ -779,14 +945,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          1.31,
-          1.69,
-          1.69,
-          6.78,
-          6.92,
-          1.54
+          0.38,
+          0.38,
+          5.4,
+          5.55,
+          0.84,
+          0.33
         ],
-        "TotalChange": 1.54
+        "TotalChange": 0.33
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -829,17 +995,17 @@
       ],
       "FlavourText": "For his sins he was hunted in his sleep,\njudgement wrought of twisted nightmare.\nThe Coward bound his dreams to stone, awaiting\nanother to walk the path of true atonement.",
       "ItemType": "Unknown",
-      "ChaosValue": 59.91,
+      "ChaosValue": 59.97,
       "ExaltedValue": 0.34,
       "Count": 10
     },
     {
-      "Id": 24325,
-      "Name": "Augmented Distant Memory",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/SynthesisFireGuardianMap.png?scale=1&w=1&h=1",
-      "MapTier": 9,
+      "Id": 20469,
+      "Name": "The Vinktar Square",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/TheVinktarSquare.png?scale=1&w=1&h=1",
+      "MapTier": 4,
       "LevelRequired": 0,
-      "BaseType": "Courthouse Map",
+      "BaseType": "Courtyard Map",
       "StackSize": 0,
       "Variant": null,
       "ProphecyText": null,
@@ -849,97 +1015,43 @@
       "Sparkline": {
         "Data": [
           0.0,
-          8.8,
-          8.33,
-          -2.48,
-          -8.33,
-          -8.33,
-          -8.33
+          1.13,
+          2.91,
+          2.89,
+          -0.53,
+          1.09,
+          5.24
         ],
-        "TotalChange": -8.33
+        "TotalChange": 5.24
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "text": "100% increased Experience gain",
+          "text": "20% more Monster Life",
           "optional": false
         },
         {
-          "text": "Monster Level: 80",
+          "text": "Monsters cannot be Shocked",
           "optional": false
         },
         {
-          "text": "Map has (3-5) additional random Modifiers",
+          "text": "20% increased Monster Damage",
           "optional": false
         },
         {
-          "text": "Map has (2-4) additional Synthesis Global Modifiers",
+          "text": "+35% Monster Lightning Resistance",
+          "optional": false
+        },
+        {
+          "text": "Monsters deal 35% extra Damage as Lightning",
           "optional": false
         }
       ],
-      "FlavourText": "What had seemed sacred and infallible\nso quickly became flawed out of necessity.\nCreated from compromises. Vulnerable to mortal whims.",
+      "FlavourText": "To the east, \nit cannot be seen.\nTo the west, \nit cannot be touched.\nTo the south, \nit cannot be remembered.\nAnd to the north, \nit cannot be contained.",
       "ItemType": "Unknown",
-      "ChaosValue": 55.0,
-      "ExaltedValue": 0.31,
-      "Count": 99
-    },
-    {
-      "Id": 25564,
-      "Name": "The Putrid Cloister",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/PutridCloister.png?scale=1&w=1&h=1",
-      "MapTier": 12,
-      "LevelRequired": 0,
-      "BaseType": "Museum Map",
-      "StackSize": 0,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 3,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          -0.34,
-          -3.3,
-          -0.65,
-          5.35,
-          -0.34,
-          -0.34
-        ],
-        "TotalChange": -0.34
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "text": "Players are Cursed with Vulnerability",
-          "optional": false
-        },
-        {
-          "text": "Players are Cursed with Conductivity",
-          "optional": false
-        },
-        {
-          "text": "Players are Cursed with Flammability",
-          "optional": false
-        },
-        {
-          "text": "Players are Cursed with Frostbite",
-          "optional": false
-        },
-        {
-          "text": "Players are Cursed with Projectile Weakness",
-          "optional": false
-        },
-        {
-          "text": "Unique Boss drops divination cards",
-          "optional": false
-        }
-      ],
-      "FlavourText": "Please take out your blades,\nyour whips, and your spikes.\nClass is now in session.",
-      "ItemType": "Unknown",
-      "ChaosValue": 55.0,
-      "ExaltedValue": 0.31,
-      "Count": 7
+      "ChaosValue": 52.0,
+      "ExaltedValue": 0.29,
+      "Count": 14
     },
     {
       "Id": 20779,
@@ -956,10 +1068,10 @@
       "ItemClass": 3,
       "Sparkline": {
         "Data": [
-          null,
           0.0,
           2.19,
           0.0,
+          null,
           null,
           null,
           null
@@ -996,118 +1108,6 @@
       "Count": 3
     },
     {
-      "Id": 20469,
-      "Name": "The Vinktar Square",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/TheVinktarSquare.png?scale=1&w=1&h=1",
-      "MapTier": 4,
-      "LevelRequired": 0,
-      "BaseType": "Courtyard Map",
-      "StackSize": 0,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 3,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          1.13,
-          2.91,
-          2.89,
-          -0.53,
-          1.09
-        ],
-        "TotalChange": 1.09
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "text": "20% more Monster Life",
-          "optional": false
-        },
-        {
-          "text": "Monsters cannot be Shocked",
-          "optional": false
-        },
-        {
-          "text": "20% increased Monster Damage",
-          "optional": false
-        },
-        {
-          "text": "+35% Monster Lightning Resistance",
-          "optional": false
-        },
-        {
-          "text": "Monsters deal 35% extra Damage as Lightning",
-          "optional": false
-        }
-      ],
-      "FlavourText": "To the east, \nit cannot be seen.\nTo the west, \nit cannot be touched.\nTo the south, \nit cannot be remembered.\nAnd to the north, \nit cannot be contained.",
-      "ItemType": "Unknown",
-      "ChaosValue": 49.95,
-      "ExaltedValue": 0.28,
-      "Count": 12
-    },
-    {
-      "Id": 25096,
-      "Name": "The Putrid Cloister",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/PutridCloister.png?scale=1&w=1&h=1",
-      "MapTier": 10,
-      "LevelRequired": 0,
-      "BaseType": "Museum Map",
-      "StackSize": 0,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 3,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          -9.38,
-          -16.35,
-          -37.27,
-          -37.27,
-          -37.27,
-          -32.02
-        ],
-        "TotalChange": -32.02
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "text": "Players are Cursed with Vulnerability",
-          "optional": false
-        },
-        {
-          "text": "Players are Cursed with Conductivity",
-          "optional": false
-        },
-        {
-          "text": "Players are Cursed with Flammability",
-          "optional": false
-        },
-        {
-          "text": "Players are Cursed with Frostbite",
-          "optional": false
-        },
-        {
-          "text": "Players are Cursed with Projectile Weakness",
-          "optional": false
-        },
-        {
-          "text": "Unique Boss drops divination cards",
-          "optional": false
-        }
-      ],
-      "FlavourText": "Please take out your blades,\nyour whips, and your spikes.\nClass is now in session.",
-      "ItemType": "Unknown",
-      "ChaosValue": 48.76,
-      "ExaltedValue": 0.28,
-      "Count": 12
-    },
-    {
       "Id": 25590,
       "Name": "The Putrid Cloister",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/PutridCloister.png?scale=1&w=1&h=1",
@@ -1123,14 +1123,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.38,
-          3.33,
-          27.71,
-          19.0,
-          19.18,
-          21.46
+          2.94,
+          27.23,
+          18.55,
+          18.73,
+          20.99,
+          21.3
         ],
-        "TotalChange": 21.46
+        "TotalChange": 21.3
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1161,17 +1161,17 @@
       ],
       "FlavourText": "Please take out your blades,\nyour whips, and your spikes.\nClass is now in session.",
       "ItemType": "Unknown",
-      "ChaosValue": 47.55,
+      "ChaosValue": 47.67,
       "ExaltedValue": 0.27,
-      "Count": 11
+      "Count": 10
     },
     {
-      "Id": 2246,
-      "Name": "The Beachhead",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/HarbingerYellow.png?scale=1&w=1&h=1",
-      "MapTier": 10,
+      "Id": 23236,
+      "Name": "The Putrid Cloister",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/PutridCloister.png?scale=1&w=1&h=1",
+      "MapTier": 3,
       "LevelRequired": 0,
-      "BaseType": "Harbinger Map",
+      "BaseType": "Museum Map",
       "StackSize": 0,
       "Variant": null,
       "ProphecyText": null,
@@ -1181,18 +1181,43 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
-          0.0,
-          -3.07,
-          -20.0,
-          -20.0,
-          -10.0
+          2.56,
+          2.56,
+          2.56,
+          2.56,
+          8.41,
+          15.38
         ],
-        "TotalChange": -10.0
+        "TotalChange": 15.38
       },
       "ImplicitModifiers": [],
-      "ExplicitModifiers": [],
-      "FlavourText": "<<HBGAa>><<HBG01>><<HBGAf>><<HBG02>><<HBGAm>><<HBG03>><<HBGAo>>\n<<HBG02>><<HBGAt>><<HBG03>><<HBGAy>>",
+      "ExplicitModifiers": [
+        {
+          "text": "Players are Cursed with Vulnerability",
+          "optional": false
+        },
+        {
+          "text": "Players are Cursed with Conductivity",
+          "optional": false
+        },
+        {
+          "text": "Players are Cursed with Flammability",
+          "optional": false
+        },
+        {
+          "text": "Players are Cursed with Frostbite",
+          "optional": false
+        },
+        {
+          "text": "Players are Cursed with Projectile Weakness",
+          "optional": false
+        },
+        {
+          "text": "Unique Boss drops divination cards",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Please take out your blades,\nyour whips, and your spikes.\nClass is now in session.",
       "ItemType": "Unknown",
       "ChaosValue": 45.0,
       "ExaltedValue": 0.25,
@@ -1218,7 +1243,7 @@
           0.0,
           0.0,
           0.0,
-          0.0,
+          12.5,
           12.5
         ],
         "TotalChange": 12.5
@@ -1250,7 +1275,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 45.0,
       "ExaltedValue": 0.25,
-      "Count": 48
+      "Count": 35
     },
     {
       "Id": 23218,
@@ -1270,12 +1295,12 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           12.5,
           11.68,
-          10.0
+          10.6,
+          11.0
         ],
-        "TotalChange": 10.0
+        "TotalChange": 11.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1318,17 +1343,17 @@
       ],
       "FlavourText": "For his sins he was hunted in his sleep,\njudgement wrought of twisted nightmare.\nThe Coward bound his dreams to stone, awaiting\nanother to walk the path of true atonement.",
       "ItemType": "Unknown",
-      "ChaosValue": 44.0,
+      "ChaosValue": 44.4,
       "ExaltedValue": 0.25,
       "Count": 99
     },
     {
-      "Id": 23236,
-      "Name": "The Putrid Cloister",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/PutridCloister.png?scale=1&w=1&h=1",
-      "MapTier": 3,
+      "Id": 2246,
+      "Name": "The Beachhead",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/HarbingerYellow.png?scale=1&w=1&h=1",
+      "MapTier": 10,
       "LevelRequired": 0,
-      "BaseType": "Museum Map",
+      "BaseType": "Harbinger Map",
       "StackSize": 0,
       "Variant": null,
       "ProphecyText": null,
@@ -1338,45 +1363,20 @@
       "Sparkline": {
         "Data": [
           0.0,
-          2.63,
-          5.26,
-          5.26,
-          5.26,
-          5.26,
-          9.95
+          0.0,
+          -3.07,
+          -20.0,
+          -20.0,
+          -10.0,
+          -13.4
         ],
-        "TotalChange": 9.95
+        "TotalChange": -13.4
       },
       "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "text": "Players are Cursed with Vulnerability",
-          "optional": false
-        },
-        {
-          "text": "Players are Cursed with Conductivity",
-          "optional": false
-        },
-        {
-          "text": "Players are Cursed with Flammability",
-          "optional": false
-        },
-        {
-          "text": "Players are Cursed with Frostbite",
-          "optional": false
-        },
-        {
-          "text": "Players are Cursed with Projectile Weakness",
-          "optional": false
-        },
-        {
-          "text": "Unique Boss drops divination cards",
-          "optional": false
-        }
-      ],
-      "FlavourText": "Please take out your blades,\nyour whips, and your spikes.\nClass is now in session.",
+      "ExplicitModifiers": [],
+      "FlavourText": "<<HBGAa>><<HBG01>><<HBGAf>><<HBG02>><<HBGAm>><<HBG03>><<HBGAo>>\n<<HBG02>><<HBGAt>><<HBG03>><<HBGAy>>",
       "ItemType": "Unknown",
-      "ChaosValue": 41.78,
+      "ChaosValue": 43.3,
       "ExaltedValue": 0.24,
       "Count": 99
     },
@@ -1396,14 +1396,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          2.7,
-          4.7,
-          8.11,
-          8.11,
-          8.11,
-          8.11
+          1.94,
+          5.26,
+          5.26,
+          5.26,
+          5.26,
+          5.26
         ],
-        "TotalChange": 8.11
+        "TotalChange": 5.26
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1432,7 +1432,40 @@
       "ItemType": "Unknown",
       "ChaosValue": 40.0,
       "ExaltedValue": 0.23,
-      "Count": 78
+      "Count": 65
+    },
+    {
+      "Id": 2247,
+      "Name": "The Beachhead",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/HarbingerWhite.png?scale=1&w=1&h=1",
+      "MapTier": 5,
+      "LevelRequired": 0,
+      "BaseType": "Harbinger Map",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.0,
+          -12.5,
+          -17.22,
+          -15.0,
+          -15.0,
+          -25.0
+        ],
+        "TotalChange": -25.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [],
+      "FlavourText": "<<HBGAa>><<HBG01>><<HBGAf>><<HBG02>><<HBGAm>><<HBG03>><<HBGAo>>\n<<HBG02>><<HBGAt>><<HBG03>><<HBGAy>>",
+      "ItemType": "Unknown",
+      "ChaosValue": 30.0,
+      "ExaltedValue": 0.17,
+      "Count": 99
     },
     {
       "Id": 25432,
@@ -1450,14 +1483,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          2.11,
-          5.26,
-          5.26,
-          5.26,
-          -0.89,
-          -13.03
+          3.09,
+          3.09,
+          3.09,
+          -2.93,
+          -21.82,
+          -22.68
         ],
-        "TotalChange": -13.03
+        "TotalChange": -22.68
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1526,7 +1559,7 @@
           "optional": true
         },
         {
-          "text": "Unique Boss drops (11-15) additional Rare Belts",
+          "text": "Unique Boss drops (10-15) additional Rare Belts",
           "optional": true
         },
         {
@@ -1538,7 +1571,7 @@
           "optional": true
         },
         {
-          "text": "Unique Boss drops (12-15) additional Rare Body Armours",
+          "text": "Unique Boss drops (10-15) additional Rare Body Armours",
           "optional": true
         },
         {
@@ -1558,7 +1591,7 @@
           "optional": true
         },
         {
-          "text": "Unique Boss drops (11-15) additional Rare Two Hand Axes",
+          "text": "Unique Boss drops (10-15) additional Rare Two Hand Axes",
           "optional": true
         },
         {
@@ -1588,39 +1621,6 @@
       ],
       "FlavourText": "Laughs of all the twisted\nEcho through these halls of gold.\nIn this cold forgotten void\nThey wander, forever uncontrolled.",
       "ItemType": "Unknown",
-      "ChaosValue": 33.05,
-      "ExaltedValue": 0.19,
-      "Count": 99
-    },
-    {
-      "Id": 2247,
-      "Name": "The Beachhead",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/HarbingerWhite.png?scale=1&w=1&h=1",
-      "MapTier": 5,
-      "LevelRequired": 0,
-      "BaseType": "Harbinger Map",
-      "StackSize": 0,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 3,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          -3.81,
-          -3.81,
-          -15.84,
-          -20.38,
-          -18.24,
-          -27.86
-        ],
-        "TotalChange": -27.86
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [],
-      "FlavourText": "<<HBGAa>><<HBG01>><<HBGAf>><<HBG02>><<HBGAm>><<HBG03>><<HBGAo>>\n<<HBG02>><<HBGAt>><<HBG03>><<HBGAy>>",
-      "ItemType": "Unknown",
       "ChaosValue": 30.0,
       "ExaltedValue": 0.17,
       "Count": 99
@@ -1645,10 +1645,10 @@
           0.0,
           0.0,
           0.0,
-          0.0,
-          8.0
+          6.55,
+          0.0
         ],
-        "TotalChange": 8.0
+        "TotalChange": 0.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1675,9 +1675,9 @@
       ],
       "FlavourText": "In the shadow of war,\nall are eclipsed.",
       "ItemType": "Unknown",
-      "ChaosValue": 27.0,
-      "ExaltedValue": 0.15,
-      "Count": 70
+      "ChaosValue": 25.0,
+      "ExaltedValue": 0.14,
+      "Count": 76
     },
     {
       "Id": 25212,
@@ -1695,14 +1695,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -7.62,
-          -7.62,
-          -7.62,
-          0.09,
-          -7.62,
-          -7.62
+          0.0,
+          0.0,
+          8.35,
+          0.0,
+          16.45,
+          1.55
         ],
-        "TotalChange": -7.62
+        "TotalChange": 1.55
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1733,6 +1733,10 @@
         {
           "text": "Area is a large Maze",
           "optional": false
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Quivers",
+          "optional": true
         },
         {
           "text": "Unique Boss drops (14-15) additional Rare Staves",
@@ -1791,11 +1795,7 @@
           "optional": true
         },
         {
-          "text": "Unique Boss drops 13 additional Rare Two Hand Swords",
-          "optional": true
-        },
-        {
-          "text": "Unique Boss drops 10 additional Rare Quivers",
+          "text": "Unique Boss drops (12-13) additional Rare Two Hand Swords",
           "optional": true
         },
         {
@@ -1811,7 +1811,7 @@
           "optional": true
         },
         {
-          "text": "Unique Boss drops 13 additional Rare Wands",
+          "text": "Unique Boss drops (10-13) additional Rare Wands",
           "optional": true
         },
         {
@@ -1829,63 +1829,9 @@
       ],
       "FlavourText": "Laughs of all the twisted\nEcho through these halls of gold.\nIn this cold forgotten void\nThey wander, forever uncontrolled.",
       "ItemType": "Unknown",
-      "ChaosValue": 20.0,
+      "ChaosValue": 20.31,
       "ExaltedValue": 0.11,
-      "Count": 26
-    },
-    {
-      "Id": 25593,
-      "Name": "The Twilight Temple",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/Celestial.png?scale=1&w=1&h=1",
-      "MapTier": 12,
-      "LevelRequired": 0,
-      "BaseType": "Moon Temple Map",
-      "StackSize": 0,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 3,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          6.95,
-          4.06,
-          0.56,
-          1.28,
-          3.69,
-          6.95
-        ],
-        "TotalChange": 6.95
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "text": "Area has increased monster variety",
-          "optional": false
-        },
-        {
-          "text": "Area is inhabited by Lunaris fanatics",
-          "optional": false
-        },
-        {
-          "text": "Area is inhabited by Solaris fanatics",
-          "optional": false
-        },
-        {
-          "text": "Players are Cursed with Flammability",
-          "optional": false
-        },
-        {
-          "text": "Players are Cursed with Frostbite",
-          "optional": false
-        }
-      ],
-      "FlavourText": "In the shadow of war,\nall are eclipsed.",
-      "ItemType": "Unknown",
-      "ChaosValue": 20.0,
-      "ExaltedValue": 0.11,
-      "Count": 8
+      "Count": 22
     },
     {
       "Id": 21469,
@@ -1903,14 +1849,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -1.52,
-          -5.36,
-          -6.95,
-          9.7,
-          -2.06,
-          -2.94
+          -3.9,
+          -5.52,
+          11.39,
+          -0.55,
+          -0.55,
+          -0.55
         ],
-        "TotalChange": -2.94
+        "TotalChange": -0.55
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -1947,7 +1893,7 @@
           "optional": true
         },
         {
-          "text": "Unique Boss drops (14-15) additional Rare Gloves",
+          "text": "Unique Boss drops (13-15) additional Rare Gloves",
           "optional": true
         },
         {
@@ -1963,7 +1909,7 @@
           "optional": true
         },
         {
-          "text": "Unique Boss drops 15 additional Rare One Hand Maces",
+          "text": "Unique Boss drops (10-15) additional Rare One Hand Maces",
           "optional": true
         },
         {
@@ -1995,11 +1941,11 @@
           "optional": true
         },
         {
-          "text": "Unique Boss drops (11-14) additional Rare Sceptres",
+          "text": "Unique Boss drops (10-14) additional Rare Sceptres",
           "optional": true
         },
         {
-          "text": "Unique Boss drops 15 additional Rare One Hand Axes",
+          "text": "Unique Boss drops (11-15) additional Rare One Hand Axes",
           "optional": true
         },
         {
@@ -2037,15 +1983,15 @@
       ],
       "FlavourText": "Laughs of all the twisted\nEcho through these halls of gold.\nIn this cold forgotten void\nThey wander, forever uncontrolled.",
       "ItemType": "Unknown",
-      "ChaosValue": 19.82,
+      "ChaosValue": 20.0,
       "ExaltedValue": 0.11,
-      "Count": 22
+      "Count": 18
     },
     {
-      "Id": 20633,
+      "Id": 25593,
       "Name": "The Twilight Temple",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/Celestial.png?scale=1&w=1&h=1",
-      "MapTier": 10,
+      "MapTier": 12,
       "LevelRequired": 0,
       "BaseType": "Moon Temple Map",
       "StackSize": 0,
@@ -2056,11 +2002,11 @@
       "ItemClass": 3,
       "Sparkline": {
         "Data": [
-          null,
-          null,
-          null,
-          null,
-          null,
+          0.0,
+          -2.7,
+          -5.98,
+          -5.3,
+          -3.05,
           0.0,
           0.0
         ],
@@ -2091,65 +2037,15 @@
       ],
       "FlavourText": "In the shadow of war,\nall are eclipsed.",
       "ItemType": "Unknown",
-      "ChaosValue": 16.16,
-      "ExaltedValue": 0.09,
-      "Count": 6
+      "ChaosValue": 20.0,
+      "ExaltedValue": 0.11,
+      "Count": 12
     },
     {
-      "Id": 25578,
-      "Name": "Mao Kun",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/FairgravesMap01.png?scale=1&w=1&h=1",
-      "MapTier": 15,
-      "LevelRequired": 0,
-      "BaseType": "Shore Map",
-      "StackSize": 0,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 3,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          9.29,
-          6.39,
-          3.49,
-          -5.63,
-          -10.25,
-          -11.01
-        ],
-        "TotalChange": -11.01
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "text": "(60-100)% increased Experience gain",
-          "optional": false
-        },
-        {
-          "text": "Monsters deal (175-190)% extra Damage as Lightning",
-          "optional": false
-        },
-        {
-          "text": "Monsters gain an Endurance Charge on Hit",
-          "optional": false
-        },
-        {
-          "text": "Monsters gain a Power Charge on Hit",
-          "optional": false
-        }
-      ],
-      "FlavourText": "The Treasures of the Tides wait\nin agony at the End of the World.",
-      "ItemType": "Unknown",
-      "ChaosValue": 12.89,
-      "ExaltedValue": 0.07,
-      "Count": 99
-    },
-    {
-      "Id": 25181,
+      "Id": 20633,
       "Name": "The Twilight Temple",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/Celestial.png?scale=1&w=1&h=1",
-      "MapTier": 7,
+      "MapTier": 10,
       "LevelRequired": 0,
       "BaseType": "Moon Temple Map",
       "StackSize": 0,
@@ -2160,15 +2056,15 @@
       "ItemClass": 3,
       "Sparkline": {
         "Data": [
+          null,
+          null,
+          null,
+          null,
           0.0,
-          -21.11,
-          3.06,
-          3.06,
-          3.06,
-          -4.24,
-          -5.34
+          0.0,
+          -5.45
         ],
-        "TotalChange": -5.34
+        "TotalChange": -5.45
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -2195,15 +2091,15 @@
       ],
       "FlavourText": "In the shadow of war,\nall are eclipsed.",
       "ItemType": "Unknown",
-      "ChaosValue": 12.06,
-      "ExaltedValue": 0.07,
-      "Count": 8
+      "ChaosValue": 15.28,
+      "ExaltedValue": 0.09,
+      "Count": 5
     },
     {
-      "Id": 25487,
+      "Id": 25578,
       "Name": "Mao Kun",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/FairgravesMap01.png?scale=1&w=1&h=1",
-      "MapTier": 13,
+      "MapTier": 15,
       "LevelRequired": 0,
       "BaseType": "Shore Map",
       "StackSize": 0,
@@ -2215,14 +2111,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
-          23.8,
-          36.2,
-          16.1,
-          16.1,
-          15.6
+          -2.65,
+          -5.31,
+          -13.65,
+          -17.88,
+          -19.33,
+          -21.67
         ],
-        "TotalChange": 15.6
+        "TotalChange": -21.67
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -2245,9 +2141,59 @@
       ],
       "FlavourText": "The Treasures of the Tides wait\nin agony at the End of the World.",
       "ItemType": "Unknown",
-      "ChaosValue": 11.56,
+      "ChaosValue": 12.4,
       "ExaltedValue": 0.07,
-      "Count": 18
+      "Count": 99
+    },
+    {
+      "Id": 25487,
+      "Name": "Mao Kun",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/FairgravesMap01.png?scale=1&w=1&h=1",
+      "MapTier": 13,
+      "LevelRequired": 0,
+      "BaseType": "Shore Map",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          23.8,
+          36.2,
+          16.1,
+          16.1,
+          17.9,
+          20.3
+        ],
+        "TotalChange": 20.3
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(60-100)% increased Experience gain",
+          "optional": false
+        },
+        {
+          "text": "Monsters deal (175-190)% extra Damage as Lightning",
+          "optional": false
+        },
+        {
+          "text": "Monsters gain an Endurance Charge on Hit",
+          "optional": false
+        },
+        {
+          "text": "Monsters gain a Power Charge on Hit",
+          "optional": false
+        }
+      ],
+      "FlavourText": "The Treasures of the Tides wait\nin agony at the End of the World.",
+      "ItemType": "Unknown",
+      "ChaosValue": 12.03,
+      "ExaltedValue": 0.07,
+      "Count": 20
     },
     {
       "Id": 20456,
@@ -2265,14 +2211,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -1.69,
-          -10.54,
-          -16.29,
-          -19.6,
-          -18.92,
-          -22.85
+          -9.0,
+          -14.84,
+          -18.22,
+          -17.53,
+          -18.7,
+          -7.82
         ],
-        "TotalChange": -22.85
+        "TotalChange": -7.82
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -2305,7 +2251,19 @@
           "optional": false
         },
         {
-          "text": "Unique Boss drops 13 additional Rare Gloves",
+          "text": "Unique Boss drops 15 additional Rare Two Hand Maces",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (11-13) additional Rare Thrusting One Hand Swords",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (11-13) additional Rare Boots",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (11-13) additional Rare Gloves",
           "optional": true
         },
         {
@@ -2317,19 +2275,11 @@
           "optional": true
         },
         {
-          "text": "Unique Boss drops 11 additional Rare Boots",
-          "optional": true
-        },
-        {
           "text": "Unique Boss drops (10-14) additional Rare Two Hand Axes",
           "optional": true
         },
         {
           "text": "Unique Boss drops (12-15) additional Rare Rings",
-          "optional": true
-        },
-        {
-          "text": "Unique Boss drops 11 additional Rare Thrusting One Hand Swords",
           "optional": true
         },
         {
@@ -2365,7 +2315,7 @@
           "optional": true
         },
         {
-          "text": "Unique Boss drops (11-14) additional Rare Daggers",
+          "text": "Unique Boss drops (10-14) additional Rare Daggers",
           "optional": true
         },
         {
@@ -2399,9 +2349,63 @@
       ],
       "FlavourText": "Laughs of all the twisted\nEcho through these halls of gold.\nIn this cold forgotten void\nThey wander, forever uncontrolled.",
       "ItemType": "Unknown",
-      "ChaosValue": 10.03,
+      "ChaosValue": 11.78,
+      "ExaltedValue": 0.07,
+      "Count": 19
+    },
+    {
+      "Id": 25181,
+      "Name": "The Twilight Temple",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/Celestial.png?scale=1&w=1&h=1",
+      "MapTier": 7,
+      "LevelRequired": 0,
+      "BaseType": "Moon Temple Map",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          30.65,
+          30.65,
+          30.65,
+          21.39,
+          20.0,
+          1.29
+        ],
+        "TotalChange": 1.29
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Area has increased monster variety",
+          "optional": false
+        },
+        {
+          "text": "Area is inhabited by Lunaris fanatics",
+          "optional": false
+        },
+        {
+          "text": "Area is inhabited by Solaris fanatics",
+          "optional": false
+        },
+        {
+          "text": "Players are Cursed with Flammability",
+          "optional": false
+        },
+        {
+          "text": "Players are Cursed with Frostbite",
+          "optional": false
+        }
+      ],
+      "FlavourText": "In the shadow of war,\nall are eclipsed.",
+      "ItemType": "Unknown",
+      "ChaosValue": 10.18,
       "ExaltedValue": 0.06,
-      "Count": 23
+      "Count": 5
     },
     {
       "Id": 23240,
@@ -2419,14 +2423,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          11.11,
-          11.11,
-          11.11,
-          11.11,
-          11.11,
-          11.11
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.1,
+          0.0
         ],
-        "TotalChange": 11.11
+        "TotalChange": 0.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -2473,14 +2477,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          9.41,
-          21.12,
-          20.46,
-          18.82,
-          9.41,
-          9.41
+          10.7,
+          10.1,
+          8.6,
+          0.0,
+          0.0,
+          0.0
         ],
-        "TotalChange": 9.41
+        "TotalChange": 0.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -2505,7 +2509,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 10.0,
       "ExaltedValue": 0.06,
-      "Count": 21
+      "Count": 25
     },
     {
       "Id": 20761,
@@ -2523,14 +2527,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          9.15,
-          14.42,
-          14.42,
-          14.42,
-          14.42,
-          13.84
+          4.82,
+          4.82,
+          4.82,
+          4.82,
+          4.3,
+          -2.31
         ],
-        "TotalChange": 13.84
+        "TotalChange": -2.31
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -2553,9 +2557,9 @@
       ],
       "FlavourText": "The Treasures of the Tides wait\nin agony at the End of the World.",
       "ItemType": "Unknown",
-      "ChaosValue": 9.95,
-      "ExaltedValue": 0.06,
-      "Count": 11
+      "ChaosValue": 9.32,
+      "ExaltedValue": 0.05,
+      "Count": 10
     },
     {
       "Id": 23215,
@@ -2573,14 +2577,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
           -8.83,
           0.0,
           13.25,
           13.67,
-          25.83
+          18.18,
+          3.33
         ],
-        "TotalChange": 25.83
+        "TotalChange": 3.33
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -2617,7 +2621,7 @@
           "optional": true
         },
         {
-          "text": "Unique Boss drops (11-15) additional Rare Two Hand Axes",
+          "text": "Unique Boss drops (10-15) additional Rare Two Hand Axes",
           "optional": true
         },
         {
@@ -2633,7 +2637,7 @@
           "optional": true
         },
         {
-          "text": "Unique Boss drops (11-15) additional Rare Helmets",
+          "text": "Unique Boss drops (10-15) additional Rare Helmets",
           "optional": true
         },
         {
@@ -2661,7 +2665,7 @@
           "optional": true
         },
         {
-          "text": "Unique Boss drops (11-15) additional Rare Quivers",
+          "text": "Unique Boss drops (10-15) additional Rare Quivers",
           "optional": true
         },
         {
@@ -2669,11 +2673,11 @@
           "optional": true
         },
         {
-          "text": "Unique Boss drops (12-15) additional Rare Rune Daggers",
+          "text": "Unique Boss drops (10-15) additional Rare Rune Daggers",
           "optional": true
         },
         {
-          "text": "Unique Boss drops (11-15) additional Rare Amulets",
+          "text": "Unique Boss drops (10-15) additional Rare Amulets",
           "optional": true
         },
         {
@@ -2711,55 +2715,9 @@
       ],
       "FlavourText": "Laughs of all the twisted\nEcho through these halls of gold.\nIn this cold forgotten void\nThey wander, forever uncontrolled.",
       "ItemType": "Unknown",
-      "ChaosValue": 7.55,
-      "ExaltedValue": 0.04,
-      "Count": 99
-    },
-    {
-      "Id": 21436,
-      "Name": "Vaults of Atziri",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/UniqueMap1.png?scale=1&w=1&h=1",
-      "MapTier": 12,
-      "LevelRequired": 0,
-      "BaseType": "Vaal Pyramid Map",
-      "StackSize": 0,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 3,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          13.2,
-          41.0,
-          20.2
-        ],
-        "TotalChange": 20.2
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "text": "Chests have (2533-3500)% increased Item Rarity",
-          "optional": false
-        },
-        {
-          "text": "Area contains no monsters",
-          "optional": false
-        },
-        {
-          "text": "Found Items have a (20-40)% chance to drop Corrupted in Area",
-          "optional": false
-        }
-      ],
-      "FlavourText": "\"Should I depart this mortal coil,\nso shall all of my treasures.\"\n- Atziri, Queen of the Vaal",
-      "ItemType": "Unknown",
-      "ChaosValue": 6.01,
+      "ChaosValue": 6.2,
       "ExaltedValue": 0.03,
-      "Count": 11
+      "Count": 99
     },
     {
       "Id": 23223,
@@ -2777,14 +2735,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          1.74,
-          4.74,
-          7.73,
-          0.41,
-          -15.37,
-          -0.25
+          2.94,
+          5.88,
+          -1.31,
+          -16.82,
+          -1.96,
+          -1.96
         ],
-        "TotalChange": -0.25
+        "TotalChange": -1.96
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -2812,12 +2770,12 @@
       "Count": 99
     },
     {
-      "Id": 25616,
-      "Name": "Hallowed Ground",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/HallowedGround.png?scale=1&w=1&h=1",
-      "MapTier": 11,
+      "Id": 23230,
+      "Name": "Hall of Grandmasters",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/HallOfGrandmasters.png?scale=1&w=1&h=1",
+      "MapTier": 16,
       "LevelRequired": 0,
-      "BaseType": "Cemetery Map",
+      "BaseType": "Promenade Map",
       "StackSize": 0,
       "Variant": null,
       "ProphecyText": null,
@@ -2827,39 +2785,27 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
-          0.0,
-          0.0,
-          13.0,
-          15.69,
-          41.75
+          -0.98,
+          0.76,
+          -2.05,
+          -4.08,
+          -4.08,
+          2.12
         ],
-        "TotalChange": 41.75
+        "TotalChange": 2.12
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "text": "Unique Boss drops 3 additional Maps",
+          "text": "Contains the Immortalised Grandmasters\nPvP damage scaling in effect",
           "optional": false
-        },
-        {
-          "text": "Unique Boss gives 2000% increased Experience",
-          "optional": false
-        },
-        {
-          "text": "0.5 Flask Charges recovered every 3 seconds",
-          "optional": false
-        },
-        {
-          "text": "+(-2-2) to Monster Level of Area",
-          "optional": true
         }
       ],
-      "FlavourText": "Some dead have long envied the living.\nWhen given the chance, they take from us what they can.\nSo we offer our suffrage.\nIn return, they give only suffering.",
+      "FlavourText": "The grandest and greatest ever to fight,\nDivine the champions stand tall.\nBut match their power, best their might,\nAnd even the immortal may fall.",
       "ItemType": "Unknown",
-      "ChaosValue": 5.67,
+      "ChaosValue": 5.27,
       "ExaltedValue": 0.03,
-      "Count": 13
+      "Count": 99
     },
     {
       "Id": 25260,
@@ -2877,14 +2823,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          3.63,
-          3.63,
-          -16.58,
-          29.53,
-          29.53,
-          29.53
+          0.0,
+          -19.5,
+          25.0,
+          25.0,
+          25.0,
+          25.0
         ],
-        "TotalChange": 29.53
+        "TotalChange": 25.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -2909,13 +2855,13 @@
       "ItemType": "Unknown",
       "ChaosValue": 5.0,
       "ExaltedValue": 0.03,
-      "Count": 13
+      "Count": 16
     },
     {
-      "Id": 25364,
+      "Id": 25616,
       "Name": "Hallowed Ground",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/HallowedGround.png?scale=1&w=1&h=1",
-      "MapTier": 7,
+      "MapTier": 11,
       "LevelRequired": 0,
       "BaseType": "Cemetery Map",
       "StackSize": 0,
@@ -2927,14 +2873,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          2.04,
-          15.71,
-          2.04,
-          -29.26,
-          2.04,
-          2.04
+          0.0,
+          0.0,
+          13.0,
+          15.69,
+          26.25,
+          13.75
         ],
-        "TotalChange": 2.04
+        "TotalChange": 13.75
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -2957,17 +2903,17 @@
       ],
       "FlavourText": "Some dead have long envied the living.\nWhen given the chance, they take from us what they can.\nSo we offer our suffrage.\nIn return, they give only suffering.",
       "ItemType": "Unknown",
-      "ChaosValue": 5.0,
+      "ChaosValue": 4.55,
       "ExaltedValue": 0.03,
-      "Count": 12
+      "Count": 9
     },
     {
-      "Id": 23230,
-      "Name": "Hall of Grandmasters",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/HallOfGrandmasters.png?scale=1&w=1&h=1",
-      "MapTier": 16,
+      "Id": 21436,
+      "Name": "Vaults of Atziri",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/UniqueMap1.png?scale=1&w=1&h=1",
+      "MapTier": 12,
       "LevelRequired": 0,
-      "BaseType": "Promenade Map",
+      "BaseType": "Vaal Pyramid Map",
       "StackSize": 0,
       "Variant": null,
       "ProphecyText": null,
@@ -2977,27 +2923,35 @@
       "Sparkline": {
         "Data": [
           0.0,
-          3.21,
-          2.2,
-          4.0,
-          1.1,
-          -1.0,
-          -1.0
+          0.0,
+          0.0,
+          13.2,
+          41.0,
+          20.2,
+          -14.4
         ],
-        "TotalChange": -1.0
+        "TotalChange": -14.4
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "text": "Contains the Immortalised Grandmasters\nPvP damage scaling in effect",
+          "text": "Chests have (2529-3500)% increased Item Rarity",
+          "optional": false
+        },
+        {
+          "text": "Area contains no monsters",
+          "optional": false
+        },
+        {
+          "text": "Found Items have a (20-40)% chance to drop Corrupted in Area",
           "optional": false
         }
       ],
-      "FlavourText": "The grandest and greatest ever to fight,\nDivine the champions stand tall.\nBut match their power, best their might,\nAnd even the immortal may fall.",
+      "FlavourText": "\"Should I depart this mortal coil,\nso shall all of my treasures.\"\n- Atziri, Queen of the Vaal",
       "ItemType": "Unknown",
-      "ChaosValue": 4.95,
-      "ExaltedValue": 0.03,
-      "Count": 99
+      "ChaosValue": 4.28,
+      "ExaltedValue": 0.02,
+      "Count": 14
     },
     {
       "Id": 24980,
@@ -3016,13 +2970,13 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
           -3.25,
           6.0,
           6.0,
-          4.75
+          9.66,
+          0.25
         ],
-        "TotalChange": 4.75
+        "TotalChange": 0.25
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -3041,9 +2995,9 @@
       ],
       "FlavourText": "\"Should I depart this mortal coil,\nso shall all of my treasures.\"\n- Atziri, Queen of the Vaal",
       "ItemType": "Unknown",
-      "ChaosValue": 4.19,
+      "ChaosValue": 4.01,
       "ExaltedValue": 0.02,
-      "Count": 16
+      "Count": 14
     },
     {
       "Id": 24685,
@@ -3089,7 +3043,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 4.0,
       "ExaltedValue": 0.02,
-      "Count": 26
+      "Count": 25
     },
     {
       "Id": 25399,
@@ -3107,14 +3061,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -10.0,
-          -2.25,
-          -6.75,
-          -0.5,
-          -1.0,
-          -1.0
+          8.61,
+          3.61,
+          10.56,
+          10.0,
+          12.78,
+          11.11
         ],
-        "TotalChange": -1.0
+        "TotalChange": 11.11
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -3133,7 +3087,7 @@
       ],
       "FlavourText": "\"Should I depart this mortal coil,\nso shall all of my treasures.\"\n- Atziri, Queen of the Vaal",
       "ItemType": "Unknown",
-      "ChaosValue": 3.96,
+      "ChaosValue": 4.0,
       "ExaltedValue": 0.02,
       "Count": 99
     },
@@ -3153,14 +3107,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
           -2.78,
           -2.77,
           -6.25,
           -8.33,
-          -8.33
+          -11.11,
+          -13.89
         ],
-        "TotalChange": -8.33
+        "TotalChange": -13.89
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -3183,7 +3137,7 @@
       ],
       "FlavourText": "Some dead have long envied the living.\nWhen given the chance, they take from us what they can.\nSo we offer our suffrage.\nIn return, they give only suffering.",
       "ItemType": "Unknown",
-      "ChaosValue": 3.96,
+      "ChaosValue": 3.72,
       "ExaltedValue": 0.02,
       "Count": 99
     },
@@ -3203,14 +3157,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
           -0.66,
           -4.33,
           -4.83,
           0.0,
-          27.0
+          6.67,
+          0.67
         ],
-        "TotalChange": 27.0
+        "TotalChange": 0.67
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -3233,7 +3187,7 @@
       ],
       "FlavourText": "Some dead have long envied the living.\nWhen given the chance, they take from us what they can.\nSo we offer our suffrage.\nIn return, they give only suffering.",
       "ItemType": "Unknown",
-      "ChaosValue": 3.81,
+      "ChaosValue": 3.02,
       "ExaltedValue": 0.02,
       "Count": 99
     },
@@ -3253,14 +3207,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -1.33,
-          -1.66,
-          1.67,
-          1.5,
-          10.0,
-          0.0
+          -0.34,
+          3.04,
+          2.87,
+          11.48,
+          1.35,
+          1.35
         ],
-        "TotalChange": 0.0
+        "TotalChange": 1.35
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -3284,6 +3238,56 @@
       "Count": 99
     },
     {
+      "Id": 25364,
+      "Name": "Hallowed Ground",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/HallowedGround.png?scale=1&w=1&h=1",
+      "MapTier": 7,
+      "LevelRequired": 0,
+      "BaseType": "Cemetery Map",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          13.4,
+          0.0,
+          -30.67,
+          0.0,
+          -25.6,
+          -49.6
+        ],
+        "TotalChange": -49.6
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Unique Boss drops 3 additional Maps",
+          "optional": false
+        },
+        {
+          "text": "Unique Boss gives 2000% increased Experience",
+          "optional": false
+        },
+        {
+          "text": "0.5 Flask Charges recovered every 3 seconds",
+          "optional": false
+        },
+        {
+          "text": "+(-2-2) to Monster Level of Area",
+          "optional": true
+        }
+      ],
+      "FlavourText": "Some dead have long envied the living.\nWhen given the chance, they take from us what they can.\nSo we offer our suffrage.\nIn return, they give only suffering.",
+      "ItemType": "Unknown",
+      "ChaosValue": 2.52,
+      "ExaltedValue": 0.01,
+      "Count": 13
+    },
+    {
       "Id": 25555,
       "Name": "Acton's Nightmare",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/musicbox.png?scale=1&w=1&h=1",
@@ -3299,14 +3303,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
           -14.68,
           -4.76,
           -5.56,
           -8.33,
-          -8.33
+          -11.11,
+          -13.89
         ],
-        "TotalChange": -8.33
+        "TotalChange": -13.89
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -3333,7 +3337,7 @@
       ],
       "FlavourText": "Curious, she shook it then,\nAnd tiny screams emerged.\nCuriouser, she shook again,\nAnd an eerie silence purred.",
       "ItemType": "Unknown",
-      "ChaosValue": 2.31,
+      "ChaosValue": 2.17,
       "ExaltedValue": 0.01,
       "Count": 99
     },
@@ -3354,8 +3358,8 @@
         "Data": [
           0.0,
           0.0,
-          0.0,
           -3.5,
+          0.0,
           0.0,
           0.0,
           0.0
@@ -3381,7 +3385,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 2.0,
       "ExaltedValue": 0.01,
-      "Count": 31
+      "Count": 32
     },
     {
       "Id": 20554,
@@ -3431,7 +3435,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 2.0,
       "ExaltedValue": 0.01,
-      "Count": 39
+      "Count": 33
     },
     {
       "Id": 21410,
@@ -3481,7 +3485,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 2.0,
       "ExaltedValue": 0.01,
-      "Count": 27
+      "Count": 32
     },
     {
       "Id": 22159,
@@ -3543,7 +3547,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 2.0,
       "ExaltedValue": 0.01,
-      "Count": 36
+      "Count": 37
     },
     {
       "Id": 24982,
@@ -3589,7 +3593,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 2.0,
       "ExaltedValue": 0.01,
-      "Count": 24
+      "Count": 20
     },
     {
       "Id": 25208,
@@ -3651,53 +3655,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 2.0,
       "ExaltedValue": 0.01,
-      "Count": 33
-    },
-    {
-      "Id": 25278,
-      "Name": "Whakawairua Tuahu",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/UniqueMapEye.png?scale=1&w=1&h=1",
-      "MapTier": 9,
-      "LevelRequired": 0,
-      "BaseType": "Strand Map",
-      "StackSize": 0,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 3,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          -27.32,
-          -26.4,
-          -4.57,
-          1.52,
-          0.0,
-          1.52
-        ],
-        "TotalChange": 1.52
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "text": "Area contains many Totems",
-          "optional": false
-        },
-        {
-          "text": "Curses have 50% reduced effect on Monsters",
-          "optional": false
-        },
-        {
-          "text": "Rare Monsters each have a Nemesis Mod",
-          "optional": false
-        }
-      ],
-      "FlavourText": "We all began life in darkness, we shall all end it there.",
-      "ItemType": "Unknown",
-      "ChaosValue": 2.0,
-      "ExaltedValue": 0.01,
-      "Count": 28
+      "Count": 32
     },
     {
       "Id": 25477,
@@ -3761,14 +3719,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          4.17,
-          -3.58,
-          4.17,
-          4.17,
-          3.65,
-          3.65
+          -7.44,
+          0.0,
+          0.0,
+          -0.5,
+          -1.0,
+          -2.5
         ],
-        "TotalChange": 3.65
+        "TotalChange": -2.5
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -3795,9 +3753,9 @@
       ],
       "FlavourText": "Whispers from a world apart\nSpeak my name beyond the tomb;\nBound within the Maelstr철m's heart,\nWill they grant me strength or doom?",
       "ItemType": "Unknown",
-      "ChaosValue": 1.99,
+      "ChaosValue": 1.95,
       "ExaltedValue": 0.01,
-      "Count": 27
+      "Count": 26
     },
     {
       "Id": 23229,
@@ -3815,14 +3773,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
           -2.78,
           0.0,
           11.11,
           10.0,
-          10.0
+          6.67,
+          3.33
         ],
-        "TotalChange": 10.0
+        "TotalChange": 3.33
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -3849,17 +3807,17 @@
       ],
       "FlavourText": "Curious, she shook it then,\nAnd tiny screams emerged.\nCuriouser, she shook again,\nAnd an eerie silence purred.",
       "ItemType": "Unknown",
-      "ChaosValue": 1.98,
+      "ChaosValue": 1.86,
       "ExaltedValue": 0.01,
       "Count": 99
     },
     {
-      "Id": 25038,
-      "Name": "Oba's Cursed Trove",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/oba.png?scale=1&w=1&h=1",
-      "MapTier": 14,
+      "Id": 25278,
+      "Name": "Whakawairua Tuahu",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/UniqueMapEye.png?scale=1&w=1&h=1",
+      "MapTier": 9,
       "LevelRequired": 0,
-      "BaseType": "Underground Sea Map",
+      "BaseType": "Strand Map",
       "StackSize": 0,
       "Variant": null,
       "ProphecyText": null,
@@ -3869,147 +3827,35 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
-          11.11,
-          11.11,
-          11.11,
-          6.11,
-          10.0
+          1.27,
+          31.3,
+          39.69,
+          37.59,
+          39.69,
+          19.43
         ],
-        "TotalChange": 10.0
+        "TotalChange": 19.43
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "text": "Area has patches of desecrated ground",
+          "text": "Area contains many Totems",
           "optional": false
         },
         {
-          "text": "(40-50)% more Monster Life",
+          "text": "Curses have 50% reduced effect on Monsters",
           "optional": false
         },
         {
-          "text": "(30-40)% increased Monster Damage",
-          "optional": false
-        },
-        {
-          "text": "Area becomes fatal after some time",
+          "text": "Rare Monsters each have a Nemesis Mod",
           "optional": false
         }
       ],
-      "FlavourText": "\"Here the soil is more deadly than any swing of the axe.\"\n- Oba of the Karui, Conqueror of Corruption.",
+      "FlavourText": "We all began life in darkness, we shall all end it there.",
       "ItemType": "Unknown",
-      "ChaosValue": 1.98,
+      "ChaosValue": 1.71,
       "ExaltedValue": 0.01,
-      "Count": 99
-    },
-    {
-      "Id": 20451,
-      "Name": "Pillars of Arun",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/PillarsOfVastiri.png?scale=1&w=1&h=1",
-      "MapTier": 7,
-      "LevelRequired": 0,
-      "BaseType": "Dunes Map",
-      "StackSize": 0,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 3,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          10.42,
-          -2.78,
-          -5.56,
-          -7.64,
-          14.58
-        ],
-        "TotalChange": 14.58
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "text": "(60-100)% increased Experience gain",
-          "optional": false
-        },
-        {
-          "text": "Area contains unbridged gaps to cross",
-          "optional": false
-        },
-        {
-          "text": "Monsters have 50% chance to Avoid Ailments",
-          "optional": false
-        },
-        {
-          "text": "(20-25)% increased Monster Movement Speed",
-          "optional": false
-        },
-        {
-          "text": "(20-25)% increased Monster Attack Speed",
-          "optional": false
-        },
-        {
-          "text": "(20-25)% increased Monster Cast Speed",
-          "optional": false
-        },
-        {
-          "text": "Players have 200% increased Cooldown Recovery Speed for Movement Skills",
-          "optional": false
-        }
-      ],
-      "FlavourText": "Man creates where nature cannot.",
-      "ItemType": "Unknown",
-      "ChaosValue": 1.65,
-      "ExaltedValue": 0.01,
-      "Count": 33
-    },
-    {
-      "Id": 23224,
-      "Name": "Death and Taxes",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/DeathandTaxes.png?scale=1&w=1&h=1",
-      "MapTier": 15,
-      "LevelRequired": 0,
-      "BaseType": "Necropolis Map",
-      "StackSize": 0,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 3,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          20.0,
-          0.02,
-          16.67,
-          13.33,
-          10.0,
-          10.0
-        ],
-        "TotalChange": 10.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "text": "Unique Boss deals (30-35)% increased Damage",
-          "optional": false
-        },
-        {
-          "text": "Unique Boss has (25-30)% increased Attack and Cast Speed",
-          "optional": false
-        },
-        {
-          "text": "Unique Boss gives 10000% increased Experience",
-          "optional": false
-        }
-      ],
-      "FlavourText": "So the raiders danced,\nleading their foe ever west,\ntowards certain death.",
-      "ItemType": "Unknown",
-      "ChaosValue": 1.65,
-      "ExaltedValue": 0.01,
-      "Count": 99
+      "Count": 26
     },
     {
       "Id": 25347,
@@ -4027,14 +3873,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
           11.11,
           11.11,
           3.33,
           -8.33,
-          -8.33
+          6.67,
+          -11.11
         ],
-        "TotalChange": -8.33
+        "TotalChange": -11.11
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -4061,7 +3907,7 @@
       ],
       "FlavourText": "Whispers from a world apart\nSpeak my name beyond the tomb;\nBound within the Maelstr철m's heart,\nWill they grant me strength or doom?",
       "ItemType": "Unknown",
-      "ChaosValue": 1.65,
+      "ChaosValue": 1.6,
       "ExaltedValue": 0.01,
       "Count": 99
     },
@@ -4081,14 +3927,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -10.0,
-          0.0,
-          0.0,
-          -9.25,
-          -17.5,
-          -17.5
+          11.11,
+          11.11,
+          0.84,
+          -8.33,
+          -11.11,
+          -13.89
         ],
-        "TotalChange": -17.5
+        "TotalChange": -13.89
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -4107,17 +3953,17 @@
       ],
       "FlavourText": "They flew, and leapt, and clambered over,\nThey crawled, and swam, and slithered under.\nStill its ancient secrets await unclaimed\nAnd of this hidden temple, only legends remain.",
       "ItemType": "Unknown",
-      "ChaosValue": 1.65,
+      "ChaosValue": 1.55,
       "ExaltedValue": 0.01,
       "Count": 99
     },
     {
-      "Id": 25579,
-      "Name": "Whakawairua Tuahu",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/UniqueMapEye.png?scale=1&w=1&h=1",
+      "Id": 25038,
+      "Name": "Oba's Cursed Trove",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/oba.png?scale=1&w=1&h=1",
       "MapTier": 14,
       "LevelRequired": 0,
-      "BaseType": "Strand Map",
+      "BaseType": "Underground Sea Map",
       "StackSize": 0,
       "Variant": null,
       "ProphecyText": null,
@@ -4127,41 +3973,45 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -2.7,
-          -2.02,
-          -5.41,
-          1.35,
-          28.38,
-          11.49
+          11.11,
+          11.11,
+          11.11,
+          6.11,
+          6.67,
+          -15.0
         ],
-        "TotalChange": 11.49
+        "TotalChange": -15.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "text": "Area contains many Totems",
+          "text": "Area has patches of desecrated ground",
           "optional": false
         },
         {
-          "text": "Curses have 50% reduced effect on Monsters",
+          "text": "(40-50)% more Monster Life",
           "optional": false
         },
         {
-          "text": "Rare Monsters each have a Nemesis Mod",
+          "text": "(30-40)% increased Monster Damage",
+          "optional": false
+        },
+        {
+          "text": "Area becomes fatal after some time",
           "optional": false
         }
       ],
-      "FlavourText": "We all began life in darkness, we shall all end it there.",
+      "FlavourText": "\"Here the soil is more deadly than any swing of the axe.\"\n- Oba of the Karui, Conqueror of Corruption.",
       "ItemType": "Unknown",
-      "ChaosValue": 1.65,
+      "ChaosValue": 1.53,
       "ExaltedValue": 0.01,
       "Count": 99
     },
     {
-      "Id": 25389,
+      "Id": 20451,
       "Name": "Pillars of Arun",
       "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/PillarsOfVastiri.png?scale=1&w=1&h=1",
-      "MapTier": 14,
+      "MapTier": 7,
       "LevelRequired": 0,
       "BaseType": "Dunes Map",
       "StackSize": 0,
@@ -4173,14 +4023,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
-          -6.09,
-          0.0,
+          10.42,
+          -2.78,
           -5.56,
-          -26.67,
-          -26.67
+          -7.64,
+          13.19,
+          -2.08
         ],
-        "TotalChange": -26.67
+        "TotalChange": -2.08
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -4215,7 +4065,207 @@
       ],
       "FlavourText": "Man creates where nature cannot.",
       "ItemType": "Unknown",
-      "ChaosValue": 1.32,
+      "ChaosValue": 1.41,
+      "ExaltedValue": 0.01,
+      "Count": 32
+    },
+    {
+      "Id": 23224,
+      "Name": "Death and Taxes",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/DeathandTaxes.png?scale=1&w=1&h=1",
+      "MapTier": 15,
+      "LevelRequired": 0,
+      "BaseType": "Necropolis Map",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -16.65,
+          -2.78,
+          -5.56,
+          -8.33,
+          -11.11,
+          -24.44
+        ],
+        "TotalChange": -24.44
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Unique Boss deals (30-35)% increased Damage",
+          "optional": false
+        },
+        {
+          "text": "Unique Boss has (25-30)% increased Attack and Cast Speed",
+          "optional": false
+        },
+        {
+          "text": "Unique Boss gives 10000% increased Experience",
+          "optional": false
+        }
+      ],
+      "FlavourText": "So the raiders danced,\nleading their foe ever west,\ntowards certain death.",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.36,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 25389,
+      "Name": "Pillars of Arun",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/PillarsOfVastiri.png?scale=1&w=1&h=1",
+      "MapTier": 14,
+      "LevelRequired": 0,
+      "BaseType": "Dunes Map",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -6.09,
+          0.0,
+          -5.56,
+          -26.67,
+          -28.89,
+          -31.11
+        ],
+        "TotalChange": -31.11
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "(60-100)% increased Experience gain",
+          "optional": false
+        },
+        {
+          "text": "Area contains unbridged gaps to cross",
+          "optional": false
+        },
+        {
+          "text": "Monsters have 50% chance to Avoid Ailments",
+          "optional": false
+        },
+        {
+          "text": "(20-25)% increased Monster Movement Speed",
+          "optional": false
+        },
+        {
+          "text": "(20-25)% increased Monster Attack Speed",
+          "optional": false
+        },
+        {
+          "text": "(20-25)% increased Monster Cast Speed",
+          "optional": false
+        },
+        {
+          "text": "Players have 200% increased Cooldown Recovery Speed for Movement Skills",
+          "optional": false
+        }
+      ],
+      "FlavourText": "Man creates where nature cannot.",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.24,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 25579,
+      "Name": "Whakawairua Tuahu",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/UniqueMapEye.png?scale=1&w=1&h=1",
+      "MapTier": 14,
+      "LevelRequired": 0,
+      "BaseType": "Strand Map",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          0.7,
+          -2.78,
+          4.17,
+          31.94,
+          14.58,
+          -13.89
+        ],
+        "TotalChange": -13.89
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Area contains many Totems",
+          "optional": false
+        },
+        {
+          "text": "Curses have 50% reduced effect on Monsters",
+          "optional": false
+        },
+        {
+          "text": "Rare Monsters each have a Nemesis Mod",
+          "optional": false
+        }
+      ],
+      "FlavourText": "We all began life in darkness, we shall all end it there.",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.24,
+      "ExaltedValue": 0.01,
+      "Count": 99
+    },
+    {
+      "Id": 20719,
+      "Name": "Whakawairua Tuahu",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/UniqueMapEye.png?scale=1&w=1&h=1",
+      "MapTier": 2,
+      "LevelRequired": 0,
+      "BaseType": "Strand Map",
+      "StackSize": 0,
+      "Variant": null,
+      "ProphecyText": null,
+      "ArtFilename": null,
+      "Links": 0,
+      "ItemClass": 3,
+      "Sparkline": {
+        "Data": [
+          0.0,
+          -19.99,
+          0.0,
+          0.0,
+          -1.0,
+          -1.0,
+          0.0
+        ],
+        "TotalChange": 0.0
+      },
+      "ImplicitModifiers": [],
+      "ExplicitModifiers": [
+        {
+          "text": "Area contains many Totems",
+          "optional": false
+        },
+        {
+          "text": "Curses have 50% reduced effect on Monsters",
+          "optional": false
+        },
+        {
+          "text": "Rare Monsters each have a Nemesis Mod",
+          "optional": false
+        }
+      ],
+      "FlavourText": "We all began life in darkness, we shall all end it there.",
+      "ItemType": "Unknown",
+      "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
       "Count": 99
     },
@@ -4238,8 +4288,8 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           -1.0,
+          0.0,
           0.0
         ],
         "TotalChange": 0.0
@@ -4270,12 +4320,12 @@
       "Count": 99
     },
     {
-      "Id": 23220,
-      "Name": "Olmec's Sanctum",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/olmec.png?scale=1&w=1&h=1",
-      "MapTier": 4,
+      "Id": 23228,
+      "Name": "Pillars of Arun",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/PillarsOfVastiri.png?scale=1&w=1&h=1",
+      "MapTier": 3,
       "LevelRequired": 0,
-      "BaseType": "Bone Crypt Map",
+      "BaseType": "Dunes Map",
       "StackSize": 0,
       "Variant": null,
       "ProphecyText": null,
@@ -4286,9 +4336,9 @@
         "Data": [
           0.0,
           0.0,
-          3.0,
           0.0,
-          2.0,
+          0.0,
+          -1.0,
           -1.0,
           0.0
         ],
@@ -4297,19 +4347,35 @@
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "text": "(40-50)% more Monster Life",
+          "text": "(60-100)% increased Experience gain",
           "optional": false
         },
         {
-          "text": "(30-40)% increased Monster Damage",
+          "text": "Area contains unbridged gaps to cross",
           "optional": false
         },
         {
-          "text": "Final Boss drops higher Level Items",
+          "text": "Monsters have 50% chance to Avoid Ailments",
+          "optional": false
+        },
+        {
+          "text": "(20-25)% increased Monster Movement Speed",
+          "optional": false
+        },
+        {
+          "text": "(20-25)% increased Monster Attack Speed",
+          "optional": false
+        },
+        {
+          "text": "(20-25)% increased Monster Cast Speed",
+          "optional": false
+        },
+        {
+          "text": "Players have 200% increased Cooldown Recovery Speed for Movement Skills",
           "optional": false
         }
       ],
-      "FlavourText": "They flew, and leapt, and clambered over,\nThey crawled, and swam, and slithered under.\nStill its ancient secrets await unclaimed\nAnd of this hidden temple, only legends remain.",
+      "FlavourText": "Man creates where nature cannot.",
       "ItemType": "Unknown",
       "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
@@ -4331,14 +4397,14 @@
       "Sparkline": {
         "Data": [
           0.0,
-          -3.0,
-          0.0,
-          -9.5,
-          -5.5,
-          -26.0,
-          -50.0
+          3.09,
+          -6.7,
+          -2.58,
+          -23.71,
+          -48.45,
+          -48.45
         ],
-        "TotalChange": -50.0
+        "TotalChange": -48.45
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -4363,7 +4429,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
-      "Count": 38
+      "Count": 36
     },
     {
       "Id": 24686,
@@ -4381,10 +4447,10 @@
       "Sparkline": {
         "Data": [
           0.0,
-          0.0,
           -1.0,
           0.0,
           0.0,
+          -50.0,
           -50.0,
           -50.0
         ],
@@ -4409,7 +4475,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
-      "Count": 44
+      "Count": 43
     },
     {
       "Id": 25123,
@@ -4455,7 +4521,7 @@
       "ItemType": "Unknown",
       "ChaosValue": 1.0,
       "ExaltedValue": 0.01,
-      "Count": 39
+      "Count": 40
     },
     {
       "Id": 25403,
@@ -4477,7 +4543,7 @@
           0.0,
           0.0,
           0.0,
-          0.0,
+          -50.0,
           -50.0
         ],
         "TotalChange": -50.0
@@ -4512,12 +4578,12 @@
       "Count": 35
     },
     {
-      "Id": 20719,
-      "Name": "Whakawairua Tuahu",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/UniqueMapEye.png?scale=1&w=1&h=1",
-      "MapTier": 2,
+      "Id": 23220,
+      "Name": "Olmec's Sanctum",
+      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/olmec.png?scale=1&w=1&h=1",
+      "MapTier": 4,
       "LevelRequired": 0,
-      "BaseType": "Strand Map",
+      "BaseType": "Bone Crypt Map",
       "StackSize": 0,
       "Variant": null,
       "ProphecyText": null,
@@ -4527,33 +4593,33 @@
       "Sparkline": {
         "Data": [
           0.0,
+          3.0,
           0.0,
-          -19.99,
-          0.0,
-          0.0,
+          2.0,
           -1.0,
-          -1.0
+          0.0,
+          -2.0
         ],
-        "TotalChange": -1.0
+        "TotalChange": -2.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
         {
-          "text": "Area contains many Totems",
+          "text": "(40-50)% more Monster Life",
           "optional": false
         },
         {
-          "text": "Curses have 50% reduced effect on Monsters",
+          "text": "(30-40)% increased Monster Damage",
           "optional": false
         },
         {
-          "text": "Rare Monsters each have a Nemesis Mod",
+          "text": "Final Boss drops higher Level Items",
           "optional": false
         }
       ],
-      "FlavourText": "We all began life in darkness, we shall all end it there.",
+      "FlavourText": "They flew, and leapt, and clambered over,\nThey crawled, and swam, and slithered under.\nStill its ancient secrets await unclaimed\nAnd of this hidden temple, only legends remain.",
       "ItemType": "Unknown",
-      "ChaosValue": 0.99,
+      "ChaosValue": 0.98,
       "ExaltedValue": 0.01,
       "Count": 99
     },
@@ -4576,11 +4642,11 @@
           0.0,
           0.0,
           0.0,
-          0.0,
           -1.0,
-          -1.0
+          -1.0,
+          -3.0
         ],
-        "TotalChange": -1.0
+        "TotalChange": -3.0
       },
       "ImplicitModifiers": [],
       "ExplicitModifiers": [
@@ -4607,69 +4673,7 @@
       ],
       "FlavourText": "Whispers from a world apart\nSpeak my name beyond the tomb;\nBound within the Maelstr철m's heart,\nWill they grant me strength or doom?",
       "ItemType": "Unknown",
-      "ChaosValue": 0.99,
-      "ExaltedValue": 0.01,
-      "Count": 99
-    },
-    {
-      "Id": 23228,
-      "Name": "Pillars of Arun",
-      "Icon": "https://web.poecdn.com/image/Art/2DItems/Maps/PillarsOfVastiri.png?scale=1&w=1&h=1",
-      "MapTier": 3,
-      "LevelRequired": 0,
-      "BaseType": "Dunes Map",
-      "StackSize": 0,
-      "Variant": null,
-      "ProphecyText": null,
-      "ArtFilename": null,
-      "Links": 0,
-      "ItemClass": 3,
-      "Sparkline": {
-        "Data": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          -1.0,
-          -1.0
-        ],
-        "TotalChange": -1.0
-      },
-      "ImplicitModifiers": [],
-      "ExplicitModifiers": [
-        {
-          "text": "(60-100)% increased Experience gain",
-          "optional": false
-        },
-        {
-          "text": "Area contains unbridged gaps to cross",
-          "optional": false
-        },
-        {
-          "text": "Monsters have 50% chance to Avoid Ailments",
-          "optional": false
-        },
-        {
-          "text": "(20-25)% increased Monster Movement Speed",
-          "optional": false
-        },
-        {
-          "text": "(20-25)% increased Monster Attack Speed",
-          "optional": false
-        },
-        {
-          "text": "(20-25)% increased Monster Cast Speed",
-          "optional": false
-        },
-        {
-          "text": "Players have 200% increased Cooldown Recovery Speed for Movement Skills",
-          "optional": false
-        }
-      ],
-      "FlavourText": "Man creates where nature cannot.",
-      "ItemType": "Unknown",
-      "ChaosValue": 0.99,
+      "ChaosValue": 0.97,
       "ExaltedValue": 0.01,
       "Count": 99
     }

@@ -40,7 +40,7 @@
             this.panelNOTIFICATION.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelNOTIFICATION.Location = new System.Drawing.Point(0, 0);
             this.panelNOTIFICATION.Name = "panelNOTIFICATION";
-            this.panelNOTIFICATION.Size = new System.Drawing.Size(494, 1080);
+            this.panelNOTIFICATION.Size = new System.Drawing.Size(494, 113);
             this.panelNOTIFICATION.TabIndex = 0;
             // 
             // pictureMovingBar
@@ -48,7 +48,7 @@
             this.pictureMovingBar.BackgroundImage = global::POExileDirection.Properties.Resources.moving_bar_unlock;
             this.pictureMovingBar.Location = new System.Drawing.Point(0, 0);
             this.pictureMovingBar.Name = "pictureMovingBar";
-            this.pictureMovingBar.Size = new System.Drawing.Size(94, 48);
+            this.pictureMovingBar.Size = new System.Drawing.Size(40, 46);
             this.pictureMovingBar.TabIndex = 0;
             this.pictureMovingBar.TabStop = false;
             this.pictureMovingBar.Visible = false;
@@ -61,7 +61,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(494, 1080);
+            this.ClientSize = new System.Drawing.Size(494, 113);
             this.Controls.Add(this.panelNOTIFICATION);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;

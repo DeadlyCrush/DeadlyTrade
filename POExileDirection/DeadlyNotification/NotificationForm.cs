@@ -18,22 +18,25 @@ namespace POExileDirection
         ITEMIndicatorForm itemIndicator = null;
         private bool bIndicatorShowing = false;
 
-        private int nMoving = 0;
-        private int nMovePosX = 0;
-        private int nMovePosY = 0;
-
         DeadlyTRADE.TradeMSG thisTradeMsg = null;
 
         private bool bIsQuadStash = false;
-        private bool bIsExpanded = false;
         private bool bIsMinimized = false;
 
-        private double oneExaltedChaosNotify = 0.0;
-
-        private int diffCNT = 0;
         private DateTime rcvDateTime = DateTime.Now;
-
         string strBmpPath = String.Empty;
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                // turn on WS_EX_TOOLWINDOW style bit
+                cp.ExStyle |= 0x80;
+                return cp;
+            }
+        }
+
         public NotificationForm()
         {
             InitializeComponent();
@@ -88,7 +91,6 @@ namespace POExileDirection
             #endregion
 
             ControlForm.g_nNotificationPanelShownCNT = ControlForm.g_nNotificationPanelShownCNT + 1;
-            diffCNT = ControlForm.g_nNotificationPanelShownCNT;
             Show_TradeInformation(thisTradeMsg);
 
             Visible = true;

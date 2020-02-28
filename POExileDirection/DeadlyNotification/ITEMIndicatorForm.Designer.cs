@@ -3,7 +3,7 @@
     partial class ITEMIndicatorForm
     {
         /// <summary>
-        /// Required designer variable.
+        /// Required designer variable. 
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
@@ -37,18 +37,18 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.labelItemName = new System.Windows.Forms.Label();
             this.panelFunctions = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureHideoutVert = new System.Windows.Forms.PictureBox();
+            this.btnBackup = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnInvite = new System.Windows.Forms.Button();
             this.btnKick = new System.Windows.Forms.Button();
             this.btnTrade = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnBackup = new System.Windows.Forms.Button();
-            this.pictureHideoutVert = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTop.SuspendLayout();
             this.panelFunctions.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureHideoutVert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureHideoutVert)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -164,50 +164,39 @@
             this.panelFunctions.Size = new System.Drawing.Size(149, 22);
             this.panelFunctions.TabIndex = 2;
             // 
-            // btnInvite
+            // pictureBox2
             // 
-            this.btnInvite.BackColor = System.Drawing.Color.Transparent;
-            this.btnInvite.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnInvite.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInvite.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnInvite.FlatAppearance.BorderSize = 0;
-            this.btnInvite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInvite.Image = global::POExileDirection.Properties.Resources.top_bar_partyadd;
-            this.btnInvite.Location = new System.Drawing.Point(6, 4);
-            this.btnInvite.Name = "btnInvite";
-            this.btnInvite.Size = new System.Drawing.Size(17, 13);
-            this.btnInvite.TabIndex = 2;
-            this.btnInvite.UseVisualStyleBackColor = false;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(123, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1, 11);
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
             // 
-            // btnKick
+            // pictureHideoutVert
             // 
-            this.btnKick.BackColor = System.Drawing.Color.Transparent;
-            this.btnKick.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnKick.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnKick.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnKick.FlatAppearance.BorderSize = 0;
-            this.btnKick.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKick.Image = global::POExileDirection.Properties.Resources.top_bar_partyexit;
-            this.btnKick.Location = new System.Drawing.Point(50, 7);
-            this.btnKick.Name = "btnKick";
-            this.btnKick.Size = new System.Drawing.Size(16, 10);
-            this.btnKick.TabIndex = 3;
-            this.btnKick.UseVisualStyleBackColor = false;
+            this.pictureHideoutVert.Image = ((System.Drawing.Image)(resources.GetObject("pictureHideoutVert.Image")));
+            this.pictureHideoutVert.Location = new System.Drawing.Point(74, 6);
+            this.pictureHideoutVert.Name = "pictureHideoutVert";
+            this.pictureHideoutVert.Size = new System.Drawing.Size(1, 11);
+            this.pictureHideoutVert.TabIndex = 19;
+            this.pictureHideoutVert.TabStop = false;
             // 
-            // btnTrade
+            // btnBackup
             // 
-            this.btnTrade.BackColor = System.Drawing.Color.Transparent;
-            this.btnTrade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnTrade.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTrade.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnTrade.FlatAppearance.BorderSize = 0;
-            this.btnTrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTrade.Image = global::POExileDirection.Properties.Resources.top_bar_Transaction;
-            this.btnTrade.Location = new System.Drawing.Point(29, 5);
-            this.btnTrade.Name = "btnTrade";
-            this.btnTrade.Size = new System.Drawing.Size(15, 13);
-            this.btnTrade.TabIndex = 4;
-            this.btnTrade.UseVisualStyleBackColor = false;
+            this.btnBackup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
+            this.btnBackup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBackup.Enabled = false;
+            this.btnBackup.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBackup.FlatAppearance.BorderSize = 0;
+            this.btnBackup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBackup.ForeColor = System.Drawing.Color.White;
+            this.btnBackup.Location = new System.Drawing.Point(83, 2);
+            this.btnBackup.Name = "btnBackup";
+            this.btnBackup.Size = new System.Drawing.Size(35, 20);
+            this.btnBackup.TabIndex = 18;
+            this.btnBackup.Text = "thx";
+            this.btnBackup.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -225,40 +214,52 @@
             this.button1.Size = new System.Drawing.Size(13, 13);
             this.button1.TabIndex = 5;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnBackup
+            // btnInvite
             // 
-            this.btnBackup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.btnBackup.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBackup.Enabled = false;
-            this.btnBackup.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBackup.FlatAppearance.BorderSize = 0;
-            this.btnBackup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBackup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(110)))), ((int)(((byte)(23)))));
-            this.btnBackup.Location = new System.Drawing.Point(83, 2);
-            this.btnBackup.Name = "btnBackup";
-            this.btnBackup.Size = new System.Drawing.Size(35, 20);
-            this.btnBackup.TabIndex = 18;
-            this.btnBackup.Text = "thx";
-            this.btnBackup.UseVisualStyleBackColor = false;
+            this.btnInvite.BackColor = System.Drawing.Color.Transparent;
+            this.btnInvite.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnInvite.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInvite.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnInvite.FlatAppearance.BorderSize = 0;
+            this.btnInvite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInvite.Image = ((System.Drawing.Image)(resources.GetObject("btnInvite.Image")));
+            this.btnInvite.Location = new System.Drawing.Point(6, 4);
+            this.btnInvite.Name = "btnInvite";
+            this.btnInvite.Size = new System.Drawing.Size(17, 13);
+            this.btnInvite.TabIndex = 2;
+            this.btnInvite.UseVisualStyleBackColor = false;
             // 
-            // pictureHideoutVert
+            // btnKick
             // 
-            this.pictureHideoutVert.Image = global::POExileDirection.Properties.Resources.top_bar_line;
-            this.pictureHideoutVert.Location = new System.Drawing.Point(74, 6);
-            this.pictureHideoutVert.Name = "pictureHideoutVert";
-            this.pictureHideoutVert.Size = new System.Drawing.Size(1, 11);
-            this.pictureHideoutVert.TabIndex = 19;
-            this.pictureHideoutVert.TabStop = false;
+            this.btnKick.BackColor = System.Drawing.Color.Transparent;
+            this.btnKick.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnKick.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnKick.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnKick.FlatAppearance.BorderSize = 0;
+            this.btnKick.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKick.Image = ((System.Drawing.Image)(resources.GetObject("btnKick.Image")));
+            this.btnKick.Location = new System.Drawing.Point(50, 7);
+            this.btnKick.Name = "btnKick";
+            this.btnKick.Size = new System.Drawing.Size(16, 10);
+            this.btnKick.TabIndex = 3;
+            this.btnKick.UseVisualStyleBackColor = false;
             // 
-            // pictureBox2
+            // btnTrade
             // 
-            this.pictureBox2.Image = global::POExileDirection.Properties.Resources.top_bar_line;
-            this.pictureBox2.Location = new System.Drawing.Point(123, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1, 11);
-            this.pictureBox2.TabIndex = 20;
-            this.pictureBox2.TabStop = false;
+            this.btnTrade.BackColor = System.Drawing.Color.Transparent;
+            this.btnTrade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnTrade.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTrade.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnTrade.FlatAppearance.BorderSize = 0;
+            this.btnTrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrade.Image = ((System.Drawing.Image)(resources.GetObject("btnTrade.Image")));
+            this.btnTrade.Location = new System.Drawing.Point(29, 5);
+            this.btnTrade.Name = "btnTrade";
+            this.btnTrade.Size = new System.Drawing.Size(15, 13);
+            this.btnTrade.TabIndex = 4;
+            this.btnTrade.UseVisualStyleBackColor = false;
             // 
             // ITEMIndicatorForm
             // 
@@ -282,8 +283,8 @@
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
             this.panelFunctions.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureHideoutVert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureHideoutVert)).EndInit();
             this.ResumeLayout(false);
 
         }

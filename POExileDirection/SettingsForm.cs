@@ -14,12 +14,6 @@ namespace POExileDirection
 {
     public partial class SettingsForm : Form
     {
-        public string fsRemains;
-        public string fsJUN;
-        public string fsALVA;
-        public string fsZANA;
-        public string fsHideout; // hideout
-
         public string keyRemains;
         public string keyJUN;
         public string keyALVA;
@@ -81,7 +75,6 @@ namespace POExileDirection
                 strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
 
             IniParser parser = new IniParser(strINIPath);
-            DeadlyLog4Net._log.Info($"{MethodBase.GetCurrentMethod().Name} RESOLUTION : " + strINIPath);
 
             try
             {
@@ -192,7 +185,7 @@ namespace POExileDirection
                 }
                 catch
                 {
-                    textBoxWait.Text = "wait a sec plz.";
+                    textBoxWait.Text = "wait a sec pls.";
                 }
 
                 try
@@ -204,7 +197,7 @@ namespace POExileDirection
                 }
                 catch
                 {
-                    textBoxSold.Text = "sold already. Sry.";
+                    textBoxSold.Text = "sold already. sry.";
                 }
 
                 // HotKey Use
@@ -359,7 +352,7 @@ namespace POExileDirection
                     ListViewItem item = new ListViewItem();
                     item.BackColor = Color.FromArgb(39, 44, 56);
                     item.ImageIndex = j;
-                    this.listViewFlaskImage.Items.Add(item);
+                    listViewFlaskImage.Items.Add(item);
                 }
             }
             catch(Exception ex)
@@ -370,7 +363,7 @@ namespace POExileDirection
 
         private Color StringRGBToColor(string color)
         {
-            var arrColorFragments = color?.Split(',').Select(sFragment => { int.TryParse(sFragment, out int fragment); return fragment; }).ToArray();
+            var arrColorFragments = color?.Split(',').Select(sFragment => { _ = int.TryParse(sFragment, out int fragment); return fragment; }).ToArray();
 
             switch (arrColorFragments?.Length)
             {
@@ -398,7 +391,7 @@ namespace POExileDirection
                         || String.IsNullOrEmpty(textBoxSEC4.Text) || String.IsNullOrEmpty(textBoxSEC5.Text))
                 {
                     MSGForm frmMSG = new MSGForm();
-                    frmMSG.lbMsg.Text = "플라스크 타이머 시간(초)을 입력하세요.\r\n\r\nFlask Timer Sec. field value is Empty.";
+                    frmMSG.lbMsg.Text = "Flask Timer Sec. field value is Empty.";
                     frmMSG.ShowDialog();
 
                     return;

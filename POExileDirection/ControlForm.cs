@@ -2859,7 +2859,7 @@ namespace POExileDirection
                         Register_HotKeys();
                         Thread.Sleep(200);
 
-                        SaveNofiticationMsg();
+                        SaveNofiticationMsg(); //TODO: g_strCUSTOM1,2,3 Added.
                         Thread.Sleep(200);
 
                         string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
@@ -2915,6 +2915,8 @@ namespace POExileDirection
                         parser.AddSetting("CHARACTER", "MYNICK", LauncherForm.g_strMyNickName);
                         parser.AddSetting("CHARACTER", "AUTOKICK", LauncherForm.g_strTRAutoKick);
 
+                        //TODO : check box custom1,2,3 g_strTRAutoKickCustom1,2,3 - "CHARACTER", "AUTOKICK" Search All~!
+
                         // Notification Volume, Flask Timer Volume
                         parser.AddSetting("LOCATIONNOTIFY", "VOLUME", LauncherForm.g_NotifyVolume.ToString());
                         parser.AddSetting("LOCATIONNOTIFY", "VOLUMEFLASKTIMER", LauncherForm.g_FlaskTimerVolume.ToString());
@@ -2943,7 +2945,6 @@ namespace POExileDirection
                     }
                     else
                     {
-                        // for TEST MessageBox.Show("Cancel");
                         bIsSettingsPop = false;
                         gCF_bIsTextFocused = false;
                     }
@@ -2959,6 +2960,8 @@ namespace POExileDirection
 
         private void SaveNofiticationMsg()
         {
+            //TODO: g_strCUSTOM1,2,3 Added.
+
             var settings = new JsonSerializerSettings
             {
                 NullValueHandling = NullValueHandling.Ignore,
@@ -2972,7 +2975,7 @@ namespace POExileDirection
             },
             {
             "Id": "WAIT",
-            "Msg": "Wait a sec plz."
+            "Msg": "Wait a sec pls."
             },
             {
             "Id": "WILLING",
@@ -2980,7 +2983,7 @@ namespace POExileDirection
             },
             {
             "Id": "SOLD",
-            "Msg": "Sold already. Sry."
+            "Msg": "Sold already. sry."
             },
             */
             /*

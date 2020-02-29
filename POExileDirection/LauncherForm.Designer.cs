@@ -59,23 +59,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.labelUpdateTitle = new System.Windows.Forms.Label();
             this.labelPatchNote = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.checkTempleALVA = new System.Windows.Forms.CheckBox();
-            this.checkAtlasZANA = new System.Windows.Forms.CheckBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.checkSyndicateJUN = new System.Windows.Forms.CheckBox();
-            this.checkHideout = new System.Windows.Forms.CheckBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnSearchStash = new System.Windows.Forms.Button();
-            this.checkFindbyPosition = new System.Windows.Forms.CheckBox();
-            this.checkRemaining = new System.Windows.Forms.CheckBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.checkEmergency = new System.Windows.Forms.CheckBox();
-            this.checkUseWheelStash = new System.Windows.Forms.CheckBox();
             this.pictureBoxKOREA = new System.Windows.Forms.PictureBox();
             this.labelSupportersRealTime = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -136,8 +119,6 @@
             this.panelDonate.SuspendLayout();
             this.panelUpdateContents.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKOREA)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -210,7 +191,6 @@
             this.panel2.Controls.Add(this.panelDonate);
             this.panel2.Controls.Add(this.btnDonate);
             this.panel2.Controls.Add(this.panelUpdateContents);
-            this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.pictureBoxKOREA);
             this.panel2.Controls.Add(this.labelSupportersRealTime);
             this.panel2.Controls.Add(this.panel6);
@@ -238,7 +218,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 43);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(558, 588);
+            this.panel2.Size = new System.Drawing.Size(558, 648);
             this.panel2.TabIndex = 3;
             // 
             // panelLogin
@@ -327,7 +307,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(479, 49);
             this.label7.TabIndex = 1;
-            this.label7.Text = "잠시만 기다려주세요.\r\n\r\nWait a moment plz...";
+            this.label7.Text = "잠시만 기다려주세요.\r\n\r\nWait a moment pls....";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
@@ -369,7 +349,7 @@
             this.panelDonate.Controls.Add(this.btnToonation);
             this.panelDonate.Controls.Add(this.btnPatron);
             this.panelDonate.Controls.Add(this.label10);
-            this.panelDonate.Location = new System.Drawing.Point(5, 446);
+            this.panelDonate.Location = new System.Drawing.Point(5, 397);
             this.panelDonate.Name = "panelDonate";
             this.panelDonate.Size = new System.Drawing.Size(48, 21);
             this.panelDonate.TabIndex = 18;
@@ -480,7 +460,7 @@
             this.btnDonate.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDonate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDonate.ForeColor = System.Drawing.Color.White;
-            this.btnDonate.Location = new System.Drawing.Point(461, 446);
+            this.btnDonate.Location = new System.Drawing.Point(461, 397);
             this.btnDonate.Name = "btnDonate";
             this.btnDonate.Size = new System.Drawing.Size(78, 21);
             this.btnDonate.TabIndex = 18;
@@ -529,248 +509,11 @@
             this.labelPatchNote.Size = new System.Drawing.Size(544, 548);
             this.labelPatchNote.TabIndex = 5;
             // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
-            this.panel7.Controls.Add(this.checkTempleALVA);
-            this.panel7.Controls.Add(this.checkAtlasZANA);
-            this.panel7.Controls.Add(this.button5);
-            this.panel7.Controls.Add(this.checkSyndicateJUN);
-            this.panel7.Controls.Add(this.checkHideout);
-            this.panel7.Controls.Add(this.button4);
-            this.panel7.Controls.Add(this.button2);
-            this.panel7.Controls.Add(this.button3);
-            this.panel7.Controls.Add(this.btnSearchStash);
-            this.panel7.Controls.Add(this.checkFindbyPosition);
-            this.panel7.Controls.Add(this.checkRemaining);
-            this.panel7.Controls.Add(this.pictureBox6);
-            this.panel7.Controls.Add(this.label9);
-            this.panel7.Controls.Add(this.label1);
-            this.panel7.Controls.Add(this.checkEmergency);
-            this.panel7.Controls.Add(this.checkUseWheelStash);
-            this.panel7.Location = new System.Drawing.Point(5, 321);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(550, 119);
-            this.panel7.TabIndex = 17;
-            // 
-            // checkTempleALVA
-            // 
-            this.checkTempleALVA.ForeColor = System.Drawing.Color.Silver;
-            this.checkTempleALVA.Location = new System.Drawing.Point(326, 66);
-            this.checkTempleALVA.Name = "checkTempleALVA";
-            this.checkTempleALVA.Size = new System.Drawing.Size(215, 16);
-            this.checkTempleALVA.TabIndex = 55;
-            this.checkTempleALVA.Text = "HotKey : F6";
-            this.checkTempleALVA.UseVisualStyleBackColor = true;
-            this.checkTempleALVA.CheckedChanged += new System.EventHandler(this.checkTempleALVA_CheckedChanged);
-            // 
-            // checkAtlasZANA
-            // 
-            this.checkAtlasZANA.ForeColor = System.Drawing.Color.Silver;
-            this.checkAtlasZANA.Location = new System.Drawing.Point(326, 94);
-            this.checkAtlasZANA.Name = "checkAtlasZANA";
-            this.checkAtlasZANA.Size = new System.Drawing.Size(215, 16);
-            this.checkAtlasZANA.TabIndex = 56;
-            this.checkAtlasZANA.Text = "HotKey : F7";
-            this.checkAtlasZANA.UseVisualStyleBackColor = true;
-            this.checkAtlasZANA.CheckedChanged += new System.EventHandler(this.checkAtlasZANA_CheckedChanged);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.button5.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = global::POExileDirection.Properties.Resources.icon_re_01;
-            this.button5.Location = new System.Drawing.Point(296, 33);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(24, 24);
-            this.button5.TabIndex = 62;
-            this.button5.TabStop = false;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // checkSyndicateJUN
-            // 
-            this.checkSyndicateJUN.ForeColor = System.Drawing.Color.Silver;
-            this.checkSyndicateJUN.Location = new System.Drawing.Point(326, 10);
-            this.checkSyndicateJUN.Name = "checkSyndicateJUN";
-            this.checkSyndicateJUN.Size = new System.Drawing.Size(215, 16);
-            this.checkSyndicateJUN.TabIndex = 57;
-            this.checkSyndicateJUN.Text = "HotKey : F3";
-            this.checkSyndicateJUN.UseVisualStyleBackColor = true;
-            this.checkSyndicateJUN.CheckedChanged += new System.EventHandler(this.checkSyndicateJUN_CheckedChanged);
-            // 
-            // checkHideout
-            // 
-            this.checkHideout.ForeColor = System.Drawing.Color.Silver;
-            this.checkHideout.Location = new System.Drawing.Point(326, 38);
-            this.checkHideout.Name = "checkHideout";
-            this.checkHideout.Size = new System.Drawing.Size(215, 16);
-            this.checkHideout.TabIndex = 58;
-            this.checkHideout.Text = "HotKey : F5";
-            this.checkHideout.UseVisualStyleBackColor = true;
-            this.checkHideout.CheckedChanged += new System.EventHandler(this.checkHideout_CheckedChanged);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Moccasin;
-            this.button4.Image = global::POExileDirection.Properties.Resources.icon_re_05;
-            this.button4.Location = new System.Drawing.Point(296, 88);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(24, 24);
-            this.button4.TabIndex = 61;
-            this.button4.TabStop = false;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button2.Image = global::POExileDirection.Properties.Resources.icon_re_12;
-            this.button2.Location = new System.Drawing.Point(296, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(24, 24);
-            this.button2.TabIndex = 59;
-            this.button2.TabStop = false;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.MediumSpringGreen;
-            this.button3.Image = global::POExileDirection.Properties.Resources.icon_re_13;
-            this.button3.Location = new System.Drawing.Point(296, 61);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(24, 24);
-            this.button3.TabIndex = 60;
-            this.button3.TabStop = false;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // btnSearchStash
-            // 
-            this.btnSearchStash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
-            this.btnSearchStash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearchStash.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnSearchStash.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSearchStash.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnSearchStash.FlatAppearance.BorderSize = 0;
-            this.btnSearchStash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchStash.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnSearchStash.ForeColor = System.Drawing.Color.White;
-            this.btnSearchStash.Image = global::POExileDirection.Properties.Resources.icon_re_02;
-            this.btnSearchStash.Location = new System.Drawing.Point(14, 88);
-            this.btnSearchStash.Name = "btnSearchStash";
-            this.btnSearchStash.Size = new System.Drawing.Size(24, 24);
-            this.btnSearchStash.TabIndex = 54;
-            this.btnSearchStash.TabStop = false;
-            this.btnSearchStash.UseVisualStyleBackColor = false;
-            // 
-            // checkFindbyPosition
-            // 
-            this.checkFindbyPosition.ForeColor = System.Drawing.Color.Silver;
-            this.checkFindbyPosition.Location = new System.Drawing.Point(91, 94);
-            this.checkFindbyPosition.Name = "checkFindbyPosition";
-            this.checkFindbyPosition.Size = new System.Drawing.Size(172, 16);
-            this.checkFindbyPosition.TabIndex = 50;
-            this.checkFindbyPosition.Text = "HotKey : F2";
-            this.checkFindbyPosition.UseVisualStyleBackColor = true;
-            this.checkFindbyPosition.CheckedChanged += new System.EventHandler(this.checkFindbyPosition_CheckedChanged);
-            // 
-            // checkRemaining
-            // 
-            this.checkRemaining.ForeColor = System.Drawing.Color.Silver;
-            this.checkRemaining.Location = new System.Drawing.Point(91, 66);
-            this.checkRemaining.Name = "checkRemaining";
-            this.checkRemaining.Size = new System.Drawing.Size(172, 16);
-            this.checkRemaining.TabIndex = 50;
-            this.checkRemaining.Text = "HotKey : F2";
-            this.checkRemaining.UseVisualStyleBackColor = true;
-            this.checkRemaining.CheckedChanged += new System.EventHandler(this.checkRemaining_CheckedChanged);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = global::POExileDirection.Properties.Resources.RemainBGBOX_32_32;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pictureBox6.Location = new System.Drawing.Point(14, 60);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox6.TabIndex = 51;
-            this.pictureBox6.TabStop = false;
-            // 
-            // label9
-            // 
-            this.label9.ForeColor = System.Drawing.Color.Silver;
-            this.label9.Location = new System.Drawing.Point(13, 38);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 16);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Emergency";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label1
-            // 
-            this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(14, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 16);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Stash Tab";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // checkEmergency
-            // 
-            this.checkEmergency.ForeColor = System.Drawing.Color.Silver;
-            this.checkEmergency.Location = new System.Drawing.Point(91, 38);
-            this.checkEmergency.Name = "checkEmergency";
-            this.checkEmergency.Size = new System.Drawing.Size(172, 16);
-            this.checkEmergency.TabIndex = 16;
-            this.checkEmergency.Text = "CTRL+SPACE";
-            this.checkEmergency.UseVisualStyleBackColor = true;
-            this.checkEmergency.CheckedChanged += new System.EventHandler(this.checkEmergency_CheckedChanged);
-            // 
-            // checkUseWheelStash
-            // 
-            this.checkUseWheelStash.ForeColor = System.Drawing.Color.Silver;
-            this.checkUseWheelStash.Location = new System.Drawing.Point(91, 10);
-            this.checkUseWheelStash.Name = "checkUseWheelStash";
-            this.checkUseWheelStash.Size = new System.Drawing.Size(172, 16);
-            this.checkUseWheelStash.TabIndex = 16;
-            this.checkUseWheelStash.Text = "CTRL+MOUSE WHEEL";
-            this.checkUseWheelStash.UseVisualStyleBackColor = true;
-            this.checkUseWheelStash.CheckedChanged += new System.EventHandler(this.checkUseWheelStash_CheckedChanged);
-            // 
             // pictureBoxKOREA
             // 
             this.pictureBoxKOREA.BackgroundImage = global::POExileDirection.Properties.Resources.flag_korea;
             this.pictureBoxKOREA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxKOREA.Location = new System.Drawing.Point(525, 516);
+            this.pictureBoxKOREA.Location = new System.Drawing.Point(525, 467);
             this.pictureBoxKOREA.Name = "pictureBoxKOREA";
             this.pictureBoxKOREA.Size = new System.Drawing.Size(28, 28);
             this.pictureBoxKOREA.TabIndex = 13;
@@ -781,7 +524,7 @@
             // 
             this.labelSupportersRealTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
             this.labelSupportersRealTime.ForeColor = System.Drawing.Color.Violet;
-            this.labelSupportersRealTime.Location = new System.Drawing.Point(94, 450);
+            this.labelSupportersRealTime.Location = new System.Drawing.Point(94, 401);
             this.labelSupportersRealTime.Name = "labelSupportersRealTime";
             this.labelSupportersRealTime.Size = new System.Drawing.Size(360, 14);
             this.labelSupportersRealTime.TabIndex = 4;
@@ -855,7 +598,7 @@
             // label14
             // 
             this.label14.ForeColor = System.Drawing.Color.Bisque;
-            this.label14.Location = new System.Drawing.Point(12, 447);
+            this.label14.Location = new System.Drawing.Point(12, 398);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(76, 21);
             this.label14.TabIndex = 4;
@@ -951,7 +694,7 @@
             // labelReady
             // 
             this.labelReady.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
-            this.labelReady.Location = new System.Drawing.Point(125, 475);
+            this.labelReady.Location = new System.Drawing.Point(125, 426);
             this.labelReady.Name = "labelReady";
             this.labelReady.Size = new System.Drawing.Size(329, 20);
             this.labelReady.TabIndex = 4;
@@ -1057,7 +800,7 @@
             this.panel1.Controls.Add(this.btnExitAndUpdate);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 545);
+            this.panel1.Location = new System.Drawing.Point(0, 605);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(558, 43);
             this.panel1.TabIndex = 7;
@@ -1094,7 +837,7 @@
             this.btnStartAddon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStartAddon.ForeColor = System.Drawing.Color.LightBlue;
             this.btnStartAddon.Image = global::POExileDirection.Properties.Resources.DeadlyTradeWaitingButton;
-            this.btnStartAddon.Location = new System.Drawing.Point(189, 493);
+            this.btnStartAddon.Location = new System.Drawing.Point(189, 444);
             this.btnStartAddon.Name = "btnStartAddon";
             this.btnStartAddon.Size = new System.Drawing.Size(190, 53);
             this.btnStartAddon.TabIndex = 5;
@@ -1125,7 +868,7 @@
             // labelUI
             // 
             this.labelUI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
-            this.labelUI.Location = new System.Drawing.Point(387, 522);
+            this.labelUI.Location = new System.Drawing.Point(387, 473);
             this.labelUI.Name = "labelUI";
             this.labelUI.Size = new System.Drawing.Size(132, 20);
             this.labelUI.TabIndex = 4;
@@ -1136,7 +879,7 @@
             // labelClient
             // 
             this.labelClient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
-            this.labelClient.Location = new System.Drawing.Point(5, 522);
+            this.labelClient.Location = new System.Drawing.Point(5, 473);
             this.labelClient.Name = "labelClient";
             this.labelClient.Size = new System.Drawing.Size(151, 20);
             this.labelClient.TabIndex = 4;
@@ -1260,7 +1003,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(558, 631);
+            this.ClientSize = new System.Drawing.Size(558, 691);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelTop);
@@ -1289,9 +1032,6 @@
             this.panelDonate.ResumeLayout(false);
             this.panelUpdateContents.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKOREA)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -1358,8 +1098,6 @@
         private System.Windows.Forms.Button btnCleaner;
         private System.Windows.Forms.Button btnRestore;
         private System.Windows.Forms.Button btnBackup;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.CheckBox checkUseWheelStash;
         private System.Windows.Forms.Button btnToonation;
         private System.Windows.Forms.Button btnPatron;
         private System.Windows.Forms.Button btnPaypalSub;
@@ -1376,22 +1114,7 @@
         private System.Windows.Forms.Label labelPatchNote;
         private System.Windows.Forms.Timer timerPatchNote;
         private System.Windows.Forms.Button btnExitAndUpdate;
-        private System.Windows.Forms.CheckBox checkEmergency;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnSearchStash;
-        private System.Windows.Forms.CheckBox checkRemaining;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.CheckBox checkFindbyPosition;
         private System.Windows.Forms.Button btnDonate;
-        private System.Windows.Forms.CheckBox checkTempleALVA;
-        private System.Windows.Forms.CheckBox checkAtlasZANA;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.CheckBox checkSyndicateJUN;
-        private System.Windows.Forms.CheckBox checkHideout;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnHide;
         private System.Windows.Forms.Timer timerScrolling;
         private System.Windows.Forms.Panel panelLogin;

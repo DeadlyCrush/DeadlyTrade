@@ -223,6 +223,9 @@ namespace POExileDirection
         public static string g_strnotiSOLD { get; set; }
         public static string g_strnotiDONE { get; set; }
         public static string g_strnotiRESEND { get; set; }
+        public static string g_strCUSTOM1 { get; set; }
+        public static string g_strCUSTOM2 { get; set; }
+        public static string g_strCUSTOM3 { get; set; }
         #endregion
 
         public static IntPtr g_handlePathOfExile { get; set; }
@@ -245,6 +248,9 @@ namespace POExileDirection
         #region [[[[[ Global Variables ]]]]]
         public static string g_strMyNickName { get; set; }
         public static string g_strTRAutoKick { get; set; }
+        public static string g_strTRAutoKickCustom1 { get; set; }
+        public static string g_strTRAutoKickCustom2 { get; set; }
+        public static string g_strTRAutoKickCustom3 { get; set; }
 
         public static int resolution_height { get; set; }
         public static int resolution_width { get; set; }
@@ -1340,27 +1346,43 @@ namespace POExileDirection
             xuiFlatProgressBar1.Value = g_NinjaFileMakeAndUpdateCNT;
             if (g_NinjaFileMakeAndUpdateCNT >= CNT_NINJACATEGORIES)
             {
-                launcherTimer.Stop();
-                Thread.Sleep(100);
-                frmNinja.Dispose();
+                try
+                {
+                    launcherTimer.Stop();
+                    Thread.Sleep(100);
+                    frmNinja.Dispose();
 
-                //Get_DeadlyOverlayData(); // STEP #4~14 Done.
+                    //Get_DeadlyOverlayData(); // STEP #4~14 Done.
 
-                Get_deadlyInformationData();
+                    Get_deadlyInformationData();
 
-                // STEP #15 Done.
-                xuiFlatProgressBar2.Value = 19;
-                labelAddonStatus.Text = String.Format("Addon Data ({0})", DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss"));
+                    // STEP #15 Done.
+                    xuiFlatProgressBar2.Value = 19;
+                    labelAddonStatus.Text = String.Format("Addon Data ({0})", DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss"));
 
-                //Get_matchingENGKORData();
+                    //Get_matchingENGKORData();
 
-                // STEP #16 Done.
-                xuiFlatProgressBar2.Value = 20;
-                labelAddonStatus.Text = String.Format("Addon Data ({0})", DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss"));
+                    // STEP #16 Done.
+                    xuiFlatProgressBar2.Value = 20;
+                    labelAddonStatus.Text = String.Format("Addon Data ({0})", DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss"));
 
-                g_strExplanationLANG = g_strUILang;
-                Thread.Sleep(500);
-                timerDetect.Start();
+                    g_strExplanationLANG = g_strUILang;
+                    Thread.Sleep(500);
+                    timerDetect.Start();
+                }
+                catch (WebException ex)
+                {
+                    MSGForm frmMSG = new MSGForm();
+                    frmMSG.lbMsg.Text = "WebException occurred.\r\nPlease check your network and Try again~.";
+                    DialogResult dr = frmMSG.ShowDialog();
+
+                    // Force Terminate Launcher.
+                    if (dr == DialogResult.OK)
+                        Application.Exit();
+                    else
+                        Application.Exit();
+                    DeadlyLog4Net._log.Error($"WebException. {MethodBase.GetCurrentMethod().Name}", ex);
+                }
             }
 
             //DeadlyLog4Net._log.Info("LauncherTimer_Tick : " + g_NinjaFileMakeAndUpdateCNT.ToString()); // Temporary.
@@ -1390,11 +1412,7 @@ namespace POExileDirection
             InteropCommon.SetForegroundWindow(g_handlePathOfExile);
         }
 
-        private void frmMainControl_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            this.Close();
-        }
-
+        #region [[[[[ TimerDetect Tick ]]]]]
         private void TimerDetect_Tick(object sender, EventArgs e)
         {
             // TTTTT
@@ -1406,7 +1424,7 @@ namespace POExileDirection
 
             #region ⨌⨌ Wait for POE Launching ⨌⨌
             g_handlePathOfExile = InteropCommon.FindWindow("POEWindowClass", "Path of Exile"); // ClassName = POEWindowClass
-            if (g_handlePathOfExile!= IntPtr.Zero)
+            if (g_handlePathOfExile != IntPtr.Zero)
             {
                 timerDetect.Stop();
                 Thread.Sleep(100);
@@ -1535,7 +1553,8 @@ namespace POExileDirection
                 Thread.Sleep(100);
             }
             #endregion
-        }
+        } 
+        #endregion
 
         private void RunDeadlyTradeManager()
         {
@@ -1915,7 +1934,7 @@ namespace POExileDirection
                 {
                     foreach (var itemMsg in item.Msg)
                     {
-                        g_strArrREDAlert.Add(itemMsg.ToString());
+                        g_strArrREDAlert.Add(itemMsg);
                     }
                 }
                 else if(item.Id == "GREEN")
@@ -2151,33 +2170,6 @@ namespace POExileDirection
             }
         }
 
-        private void checkUseWheelStash_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkUseWheelStash.Checked)
-                g_strYNMouseWheelStashTab = "Y";
-            else
-                g_strYNMouseWheelStashTab = "N";
-
-            DeadlyLog4Net._log.Info("CTRL+MOUSEWHEEL Checked : " + g_strYNMouseWheelStashTab);
-            // Save to INI
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-            parser.AddSetting("MISC", "MOUSESTASHTAB", g_strYNMouseWheelStashTab);
-            parser.SaveSettings();
-        }
-
         private void btnToonation_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://toon.at/donate/deadly_trade");
@@ -2213,195 +2205,6 @@ namespace POExileDirection
         private void timerScrolling_Tick(object sender, EventArgs e)
         {
             ScrollingText();
-        }
-
-        private void checkEmergency_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkEmergency.Checked)
-                g_strYNUseEmergencyHOTKEY = "Y";
-            else
-                g_strYNUseEmergencyHOTKEY = "N";
-
-            DeadlyLog4Net._log.Info("EMERGENCYKEY Checked : " + g_strYNUseEmergencyHOTKEY);
-            // Save to INI
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-            parser.AddSetting("MISC", "EMERGENCY", g_strYNUseEmergencyHOTKEY);
-            parser.SaveSettings();
-        }
-
-        private void checkRemaining_CheckedChanged(object sender, EventArgs e)
-        {
-            if(checkRemaining.Checked)
-                g_strYNUseRemainingHOTKEY = "Y";
-            else
-                g_strYNUseRemainingHOTKEY = "N";
-
-            DeadlyLog4Net._log.Info("REMAININGKEY Checked : " + g_strYNUseRemainingHOTKEY);
-            // Save to INI
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-            parser.AddSetting("MISC", "REMAINING", g_strYNUseRemainingHOTKEY);
-            parser.SaveSettings();
-        }
-
-        private void checkFindbyPosition_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkFindbyPosition.Checked)
-                g_strYNUseFindbyPositionHOTKEY = "Y";
-            else
-                g_strYNUseFindbyPositionHOTKEY = "N";
-
-            DeadlyLog4Net._log.Info("FINDBYPOSITIONKEY Checked : " + g_strYNUseFindbyPositionHOTKEY);
-            // Save to INI
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-            parser.AddSetting("MISC", "FINDBYPOSTION", g_strYNUseFindbyPositionHOTKEY);
-            parser.SaveSettings();
-        }
-
-        private void checkSyndicateJUN_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkSyndicateJUN.Checked)
-                g_strYNUseSyndicateJUNHOTKEY = "Y";
-            else
-                g_strYNUseSyndicateJUNHOTKEY = "N";
-
-            DeadlyLog4Net._log.Info("JUNKEY Checked : " + g_strYNUseSyndicateJUNHOTKEY);
-            // Save to INI
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-            parser.AddSetting("MISC", "HOTKEYSYNDICATE", g_strYNUseSyndicateJUNHOTKEY);
-            parser.SaveSettings();
-        }
-
-        private void checkHideout_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkHideout.Checked)
-                g_strYNUseHideoutHOTKEY = "Y";
-            else
-                g_strYNUseHideoutHOTKEY = "N";
-
-            DeadlyLog4Net._log.Info("HIDEOUTKEY Checked : " + g_strYNUseHideoutHOTKEY);
-            // Save to INI
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-            parser.AddSetting("MISC", "HOTKEYHIDEOUT", g_strYNUseHideoutHOTKEY);
-            parser.SaveSettings();
-        }
-
-        private void checkTempleALVA_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkTempleALVA.Checked)
-                g_strYNUseIncursionALVAHOTKEY = "Y";
-            else
-                g_strYNUseIncursionALVAHOTKEY = "N";
-
-            DeadlyLog4Net._log.Info("ALVAKEY Checked : " + g_strYNUseIncursionALVAHOTKEY);
-            // Save to INI
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-            parser.AddSetting("MISC", "HOTKEYALVAINCURSION", g_strYNUseIncursionALVAHOTKEY);
-            parser.SaveSettings();
-        }
-
-        private void checkAtlasZANA_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkAtlasZANA.Checked)
-                g_strYNUseAtlasZANAHOTKEY = "Y";
-            else
-                g_strYNUseAtlasZANAHOTKEY = "N";
-
-            DeadlyLog4Net._log.Info("AtlasZANAKEY Checked : " + g_strYNUseAtlasZANAHOTKEY);
-            // Save to INI
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-            parser.AddSetting("MISC", "HOTKEYZANAATLAS", g_strYNUseAtlasZANAHOTKEY);
-            parser.SaveSettings();
         }
     }
 }

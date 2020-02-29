@@ -574,7 +574,7 @@ namespace POExileDirection
             DeadlyToolTip.SetToolTip(this.btnTrade, "Trade Request"); 
             DeadlyToolTip.SetToolTip(this.btnClose, "Close This Message");
             DeadlyToolTip.SetToolTip(this.btnThanks, "Send 'Thanks' Message and Close Panel");
-            DeadlyToolTip.SetToolTip(this.btnWaitPlz, "Send 'Plz. Wait a sec.' Message");
+            DeadlyToolTip.SetToolTip(this.btnWaitpls., "Send 'pls.. Wait a sec.' Message");
             DeadlyToolTip.SetToolTip(this.btnSold, "Send 'Sold already' and Close Panel");
             DeadlyToolTip.SetToolTip(this.btnHideout, "Visit Hideout");
             DeadlyToolTip.SetToolTip(this.btnWhois, "Whois? Buyer Information");
@@ -608,11 +608,11 @@ namespace POExileDirection
             btnThanks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             btnThanks.TabStop = false;
 
-            btnWaitPlz.FlatStyle = FlatStyle.Flat;
-            btnWaitPlz.BackColor = System.Drawing.Color.Transparent;
-            btnWaitPlz.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            btnWaitPlz.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            btnWaitPlz.TabStop = false;
+            btnWaitpls..FlatStyle = FlatStyle.Flat;
+            btnWaitpls..BackColor = System.Drawing.Color.Transparent;
+            btnWaitpls..FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            btnWaitpls..FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            btnWaitpls..TabStop = false;
 
             btnSold.FlatStyle = FlatStyle.Flat;
             btnSold.BackColor = System.Drawing.Color.Transparent;
@@ -910,7 +910,7 @@ namespace POExileDirection
             }
         }
 
-        private void BtnWaitPlz_Click(object sender, EventArgs e)
+        private void BtnWaitpls._Click(object sender, EventArgs e)
         {
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
@@ -927,7 +927,7 @@ namespace POExileDirection
             }
             catch
             {
-                strSendString = String.Format("@{0} wait a sec plz.", thisTradeMsg.nickName);
+                strSendString = String.Format("@{0} wait a sec pls..", thisTradeMsg.nickName);
             }
 
             iSim.Keyboard.TextEntry(strSendString);
@@ -955,7 +955,7 @@ namespace POExileDirection
             }
             catch
             {
-                strSendString = String.Format("@{0} sold already. Sry.", thisTradeMsg.nickName);
+                strSendString = String.Format("@{0} sold already. sry.", thisTradeMsg.nickName);
             }
 
             iSim.Keyboard.TextEntry(strSendString);

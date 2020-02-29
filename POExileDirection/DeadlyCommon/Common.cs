@@ -30,6 +30,54 @@ namespace POExileDirection
         LEAGUE_HDCORE_STANDARD,
     };
 
+    public static class LEAGUE_STRINGExtensions
+    {
+        public static string ToDescriptionString(this LEAGUE_STRING val)
+        {
+            DescriptionAttribute[] attributes = (DescriptionAttribute[])val
+               .GetType()
+               .GetField(val.ToString())
+               .GetCustomAttributes(typeof(DescriptionAttribute), false);
+            return attributes.Length > 0 ? attributes[0].Description : string.Empty;
+        }
+    }
+
+    public enum HOTKEYNAME_STRING
+    {
+        [Description("JUN")]
+        HOTKEYNAME_JUN,
+
+        [Description("REMAINS")]
+        HOTKEYNAME_REMAINS,
+
+        [Description("ALVA")]
+        HOTKEYNAME_ALVA,
+
+        [Description("ZANA")]
+        HOTKEYNAME_ZANA,
+
+        [Description("HIDEOUT")]
+        HOTKEYNAME_HIDEOUT,
+
+        [Description("SEARCH")]
+        HOTKEYNAME_SEARCH,
+
+        [Description("EXIT")]
+        HOTKEYNAME_EXIT,
+    };
+
+    public static class HOTKEYNAME_STRINGExtensions
+    {
+        public static string ToDescriptionString(this HOTKEYNAME_STRING val)
+        {
+            DescriptionAttribute[] attributes = (DescriptionAttribute[])val
+               .GetType()
+               .GetField(val.ToString())
+               .GetCustomAttributes(typeof(DescriptionAttribute), false);
+            return attributes.Length > 0 ? attributes[0].Description : string.Empty;
+        }
+    }
+
     public static class DeadlyLog4Net
     {
         public static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
@@ -119,18 +167,6 @@ namespace POExileDirection
                 sqlCmd.Dispose();
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
-        }
-    }
-
-    public static class LEAGUE_STRINGExtensions
-    {
-        public static string ToDescriptionString(this LEAGUE_STRING val)
-        {
-            DescriptionAttribute[] attributes = (DescriptionAttribute[])val
-               .GetType()
-               .GetField(val.ToString())
-               .GetCustomAttributes(typeof(DescriptionAttribute), false);
-            return attributes.Length > 0 ? attributes[0].Description : string.Empty;
         }
     }
 

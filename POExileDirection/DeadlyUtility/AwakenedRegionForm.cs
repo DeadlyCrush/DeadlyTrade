@@ -16,6 +16,17 @@ namespace POExileDirection
         public int m_nRight;
         public int m_nTop;
 
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                // turn on WS_EX_TOOLWINDOW style bit
+                cp.ExStyle |= 0x80;
+                return cp;
+            }
+        }
+
         public AwakenedRegionForm()
         {
             InitializeComponent();
@@ -83,13 +94,6 @@ namespace POExileDirection
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
 
             labelRegion.Text = strSendString + " (Double click listed item to search.)";
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            ControlForm.bISearchRegionOn = false;
-            InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-            Close();
         }
 
         private void listResult_DoubleClick(object sender, EventArgs e)
@@ -437,5 +441,46 @@ namespace POExileDirection
 
             labelRegion.Text = strSendString + " (Double click listed item to search.)";
         }
+
+        #region [[[[[ Form Drag Moving ]]]]]
+        private void xuiFlatTab1_MouseDown(object sender, MouseEventArgs e)
+        {
+            nMoving = 1;
+            nMovePosX = e.X;
+            nMovePosY = e.Y;
+        }
+
+        private void xuiFlatTab1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (nMoving == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - nMovePosX, MousePosition.Y - nMovePosY);
+            }
+        }
+
+        private void xuiFlatTab1_MouseUp(object sender, MouseEventArgs e)
+        {
+            nMoving = 0;
+        } 
+        #endregion
+
+        #region [[[[[ Dispose & Close ]]]]]
+        private void btnClose_Click_1(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnClose2nd_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void AwakenedRegionForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            panel1.Dispose();
+            ControlForm.bISearchRegionOn = false;
+            InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
+        } 
+        #endregion
     }
 }

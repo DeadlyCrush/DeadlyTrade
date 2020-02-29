@@ -64,6 +64,15 @@ namespace POExileDirection
 
         [Description("EXIT")]
         HOTKEYNAME_EXIT,
+
+        [Description("INVITE")]
+        HOTKEYNAME_INVITE,
+
+        [Description("TRADE")]
+        HOTKEYNAME_TRADE,
+
+        [Description("KICK")]
+        HOTKEYNAME_KICK,
     };
 
     public static class HOTKEYNAME_STRINGExtensions

@@ -31,9 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelInit = new System.Windows.Forms.Panel();
-            this.pictureBoxMiya = new System.Windows.Forms.PictureBox();
-            this.pictureBoxInit = new System.Windows.Forms.PictureBox();
             this.panelCOMMAND = new System.Windows.Forms.Panel();
             this.btnDELVE = new System.Windows.Forms.Button();
             this.btnManagerie = new System.Windows.Forms.Button();
@@ -70,10 +67,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panelUpdateAvailable = new System.Windows.Forms.Panel();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.labelUpdateReadyVersion = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnHideout = new System.Windows.Forms.Button();
             this.btnDeadlyTrade = new System.Windows.Forms.Button();
@@ -94,22 +87,33 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.panelInit = new System.Windows.Forms.Panel();
+            this.pictureBoxMiya = new System.Windows.Forms.PictureBox();
+            this.pictureBoxInit = new System.Windows.Forms.PictureBox();
+            this.panelUpdateAvailable = new System.Windows.Forms.Panel();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.labelUpdateReadyVersion = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.DeadlyToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timerInit = new System.Windows.Forms.Timer(this.components);
             this.timerParser = new System.Windows.Forms.Timer(this.components);
+            this.xuiSwitch1 = new XanderUI.XUISwitch();
+            this.labelSNDOnOff = new System.Windows.Forms.Label();
+            this.btnSND = new System.Windows.Forms.Button();
+            this.btnDelveInform = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panelInit.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMiya)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInit)).BeginInit();
             this.panelCOMMAND.SuspendLayout();
             this.panelDrag.SuspendLayout();
             this.panelUtilityRectBorder.SuspendLayout();
             this.panelUtility.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel6.SuspendLayout();
+            this.panelInit.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMiya)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInit)).BeginInit();
             this.panelUpdateAvailable.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -128,35 +132,6 @@
             this.panel1.Size = new System.Drawing.Size(240, 168);
             this.panel1.TabIndex = 0;
             this.panel1.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.panel1_PreviewKeyDown);
-            // 
-            // panelInit
-            // 
-            this.panelInit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panelInit.Controls.Add(this.pictureBoxMiya);
-            this.panelInit.Controls.Add(this.pictureBoxInit);
-            this.panelInit.Location = new System.Drawing.Point(185, 171);
-            this.panelInit.Name = "panelInit";
-            this.panelInit.Size = new System.Drawing.Size(24, 25);
-            this.panelInit.TabIndex = 24;
-            // 
-            // pictureBoxMiya
-            // 
-            this.pictureBoxMiya.BackgroundImage = global::POExileDirection.Properties.Resources.DeadlyTradeLauncherICON;
-            this.pictureBoxMiya.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxMiya.Location = new System.Drawing.Point(54, 72);
-            this.pictureBoxMiya.Name = "pictureBoxMiya";
-            this.pictureBoxMiya.Size = new System.Drawing.Size(24, 24);
-            this.pictureBoxMiya.TabIndex = 27;
-            this.pictureBoxMiya.TabStop = false;
-            // 
-            // pictureBoxInit
-            // 
-            this.pictureBoxInit.Image = global::POExileDirection.Properties.Resources.spiiner_172_203;
-            this.pictureBoxInit.Location = new System.Drawing.Point(0, 1);
-            this.pictureBoxInit.Name = "pictureBoxInit";
-            this.pictureBoxInit.Size = new System.Drawing.Size(228, 203);
-            this.pictureBoxInit.TabIndex = 0;
-            this.pictureBoxInit.TabStop = false;
             // 
             // panelCOMMAND
             // 
@@ -334,13 +309,15 @@
             this.panelUtilityRectBorder.Controls.Add(this.panelUtility);
             this.panelUtilityRectBorder.Location = new System.Drawing.Point(14, 52);
             this.panelUtilityRectBorder.Name = "panelUtilityRectBorder";
-            this.panelUtilityRectBorder.Size = new System.Drawing.Size(224, 89);
+            this.panelUtilityRectBorder.Size = new System.Drawing.Size(224, 66);
             this.panelUtilityRectBorder.TabIndex = 46;
             this.panelUtilityRectBorder.Visible = false;
             // 
             // panelUtility
             // 
             this.panelUtility.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.panelUtility.Controls.Add(this.labelSNDOnOff);
+            this.panelUtility.Controls.Add(this.xuiSwitch1);
             this.panelUtility.Controls.Add(this.pictureBox3);
             this.panelUtility.Controls.Add(this.pictureBox1);
             this.panelUtility.Controls.Add(this.btnDND);
@@ -351,9 +328,11 @@
             this.panelUtility.Controls.Add(this.btnQ);
             this.panelUtility.Controls.Add(this.btn5);
             this.panelUtility.Controls.Add(this.btn4);
+            this.panelUtility.Controls.Add(this.btnSND);
             this.panelUtility.Controls.Add(this.btn3);
             this.panelUtility.Controls.Add(this.btn2);
             this.panelUtility.Controls.Add(this.btn1);
+            this.panelUtility.Controls.Add(this.btnDelveInform);
             this.panelUtility.Controls.Add(this.labelDND);
             this.panelUtility.Controls.Add(this.labelT);
             this.panelUtility.Controls.Add(this.labelR);
@@ -367,7 +346,7 @@
             this.panelUtility.Controls.Add(this.label1);
             this.panelUtility.Location = new System.Drawing.Point(1, 1);
             this.panelUtility.Name = "panelUtility";
-            this.panelUtility.Size = new System.Drawing.Size(222, 72);
+            this.panelUtility.Size = new System.Drawing.Size(222, 64);
             this.panelUtility.TabIndex = 45;
             // 
             // pictureBox3
@@ -739,55 +718,6 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panelUpdateAvailable
-            // 
-            this.panelUpdateAvailable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(46)))));
-            this.panelUpdateAvailable.Controls.Add(this.btnUpdate);
-            this.panelUpdateAvailable.Controls.Add(this.labelUpdateReadyVersion);
-            this.panelUpdateAvailable.Controls.Add(this.pictureBox2);
-            this.panelUpdateAvailable.Location = new System.Drawing.Point(7, 131);
-            this.panelUpdateAvailable.Name = "panelUpdateAvailable";
-            this.panelUpdateAvailable.Size = new System.Drawing.Size(12, 74);
-            this.panelUpdateAvailable.TabIndex = 28;
-            this.panelUpdateAvailable.Visible = false;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(57, 122);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(115, 20);
-            this.btnUpdate.TabIndex = 17;
-            this.btnUpdate.Text = "OK. Close Addon";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // labelUpdateReadyVersion
-            // 
-            this.labelUpdateReadyVersion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.labelUpdateReadyVersion.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.labelUpdateReadyVersion.ForeColor = System.Drawing.Color.Bisque;
-            this.labelUpdateReadyVersion.Location = new System.Drawing.Point(5, 6);
-            this.labelUpdateReadyVersion.Name = "labelUpdateReadyVersion";
-            this.labelUpdateReadyVersion.Size = new System.Drawing.Size(231, 31);
-            this.labelUpdateReadyVersion.TabIndex = 1;
-            this.labelUpdateReadyVersion.Text = "1.3.9.6 Update is available\r\nPlease close and restart Addon.";
-            this.labelUpdateReadyVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::POExileDirection.Properties.Resources.checkMarkMoving_116_55;
-            this.pictureBox2.Location = new System.Drawing.Point(57, 52);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(115, 55);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // panel6
             // 
@@ -1244,6 +1174,84 @@
             this.button1.MouseEnter += new System.EventHandler(this.button1_MouseHover);
             this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
+            // panelInit
+            // 
+            this.panelInit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelInit.Controls.Add(this.pictureBoxMiya);
+            this.panelInit.Controls.Add(this.pictureBoxInit);
+            this.panelInit.Location = new System.Drawing.Point(185, 171);
+            this.panelInit.Name = "panelInit";
+            this.panelInit.Size = new System.Drawing.Size(24, 25);
+            this.panelInit.TabIndex = 24;
+            // 
+            // pictureBoxMiya
+            // 
+            this.pictureBoxMiya.BackgroundImage = global::POExileDirection.Properties.Resources.DeadlyTradeLauncherICON;
+            this.pictureBoxMiya.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxMiya.Location = new System.Drawing.Point(54, 72);
+            this.pictureBoxMiya.Name = "pictureBoxMiya";
+            this.pictureBoxMiya.Size = new System.Drawing.Size(24, 24);
+            this.pictureBoxMiya.TabIndex = 27;
+            this.pictureBoxMiya.TabStop = false;
+            // 
+            // pictureBoxInit
+            // 
+            this.pictureBoxInit.Image = global::POExileDirection.Properties.Resources.spiiner_172_203;
+            this.pictureBoxInit.Location = new System.Drawing.Point(0, 1);
+            this.pictureBoxInit.Name = "pictureBoxInit";
+            this.pictureBoxInit.Size = new System.Drawing.Size(228, 203);
+            this.pictureBoxInit.TabIndex = 0;
+            this.pictureBoxInit.TabStop = false;
+            // 
+            // panelUpdateAvailable
+            // 
+            this.panelUpdateAvailable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(46)))));
+            this.panelUpdateAvailable.Controls.Add(this.btnUpdate);
+            this.panelUpdateAvailable.Controls.Add(this.labelUpdateReadyVersion);
+            this.panelUpdateAvailable.Controls.Add(this.pictureBox2);
+            this.panelUpdateAvailable.Location = new System.Drawing.Point(7, 131);
+            this.panelUpdateAvailable.Name = "panelUpdateAvailable";
+            this.panelUpdateAvailable.Size = new System.Drawing.Size(12, 74);
+            this.panelUpdateAvailable.TabIndex = 28;
+            this.panelUpdateAvailable.Visible = false;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(57, 122);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(115, 20);
+            this.btnUpdate.TabIndex = 17;
+            this.btnUpdate.Text = "OK. Close Addon";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // labelUpdateReadyVersion
+            // 
+            this.labelUpdateReadyVersion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
+            this.labelUpdateReadyVersion.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelUpdateReadyVersion.ForeColor = System.Drawing.Color.Bisque;
+            this.labelUpdateReadyVersion.Location = new System.Drawing.Point(5, 6);
+            this.labelUpdateReadyVersion.Name = "labelUpdateReadyVersion";
+            this.labelUpdateReadyVersion.Size = new System.Drawing.Size(231, 31);
+            this.labelUpdateReadyVersion.TabIndex = 1;
+            this.labelUpdateReadyVersion.Text = "1.3.9.6 Update is available\r\nPlease close and restart Addon.";
+            this.labelUpdateReadyVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::POExileDirection.Properties.Resources.checkMarkMoving_116_55;
+            this.pictureBox2.Location = new System.Drawing.Point(57, 52);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(115, 55);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // DeadlyToolTip
             // 
             this.DeadlyToolTip.AutoPopDelay = 5000;
@@ -1258,6 +1266,77 @@
             // timerParser
             // 
             this.timerParser.Tick += new System.EventHandler(this.TimerParser_Tick);
+            // 
+            // xuiSwitch1
+            // 
+            this.xuiSwitch1.BackColor = System.Drawing.Color.Transparent;
+            this.xuiSwitch1.HandleOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.xuiSwitch1.HandleOnColor = System.Drawing.Color.Tan;
+            this.xuiSwitch1.Location = new System.Drawing.Point(59, 39);
+            this.xuiSwitch1.Name = "xuiSwitch1";
+            this.xuiSwitch1.OffColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(98)))), ((int)(((byte)(59)))));
+            this.xuiSwitch1.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(98)))), ((int)(((byte)(59)))));
+            this.xuiSwitch1.Size = new System.Drawing.Size(32, 20);
+            this.xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.Off;
+            this.xuiSwitch1.SwitchStyle = XanderUI.XUISwitch.Style.Horizontal;
+            this.xuiSwitch1.TabIndex = 48;
+            this.xuiSwitch1.Text = "xuiSwitch1";
+            // 
+            // labelSNDOnOff
+            // 
+            this.labelSNDOnOff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.labelSNDOnOff.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelSNDOnOff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
+            this.labelSNDOnOff.Location = new System.Drawing.Point(30, 41);
+            this.labelSNDOnOff.Name = "labelSNDOnOff";
+            this.labelSNDOnOff.Size = new System.Drawing.Size(28, 16);
+            this.labelSNDOnOff.TabIndex = 49;
+            this.labelSNDOnOff.Text = "OFF";
+            this.labelSNDOnOff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnSND
+            // 
+            this.btnSND.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
+            this.btnSND.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSND.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSND.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnSND.FlatAppearance.BorderSize = 0;
+            this.btnSND.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSND.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSND.ForeColor = System.Drawing.Color.LightCoral;
+            this.btnSND.Location = new System.Drawing.Point(6, 42);
+            this.btnSND.Name = "btnSND";
+            this.btnSND.Size = new System.Drawing.Size(14, 14);
+            this.btnSND.TabIndex = 38;
+            this.btnSND.TabStop = false;
+            this.btnSND.Text = "img";
+            this.btnSND.UseVisualStyleBackColor = false;
+            this.btnSND.Click += new System.EventHandler(this.Button6_Click);
+            this.btnSND.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnHideout_Enter);
+            this.btnSND.MouseEnter += new System.EventHandler(this.button6_MouseHover);
+            this.btnSND.MouseHover += new System.EventHandler(this.button6_MouseHover);
+            // 
+            // btnDelveInform
+            // 
+            this.btnDelveInform.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
+            this.btnDelveInform.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDelveInform.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelveInform.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnDelveInform.FlatAppearance.BorderSize = 0;
+            this.btnDelveInform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelveInform.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelveInform.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.btnDelveInform.Image = global::POExileDirection.Properties.Resources.icon_re_13;
+            this.btnDelveInform.Location = new System.Drawing.Point(147, 38);
+            this.btnDelveInform.Name = "btnDelveInform";
+            this.btnDelveInform.Size = new System.Drawing.Size(24, 24);
+            this.btnDelveInform.TabIndex = 42;
+            this.btnDelveInform.TabStop = false;
+            this.btnDelveInform.UseVisualStyleBackColor = false;
+            this.btnDelveInform.Click += new System.EventHandler(this.Button3_Click);
+            this.btnDelveInform.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnHideout_Enter);
+            this.btnDelveInform.MouseEnter += new System.EventHandler(this.button3_MouseHover);
+            this.btnDelveInform.MouseHover += new System.EventHandler(this.button3_MouseHover);
             // 
             // ControlForm
             // 
@@ -1289,18 +1368,18 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ControlForm_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ControlForm_KeyUp);
             this.panel1.ResumeLayout(false);
-            this.panelInit.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMiya)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInit)).EndInit();
             this.panelCOMMAND.ResumeLayout(false);
             this.panelDrag.ResumeLayout(false);
             this.panelUtilityRectBorder.ResumeLayout(false);
             this.panelUtility.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panelInit.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMiya)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInit)).EndInit();
             this.panelUpdateAvailable.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1374,5 +1453,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label labelSNDOnOff;
+        private XanderUI.XUISwitch xuiSwitch1;
+        private System.Windows.Forms.Button btnSND;
+        private System.Windows.Forms.Button btnDelveInform;
     }
 }

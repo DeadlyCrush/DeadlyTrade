@@ -1159,89 +1159,51 @@ namespace POExileDirection
                 g_strYNMouseWheelStashTab = parser.GetSetting("MISC", "MOUSESTASHTAB"); // Addded 1.3.9.6 Ver.
                 if (String.IsNullOrEmpty(g_strYNMouseWheelStashTab))
                     g_strYNMouseWheelStashTab = "Y";
-
-                if (g_strYNMouseWheelStashTab=="Y")
-                    checkUseWheelStash.Checked = true;
-                else
-                    checkUseWheelStash.Checked = false;
                 DeadlyLog4Net._log.Info("checkUseWheelStash : " + g_strYNMouseWheelStashTab);
+
                 // EMERGENCY
                 g_strYNUseEmergencyHOTKEY = parser.GetSetting("MISC", "EMERGENCY");
                 if (String.IsNullOrEmpty(g_strYNUseEmergencyHOTKEY))
                     g_strYNUseEmergencyHOTKEY = "Y";
-
-                if (g_strYNUseEmergencyHOTKEY == "Y")
-                    checkEmergency.Checked = true;
-                else
-                    checkEmergency.Checked = false;
-
                 DeadlyLog4Net._log.Info("checkEmergency : " + g_strYNUseEmergencyHOTKEY);
+
                 // REMAINING
                 g_strYNUseRemainingHOTKEY = parser.GetSetting("MISC", "REMAINING");
                 if (String.IsNullOrEmpty(g_strYNUseRemainingHOTKEY))
                     g_strYNUseRemainingHOTKEY = "Y";
-
-                if (g_strYNUseRemainingHOTKEY == "Y")
-                    checkRemaining.Checked = true;
-                else
-                    checkRemaining.Checked = false;
-
                 DeadlyLog4Net._log.Info("checkRemaining : " + g_strYNUseRemainingHOTKEY);
+
                 // FINDBYPOSTION
                 g_strYNUseFindbyPositionHOTKEY = parser.GetSetting("MISC", "FINDBYPOSTION");
                 if (String.IsNullOrEmpty(g_strYNUseFindbyPositionHOTKEY))
                     g_strYNUseFindbyPositionHOTKEY = "Y";
-
-                if (g_strYNUseFindbyPositionHOTKEY == "Y")
-                    checkFindbyPosition.Checked = true;
-                else
-                    checkFindbyPosition.Checked = false;
-
                 DeadlyLog4Net._log.Info("checkFindbyPosition : " + g_strYNUseFindbyPositionHOTKEY);
+
                 // HOTKEYSYNDICATE
                 g_strYNUseSyndicateJUNHOTKEY = parser.GetSetting("MISC", "HOTKEYSYNDICATE");
                 if (String.IsNullOrEmpty(g_strYNUseSyndicateJUNHOTKEY))
                     g_strYNUseSyndicateJUNHOTKEY = "Y";
-
-                if (g_strYNUseSyndicateJUNHOTKEY == "Y")
-                    checkSyndicateJUN.Checked = true;
-                else
-                    checkSyndicateJUN.Checked = false;
-
                 DeadlyLog4Net._log.Info("checkSyndicateJUN : " + g_strYNUseSyndicateJUNHOTKEY);
+
                 // HOTKEYHIDEOUT
                 g_strYNUseHideoutHOTKEY = parser.GetSetting("MISC", "HOTKEYHIDEOUT");
                 if (String.IsNullOrEmpty(g_strYNUseHideoutHOTKEY))
                     g_strYNUseHideoutHOTKEY = "Y";
-
-                if (g_strYNUseHideoutHOTKEY == "Y")
-                    checkHideout.Checked = true;
-                else
-                    checkHideout.Checked = false;
-
                 DeadlyLog4Net._log.Info("checkHideout : " + g_strYNUseHideoutHOTKEY);
+
                 // HOTKEYALVAINCURSION
                 g_strYNUseIncursionALVAHOTKEY = parser.GetSetting("MISC", "HOTKEYALVAINCURSION");
                 if (String.IsNullOrEmpty(g_strYNUseIncursionALVAHOTKEY))
                     g_strYNUseIncursionALVAHOTKEY = "Y";
-
-                if (g_strYNUseIncursionALVAHOTKEY == "Y")
-                    checkTempleALVA.Checked = true;
-                else
-                    checkTempleALVA.Checked = false;
-
                 DeadlyLog4Net._log.Info("checkTempleALVA : " + g_strYNUseIncursionALVAHOTKEY);
+
                 // HOTKEYZANAATLAS
                 g_strYNUseAtlasZANAHOTKEY = parser.GetSetting("MISC", "HOTKEYZANAATLAS");
                 if (String.IsNullOrEmpty(g_strYNUseAtlasZANAHOTKEY))
                     g_strYNUseAtlasZANAHOTKEY = "Y";
-
-                if (g_strYNUseAtlasZANAHOTKEY == "Y")
-                    checkAtlasZANA.Checked = true;
-                else
-                    checkAtlasZANA.Checked = false;
-
                 DeadlyLog4Net._log.Info("checkAtlasZANA : " + g_strYNUseAtlasZANAHOTKEY);
+
+                //TODO : Trade Notification HotKeys.
                 #endregion
 
                 #region [[[[[ push pin LOCK, UNLOCK ]]]]]
@@ -2043,7 +2005,6 @@ namespace POExileDirection
                 DeadlyLog4Net._log.Info("Addon use LOCAL CHAT Information.Please turn on LOCAL CHAT.");
             }
 
-            checkUseWheelStash.Enabled = false;
             timerScrolling.Stop();
             timerScrolling.Dispose();
             Start_ControlForm();

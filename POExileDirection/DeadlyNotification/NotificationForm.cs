@@ -10,6 +10,7 @@ namespace POExileDirection
 {
     public partial class NotificationForm : Form
     {
+        #region [[[[[ Global Variables. ]]]]]
         public static string panelName { get; set; }
 
         private MediaPlayer _mediaPlayer; // Added 1.3.9.0 Ver.
@@ -23,7 +24,8 @@ namespace POExileDirection
         private bool bIsMinimized = false;
 
         private DateTime rcvDateTime = DateTime.Now;
-        string strBmpPath = String.Empty;
+        string strBmpPath = String.Empty; 
+        #endregion
 
         protected override CreateParams CreateParams
         {
@@ -47,14 +49,7 @@ namespace POExileDirection
             Visible = false;
             this.StartPosition = FormStartPosition.Manual;
 
-            SetFormStyle();
             Init_Controls();
-            /*
-            public static List<DeadlyTRADE.TradeMSG> g_TradeMsgList { get; set; } //= new List<DeadlyTRADE.TradeMSG>();
-            public static int g_nNotificationShownCNT { get; set; }
-            public static int g_nNotificationBuyingCount { get; set; }
-            public static int g_nNotificationPanelShownCNT { get; set; }
-            */
 
             thisTradeMsg = ControlForm.g_TradeMsgList[ControlForm.g_TradeMsgList.Count - 1];
 
@@ -121,8 +116,10 @@ namespace POExileDirection
                 pictureArrow.Left = 103;
                 labelItemName.Left = 126;
 
+                // Show Hideout button, Hide Sold button
                 btnHideout.Visible = true;
-                pictureHideoutVert.Visible = true; 
+                pictureHideoutVert.Visible = true;
+                btnSold.Visible = false;
                 DeadlyToolTip.SetToolTip(this.btnKick, "Leave Party");
             }
             else
@@ -132,8 +129,10 @@ namespace POExileDirection
                 labelPriceAtTitle.Left = 259;
                 btnCurrency.Left = 308;
 
+                // Hide Hideout button, Show Sold button
                 btnHideout.Visible = false;
                 pictureHideoutVert.Visible = false;
+                btnSold.Visible = true;
                 DeadlyToolTip.SetToolTip(this.btnKick, "Kick From Party");
             }
             double nCalcRet = 0;
@@ -539,32 +538,29 @@ namespace POExileDirection
                 if (tradeItem.offerMSG.Length > 0 && !String.IsNullOrEmpty(tradeItem.offerMSG))
                     labelStashTabDetail.Text = labelStashTabDetail.Text + "( "+ tradeItem.offerMSG + " )";
 
+                if (Convert.ToInt32(tradeItem.xPos) > 12 || Convert.ToInt32(tradeItem.yPos) > 12)
+                {
+                    checkQuadTab.Checked = true;
+                    bIsQuadStash = true;
+                }
+                else
+                {
+                    checkQuadTab.Checked = false;
+                    bIsQuadStash = false;
+                }
+
+                rcvDateTime = DateTime.Now;
+
+                timer1.Start();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
+                ControlForm.g_nNotificationPanelShownCNT = ControlForm.g_nNotificationPanelShownCNT - 1;
+                ControlForm.Remove_TradeItem(thisTradeMsg.id);
+                InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+                Close();                
             }
-
-            if (Convert.ToInt32(tradeItem.xPos) > 12 || Convert.ToInt32(tradeItem.yPos) > 12)
-            {
-                checkQuadTab.Checked = true;
-                bIsQuadStash = true;
-            }
-            else
-            {
-                checkQuadTab.Checked = false;
-                bIsQuadStash = false;
-            }
-
-            rcvDateTime = DateTime.Now;
-
-            timer1.Start();
-        }
-
-
-        private void SetFormStyle()
-        {
-            this.ControlBox = false;
         }
 
         #region ⨌⨌ Init. Controls ⨌⨌
@@ -574,7 +570,7 @@ namespace POExileDirection
             DeadlyToolTip.SetToolTip(this.btnTrade, "Trade Request"); 
             DeadlyToolTip.SetToolTip(this.btnClose, "Close This Message");
             DeadlyToolTip.SetToolTip(this.btnThanks, "Send 'Thanks' Message and Close Panel");
-            DeadlyToolTip.SetToolTip(this.btnWaitpls., "Send 'pls.. Wait a sec.' Message");
+            DeadlyToolTip.SetToolTip(this.btnWaitPls, "Send 'pls.. Wait a sec.' Message");
             DeadlyToolTip.SetToolTip(this.btnSold, "Send 'Sold already' and Close Panel");
             DeadlyToolTip.SetToolTip(this.btnHideout, "Visit Hideout");
             DeadlyToolTip.SetToolTip(this.btnWhois, "Whois? Buyer Information");
@@ -608,11 +604,11 @@ namespace POExileDirection
             btnThanks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             btnThanks.TabStop = false;
 
-            btnWaitpls..FlatStyle = FlatStyle.Flat;
-            btnWaitpls..BackColor = System.Drawing.Color.Transparent;
-            btnWaitpls..FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            btnWaitpls..FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            btnWaitpls..TabStop = false;
+            btnWaitPls.FlatStyle = FlatStyle.Flat;
+            btnWaitPls.BackColor = System.Drawing.Color.Transparent;
+            btnWaitPls.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            btnWaitPls.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            btnWaitPls.TabStop = false;
 
             btnSold.FlatStyle = FlatStyle.Flat;
             btnSold.BackColor = System.Drawing.Color.Transparent;
@@ -671,7 +667,6 @@ namespace POExileDirection
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
             Close();
         }
-
 
         private void btnMinMax_Click(object sender, EventArgs e)
         {
@@ -910,7 +905,7 @@ namespace POExileDirection
             }
         }
 
-        private void BtnWaitpls._Click(object sender, EventArgs e)
+        private void BtnWaitpls_Click(object sender, EventArgs e)
         {
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 

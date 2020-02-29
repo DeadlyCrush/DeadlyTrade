@@ -2993,7 +2993,6 @@
         private System.Windows.Forms.Button btnThanks;
         private System.Windows.Forms.Button btnKick;
         private System.Windows.Forms.Button btnSold;
-        private System.Windows.Forms.Button btnWaitpls.;
         private System.Windows.Forms.TextBox textBoxResend;
         private System.Windows.Forms.TextBox textBoxDone;
         private System.Windows.Forms.TextBox textBoxSold;

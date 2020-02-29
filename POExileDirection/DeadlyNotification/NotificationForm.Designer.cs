@@ -44,7 +44,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureCurrency = new System.Windows.Forms.PictureBox();
             this.btnThanks = new System.Windows.Forms.Button();
-            this.btnWaitpls. = new System.Windows.Forms.Button();
+            this.btnWaitPls = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -141,7 +141,7 @@
             this.panelMiddle.Controls.Add(this.labelElapsed);
             this.panelMiddle.Controls.Add(this.pictureCurrency);
             this.panelMiddle.Controls.Add(this.btnThanks);
-            this.panelMiddle.Controls.Add(this.btnWaitpls.);
+            this.panelMiddle.Controls.Add(this.btnWaitPls);
             this.panelMiddle.Controls.Add(this.labelPrice);
             this.panelMiddle.Controls.Add(this.button1);
             this.panelMiddle.Controls.Add(this.button2);
@@ -285,24 +285,24 @@
             this.btnThanks.Click += new System.EventHandler(this.BtnThanks_Click);
             this.btnThanks.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NotificationForm_KeyDown);
             // 
-            // btnWaitpls.
+            // btnWaitPls
             // 
-            this.btnWaitpls..BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
-            this.btnWaitpls..BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnWaitpls..Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnWaitpls..FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnWaitpls..FlatAppearance.BorderSize = 0;
-            this.btnWaitpls..FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWaitpls..Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnWaitpls..ForeColor = System.Drawing.Color.White;
-            this.btnWaitpls..Image = global::POExileDirection.Properties.Resources.panel_wait;
-            this.btnWaitpls..Location = new System.Drawing.Point(352, 58);
-            this.btnWaitpls..Name = "btnWaitpls.";
-            this.btnWaitpls..Size = new System.Drawing.Size(64, 20);
-            this.btnWaitpls..TabIndex = 1;
-            this.btnWaitpls..UseVisualStyleBackColor = false;
-            this.btnWaitpls..Click += new System.EventHandler(this.BtnWaitpls._Click);
-            this.btnWaitpls..KeyDown += new System.Windows.Forms.KeyEventHandler(this.NotificationForm_KeyDown);
+            this.btnWaitPls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
+            this.btnWaitPls.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnWaitPls.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnWaitPls.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnWaitPls.FlatAppearance.BorderSize = 0;
+            this.btnWaitPls.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWaitPls.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnWaitPls.ForeColor = System.Drawing.Color.White;
+            this.btnWaitPls.Image = global::POExileDirection.Properties.Resources.panel_wait;
+            this.btnWaitPls.Location = new System.Drawing.Point(352, 58);
+            this.btnWaitPls.Name = "btnWaitPls";
+            this.btnWaitPls.Size = new System.Drawing.Size(64, 20);
+            this.btnWaitPls.TabIndex = 1;
+            this.btnWaitPls.UseVisualStyleBackColor = false;
+            this.btnWaitPls.Click += new System.EventHandler(this.BtnWaitpls_Click);
+            this.btnWaitPls.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NotificationForm_KeyDown);
             // 
             // button1
             // 
@@ -658,12 +658,12 @@
         private System.Windows.Forms.Label labelLeague;
         private System.Windows.Forms.Button btnKick;
         private System.Windows.Forms.Button btnSold;
-        private System.Windows.Forms.Button btnWaitpls.;
         private System.Windows.Forms.Button btnHideout;
         private System.Windows.Forms.Button btnInvite;
         private System.Windows.Forms.Button btnTrade;
         private System.Windows.Forms.ToolTip DeadlyToolTip;
         private System.Windows.Forms.Button btnThanks;
+        private System.Windows.Forms.Button btnWaitPls;
         private System.Windows.Forms.Button btnWilling;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label labelElapsed;

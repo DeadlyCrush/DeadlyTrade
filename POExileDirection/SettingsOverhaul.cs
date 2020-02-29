@@ -22,6 +22,9 @@ namespace POExileDirection
         public string keyHideout;
         public string keySearchbyPosition;
         public string keyEXIT;
+        public string keyInvite;
+        public string keyTrade;
+        public string keyKick;
 
         // Timer Color
         public string colorStringRGB1;
@@ -130,8 +133,6 @@ namespace POExileDirection
         #region [[[[[ GetHotkeySettings() ]]]]]
         private void GetHotkeySettings()
         {
-            //TODO : Trade Notification Panel HotKeys.
-
             // HOTKEYS
             textRemains.Text = keyRemains;
             textJUN.Text = keyJUN;
@@ -140,6 +141,10 @@ namespace POExileDirection
             textHideout.Text = keyHideout;
             textBoxPositionSearch.Text = keySearchbyPosition;
             textBoxEXIT.Text = keyEXIT;
+
+            //TODO keyInvite;
+            //TODO keyTrade;
+            //TODO keyKick;
 
             // HotKey Use
             if (LauncherForm.g_strYNUseRemainingHOTKEY == "Y")
@@ -379,6 +384,120 @@ namespace POExileDirection
             //labelSupporters.Text = LauncherForm.g_strDonator;
         }
 
+        #region [[[[[ TAB : Hot Keys  Settings - SAVE/CANCEL ]]]]]
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            DisposeGarbage();
+            _nTabIndex = FlatSettingTab.SelectedIndex;
+
+            // Check : HotKey Use
+            if (checkRemaining.Checked)
+                LauncherForm.g_strYNUseRemainingHOTKEY = "Y";
+            else
+                LauncherForm.g_strYNUseRemainingHOTKEY = "N";
+            if (checkSyndicateJUN.Checked)
+                LauncherForm.g_strYNUseSyndicateJUNHOTKEY = "Y";
+            else
+                LauncherForm.g_strYNUseSyndicateJUNHOTKEY = "N";
+            if (checkTempleALVA.Checked)
+                LauncherForm.g_strYNUseIncursionALVAHOTKEY = "Y";
+            else
+                LauncherForm.g_strYNUseIncursionALVAHOTKEY = "N";
+            if (checkAtlasZANA.Checked)
+                LauncherForm.g_strYNUseAtlasZANAHOTKEY = "Y";
+            else
+                LauncherForm.g_strYNUseAtlasZANAHOTKEY = "N";
+            if (checkHideout.Checked)
+                LauncherForm.g_strYNUseHideoutHOTKEY = "Y";
+            else
+                LauncherForm.g_strYNUseHideoutHOTKEY = "N";
+            if (checkFindbyPosition.Checked)
+                LauncherForm.g_strYNUseFindbyPositionHOTKEY = "Y";
+            else
+                LauncherForm.g_strYNUseFindbyPositionHOTKEY = "N";
+            if (checkEmergency.Checked)
+                LauncherForm.g_strYNUseEmergencyHOTKEY = "Y";
+            else
+                LauncherForm.g_strYNUseEmergencyHOTKEY = "N";
+
+            btnSave.DialogResult = DialogResult.OK;
+            Close();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            btnSave.DialogResult = DialogResult.Cancel;
+            Close();
+        }
+        #endregion
+
+        #region [[[[[ TAB : Trade Notification Settings - SAVE/CANCEL ]]]]]
+        private void btnSaveTab2_Click(object sender, EventArgs e)
+        {
+            DisposeGarbage();
+            _nTabIndex = FlatSettingTab.SelectedIndex;
+
+            // NICKNAME
+            if (!String.IsNullOrEmpty(textBoxCharacterNick.Text))
+                LauncherForm.g_strMyNickName = textBoxCharacterNick.Text;
+
+            // NOTIFICATION MESSAGE
+            if (!String.IsNullOrEmpty(textBoxWait.Text))
+                LauncherForm.g_strnotiWAIT = textBoxWait.Text;
+
+            if (!String.IsNullOrEmpty(textBoxSold.Text))
+                LauncherForm.g_strnotiSOLD = textBoxSold.Text;
+
+            if (!String.IsNullOrEmpty(textBoxDone.Text))
+                LauncherForm.g_strnotiDONE = textBoxDone.Text;
+
+            if (!String.IsNullOrEmpty(textBoxResend.Text))
+                LauncherForm.g_strnotiRESEND = textBoxResend.Text;
+
+            if (!String.IsNullOrEmpty(textBoxCustom1.Text))
+                LauncherForm.g_strCUSTOM1 = textBoxCustom1.Text;
+
+            if (!String.IsNullOrEmpty(textBoxCustom2.Text))
+                LauncherForm.g_strCUSTOM2 = textBoxCustom2.Text;
+
+            if (!String.IsNullOrEmpty(textBoxCustom3.Text))
+                LauncherForm.g_strCUSTOM3 = textBoxCustom3.Text;
+
+            // AUTO KICK : THX
+            if (checkBoxAutoKick.Checked)
+                LauncherForm.g_strTRAutoKick = "Y";
+            else
+                LauncherForm.g_strTRAutoKick = "N";
+
+            // AUTO KICK : CUSTOM1,2,3
+            if (chkCustom1.Checked)
+                LauncherForm.g_strTRAutoKickCustom1 = "Y";
+            else
+                LauncherForm.g_strTRAutoKickCustom1 = "N";
+            if (chkCustom2.Checked)
+                LauncherForm.g_strTRAutoKickCustom2 = "Y";
+            else
+                LauncherForm.g_strTRAutoKickCustom2 = "N";
+            if (chkCustom3.Checked)
+                LauncherForm.g_strTRAutoKickCustom3 = "Y";
+            else
+                LauncherForm.g_strTRAutoKickCustom3 = "N";
+
+            // TODO : Hot keys... and...
+
+
+            btnCancelTab2.DialogResult = DialogResult.OK;
+            Close();
+        }
+
+        private void btnCancelTab2_Click(object sender, EventArgs e)
+        {
+            DisposeGarbage();
+            btnCancelTab2.DialogResult = DialogResult.Cancel;
+            Close();
+        }
+        #endregion
+
         #region [[[[[ Function : GetSet_Hotkey ]]]]]
         public void GetSet_HotKey(KeyEventArgs e, string strWhich)
         {
@@ -469,56 +588,10 @@ namespace POExileDirection
             keyHideout = textHideout.Text;
             keySearchbyPosition = textBoxPositionSearch.Text;
             keyEXIT = textBoxEXIT.Text;
-        } 
-        #endregion
-
-        #region [[[[[ SAVE/CANCEL TAB : Hot Keys  Settings ]]]]]
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            _nTabIndex = FlatSettingTab.SelectedIndex;
-
-            // Check : HotKey Use
-            if (checkRemaining.Checked)
-                LauncherForm.g_strYNUseRemainingHOTKEY = "Y";
-            else
-                LauncherForm.g_strYNUseRemainingHOTKEY = "N";
-            if (checkSyndicateJUN.Checked)
-                LauncherForm.g_strYNUseSyndicateJUNHOTKEY = "Y";
-            else
-                LauncherForm.g_strYNUseSyndicateJUNHOTKEY = "N";
-            if (checkTempleALVA.Checked)
-                LauncherForm.g_strYNUseIncursionALVAHOTKEY = "Y";
-            else
-                LauncherForm.g_strYNUseIncursionALVAHOTKEY = "N";
-            if (checkAtlasZANA.Checked)
-                LauncherForm.g_strYNUseAtlasZANAHOTKEY = "Y";
-            else
-                LauncherForm.g_strYNUseAtlasZANAHOTKEY = "N";
-            if (checkHideout.Checked)
-                LauncherForm.g_strYNUseHideoutHOTKEY = "Y";
-            else
-                LauncherForm.g_strYNUseHideoutHOTKEY = "N";
-            if (checkFindbyPosition.Checked)
-                LauncherForm.g_strYNUseFindbyPositionHOTKEY = "Y";
-            else
-                LauncherForm.g_strYNUseFindbyPositionHOTKEY = "N";
-            if (checkEmergency.Checked)
-                LauncherForm.g_strYNUseEmergencyHOTKEY = "Y";
-            else
-                LauncherForm.g_strYNUseEmergencyHOTKEY = "N";
-
-            btnSave.DialogResult = DialogResult.OK;
-            Close();
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            btnSave.DialogResult = DialogResult.Cancel;
-            Close();
         }
         #endregion
 
-        #region [[[[[ HotKey KeyDown ]]]]]
+        #region [[[[[ KeyDown Event ]]]]]
         private void textRemains_KeyDown(object sender, KeyEventArgs e)
         {
             GetSet_HotKey(e, HOTKEYNAME_STRINGExtensions.ToDescriptionString(HOTKEYNAME_STRING.HOTKEYNAME_REMAINS));
@@ -553,68 +626,43 @@ namespace POExileDirection
         {
             GetSet_HotKey(e, HOTKEYNAME_STRINGExtensions.ToDescriptionString(HOTKEYNAME_STRING.HOTKEYNAME_EXIT));
         }
+        //TODO : Trade Notification Panel HotKeys.
         #endregion
 
-        #region [[[[[ SAVE/CANCEL TAB : Trade Notification Settings ]]]]]
-        private void btnSaveTab2_Click(object sender, EventArgs e)
+        #region [[[[[ Text Changed Event ]]]]]
+        private void textBoxCustomTitle1_TextChanged(object sender, EventArgs e)
         {
-            // NICKNAME
-            if (!String.IsNullOrEmpty(textBoxCharacterNick.Text))
-                LauncherForm.g_strMyNickName = textBoxCharacterNick.Text;
+            btnCustom1.Text = textBoxCustomTitle1.Text;
+        }
 
-            // NOTIFICATION MESSAGE
-            if (!String.IsNullOrEmpty(textBoxWait.Text))
-                LauncherForm.g_strnotiWAIT = textBoxWait.Text;
+        private void textBoxCustomTitle2_TextChanged(object sender, EventArgs e)
+        {
+            btnCustom2.Text = textBoxCustomTitle2.Text;
+        }
 
-            if (!String.IsNullOrEmpty(textBoxSold.Text))
-                LauncherForm.g_strnotiSOLD = textBoxSold.Text;
+        private void textBoxCustomTitle3_TextChanged(object sender, EventArgs e)
+        {
+            btnCustom3.Text = textBoxCustomTitle3.Text;
+        }
+        #endregion
 
-            if (!String.IsNullOrEmpty(textBoxDone.Text))
-                LauncherForm.g_strnotiDONE = textBoxDone.Text;
+        #region [[[[[ Dispose & Close ]]]]]
+        private void btnCloseSettings_Click(object sender, EventArgs e)
+        {
+            DisposeGarbage();
+            _nTabIndex = FlatSettingTab.SelectedIndex;
 
-            if (!String.IsNullOrEmpty(textBoxResend.Text))
-                LauncherForm.g_strnotiRESEND = textBoxResend.Text;
-
-            if (!String.IsNullOrEmpty(textBoxCustom1.Text))
-                LauncherForm.g_strCUSTOM1 = textBoxCustom1.Text;
-
-            if (!String.IsNullOrEmpty(textBoxCustom2.Text))
-                LauncherForm.g_strCUSTOM2 = textBoxCustom2.Text;
-
-            if (!String.IsNullOrEmpty(textBoxCustom3.Text))
-                LauncherForm.g_strCUSTOM3 = textBoxCustom3.Text;
-
-            // AUTO KICK : THX
-            if (checkBoxAutoKick.Checked)
-                LauncherForm.g_strTRAutoKick = "Y";
-            else
-                LauncherForm.g_strTRAutoKick = "N";
-
-            // AUTO KICK : CUSTOM1,2,3
-            if (chkCustom1.Checked)
-                LauncherForm.g_strTRAutoKickCustom1 = "Y";
-            else
-                LauncherForm.g_strTRAutoKickCustom1 = "N";
-            if (chkCustom2.Checked)
-                LauncherForm.g_strTRAutoKickCustom2 = "Y";
-            else
-                LauncherForm.g_strTRAutoKickCustom2 = "N";
-            if (chkCustom3.Checked)
-                LauncherForm.g_strTRAutoKickCustom3 = "Y";
-            else
-                LauncherForm.g_strTRAutoKickCustom3 = "N";
-
-            // TODO : Hot keys... and...
-
-
-            btnCancelTab2.DialogResult = DialogResult.OK;
+            btnCloseSettings.DialogResult = DialogResult.Cancel;
             Close();
         }
 
-        private void btnCancelTab2_Click(object sender, EventArgs e)
+        private void DisposeGarbage()
         {
-            btnCancelTab2.DialogResult = DialogResult.Cancel;
-            Close();
+            pictureFlask1.Dispose();
+            pictureFlask2.Dispose();
+            pictureFlask3.Dispose();
+            pictureFlask4.Dispose();
+            pictureFlask5.Dispose();
         } 
         #endregion
     }

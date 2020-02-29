@@ -304,10 +304,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DeadlyUtility\PublicStashForm.cs">
+    <Compile Include="DeadlyPriceCheck\PublicStashForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeadlyUtility\PublicStashForm.Designer.cs">
+    <Compile Include="DeadlyPriceCheck\PublicStashForm.Designer.cs">
       <DependentUpon>PublicStashForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DeadlyUtility\ScanChatForm.cs">
@@ -339,10 +339,10 @@
     <Compile Include="DeadlyNotification\SomeOneEnteredForm.Designer.cs">
       <DependentUpon>SomeOneEnteredForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DeadlyUtility\StashGrid.cs">
+    <Compile Include="DeadlyNotification\StashGrid.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeadlyUtility\StashGrid.Designer.cs">
+    <Compile Include="DeadlyNotification\StashGrid.Designer.cs">
       <DependentUpon>StashGrid.cs</DependentUpon>
     </Compile>
     <Compile Include="DeadlyCommon\VoriciCalulator.cs" />
@@ -423,7 +423,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="DeadlyUtility\PublicStashForm.resx">
+    <EmbeddedResource Include="DeadlyPriceCheck\PublicStashForm.resx">
       <DependentUpon>PublicStashForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyUtility\ScanChatForm.resx">
@@ -438,7 +438,7 @@
     <EmbeddedResource Include="DeadlyNotification\SomeOneEnteredForm.resx">
       <DependentUpon>SomeOneEnteredForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DeadlyUtility\StashGrid.resx">
+    <EmbeddedResource Include="DeadlyNotification\StashGrid.resx">
       <DependentUpon>StashGrid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SettingsOverhaul.resx">

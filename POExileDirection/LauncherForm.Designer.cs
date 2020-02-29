@@ -54,7 +54,6 @@
             this.btnToonation = new System.Windows.Forms.Button();
             this.btnPatron = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.btnDonate = new System.Windows.Forms.Button();
             this.panelUpdateContents = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.labelUpdateTitle = new System.Windows.Forms.Label();
@@ -189,7 +188,6 @@
             this.panel2.Controls.Add(this.panelLogin);
             this.panel2.Controls.Add(this.panelWaiting);
             this.panel2.Controls.Add(this.panelDonate);
-            this.panel2.Controls.Add(this.btnDonate);
             this.panel2.Controls.Add(this.panelUpdateContents);
             this.panel2.Controls.Add(this.pictureBoxKOREA);
             this.panel2.Controls.Add(this.labelSupportersRealTime);
@@ -349,9 +347,9 @@
             this.panelDonate.Controls.Add(this.btnToonation);
             this.panelDonate.Controls.Add(this.btnPatron);
             this.panelDonate.Controls.Add(this.label10);
-            this.panelDonate.Location = new System.Drawing.Point(5, 397);
+            this.panelDonate.Location = new System.Drawing.Point(18, 426);
             this.panelDonate.Name = "panelDonate";
-            this.panelDonate.Size = new System.Drawing.Size(48, 21);
+            this.panelDonate.Size = new System.Drawing.Size(38, 34);
             this.panelDonate.TabIndex = 18;
             this.panelDonate.Visible = false;
             // 
@@ -453,21 +451,6 @@
     "Thank you Exile. Good luck && Have fun~!";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnDonate
-            // 
-            this.btnDonate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.btnDonate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDonate.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDonate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDonate.ForeColor = System.Drawing.Color.White;
-            this.btnDonate.Location = new System.Drawing.Point(461, 397);
-            this.btnDonate.Name = "btnDonate";
-            this.btnDonate.Size = new System.Drawing.Size(78, 21);
-            this.btnDonate.TabIndex = 18;
-            this.btnDonate.Text = "Donate";
-            this.btnDonate.UseVisualStyleBackColor = false;
-            this.btnDonate.Click += new System.EventHandler(this.btnDonate_Click);
-            // 
             // panelUpdateContents
             // 
             this.panelUpdateContents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
@@ -524,9 +507,9 @@
             // 
             this.labelSupportersRealTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
             this.labelSupportersRealTime.ForeColor = System.Drawing.Color.Violet;
-            this.labelSupportersRealTime.Location = new System.Drawing.Point(94, 401);
+            this.labelSupportersRealTime.Location = new System.Drawing.Point(120, 401);
             this.labelSupportersRealTime.Name = "labelSupportersRealTime";
-            this.labelSupportersRealTime.Size = new System.Drawing.Size(360, 14);
+            this.labelSupportersRealTime.Size = new System.Drawing.Size(422, 14);
             this.labelSupportersRealTime.TabIndex = 4;
             this.labelSupportersRealTime.Text = "Not loaded yet.";
             this.labelSupportersRealTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -600,9 +583,9 @@
             this.label14.ForeColor = System.Drawing.Color.Bisque;
             this.label14.Location = new System.Drawing.Point(12, 398);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(76, 21);
+            this.label14.Size = new System.Drawing.Size(105, 21);
             this.label14.TabIndex = 4;
-            this.label14.Text = "Supporters :";
+            this.label14.Text = "Thank you Exile :";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel5
@@ -1114,7 +1097,6 @@
         private System.Windows.Forms.Label labelPatchNote;
         private System.Windows.Forms.Timer timerPatchNote;
         private System.Windows.Forms.Button btnExitAndUpdate;
-        private System.Windows.Forms.Button btnDonate;
         private System.Windows.Forms.Button btnHide;
         private System.Windows.Forms.Timer timerScrolling;
         private System.Windows.Forms.Panel panelLogin;

@@ -1,7 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
@@ -10,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsInput;
 using WindowsInput.Native;
@@ -433,43 +431,52 @@ namespace POExileDirection
 
         private void CheckFocusLosing()
         {
-            LauncherForm.g_handlePathOfExile = InteropCommon.FindWindow("POEWindowClass", "Path of Exile"); // ClassName = POEWindowClass
-
-            string strActiveWindowTitle = InteropCommon.GetActiveWindowTitle();
-            string strActiveWindowParentTitle = InteropCommon.GetActiveWindowParentTitle();
-            if (strActiveWindowTitle == "DeadlyTradeForPOE" || strActiveWindowTitle == "Path of Exile" ||
-                strActiveWindowParentTitle == "DeadlyTradeForPOE" || strActiveWindowParentTitle == "Path of Exile" || gCF_bIsTextFocused)
+            try
             {
-                LauncherForm.g_FocusLosing = false;
-                if (strActiveWindowTitle == "DeadlyTradeForPOE" || strActiveWindowParentTitle == "DeadlyTradeForPOE" || gCF_bIsTextFocused)
+                LauncherForm.g_handlePathOfExile = InteropCommon.FindWindow("POEWindowClass", "Path of Exile"); // ClassName = POEWindowClass
+
+                string strActiveWindowTitle = InteropCommon.GetActiveWindowTitle();
+                //!? CHKCHK string strActiveWindowParentTitle = InteropCommon.GetActiveWindowParentTitle();
+                if (strActiveWindowTitle == "DeadlyTradeForPOE" || strActiveWindowTitle == "Path of Exile" || gCF_bIsTextFocused)
+                    //!? CHKCHK strActiveWindowParentTitle == "DeadlyTradeForPOE" || strActiveWindowParentTitle == "Path of Exile" || gCF_bIsTextFocused)
                 {
-                    LauncherForm.g_FocusOnAddon = true;
+                    if (strActiveWindowTitle == "DeadlyTradeForPOE" || gCF_bIsTextFocused) //!? CHKCHK strActiveWindowParentTitle == "DeadlyTradeForPOE" || gCF_bIsTextFocused)
+                    {
+                        LauncherForm.g_FocusOnAddon = true;
+                    }
+                    else
+                    {
+                        LauncherForm.g_FocusOnAddon = false;
+
+                        //TODO : WM_GETCURSOR GETCURSOR STATE
+                    }
+
+                    ShowHide_Addon_Forms(true);
+
+                    // HOT KEYS
+                    if (nRegisterHotKeysCNT <= 0)
+                    {
+                        Register_HotKeys();
+                    }
+
+                    LauncherForm.g_FocusLosing = false;
                 }
                 else
                 {
-                    LauncherForm.g_FocusOnAddon = false;
+                    LauncherForm.g_FocusLosing = true;
+                    ShowHide_Addon_Forms(false);
+
+                    // HOT KEYS
+                    UnRegisterHotKeys();
                 }
 
-                // Button_ICON_ONOFF(); // Removed 1.3.9.9
-                ShowHide_Addon_Forms(true);
-
-                // HOT KEYS
-                if (nRegisterHotKeysCNT <= 0)
-                {
-                    Register_HotKeys();
-                }
+                if (bNeedtoShowAvailabeUpdate)
+                    ShowAvailabeUpdatePanel();
             }
-            else
+            catch (Exception ex)
             {
-                LauncherForm.g_FocusLosing = true;
-                ShowHide_Addon_Forms(false);
-
-                // HOT KEYS
-                UnRegisterHotKeys();
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
-
-            if (bNeedtoShowAvailabeUpdate)
-                ShowAvailabeUpdatePanel();
         }
 
         private void MouseWheelThread(object sender, MouseEventExtArgs e)
@@ -544,12 +551,35 @@ namespace POExileDirection
             // CTRL + C
             if (LauncherForm.g_FocusLosing && e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
             {
-                // is it trade whiper?
+                // is it trade whisper?
                 DeadlyLog4Net._log.Info("CTRL+C for Trading");
                 return;
             }
             else if (!LauncherForm.g_FocusLosing) // Only Exile Focused.
             {
+                //? Test for Change HotKye Logic.
+                //None = 0x0000,
+                //Alt = 0x0001,
+                //Control = 0x0002,
+                //Shift = 0x0004,
+                //Window = 0x0008,
+                if(ovHRemains.fsMod == fsModifiers.None)
+                {
+                    if(e.KeyCode == (WindowsHook.Keys)ovHRemains.hotKeys)
+                    {
+                        deadlyRemainEvent(this, new EventArgs());
+                    }
+                }
+                else
+                {
+                    ; //? TESTING.
+                }
+
+                if (e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
+                {
+
+                }
+
                 // CTRL + C
                 if (e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
                 {
@@ -1231,91 +1261,98 @@ namespace POExileDirection
         #region [[[[[ Show or Hide Addon's Forms by Condition ]]]]]
         private void ShowHide_Addon_Forms(bool bShow)
         {
-            if(bShow)
+            try
             {
-                if (g_bIsSearchPop)
-                    frmSearchStash.Show();
+                if (bShow)
+                {
+                    if (g_bIsSearchPop)
+                        frmSearchStash.Show();
 
-                if (g_bIsSCANOn)
-                    frmScanChat.Show();
+                    if (g_bIsSCANOn)
+                        frmScanChat.Show();
 
-                if (bShowNinja)
-                    frmNinja.Show();
+                    if (bShowNinja)
+                        frmNinja.Show();
 
-                if (bVoriciCalcFormViewing)
-                    frmVoriciCalc.Show();
+                    if (bVoriciCalcFormViewing)
+                        frmVoriciCalc.Show();
 
-                if (g_bIsDropInformOn)
-                    frmMainForm.Show();
+                    if (g_bIsDropInformOn)
+                        frmMainForm.Show();
 
-                if (bfrmStashGridShow)
-                    frmStashGrid.Show();
+                    if (bfrmStashGridShow)
+                        frmStashGrid.Show();
 
-                if (bIMGOvelayActivated)
-                    frmIMGOverlay.Show();
+                    if (bIMGOvelayActivated)
+                        frmIMGOverlay.Show();
 
-                if (bIMGOvelayActivatedALVA)
-                    frmIMGOverlayALVA.Show();
+                    if (bIMGOvelayActivatedALVA)
+                        frmIMGOverlayALVA.Show();
 
-                if (bIMGOvelayActivatedMAP)
-                    frmIMGOverlayMAP.Show();
+                    if (bIMGOvelayActivatedMAP)
+                        frmIMGOverlayMAP.Show();
 
-                if (bOilsFormON)
-                    frmOils.Show();
+                    if (bOilsFormON)
+                        frmOils.Show();
 
-                if (bISearchRegionOn)
-                    frmSearchRegion.Show();
+                    if (bISearchRegionOn)
+                        frmSearchRegion.Show();
 
-                if (g_bIsNofiticationContainerOn)
+                    if (g_bIsNofiticationContainerOn)
+                        frmNotificationContainer.Show();
+
+                    //if (bIsSettingsPop)
+
                     frmNotificationContainer.Show();
+                    this.Show();
+                }
+                else
+                {
+                    if (g_bIsSearchPop)
+                        frmSearchStash.Hide();
 
-                //if (bIsSettingsPop)
+                    if (g_bIsSCANOn)
+                        frmScanChat.Hide();
 
-                frmNotificationContainer.Show();
-                this.Show();
-            }
-            else
-            {
-                if (g_bIsSearchPop)
-                    frmSearchStash.Hide();
+                    if (bShowNinja)
+                        frmNinja.Hide();
 
-                if (g_bIsSCANOn)
-                    frmScanChat.Hide();
+                    if (bVoriciCalcFormViewing)
+                        frmVoriciCalc.Hide();
 
-                if (bShowNinja)
-                    frmNinja.Hide();
+                    if (g_bIsDropInformOn)
+                        frmMainForm.Hide();
 
-                if (bVoriciCalcFormViewing)
-                    frmVoriciCalc.Hide();
+                    if (bfrmStashGridShow)
+                        frmStashGrid.Hide();
 
-                if (g_bIsDropInformOn)
-                    frmMainForm.Hide();
+                    if (bIMGOvelayActivated)
+                        frmIMGOverlay.Hide();
 
-                if (bfrmStashGridShow)
-                    frmStashGrid.Hide();
+                    if (bIMGOvelayActivatedALVA)
+                        frmIMGOverlayALVA.Hide();
 
-                if (bIMGOvelayActivated)
-                    frmIMGOverlay.Hide();
+                    if (bIMGOvelayActivatedMAP)
+                        frmIMGOverlayMAP.Hide();
 
-                if (bIMGOvelayActivatedALVA)
-                    frmIMGOverlayALVA.Hide();
+                    if (bOilsFormON)
+                        frmOils.Hide();
 
-                if (bIMGOvelayActivatedMAP)
-                    frmIMGOverlayMAP.Hide();
+                    if (bISearchRegionOn)
+                        frmSearchRegion.Hide();
 
-                if (bOilsFormON)
-                    frmOils.Hide();
+                    if (g_bIsNofiticationContainerOn)
+                        frmNotificationContainer.Hide();
 
-                if (bISearchRegionOn)
-                    frmSearchRegion.Hide();
+                    //if (bIsSettingsPop)
 
-                if (g_bIsNofiticationContainerOn)
                     frmNotificationContainer.Hide();
-
-                //if (bIsSettingsPop)
-
-                frmNotificationContainer.Hide();
-                this.Hide();
+                    this.Hide();
+                }
+            }
+            catch (Exception ex)
+            {
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
         }
         #endregion
@@ -2398,7 +2435,7 @@ namespace POExileDirection
             nRegisterHotKeysCNT = nRegisterHotKeysCNT + 1;
             bool bRetHOT = false;
             Parse_StringToHotKey(keyMAINRemains);
-            bRetHOT = InteropCommon.RegisterHotKey(Handle, 2, (uint)m_unMod, (uint)m_HotKey);
+            //? TEST Change HotKey Logic bRetHOT = InteropCommon.RegisterHotKey(Handle, 2, (uint)m_unMod, (uint)m_HotKey);
             //if (!bRetHOT)
             //{
             //    /*MSGForm frmMSG = new MSGForm();
@@ -2835,6 +2872,9 @@ namespace POExileDirection
             gCF_bIsTextFocused = true;
             try
             {
+                SettingsOverhaul settingsOverhaul = new SettingsOverhaul();
+                settingsOverhaul.Show();
+                return;
                 using (SettingsForm frmSettings = new SettingsForm())
                 {
                     frmSettings.keyRemains = keyMAINRemains;

@@ -397,9 +397,9 @@
             this.panel3.Controls.Add(this.label40);
             this.panel3.Controls.Add(this.label44);
             this.panel3.Controls.Add(this.label14);
-            this.panel3.Location = new System.Drawing.Point(3, 1);
+            this.panel3.Location = new System.Drawing.Point(9, 51);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(573, 454);
+            this.panel3.Size = new System.Drawing.Size(50, 40);
             this.panel3.TabIndex = 2;
             // 
             // labelVolume
@@ -799,7 +799,7 @@
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Location = new System.Drawing.Point(5, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(54, 29);
+            this.panel1.Size = new System.Drawing.Size(579, 448);
             this.panel1.TabIndex = 7;
             // 
             // checkEmergency
@@ -2025,8 +2025,8 @@
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.panel3);
             this.panel11.Controls.Add(this.panelDonateContact);
+            this.panel11.Controls.Add(this.panel3);
             this.panel11.Controls.Add(this.panel2);
             this.panel11.Controls.Add(this.panelHallOfFame);
             this.panel11.Controls.Add(this.panelSkillMain);

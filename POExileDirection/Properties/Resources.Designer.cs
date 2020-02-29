@@ -1293,36 +1293,6 @@ namespace POExileDirection.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap MonsterRemaining_bg {
-            get {
-                object obj = ResourceManager.GetObject("MonsterRemaining_bg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap MonsterRemaining_bg2 {
-            get {
-                object obj = ResourceManager.GetObject("MonsterRemaining_bg2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap MonsterRemaining_bg21 {
-            get {
-                object obj = ResourceManager.GetObject("MonsterRemaining_bg21", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
         internal static System.Drawing.Bitmap moving_bar_lock {
             get {
                 object obj = ResourceManager.GetObject("moving_bar_lock", resourceCulture);

@@ -232,7 +232,7 @@ namespace POExileDirection
 
         private static UI_LANG g_nUILang;
 
-        private string m_strClipboardBUY = null;
+        private string m_strClipboardText = null;
         private int m_InitCNT = 0;
 
         private bool m_bIsCMDVisible = false;
@@ -534,7 +534,7 @@ namespace POExileDirection
         {
             GetItemDataFromClipboardDelegate delegateInstance =
                             new GetItemDataFromClipboardDelegate(DeadlyPriceAPI.GetItemDataFromClipboard);
-            delegateInstance.BeginInvoke(m_strClipboardBUY, null, null);
+            delegateInstance.BeginInvoke(m_strClipboardText, null, null);
         }
         private delegate void GetItemDataFromClipboardDelegate(string strItemClipboardText);
 
@@ -556,8 +556,8 @@ namespace POExileDirection
                     // is it price checking?
                     try
                     {
-                        m_strClipboardBUY = ClipboardHelper.GetUnicodeText();
-                        if (m_strClipboardBUY.Contains("--------"))
+                        m_strClipboardText = ClipboardHelper.GetUnicodeText();
+                        if (m_strClipboardText.Contains("--------"))
                         {
                             Thread t = new Thread(new ThreadStart(GetItemDataThread));
                             t.Start();
@@ -578,17 +578,17 @@ namespace POExileDirection
                     {
                         if (LauncherForm.g_POELogFileName == "KakaoClient.txt") // CTRL+V in KAKAO Client.
                         {
-                            m_strClipboardBUY = ClipboardHelper.GetUnicodeText();
-                            if (m_strClipboardBUY != null && m_strClipboardBUY.Length > 0)
+                            m_strClipboardText = ClipboardHelper.GetUnicodeText();
+                            if (m_strClipboardText != null && m_strClipboardText.Length > 0)
                             {
-                                // for Debug DeadlyLog4Net._log.Debug("KAKAO User's CTRL+V for buy." + " : " + m_strClipboardBUY);
-                                if (m_strClipboardBUY.ToUpper().Contains("BUY YOUR") || m_strClipboardBUY.ToUpper().Contains("구매하고") || m_strClipboardBUY.ToUpper().Contains("WTB"))
+                                // for Debug DeadlyLog4Net._log.Debug("KAKAO User's CTRL+V for buy." + " : " + m_strClipboardText);
+                                if (m_strClipboardText.ToUpper().Contains("BUY YOUR") || m_strClipboardText.ToUpper().Contains("구매하고") || m_strClipboardText.ToUpper().Contains("WTB"))
                                 {
                                     ClipboardParsingEvent(this, new EventArgs());
                                     InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                                 }
                             }
-                            // TTTT MessageBox.Show(m_strClipboardBUY);
+                            // TTTT MessageBox.Show(m_strClipboardText);
                             // bExistClipboard = true;
 
                             return;
@@ -844,6 +844,7 @@ namespace POExileDirection
             }
         }
 
+        #region [[[[[ TimerInit ]]]]]
         private void TimerInit_Tick(object sender, EventArgs e)
         {
             // Initializing... Waiting Image.
@@ -908,14 +909,16 @@ namespace POExileDirection
                 }
             }
         }
+        #endregion
+
         private void ControlForm_ClipboardParsingMapAlertEvent(object sender, EventArgs e)
         {
             return; // Temprorary Removed 1.3.9.0 Ver.
             /*if (frmMapModResult == null) { frmMapModResult = new MapAlertForm(); }
-            frmMapModResult.m_strMapModString = m_strClipboardBUY;
+            frmMapModResult.m_strMapModString = m_strClipboardText;
             frmMapModResult.Show();
 
-            m_strClipboardBUY = null;*/
+            m_strClipboardText = null;*/
         }
 
         #region ⨌⨌ Hot Key Events ⨌⨌
@@ -1764,11 +1767,11 @@ namespace POExileDirection
         {
             CheckFocusLosing();
 
-            /*if (m_strClipboardBUY != null && m_strClipboardBUY.Length > 0)
+            /*if (m_strClipboardText != null && m_strClipboardText.Length > 0)
             {
-                if (m_strClipboardBUY.ToUpper().Contains("MAP") || m_strClipboardBUY.ToUpper().Contains("지도"))
+                if (m_strClipboardText.ToUpper().Contains("MAP") || m_strClipboardText.ToUpper().Contains("지도"))
                 {
-                    if (!m_strClipboardBUY.ToUpper().Contains("BUY YOUR") && !m_strClipboardBUY.ToUpper().Contains("구매하고"))
+                    if (!m_strClipboardText.ToUpper().Contains("BUY YOUR") && !m_strClipboardText.ToUpper().Contains("구매하고"))
                     {
                         ClipboardParsingMapAlertEvent(this, new EventArgs());
                         return;
@@ -3263,7 +3266,7 @@ namespace POExileDirection
         {
             try
             {
-                Match mMatch = g_DeadlyRegEx.RegExENGPriceWithTabNameKAKAO.Match(m_strClipboardBUY);
+                Match mMatch = g_DeadlyRegEx.RegExENGPriceWithTabNameKAKAO.Match(m_strClipboardText);
                 DeadlyTRADE.TradeMSG tradeWhisper = new DeadlyTRADE.TradeMSG();
                 if (mMatch.Groups.Count > 9)
                 {
@@ -3317,7 +3320,7 @@ namespace POExileDirection
         {
             try
             {
-                Match mMatch = g_DeadlyRegEx.RegExENGCurrencyKAKAO.Match(m_strClipboardBUY);
+                Match mMatch = g_DeadlyRegEx.RegExENGCurrencyKAKAO.Match(m_strClipboardText);
                 DeadlyTRADE.TradeMSG tradeWhisperCurr = new DeadlyTRADE.TradeMSG();
                 if (mMatch.Groups.Count > 9)
                 {
@@ -3375,7 +3378,7 @@ namespace POExileDirection
             try
             {
                 DeadlyTRADE.TradeMSG tradeWhisper2Un = new DeadlyTRADE.TradeMSG();
-                Match mMatch = g_DeadlyRegEx.RegExENGPoeAppComTabNameKAKAO.Match(m_strClipboardBUY);
+                Match mMatch = g_DeadlyRegEx.RegExENGPoeAppComTabNameKAKAO.Match(m_strClipboardText);
                 if (mMatch.Groups.Count > 11)
                 {
                     tradeWhisper2Un.tradePurpose = "BUY";
@@ -3431,7 +3434,7 @@ namespace POExileDirection
             try
             {
                 DeadlyTRADE.TradeMSG tradeWhisper2 = new DeadlyTRADE.TradeMSG();
-                Match mMatch = g_DeadlyRegEx.RegExENGPriceNoTabNameKAKAO.Match(m_strClipboardBUY);
+                Match mMatch = g_DeadlyRegEx.RegExENGPriceNoTabNameKAKAO.Match(m_strClipboardText);
                 if (mMatch.Groups.Count > 7)
                 {
                     tradeWhisper2.tradePurpose = "BUY";
@@ -3485,7 +3488,7 @@ namespace POExileDirection
             try
             {
                 DeadlyTRADE.TradeMSG tradeWhisper3 = new DeadlyTRADE.TradeMSG();
-                Match mMatch = g_DeadlyRegEx.RegExKORPriceWithTabNameKAKAO.Match(m_strClipboardBUY);
+                Match mMatch = g_DeadlyRegEx.RegExKORPriceWithTabNameKAKAO.Match(m_strClipboardText);
                 if (mMatch.Groups.Count > 11)
                 {
                     tradeWhisper3.tradePurpose = "BUY";
@@ -3539,7 +3542,7 @@ namespace POExileDirection
             try
             {
                 DeadlyTRADE.TradeMSG tradeWhisper4 = new DeadlyTRADE.TradeMSG();
-                Match mMatch = g_DeadlyRegEx.RegExKORUnPriceKAKAO.Match(m_strClipboardBUY);
+                Match mMatch = g_DeadlyRegEx.RegExKORUnPriceKAKAO.Match(m_strClipboardText);
                 if (mMatch.Groups.Count > 8)
                 {
                     tradeWhisper4.tradePurpose = "BUY";
@@ -3593,7 +3596,7 @@ namespace POExileDirection
             try
             {
                 DeadlyTRADE.TradeMSG tradeWhisperENMAP = new DeadlyTRADE.TradeMSG();
-                Match mMatch = g_DeadlyRegEx.RegExENGMapLiveSiteKAKAO.Match(m_strClipboardBUY);
+                Match mMatch = g_DeadlyRegEx.RegExENGMapLiveSiteKAKAO.Match(m_strClipboardText);
                 if (mMatch.Groups.Count > 5)
                 {
                     tradeWhisperENMAP.tradePurpose = "BUY";
@@ -3645,9 +3648,9 @@ namespace POExileDirection
 
         private void Parse_ClipboardBuying()
         {
-            if (m_strClipboardBUY.ToUpper().Contains("BUY YOUR")
-                || m_strClipboardBUY.ToUpper().Contains("구매하고")
-                || m_strClipboardBUY.ToUpper().Contains("WTB"))
+            if (m_strClipboardText.ToUpper().Contains("BUY YOUR")
+                || m_strClipboardText.ToUpper().Contains("구매하고")
+                || m_strClipboardText.ToUpper().Contains("WTB"))
             {
                 #region ⨌⨌ ### for KAKAO BUYING Parsing and Notify ### ⨌⨌
 

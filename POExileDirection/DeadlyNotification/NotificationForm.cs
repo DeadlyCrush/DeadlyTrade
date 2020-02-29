@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Media;
@@ -718,8 +717,12 @@ namespace POExileDirection
                 itemIndicator._strItemName = thisTradeMsg.itemName;
                 itemIndicator._strPrice = thisTradeMsg.priceCall;
                 itemIndicator._strBmpPath = strBmpPath;
+                itemIndicator._strNickName = thisTradeMsg.nickName;
+                itemIndicator._strTradePurpose = thisTradeMsg.tradePurpose;
                 itemIndicator.Owner = this;
                 itemIndicator.Show();
+
+
 
                 bIndicatorShowing = true;
             }

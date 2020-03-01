@@ -370,3 +370,8 @@ D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\AutoUpdater.NET.xml
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\log4net.xml
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\Newtonsoft.Json.xml
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Debug\DeadlyTrade.csproj.CopyComplete
+D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\SharpDX.dll
+D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\SharpDX.XAudio2.dll
+D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\SharpDX.pdb
+D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\SharpDX.XAudio2.pdb
+D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\SharpDX.XAudio2.xml

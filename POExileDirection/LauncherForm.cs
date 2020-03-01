@@ -1311,6 +1311,7 @@ namespace POExileDirection
                 try
                 {
                     launcherTimer.Stop();
+                    launcherTimer.Dispose();
                     Thread.Sleep(100);
                     frmNinja.Dispose();
 
@@ -1334,6 +1335,9 @@ namespace POExileDirection
                 }
                 catch (WebException ex)
                 {
+                    launcherTimer.Stop();
+                    launcherTimer.Dispose();
+
                     MSGForm frmMSG = new MSGForm();
                     frmMSG.lbMsg.Text = "WebException occurred.\r\nPlease check your network and Try again~.";
                     DialogResult dr = frmMSG.ShowDialog();
@@ -1377,26 +1381,17 @@ namespace POExileDirection
         #region [[[[[ TimerDetect Tick ]]]]]
         private void TimerDetect_Tick(object sender, EventArgs e)
         {
-            // TTTTT
-            // Show Start Button
-            // TTTTT ReadyToStartAddon();
-            // TTTTT return;
-
-            Thread.Sleep(100);
-
             #region ⨌⨌ Wait for POE Launching ⨌⨌
             g_handlePathOfExile = InteropCommon.FindWindow("POEWindowClass", "Path of Exile"); // ClassName = POEWindowClass
             if (g_handlePathOfExile != IntPtr.Zero)
             {
-                timerDetect.Stop();
-                Thread.Sleep(100);
-                NinjaTranslation.InitTranslateKOR();
-                Thread.Sleep(400);
-                DeadlyPriceCommon.InitDeadlyPriceCommon();
-                Thread.Sleep(400);
-
                 try
                 {
+                    timerDetect.Stop();
+                    timerDetect.Dispose();
+                    DeadlyTranslation.InitTranslateKOR();
+                    DeadlyPriceCommon.InitDeadlyPriceCommon();
+                
                     g_POELogPath = InteropCommon.GetPathFromHandle(LauncherForm.g_handlePathOfExile);
 
                     bool containsKG = Regex.IsMatch(g_POELogPath, Regex.Escape("KG"), RegexOptions.IgnoreCase);
@@ -1404,14 +1399,14 @@ namespace POExileDirection
                     if (containsKG)
                     {
                         g_POELogFileName = "KakaoClient.txt";
-                        labelReady.Text = "POE [KAKAO Client] Readly to";
+                        labelReady.Text = "POE [KAKAO Client] Ready to";
 
                         labelClient.Text = "CLIENT : KAKAO";
                     }
                     else
                     {
                         g_POELogFileName = "Client.txt";
-                        labelReady.Text = "POE [GGG Client] Readly to";
+                        labelReady.Text = "POE [GGG Client] Ready to";
 
                         labelClient.Text = "CLIENT : GGG";
                     }
@@ -1492,15 +1487,12 @@ namespace POExileDirection
                 }
                 catch (Exception ex)
                 {
+                    timerDetect.Stop();
+                    timerDetect.Dispose();
                     DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                 }
 
                 InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-
-                // Set Foreground
-                /*this.WindowState = FormWindowState.Minimized;
-                this.Show();
-                this.WindowState = FormWindowState.Normal;*/
                 this.BringToFront();
 
                 ScrollTick = DateTime.Now;
@@ -1512,7 +1504,10 @@ namespace POExileDirection
                 // Start_ControlForm(); // Added 1.3.9.0 Ver
                 //CHKCHK CheckUpdateLoop(); // Added 1.3.9.2 Ver.
                 RunDeadlyTradeManager();
-                Thread.Sleep(100);
+                Thread.Sleep(200);
+
+                InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
+                this.BringToFront();
             }
             #endregion
         } 
@@ -1520,6 +1515,8 @@ namespace POExileDirection
 
         private void RunDeadlyTradeManager()
         {
+            return;
+            //TODO : exe
             try
             {
                 ProcessStartInfo startInfo = new ProcessStartInfo();
@@ -1536,141 +1533,115 @@ namespace POExileDirection
         #region [[[[[ Real Time Supporters Scrolling ]]]]]
         private async Task ScrollingText()
         {
-            labelSupportersRealTime.Text =
+            //Task.Run(() =>
+            //{
+                labelSupportersRealTime.Text =
                 labelSupportersRealTime.Text.Substring(1, labelSupportersRealTime.Text.Length - 1) + labelSupportersRealTime.Text.Substring(0, 1);
-            /*while (this.Visible)
-            {
-                try
-                {
-                    DateTime nowTime = DateTime.Now;
-                    double elapsed = ((TimeSpan)(nowTime - ScrollTick)).TotalMilliseconds;
-                    if (elapsed > 200)
-                    {
-                        char[] chars = g_strDonator.ToCharArray();
-                        char[] v = new char[chars.Length];
-                        char[] newChar = v;
-                        int l = chars.Length;
-                        int k = 0;
-                        for (int j = 0; j < chars.Length; j++)
-                        {
-
-                            if (j + 1 < chars.Length)
-                                newChar[j] = chars[j + 1];
-                            else
-                                newChar[l - 1] = chars[k];
-                        }
-                        labelSupportersRealTime.Text = new string(newChar);
-                        ScrollTick = DateTime.Now;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    DeadlyLog4Net._log.Error($"catch Supporters {MethodBase.GetCurrentMethod().Name}", ex);
-                }
-
-                await Task.Delay(500);
-            }*/
+            //});
         }
         #endregion
 
+        #region [[[[[ TODO : CHECK UPDATE AVAILABLE ]]]]]
         // Added 1.3.9.2
-        private async Task CheckUpdateLoop()
-        {
-            while (true)
-            {
-                try
-                {
-                    #region [[[[[ Show Update Contents. ]]]]]
-                    string strRead = String.Empty;
-                    // Read Update Contents.
-                    try
-                    {
-                        WebClient wc = new WebClientWithTimeout();
-                        if (LauncherForm.g_strUILang == "KOR")
-                        {
-                            var readData = wc.DownloadData("https://www.jumpleasure.me/deadlytrade/repository/UpdateAvailable.txt");
-                            strRead = Encoding.UTF8.GetString(readData);
-                        }
-                        else
-                        {
-                            var readData = wc.DownloadData("https://www.jumpleasure.me/deadlytrade/repository/UpdateAvailableEN.txt");
-                            strRead = Encoding.UTF8.GetString(readData);
-                        }
-                    }
-                    catch (WebException ex)
-                    {
-                        DeadlyLog4Net._log.Error($"Read Contents. {MethodBase.GetCurrentMethod().Name}", ex);
-                    }
+        //private async Task CheckUpdateLoop()
+        //{
+        //    while (true)
+        //    {
+        //        try
+        //        {
+        //            #region [[[[[ Show Update Contents. ]]]]]
+        //            string strRead = String.Empty;
+        //            // Read Update Contents.
+        //            try
+        //            {
+        //                WebClient wc = new WebClientWithTimeout();
+        //                if (LauncherForm.g_strUILang == "KOR")
+        //                {
+        //                    var readData = wc.DownloadData("https://www.jumpleasure.me/deadlytrade/repository/UpdateAvailable.txt");
+        //                    strRead = Encoding.UTF8.GetString(readData);
+        //                }
+        //                else
+        //                {
+        //                    var readData = wc.DownloadData("https://www.jumpleasure.me/deadlytrade/repository/UpdateAvailableEN.txt");
+        //                    strRead = Encoding.UTF8.GetString(readData);
+        //                }
+        //            }
+        //            catch (WebException ex)
+        //            {
+        //                DeadlyLog4Net._log.Error($"Read Contents. {MethodBase.GetCurrentMethod().Name}", ex);
+        //            }
 
-                    Assembly assembly = Assembly.GetExecutingAssembly();
-                    FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
-                    string version = fvi.FileVersion;
+        //            Assembly assembly = Assembly.GetExecutingAssembly();
+        //            FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
+        //            string version = fvi.FileVersion;
 
-                    DeadlyLog4Net._log.Info("strRead : " + strRead + " Your version : " + version);
-                    if (strRead.Trim() != version) // 1.3.9.4
-                    {
-                        if (ControlForm.g_strZoneName.ToUpper().Contains("HIDEOUT") || ControlForm.g_strZoneName.Contains("은신처"))
-                        {
-                            ControlForm.bNeedtoShowAvailabeUpdate = true;
-                        }
-                    }
-                    #endregion
+        //            DeadlyLog4Net._log.Info("strRead : " + strRead + " Your version : " + version);
+        //            if (strRead.Trim() != version) // 1.3.9.4
+        //            {
+        //                if (ControlForm.g_strZoneName.ToUpper().Contains("HIDEOUT") || ControlForm.g_strZoneName.Contains("은신처"))
+        //                {
+        //                    ControlForm.bNeedtoShowAvailabeUpdate = true;
+        //                }
+        //            }
+        //            #endregion
 
-                    // Check Duplicate Login.
-                    /*try
-                    {
-                        WebClient wc = new WebClientWithTimeout();
-                        if (LauncherForm.g_strUILang == "KOR")
-                        {
-                            var readData = wc.DownloadData("https://www.jumpleasure.me/deadlytrade/repository/UpdateAvailable.txt");
-                            strRead = Encoding.UTF8.GetString(readData);
-                        }
-                        else
-                        {
-                            var readData = wc.DownloadData("https://www.jumpleasure.me/deadlytrade/repository/UpdateAvailableEN.txt");
-                            strRead = Encoding.UTF8.GetString(readData);
-                        }
-                    }
-                    catch (WebException ex)
-                    {
-                        DeadlyLog4Net._log.Error($"Read Contents. {MethodBase.GetCurrentMethod().Name}", ex);
-                    }*/
-                }
-                catch (Exception ex)
-                {
-                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                }
+        //            // Check Duplicate Login.
+        //            /*try
+        //            {
+        //                WebClient wc = new WebClientWithTimeout();
+        //                if (LauncherForm.g_strUILang == "KOR")
+        //                {
+        //                    var readData = wc.DownloadData("https://www.jumpleasure.me/deadlytrade/repository/UpdateAvailable.txt");
+        //                    strRead = Encoding.UTF8.GetString(readData);
+        //                }
+        //                else
+        //                {
+        //                    var readData = wc.DownloadData("https://www.jumpleasure.me/deadlytrade/repository/UpdateAvailableEN.txt");
+        //                    strRead = Encoding.UTF8.GetString(readData);
+        //                }
+        //            }
+        //            catch (WebException ex)
+        //            {
+        //                DeadlyLog4Net._log.Error($"Read Contents. {MethodBase.GetCurrentMethod().Name}", ex);
+        //            }*/
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+        //        }
 
-                try
-                {
-                    string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
+        //        try
+        //        {
+        //            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
 
-                    if (resolution_width < 1920 && resolution_height < 1080)
-                    {
-                        strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                        if (resolution_width < 1600 && resolution_height < 1024)
-                            strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                        else if (LauncherForm.resolution_width < 1280)
-                            strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-                    }
-                    else if (resolution_width > 1920)
-                        strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
+        //            if (resolution_width < 1920 && resolution_height < 1080)
+        //            {
+        //                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
+        //                if (resolution_width < 1600 && resolution_height < 1024)
+        //                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
+        //                else if (LauncherForm.resolution_width < 1280)
+        //                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
+        //            }
+        //            else if (resolution_width > 1920)
+        //                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
 
-                    IniParser parser = new IniParser(strINIPath);
-                    DeadlyLog4Net._log.Info($"{MethodBase.GetCurrentMethod().Name} RESOLUTION : " + strINIPath);
+        //            IniParser parser = new IniParser(strINIPath);
+        //            DeadlyLog4Net._log.Info($"{MethodBase.GetCurrentMethod().Name} RESOLUTION : " + strINIPath);
 
-                    parser.AddSetting("CHARACTER", "MYNICK", g_strMyNickName);
-                    parser.SaveSettings();
-                }
-                catch (Exception ex)
-                {
-                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                }
+        //            parser.AddSetting("CHARACTER", "MYNICK", g_strMyNickName);
+        //            parser.SaveSettings();
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+        //        }
 
-                await Task.Delay(1000*60*60*1); // 1000ms(1s) * 60 = 60s(1m) * 60 = 60m(1h) * 1 = 1h
-            }
-        }
+        //        await Task.Delay(1000*60*60*1); // 1000ms(1s) * 60 = 60s(1m) * 60 = 60m(1h) * 1 = 1h
+        //    }
+        //} 
+        #endregion
 
+        #region [[[[[ Get JSON Data : DeadlyInformation ]]]]]
         private void Get_deadlyInformationData()
         {
             var tmpData = new DeadlyInformation();
@@ -1892,14 +1863,14 @@ namespace POExileDirection
 
             foreach (var item in deadlyInformationData.MapAlertMSG.MapAlertMSG)
             {
-                if(item.Id == "RED")
+                if (item.Id == "RED")
                 {
                     foreach (var itemMsg in item.Msg)
                     {
                         g_strArrREDAlert.Add(itemMsg);
                     }
                 }
-                else if(item.Id == "GREEN")
+                else if (item.Id == "GREEN")
                 {
                     foreach (var itemMsg in item.Msg)
                     {
@@ -1908,7 +1879,9 @@ namespace POExileDirection
                 }
             }
         }
+        #endregion
 
+        #region [[[[[ Drag Moving ]]]]]
         private void PictureBox3_MouseDown(object sender, MouseEventArgs e)
         {
             nMoving = 1;
@@ -1927,13 +1900,8 @@ namespace POExileDirection
         private void PictureBox3_MouseUp(object sender, MouseEventArgs e)
         {
             nMoving = 0;
-        }
-
-        private void BtnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Application.Exit();
-        }
+        } 
+        #endregion
 
         private void BtnMinimize_Click(object sender, EventArgs e)
         {
@@ -2007,20 +1975,29 @@ namespace POExileDirection
 
             timerScrolling.Stop();
             timerScrolling.Dispose();
+
+            timerCheckFocus.Start();
             Start_ControlForm();
-        }              
+        }
 
         #region ⨌⨌ FormClosed : Dispose All ⨌⨌
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
+
         private void LauncherForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             DeadlyLog4Net._log.Info("〓〓〓〓〓 ↑↑↑ Launcher END ↑↑↑ 〓〓〓〓〓");
 
+            if (timerDetect != null) timerDetect.Dispose();
             if (timerScrolling != null) timerScrolling.Dispose();
             if (frmNinja != null) frmNinja.Close();
             if (frmMainControl != null) frmMainControl.Close();
 
             if (ninjaData != null) ninjaData = null;
-            //if (deadlyOverlayData != null) deadlyOverlayData = null;
+            if (deadlyInformationData != null) deadlyInformationData = null;
         }
         #endregion
 
@@ -2165,7 +2142,57 @@ namespace POExileDirection
 
         private void timerScrolling_Tick(object sender, EventArgs e)
         {
-            ScrollingText();
+            try
+            {
+                ScrollingText();
+            }
+            catch (Exception ex)
+            {
+                timerScrolling.Stop();
+                timerScrolling.Dispose();
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+            }
         }
+
+        #region [[[[[ Timer Check Focus ON/OFF - POE, DeadlyTrade ]]]]]
+        private void timerCheckFocus_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                g_handlePathOfExile = InteropCommon.FindWindow("POEWindowClass", "Path of Exile"); // ClassName = POEWindowClass
+
+                string strActiveWindowTitle = InteropCommon.GetActiveWindowTitle();
+                //!? CHKCHK string strActiveWindowParentTitle = InteropCommon.GetActiveWindowParentTitle();
+                if (strActiveWindowTitle == "DeadlyTradeForPOE" || strActiveWindowTitle == "Path of Exile" || ControlForm.gCF_bIsTextFocused)
+                //!? CHKCHK strActiveWindowParentTitle == "DeadlyTradeForPOE" || strActiveWindowParentTitle == "Path of Exile" || gCF_bIsTextFocused)
+                {
+                    if (strActiveWindowTitle == "DeadlyTradeForPOE" || ControlForm.gCF_bIsTextFocused) //!? CHKCHK strActiveWindowParentTitle == "DeadlyTradeForPOE" || gCF_bIsTextFocused)
+                    {
+                        g_FocusOnAddon = true;
+                    }
+                    else
+                    {
+                        g_FocusOnAddon = false;
+
+                        //TODO : WM_GETCURSOR GETCURSOR STATE
+                    }
+                    g_FocusLosing = false;
+                }
+                else
+                {
+                    g_FocusLosing = true;
+                }
+
+                //TODO: if (bNeedtoShowAvailabeUpdate)
+                //TODO:     ShowAvailabeUpdatePanel();
+            }
+            catch (Exception ex)
+            {
+                timerCheckFocus.Stop();
+                timerCheckFocus.Dispose();
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+            }
+        } 
+        #endregion
     }
 }

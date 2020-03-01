@@ -20,7 +20,7 @@ namespace POExileDirection
         public string strTier { get; set; }
     }
 
-    public static class NinjaTranslation
+    public static class DeadlyTranslation
 	{
 		public static Dictionary<string, string> transCurrency = new Dictionary<string, string>(); // #1
 		public static Dictionary<string, string> transFragments = new Dictionary<string, string>(); // #2
@@ -57,53 +57,6 @@ namespace POExileDirection
 
         // Pantheon
         public static List<Phanteon> Phanteons = new List<Phanteon>();
-        
-        public static void InitPantheon()
-        {
-            Phanteons.Add(new Phanteon("Soul of the Brine King", "Act 6", ""));
-            Phanteons.Add(new Phanteon("Glace", "Beach Map", "T1"));
-            Phanteons.Add(new Phanteon("Ambrius, Legion Slayer", "Colosseum Map", "T12"));
-            Phanteons.Add(new Phanteon("Captain Tanner Lightfoot", "Coral Ruins Map", "T15"));
-
-            Phanteons.Add(new Phanteon("Soul of Arakaali", "Act 7", ""));
-            Phanteons.Add(new Phanteon("Queen of the Great Tangle", "Jungle Valley Map", "T1"));
-            Phanteons.Add(new Phanteon("Shavronne the Sickening", "Cells Map", "T10"));
-            Phanteons.Add(new Phanteon("Thraxia", "Spider Lair Map", "T14"));
-
-            Phanteons.Add(new Phanteon("Soul of Solaris", "Act 8", ""));
-            Phanteons.Add(new Phanteon("The Gorgon", "Sulphur Vents Map", "T2"));
-            Phanteons.Add(new Phanteon("Eater of Souls", "Core Map", "T11"));
-            Phanteons.Add(new Phanteon("Kitava, The Destroyer", "Lava Lake Map", "T15"));
-
-            Phanteons.Add(new Phanteon("Soul of Lunaris", "Act 8", ""));
-            Phanteons.Add(new Phanteon("Ancient Architect", "Pier Map", "T1"));
-            Phanteons.Add(new Phanteon("Excellis Aurafix", "Residence Map", "T10"));
-            Phanteons.Add(new Phanteon("The Hallowed Husk", "Palace Map", "T15"));
-
-            Phanteons.Add(new Phanteon("Soul of Abberath", "Act 6", ""));
-            Phanteons.Add(new Phanteon("Mephod, the Earth Scorcher", "Summit Map", "T16"));
-
-            Phanteons.Add(new Phanteon("Soul of Gruthkul", "Act 7", ""));
-            Phanteons.Add(new Phanteon("Erebix, Light's Bane", "Cemetery Map", "T3"));
-
-            Phanteons.Add(new Phanteon("Soul of Yugul", "Act 8", ""));
-            Phanteons.Add(new Phanteon("Varhesh, Shimmering Aberration", "Terrace Map", "T15"));
-
-            Phanteons.Add(new Phanteon("Soul of Shakari", "Act 9", ""));
-            Phanteons.Add(new Phanteon("Terror of the Infinite Drifts", "Desert Spring Map", "T15"));
-
-            Phanteons.Add(new Phanteon("Soul of Tukohama", "Act 6", ""));
-            Phanteons.Add(new Phanteon("Tahsin, Warmaker", "Siege Map", "T8"));
-
-            Phanteons.Add(new Phanteon("Soul of Ralakesh", "Act 7", ""));
-            Phanteons.Add(new Phanteon("Drek, Apex Hunter", "Fields Map", "T2"));
-
-            Phanteons.Add(new Phanteon("Soul of Garukhan", "Act 9", ""));
-            Phanteons.Add(new Phanteon("Stalker of the Endless Dunes", "Dig Map", "T11"));
-
-            Phanteons.Add(new Phanteon("Soul of Ryslatha", "Act 6", ""));
-            Phanteons.Add(new Phanteon("Gorulis, Will-Thief", "Infested Valley Map", "T14"));
-        }
 
         public static void InitTranslateKOR()
 		{
@@ -137,7 +90,7 @@ namespace POExileDirection
             InitPantheon();
         }
 
-        #region
+        #region [[[[[ Image Path ]]]]]
         private static void InitFlaskImgPath()
         {
             FlaskImgPath.Add(0, "60px-Divine_Life_Flask_inventory_icon.png");
@@ -190,7 +143,9 @@ namespace POExileDirection
         #region [[[[[ #1 Currency ]]]]]
         private static void InitCurrency()
 		{
-			transCurrency.Add("Mirror of Kalandra", "칼란드라의 거울");
+            transCurrency.Clear();
+
+            transCurrency.Add("Mirror of Kalandra", "칼란드라의 거울");
 			transCurrency.Add("Mirror Shard", "거울 파편");
 			transCurrency.Add("Hunter's Exalted Orb", "사냥꾼의 엑잘티드 오브");
 			transCurrency.Add("Awakener's Orb", "각성자의 오브");
@@ -2772,6 +2727,55 @@ namespace POExileDirection
             RegionMapIRB.Add("Promenade Map");
             RegionMapIRB.Add("Vaal Temple Map");
         }
+        #endregion
+
+        #region [[[[[ Pantheon ]]]]]
+        public static void InitPantheon()
+        {
+            Phanteons.Add(new Phanteon("Soul of the Brine King", "Act 6", ""));
+            Phanteons.Add(new Phanteon("Glace", "Beach Map", "T1"));
+            Phanteons.Add(new Phanteon("Ambrius, Legion Slayer", "Colosseum Map", "T12"));
+            Phanteons.Add(new Phanteon("Captain Tanner Lightfoot", "Coral Ruins Map", "T15"));
+
+            Phanteons.Add(new Phanteon("Soul of Arakaali", "Act 7", ""));
+            Phanteons.Add(new Phanteon("Queen of the Great Tangle", "Jungle Valley Map", "T1"));
+            Phanteons.Add(new Phanteon("Shavronne the Sickening", "Cells Map", "T10"));
+            Phanteons.Add(new Phanteon("Thraxia", "Spider Lair Map", "T14"));
+
+            Phanteons.Add(new Phanteon("Soul of Solaris", "Act 8", ""));
+            Phanteons.Add(new Phanteon("The Gorgon", "Sulphur Vents Map", "T2"));
+            Phanteons.Add(new Phanteon("Eater of Souls", "Core Map", "T11"));
+            Phanteons.Add(new Phanteon("Kitava, The Destroyer", "Lava Lake Map", "T15"));
+
+            Phanteons.Add(new Phanteon("Soul of Lunaris", "Act 8", ""));
+            Phanteons.Add(new Phanteon("Ancient Architect", "Pier Map", "T1"));
+            Phanteons.Add(new Phanteon("Excellis Aurafix", "Residence Map", "T10"));
+            Phanteons.Add(new Phanteon("The Hallowed Husk", "Palace Map", "T15"));
+
+            Phanteons.Add(new Phanteon("Soul of Abberath", "Act 6", ""));
+            Phanteons.Add(new Phanteon("Mephod, the Earth Scorcher", "Summit Map", "T16"));
+
+            Phanteons.Add(new Phanteon("Soul of Gruthkul", "Act 7", ""));
+            Phanteons.Add(new Phanteon("Erebix, Light's Bane", "Cemetery Map", "T3"));
+
+            Phanteons.Add(new Phanteon("Soul of Yugul", "Act 8", ""));
+            Phanteons.Add(new Phanteon("Varhesh, Shimmering Aberration", "Terrace Map", "T15"));
+
+            Phanteons.Add(new Phanteon("Soul of Shakari", "Act 9", ""));
+            Phanteons.Add(new Phanteon("Terror of the Infinite Drifts", "Desert Spring Map", "T15"));
+
+            Phanteons.Add(new Phanteon("Soul of Tukohama", "Act 6", ""));
+            Phanteons.Add(new Phanteon("Tahsin, Warmaker", "Siege Map", "T8"));
+
+            Phanteons.Add(new Phanteon("Soul of Ralakesh", "Act 7", ""));
+            Phanteons.Add(new Phanteon("Drek, Apex Hunter", "Fields Map", "T2"));
+
+            Phanteons.Add(new Phanteon("Soul of Garukhan", "Act 9", ""));
+            Phanteons.Add(new Phanteon("Stalker of the Endless Dunes", "Dig Map", "T11"));
+
+            Phanteons.Add(new Phanteon("Soul of Ryslatha", "Act 6", ""));
+            Phanteons.Add(new Phanteon("Gorulis, Will-Thief", "Infested Valley Map", "T14"));
+        } 
         #endregion
     }
 }

@@ -328,15 +328,6 @@ namespace POExileDirection
         public int left, top, right, bottom;
     }
 
-    public enum fsModifiers
-    {
-        None = 0x0000,
-        Alt = 0x0001,
-        Control = 0x0002,
-        Shift = 0x0004,
-        Window = 0x0008,
-    }
-
     public class DeadlyAtlas
     {
         public class FossilInformation
@@ -768,8 +759,8 @@ namespace POExileDirection
 
     public class DeadlyHotkeys
     {
-        public fsModifiers fsMod { get; set; }
-        public Keys hotKeys { get; set; }
+        public WindowsHook.Keys fsMod { get; set; }
+        public WindowsHook.Keys hotKeys { get; set; }
     }
 
     public static class DeadlyImageCommon

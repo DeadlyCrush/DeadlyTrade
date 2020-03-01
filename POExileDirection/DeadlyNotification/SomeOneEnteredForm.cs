@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace POExileDirection
@@ -21,7 +14,18 @@ namespace POExileDirection
 
         public string strNickName = String.Empty;
         public string strLableText = String.Empty;
-        int nSec = 0;
+        private int nSec = 0;
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                // turn on WS_EX_TOOLWINDOW style bit
+                cp.ExStyle |= 0x80;
+                return cp;
+            }
+        }
 
         public SomeOneEnteredForm()
         {
@@ -33,20 +37,27 @@ namespace POExileDirection
         {
             Visible = false;
 
-            uint exstyleGet = InteropCommon.GetWindowLong(this.Handle, m_nExStyleNum);
-            InteropCommon.SetWindowLong(this.Handle, m_nExStyleNum, exstyleGet | WS_EX_LAYERED | WS_EX_TRANSPARENT);
+            try
+            {
+                uint exstyleGet = InteropCommon.GetWindowLong(this.Handle, m_nExStyleNum);
+                InteropCommon.SetWindowLong(this.Handle, m_nExStyleNum, exstyleGet | WS_EX_LAYERED | WS_EX_TRANSPARENT);
 
-            Width = 105;
-            labelNickName.Text = strNickName;
-            if (!String.IsNullOrEmpty(strLableText))
-                label1.Text = strLableText;
-            StartPosition = FormStartPosition.CenterScreen;
-            TopMost = true;
-            Top = Top - 235;
+                Width = 105;
+                labelNickName.Text = strNickName;
+                if (!String.IsNullOrEmpty(strLableText))
+                    label1.Text = strLableText;
+                StartPosition = FormStartPosition.CenterScreen;
+                TopMost = true;
+                Top = Top - 235;
 
-            Visible = true;
+                Visible = true;
 
-            timer1.Start();
+                timer1.Start();
+            }
+            catch (Exception ex)
+            {
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+            }
         }
 
         private void Timer1_Tick(object sender, EventArgs e)

@@ -55,21 +55,21 @@ namespace POExileDirection
         {
             listResult.Items.Clear();
             
-            foreach (var item in NinjaTranslation.RegionMapOLT)
+            foreach (var item in DeadlyTranslation.RegionMapOLT)
             {
                 string strSearch = String.Empty;
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transWhiteMaps.ContainsKey(item))
-                        strSearch = NinjaTranslation.transWhiteMaps[item];
+                    if (DeadlyTranslation.transWhiteMaps.ContainsKey(item))
+                        strSearch = DeadlyTranslation.transWhiteMaps[item];
                 }
                 else
                     strSearch = item;
 
                 if (String.IsNullOrEmpty(strSearch))
                 {
-                    if (NinjaTranslation.transUniqueMaps.ContainsKey(item))
-                        strSearch = NinjaTranslation.transUniqueMaps[item];
+                    if (DeadlyTranslation.transUniqueMaps.ContainsKey(item))
+                        strSearch = DeadlyTranslation.transUniqueMaps[item];
                 }
 
                 ListViewItem lvItem = new ListViewItem();
@@ -124,21 +124,21 @@ namespace POExileDirection
         {
             listResult.Items.Clear();
 
-            foreach (var item in NinjaTranslation.RegionMapORT)
+            foreach (var item in DeadlyTranslation.RegionMapORT)
             {
                 string strSearch = String.Empty;
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transWhiteMaps.ContainsKey(item))
-                        strSearch = NinjaTranslation.transWhiteMaps[item];
+                    if (DeadlyTranslation.transWhiteMaps.ContainsKey(item))
+                        strSearch = DeadlyTranslation.transWhiteMaps[item];
                 }
                 else
                     strSearch = item;
 
                 if (String.IsNullOrEmpty(strSearch))
                 {
-                    if (NinjaTranslation.transUniqueMaps.ContainsKey(item))
-                        strSearch = NinjaTranslation.transUniqueMaps[item];
+                    if (DeadlyTranslation.transUniqueMaps.ContainsKey(item))
+                        strSearch = DeadlyTranslation.transUniqueMaps[item];
                 }
 
                 ListViewItem lvItem = new ListViewItem();
@@ -169,21 +169,21 @@ namespace POExileDirection
         {
             listResult.Items.Clear();
 
-            foreach (var item in NinjaTranslation.RegionMapOLB)
+            foreach (var item in DeadlyTranslation.RegionMapOLB)
             {
                 string strSearch = String.Empty;
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transWhiteMaps.ContainsKey(item))
-                        strSearch = NinjaTranslation.transWhiteMaps[item];
+                    if (DeadlyTranslation.transWhiteMaps.ContainsKey(item))
+                        strSearch = DeadlyTranslation.transWhiteMaps[item];
                 }
                 else
                     strSearch = item;
 
                 if (String.IsNullOrEmpty(strSearch))
                 {
-                    if (NinjaTranslation.transUniqueMaps.ContainsKey(item))
-                        strSearch = NinjaTranslation.transUniqueMaps[item];
+                    if (DeadlyTranslation.transUniqueMaps.ContainsKey(item))
+                        strSearch = DeadlyTranslation.transUniqueMaps[item];
                 }
 
                 ListViewItem lvItem = new ListViewItem();
@@ -214,21 +214,21 @@ namespace POExileDirection
         {
             listResult.Items.Clear();
 
-            foreach (var item in NinjaTranslation.RegionMapORB)
+            foreach (var item in DeadlyTranslation.RegionMapORB)
             {
                 string strSearch = String.Empty;
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transWhiteMaps.ContainsKey(item))
-                        strSearch = NinjaTranslation.transWhiteMaps[item];
+                    if (DeadlyTranslation.transWhiteMaps.ContainsKey(item))
+                        strSearch = DeadlyTranslation.transWhiteMaps[item];
                 }
                 else
                     strSearch = item;
 
                 if (String.IsNullOrEmpty(strSearch))
                 {
-                    if (NinjaTranslation.transUniqueMaps.ContainsKey(item))
-                        strSearch = NinjaTranslation.transUniqueMaps[item];
+                    if (DeadlyTranslation.transUniqueMaps.ContainsKey(item))
+                        strSearch = DeadlyTranslation.transUniqueMaps[item];
                 }
 
                 ListViewItem lvItem = new ListViewItem();
@@ -259,21 +259,21 @@ namespace POExileDirection
         {
             listResult.Items.Clear();
 
-            foreach (var item in NinjaTranslation.RegionMapILT)
+            foreach (var item in DeadlyTranslation.RegionMapILT)
             {
                 string strSearch = String.Empty;
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transWhiteMaps.ContainsKey(item))
-                        strSearch = NinjaTranslation.transWhiteMaps[item];
+                    if (DeadlyTranslation.transWhiteMaps.ContainsKey(item))
+                        strSearch = DeadlyTranslation.transWhiteMaps[item];
                 }
                 else
                     strSearch = item;
 
                 if (String.IsNullOrEmpty(strSearch))
                 {
-                    if (NinjaTranslation.transUniqueMaps.ContainsKey(item))
-                        strSearch = NinjaTranslation.transUniqueMaps[item];
+                    if (DeadlyTranslation.transUniqueMaps.ContainsKey(item))
+                        strSearch = DeadlyTranslation.transUniqueMaps[item];
                 }
 
                 ListViewItem lvItem = new ListViewItem();
@@ -304,21 +304,21 @@ namespace POExileDirection
         {
             listResult.Items.Clear();
 
-            foreach (var item in NinjaTranslation.RegionMapIRT)
+            foreach (var item in DeadlyTranslation.RegionMapIRT)
             {
                 string strSearch = String.Empty;
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transWhiteMaps.ContainsKey(item))
-                        strSearch = NinjaTranslation.transWhiteMaps[item];
+                    if (DeadlyTranslation.transWhiteMaps.ContainsKey(item))
+                        strSearch = DeadlyTranslation.transWhiteMaps[item];
                 }
                 else
                     strSearch = item;
 
                 if (String.IsNullOrEmpty(strSearch))
                 {
-                    if (NinjaTranslation.transUniqueMaps.ContainsKey(item))
-                        strSearch = NinjaTranslation.transUniqueMaps[item];
+                    if (DeadlyTranslation.transUniqueMaps.ContainsKey(item))
+                        strSearch = DeadlyTranslation.transUniqueMaps[item];
                 }
 
                 ListViewItem lvItem = new ListViewItem();
@@ -349,21 +349,21 @@ namespace POExileDirection
         {
             listResult.Items.Clear();
 
-            foreach (var item in NinjaTranslation.RegionMapILB)
+            foreach (var item in DeadlyTranslation.RegionMapILB)
             {
                 string strSearch = String.Empty;
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transWhiteMaps.ContainsKey(item))
-                        strSearch = NinjaTranslation.transWhiteMaps[item];
+                    if (DeadlyTranslation.transWhiteMaps.ContainsKey(item))
+                        strSearch = DeadlyTranslation.transWhiteMaps[item];
                 }
                 else
                     strSearch = item;
 
                 if (String.IsNullOrEmpty(strSearch))
                 {
-                    if (NinjaTranslation.transUniqueMaps.ContainsKey(item))
-                        strSearch = NinjaTranslation.transUniqueMaps[item];
+                    if (DeadlyTranslation.transUniqueMaps.ContainsKey(item))
+                        strSearch = DeadlyTranslation.transUniqueMaps[item];
                 }
 
                 ListViewItem lvItem = new ListViewItem();
@@ -401,21 +401,21 @@ namespace POExileDirection
         {
             listResult.Items.Clear();
 
-            foreach (var item in NinjaTranslation.RegionMapIRB)
+            foreach (var item in DeadlyTranslation.RegionMapIRB)
             {
                 string strSearch = String.Empty;
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transWhiteMaps.ContainsKey(item))
-                        strSearch = NinjaTranslation.transWhiteMaps[item];
+                    if (DeadlyTranslation.transWhiteMaps.ContainsKey(item))
+                        strSearch = DeadlyTranslation.transWhiteMaps[item];
                 }
                 else
                     strSearch = item;
 
                 if (String.IsNullOrEmpty(strSearch))
                 {
-                    if (NinjaTranslation.transUniqueMaps.ContainsKey(item))
-                        strSearch = NinjaTranslation.transUniqueMaps[item];
+                    if (DeadlyTranslation.transUniqueMaps.ContainsKey(item))
+                        strSearch = DeadlyTranslation.transUniqueMaps[item];
                 }                
 
                 ListViewItem lvItem = new ListViewItem();

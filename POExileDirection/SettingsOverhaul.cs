@@ -41,6 +41,11 @@ namespace POExileDirection
 
         // TAB INDEX
         public int _nTabIndex = 0;
+
+        // DRAG
+        private int nMoving = 0;
+        private int nMovePosX = 0;
+        private int nMovePosY = 0;
         #endregion
 
         protected override CreateParams CreateParams
@@ -96,7 +101,7 @@ namespace POExileDirection
             {
                 // Set ImageList
                 var imageList = new ImageList();
-                foreach (var obj in NinjaTranslation.FlaskImgPath)
+                foreach (var obj in DeadlyTranslation.FlaskImgPath)
                 {
                     try
                     {
@@ -270,15 +275,15 @@ namespace POExileDirection
 
             // Flask Image
             pictureFlask1.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(0)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(0)]);
             pictureFlask2.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(1)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(1)]);
             pictureFlask3.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(2)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(2)]);
             pictureFlask4.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(3)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(3)]);
             pictureFlask5.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(4)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(4)]);
 
             // Use Sound Alert.
             if (LauncherForm.g_strTimerSound1 == "Y")
@@ -646,6 +651,28 @@ namespace POExileDirection
         }
         #endregion
 
+        #region [[[[[ Form Drag Moving ]]]]]
+        private void label16_MouseDown(object sender, MouseEventArgs e)
+        {
+            nMoving = 1;
+            nMovePosX = e.X;
+            nMovePosY = e.Y;
+        }
+
+        private void label16_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (nMoving == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - nMovePosX, MousePosition.Y - nMovePosY);
+            }
+        }
+
+        private void label16_MouseUp(object sender, MouseEventArgs e)
+        {
+            nMoving = 0;
+        }
+        #endregion
+
         #region [[[[[ Dispose & Close ]]]]]
         private void btnCloseSettings_Click(object sender, EventArgs e)
         {
@@ -663,7 +690,7 @@ namespace POExileDirection
             pictureFlask3.Dispose();
             pictureFlask4.Dispose();
             pictureFlask5.Dispose();
-        } 
+        }
         #endregion
     }
 }

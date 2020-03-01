@@ -104,8 +104,8 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.launcherTimer = new System.Windows.Forms.Timer(this.components);
             this.timerDetect = new System.Windows.Forms.Timer(this.components);
-            this.timerPatchNote = new System.Windows.Forms.Timer(this.components);
             this.timerScrolling = new System.Windows.Forms.Timer(this.components);
+            this.timerCheckFocus = new System.Windows.Forms.Timer(this.components);
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
@@ -981,6 +981,10 @@
             // 
             this.timerScrolling.Tick += new System.EventHandler(this.timerScrolling_Tick);
             // 
+            // timerCheckFocus
+            // 
+            this.timerCheckFocus.Tick += new System.EventHandler(this.timerCheckFocus_Tick);
+            // 
             // LauncherForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -1095,7 +1099,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label labelUpdateTitle;
         private System.Windows.Forms.Label labelPatchNote;
-        private System.Windows.Forms.Timer timerPatchNote;
         private System.Windows.Forms.Button btnExitAndUpdate;
         private System.Windows.Forms.Button btnHide;
         private System.Windows.Forms.Timer timerScrolling;
@@ -1106,5 +1109,6 @@
         private System.Windows.Forms.Button btnForceLogin;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Timer timerCheckFocus;
     }
 }

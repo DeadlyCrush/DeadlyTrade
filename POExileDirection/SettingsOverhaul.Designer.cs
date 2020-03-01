@@ -29,37 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsOverhaul));
-            this.panelTop = new System.Windows.Forms.Panel();
-            this.btnCloseSettings = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
             this.FlatSettingTab = new XanderUI.XUIFlatTab();
             this.tabHotKeys = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.checkEmergency = new System.Windows.Forms.CheckBox();
-            this.checkFindbyPosition = new System.Windows.Forms.CheckBox();
-            this.checkAtlasZANA = new System.Windows.Forms.CheckBox();
-            this.checkTempleALVA = new System.Windows.Forms.CheckBox();
-            this.checkHideout = new System.Windows.Forms.CheckBox();
-            this.checkSyndicateJUN = new System.Windows.Forms.CheckBox();
-            this.checkRemaining = new System.Windows.Forms.CheckBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBoxEXIT = new System.Windows.Forms.TextBox();
-            this.textBoxPositionSearch = new System.Windows.Forms.TextBox();
-            this.textHideout = new System.Windows.Forms.TextBox();
-            this.textZANA = new System.Windows.Forms.TextBox();
-            this.textALVA = new System.Windows.Forms.TextBox();
-            this.textJUN = new System.Windows.Forms.TextBox();
-            this.textRemains = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.btnSaveTab2 = new System.Windows.Forms.Button();
             this.btnCancelTab2 = new System.Windows.Forms.Button();
             this.labelVolume = new System.Windows.Forms.Label();
@@ -73,6 +52,9 @@
             this.textBoxDone = new System.Windows.Forms.TextBox();
             this.textBoxCustom3 = new System.Windows.Forms.TextBox();
             this.textBoxCustom2 = new System.Windows.Forms.TextBox();
+            this.textBoxCustomTitle3 = new System.Windows.Forms.TextBox();
+            this.textBoxCustomTitle2 = new System.Windows.Forms.TextBox();
+            this.textBoxCustomTitle1 = new System.Windows.Forms.TextBox();
             this.textBoxCustom1 = new System.Windows.Forms.TextBox();
             this.textBoxSold = new System.Windows.Forms.TextBox();
             this.textBoxWait = new System.Windows.Forms.TextBox();
@@ -82,6 +64,11 @@
             this.label44 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.panelSetFlaskImage = new System.Windows.Forms.Panel();
+            this.labelFlaskNumber = new System.Windows.Forms.Label();
+            this.btnFlaskOK = new System.Windows.Forms.Button();
+            this.btnFlaskCancel = new System.Windows.Forms.Button();
+            this.listViewFlaskImage = new System.Windows.Forms.ListView();
             this.btnSaveTab3 = new System.Windows.Forms.Button();
             this.btnCancelTab3 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -160,22 +147,40 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.panelSetFlaskImage = new System.Windows.Forms.Panel();
-            this.labelFlaskNumber = new System.Windows.Forms.Label();
-            this.btnFlaskOK = new System.Windows.Forms.Button();
-            this.btnFlaskCancel = new System.Windows.Forms.Button();
-            this.listViewFlaskImage = new System.Windows.Forms.ListView();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.textHotKeyKickLeave = new System.Windows.Forms.TextBox();
             this.textHotKeyTradeRequest = new System.Windows.Forms.TextBox();
             this.textHotKeyInvite = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.checkEmergency = new System.Windows.Forms.CheckBox();
+            this.checkFindbyPosition = new System.Windows.Forms.CheckBox();
+            this.checkAtlasZANA = new System.Windows.Forms.CheckBox();
+            this.checkTempleALVA = new System.Windows.Forms.CheckBox();
+            this.checkHideout = new System.Windows.Forms.CheckBox();
+            this.checkSyndicateJUN = new System.Windows.Forms.CheckBox();
+            this.checkRemaining = new System.Windows.Forms.CheckBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBoxEXIT = new System.Windows.Forms.TextBox();
+            this.textBoxPositionSearch = new System.Windows.Forms.TextBox();
+            this.textHideout = new System.Windows.Forms.TextBox();
+            this.textZANA = new System.Windows.Forms.TextBox();
+            this.textALVA = new System.Windows.Forms.TextBox();
+            this.textJUN = new System.Windows.Forms.TextBox();
+            this.textRemains = new System.Windows.Forms.TextBox();
+            this.btnCloseSettings = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.btnSearchStash = new System.Windows.Forms.Button();
@@ -210,21 +215,15 @@
             this.btnS3 = new System.Windows.Forms.Button();
             this.btnS2 = new System.Windows.Forms.Button();
             this.btnS1 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBoxCustomTitle1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.textBoxCustomTitle2 = new System.Windows.Forms.TextBox();
-            this.textBoxCustomTitle3 = new System.Windows.Forms.TextBox();
-            this.panelTop.SuspendLayout();
+            this.panelTop = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
             this.FlatSettingTab.SuspendLayout();
             this.tabHotKeys.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             this.panelSetFlaskImage.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -234,51 +233,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask1)).BeginInit();
+            this.panelTop.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panelTop
-            // 
-            this.panelTop.Controls.Add(this.btnCloseSettings);
-            this.panelTop.Controls.Add(this.button6);
-            this.panelTop.Controls.Add(this.label16);
-            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(800, 40);
-            this.panelTop.TabIndex = 1;
-            // 
-            // btnCloseSettings
-            // 
-            this.btnCloseSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
-            this.btnCloseSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCloseSettings.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCloseSettings.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCloseSettings.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnCloseSettings.FlatAppearance.BorderSize = 0;
-            this.btnCloseSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCloseSettings.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnCloseSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.btnCloseSettings.Location = new System.Drawing.Point(774, 10);
-            this.btnCloseSettings.Name = "btnCloseSettings";
-            this.btnCloseSettings.Size = new System.Drawing.Size(17, 17);
-            this.btnCloseSettings.TabIndex = 5;
-            this.btnCloseSettings.TabStop = false;
-            this.btnCloseSettings.Text = "X";
-            this.btnCloseSettings.UseVisualStyleBackColor = false;
-            this.btnCloseSettings.Click += new System.EventHandler(this.btnCloseSettings_Click);
-            // 
-            // label16
-            // 
-            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
-            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label16.Location = new System.Drawing.Point(0, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(800, 40);
-            this.label16.TabIndex = 7;
-            this.label16.Text = "DeadlyTrade Settings";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FlatSettingTab
             // 
@@ -317,338 +273,6 @@
             this.tabHotKeys.Size = new System.Drawing.Size(792, 536);
             this.tabHotKeys.TabIndex = 0;
             this.tabHotKeys.Text = "Hot Keys";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button9);
-            this.panel1.Controls.Add(this.textHotKeyKickLeave);
-            this.panel1.Controls.Add(this.textHotKeyTradeRequest);
-            this.panel1.Controls.Add(this.textHotKeyInvite);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.btnSave);
-            this.panel1.Controls.Add(this.btnCancel);
-            this.panel1.Controls.Add(this.checkEmergency);
-            this.panel1.Controls.Add(this.checkFindbyPosition);
-            this.panel1.Controls.Add(this.checkAtlasZANA);
-            this.panel1.Controls.Add(this.checkTempleALVA);
-            this.panel1.Controls.Add(this.checkHideout);
-            this.panel1.Controls.Add(this.checkSyndicateJUN);
-            this.panel1.Controls.Add(this.checkRemaining);
-            this.panel1.Controls.Add(this.btnSearchStash);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.label48);
-            this.panel1.Controls.Add(this.label67);
-            this.panel1.Controls.Add(this.label20);
-            this.panel1.Controls.Add(this.label19);
-            this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.textBoxEXIT);
-            this.panel1.Controls.Add(this.textBoxPositionSearch);
-            this.panel1.Controls.Add(this.textHideout);
-            this.panel1.Controls.Add(this.textZANA);
-            this.panel1.Controls.Add(this.textALVA);
-            this.panel1.Controls.Add(this.textJUN);
-            this.panel1.Controls.Add(this.textRemains);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(792, 536);
-            this.panel1.TabIndex = 8;
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.btnSave.Location = new System.Drawing.Point(634, 449);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(72, 26);
-            this.btnSave.TabIndex = 64;
-            this.btnSave.Text = "SAVE";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnCancel.Location = new System.Drawing.Point(712, 449);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(72, 26);
-            this.btnCancel.TabIndex = 65;
-            this.btnCancel.Text = "CANCEL";
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // checkEmergency
-            // 
-            this.checkEmergency.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkEmergency.ForeColor = System.Drawing.Color.Silver;
-            this.checkEmergency.Location = new System.Drawing.Point(59, 362);
-            this.checkEmergency.Name = "checkEmergency";
-            this.checkEmergency.Size = new System.Drawing.Size(16, 16);
-            this.checkEmergency.TabIndex = 63;
-            this.checkEmergency.UseVisualStyleBackColor = false;
-            // 
-            // checkFindbyPosition
-            // 
-            this.checkFindbyPosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkFindbyPosition.ForeColor = System.Drawing.Color.Silver;
-            this.checkFindbyPosition.Location = new System.Drawing.Point(59, 319);
-            this.checkFindbyPosition.Name = "checkFindbyPosition";
-            this.checkFindbyPosition.Size = new System.Drawing.Size(16, 16);
-            this.checkFindbyPosition.TabIndex = 62;
-            this.checkFindbyPosition.UseVisualStyleBackColor = false;
-            // 
-            // checkAtlasZANA
-            // 
-            this.checkAtlasZANA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkAtlasZANA.ForeColor = System.Drawing.Color.Silver;
-            this.checkAtlasZANA.Location = new System.Drawing.Point(59, 235);
-            this.checkAtlasZANA.Name = "checkAtlasZANA";
-            this.checkAtlasZANA.Size = new System.Drawing.Size(16, 16);
-            this.checkAtlasZANA.TabIndex = 61;
-            this.checkAtlasZANA.UseVisualStyleBackColor = false;
-            // 
-            // checkTempleALVA
-            // 
-            this.checkTempleALVA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkTempleALVA.ForeColor = System.Drawing.Color.Silver;
-            this.checkTempleALVA.Location = new System.Drawing.Point(59, 196);
-            this.checkTempleALVA.Name = "checkTempleALVA";
-            this.checkTempleALVA.Size = new System.Drawing.Size(16, 16);
-            this.checkTempleALVA.TabIndex = 60;
-            this.checkTempleALVA.UseVisualStyleBackColor = false;
-            // 
-            // checkHideout
-            // 
-            this.checkHideout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkHideout.ForeColor = System.Drawing.Color.Silver;
-            this.checkHideout.Location = new System.Drawing.Point(59, 280);
-            this.checkHideout.Name = "checkHideout";
-            this.checkHideout.Size = new System.Drawing.Size(16, 16);
-            this.checkHideout.TabIndex = 59;
-            this.checkHideout.UseVisualStyleBackColor = false;
-            // 
-            // checkSyndicateJUN
-            // 
-            this.checkSyndicateJUN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkSyndicateJUN.ForeColor = System.Drawing.Color.Silver;
-            this.checkSyndicateJUN.Location = new System.Drawing.Point(59, 153);
-            this.checkSyndicateJUN.Name = "checkSyndicateJUN";
-            this.checkSyndicateJUN.Size = new System.Drawing.Size(16, 16);
-            this.checkSyndicateJUN.TabIndex = 58;
-            this.checkSyndicateJUN.UseVisualStyleBackColor = false;
-            // 
-            // checkRemaining
-            // 
-            this.checkRemaining.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkRemaining.ForeColor = System.Drawing.Color.Silver;
-            this.checkRemaining.Location = new System.Drawing.Point(59, 108);
-            this.checkRemaining.Name = "checkRemaining";
-            this.checkRemaining.Size = new System.Drawing.Size(16, 16);
-            this.checkRemaining.TabIndex = 51;
-            this.checkRemaining.UseVisualStyleBackColor = false;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label48.Location = new System.Drawing.Point(81, 322);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(113, 15);
-            this.label48.TabIndex = 8;
-            this.label48.Text = "Find Item by ( X , Y )";
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label67.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label67.Location = new System.Drawing.Point(81, 364);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(78, 15);
-            this.label67.TabIndex = 8;
-            this.label67.Text = "Emergency!!!";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label20.Location = new System.Drawing.Point(81, 282);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(82, 15);
-            this.label20.TabIndex = 8;
-            this.label20.Text = "Go to Hideout";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label19.Location = new System.Drawing.Point(81, 237);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(85, 15);
-            this.label19.TabIndex = 9;
-            this.label19.Text = "ATLAS Overlay";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label18.Location = new System.Drawing.Point(81, 197);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(101, 15);
-            this.label18.TabIndex = 10;
-            this.label18.Text = "Incursion Overlay";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label17.Location = new System.Drawing.Point(81, 153);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(103, 15);
-            this.label17.TabIndex = 11;
-            this.label17.Text = "Syndicate Overlay";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label2.Location = new System.Drawing.Point(81, 111);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 15);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Monster Remains";
-            // 
-            // label13
-            // 
-            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
-            this.label13.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label13.Location = new System.Drawing.Point(0, 484);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(792, 52);
-            this.label13.TabIndex = 5;
-            this.label13.Text = "Check Other Addon or Macro Hot Keys. Error will occure If duplicated.";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBoxEXIT
-            // 
-            this.textBoxEXIT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
-            this.textBoxEXIT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxEXIT.ForeColor = System.Drawing.Color.White;
-            this.textBoxEXIT.Location = new System.Drawing.Point(284, 357);
-            this.textBoxEXIT.Name = "textBoxEXIT";
-            this.textBoxEXIT.ReadOnly = true;
-            this.textBoxEXIT.Size = new System.Drawing.Size(164, 21);
-            this.textBoxEXIT.TabIndex = 3;
-            this.textBoxEXIT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxEXIT.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEXIT_KeyDown);
-            // 
-            // textBoxPositionSearch
-            // 
-            this.textBoxPositionSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
-            this.textBoxPositionSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxPositionSearch.ForeColor = System.Drawing.Color.White;
-            this.textBoxPositionSearch.Location = new System.Drawing.Point(284, 315);
-            this.textBoxPositionSearch.Name = "textBoxPositionSearch";
-            this.textBoxPositionSearch.ReadOnly = true;
-            this.textBoxPositionSearch.Size = new System.Drawing.Size(164, 21);
-            this.textBoxPositionSearch.TabIndex = 3;
-            this.textBoxPositionSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxPositionSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxPositionSearch_KeyDown);
-            // 
-            // textHideout
-            // 
-            this.textHideout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
-            this.textHideout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textHideout.ForeColor = System.Drawing.Color.White;
-            this.textHideout.Location = new System.Drawing.Point(284, 274);
-            this.textHideout.Name = "textHideout";
-            this.textHideout.ReadOnly = true;
-            this.textHideout.Size = new System.Drawing.Size(164, 21);
-            this.textHideout.TabIndex = 3;
-            this.textHideout.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textHideout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textHideout_KeyDown);
-            // 
-            // textZANA
-            // 
-            this.textZANA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
-            this.textZANA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textZANA.ForeColor = System.Drawing.Color.White;
-            this.textZANA.Location = new System.Drawing.Point(284, 232);
-            this.textZANA.Name = "textZANA";
-            this.textZANA.ReadOnly = true;
-            this.textZANA.Size = new System.Drawing.Size(164, 21);
-            this.textZANA.TabIndex = 3;
-            this.textZANA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textZANA.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textZANA_KeyDown);
-            // 
-            // textALVA
-            // 
-            this.textALVA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
-            this.textALVA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textALVA.ForeColor = System.Drawing.Color.White;
-            this.textALVA.Location = new System.Drawing.Point(284, 192);
-            this.textALVA.Name = "textALVA";
-            this.textALVA.ReadOnly = true;
-            this.textALVA.Size = new System.Drawing.Size(164, 21);
-            this.textALVA.TabIndex = 3;
-            this.textALVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textALVA.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textALVA_KeyDown);
-            // 
-            // textJUN
-            // 
-            this.textJUN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
-            this.textJUN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textJUN.ForeColor = System.Drawing.Color.White;
-            this.textJUN.Location = new System.Drawing.Point(284, 148);
-            this.textJUN.Name = "textJUN";
-            this.textJUN.ReadOnly = true;
-            this.textJUN.Size = new System.Drawing.Size(164, 21);
-            this.textJUN.TabIndex = 3;
-            this.textJUN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textJUN.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textJUN_KeyDown);
-            // 
-            // textRemains
-            // 
-            this.textRemains.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
-            this.textRemains.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textRemains.ForeColor = System.Drawing.Color.White;
-            this.textRemains.Location = new System.Drawing.Point(284, 106);
-            this.textRemains.Name = "textRemains";
-            this.textRemains.ReadOnly = true;
-            this.textRemains.Size = new System.Drawing.Size(164, 21);
-            this.textRemains.TabIndex = 3;
-            this.textRemains.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textRemains.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textRemains_KeyDown);
             // 
             // tabPage2
             // 
@@ -701,6 +325,86 @@
             this.tabPage2.Size = new System.Drawing.Size(792, 536);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Trade Panel";
+            // 
+            // label23
+            // 
+            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label23.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label23.Location = new System.Drawing.Point(660, 169);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(98, 24);
+            this.label23.TabIndex = 76;
+            this.label23.Text = "AUTO KICK";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label21
+            // 
+            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label21.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label21.Location = new System.Drawing.Point(307, 169);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(268, 24);
+            this.label21.TabIndex = 76;
+            this.label21.Text = "MESSAGE";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label3.Location = new System.Drawing.Point(99, 169);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 24);
+            this.label3.TabIndex = 76;
+            this.label3.Text = "TITLE";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label12.Location = new System.Drawing.Point(608, 22);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(150, 15);
+            this.label12.TabIndex = 75;
+            this.label12.Text = "Use Sound Alert";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label8.Location = new System.Drawing.Point(623, 426);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(120, 15);
+            this.label8.TabIndex = 74;
+            this.label8.Text = "Auto Kick or Leave";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label7.Location = new System.Drawing.Point(614, 396);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(120, 15);
+            this.label7.TabIndex = 73;
+            this.label7.Text = "Auto Kick or Leave";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label4.Location = new System.Drawing.Point(639, 363);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(120, 15);
+            this.label4.TabIndex = 72;
+            this.label4.Text = "Auto Kick or Leave";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnSaveTab2
             // 
@@ -859,6 +563,39 @@
             this.textBoxCustom2.Size = new System.Drawing.Size(354, 21);
             this.textBoxCustom2.TabIndex = 37;
             // 
+            // textBoxCustomTitle3
+            // 
+            this.textBoxCustomTitle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.textBoxCustomTitle3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxCustomTitle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.textBoxCustomTitle3.Location = new System.Drawing.Point(159, 440);
+            this.textBoxCustomTitle3.Name = "textBoxCustomTitle3";
+            this.textBoxCustomTitle3.Size = new System.Drawing.Size(61, 21);
+            this.textBoxCustomTitle3.TabIndex = 37;
+            this.textBoxCustomTitle3.TextChanged += new System.EventHandler(this.textBoxCustomTitle3_TextChanged);
+            // 
+            // textBoxCustomTitle2
+            // 
+            this.textBoxCustomTitle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.textBoxCustomTitle2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxCustomTitle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.textBoxCustomTitle2.Location = new System.Drawing.Point(146, 395);
+            this.textBoxCustomTitle2.Name = "textBoxCustomTitle2";
+            this.textBoxCustomTitle2.Size = new System.Drawing.Size(61, 21);
+            this.textBoxCustomTitle2.TabIndex = 37;
+            this.textBoxCustomTitle2.TextChanged += new System.EventHandler(this.textBoxCustomTitle2_TextChanged);
+            // 
+            // textBoxCustomTitle1
+            // 
+            this.textBoxCustomTitle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.textBoxCustomTitle1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxCustomTitle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.textBoxCustomTitle1.Location = new System.Drawing.Point(159, 363);
+            this.textBoxCustomTitle1.Name = "textBoxCustomTitle1";
+            this.textBoxCustomTitle1.Size = new System.Drawing.Size(61, 21);
+            this.textBoxCustomTitle1.TabIndex = 37;
+            this.textBoxCustomTitle1.TextChanged += new System.EventHandler(this.textBoxCustomTitle1_TextChanged);
+            // 
             // textBoxCustom1
             // 
             this.textBoxCustom1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
@@ -1004,6 +741,68 @@
             this.tabPage3.Size = new System.Drawing.Size(792, 536);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Flask Timer";
+            // 
+            // panelSetFlaskImage
+            // 
+            this.panelSetFlaskImage.Controls.Add(this.labelFlaskNumber);
+            this.panelSetFlaskImage.Controls.Add(this.btnFlaskOK);
+            this.panelSetFlaskImage.Controls.Add(this.btnFlaskCancel);
+            this.panelSetFlaskImage.Controls.Add(this.listViewFlaskImage);
+            this.panelSetFlaskImage.Location = new System.Drawing.Point(32, 116);
+            this.panelSetFlaskImage.Name = "panelSetFlaskImage";
+            this.panelSetFlaskImage.Size = new System.Drawing.Size(47, 189);
+            this.panelSetFlaskImage.TabIndex = 99;
+            this.panelSetFlaskImage.Visible = false;
+            // 
+            // labelFlaskNumber
+            // 
+            this.labelFlaskNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.labelFlaskNumber.Location = new System.Drawing.Point(0, 238);
+            this.labelFlaskNumber.Name = "labelFlaskNumber";
+            this.labelFlaskNumber.Size = new System.Drawing.Size(179, 23);
+            this.labelFlaskNumber.TabIndex = 13;
+            this.labelFlaskNumber.Text = "Flask #1";
+            this.labelFlaskNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnFlaskOK
+            // 
+            this.btnFlaskOK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
+            this.btnFlaskOK.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFlaskOK.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
+            this.btnFlaskOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFlaskOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.btnFlaskOK.Location = new System.Drawing.Point(263, 237);
+            this.btnFlaskOK.Name = "btnFlaskOK";
+            this.btnFlaskOK.Size = new System.Drawing.Size(72, 26);
+            this.btnFlaskOK.TabIndex = 1;
+            this.btnFlaskOK.Text = "Select";
+            this.btnFlaskOK.UseVisualStyleBackColor = false;
+            // 
+            // btnFlaskCancel
+            // 
+            this.btnFlaskCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
+            this.btnFlaskCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFlaskCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
+            this.btnFlaskCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFlaskCancel.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnFlaskCancel.Location = new System.Drawing.Point(185, 237);
+            this.btnFlaskCancel.Name = "btnFlaskCancel";
+            this.btnFlaskCancel.Size = new System.Drawing.Size(72, 26);
+            this.btnFlaskCancel.TabIndex = 1;
+            this.btnFlaskCancel.Text = "Cancel";
+            this.btnFlaskCancel.UseVisualStyleBackColor = false;
+            // 
+            // listViewFlaskImage
+            // 
+            this.listViewFlaskImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
+            this.listViewFlaskImage.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listViewFlaskImage.HideSelection = false;
+            this.listViewFlaskImage.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.listViewFlaskImage.Location = new System.Drawing.Point(0, 0);
+            this.listViewFlaskImage.Name = "listViewFlaskImage";
+            this.listViewFlaskImage.Size = new System.Drawing.Size(335, 230);
+            this.listViewFlaskImage.TabIndex = 12;
+            this.listViewFlaskImage.UseCompatibleStateImageBehavior = false;
             // 
             // btnSaveTab3
             // 
@@ -1896,111 +1695,57 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Hall Of Fame";
             // 
-            // label4
+            // panel1
             // 
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label4.Location = new System.Drawing.Point(639, 363);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 15);
-            this.label4.TabIndex = 72;
-            this.label4.Text = "Auto Kick or Leave";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label7.Location = new System.Drawing.Point(614, 396);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 15);
-            this.label7.TabIndex = 73;
-            this.label7.Text = "Auto Kick or Leave";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label8.Location = new System.Drawing.Point(623, 426);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(120, 15);
-            this.label8.TabIndex = 74;
-            this.label8.Text = "Auto Kick or Leave";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label12
-            // 
-            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label12.Location = new System.Drawing.Point(608, 22);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(150, 15);
-            this.label12.TabIndex = 75;
-            this.label12.Text = "Use Sound Alert";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panelSetFlaskImage
-            // 
-            this.panelSetFlaskImage.Controls.Add(this.labelFlaskNumber);
-            this.panelSetFlaskImage.Controls.Add(this.btnFlaskOK);
-            this.panelSetFlaskImage.Controls.Add(this.btnFlaskCancel);
-            this.panelSetFlaskImage.Controls.Add(this.listViewFlaskImage);
-            this.panelSetFlaskImage.Location = new System.Drawing.Point(32, 116);
-            this.panelSetFlaskImage.Name = "panelSetFlaskImage";
-            this.panelSetFlaskImage.Size = new System.Drawing.Size(47, 189);
-            this.panelSetFlaskImage.TabIndex = 99;
-            this.panelSetFlaskImage.Visible = false;
-            // 
-            // labelFlaskNumber
-            // 
-            this.labelFlaskNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.labelFlaskNumber.Location = new System.Drawing.Point(0, 238);
-            this.labelFlaskNumber.Name = "labelFlaskNumber";
-            this.labelFlaskNumber.Size = new System.Drawing.Size(179, 23);
-            this.labelFlaskNumber.TabIndex = 13;
-            this.labelFlaskNumber.Text = "Flask #1";
-            this.labelFlaskNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btnFlaskOK
-            // 
-            this.btnFlaskOK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
-            this.btnFlaskOK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFlaskOK.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.btnFlaskOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFlaskOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.btnFlaskOK.Location = new System.Drawing.Point(263, 237);
-            this.btnFlaskOK.Name = "btnFlaskOK";
-            this.btnFlaskOK.Size = new System.Drawing.Size(72, 26);
-            this.btnFlaskOK.TabIndex = 1;
-            this.btnFlaskOK.Text = "Select";
-            this.btnFlaskOK.UseVisualStyleBackColor = false;
-            // 
-            // btnFlaskCancel
-            // 
-            this.btnFlaskCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
-            this.btnFlaskCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFlaskCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.btnFlaskCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFlaskCancel.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnFlaskCancel.Location = new System.Drawing.Point(185, 237);
-            this.btnFlaskCancel.Name = "btnFlaskCancel";
-            this.btnFlaskCancel.Size = new System.Drawing.Size(72, 26);
-            this.btnFlaskCancel.TabIndex = 1;
-            this.btnFlaskCancel.Text = "Cancel";
-            this.btnFlaskCancel.UseVisualStyleBackColor = false;
-            // 
-            // listViewFlaskImage
-            // 
-            this.listViewFlaskImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
-            this.listViewFlaskImage.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listViewFlaskImage.HideSelection = false;
-            this.listViewFlaskImage.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.listViewFlaskImage.Location = new System.Drawing.Point(0, 0);
-            this.listViewFlaskImage.Name = "listViewFlaskImage";
-            this.listViewFlaskImage.Size = new System.Drawing.Size(335, 230);
-            this.listViewFlaskImage.TabIndex = 12;
-            this.listViewFlaskImage.UseCompatibleStateImageBehavior = false;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.panel1.Controls.Add(this.btnCloseSettings);
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.textHotKeyKickLeave);
+            this.panel1.Controls.Add(this.textHotKeyTradeRequest);
+            this.panel1.Controls.Add(this.textHotKeyInvite);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.btnSave);
+            this.panel1.Controls.Add(this.btnCancel);
+            this.panel1.Controls.Add(this.checkEmergency);
+            this.panel1.Controls.Add(this.checkFindbyPosition);
+            this.panel1.Controls.Add(this.checkAtlasZANA);
+            this.panel1.Controls.Add(this.checkTempleALVA);
+            this.panel1.Controls.Add(this.checkHideout);
+            this.panel1.Controls.Add(this.checkSyndicateJUN);
+            this.panel1.Controls.Add(this.checkRemaining);
+            this.panel1.Controls.Add(this.btnSearchStash);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.label48);
+            this.panel1.Controls.Add(this.label67);
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.textBoxEXIT);
+            this.panel1.Controls.Add(this.textBoxPositionSearch);
+            this.panel1.Controls.Add(this.textHideout);
+            this.panel1.Controls.Add(this.textZANA);
+            this.panel1.Controls.Add(this.textALVA);
+            this.panel1.Controls.Add(this.textJUN);
+            this.panel1.Controls.Add(this.textRemains);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(792, 536);
+            this.panel1.TabIndex = 8;
             // 
             // textHotKeyKickLeave
             // 
@@ -2065,6 +1810,308 @@
             this.label9.Text = "Invite to Party.  HOTKEY";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.btnSave.Location = new System.Drawing.Point(634, 449);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(72, 26);
+            this.btnSave.TabIndex = 64;
+            this.btnSave.Text = "SAVE";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnCancel.Location = new System.Drawing.Point(712, 449);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(72, 26);
+            this.btnCancel.TabIndex = 65;
+            this.btnCancel.Text = "CANCEL";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // checkEmergency
+            // 
+            this.checkEmergency.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkEmergency.ForeColor = System.Drawing.Color.Silver;
+            this.checkEmergency.Location = new System.Drawing.Point(59, 362);
+            this.checkEmergency.Name = "checkEmergency";
+            this.checkEmergency.Size = new System.Drawing.Size(16, 16);
+            this.checkEmergency.TabIndex = 63;
+            this.checkEmergency.UseVisualStyleBackColor = false;
+            // 
+            // checkFindbyPosition
+            // 
+            this.checkFindbyPosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkFindbyPosition.ForeColor = System.Drawing.Color.Silver;
+            this.checkFindbyPosition.Location = new System.Drawing.Point(59, 319);
+            this.checkFindbyPosition.Name = "checkFindbyPosition";
+            this.checkFindbyPosition.Size = new System.Drawing.Size(16, 16);
+            this.checkFindbyPosition.TabIndex = 62;
+            this.checkFindbyPosition.UseVisualStyleBackColor = false;
+            // 
+            // checkAtlasZANA
+            // 
+            this.checkAtlasZANA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkAtlasZANA.ForeColor = System.Drawing.Color.Silver;
+            this.checkAtlasZANA.Location = new System.Drawing.Point(59, 235);
+            this.checkAtlasZANA.Name = "checkAtlasZANA";
+            this.checkAtlasZANA.Size = new System.Drawing.Size(16, 16);
+            this.checkAtlasZANA.TabIndex = 61;
+            this.checkAtlasZANA.UseVisualStyleBackColor = false;
+            // 
+            // checkTempleALVA
+            // 
+            this.checkTempleALVA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkTempleALVA.ForeColor = System.Drawing.Color.Silver;
+            this.checkTempleALVA.Location = new System.Drawing.Point(59, 196);
+            this.checkTempleALVA.Name = "checkTempleALVA";
+            this.checkTempleALVA.Size = new System.Drawing.Size(16, 16);
+            this.checkTempleALVA.TabIndex = 60;
+            this.checkTempleALVA.UseVisualStyleBackColor = false;
+            // 
+            // checkHideout
+            // 
+            this.checkHideout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkHideout.ForeColor = System.Drawing.Color.Silver;
+            this.checkHideout.Location = new System.Drawing.Point(59, 280);
+            this.checkHideout.Name = "checkHideout";
+            this.checkHideout.Size = new System.Drawing.Size(16, 16);
+            this.checkHideout.TabIndex = 59;
+            this.checkHideout.UseVisualStyleBackColor = false;
+            // 
+            // checkSyndicateJUN
+            // 
+            this.checkSyndicateJUN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkSyndicateJUN.ForeColor = System.Drawing.Color.Silver;
+            this.checkSyndicateJUN.Location = new System.Drawing.Point(59, 153);
+            this.checkSyndicateJUN.Name = "checkSyndicateJUN";
+            this.checkSyndicateJUN.Size = new System.Drawing.Size(16, 16);
+            this.checkSyndicateJUN.TabIndex = 58;
+            this.checkSyndicateJUN.UseVisualStyleBackColor = false;
+            // 
+            // checkRemaining
+            // 
+            this.checkRemaining.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkRemaining.ForeColor = System.Drawing.Color.Silver;
+            this.checkRemaining.Location = new System.Drawing.Point(59, 108);
+            this.checkRemaining.Name = "checkRemaining";
+            this.checkRemaining.Size = new System.Drawing.Size(16, 16);
+            this.checkRemaining.TabIndex = 51;
+            this.checkRemaining.UseVisualStyleBackColor = false;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label48.Location = new System.Drawing.Point(81, 322);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(113, 15);
+            this.label48.TabIndex = 8;
+            this.label48.Text = "Find Item by ( X , Y )";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label67.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label67.Location = new System.Drawing.Point(81, 364);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(78, 15);
+            this.label67.TabIndex = 8;
+            this.label67.Text = "Emergency!!!";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label20.Location = new System.Drawing.Point(81, 282);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(82, 15);
+            this.label20.TabIndex = 8;
+            this.label20.Text = "Go to Hideout";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label19.Location = new System.Drawing.Point(81, 237);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(85, 15);
+            this.label19.TabIndex = 9;
+            this.label19.Text = "ATLAS Overlay";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label18.Location = new System.Drawing.Point(81, 197);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(101, 15);
+            this.label18.TabIndex = 10;
+            this.label18.Text = "Incursion Overlay";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label17.Location = new System.Drawing.Point(81, 153);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(103, 15);
+            this.label17.TabIndex = 11;
+            this.label17.Text = "Syndicate Overlay";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label2.Location = new System.Drawing.Point(81, 111);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 15);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Monster Remains";
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
+            this.label13.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label13.Location = new System.Drawing.Point(0, 484);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(792, 52);
+            this.label13.TabIndex = 5;
+            this.label13.Text = "Check Other Addon or Macro Hot Keys. Error will occure If duplicated.";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxEXIT
+            // 
+            this.textBoxEXIT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.textBoxEXIT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxEXIT.ForeColor = System.Drawing.Color.White;
+            this.textBoxEXIT.Location = new System.Drawing.Point(284, 357);
+            this.textBoxEXIT.Name = "textBoxEXIT";
+            this.textBoxEXIT.ReadOnly = true;
+            this.textBoxEXIT.Size = new System.Drawing.Size(164, 21);
+            this.textBoxEXIT.TabIndex = 3;
+            this.textBoxEXIT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxEXIT.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEXIT_KeyDown);
+            // 
+            // textBoxPositionSearch
+            // 
+            this.textBoxPositionSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.textBoxPositionSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPositionSearch.ForeColor = System.Drawing.Color.White;
+            this.textBoxPositionSearch.Location = new System.Drawing.Point(284, 315);
+            this.textBoxPositionSearch.Name = "textBoxPositionSearch";
+            this.textBoxPositionSearch.ReadOnly = true;
+            this.textBoxPositionSearch.Size = new System.Drawing.Size(164, 21);
+            this.textBoxPositionSearch.TabIndex = 3;
+            this.textBoxPositionSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPositionSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxPositionSearch_KeyDown);
+            // 
+            // textHideout
+            // 
+            this.textHideout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.textHideout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textHideout.ForeColor = System.Drawing.Color.White;
+            this.textHideout.Location = new System.Drawing.Point(284, 274);
+            this.textHideout.Name = "textHideout";
+            this.textHideout.ReadOnly = true;
+            this.textHideout.Size = new System.Drawing.Size(164, 21);
+            this.textHideout.TabIndex = 3;
+            this.textHideout.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textHideout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textHideout_KeyDown);
+            // 
+            // textZANA
+            // 
+            this.textZANA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.textZANA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textZANA.ForeColor = System.Drawing.Color.White;
+            this.textZANA.Location = new System.Drawing.Point(284, 232);
+            this.textZANA.Name = "textZANA";
+            this.textZANA.ReadOnly = true;
+            this.textZANA.Size = new System.Drawing.Size(164, 21);
+            this.textZANA.TabIndex = 3;
+            this.textZANA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textZANA.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textZANA_KeyDown);
+            // 
+            // textALVA
+            // 
+            this.textALVA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.textALVA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textALVA.ForeColor = System.Drawing.Color.White;
+            this.textALVA.Location = new System.Drawing.Point(284, 192);
+            this.textALVA.Name = "textALVA";
+            this.textALVA.ReadOnly = true;
+            this.textALVA.Size = new System.Drawing.Size(164, 21);
+            this.textALVA.TabIndex = 3;
+            this.textALVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textALVA.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textALVA_KeyDown);
+            // 
+            // textJUN
+            // 
+            this.textJUN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.textJUN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textJUN.ForeColor = System.Drawing.Color.White;
+            this.textJUN.Location = new System.Drawing.Point(284, 148);
+            this.textJUN.Name = "textJUN";
+            this.textJUN.ReadOnly = true;
+            this.textJUN.Size = new System.Drawing.Size(164, 21);
+            this.textJUN.TabIndex = 3;
+            this.textJUN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textJUN.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textJUN_KeyDown);
+            // 
+            // textRemains
+            // 
+            this.textRemains.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.textRemains.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textRemains.ForeColor = System.Drawing.Color.White;
+            this.textRemains.Location = new System.Drawing.Point(284, 106);
+            this.textRemains.Name = "textRemains";
+            this.textRemains.ReadOnly = true;
+            this.textRemains.Size = new System.Drawing.Size(164, 21);
+            this.textRemains.TabIndex = 3;
+            this.textRemains.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textRemains.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textRemains_KeyDown);
+            // 
+            // btnCloseSettings
+            // 
+            this.btnCloseSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
+            this.btnCloseSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCloseSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCloseSettings.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCloseSettings.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnCloseSettings.FlatAppearance.BorderSize = 0;
+            this.btnCloseSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseSettings.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnCloseSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.btnCloseSettings.Location = new System.Drawing.Point(723, 176);
+            this.btnCloseSettings.Name = "btnCloseSettings";
+            this.btnCloseSettings.Size = new System.Drawing.Size(17, 17);
+            this.btnCloseSettings.TabIndex = 5;
+            this.btnCloseSettings.TabStop = false;
+            this.btnCloseSettings.Text = "X";
+            this.btnCloseSettings.UseVisualStyleBackColor = false;
+            this.btnCloseSettings.Click += new System.EventHandler(this.btnCloseSettings_Click);
+            // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
@@ -2079,6 +2126,24 @@
             this.button7.Size = new System.Drawing.Size(17, 13);
             this.button7.TabIndex = 72;
             this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.LightCoral;
+            this.button6.Image = global::POExileDirection.Properties.Resources.icon_re_17;
+            this.button6.Location = new System.Drawing.Point(585, 227);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(24, 24);
+            this.button6.TabIndex = 39;
+            this.button6.TabStop = false;
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // button8
             // 
@@ -2610,92 +2675,32 @@
             this.btnS1.TabStop = false;
             this.btnS1.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // panelTop
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.LightCoral;
-            this.button6.Image = global::POExileDirection.Properties.Resources.icon_re_17;
-            this.button6.Location = new System.Drawing.Point(3, 6);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(24, 24);
-            this.button6.TabIndex = 39;
-            this.button6.TabStop = false;
-            this.button6.UseVisualStyleBackColor = false;
+            this.panelTop.BackgroundImage = global::POExileDirection.Properties.Resources.top_bar_bg_symbol;
+            this.panelTop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelTop.Controls.Add(this.label16);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(800, 40);
+            this.panelTop.TabIndex = 1;
             // 
-            // textBoxCustomTitle1
+            // label16
             // 
-            this.textBoxCustomTitle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
-            this.textBoxCustomTitle1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxCustomTitle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.textBoxCustomTitle1.Location = new System.Drawing.Point(159, 363);
-            this.textBoxCustomTitle1.Name = "textBoxCustomTitle1";
-            this.textBoxCustomTitle1.Size = new System.Drawing.Size(61, 21);
-            this.textBoxCustomTitle1.TabIndex = 37;
-            this.textBoxCustomTitle1.TextChanged += new System.EventHandler(this.textBoxCustomTitle1_TextChanged);
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label3.Location = new System.Drawing.Point(99, 169);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 24);
-            this.label3.TabIndex = 76;
-            this.label3.Text = "TITLE";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label21
-            // 
-            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label21.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label21.Location = new System.Drawing.Point(307, 169);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(268, 24);
-            this.label21.TabIndex = 76;
-            this.label21.Text = "MESSAGE";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label23
-            // 
-            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label23.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label23.Location = new System.Drawing.Point(660, 169);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(98, 24);
-            this.label23.TabIndex = 76;
-            this.label23.Text = "AUTO KICK";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBoxCustomTitle2
-            // 
-            this.textBoxCustomTitle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
-            this.textBoxCustomTitle2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxCustomTitle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.textBoxCustomTitle2.Location = new System.Drawing.Point(146, 395);
-            this.textBoxCustomTitle2.Name = "textBoxCustomTitle2";
-            this.textBoxCustomTitle2.Size = new System.Drawing.Size(61, 21);
-            this.textBoxCustomTitle2.TabIndex = 37;
-            this.textBoxCustomTitle2.TextChanged += new System.EventHandler(this.textBoxCustomTitle2_TextChanged);
-            // 
-            // textBoxCustomTitle3
-            // 
-            this.textBoxCustomTitle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
-            this.textBoxCustomTitle3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxCustomTitle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.textBoxCustomTitle3.Location = new System.Drawing.Point(159, 440);
-            this.textBoxCustomTitle3.Name = "textBoxCustomTitle3";
-            this.textBoxCustomTitle3.Size = new System.Drawing.Size(61, 21);
-            this.textBoxCustomTitle3.TabIndex = 37;
-            this.textBoxCustomTitle3.TextChanged += new System.EventHandler(this.textBoxCustomTitle3_TextChanged);
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label16.Location = new System.Drawing.Point(0, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(800, 40);
+            this.label16.TabIndex = 7;
+            this.label16.Text = "DeadlyTrade Settings";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label16.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label16_MouseDown);
+            this.label16.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label16_MouseMove);
+            this.label16.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label16_MouseUp);
             // 
             // SettingsOverhaul
             // 
@@ -2717,18 +2722,17 @@
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.DarkGray;
             this.Load += new System.EventHandler(this.SettingsOverhaul_Load);
-            this.panelTop.ResumeLayout(false);
             this.FlatSettingTab.ResumeLayout(false);
             this.tabHotKeys.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.panelSetFlaskImage.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            this.panelSetFlaskImage.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -2738,6 +2742,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask1)).EndInit();
+            this.panelTop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Windows.Media;
 using WindowsInput;
 using WindowsInput.Native;
 using System.Reflection;
+using POExileDirection.DeadlyCommon;
+using System.Threading.Tasks;
 
 namespace POExileDirection
 {
@@ -12,8 +13,6 @@ namespace POExileDirection
     {
         #region [[[[[ Global Variables. ]]]]]
         public static string panelName { get; set; }
-
-        private MediaPlayer _mediaPlayer; // Added 1.3.9.0 Ver.
 
         ITEMIndicatorForm itemIndicator = null;
         private bool bIndicatorShowing = false;
@@ -24,7 +23,9 @@ namespace POExileDirection
         private bool bIsMinimized = false;
 
         private DateTime rcvDateTime = DateTime.Now;
-        string strBmpPath = String.Empty; 
+        string strBmpPath = String.Empty;
+
+        SharpDXDeadlyWrapper dxWrapper = new SharpDXDeadlyWrapper();
         #endregion
 
         protected override CreateParams CreateParams
@@ -88,21 +89,6 @@ namespace POExileDirection
             Show_TradeInformation(thisTradeMsg);
 
             Visible = true;
-        }
-
-        private void PlayMediaFile(string filename)
-        {
-            _mediaPlayer = new MediaPlayer();
-            _mediaPlayer.Open(new Uri(filename));
-
-            SetVolume(LauncherForm.g_NotifyVolume);
-            _mediaPlayer.Play();
-            _mediaPlayer = null;
-        }
-
-        public void SetVolume(int volume)
-        {
-            _mediaPlayer.Volume = volume / 100.0f; // MediaPlayer volume is a float value between 0 and 1.
         }
 
         private void Show_TradeInformation(DeadlyTRADE.TradeMSG tradeItem)
@@ -511,14 +497,23 @@ namespace POExileDirection
                     labelNickName.ForeColor = System.Drawing.Color.FromArgb(0, 124, 255, 127);
                     labelStashTabDetail.ForeColor = System.Drawing.Color.FromArgb(0, 124, 255, 127);
                     labelPrice.ForeColor = System.Drawing.Color.FromArgb(0, 124, 255, 127);
-                    PlayMediaFile(Application.StartupPath + "\\notify.wav");
+
+                    Task.Run(() =>
+                    {
+                        dxWrapper.SetAudioHandler(Application.StartupPath + "\\notify.wav", LauncherForm.g_NotifyVolume/2);
+                        dxWrapper.Play();
+                    });
                 }
                 else
                 {
                     labelNickName.ForeColor = System.Drawing.Color.FromArgb(0, 255, 200, 124);
                     labelStashTabDetail.ForeColor = System.Drawing.Color.FromArgb(0, 255, 200, 124);
                     labelPrice.ForeColor = System.Drawing.Color.FromArgb(0, 255, 200, 124);
-                    PlayMediaFile(Application.StartupPath + "\\notify.wav");
+                    Task.Run(() =>
+                    {
+                        dxWrapper.SetAudioHandler(Application.StartupPath + "\\notify.wav", LauncherForm.g_NotifyVolume/2);
+                        dxWrapper.Play();
+                    });
                 }
             }
             catch (Exception ex)
@@ -660,13 +655,21 @@ namespace POExileDirection
         }
         #endregion
 
+        #region [[[[[ Dispose & Close ]]]]]
         private void BtnClose_Click(object sender, EventArgs e)
         {
+            if (dxWrapper != null) dxWrapper.Dispose();
             ControlForm.g_nNotificationPanelShownCNT = ControlForm.g_nNotificationPanelShownCNT - 1;
             ControlForm.Remove_TradeItem(thisTradeMsg.id);
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
             Close();
         }
+        private void NotificationForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (itemIndicator != null) itemIndicator.Dispose();
+            if (thisTradeMsg != null) thisTradeMsg = null;
+        } 
+        #endregion
 
         private void btnMinMax_Click(object sender, EventArgs e)
         {
@@ -725,12 +728,6 @@ namespace POExileDirection
             {
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
-        }
-
-        private void NotificationForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            if (itemIndicator != null) itemIndicator.Dispose();
-            if (thisTradeMsg!=null) thisTradeMsg = null;
         }
 
         private void BtnInvite_Click(object sender, EventArgs e)

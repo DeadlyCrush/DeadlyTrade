@@ -163,6 +163,16 @@ namespace POExileDirection.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap asecplz {
+            get {
+                object obj = ResourceManager.GetObject("asecplz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap Azure_Oil {
             get {
                 object obj = ResourceManager.GetObject("Azure Oil", resourceCulture);
@@ -2036,6 +2046,16 @@ namespace POExileDirection.Properties {
         internal static System.Drawing.Bitmap top_bar_bg_noline {
             get {
                 object obj = ResourceManager.GetObject("top_bar_bg_noline", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap top_bar_bg_symbol {
+            get {
+                object obj = ResourceManager.GetObject("top_bar_bg_symbol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

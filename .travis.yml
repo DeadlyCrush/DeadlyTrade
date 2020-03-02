@@ -1,5 +1,5 @@
 language: csharp
-solution: travis-mono-test.sln
+solution: DeadlyTradewithExileDirection.sln
 mono:
   - latest
   - 3.12.0

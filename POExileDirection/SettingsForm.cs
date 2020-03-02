@@ -14,12 +14,6 @@ namespace POExileDirection
 {
     public partial class SettingsForm : Form
     {
-        public string fsRemains;
-        public string fsJUN;
-        public string fsALVA;
-        public string fsZANA;
-        public string fsHideout; // hideout
-
         public string keyRemains;
         public string keyJUN;
         public string keyALVA;
@@ -81,7 +75,6 @@ namespace POExileDirection
                 strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
 
             IniParser parser = new IniParser(strINIPath);
-            DeadlyLog4Net._log.Info($"{MethodBase.GetCurrentMethod().Name} RESOLUTION : " + strINIPath);
 
             try
             {
@@ -192,7 +185,7 @@ namespace POExileDirection
                 }
                 catch
                 {
-                    textBoxWait.Text = "wait a sec plz.";
+                    textBoxWait.Text = "wait a sec pls.";
                 }
 
                 try
@@ -204,7 +197,7 @@ namespace POExileDirection
                 }
                 catch
                 {
-                    textBoxSold.Text = "sold already. Sry.";
+                    textBoxSold.Text = "sold already. sry.";
                 }
 
                 // HotKey Use
@@ -288,15 +281,15 @@ namespace POExileDirection
 
             // Flask Image
             pictureFlask1.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\" 
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(0)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(0)]);
             pictureFlask2.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(1)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(1)]);
             pictureFlask3.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(2)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(2)]);
             pictureFlask4.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(3)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(3)]);
             pictureFlask5.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(4)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(4)]);
             
             if (LauncherForm.g_strTimerSound1 == "Y")
                 checkBox1.Checked = true;
@@ -335,7 +328,7 @@ namespace POExileDirection
             {
                 // Set ImageList
                 var imageList = new ImageList();
-                foreach(var obj in NinjaTranslation.FlaskImgPath)
+                foreach(var obj in DeadlyTranslation.FlaskImgPath)
                 {
                     try
                     {
@@ -359,7 +352,7 @@ namespace POExileDirection
                     ListViewItem item = new ListViewItem();
                     item.BackColor = Color.FromArgb(39, 44, 56);
                     item.ImageIndex = j;
-                    this.listViewFlaskImage.Items.Add(item);
+                    listViewFlaskImage.Items.Add(item);
                 }
             }
             catch(Exception ex)
@@ -370,7 +363,7 @@ namespace POExileDirection
 
         private Color StringRGBToColor(string color)
         {
-            var arrColorFragments = color?.Split(',').Select(sFragment => { int.TryParse(sFragment, out int fragment); return fragment; }).ToArray();
+            var arrColorFragments = color?.Split(',').Select(sFragment => { _ = int.TryParse(sFragment, out int fragment); return fragment; }).ToArray();
 
             switch (arrColorFragments?.Length)
             {
@@ -398,7 +391,7 @@ namespace POExileDirection
                         || String.IsNullOrEmpty(textBoxSEC4.Text) || String.IsNullOrEmpty(textBoxSEC5.Text))
                 {
                     MSGForm frmMSG = new MSGForm();
-                    frmMSG.lbMsg.Text = "플라스크 타이머 시간(초)을 입력하세요.\r\n\r\nFlask Timer Sec. field value is Empty.";
+                    frmMSG.lbMsg.Text = "Flask Timer Sec. field value is Empty.";
                     frmMSG.ShowDialog();
 
                     return;
@@ -1205,6 +1198,7 @@ namespace POExileDirection
         private void xuiSlider1_MouseUp(object sender, MouseEventArgs e)
         {
             LauncherForm.g_NotifyVolume = xuiSlider1.Percentage;
+            labelVolume.Text = "Volume = " + xuiSlider1.Percentage.ToString();
         }
 
         private void xuiSlider1_MouseMove(object sender, MouseEventArgs e)
@@ -1280,15 +1274,15 @@ namespace POExileDirection
             pictureFlask4.BackgroundImage = null;
             pictureFlask5.BackgroundImage = null;
             pictureFlask1.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(0)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(0)]);
             pictureFlask2.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(1)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(1)]);
             pictureFlask3.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(2)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(2)]);
             pictureFlask4.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(3)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(3)]);
             pictureFlask5.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(4)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(4)]);
 
             panelSetFlaskImage.Visible = false;
             Invalidate();
@@ -1307,27 +1301,27 @@ namespace POExileDirection
                 case 1:
                     pictureFlask1.BackgroundImage = null;
                     pictureFlask1.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                   + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(0)]);
+                                   + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(0)]);
                     break;
                 case 2:
                     pictureFlask2.BackgroundImage = null;
                     pictureFlask2.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(1)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(1)]);
                     break;
                 case 3:
                     pictureFlask3.BackgroundImage = null;
                     pictureFlask3.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(2)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(2)]);
                     break;
                 case 4:
                     pictureFlask4.BackgroundImage = null;
                     pictureFlask4.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(3)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(3)]);
                     break;
                 case 5:
                     pictureFlask5.BackgroundImage = null;
                     pictureFlask5.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                    + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(4)]);
+                                    + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(4)]);
                     break;
                 default:
                     break;

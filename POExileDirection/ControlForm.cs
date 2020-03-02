@@ -1,7 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
@@ -10,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsInput;
 using WindowsInput.Native;
@@ -21,11 +19,6 @@ namespace POExileDirection
 {
     public partial class ControlForm : Form
     {
-        /*System.Windows.Forms.Timer DeadlyLOGParingTimer;
-        System.Threading.Timer DeadlyLOGParingTimerCalled;
-        BackgroundWorker bgDeadlyWorker;
-        object lockSafe = new object();*/
-
         #region ⨌⨌ Get Cursor State ⨌⨌
         /*private static string GetCursorState()
         {
@@ -69,24 +62,12 @@ namespace POExileDirection
         private int nMovePosY = 0;
 
         private bool bIsMinimized = false;
-
         private bool isMainExpand = false;
-
-        public static bool bNeedtoShowAvailabeUpdate { get; set; }
 
         #region [[[[[ Hot Keys ]]]]]
         // Hot Keys
-        fsModifiers m_unMod = 0;
-        System.Windows.Forms.Keys m_HotKey = 0;
-        const int WM_MOUSEWHEEL = 0x020A;
-        const int WM_KEYDOWN = 0x100;
-        const int WM_KEYUP = 0x101;
-        const int WM_CTRL = 0x11;
-        const int VK_LEFT = 0x25;
-        const int VK_RIGHT = 0x26;
-
-        // OVERLAY
-        string[] strImagePath = new string[3];
+        WindowsHook.Keys m_unMod = 0;
+        WindowsHook.Keys m_HotKey = 0;
 
         /*
         J=NONE;114
@@ -115,6 +96,9 @@ namespace POExileDirection
         #endregion
 
         #region [[[[[ Child Forms ]]]]]
+        // OVERLAY
+        string[] strImagePath = new string[3];
+
         // QUEST HELPER
         MainForm frmMainForm = null;
 
@@ -204,7 +188,7 @@ namespace POExileDirection
         public static bool bShowingfrmSkillK5 { get; set; }
         #endregion
 
-        #region [[[[[ Eventhandler ]]]]]
+        #region [[[[[ Event Handler ]]]]]
         private event EventHandler deadlyHideoutEvent;
         private event EventHandler deadlyRemainEvent;
         private event EventHandler deadlyJUNEvent;
@@ -216,8 +200,6 @@ namespace POExileDirection
         private event EventHandler ClipboardParsingEvent;
 
         // HOOK
-        //GlobalLowLevelHooks.MouseHook mouseHook = new GlobalLowLevelHooks.MouseHook();
-        //GlobalLowLevelHooks.KeyboardHook keyHook = new GlobalLowLevelHooks.KeyboardHook();
         private static IKeyboardMouseEvents _keymouseHooks;
         #endregion
 
@@ -232,7 +214,7 @@ namespace POExileDirection
 
         private static UI_LANG g_nUILang;
 
-        private string m_strClipboardBUY = null;
+        private string m_strClipboardText = null;
         private int m_InitCNT = 0;
 
         private bool m_bIsCMDVisible = false;
@@ -241,7 +223,6 @@ namespace POExileDirection
         public static bool gCF_bIsTextFocused { get; set; }
 
         //MapAlertForm frmMapModResult = null;
-        private int nRegisterHotKeysCNT = 0;
 
         public ControlForm()
         {
@@ -283,8 +264,8 @@ namespace POExileDirection
                 {
                     if (LauncherForm.g_strUILang == "KOR")
                     {
-                        if (NinjaTranslation.transCurrency.ContainsKey(objLine.CurrencyTypeName))
-                            strItemName = NinjaTranslation.transCurrency[objLine.CurrencyTypeName];
+                        if (DeadlyTranslation.transCurrency.ContainsKey(objLine.CurrencyTypeName))
+                            strItemName = DeadlyTranslation.transCurrency[objLine.CurrencyTypeName];
                     }
                     else
                         strItemName = objLine.CurrencyTypeName;
@@ -386,8 +367,7 @@ namespace POExileDirection
 
             Init_ControlFormPosition();
 
-            Register_HotKeys();
-            nRegisterHotKeysCNT = nRegisterHotKeysCNT + 1;
+            ParseAllHotKeys();
 
             if (!LauncherForm.g_pinLOCK)
             {
@@ -403,11 +383,6 @@ namespace POExileDirection
                 panelDrag.BackgroundImage = Properties.Resources.moving_bar_lock;
                 LauncherForm.g_pinLOCK = true;
             }
-
-            // Removed 2019.08.13 Load_MiscForms();
-
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.ShowInTaskbar = false;
 
             Set_FlaskTimerToggleSwitch();
             Set_SkillTimerToggleSwitch();
@@ -427,56 +402,16 @@ namespace POExileDirection
             g_bIsDropInformOn = false;
             g_bIsSCANOn = false;
 
-            Text = "DeadlyTradeForPOE";
             frmNotificationContainer.Show();
-        }
-
-        private void CheckFocusLosing()
-        {
-            LauncherForm.g_handlePathOfExile = InteropCommon.FindWindow("POEWindowClass", "Path of Exile"); // ClassName = POEWindowClass
-
-            string strActiveWindowTitle = InteropCommon.GetActiveWindowTitle();
-            string strActiveWindowParentTitle = InteropCommon.GetActiveWindowParentTitle();
-            if (strActiveWindowTitle == "DeadlyTradeForPOE" || strActiveWindowTitle == "Path of Exile" ||
-                strActiveWindowParentTitle == "DeadlyTradeForPOE" || strActiveWindowParentTitle == "Path of Exile" || gCF_bIsTextFocused)
-            {
-                LauncherForm.g_FocusLosing = false;
-                if (strActiveWindowTitle == "DeadlyTradeForPOE" || strActiveWindowParentTitle == "DeadlyTradeForPOE" || gCF_bIsTextFocused)
-                {
-                    LauncherForm.g_FocusOnAddon = true;
-                }
-                else
-                {
-                    LauncherForm.g_FocusOnAddon = false;
-                }
-
-                // Button_ICON_ONOFF(); // Removed 1.3.9.9
-                ShowHide_Addon_Forms(true);
-
-                // HOT KEYS
-                if (nRegisterHotKeysCNT <= 0)
-                {
-                    Register_HotKeys();
-                }
-            }
-            else
-            {
-                LauncherForm.g_FocusLosing = true;
-                ShowHide_Addon_Forms(false);
-
-                // HOT KEYS
-                UnRegisterHotKeys();
-            }
-
-            if (bNeedtoShowAvailabeUpdate)
-                ShowAvailabeUpdatePanel();
+            Text = "DeadlyTradeForPOE";
         }
 
         private void MouseWheelThread(object sender, MouseEventExtArgs e)
         {
             MouseWheelExtDelegate delegateInstance =
                             new MouseWheelExtDelegate(MouseWheelExt);
-            delegateInstance.BeginInvoke(sender, e, null, null);
+            IAsyncResult retRef = delegateInstance.BeginInvoke(sender, e, null, null);
+            delegateInstance.EndInvoke(retRef);
         }
         private delegate void MouseWheelExtDelegate(object sender, MouseEventExtArgs e);
 
@@ -534,7 +469,8 @@ namespace POExileDirection
         {
             GetItemDataFromClipboardDelegate delegateInstance =
                             new GetItemDataFromClipboardDelegate(DeadlyPriceAPI.GetItemDataFromClipboard);
-            delegateInstance.BeginInvoke(m_strClipboardBUY, null, null);
+            IAsyncResult retRef = delegateInstance.BeginInvoke(m_strClipboardText, null, null);
+            delegateInstance.EndInvoke(retRef);
         }
         private delegate void GetItemDataFromClipboardDelegate(string strItemClipboardText);
 
@@ -544,20 +480,58 @@ namespace POExileDirection
             // CTRL + C
             if (LauncherForm.g_FocusLosing && e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
             {
-                // is it trade whiper?
+                //TODO : Trade Site.
+                // is it trade whisper?
                 DeadlyLog4Net._log.Info("CTRL+C for Trading");
                 return;
             }
             else if (!LauncherForm.g_FocusLosing) // Only Exile Focused.
             {
+                if (e.Modifiers == ovHRemains.fsMod && e.KeyCode == ovHRemains.hotKeys && LauncherForm.g_strYNUseRemainingHOTKEY == "Y" && !bIsSettingsPop)
+                {
+                    deadlyRemainEvent(this, new EventArgs());
+                    return;
+                }
+                else if (e.Modifiers == ovHJUN.fsMod && e.KeyCode == ovHJUN.hotKeys && LauncherForm.g_strYNUseSyndicateJUNHOTKEY == "Y" && !bIsSettingsPop)
+                {
+                    deadlyJUNEvent(this, new EventArgs());
+                    return;
+                }
+                else if (e.Modifiers == ovHALVA.fsMod && e.KeyCode == ovHALVA.hotKeys && LauncherForm.g_strYNUseIncursionALVAHOTKEY == "Y" && !bIsSettingsPop)
+                {
+                    deadlyALVAEvent(this, new EventArgs());
+                    return;
+                }
+                else if (e.Modifiers == ovHZANA.fsMod && e.KeyCode == ovHZANA.hotKeys && LauncherForm.g_strYNUseAtlasZANAHOTKEY == "Y" && !bIsSettingsPop)
+                {
+                    deadlyZANAEvent(this, new EventArgs());
+                    return;
+                }
+                else if (e.Modifiers == ovHHideout.fsMod && e.KeyCode == ovHHideout.hotKeys && LauncherForm.g_strYNUseHideoutHOTKEY == "Y" && !bIsSettingsPop)
+                {
+                    deadlyHideoutEvent(this, new EventArgs());
+                    return;
+                }
+                else if (e.Modifiers == ovHSearchbyPosition.fsMod && 
+                        e.KeyCode == ovHSearchbyPosition.hotKeys && LauncherForm.g_strYNUseFindbyPositionHOTKEY == "Y" && !bIsSettingsPop)
+                {
+                    deadlySearchPositionEvent(this, new EventArgs());
+                    return;
+                }
+                else if (e.Modifiers == ovHEXIT.fsMod && e.KeyCode == ovHEXIT.hotKeys && LauncherForm.g_strYNUseEmergencyHOTKEY == "Y" && !bIsSettingsPop)
+                {
+                    deadlyEXITEvent(this, new EventArgs());
+                    return;
+                }
+
                 // CTRL + C
                 if (e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
                 {
                     // is it price checking?
                     try
                     {
-                        m_strClipboardBUY = ClipboardHelper.GetUnicodeText();
-                        if (m_strClipboardBUY.Contains("--------"))
+                        m_strClipboardText = ClipboardHelper.GetUnicodeText();
+                        if (m_strClipboardText.Contains("--------"))
                         {
                             Thread t = new Thread(new ThreadStart(GetItemDataThread));
                             t.Start();
@@ -578,17 +552,17 @@ namespace POExileDirection
                     {
                         if (LauncherForm.g_POELogFileName == "KakaoClient.txt") // CTRL+V in KAKAO Client.
                         {
-                            m_strClipboardBUY = ClipboardHelper.GetUnicodeText();
-                            if (m_strClipboardBUY != null && m_strClipboardBUY.Length > 0)
+                            m_strClipboardText = ClipboardHelper.GetUnicodeText();
+                            if (m_strClipboardText != null && m_strClipboardText.Length > 0)
                             {
-                                // for Debug DeadlyLog4Net._log.Debug("KAKAO User's CTRL+V for buy." + " : " + m_strClipboardBUY);
-                                if (m_strClipboardBUY.ToUpper().Contains("BUY YOUR") || m_strClipboardBUY.ToUpper().Contains("구매하고") || m_strClipboardBUY.ToUpper().Contains("WTB"))
+                                // for Debug DeadlyLog4Net._log.Debug("KAKAO User's CTRL+V for buy." + " : " + m_strClipboardText);
+                                if (m_strClipboardText.ToUpper().Contains("BUY YOUR") || m_strClipboardText.ToUpper().Contains("구매하고") || m_strClipboardText.ToUpper().Contains("WTB"))
                                 {
                                     ClipboardParsingEvent(this, new EventArgs());
                                     InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                                 }
                             }
-                            // TTTT MessageBox.Show(m_strClipboardBUY);
+                            // TTTT MessageBox.Show(m_strClipboardText);
                             // bExistClipboard = true;
 
                             return;
@@ -844,6 +818,7 @@ namespace POExileDirection
             }
         }
 
+        #region [[[[[ TimerInit ]]]]]
         private void TimerInit_Tick(object sender, EventArgs e)
         {
             // Initializing... Waiting Image.
@@ -908,14 +883,16 @@ namespace POExileDirection
                 }
             }
         }
+        #endregion
+
         private void ControlForm_ClipboardParsingMapAlertEvent(object sender, EventArgs e)
         {
             return; // Temprorary Removed 1.3.9.0 Ver.
             /*if (frmMapModResult == null) { frmMapModResult = new MapAlertForm(); }
-            frmMapModResult.m_strMapModString = m_strClipboardBUY;
+            frmMapModResult.m_strMapModString = m_strClipboardText;
             frmMapModResult.Show();
 
-            m_strClipboardBUY = null;*/
+            m_strClipboardText = null;*/
         }
 
         #region ⨌⨌ Hot Key Events ⨌⨌
@@ -1226,93 +1203,100 @@ namespace POExileDirection
         #endregion
 
         #region [[[[[ Show or Hide Addon's Forms by Condition ]]]]]
-        private void ShowHide_Addon_Forms(bool bShow)
+        public void ShowHide_Addon_Forms(bool bShow)
         {
-            if(bShow)
+            try
             {
-                if (g_bIsSearchPop)
-                    frmSearchStash.Show();
+                if (bShow)
+                {
+                    if (g_bIsSearchPop)
+                        frmSearchStash.Show();
 
-                if (g_bIsSCANOn)
-                    frmScanChat.Show();
+                    if (g_bIsSCANOn)
+                        frmScanChat.Show();
 
-                if (bShowNinja)
-                    frmNinja.Show();
+                    if (bShowNinja)
+                        frmNinja.Show();
 
-                if (bVoriciCalcFormViewing)
-                    frmVoriciCalc.Show();
+                    if (bVoriciCalcFormViewing)
+                        frmVoriciCalc.Show();
 
-                if (g_bIsDropInformOn)
-                    frmMainForm.Show();
+                    if (g_bIsDropInformOn)
+                        frmMainForm.Show();
 
-                if (bfrmStashGridShow)
-                    frmStashGrid.Show();
+                    if (bfrmStashGridShow)
+                        frmStashGrid.Show();
 
-                if (bIMGOvelayActivated)
-                    frmIMGOverlay.Show();
+                    if (bIMGOvelayActivated)
+                        frmIMGOverlay.Show();
 
-                if (bIMGOvelayActivatedALVA)
-                    frmIMGOverlayALVA.Show();
+                    if (bIMGOvelayActivatedALVA)
+                        frmIMGOverlayALVA.Show();
 
-                if (bIMGOvelayActivatedMAP)
-                    frmIMGOverlayMAP.Show();
+                    if (bIMGOvelayActivatedMAP)
+                        frmIMGOverlayMAP.Show();
 
-                if (bOilsFormON)
-                    frmOils.Show();
+                    if (bOilsFormON)
+                        frmOils.Show();
 
-                if (bISearchRegionOn)
-                    frmSearchRegion.Show();
+                    if (bISearchRegionOn)
+                        frmSearchRegion.Show();
 
-                if (g_bIsNofiticationContainerOn)
+                    if (g_bIsNofiticationContainerOn)
+                        frmNotificationContainer.Show();
+
+                    //if (bIsSettingsPop)
+
                     frmNotificationContainer.Show();
+                    this.Show();
+                }
+                else
+                {
+                    if (g_bIsSearchPop)
+                        frmSearchStash.Hide();
 
-                //if (bIsSettingsPop)
+                    if (g_bIsSCANOn)
+                        frmScanChat.Hide();
 
-                frmNotificationContainer.Show();
-                this.Show();
-            }
-            else
-            {
-                if (g_bIsSearchPop)
-                    frmSearchStash.Hide();
+                    if (bShowNinja)
+                        frmNinja.Hide();
 
-                if (g_bIsSCANOn)
-                    frmScanChat.Hide();
+                    if (bVoriciCalcFormViewing)
+                        frmVoriciCalc.Hide();
 
-                if (bShowNinja)
-                    frmNinja.Hide();
+                    if (g_bIsDropInformOn)
+                        frmMainForm.Hide();
 
-                if (bVoriciCalcFormViewing)
-                    frmVoriciCalc.Hide();
+                    if (bfrmStashGridShow)
+                        frmStashGrid.Hide();
 
-                if (g_bIsDropInformOn)
-                    frmMainForm.Hide();
+                    if (bIMGOvelayActivated)
+                        frmIMGOverlay.Hide();
 
-                if (bfrmStashGridShow)
-                    frmStashGrid.Hide();
+                    if (bIMGOvelayActivatedALVA)
+                        frmIMGOverlayALVA.Hide();
 
-                if (bIMGOvelayActivated)
-                    frmIMGOverlay.Hide();
+                    if (bIMGOvelayActivatedMAP)
+                        frmIMGOverlayMAP.Hide();
 
-                if (bIMGOvelayActivatedALVA)
-                    frmIMGOverlayALVA.Hide();
+                    if (bOilsFormON)
+                        frmOils.Hide();
 
-                if (bIMGOvelayActivatedMAP)
-                    frmIMGOverlayMAP.Hide();
+                    if (bISearchRegionOn)
+                        frmSearchRegion.Hide();
 
-                if (bOilsFormON)
-                    frmOils.Hide();
+                    if (g_bIsNofiticationContainerOn)
+                        frmNotificationContainer.Hide();
 
-                if (bISearchRegionOn)
-                    frmSearchRegion.Hide();
+                    //if (bIsSettingsPop)
 
-                if (g_bIsNofiticationContainerOn)
                     frmNotificationContainer.Hide();
-
-                //if (bIsSettingsPop)
-
-                frmNotificationContainer.Hide();
-                this.Hide();
+                    this.Hide();
+                }
+            }
+            catch (Exception ex)
+            {
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
         }
         #endregion
@@ -1762,19 +1746,7 @@ namespace POExileDirection
 
         private void TimerParser_Tick(object sender, EventArgs e)
         {
-            CheckFocusLosing();
-
-            /*if (m_strClipboardBUY != null && m_strClipboardBUY.Length > 0)
-            {
-                if (m_strClipboardBUY.ToUpper().Contains("MAP") || m_strClipboardBUY.ToUpper().Contains("지도"))
-                {
-                    if (!m_strClipboardBUY.ToUpper().Contains("BUY YOUR") && !m_strClipboardBUY.ToUpper().Contains("구매하고"))
-                    {
-                        ClipboardParsingMapAlertEvent(this, new EventArgs());
-                        return;
-                    }
-                }
-            }*/
+            ShowHide_Addon_Forms(!LauncherForm.g_FocusLosing);
 
             /////////////////////////////////////////////////////////////////////////
             // Threading with UI Thread Timer
@@ -2151,46 +2123,8 @@ namespace POExileDirection
 
             if (m.Msg == 0x0312)
             {
-                if (!LauncherForm.g_FocusLosing && !bIsSettingsPop) // HOTKEY : 0x0312
-                {
-                    System.Windows.Forms.Keys keyHot = (System.Windows.Forms.Keys)(((int)m.LParam >> 16) & 0xFFFF);
-                    fsModifiers modifier = (fsModifiers)((int)m.LParam & 0xFFFF);
-
-                    if (modifier == ovHRemains.fsMod && keyHot == ovHRemains.hotKeys && LauncherForm.g_strYNUseRemainingHOTKEY=="Y")
-                    {
-                        deadlyRemainEvent(this, new EventArgs());
-                    }
-
-                    if (modifier == ovHJUN.fsMod && keyHot == ovHJUN.hotKeys && LauncherForm.g_strYNUseSyndicateJUNHOTKEY == "Y")
-                    {
-                        deadlyJUNEvent(this, new EventArgs());
-                    }
-
-                    if (modifier == ovHALVA.fsMod && keyHot == ovHALVA.hotKeys && LauncherForm.g_strYNUseIncursionALVAHOTKEY == "Y")
-                    {
-                        deadlyALVAEvent(this, new EventArgs());
-                    }
-
-                    if (modifier == ovHZANA.fsMod && keyHot == ovHZANA.hotKeys && LauncherForm.g_strYNUseAtlasZANAHOTKEY == "Y")
-                    {
-                        deadlyZANAEvent(this, new EventArgs());
-                    }
-
-                    if (modifier == ovHHideout.fsMod && keyHot == ovHHideout.hotKeys && LauncherForm.g_strYNUseHideoutHOTKEY == "Y")
-                    {
-                        deadlyHideoutEvent(this, new EventArgs());
-                    }
-
-                    if (modifier == ovHSearchbyPosition.fsMod && keyHot == ovHSearchbyPosition.hotKeys && LauncherForm.g_strYNUseFindbyPositionHOTKEY == "Y")
-                    {
-                        deadlySearchPositionEvent(this, new EventArgs());
-                    }
-
-                    if (modifier == ovHEXIT.fsMod && keyHot == ovHEXIT.hotKeys && LauncherForm.g_strYNUseEmergencyHOTKEY == "Y")
-                    {
-                        deadlyEXITEvent(this, new EventArgs());
-                    }
-                }
+                // HOTKEY : 0x0312
+                ;
             }
         }
         #endregion
@@ -2322,11 +2256,6 @@ namespace POExileDirection
         #region ⨌⨌ Form Closed. - Dispose ⨌⨌
         private void ControlForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            InteropCommon.UnregisterHotKey(Handle, 2);
-            InteropCommon.UnregisterHotKey(Handle, 3);
-            InteropCommon.UnregisterHotKey(Handle, 4);
-            InteropCommon.UnregisterHotKey(Handle, 6);
-
             btnClose.Dispose();
             button1.Dispose();
             button2.Dispose();
@@ -2339,13 +2268,6 @@ namespace POExileDirection
             if (frmIMGOverlay != null) frmIMGOverlay.Dispose();
             if (frmIMGOverlayALVA != null) frmIMGOverlayALVA.Dispose();
             if (frmIMGOverlayMAP != null) frmIMGOverlayMAP.Dispose();
-
-            //mouseHook.MouseWheel -= MouseHook_MouseWheel;
-            //mouseHook.Uninstall();
-
-            //keyHook.KeyDown -= KeyHook_KeyDown;
-            //keyHook.KeyUp -= KeyHook_KeyUp;
-            //keyHook.Uninstall();
 
             _keymouseHooks.Dispose();
 
@@ -2379,9 +2301,7 @@ namespace POExileDirection
 /*            if (frmZoneItem != null) frmZoneItem.Dispose()*/;
 
             // Stop Thread Timer
-            /*if (DeadlyLOGParingTimer != null) DeadlyLOGParingTimer.Stop();*/
             if (timerParser != null) timerParser.Stop();
-
             if (frmNotificationContainer != null) frmNotificationContainer.Dispose();
 
             DeadlyLog4Net._log.Info("▶ DeadlyTrade Main Control Form Closed");
@@ -2389,139 +2309,53 @@ namespace POExileDirection
         }
         #endregion
 
-        #region ⨌⨌ Register / UnRegister Hot Keys ⨌⨌
-        public void Register_HotKeys()
+        #region ⨌⨌ Hot Key Test Parsing ⨌⨌
+        public void ParseAllHotKeys()
         {
-            nRegisterHotKeysCNT = nRegisterHotKeysCNT + 1;
-            bool bRetHOT = false;
             Parse_StringToHotKey(keyMAINRemains);
-            bRetHOT = InteropCommon.RegisterHotKey(Handle, 2, (uint)m_unMod, (uint)m_HotKey);
-            //if (!bRetHOT)
-            //{
-            //    /*MSGForm frmMSG = new MSGForm();
-            //    if(LauncherForm.g_strUILang == "KOR")
-            //        frmMSG.lbMsg.Text = "단축키 설정에 실패하였습니다.\r\n\r\n단축키를 제외한 다른 기능은 정상작동합니다.";
-            //    else
-            //        frmMSG.lbMsg.Text = "Fail to register hotkey.\r\n\r\nBut, all the other function is properly.";
-            //    frmMSG.ShowDialog();*/
-            //    DeadlyLog4Net._log.Info("Fail to register hotkey.\r\nBut, all the other function is properly.: " + keyMAINRemains);
-            //}
             ovHRemains.fsMod = m_unMod;
             ovHRemains.hotKeys = m_HotKey;
 
             Parse_StringToHotKey(keyMAINJUN);
-            bRetHOT = InteropCommon.RegisterHotKey(Handle, 3, (uint)m_unMod, (uint)m_HotKey);
-            //if (!bRetHOT)
-            //{
-            //    /*MSGForm frmMSG = new MSGForm();
-            //    if (LauncherForm.g_strUILang == "KOR")
-            //        frmMSG.lbMsg.Text = "단축키 설정에 실패하였습니다.\r\n\r\n단축키를 제외한 다른 기능은 정상작동합니다.";
-            //    else
-            //        frmMSG.lbMsg.Text = "Fail to register hotkey.\r\n\r\nBut, all the other function is properly.";
-            //    frmMSG.ShowDialog();*/
-            //    DeadlyLog4Net._log.Info("Fail to register hotkey.\r\nBut, all the other function is properly.: " + keyMAINJUN);
-            //}
             ovHJUN.fsMod = m_unMod;
             ovHJUN.hotKeys = m_HotKey;
 
             Parse_StringToHotKey(keyMAINALVA);
-            bRetHOT = InteropCommon.RegisterHotKey(Handle, 4, (uint)m_unMod, (uint)m_HotKey);
-            //if (!bRetHOT)
-            //{
-            //    /*MSGForm frmMSG = new MSGForm();
-            //    if (LauncherForm.g_strUILang == "KOR")
-            //        frmMSG.lbMsg.Text = "단축키 설정에 실패하였습니다.\r\n\r\n단축키를 제외한 다른 기능은 정상작동합니다.";
-            //    else
-            //        frmMSG.lbMsg.Text = "Fail to register hotkey.\r\n\r\nBut, all the other function is properly.";
-            //    frmMSG.ShowDialog();*/
-            //    DeadlyLog4Net._log.Info("Fail to register hotkey.\r\nBut, all the other function is properly.: " + keyMAINALVA);
-            //}
             ovHALVA.fsMod = m_unMod;
             ovHALVA.hotKeys = m_HotKey;
 
             Parse_StringToHotKey(keyMAINZANA);
-            bRetHOT = InteropCommon.RegisterHotKey(Handle, 5, (uint)m_unMod, (uint)m_HotKey);
-            //if (!bRetHOT)
-            //{
-            //    /*MSGForm frmMSG = new MSGForm();
-            //    if (LauncherForm.g_strUILang == "KOR")
-            //        frmMSG.lbMsg.Text = "단축키 설정에 실패하였습니다.\r\n\r\n단축키를 제외한 다른 기능은 정상작동합니다.";
-            //    else
-            //        frmMSG.lbMsg.Text = "Fail to register hotkey.\r\n\r\nBut, all the other function is properly.";
-            //    frmMSG.ShowDialog();*/
-            //    DeadlyLog4Net._log.Info("Fail to register hotkey.\r\nBut, all the other function is properly.: " + keyMAINZANA);
-            //}
             ovHZANA.fsMod = m_unMod;
             ovHZANA.hotKeys = m_HotKey;
 
             Parse_StringToHotKey(keyMAINHideout);
-            bRetHOT = InteropCommon.RegisterHotKey(Handle, 6, (uint)m_unMod, (uint)m_HotKey);
-            //if (!bRetHOT)
-            //{
-            //    /*DeadlyLog4Net._log.Info("Fail to register hotkey : Hideout");
-            //    MSGForm frmMSG = new MSGForm();
-            //    if (LauncherForm.g_strUILang == "KOR")
-            //        frmMSG.lbMsg.Text = "단축키 설정에 실패하였습니다.\r\n\r\n단축키를 제외한 다른 기능은 정상작동합니다.";
-            //    else
-            //        frmMSG.lbMsg.Text = "Fail to register hotkey.\r\n\r\nBut, all the other function is properly.";
-            //    frmMSG.ShowDialog();*/
-            //    DeadlyLog4Net._log.Info("Fail to register hotkey.\r\nBut, all the other function is properly.: " + keyMAINHideout);
-            //}
             ovHHideout.fsMod = m_unMod;
             ovHHideout.hotKeys = m_HotKey;
 
             Parse_StringToHotKey(keySearchbyPosition);
-            bRetHOT = InteropCommon.RegisterHotKey(Handle, 7, (uint)m_unMod, (uint)m_HotKey);
-            //if (!bRetHOT)
-            //{
-            //    /*DeadlyLog4Net._log.Info("Fail to register hotkey : SearchbyPosition");
-            //    MSGForm frmMSG = new MSGForm();
-            //    if (LauncherForm.g_strUILang == "KOR")
-            //        frmMSG.lbMsg.Text = "단축키 설정에 실패하였습니다.\r\n\r\n단축키를 제외한 다른 기능은 정상작동합니다.";
-            //    else
-            //        frmMSG.lbMsg.Text = "Fail to register hotkey.\r\n\r\nBut, all the other function is properly.";
-            //    frmMSG.ShowDialog();*/
-            //    DeadlyLog4Net._log.Info("Fail to register hotkey.\r\nBut, all the other function is properly.: " + keySearchbyPosition);
-            //}
             ovHSearchbyPosition.fsMod = m_unMod;
             ovHSearchbyPosition.hotKeys = m_HotKey;
 
             Parse_StringToHotKey(keyEXIT);
-            bRetHOT = InteropCommon.RegisterHotKey(Handle, 8, (uint)m_unMod, (uint)m_HotKey);
-            //if (!bRetHOT)
-            //{
-            //    /*DeadlyLog4Net._log.Info("Fail to register hotkey : EXIT");
-            //    MSGForm frmMSG = new MSGForm();
-            //    if (LauncherForm.g_strUILang == "KOR")
-            //        frmMSG.lbMsg.Text = "단축키 설정에 실패하였습니다.\r\n\r\n단축키를 제외한 다른 기능은 정상작동합니다.";
-            //    else
-            //        frmMSG.lbMsg.Text = "Fail to register hotkey.\r\n\r\nBut, all the other function is properly.";
-            //    frmMSG.ShowDialog();*/
-            //    DeadlyLog4Net._log.Info("Fail to register hotkey.\r\nBut, all the other function is properly.: " + keyEXIT);
-            //}
             ovHEXIT.fsMod = m_unMod;
             ovHEXIT.hotKeys = m_HotKey;
         }
 
-        public void UnRegisterHotKeys()
-        {
-            InteropCommon.UnregisterHotKey(Handle, 2);
-            InteropCommon.UnregisterHotKey(Handle, 3);
-            InteropCommon.UnregisterHotKey(Handle, 4);
-            InteropCommon.UnregisterHotKey(Handle, 5);
-            InteropCommon.UnregisterHotKey(Handle, 6);
-            InteropCommon.UnregisterHotKey(Handle, 7);
-            InteropCommon.UnregisterHotKey(Handle, 8);
-
-            nRegisterHotKeysCNT = nRegisterHotKeysCNT - 1;
-        }
-
-        public void Parse_StringToHotKey(string text)
+        public void Parse_StringToHotKey(string strtext)
         {
             try
             {
-                fsModifiers Modifier = fsModifiers.None;
-                System.Windows.Forms.Keys key = 0;
+                WindowsHook.Keys Modifier = WindowsHook.Keys.None;
+                WindowsHook.Keys key = 0;
+
+                m_HotKey = key;
+                m_unMod = Modifier;
+
+                if (String.IsNullOrEmpty(strtext))
+                {
+                    DeadlyLog4Net._log.Info("Empty Hot Key Text : " + strtext);
+                    return;
+                }
 
                 bool HasControl = false;
                 bool HasAlt = false;
@@ -2529,7 +2363,7 @@ namespace POExileDirection
 
                 string[] strRet;
                 string[] separators = new string[] { ";" };
-                strRet = text.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+                strRet = strtext.Split(separators, StringSplitOptions.RemoveEmptyEntries);
 
                 switch (strRet[0].ToUpper())
                 {
@@ -2548,9 +2382,9 @@ namespace POExileDirection
                         break;
                 }
 
-                if (HasControl) { Modifier |= fsModifiers.Control; }
-                if (HasAlt) { Modifier |= fsModifiers.Alt; }
-                if (HasShift) { Modifier |= fsModifiers.Shift; }
+                if (HasControl) { Modifier |= WindowsHook.Keys.Control; }
+                if (HasAlt) { Modifier |= WindowsHook.Keys.Alt; }
+                if (HasShift) { Modifier |= WindowsHook.Keys.Shift; }
 
                 //Get the last key in the shortcut
                 System.Windows.Forms.KeysConverter keyconverter = new System.Windows.Forms.KeysConverter();
@@ -2560,7 +2394,7 @@ namespace POExileDirection
                 strRet[1] = strRet[1].Replace("CAPITAL", "Capital");
                 strRet[1] = strRet[1].Replace("NUMPAD", "NumPad");
 
-                key = (System.Windows.Forms.Keys)keyconverter.ConvertFrom(strRet[1]);
+                key = (WindowsHook.Keys)keyconverter.ConvertFrom(strRet[1]);
 
                 m_HotKey = key;
                 m_unMod = Modifier;
@@ -2619,22 +2453,12 @@ namespace POExileDirection
         public void Go_HideOut()
         {
             InputSimulator iSim = new InputSimulator();
-
-            // Need to press ALT because the SetForegroundWindow sometimes does not work
-            // Removed 2019.0712 iSim.Keyboard.KeyPress(VirtualKeyCode.MENU);
-
-            // Make POE the foreground application and send input
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            // Send the input
             iSim.Keyboard.TextEntry("/hideout");
-
-            // Send RETURN
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
 
-            //iSim = null;
             Text = "DeadlyTradeForPOE";
         }
         #endregion
@@ -2832,6 +2656,9 @@ namespace POExileDirection
             gCF_bIsTextFocused = true;
             try
             {
+                SettingsOverhaul settingsOverhaul = new SettingsOverhaul();
+                settingsOverhaul.Show();
+                return;
                 using (SettingsForm frmSettings = new SettingsForm())
                 {
                     frmSettings.keyRemains = keyMAINRemains;
@@ -2851,12 +2678,12 @@ namespace POExileDirection
                         keySearchbyPosition = frmSettings.keySearchbyPosition;
                         keyEXIT = frmSettings.keyEXIT;
 
-                        UnRegisterHotKeys();
+                        //x UnRegisterHotKeys();
 
-                        Register_HotKeys();
+                        //x Register_HotKeys();
                         Thread.Sleep(200);
 
-                        SaveNofiticationMsg();
+                        SaveNofiticationMsg(); //TODO: g_strCUSTOM1,2,3 Added.
                         Thread.Sleep(200);
 
                         string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
@@ -2912,6 +2739,8 @@ namespace POExileDirection
                         parser.AddSetting("CHARACTER", "MYNICK", LauncherForm.g_strMyNickName);
                         parser.AddSetting("CHARACTER", "AUTOKICK", LauncherForm.g_strTRAutoKick);
 
+                        //TODO : check box custom1,2,3 g_strTRAutoKickCustom1,2,3 - "CHARACTER", "AUTOKICK" Search All~!
+
                         // Notification Volume, Flask Timer Volume
                         parser.AddSetting("LOCATIONNOTIFY", "VOLUME", LauncherForm.g_NotifyVolume.ToString());
                         parser.AddSetting("LOCATIONNOTIFY", "VOLUMEFLASKTIMER", LauncherForm.g_FlaskTimerVolume.ToString());
@@ -2940,7 +2769,6 @@ namespace POExileDirection
                     }
                     else
                     {
-                        // for TEST MessageBox.Show("Cancel");
                         bIsSettingsPop = false;
                         gCF_bIsTextFocused = false;
                     }
@@ -2956,6 +2784,8 @@ namespace POExileDirection
 
         private void SaveNofiticationMsg()
         {
+            //TODO: g_strCUSTOM1,2,3 Added.
+
             var settings = new JsonSerializerSettings
             {
                 NullValueHandling = NullValueHandling.Ignore,
@@ -2969,7 +2799,7 @@ namespace POExileDirection
             },
             {
             "Id": "WAIT",
-            "Msg": "Wait a sec plz."
+            "Msg": "Wait a sec pls."
             },
             {
             "Id": "WILLING",
@@ -2977,7 +2807,7 @@ namespace POExileDirection
             },
             {
             "Id": "SOLD",
-            "Msg": "Sold already. Sry."
+            "Msg": "Sold already. sry."
             },
             */
             /*
@@ -3263,7 +3093,7 @@ namespace POExileDirection
         {
             try
             {
-                Match mMatch = g_DeadlyRegEx.RegExENGPriceWithTabNameKAKAO.Match(m_strClipboardBUY);
+                Match mMatch = g_DeadlyRegEx.RegExENGPriceWithTabNameKAKAO.Match(m_strClipboardText);
                 DeadlyTRADE.TradeMSG tradeWhisper = new DeadlyTRADE.TradeMSG();
                 if (mMatch.Groups.Count > 9)
                 {
@@ -3317,7 +3147,7 @@ namespace POExileDirection
         {
             try
             {
-                Match mMatch = g_DeadlyRegEx.RegExENGCurrencyKAKAO.Match(m_strClipboardBUY);
+                Match mMatch = g_DeadlyRegEx.RegExENGCurrencyKAKAO.Match(m_strClipboardText);
                 DeadlyTRADE.TradeMSG tradeWhisperCurr = new DeadlyTRADE.TradeMSG();
                 if (mMatch.Groups.Count > 9)
                 {
@@ -3375,7 +3205,7 @@ namespace POExileDirection
             try
             {
                 DeadlyTRADE.TradeMSG tradeWhisper2Un = new DeadlyTRADE.TradeMSG();
-                Match mMatch = g_DeadlyRegEx.RegExENGPoeAppComTabNameKAKAO.Match(m_strClipboardBUY);
+                Match mMatch = g_DeadlyRegEx.RegExENGPoeAppComTabNameKAKAO.Match(m_strClipboardText);
                 if (mMatch.Groups.Count > 11)
                 {
                     tradeWhisper2Un.tradePurpose = "BUY";
@@ -3431,7 +3261,7 @@ namespace POExileDirection
             try
             {
                 DeadlyTRADE.TradeMSG tradeWhisper2 = new DeadlyTRADE.TradeMSG();
-                Match mMatch = g_DeadlyRegEx.RegExENGPriceNoTabNameKAKAO.Match(m_strClipboardBUY);
+                Match mMatch = g_DeadlyRegEx.RegExENGPriceNoTabNameKAKAO.Match(m_strClipboardText);
                 if (mMatch.Groups.Count > 7)
                 {
                     tradeWhisper2.tradePurpose = "BUY";
@@ -3485,7 +3315,7 @@ namespace POExileDirection
             try
             {
                 DeadlyTRADE.TradeMSG tradeWhisper3 = new DeadlyTRADE.TradeMSG();
-                Match mMatch = g_DeadlyRegEx.RegExKORPriceWithTabNameKAKAO.Match(m_strClipboardBUY);
+                Match mMatch = g_DeadlyRegEx.RegExKORPriceWithTabNameKAKAO.Match(m_strClipboardText);
                 if (mMatch.Groups.Count > 11)
                 {
                     tradeWhisper3.tradePurpose = "BUY";
@@ -3539,7 +3369,7 @@ namespace POExileDirection
             try
             {
                 DeadlyTRADE.TradeMSG tradeWhisper4 = new DeadlyTRADE.TradeMSG();
-                Match mMatch = g_DeadlyRegEx.RegExKORUnPriceKAKAO.Match(m_strClipboardBUY);
+                Match mMatch = g_DeadlyRegEx.RegExKORUnPriceKAKAO.Match(m_strClipboardText);
                 if (mMatch.Groups.Count > 8)
                 {
                     tradeWhisper4.tradePurpose = "BUY";
@@ -3593,7 +3423,7 @@ namespace POExileDirection
             try
             {
                 DeadlyTRADE.TradeMSG tradeWhisperENMAP = new DeadlyTRADE.TradeMSG();
-                Match mMatch = g_DeadlyRegEx.RegExENGMapLiveSiteKAKAO.Match(m_strClipboardBUY);
+                Match mMatch = g_DeadlyRegEx.RegExENGMapLiveSiteKAKAO.Match(m_strClipboardText);
                 if (mMatch.Groups.Count > 5)
                 {
                     tradeWhisperENMAP.tradePurpose = "BUY";
@@ -3645,9 +3475,9 @@ namespace POExileDirection
 
         private void Parse_ClipboardBuying()
         {
-            if (m_strClipboardBUY.ToUpper().Contains("BUY YOUR")
-                || m_strClipboardBUY.ToUpper().Contains("구매하고")
-                || m_strClipboardBUY.ToUpper().Contains("WTB"))
+            if (m_strClipboardText.ToUpper().Contains("BUY YOUR")
+                || m_strClipboardText.ToUpper().Contains("구매하고")
+                || m_strClipboardText.ToUpper().Contains("WTB"))
             {
                 #region ⨌⨌ ### for KAKAO BUYING Parsing and Notify ### ⨌⨌
 

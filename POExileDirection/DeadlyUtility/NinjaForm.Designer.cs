@@ -545,7 +545,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(479, 49);
             this.label13.TabIndex = 2;
-            this.label13.Text = "잠시만 기다려주세요.\r\n\r\nWait a moment plz...";
+            this.label13.Text = "잠시만 기다려주세요.\r\n\r\nWait a moment pls...";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label15

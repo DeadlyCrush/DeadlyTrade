@@ -98,7 +98,9 @@ namespace POExileDirection
 
         private void FrmNotifyPanel_SizeChanged(object sender, EventArgs e)
         {
-            //panelNOTIFICATION.Invalidate();
+            Panel parentPanel = ((Form)sender).Parent as Panel;
+            Form frmSender = (Form)sender as Form;
+            parentPanel.Height = frmSender.Height;
         }
 
         private void FrmNotifyPanel_FormClosed(object sender, FormClosedEventArgs e)

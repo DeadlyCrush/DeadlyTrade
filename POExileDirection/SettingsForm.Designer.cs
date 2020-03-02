@@ -49,7 +49,6 @@
             this.btnThanks = new System.Windows.Forms.Button();
             this.btnKick = new System.Windows.Forms.Button();
             this.btnSold = new System.Windows.Forms.Button();
-            this.btnWaitPlz = new System.Windows.Forms.Button();
             this.textBoxResend = new System.Windows.Forms.TextBox();
             this.textBoxDone = new System.Windows.Forms.TextBox();
             this.textBoxSold = new System.Windows.Forms.TextBox();
@@ -375,7 +374,6 @@
             this.panel3.Controls.Add(this.btnThanks);
             this.panel3.Controls.Add(this.btnKick);
             this.panel3.Controls.Add(this.btnSold);
-            this.panel3.Controls.Add(this.btnWaitPlz);
             this.panel3.Controls.Add(this.textBoxResend);
             this.panel3.Controls.Add(this.textBoxDone);
             this.panel3.Controls.Add(this.textBoxSold);
@@ -397,9 +395,9 @@
             this.panel3.Controls.Add(this.label40);
             this.panel3.Controls.Add(this.label44);
             this.panel3.Controls.Add(this.label14);
-            this.panel3.Location = new System.Drawing.Point(3, 1);
+            this.panel3.Location = new System.Drawing.Point(12, 58);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(573, 454);
+            this.panel3.Size = new System.Drawing.Size(40, 48);
             this.panel3.TabIndex = 2;
             // 
             // labelVolume
@@ -542,20 +540,6 @@
             this.btnSold.TabIndex = 14;
             this.btnSold.UseVisualStyleBackColor = true;
             // 
-            // btnWaitPlz
-            // 
-            this.btnWaitPlz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnWaitPlz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnWaitPlz.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnWaitPlz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWaitPlz.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnWaitPlz.ForeColor = System.Drawing.Color.White;
-            this.btnWaitPlz.Location = new System.Drawing.Point(150, 117);
-            this.btnWaitPlz.Name = "btnWaitPlz";
-            this.btnWaitPlz.Size = new System.Drawing.Size(20, 20);
-            this.btnWaitPlz.TabIndex = 15;
-            this.btnWaitPlz.UseVisualStyleBackColor = false;
-            // 
             // textBoxResend
             // 
             this.textBoxResend.Location = new System.Drawing.Point(180, 210);
@@ -692,7 +676,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(124, 15);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Wait Plz.";
+            this.label5.Text = "Wait pls..";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label60
@@ -758,7 +742,7 @@
             this.label16.ForeColor = System.Drawing.Color.Bisque;
             this.label16.Location = new System.Drawing.Point(0, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(793, 46);
+            this.label16.Size = new System.Drawing.Size(1131, 46);
             this.label16.TabIndex = 6;
             this.label16.Text = "DeadlyTrade Settings";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -797,9 +781,9 @@
             this.panel1.Controls.Add(this.textRemains);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Location = new System.Drawing.Point(5, 3);
+            this.panel1.Location = new System.Drawing.Point(6, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(54, 29);
+            this.panel1.Size = new System.Drawing.Size(77, 36);
             this.panel1.TabIndex = 7;
             // 
             // checkEmergency
@@ -1214,9 +1198,9 @@
             this.panel2.Controls.Add(this.label33);
             this.panel2.Controls.Add(this.labelFL1);
             this.panel2.Controls.Add(this.label35);
-            this.panel2.Location = new System.Drawing.Point(12, 116);
+            this.panel2.Location = new System.Drawing.Point(15, 118);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(38, 38);
+            this.panel2.Size = new System.Drawing.Size(32, 36);
             this.panel2.TabIndex = 2;
             // 
             // btn5
@@ -1917,7 +1901,7 @@
             this.panelLeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeftMenu.Location = new System.Drawing.Point(0, 46);
             this.panelLeftMenu.Name = "panelLeftMenu";
-            this.panelLeftMenu.Size = new System.Drawing.Size(204, 460);
+            this.panelLeftMenu.Size = new System.Drawing.Size(204, 668);
             this.panelLeftMenu.TabIndex = 8;
             // 
             // panelHall
@@ -2025,8 +2009,8 @@
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.panel3);
             this.panel11.Controls.Add(this.panelDonateContact);
+            this.panel11.Controls.Add(this.panel3);
             this.panel11.Controls.Add(this.panel2);
             this.panel11.Controls.Add(this.panelHallOfFame);
             this.panel11.Controls.Add(this.panelSkillMain);
@@ -2034,7 +2018,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(204, 46);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(589, 460);
+            this.panel11.Size = new System.Drawing.Size(927, 668);
             this.panel11.TabIndex = 9;
             // 
             // panelDonateContact
@@ -2345,9 +2329,9 @@
             this.panelSkillMain.Controls.Add(this.label66);
             this.panelSkillMain.Controls.Add(this.lbSkillQ);
             this.panelSkillMain.Controls.Add(this.label68);
-            this.panelSkillMain.Location = new System.Drawing.Point(13, 186);
+            this.panelSkillMain.Location = new System.Drawing.Point(14, 176);
             this.panelSkillMain.Name = "panelSkillMain";
-            this.panelSkillMain.Size = new System.Drawing.Size(35, 36);
+            this.panelSkillMain.Size = new System.Drawing.Size(38, 41);
             this.panelSkillMain.TabIndex = 10;
             // 
             // btnS5
@@ -2878,7 +2862,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(793, 506);
+            this.ClientSize = new System.Drawing.Size(1131, 714);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.pictureBox2);
@@ -3009,7 +2993,6 @@
         private System.Windows.Forms.Button btnThanks;
         private System.Windows.Forms.Button btnKick;
         private System.Windows.Forms.Button btnSold;
-        private System.Windows.Forms.Button btnWaitPlz;
         private System.Windows.Forms.TextBox textBoxResend;
         private System.Windows.Forms.TextBox textBoxDone;
         private System.Windows.Forms.TextBox textBoxSold;

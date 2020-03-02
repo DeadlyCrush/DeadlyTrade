@@ -44,7 +44,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureCurrency = new System.Windows.Forms.PictureBox();
             this.btnThanks = new System.Windows.Forms.Button();
-            this.btnWaitPlz = new System.Windows.Forms.Button();
+            this.btnWaitPls = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -141,7 +141,7 @@
             this.panelMiddle.Controls.Add(this.labelElapsed);
             this.panelMiddle.Controls.Add(this.pictureCurrency);
             this.panelMiddle.Controls.Add(this.btnThanks);
-            this.panelMiddle.Controls.Add(this.btnWaitPlz);
+            this.panelMiddle.Controls.Add(this.btnWaitPls);
             this.panelMiddle.Controls.Add(this.labelPrice);
             this.panelMiddle.Controls.Add(this.button1);
             this.panelMiddle.Controls.Add(this.button2);
@@ -247,6 +247,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = global::POExileDirection.Properties.Resources.panel_bottom_line;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Location = new System.Drawing.Point(0, 45);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(493, 9);
@@ -284,24 +285,24 @@
             this.btnThanks.Click += new System.EventHandler(this.BtnThanks_Click);
             this.btnThanks.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NotificationForm_KeyDown);
             // 
-            // btnWaitPlz
+            // btnWaitPls
             // 
-            this.btnWaitPlz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
-            this.btnWaitPlz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnWaitPlz.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnWaitPlz.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnWaitPlz.FlatAppearance.BorderSize = 0;
-            this.btnWaitPlz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWaitPlz.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnWaitPlz.ForeColor = System.Drawing.Color.White;
-            this.btnWaitPlz.Image = global::POExileDirection.Properties.Resources.panel_wait;
-            this.btnWaitPlz.Location = new System.Drawing.Point(352, 58);
-            this.btnWaitPlz.Name = "btnWaitPlz";
-            this.btnWaitPlz.Size = new System.Drawing.Size(64, 20);
-            this.btnWaitPlz.TabIndex = 1;
-            this.btnWaitPlz.UseVisualStyleBackColor = false;
-            this.btnWaitPlz.Click += new System.EventHandler(this.BtnWaitPlz_Click);
-            this.btnWaitPlz.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NotificationForm_KeyDown);
+            this.btnWaitPls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
+            this.btnWaitPls.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnWaitPls.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnWaitPls.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnWaitPls.FlatAppearance.BorderSize = 0;
+            this.btnWaitPls.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWaitPls.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnWaitPls.ForeColor = System.Drawing.Color.White;
+            this.btnWaitPls.Image = global::POExileDirection.Properties.Resources.panel_wait;
+            this.btnWaitPls.Location = new System.Drawing.Point(352, 58);
+            this.btnWaitPls.Name = "btnWaitPls";
+            this.btnWaitPls.Size = new System.Drawing.Size(64, 20);
+            this.btnWaitPls.TabIndex = 1;
+            this.btnWaitPls.UseVisualStyleBackColor = false;
+            this.btnWaitPls.Click += new System.EventHandler(this.BtnWaitpls_Click);
+            this.btnWaitPls.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NotificationForm_KeyDown);
             // 
             // button1
             // 
@@ -657,12 +658,12 @@
         private System.Windows.Forms.Label labelLeague;
         private System.Windows.Forms.Button btnKick;
         private System.Windows.Forms.Button btnSold;
-        private System.Windows.Forms.Button btnWaitPlz;
         private System.Windows.Forms.Button btnHideout;
         private System.Windows.Forms.Button btnInvite;
         private System.Windows.Forms.Button btnTrade;
         private System.Windows.Forms.ToolTip DeadlyToolTip;
         private System.Windows.Forms.Button btnThanks;
+        private System.Windows.Forms.Button btnWaitPls;
         private System.Windows.Forms.Button btnWilling;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label labelElapsed;

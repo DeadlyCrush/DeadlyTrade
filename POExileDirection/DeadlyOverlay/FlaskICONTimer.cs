@@ -1,21 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Drawing.Imaging;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Media;
 using Color = System.Drawing.Color;
+using POExileDirection.DeadlyCommon;
+using System.Threading.Tasks;
 
 namespace POExileDirection
 {
     public partial class FlaskICONTimer : Form
     {
+        #region [[[[[ Global Variables ]]]]]
         private int m_nExStyleNum = -20;
         private const uint WS_EX_LAYERED = 0x00080000;
         private const uint WS_EX_TRANSPARENT = 0x00000020;
@@ -32,6 +29,9 @@ namespace POExileDirection
 
         public int nFlaskICONEnum = 0;
         public string strUseAlertSound = "N";
+
+        SharpDXDeadlyWrapper dxWrapper = new SharpDXDeadlyWrapper(); 
+        #endregion
 
         public FlaskICONTimer()
         {
@@ -84,7 +84,7 @@ namespace POExileDirection
                     sTop = parser.GetSetting("MISC", "FLASK1TOP");
                     sColor = parser.GetSetting("MISC", "FLASK1COLOR");
                     pictureFlask.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                   + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(0)]);
+                                   + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(0)]);
                 }
                 else if (nFlaskNumber == 2)
                 {
@@ -92,7 +92,7 @@ namespace POExileDirection
                     sTop = parser.GetSetting("MISC", "FLASK2TOP");
                     sColor = parser.GetSetting("MISC", "FLASK2COLOR");
                     pictureFlask.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                   + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(1)]);
+                                   + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(1)]);
                 }
                 else if (nFlaskNumber == 3)
                 {
@@ -100,7 +100,7 @@ namespace POExileDirection
                     sTop = parser.GetSetting("MISC", "FLASK3TOP");
                     sColor = parser.GetSetting("MISC", "FLASK3COLOR");
                     pictureFlask.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                   + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(2)]);
+                                   + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(2)]);
                 }
                 else if (nFlaskNumber == 4)
                 {
@@ -108,7 +108,7 @@ namespace POExileDirection
                     sTop = parser.GetSetting("MISC", "FLASK4TOP");
                     sColor = parser.GetSetting("MISC", "FLASK4COLOR");
                     pictureFlask.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                   + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(3)]);
+                                   + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(3)]);
                 }
                 else if (nFlaskNumber == 5)
                 {
@@ -116,7 +116,7 @@ namespace POExileDirection
                     sTop = parser.GetSetting("MISC", "FLASK5TOP");
                     sColor = parser.GetSetting("MISC", "FLASK5COLOR");
                     pictureFlask.BackgroundImage = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\Flask\\"
-                                   + NinjaTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(4)]);
+                                   + DeadlyTranslation.FlaskImgPath[DeadlyFlaskImage.FlaskImageTimerGetValuebyKey(4)]);
                 }
 
                 Left = Convert.ToInt32(sLeft);
@@ -156,6 +156,7 @@ namespace POExileDirection
             }
         }
 
+        #region [[[[[ Timer ]]]]]
         private void timer1_Tick(object sender, EventArgs e)
         {
             try
@@ -204,23 +205,16 @@ namespace POExileDirection
             {
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex); ;
             }
-        }
-
-        private MediaPlayer _mediaPlayer; // Added 1.3.9.9 Ver.
+        } 
+        #endregion
 
         private void PlayMediaFile(string filename)
         {
-            _mediaPlayer = new MediaPlayer();
-            _mediaPlayer.Open(new Uri(filename));
-
-            SetVolume(LauncherForm.g_FlaskTimerVolume);
-            _mediaPlayer.Play();
-            _mediaPlayer = null;
-        }
-
-        public void SetVolume(int volume)
-        {
-            _mediaPlayer.Volume = volume / 100.0f; // MediaPlayer volume is a float value between 0 and 1.
+            Task.Run(() =>
+            {
+                dxWrapper.SetAudioHandler(Application.StartupPath + "\\flaskalert.wav", LauncherForm.g_FlaskTimerVolume/2);
+                dxWrapper.Play();
+            });
         }
 
         // Adjust an image's translucency.
@@ -260,13 +254,6 @@ namespace POExileDirection
             // Return the result.
             return bm;
         }*/
-
-        private void FlaskICONTimer_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            if(pictureFlask!=null) pictureFlask.Dispose();
-            if(xuiFlatProgressBar1!=null) xuiFlatProgressBar1.Dispose();
-            this.Dispose();
-        }
 
         private void pictureFlask_MouseDown(object sender, MouseEventArgs e)
         {
@@ -340,6 +327,7 @@ namespace POExileDirection
             parser.SaveSettings();
         }
 
+        #region [[[[[ Dispose & Close ]]]]]
         private void FlaskICONTimer_FormClosing(object sender, FormClosingEventArgs e)
         {
             switch (nFlaskNumber)
@@ -365,6 +353,15 @@ namespace POExileDirection
             if (timer1 != null) timer1.Dispose();
             if (pictureFlask != null) pictureFlask.Dispose();
             if (xuiFlatProgressBar1 != null) xuiFlatProgressBar1.Dispose();
+            if (dxWrapper != null) dxWrapper.Dispose();
         }
+
+        private void FlaskICONTimer_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (pictureFlask != null) pictureFlask.Dispose();
+            if (xuiFlatProgressBar1 != null) xuiFlatProgressBar1.Dispose();
+            this.Dispose();
+        }
+        #endregion
     }
 }

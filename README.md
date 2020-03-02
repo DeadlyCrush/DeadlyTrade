@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]()
 [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]()
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://github.com/DeadlyCrush/DeadlyTrade/blob/master/CODE_OF_CONDUCT.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/DeadlyCrush/DeadlyTrade/blob/master/LICENSE)
 
 ### Main HUD rework.
 ![Main HUD](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FnEVUM%2FbtqB10JTI9i%2FJhmAdkoH4eelxJOJk7QJ81%2Fimg.jpg)
@@ -129,4 +131,21 @@ DeadlyTrade / Deadly KOR Team >
 - KAKAO Open Talk - https://open.kakao.com/o/gylOSztb
 ## Thank you all. Good Luck Exile~!
 Please let me know about any bugs you encounter or if you have any suggestions.
-Thank you for your interest and support. 
+Thank you for your interest and support.
+
+# Status
+## Build
+
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://github.com/DeadlyCrush/DeadlyTrade/blob/master/CODE_OF_CONDUCT.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/DeadlyCrush/DeadlyTrade/blob/master/LICENSE)
+
+## Download (Real-Time)
+
+( Repository moved. ) 2020.02.16 ~ Now.
+
+[![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]()
+
+DeadlyTrade 1.0.0.0 Version. ~ 2020.02.15
+
+[![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]()

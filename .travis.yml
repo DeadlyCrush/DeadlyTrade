@@ -3,4 +3,4 @@ solution: DeadlyTradewithExileDirection.sln
 mono: latest
 dotnet: 2.1
 script:
- - msbuild /p:Configuration=Release .POExileDirection/DeadlyTrade.csproj
+ - msbuild /p:Configuration=Release ./POExileDirection/DeadlyTrade.csproj

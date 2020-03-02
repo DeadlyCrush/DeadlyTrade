@@ -1,5 +1,6 @@
 language: csharp
 solution: DeadlyTradewithExileDirection.sln
-mono: none
+mono: latest
+dotnet: 2.1
 script:
- - msbuild /p:Configuration=Release src/DeadlyTradewithExileDirection.sln
+ - msbuild /p:Configuration=Release .POExileDirection/DeadlyTrade.csproj

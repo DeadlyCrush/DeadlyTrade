@@ -1,5 +1,6 @@
 language: csharp
 solution: DeadlyTradewithExileDirection.sln
+os: windows
 mono:
   - latest
   - 3.12.0

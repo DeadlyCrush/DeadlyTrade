@@ -59,7 +59,7 @@ namespace POExileDirection
         #endregion
 
         private static string OldData
-        {
+        { 
             get; set;
         }
 

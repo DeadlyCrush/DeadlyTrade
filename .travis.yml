@@ -1,4 +1,7 @@
 language: csharp
 solution: DeadlyTradewithExileDirection.sln
-os: windows
 mono: none
+script:
+  - cd UnitTests
+  - dotnet restore -r net461
+  - dotnet test -f net461

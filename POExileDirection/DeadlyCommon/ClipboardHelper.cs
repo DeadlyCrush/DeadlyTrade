@@ -66,7 +66,7 @@ namespace POExileDirection
         public static string GetUnicodeText()
         {
             if (!IsClipboardFormatAvailable(CF_UNICODETEXT))
-                return null;
+                return null; 
 
             try
             {

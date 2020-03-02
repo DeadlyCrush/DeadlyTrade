@@ -2,5 +2,4 @@ language: csharp
 solution: DeadlyTradewithExileDirection.sln
 mono: none
 script:
-  - dotnet restore -r net461
-  - dotnet test -f net461
+ - msbuild /p:Configuration=Release src/DeadlyTradewithExileDirection.sln

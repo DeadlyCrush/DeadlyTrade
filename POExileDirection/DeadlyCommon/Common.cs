@@ -30,6 +30,63 @@ namespace POExileDirection
         LEAGUE_HDCORE_STANDARD,
     };
 
+    public static class LEAGUE_STRINGExtensions
+    {
+        public static string ToDescriptionString(this LEAGUE_STRING val)
+        {
+            DescriptionAttribute[] attributes = (DescriptionAttribute[])val
+               .GetType()
+               .GetField(val.ToString())
+               .GetCustomAttributes(typeof(DescriptionAttribute), false);
+            return attributes.Length > 0 ? attributes[0].Description : string.Empty;
+        }
+    }
+
+    public enum HOTKEYNAME_STRING
+    {
+        [Description("JUN")]
+        HOTKEYNAME_JUN,
+
+        [Description("REMAINS")]
+        HOTKEYNAME_REMAINS,
+
+        [Description("ALVA")]
+        HOTKEYNAME_ALVA,
+
+        [Description("ZANA")]
+        HOTKEYNAME_ZANA,
+
+        [Description("HIDEOUT")]
+        HOTKEYNAME_HIDEOUT,
+
+        [Description("SEARCH")]
+        HOTKEYNAME_SEARCH,
+
+        [Description("EXIT")]
+        HOTKEYNAME_EXIT,
+
+        [Description("INVITE")]
+        HOTKEYNAME_INVITE,
+
+        [Description("TRADE")]
+        HOTKEYNAME_TRADE,
+
+        [Description("KICK")]
+        HOTKEYNAME_KICK,
+    };
+
+    public static class HOTKEYNAME_STRINGExtensions
+    {
+        public static string ToDescriptionString(this HOTKEYNAME_STRING val)
+        {
+            DescriptionAttribute[] attributes = (DescriptionAttribute[])val
+               .GetType()
+               .GetField(val.ToString())
+               .GetCustomAttributes(typeof(DescriptionAttribute), false);
+            return attributes.Length > 0 ? attributes[0].Description : string.Empty;
+        }
+    }
+
     public static class DeadlyLog4Net
     {
         public static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
@@ -119,18 +176,6 @@ namespace POExileDirection
                 sqlCmd.Dispose();
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
-        }
-    }
-
-    public static class LEAGUE_STRINGExtensions
-    {
-        public static string ToDescriptionString(this LEAGUE_STRING val)
-        {
-            DescriptionAttribute[] attributes = (DescriptionAttribute[])val
-               .GetType()
-               .GetField(val.ToString())
-               .GetCustomAttributes(typeof(DescriptionAttribute), false);
-            return attributes.Length > 0 ? attributes[0].Description : string.Empty;
         }
     }
 
@@ -281,15 +326,6 @@ namespace POExileDirection
     public struct RECT
     {
         public int left, top, right, bottom;
-    }
-
-    public enum fsModifiers
-    {
-        None = 0x0000,
-        Alt = 0x0001,
-        Control = 0x0002,
-        Shift = 0x0004,
-        Window = 0x0008,
     }
 
     public class DeadlyAtlas
@@ -723,8 +759,8 @@ namespace POExileDirection
 
     public class DeadlyHotkeys
     {
-        public fsModifiers fsMod { get; set; }
-        public Keys hotKeys { get; set; }
+        public WindowsHook.Keys fsMod { get; set; }
+        public WindowsHook.Keys hotKeys { get; set; }
     }
 
     public static class DeadlyImageCommon

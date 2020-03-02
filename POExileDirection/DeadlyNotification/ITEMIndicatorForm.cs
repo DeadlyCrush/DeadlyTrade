@@ -9,16 +9,18 @@ namespace POExileDirection
 {
     public partial class ITEMIndicatorForm : Form
     {
-        // BBBBBB private int nDefaultOffsetX = 3;
-        // BBBBBB private int nDefaultOffsetY = 4;
-
-        public bool bIsQuad = false;
+        #region [[[[[ Global Variables ]]]]]
+        public bool bIsQuad = false; 
         public int nStashX = 0;
         public int nStashY = 0;
 
         public string _strItemName = String.Empty;
         public string _strPrice = String.Empty;
         public string _strBmpPath = String.Empty;
+
+        public string _strNickName = String.Empty;
+        public string _strTradePurpose = String.Empty;
+        #endregion
 
         public ITEMIndicatorForm()
         {
@@ -216,6 +218,64 @@ namespace POExileDirection
                 bIsQuad = false;
 
             SetIndicatorPictureBox();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnInvite_Click(object sender, EventArgs e)
+        {
+            InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
+
+            InputSimulator iSim = new InputSimulator();
+
+            iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+
+            // Send Invite
+            string strSendString = String.Format("/invite {0}", _strNickName);
+            iSim.Keyboard.TextEntry(strSendString);
+
+            // Send RETURN
+            iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+        }
+
+        private void btnTrade_Click(object sender, EventArgs e)
+        {
+            InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
+
+            InputSimulator iSim = new InputSimulator();
+
+            iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+
+            string strSendString = String.Format("/tradewith {0}", _strNickName);
+            iSim.Keyboard.TextEntry(strSendString);
+
+            // Send RETURN
+            iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+        }
+
+        private void btnKick_Click(object sender, EventArgs e)
+        {
+            InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
+
+            InputSimulator iSim = new InputSimulator();
+
+            iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+
+            string strSendString = String.Format("/kick {0}", _strNickName);
+            if (_strTradePurpose == "BUY")
+                strSendString = String.Format("/kick {0}", LauncherForm.g_strMyNickName);
+            iSim.Keyboard.TextEntry(strSendString);
+
+            // Send RETURN
+            iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+        }
+
+        private void btnThanks_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -989,8 +989,8 @@ namespace POExileDirection
                 {
                     if (LauncherForm.g_strUILang == "KOR")
                     {
-                        if (NinjaTranslation.transCurrency.ContainsKey(objLine.CurrencyTypeName))
-                            strItemName = NinjaTranslation.transCurrency[objLine.CurrencyTypeName];
+                        if (DeadlyTranslation.transCurrency.ContainsKey(objLine.CurrencyTypeName))
+                            strItemName = DeadlyTranslation.transCurrency[objLine.CurrencyTypeName];
                     }
                     else
                         strItemName = objLine.CurrencyTypeName;
@@ -1063,8 +1063,8 @@ namespace POExileDirection
 
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transFragments.ContainsKey(objLine.CurrencyTypeName))
-                        strItemName = NinjaTranslation.transFragments[objLine.CurrencyTypeName];
+                    if (DeadlyTranslation.transFragments.ContainsKey(objLine.CurrencyTypeName))
+                        strItemName = DeadlyTranslation.transFragments[objLine.CurrencyTypeName];
                 }
                 else
                     strItemName = objLine.CurrencyTypeName;
@@ -1117,8 +1117,8 @@ namespace POExileDirection
 
                     if (LauncherForm.g_strUILang == "KOR")
                     {
-                        if (NinjaTranslation.transWatchstones.ContainsKey(objLine.name))
-                            strItemName = NinjaTranslation.transWatchstones[objLine.name];
+                        if (DeadlyTranslation.transWatchstones.ContainsKey(objLine.name))
+                            strItemName = DeadlyTranslation.transWatchstones[objLine.name];
                     }
                     else
                         strItemName = objLine.name;
@@ -1167,8 +1167,8 @@ namespace POExileDirection
 
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transBlightOil.ContainsKey(objLine.name))
-                        strItemName = NinjaTranslation.transBlightOil[objLine.name];
+                    if (DeadlyTranslation.transBlightOil.ContainsKey(objLine.name))
+                        strItemName = DeadlyTranslation.transBlightOil[objLine.name];
                 }
                 else
                     strItemName = objLine.name;
@@ -1219,8 +1219,8 @@ namespace POExileDirection
 
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transIncubators.ContainsKey(objLine.name))
-                        strItemName = NinjaTranslation.transIncubators[objLine.name];
+                    if (DeadlyTranslation.transIncubators.ContainsKey(objLine.name))
+                        strItemName = DeadlyTranslation.transIncubators[objLine.name];
                 }
                 else
                     strItemName = objLine.name;
@@ -1271,8 +1271,8 @@ namespace POExileDirection
 
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transScarabs.ContainsKey(objLine.name))
-                        strItemName = NinjaTranslation.transScarabs[objLine.name];
+                    if (DeadlyTranslation.transScarabs.ContainsKey(objLine.name))
+                        strItemName = DeadlyTranslation.transScarabs[objLine.name];
                 }
                 else
                     strItemName = objLine.name;
@@ -1323,8 +1323,8 @@ namespace POExileDirection
 
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transFossils.ContainsKey(objLine.Name))
-                        strItemName = NinjaTranslation.transFossils[objLine.Name];
+                    if (DeadlyTranslation.transFossils.ContainsKey(objLine.Name))
+                        strItemName = DeadlyTranslation.transFossils[objLine.Name];
                 }
                 else
                     strItemName = objLine.Name;
@@ -1375,8 +1375,8 @@ namespace POExileDirection
 
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transResonators.ContainsKey(objLine.Name))
-                        strItemName = NinjaTranslation.transResonators[objLine.Name];
+                    if (DeadlyTranslation.transResonators.ContainsKey(objLine.Name))
+                        strItemName = DeadlyTranslation.transResonators[objLine.Name];
                 }
                 else
                     strItemName = objLine.Name;
@@ -1427,8 +1427,8 @@ namespace POExileDirection
 
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transEssences.ContainsKey(objLine.Name))
-                        strItemName = NinjaTranslation.transEssences[objLine.Name];
+                    if (DeadlyTranslation.transEssences.ContainsKey(objLine.Name))
+                        strItemName = DeadlyTranslation.transEssences[objLine.Name];
                 }
                 else
                     strItemName = objLine.Name;
@@ -1479,8 +1479,8 @@ namespace POExileDirection
 
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transDivinationCards.ContainsKey(objLine.Name))
-                        strItemName = NinjaTranslation.transDivinationCards[objLine.Name];
+                    if (DeadlyTranslation.transDivinationCards.ContainsKey(objLine.Name))
+                        strItemName = DeadlyTranslation.transDivinationCards[objLine.Name];
                 }
                 else
                     strItemName = objLine.Name;
@@ -1523,8 +1523,8 @@ namespace POExileDirection
 
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transProphecies.ContainsKey(objLine.Name))
-                        strItemName = NinjaTranslation.transProphecies[objLine.Name];
+                    if (DeadlyTranslation.transProphecies.ContainsKey(objLine.Name))
+                        strItemName = DeadlyTranslation.transProphecies[objLine.Name];
                 }
                 else
                     strItemName = objLine.Name;
@@ -1571,8 +1571,8 @@ namespace POExileDirection
 
                     if (LauncherForm.g_strUILang == "KOR")
                     {
-                        if (NinjaTranslation.transUniqueMaps.ContainsKey(objLine.Name))
-                            strItemName = NinjaTranslation.transUniqueMaps[objLine.Name];
+                        if (DeadlyTranslation.transUniqueMaps.ContainsKey(objLine.Name))
+                            strItemName = DeadlyTranslation.transUniqueMaps[objLine.Name];
                     }
                     else
                         strItemName = objLine.Name;
@@ -1583,7 +1583,7 @@ namespace POExileDirection
                             imgList.Images.Add(Bitmap.FromFile(Application.StartupPath + "\\NINJA\\PriceImages\\QuestionMark_24px.png"));
                         else
                             imgList.Images.Add(Bitmap.FromFile(Application.StartupPath + "\\NINJA\\PriceImages\\" + objLine.Name + ".png"));
-                        /*WebRequest TmpRequest = (HttpWebRequest)WebRequest.Create(NinjaTranslation.UniqueMapImages[objLine.Name]);
+                        /*WebRequest TmpRequest = (HttpWebRequest)WebRequest.Create(DeadlyTranslation.UniqueMapImages[objLine.Name]);
                         WebResponse TmpResponse = TmpRequest.GetResponse();
 
                         Bitmap TmpBmp = new Bitmap(TmpResponse.GetResponseStream());
@@ -1628,8 +1628,8 @@ namespace POExileDirection
 
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transWhiteMaps.ContainsKey(objLine.Name))
-                        strItemName = NinjaTranslation.transWhiteMaps[objLine.Name];
+                    if (DeadlyTranslation.transWhiteMaps.ContainsKey(objLine.Name))
+                        strItemName = DeadlyTranslation.transWhiteMaps[objLine.Name];
                 }
                 else
                     strItemName = objLine.Name;
@@ -1691,8 +1691,8 @@ namespace POExileDirection
 
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transUniqueJewels.ContainsKey(objLine.Name))
-                        strItemName = NinjaTranslation.transUniqueJewels[objLine.Name];
+                    if (DeadlyTranslation.transUniqueJewels.ContainsKey(objLine.Name))
+                        strItemName = DeadlyTranslation.transUniqueJewels[objLine.Name];
                 }
                 else
                     strItemName = objLine.Name;
@@ -1743,8 +1743,8 @@ namespace POExileDirection
 
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transUniqueFlasks.ContainsKey(objLine.Name))
-                        strItemName = NinjaTranslation.transUniqueFlasks[objLine.Name];
+                    if (DeadlyTranslation.transUniqueFlasks.ContainsKey(objLine.Name))
+                        strItemName = DeadlyTranslation.transUniqueFlasks[objLine.Name];
                 }
                 else
                     strItemName = objLine.Name;
@@ -1800,8 +1800,8 @@ namespace POExileDirection
 
                     if (LauncherForm.g_strUILang == "KOR")
                     {
-                        if (NinjaTranslation.transUniqueWeapons.ContainsKey(objLine.Name))
-                            strItemName = NinjaTranslation.transUniqueWeapons[objLine.Name];
+                        if (DeadlyTranslation.transUniqueWeapons.ContainsKey(objLine.Name))
+                            strItemName = DeadlyTranslation.transUniqueWeapons[objLine.Name];
                     }
                     else
                         strItemName = objLine.Name;
@@ -1861,8 +1861,8 @@ namespace POExileDirection
 
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transUniqueArmours.ContainsKey(objLine.Name))
-                        strItemName = NinjaTranslation.transUniqueArmours[objLine.Name];
+                    if (DeadlyTranslation.transUniqueArmours.ContainsKey(objLine.Name))
+                        strItemName = DeadlyTranslation.transUniqueArmours[objLine.Name];
                 }
                 else
                     strItemName = objLine.Name;
@@ -1913,8 +1913,8 @@ namespace POExileDirection
 
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transUniqueAccessories.ContainsKey(objLine.Name))
-                        strItemName = NinjaTranslation.transUniqueAccessories[objLine.Name];
+                    if (DeadlyTranslation.transUniqueAccessories.ContainsKey(objLine.Name))
+                        strItemName = DeadlyTranslation.transUniqueAccessories[objLine.Name];
                 }
                 else
                     strItemName = objLine.Name;
@@ -1963,8 +1963,8 @@ namespace POExileDirection
             {
                 if (LauncherForm.g_strUILang == "KOR")
                 {
-                    if (NinjaTranslation.transBeasts.ContainsKey(objLine.name))
-                        strItemName = NinjaTranslation.transBeasts[objLine.name];
+                    if (DeadlyTranslation.transBeasts.ContainsKey(objLine.name))
+                        strItemName = DeadlyTranslation.transBeasts[objLine.name];
                 }
                 else
                     strItemName = objLine.name;
@@ -2007,133 +2007,133 @@ namespace POExileDirection
                     case "Currency":// #1
                         //labelKOREAN.Text = Get_KORNameCurrency(strSelectedName);
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transCurrency.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transCurrency.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transCurrency[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transCurrency[strSelectedName];
                         bFound = true;
                         break;
                     case "Fragments":// #2
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transFragments.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transFragments.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transFragments[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transFragments[strSelectedName];
                         bFound = true;
                         break;
                     case "Watchstones":// #3
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transWatchstones.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transWatchstones.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transWatchstones[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transWatchstones[strSelectedName];
                         bFound = true;
                         break;
                     case "Oils":// #4
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transBlightOil.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transBlightOil.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transBlightOil[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transBlightOil[strSelectedName];
                         bFound = true;
                         break;
                     case "Incubators":// #5
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transIncubators.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transIncubators.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transIncubators[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transIncubators[strSelectedName];
                         bFound = true;
                         break;
                     case "Scarabs":// #6
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transScarabs.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transScarabs.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transScarabs[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transScarabs[strSelectedName];
                         bFound = true;
                         break;
                     case "Fossils":// #7
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transFossils.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transFossils.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transFossils[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transFossils[strSelectedName];
                         bFound = true;
                         break;
                     case "Resonators":// #8
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transResonators.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transResonators.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transResonators[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transResonators[strSelectedName];
                         bFound = true;
                         break;
                     case "Essences":// #9
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transEssences.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transEssences.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transEssences[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transEssences[strSelectedName];
                         bFound = true;
                         break;                       
                     case "DivinationCards":// #10
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transDivinationCards.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transDivinationCards.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transDivinationCards[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transDivinationCards[strSelectedName];
                         bFound = true;
                         break;
                     case "Prophecies":// #11
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transProphecies.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transProphecies.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transProphecies[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transProphecies[strSelectedName];
                         bFound = true;
                         break;
                     case "UniqueMaps":// #12
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transUniqueMaps.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transUniqueMaps.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transUniqueMaps[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transUniqueMaps[strSelectedName];
                         bFound = true;
                         break;
                     case "Maps":// #13
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transWhiteMaps.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transWhiteMaps.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transWhiteMaps[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transWhiteMaps[strSelectedName];
                         bFound = true;
                         break;
                     case "UniqueJewels":// #14
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transUniqueJewels.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transUniqueJewels.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transUniqueJewels[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transUniqueJewels[strSelectedName];
                         bFound = true;
                         break;
                     case "UniqueFlasks":// #15
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transUniqueFlasks.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transUniqueFlasks.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transUniqueFlasks[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transUniqueFlasks[strSelectedName];
                         bFound = true;
                         break;
                     case "UniqueWeapons":// #16
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transUniqueWeapons.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transUniqueWeapons.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transUniqueWeapons[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transUniqueWeapons[strSelectedName];
                         bFound = true;
                         break;
                     case "UniqueArmours":// #17
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transUniqueArmours.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transUniqueArmours.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transUniqueArmours[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transUniqueArmours[strSelectedName];
                         bFound = true;
                         break;
                     case "UniqueAccessories":// #18
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transUniqueAccessories.FirstOrDefault(x => x.Value == strSelectedName).Key;
+                            labelKOREAN.Text = DeadlyTranslation.transUniqueAccessories.FirstOrDefault(x => x.Value == strSelectedName).Key;
                         else
-                            labelKOREAN.Text = NinjaTranslation.transUniqueAccessories[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transUniqueAccessories[strSelectedName];
                         bFound = true;
                         break;
                     case "Beasts":// #19
                         if (LauncherForm.g_strUILang == "KOR")
-                            labelKOREAN.Text = NinjaTranslation.transBeasts[strSelectedName];
+                            labelKOREAN.Text = DeadlyTranslation.transBeasts[strSelectedName];
                         bFound = true;
                         break;
                     default:

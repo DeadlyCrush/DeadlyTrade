@@ -1,3 +1,0 @@
-폰트 Cambria : rgb 255 235 80 html #FFEB50 
-숫자 : 50pt(opacity 100%)  
-영문 : 17.67pt(opacity 70%) 

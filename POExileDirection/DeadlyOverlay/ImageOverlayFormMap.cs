@@ -65,7 +65,7 @@ namespace POExileDirection
         {
             try
             {
-                foreach (var item in NinjaTranslation.Phanteons)
+                foreach (var item in DeadlyTranslation.Phanteons)
                 {
                     ListViewItem lvItem = new ListViewItem();
                     lvItem.Text = "";

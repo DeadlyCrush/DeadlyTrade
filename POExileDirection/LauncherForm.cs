@@ -223,6 +223,9 @@ namespace POExileDirection
         public static string g_strnotiSOLD { get; set; }
         public static string g_strnotiDONE { get; set; }
         public static string g_strnotiRESEND { get; set; }
+        public static string g_strCUSTOM1 { get; set; }
+        public static string g_strCUSTOM2 { get; set; }
+        public static string g_strCUSTOM3 { get; set; }
         #endregion
 
         public static IntPtr g_handlePathOfExile { get; set; }
@@ -245,6 +248,9 @@ namespace POExileDirection
         #region [[[[[ Global Variables ]]]]]
         public static string g_strMyNickName { get; set; }
         public static string g_strTRAutoKick { get; set; }
+        public static string g_strTRAutoKickCustom1 { get; set; }
+        public static string g_strTRAutoKickCustom2 { get; set; }
+        public static string g_strTRAutoKickCustom3 { get; set; }
 
         public static int resolution_height { get; set; }
         public static int resolution_width { get; set; }
@@ -1153,89 +1159,51 @@ namespace POExileDirection
                 g_strYNMouseWheelStashTab = parser.GetSetting("MISC", "MOUSESTASHTAB"); // Addded 1.3.9.6 Ver.
                 if (String.IsNullOrEmpty(g_strYNMouseWheelStashTab))
                     g_strYNMouseWheelStashTab = "Y";
-
-                if (g_strYNMouseWheelStashTab=="Y")
-                    checkUseWheelStash.Checked = true;
-                else
-                    checkUseWheelStash.Checked = false;
                 DeadlyLog4Net._log.Info("checkUseWheelStash : " + g_strYNMouseWheelStashTab);
+
                 // EMERGENCY
                 g_strYNUseEmergencyHOTKEY = parser.GetSetting("MISC", "EMERGENCY");
                 if (String.IsNullOrEmpty(g_strYNUseEmergencyHOTKEY))
                     g_strYNUseEmergencyHOTKEY = "Y";
-
-                if (g_strYNUseEmergencyHOTKEY == "Y")
-                    checkEmergency.Checked = true;
-                else
-                    checkEmergency.Checked = false;
-
                 DeadlyLog4Net._log.Info("checkEmergency : " + g_strYNUseEmergencyHOTKEY);
+
                 // REMAINING
                 g_strYNUseRemainingHOTKEY = parser.GetSetting("MISC", "REMAINING");
                 if (String.IsNullOrEmpty(g_strYNUseRemainingHOTKEY))
                     g_strYNUseRemainingHOTKEY = "Y";
-
-                if (g_strYNUseRemainingHOTKEY == "Y")
-                    checkRemaining.Checked = true;
-                else
-                    checkRemaining.Checked = false;
-
                 DeadlyLog4Net._log.Info("checkRemaining : " + g_strYNUseRemainingHOTKEY);
+
                 // FINDBYPOSTION
                 g_strYNUseFindbyPositionHOTKEY = parser.GetSetting("MISC", "FINDBYPOSTION");
                 if (String.IsNullOrEmpty(g_strYNUseFindbyPositionHOTKEY))
                     g_strYNUseFindbyPositionHOTKEY = "Y";
-
-                if (g_strYNUseFindbyPositionHOTKEY == "Y")
-                    checkFindbyPosition.Checked = true;
-                else
-                    checkFindbyPosition.Checked = false;
-
                 DeadlyLog4Net._log.Info("checkFindbyPosition : " + g_strYNUseFindbyPositionHOTKEY);
+
                 // HOTKEYSYNDICATE
                 g_strYNUseSyndicateJUNHOTKEY = parser.GetSetting("MISC", "HOTKEYSYNDICATE");
                 if (String.IsNullOrEmpty(g_strYNUseSyndicateJUNHOTKEY))
                     g_strYNUseSyndicateJUNHOTKEY = "Y";
-
-                if (g_strYNUseSyndicateJUNHOTKEY == "Y")
-                    checkSyndicateJUN.Checked = true;
-                else
-                    checkSyndicateJUN.Checked = false;
-
                 DeadlyLog4Net._log.Info("checkSyndicateJUN : " + g_strYNUseSyndicateJUNHOTKEY);
+
                 // HOTKEYHIDEOUT
                 g_strYNUseHideoutHOTKEY = parser.GetSetting("MISC", "HOTKEYHIDEOUT");
                 if (String.IsNullOrEmpty(g_strYNUseHideoutHOTKEY))
                     g_strYNUseHideoutHOTKEY = "Y";
-
-                if (g_strYNUseHideoutHOTKEY == "Y")
-                    checkHideout.Checked = true;
-                else
-                    checkHideout.Checked = false;
-
                 DeadlyLog4Net._log.Info("checkHideout : " + g_strYNUseHideoutHOTKEY);
+
                 // HOTKEYALVAINCURSION
                 g_strYNUseIncursionALVAHOTKEY = parser.GetSetting("MISC", "HOTKEYALVAINCURSION");
                 if (String.IsNullOrEmpty(g_strYNUseIncursionALVAHOTKEY))
                     g_strYNUseIncursionALVAHOTKEY = "Y";
-
-                if (g_strYNUseIncursionALVAHOTKEY == "Y")
-                    checkTempleALVA.Checked = true;
-                else
-                    checkTempleALVA.Checked = false;
-
                 DeadlyLog4Net._log.Info("checkTempleALVA : " + g_strYNUseIncursionALVAHOTKEY);
+
                 // HOTKEYZANAATLAS
                 g_strYNUseAtlasZANAHOTKEY = parser.GetSetting("MISC", "HOTKEYZANAATLAS");
                 if (String.IsNullOrEmpty(g_strYNUseAtlasZANAHOTKEY))
                     g_strYNUseAtlasZANAHOTKEY = "Y";
-
-                if (g_strYNUseAtlasZANAHOTKEY == "Y")
-                    checkAtlasZANA.Checked = true;
-                else
-                    checkAtlasZANA.Checked = false;
-
                 DeadlyLog4Net._log.Info("checkAtlasZANA : " + g_strYNUseAtlasZANAHOTKEY);
+
+                //TODO : Trade Notification HotKeys.
                 #endregion
 
                 #region [[[[[ push pin LOCK, UNLOCK ]]]]]
@@ -1340,27 +1308,47 @@ namespace POExileDirection
             xuiFlatProgressBar1.Value = g_NinjaFileMakeAndUpdateCNT;
             if (g_NinjaFileMakeAndUpdateCNT >= CNT_NINJACATEGORIES)
             {
-                launcherTimer.Stop();
-                Thread.Sleep(100);
-                frmNinja.Dispose();
+                try
+                {
+                    launcherTimer.Stop();
+                    launcherTimer.Dispose();
+                    Thread.Sleep(100);
+                    frmNinja.Dispose();
 
-                //Get_DeadlyOverlayData(); // STEP #4~14 Done.
+                    //Get_DeadlyOverlayData(); // STEP #4~14 Done.
 
-                Get_deadlyInformationData();
+                    Get_deadlyInformationData();
 
-                // STEP #15 Done.
-                xuiFlatProgressBar2.Value = 19;
-                labelAddonStatus.Text = String.Format("Addon Data ({0})", DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss"));
+                    // STEP #15 Done.
+                    xuiFlatProgressBar2.Value = 19;
+                    labelAddonStatus.Text = String.Format("Addon Data ({0})", DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss"));
 
-                //Get_matchingENGKORData();
+                    //Get_matchingENGKORData();
 
-                // STEP #16 Done.
-                xuiFlatProgressBar2.Value = 20;
-                labelAddonStatus.Text = String.Format("Addon Data ({0})", DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss"));
+                    // STEP #16 Done.
+                    xuiFlatProgressBar2.Value = 20;
+                    labelAddonStatus.Text = String.Format("Addon Data ({0})", DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss"));
 
-                g_strExplanationLANG = g_strUILang;
-                Thread.Sleep(500);
-                timerDetect.Start();
+                    g_strExplanationLANG = g_strUILang;
+                    Thread.Sleep(500);
+                    timerDetect.Start();
+                }
+                catch (WebException ex)
+                {
+                    launcherTimer.Stop();
+                    launcherTimer.Dispose();
+
+                    MSGForm frmMSG = new MSGForm();
+                    frmMSG.lbMsg.Text = "WebException occurred.\r\nPlease check your network and Try again~.";
+                    DialogResult dr = frmMSG.ShowDialog();
+
+                    // Force Terminate Launcher.
+                    if (dr == DialogResult.OK)
+                        Application.Exit();
+                    else
+                        Application.Exit();
+                    DeadlyLog4Net._log.Error($"WebException. {MethodBase.GetCurrentMethod().Name}", ex);
+                }
             }
 
             //DeadlyLog4Net._log.Info("LauncherTimer_Tick : " + g_NinjaFileMakeAndUpdateCNT.ToString()); // Temporary.
@@ -1390,33 +1378,20 @@ namespace POExileDirection
             InteropCommon.SetForegroundWindow(g_handlePathOfExile);
         }
 
-        private void frmMainControl_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            this.Close();
-        }
-
+        #region [[[[[ TimerDetect Tick ]]]]]
         private void TimerDetect_Tick(object sender, EventArgs e)
         {
-            // TTTTT
-            // Show Start Button
-            // TTTTT ReadyToStartAddon();
-            // TTTTT return;
-
-            Thread.Sleep(100);
-
             #region ⨌⨌ Wait for POE Launching ⨌⨌
             g_handlePathOfExile = InteropCommon.FindWindow("POEWindowClass", "Path of Exile"); // ClassName = POEWindowClass
-            if (g_handlePathOfExile!= IntPtr.Zero)
+            if (g_handlePathOfExile != IntPtr.Zero)
             {
-                timerDetect.Stop();
-                Thread.Sleep(100);
-                NinjaTranslation.InitTranslateKOR();
-                Thread.Sleep(400);
-                DeadlyPriceCommon.InitDeadlyPriceCommon();
-                Thread.Sleep(400);
-
                 try
                 {
+                    timerDetect.Stop();
+                    timerDetect.Dispose();
+                    DeadlyTranslation.InitTranslateKOR();
+                    DeadlyPriceCommon.InitDeadlyPriceCommon();
+                
                     g_POELogPath = InteropCommon.GetPathFromHandle(LauncherForm.g_handlePathOfExile);
 
                     bool containsKG = Regex.IsMatch(g_POELogPath, Regex.Escape("KG"), RegexOptions.IgnoreCase);
@@ -1424,14 +1399,14 @@ namespace POExileDirection
                     if (containsKG)
                     {
                         g_POELogFileName = "KakaoClient.txt";
-                        labelReady.Text = "POE [KAKAO Client] Readly to";
+                        labelReady.Text = "POE [KAKAO Client] Ready to";
 
                         labelClient.Text = "CLIENT : KAKAO";
                     }
                     else
                     {
                         g_POELogFileName = "Client.txt";
-                        labelReady.Text = "POE [GGG Client] Readly to";
+                        labelReady.Text = "POE [GGG Client] Ready to";
 
                         labelClient.Text = "CLIENT : GGG";
                     }
@@ -1512,15 +1487,12 @@ namespace POExileDirection
                 }
                 catch (Exception ex)
                 {
+                    timerDetect.Stop();
+                    timerDetect.Dispose();
                     DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                 }
 
                 InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-
-                // Set Foreground
-                /*this.WindowState = FormWindowState.Minimized;
-                this.Show();
-                this.WindowState = FormWindowState.Normal;*/
                 this.BringToFront();
 
                 ScrollTick = DateTime.Now;
@@ -1532,13 +1504,19 @@ namespace POExileDirection
                 // Start_ControlForm(); // Added 1.3.9.0 Ver
                 //CHKCHK CheckUpdateLoop(); // Added 1.3.9.2 Ver.
                 RunDeadlyTradeManager();
-                Thread.Sleep(100);
+                Thread.Sleep(200);
+
+                InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
+                this.BringToFront();
             }
             #endregion
-        }
+        } 
+        #endregion
 
         private void RunDeadlyTradeManager()
         {
+            return;
+            //TODO : exe
             try
             {
                 ProcessStartInfo startInfo = new ProcessStartInfo();
@@ -1555,141 +1533,115 @@ namespace POExileDirection
         #region [[[[[ Real Time Supporters Scrolling ]]]]]
         private async Task ScrollingText()
         {
-            labelSupportersRealTime.Text =
+            //Task.Run(() =>
+            //{
+                labelSupportersRealTime.Text =
                 labelSupportersRealTime.Text.Substring(1, labelSupportersRealTime.Text.Length - 1) + labelSupportersRealTime.Text.Substring(0, 1);
-            /*while (this.Visible)
-            {
-                try
-                {
-                    DateTime nowTime = DateTime.Now;
-                    double elapsed = ((TimeSpan)(nowTime - ScrollTick)).TotalMilliseconds;
-                    if (elapsed > 200)
-                    {
-                        char[] chars = g_strDonator.ToCharArray();
-                        char[] v = new char[chars.Length];
-                        char[] newChar = v;
-                        int l = chars.Length;
-                        int k = 0;
-                        for (int j = 0; j < chars.Length; j++)
-                        {
-
-                            if (j + 1 < chars.Length)
-                                newChar[j] = chars[j + 1];
-                            else
-                                newChar[l - 1] = chars[k];
-                        }
-                        labelSupportersRealTime.Text = new string(newChar);
-                        ScrollTick = DateTime.Now;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    DeadlyLog4Net._log.Error($"catch Supporters {MethodBase.GetCurrentMethod().Name}", ex);
-                }
-
-                await Task.Delay(500);
-            }*/
+            //});
         }
         #endregion
 
+        #region [[[[[ TODO : CHECK UPDATE AVAILABLE ]]]]]
         // Added 1.3.9.2
-        private async Task CheckUpdateLoop()
-        {
-            while (true)
-            {
-                try
-                {
-                    #region [[[[[ Show Update Contents. ]]]]]
-                    string strRead = String.Empty;
-                    // Read Update Contents.
-                    try
-                    {
-                        WebClient wc = new WebClientWithTimeout();
-                        if (LauncherForm.g_strUILang == "KOR")
-                        {
-                            var readData = wc.DownloadData("https://www.jumpleasure.me/deadlytrade/repository/UpdateAvailable.txt");
-                            strRead = Encoding.UTF8.GetString(readData);
-                        }
-                        else
-                        {
-                            var readData = wc.DownloadData("https://www.jumpleasure.me/deadlytrade/repository/UpdateAvailableEN.txt");
-                            strRead = Encoding.UTF8.GetString(readData);
-                        }
-                    }
-                    catch (WebException ex)
-                    {
-                        DeadlyLog4Net._log.Error($"Read Contents. {MethodBase.GetCurrentMethod().Name}", ex);
-                    }
+        //private async Task CheckUpdateLoop()
+        //{
+        //    while (true)
+        //    {
+        //        try
+        //        {
+        //            #region [[[[[ Show Update Contents. ]]]]]
+        //            string strRead = String.Empty;
+        //            // Read Update Contents.
+        //            try
+        //            {
+        //                WebClient wc = new WebClientWithTimeout();
+        //                if (LauncherForm.g_strUILang == "KOR")
+        //                {
+        //                    var readData = wc.DownloadData("https://www.jumpleasure.me/deadlytrade/repository/UpdateAvailable.txt");
+        //                    strRead = Encoding.UTF8.GetString(readData);
+        //                }
+        //                else
+        //                {
+        //                    var readData = wc.DownloadData("https://www.jumpleasure.me/deadlytrade/repository/UpdateAvailableEN.txt");
+        //                    strRead = Encoding.UTF8.GetString(readData);
+        //                }
+        //            }
+        //            catch (WebException ex)
+        //            {
+        //                DeadlyLog4Net._log.Error($"Read Contents. {MethodBase.GetCurrentMethod().Name}", ex);
+        //            }
 
-                    Assembly assembly = Assembly.GetExecutingAssembly();
-                    FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
-                    string version = fvi.FileVersion;
+        //            Assembly assembly = Assembly.GetExecutingAssembly();
+        //            FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
+        //            string version = fvi.FileVersion;
 
-                    DeadlyLog4Net._log.Info("strRead : " + strRead + " Your version : " + version);
-                    if (strRead.Trim() != version) // 1.3.9.4
-                    {
-                        if (ControlForm.g_strZoneName.ToUpper().Contains("HIDEOUT") || ControlForm.g_strZoneName.Contains("은신처"))
-                        {
-                            ControlForm.bNeedtoShowAvailabeUpdate = true;
-                        }
-                    }
-                    #endregion
+        //            DeadlyLog4Net._log.Info("strRead : " + strRead + " Your version : " + version);
+        //            if (strRead.Trim() != version) // 1.3.9.4
+        //            {
+        //                if (ControlForm.g_strZoneName.ToUpper().Contains("HIDEOUT") || ControlForm.g_strZoneName.Contains("은신처"))
+        //                {
+        //                    ControlForm.bNeedtoShowAvailabeUpdate = true;
+        //                }
+        //            }
+        //            #endregion
 
-                    // Check Duplicate Login.
-                    /*try
-                    {
-                        WebClient wc = new WebClientWithTimeout();
-                        if (LauncherForm.g_strUILang == "KOR")
-                        {
-                            var readData = wc.DownloadData("https://www.jumpleasure.me/deadlytrade/repository/UpdateAvailable.txt");
-                            strRead = Encoding.UTF8.GetString(readData);
-                        }
-                        else
-                        {
-                            var readData = wc.DownloadData("https://www.jumpleasure.me/deadlytrade/repository/UpdateAvailableEN.txt");
-                            strRead = Encoding.UTF8.GetString(readData);
-                        }
-                    }
-                    catch (WebException ex)
-                    {
-                        DeadlyLog4Net._log.Error($"Read Contents. {MethodBase.GetCurrentMethod().Name}", ex);
-                    }*/
-                }
-                catch (Exception ex)
-                {
-                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                }
+        //            // Check Duplicate Login.
+        //            /*try
+        //            {
+        //                WebClient wc = new WebClientWithTimeout();
+        //                if (LauncherForm.g_strUILang == "KOR")
+        //                {
+        //                    var readData = wc.DownloadData("https://www.jumpleasure.me/deadlytrade/repository/UpdateAvailable.txt");
+        //                    strRead = Encoding.UTF8.GetString(readData);
+        //                }
+        //                else
+        //                {
+        //                    var readData = wc.DownloadData("https://www.jumpleasure.me/deadlytrade/repository/UpdateAvailableEN.txt");
+        //                    strRead = Encoding.UTF8.GetString(readData);
+        //                }
+        //            }
+        //            catch (WebException ex)
+        //            {
+        //                DeadlyLog4Net._log.Error($"Read Contents. {MethodBase.GetCurrentMethod().Name}", ex);
+        //            }*/
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+        //        }
 
-                try
-                {
-                    string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
+        //        try
+        //        {
+        //            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
 
-                    if (resolution_width < 1920 && resolution_height < 1080)
-                    {
-                        strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                        if (resolution_width < 1600 && resolution_height < 1024)
-                            strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                        else if (LauncherForm.resolution_width < 1280)
-                            strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-                    }
-                    else if (resolution_width > 1920)
-                        strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
+        //            if (resolution_width < 1920 && resolution_height < 1080)
+        //            {
+        //                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
+        //                if (resolution_width < 1600 && resolution_height < 1024)
+        //                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
+        //                else if (LauncherForm.resolution_width < 1280)
+        //                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
+        //            }
+        //            else if (resolution_width > 1920)
+        //                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
 
-                    IniParser parser = new IniParser(strINIPath);
-                    DeadlyLog4Net._log.Info($"{MethodBase.GetCurrentMethod().Name} RESOLUTION : " + strINIPath);
+        //            IniParser parser = new IniParser(strINIPath);
+        //            DeadlyLog4Net._log.Info($"{MethodBase.GetCurrentMethod().Name} RESOLUTION : " + strINIPath);
 
-                    parser.AddSetting("CHARACTER", "MYNICK", g_strMyNickName);
-                    parser.SaveSettings();
-                }
-                catch (Exception ex)
-                {
-                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                }
+        //            parser.AddSetting("CHARACTER", "MYNICK", g_strMyNickName);
+        //            parser.SaveSettings();
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+        //        }
 
-                await Task.Delay(1000*60*60*1); // 1000ms(1s) * 60 = 60s(1m) * 60 = 60m(1h) * 1 = 1h
-            }
-        }
+        //        await Task.Delay(1000*60*60*1); // 1000ms(1s) * 60 = 60s(1m) * 60 = 60m(1h) * 1 = 1h
+        //    }
+        //} 
+        #endregion
 
+        #region [[[[[ Get JSON Data : DeadlyInformation ]]]]]
         private void Get_deadlyInformationData()
         {
             var tmpData = new DeadlyInformation();
@@ -1911,14 +1863,14 @@ namespace POExileDirection
 
             foreach (var item in deadlyInformationData.MapAlertMSG.MapAlertMSG)
             {
-                if(item.Id == "RED")
+                if (item.Id == "RED")
                 {
                     foreach (var itemMsg in item.Msg)
                     {
-                        g_strArrREDAlert.Add(itemMsg.ToString());
+                        g_strArrREDAlert.Add(itemMsg);
                     }
                 }
-                else if(item.Id == "GREEN")
+                else if (item.Id == "GREEN")
                 {
                     foreach (var itemMsg in item.Msg)
                     {
@@ -1927,7 +1879,9 @@ namespace POExileDirection
                 }
             }
         }
+        #endregion
 
+        #region [[[[[ Drag Moving ]]]]]
         private void PictureBox3_MouseDown(object sender, MouseEventArgs e)
         {
             nMoving = 1;
@@ -1946,13 +1900,8 @@ namespace POExileDirection
         private void PictureBox3_MouseUp(object sender, MouseEventArgs e)
         {
             nMoving = 0;
-        }
-
-        private void BtnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Application.Exit();
-        }
+        } 
+        #endregion
 
         private void BtnMinimize_Click(object sender, EventArgs e)
         {
@@ -2024,23 +1973,31 @@ namespace POExileDirection
                 DeadlyLog4Net._log.Info("Addon use LOCAL CHAT Information.Please turn on LOCAL CHAT.");
             }
 
-            checkUseWheelStash.Enabled = false;
             timerScrolling.Stop();
             timerScrolling.Dispose();
+
+            timerCheckFocus.Start();
             Start_ControlForm();
-        }              
+        }
 
         #region ⨌⨌ FormClosed : Dispose All ⨌⨌
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
+
         private void LauncherForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             DeadlyLog4Net._log.Info("〓〓〓〓〓 ↑↑↑ Launcher END ↑↑↑ 〓〓〓〓〓");
 
+            if (timerDetect != null) timerDetect.Dispose();
             if (timerScrolling != null) timerScrolling.Dispose();
             if (frmNinja != null) frmNinja.Close();
             if (frmMainControl != null) frmMainControl.Close();
 
             if (ninjaData != null) ninjaData = null;
-            //if (deadlyOverlayData != null) deadlyOverlayData = null;
+            if (deadlyInformationData != null) deadlyInformationData = null;
         }
         #endregion
 
@@ -2151,33 +2108,6 @@ namespace POExileDirection
             }
         }
 
-        private void checkUseWheelStash_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkUseWheelStash.Checked)
-                g_strYNMouseWheelStashTab = "Y";
-            else
-                g_strYNMouseWheelStashTab = "N";
-
-            DeadlyLog4Net._log.Info("CTRL+MOUSEWHEEL Checked : " + g_strYNMouseWheelStashTab);
-            // Save to INI
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-            parser.AddSetting("MISC", "MOUSESTASHTAB", g_strYNMouseWheelStashTab);
-            parser.SaveSettings();
-        }
-
         private void btnToonation_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://toon.at/donate/deadly_trade");
@@ -2212,196 +2142,57 @@ namespace POExileDirection
 
         private void timerScrolling_Tick(object sender, EventArgs e)
         {
-            ScrollingText();
-        }
-
-        private void checkEmergency_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkEmergency.Checked)
-                g_strYNUseEmergencyHOTKEY = "Y";
-            else
-                g_strYNUseEmergencyHOTKEY = "N";
-
-            DeadlyLog4Net._log.Info("EMERGENCYKEY Checked : " + g_strYNUseEmergencyHOTKEY);
-            // Save to INI
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
+            try
             {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
+                ScrollingText();
             }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-            parser.AddSetting("MISC", "EMERGENCY", g_strYNUseEmergencyHOTKEY);
-            parser.SaveSettings();
-        }
-
-        private void checkRemaining_CheckedChanged(object sender, EventArgs e)
-        {
-            if(checkRemaining.Checked)
-                g_strYNUseRemainingHOTKEY = "Y";
-            else
-                g_strYNUseRemainingHOTKEY = "N";
-
-            DeadlyLog4Net._log.Info("REMAININGKEY Checked : " + g_strYNUseRemainingHOTKEY);
-            // Save to INI
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
+            catch (Exception ex)
             {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
+                timerScrolling.Stop();
+                timerScrolling.Dispose();
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-            parser.AddSetting("MISC", "REMAINING", g_strYNUseRemainingHOTKEY);
-            parser.SaveSettings();
         }
 
-        private void checkFindbyPosition_CheckedChanged(object sender, EventArgs e)
+        #region [[[[[ Timer Check Focus ON/OFF - POE, DeadlyTrade ]]]]]
+        private void timerCheckFocus_Tick(object sender, EventArgs e)
         {
-            if (checkFindbyPosition.Checked)
-                g_strYNUseFindbyPositionHOTKEY = "Y";
-            else
-                g_strYNUseFindbyPositionHOTKEY = "N";
-
-            DeadlyLog4Net._log.Info("FINDBYPOSITIONKEY Checked : " + g_strYNUseFindbyPositionHOTKEY);
-            // Save to INI
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
+            try
             {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
+                g_handlePathOfExile = InteropCommon.FindWindow("POEWindowClass", "Path of Exile"); // ClassName = POEWindowClass
+
+                string strActiveWindowTitle = InteropCommon.GetActiveWindowTitle();
+                //!? CHKCHK string strActiveWindowParentTitle = InteropCommon.GetActiveWindowParentTitle();
+                if (strActiveWindowTitle == "DeadlyTradeForPOE" || strActiveWindowTitle == "Path of Exile" || ControlForm.gCF_bIsTextFocused)
+                //!? CHKCHK strActiveWindowParentTitle == "DeadlyTradeForPOE" || strActiveWindowParentTitle == "Path of Exile" || gCF_bIsTextFocused)
+                {
+                    if (strActiveWindowTitle == "DeadlyTradeForPOE" || ControlForm.gCF_bIsTextFocused) //!? CHKCHK strActiveWindowParentTitle == "DeadlyTradeForPOE" || gCF_bIsTextFocused)
+                    {
+                        g_FocusOnAddon = true;
+                    }
+                    else
+                    {
+                        g_FocusOnAddon = false;
+
+                        //TODO : WM_GETCURSOR GETCURSOR STATE
+                    }
+                    g_FocusLosing = false;
+                }
+                else
+                {
+                    g_FocusLosing = true;
+                }
+
+                //TODO: if (bNeedtoShowAvailabeUpdate)
+                //TODO:     ShowAvailabeUpdatePanel();
             }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-            parser.AddSetting("MISC", "FINDBYPOSTION", g_strYNUseFindbyPositionHOTKEY);
-            parser.SaveSettings();
-        }
-
-        private void checkSyndicateJUN_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkSyndicateJUN.Checked)
-                g_strYNUseSyndicateJUNHOTKEY = "Y";
-            else
-                g_strYNUseSyndicateJUNHOTKEY = "N";
-
-            DeadlyLog4Net._log.Info("JUNKEY Checked : " + g_strYNUseSyndicateJUNHOTKEY);
-            // Save to INI
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
+            catch (Exception ex)
             {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
+                timerCheckFocus.Stop();
+                timerCheckFocus.Dispose();
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-            parser.AddSetting("MISC", "HOTKEYSYNDICATE", g_strYNUseSyndicateJUNHOTKEY);
-            parser.SaveSettings();
-        }
-
-        private void checkHideout_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkHideout.Checked)
-                g_strYNUseHideoutHOTKEY = "Y";
-            else
-                g_strYNUseHideoutHOTKEY = "N";
-
-            DeadlyLog4Net._log.Info("HIDEOUTKEY Checked : " + g_strYNUseHideoutHOTKEY);
-            // Save to INI
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-            parser.AddSetting("MISC", "HOTKEYHIDEOUT", g_strYNUseHideoutHOTKEY);
-            parser.SaveSettings();
-        }
-
-        private void checkTempleALVA_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkTempleALVA.Checked)
-                g_strYNUseIncursionALVAHOTKEY = "Y";
-            else
-                g_strYNUseIncursionALVAHOTKEY = "N";
-
-            DeadlyLog4Net._log.Info("ALVAKEY Checked : " + g_strYNUseIncursionALVAHOTKEY);
-            // Save to INI
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-            parser.AddSetting("MISC", "HOTKEYALVAINCURSION", g_strYNUseIncursionALVAHOTKEY);
-            parser.SaveSettings();
-        }
-
-        private void checkAtlasZANA_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkAtlasZANA.Checked)
-                g_strYNUseAtlasZANAHOTKEY = "Y";
-            else
-                g_strYNUseAtlasZANAHOTKEY = "N";
-
-            DeadlyLog4Net._log.Info("AtlasZANAKEY Checked : " + g_strYNUseAtlasZANAHOTKEY);
-            // Save to INI
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-            parser.AddSetting("MISC", "HOTKEYZANAATLAS", g_strYNUseAtlasZANAHOTKEY);
-            parser.SaveSettings();
-        }
+        } 
+        #endregion
     }
 }

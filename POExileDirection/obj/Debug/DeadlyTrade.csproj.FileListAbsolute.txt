@@ -375,3 +375,10 @@ D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\SharpDX.XAudio2.dll
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\SharpDX.pdb
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\SharpDX.XAudio2.pdb
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\SharpDX.XAudio2.xml
+D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\Microsoft.DirectX.AudioVideoPlayback.dll
+D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\WinFormAnimation.dll
+D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\XanderUI.dll
+D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\Microsoft.DirectX.Direct3D.dll
+D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\Microsoft.DirectX.dll
+D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\Microsoft.DirectX.Direct3D.xml
+D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\Microsoft.DirectX.xml

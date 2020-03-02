@@ -1,7 +1,9 @@
 # DeadlyTrade Overhaul.
-
+[![Build Status](https://travis-ci.org/DeadlyCrush/DeadlyTrade.svg?branch=master)](https://travis-ci.org/DeadlyCrush/DeadlyTrade)
 [![Build status](https://ci.appveyor.com/api/projects/status/ncnly5qi6uk5gyb9?svg=true)](https://ci.appveyor.com/project/DeadlyCrush/deadlytrade)
+[![buddy pipeline](https://app.buddy.works/rino74eocs/deadlytrade/pipelines/pipeline/242652/badge.svg?token=3a778211db69f27ea4e777832349105837128ffdb8b1bb2f20e626223b452fa3 "buddy pipeline")](https://app.buddy.works/rino74eocs/deadlytrade/pipelines/pipeline/242652)
 [![Build Status](https://github.com/eduherminio/FileParser/workflows/CI%20GitHub%20Actions/badge.svg)](https://github.com/DeadlyCrush/DeadlyTrade/actions)
+
 [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]()
 [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]()
 

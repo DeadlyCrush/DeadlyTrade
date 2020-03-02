@@ -333,7 +333,7 @@
         private System.Windows.Forms.Panel panelUBER;
         private System.Windows.Forms.Panel panelMERC;
         private System.Windows.Forms.Panel panelCRUEL;
-        private System.Windows.Forms.Panel panelNORMAL;
+        private System.Windows.Forms.Panel panelNORMAL; 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label labelTitle;

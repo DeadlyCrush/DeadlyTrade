@@ -113,6 +113,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Timer timer1;
-        private CircularProgressBar.CircularProgressBar circularProgressBar1;
+        private CircularProgressBar.CircularProgressBar circularProgressBar1; 
     }
 }

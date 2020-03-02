@@ -93,7 +93,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel1; 
         public System.Windows.Forms.Label lbRemain;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;

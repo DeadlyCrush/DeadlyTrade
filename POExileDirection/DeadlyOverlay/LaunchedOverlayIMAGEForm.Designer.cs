@@ -186,6 +186,6 @@
         private System.Windows.Forms.Button btnZoomIn;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBoxOverlay;
+        private System.Windows.Forms.PictureBox pictureBoxOverlay; 
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace SignUpDemo
+﻿namespace POExileDirection
 {
     partial class LoginForm
     {

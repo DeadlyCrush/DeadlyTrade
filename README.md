@@ -144,11 +144,7 @@ DeadlyTrade / Deadly KOR Team >
 - Site - https://www.jumpleasure.me/deadlytrade
 - KAKAO Open Talk - https://open.kakao.com/o/gylOSztb
 
-## Thank you all. Good Luck Exile~!
-Please let me know about any bugs you encounter or if you have any suggestions.
-Thank you for your interest and support.
-
-# Download Status (Real-Time)
+## Download Status (Real-Time)
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release) ![GitHub Releases](https://img.shields.io/github/downloads/deadlycrush/deadlytrade/latest/total) ![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/deadlycrush/deadlytrade/latest?include_prereleases)
 
@@ -156,3 +152,7 @@ Thank you for your interest and support.
 | ------ | ------ |
 |( Repository moved. ) 2020.02.16 ~ Now.|[![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]() |
 | DeadlyTrade 1.0.0.0 Version. ~ 2020.02.15 | [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]() |
+
+# Thank you all. Good Luck Exile~!
+Please let me know about any bugs you encounter or if you have any suggestions.
+Thank you for your interest and support.

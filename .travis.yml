@@ -1,7 +1,9 @@
 language: csharp
+mono:
+  - latest
 solution: DeadlyTradewithExileDirection.sln
-language: csharp
-solution: DeadlyTradewithExileDirection.sln
-script:
+install:
+  - nuget restore DeadlyTradewithExileDirection.sln
+script :
   - msbuild /p:Configuration=Release DeadlyTradewithExileDirection.sln
-  - mono ./packages/xunit.runners.*/tools/xunit.console.clr4.exe ./POExileDirection/bin/Release/POExileDirection.Tests.dll
+  

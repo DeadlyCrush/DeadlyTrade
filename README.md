@@ -11,6 +11,21 @@
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://github.com/DeadlyCrush/DeadlyTrade/blob/master/CODE_OF_CONDUCT.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/DeadlyCrush/DeadlyTrade/blob/master/LICENSE)
 
+## Installation
+- Portable.
+- Download and unzip.
+- Auto update.
+
+## Langueges
+* [C++] - Core
+* [C#, .Net Core/Web] - Front End, Web API
+* [Cli] - Interop, Core API
+
+## Users
+- 2020.02.16 DeadlyTrade Discord Server Join User : 3419
+- non-counting user is more.
+- DeadlyTrade almost over 10,000 users used, using it 1 year over in Korea POE Communities.
+
 ### Main HUD rework.
 ![Main HUD](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FnEVUM%2FbtqB10JTI9i%2FJhmAdkoH4eelxJOJk7QJ81%2Fimg.jpg)
 
@@ -80,28 +95,16 @@ POE Command
 - Atlas, Pantheon Overlay : F7
 - Flask & Skill Timer : Auto detect your In-Game Option.
 
-## Installation
-- Portable.
-- Download and unzip.
-- Auto update.
-
 ## Performance
 You can disable any feature you don’t want to use while launching the add-on and the app uses very little resources, around 50-80mb Ram which is around 1 tab in Chrome. It has no effect on GPU and even when receiving data from poe.ninja, the effects on the CPU usage is very minimal and will not cause any performance issues.
 
-## Langueges
-* [C++] - Core
-* [C#, .Net Core/Web] - Front End, Web API
-* [Cli] - Interop, Core API
 ## History
 - DeadlyTrade Overhaul Version Released Feb,2020
 - DeadlyTrade Renewal Version Started Jan,2020
 - DeadlyTrade Started and Sharing April,2019
 - POEExileDirection coverted to DeadlyTrade in new empty Project 1year ago.
 - MercuryTrdae(Exslims) All Korean UI&Functions Version Jun,2019 until Exslims no longer maintain officially.
-## Users
-- 2020.02.16 DeadlyTrade Discord Server Join User : 3419
-- non-counting user is more.
-- DeadlyTrade almost over 10,000 users used, using it 1 year over in Korea POE Communities.
+
 ## Special Thanks to
 - Since the Korean launch of Path Of Exile, Localizing existing add-on programs affected me in many aspects. 
 MercuryTrade, TradeMacro, POE Compass, Lab Compass, TradeForPoe, CurrencyCop, Exilence and many more...

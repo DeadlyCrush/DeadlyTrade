@@ -477,7 +477,7 @@ namespace POExileDirection
         // KEY HOOK
         private void _keymouseHooks_KeyDown(object sender, WindowsHook.KeyEventArgs e)
         {
-            // CTRL + C
+            // CTRL + C 
             if (LauncherForm.g_FocusLosing && e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
             {
                 //TODO : Trade Site.

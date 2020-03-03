@@ -101,8 +101,8 @@ You can disable any feature you don’t want to use while launching the add-on a
 
 ## Join our community & Welcome Contributors
 
-# [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/Gd7MjCz) [![Discord](https://img.shields.io/discord/463752820026376202.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/Gd7MjCz) ![Discord](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Total&prefix=%20&query=approximate_member_count&suffix=%20users&url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FryjUA7r%3Fwith_counts%3Dtrue)
-# [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://github.com/DeadlyCrush/DeadlyTrade/blob/master/CODE_OF_CONDUCT.md) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/DeadlyCrush/DeadlyTrade/blob/master/LICENSE)
+## [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/Gd7MjCz) [![Discord](https://img.shields.io/discord/463752820026376202.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/Gd7MjCz) ![Discord](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Total&prefix=%20&query=approximate_member_count&suffix=%20users&url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FryjUA7r%3Fwith_counts%3Dtrue)
+## [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://github.com/DeadlyCrush/DeadlyTrade/blob/master/CODE_OF_CONDUCT.md) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/DeadlyCrush/DeadlyTrade/blob/master/LICENSE)
 
 ## Special Thanks to
 - Since the Korean launch of Path Of Exile, Localizing existing add-on programs affected me in many aspects. 

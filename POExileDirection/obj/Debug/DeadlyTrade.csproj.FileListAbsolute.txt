@@ -322,7 +322,6 @@ G:\ReposNew\POExileDirection\obj\Debug\POExileDirection.LaunchedOverlayIMAGEForm
 G:\ReposNew\POExileDirection\bin\Debug\WindowsHook.dll
 G:\ReposNew\POExileDirection\obj\Debug\POExileDirection.NotificationContainer.resources
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Debug\DeadlyTrade.csprojAssemblyReference.cache
-D:\GitDesk\DeadlyTrade\POExileDirection\obj\Debug\SignUpDemo.LoginForm.resources
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Debug\POExileDirection.NotificationContainer.resources
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Debug\POExileDirection.RemainingForm.resources
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Debug\POExileDirection.FlaskICONTimer.resources
@@ -382,3 +381,4 @@ D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\Microsoft.DirectX.Direct3D.dll
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\Microsoft.DirectX.dll
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\Microsoft.DirectX.Direct3D.xml
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\Microsoft.DirectX.xml
+D:\GitDesk\DeadlyTrade\POExileDirection\obj\Debug\POExileDirection.LoginForm.resources

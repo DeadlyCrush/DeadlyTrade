@@ -5,8 +5,7 @@
 [![Build Status](https://dev.azure.com/vscode/VSCode/_apis/build/status/VS%20Code?branchName=master)](https://dev.azure.com/vscode/VSCode/_build/latest?definitionId=12)
 [![Build Status](https://github.com/eduherminio/FileParser/workflows/CI%20GitHub%20Actions/badge.svg)](https://github.com/DeadlyCrush/DeadlyTrade/actions)
 
-[![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]()
-[![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]()
+![GitHub Releases](https://img.shields.io/github/downloads/deadlycrush/deadlytrade/latest/total) [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]() [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]()
 
 ## Installation
 - Portable.
@@ -149,10 +148,9 @@ Thank you for your interest and support.
 
 # Download Status (Real-Time)
 
-( Repository moved. ) 2020.02.16 ~ Now.
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release) ![GitHub Releases](https://img.shields.io/github/downloads/deadlycrush/deadlytrade/latest/total) ![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/deadlycrush/deadlytrade/latest?include_prereleases)
 
-[![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]()
-
-DeadlyTrade 1.0.0.0 Version. ~ 2020.02.15
-
-[![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]()
+| DeadlyTrade Repository. | Download |
+| ------ | ------ |
+|( Repository moved. ) 2020.02.16 ~ Now.|[![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]() |
+| DeadlyTrade 1.0.0.0 Version. ~ 2020.02.15 | [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]() |

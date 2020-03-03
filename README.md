@@ -127,7 +127,8 @@ Private >
 - Reddit - https://www.reddit.com/user/DeadlyCrush
 - Discord - DeadlyCrush#7202
 
-[![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTZfNjkg/MDAxNTgxODQyOTM5MzQ0.ISjyp2kaOhC4xRr2Db1eSqf5jAMecB_CZgIDoCVPE08g.7v-vXca-_bAUbQitXBsJZ2DFlafTfmLUXdKDKs2iEy4g.PNG.eocsdev2/2020_0216_007.png?type=w773)](https://discord.gg/ryjUA7r)
+![Discord](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Total&prefix=%20&query=approximate_member_count&suffix=%20users&url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FryjUA7r%3Fwith_counts%3Dtrue)
+![Discord Banner 4](https://discordapp.com/api/guilds/593745178762674206/widget.png?style=banner4)
 
 Funny Project >
 - GitHub - https://github.com/DeadlyCrush

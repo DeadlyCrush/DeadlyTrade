@@ -128,6 +128,7 @@ Private >
 - Discord - DeadlyCrush#7202
 
 ![Discord](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Total&prefix=%20&query=approximate_member_count&suffix=%20users&url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FryjUA7r%3Fwith_counts%3Dtrue)
+
 ![Discord Banner 4](https://discordapp.com/api/guilds/593745178762674206/widget.png?style=banner4)
 
 Funny Project >

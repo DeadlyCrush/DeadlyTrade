@@ -1,5 +1,5 @@
 # DeadlyTrade Overhaul.
-[![Build Status](https://travis-ci.org/DeadlyCrush/DeadlyTrade.svg?branch=master)](https://travis-ci.org/DeadlyCrush/DeadlyTrade)
+![Travis (.org)](https://img.shields.io/travis/deadlycrush/deadlytrade?logo=travis)
 [![Build status](https://ci.appveyor.com/api/projects/status/ncnly5qi6uk5gyb9?svg=true)](https://ci.appveyor.com/project/DeadlyCrush/deadlytrade)
 [![buddy pipeline](https://app.buddy.works/rino74eocs/deadlytrade/pipelines/pipeline/242652/badge.svg?token=57fabdfd2da6d0ef73c5b935da30b4e13e1b03c55a68803c1dc07c81bd94c6c1 "buddy pipeline")](https://app.buddy.works/rino74eocs/deadlytrade/pipelines/pipeline/242652)
 [![Build Status](https://dev.azure.com/vscode/VSCode/_apis/build/status/VS%20Code?branchName=master)](https://dev.azure.com/vscode/VSCode/_build/latest?definitionId=12)
@@ -21,10 +21,10 @@
 * [Cli] - Interop, Core API
 * [C++] - Core
 
-## Users
-- 2020.02.16 DeadlyTrade Discord Server Join User : 3419
-- non-counting user is more.
-- DeadlyTrade almost over 10,000 users used, using it 1 year over in Korea POE Communities.
+## Community
+[![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/Gd7MjCz) [![Discord](https://img.shields.io/discord/463752820026376202.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/Gd7MjCz) ![Discord](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Total&prefix=%20&query=approximate_member_count&suffix=%20users&url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FryjUA7r%3Fwith_counts%3Dtrue)
+
+## Main Functions and Util Functions.
 
 ### Main HUD rework.
 ![Main HUD](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FnEVUM%2FbtqB10JTI9i%2FJhmAdkoH4eelxJOJk7QJ81%2Fimg.jpg)

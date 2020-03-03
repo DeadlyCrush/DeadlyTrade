@@ -13,13 +13,13 @@
 
 ## Installation
 - Portable.
-- Download and unzip.
-- Auto update.
+- Download latest rlelease and unzip. : https://github.com/DeadlyCrush/DeadlyTrade/releases
+- Update Automatically. Update notice panel is shown when update available.
 
 ## Langueges
-* [C++] - Core
 * [C#, .Net Core/Web] - Front End, Web API
 * [Cli] - Interop, Core API
+* [C++] - Core
 
 ## Users
 - 2020.02.16 DeadlyTrade Discord Server Join User : 3419

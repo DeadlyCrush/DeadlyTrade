@@ -12,7 +12,7 @@
 - Download latest rlelease and unzip. : https://github.com/DeadlyCrush/DeadlyTrade/releases
 - Update Automatically. Update notice panel is shown when update available.
 
-## Langueges
+## Languages
 * [C#, .Net Core/Web] - Front End, Web API
 * [Cli] - Interop, Core API
 * [C++] - Core

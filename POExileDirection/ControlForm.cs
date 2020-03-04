@@ -55,7 +55,7 @@ namespace POExileDirection
         static extern bool GetCursorInfo(out CURSORINFO pci);*/
         #endregion
 
-        public const string POE_WINDOTITLE = "Path of Exile"; // POE Window Title
+        public const string POE_WINDOTITLE = "Path of Exile"; // POE Window Title 
 
         private int nMoving = 0;
         private int nMovePosX = 0;
@@ -2117,16 +2117,16 @@ namespace POExileDirection
         }
 
         #region ⨌⨌ WndProc ⨌⨌
-        protected override void WndProc(ref Message m)
-        {
-            base.WndProc(ref m);
+        //protected override void WndProc(ref Message m)
+        //{
+        //    base.WndProc(ref m);
 
-            if (m.Msg == 0x0312)
-            {
-                // HOTKEY : 0x0312
-                ;
-            }
-        }
+        //    if (m.Msg == 0x0312)
+        //    {
+        //        // HOTKEY : 0x0312
+        //        ;
+        //    }
+        //}
         #endregion
 
         #region ⨌⨌ Set Regular Expression ⨌⨌
@@ -2866,8 +2866,7 @@ namespace POExileDirection
                 frmStashGrid.Close();
                 bfrmStashGridShow = false;
             }
-            
-
+            InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
         }
         #endregion
 

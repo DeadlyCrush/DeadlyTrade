@@ -39,10 +39,12 @@
             this.btnLeftTop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLeftTop.Image = global::POExileDirection.Properties.Resources.LEFT_TOP_ANCHOR;
             this.btnLeftTop.Location = new System.Drawing.Point(-1, -1);
+            this.btnLeftTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLeftTop.Name = "btnLeftTop";
             this.btnLeftTop.Size = new System.Drawing.Size(16, 16);
             this.btnLeftTop.TabIndex = 9;
             this.btnLeftTop.UseVisualStyleBackColor = true;
+            this.btnLeftTop.Visible = false;
             this.btnLeftTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnLeftTop_MouseDown);
             this.btnLeftTop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BtnLeftTop_MouseMove);
             this.btnLeftTop.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnLeftTop_MouseUp);
@@ -53,29 +55,33 @@
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Image = global::POExileDirection.Properties.Resources.GridForm_RedCloseButton;
-            this.btnClose.Location = new System.Drawing.Point(39, 0);
+            this.btnClose.Location = new System.Drawing.Point(21, 13);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(16, 16);
             this.btnClose.TabIndex = 8;
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Visible = false;
             this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // StashGrid
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(55, 55);
+            this.ClientSize = new System.Drawing.Size(38, 40);
             this.ControlBox = false;
             this.Controls.Add(this.btnLeftTop);
             this.Controls.Add(this.btnClose);
             this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "StashGrid";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.DarkGray;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.StashGrid_FormClosed);

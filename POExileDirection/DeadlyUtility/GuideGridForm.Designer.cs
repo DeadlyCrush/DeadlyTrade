@@ -40,6 +40,7 @@
             this.textBoxTOP = new System.Windows.Forms.TextBox();
             this.textBoxLEFT = new System.Windows.Forms.TextBox();
             this.DeadlyToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,14 +52,16 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.checkQuadTab);
             this.panel1.Controls.Add(this.btnClose);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(171, 27);
+            this.panel1.Size = new System.Drawing.Size(219, 27);
             this.panel1.TabIndex = 8;
             this.panel1.Enter += new System.EventHandler(this.panel1_Enter);
             // 
@@ -66,9 +69,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(68)))));
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(99, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(144, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(21, 21);
+            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
@@ -76,9 +80,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(68)))));
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(47, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(92, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 21);
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -86,11 +91,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(70, 8);
+            this.label2.Location = new System.Drawing.Point(115, 7);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 12);
+            this.label2.Size = new System.Drawing.Size(27, 15);
             this.label2.TabIndex = 6;
-            this.label2.Text = "상단";
+            this.label2.Text = "Top";
             this.label2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Label2_MouseDown);
             this.label2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Label2_MouseMove);
             this.label2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Label2_MouseUp);
@@ -99,11 +104,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(18, 8);
+            this.label1.Location = new System.Drawing.Point(63, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.Size = new System.Drawing.Size(27, 15);
             this.label1.TabIndex = 6;
-            this.label1.Text = "왼쪽";
+            this.label1.Text = "Left";
             this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Label1_MouseDown);
             this.label1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Label1_MouseMove);
             this.label1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Label1_MouseUp);
@@ -114,7 +119,8 @@
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Location = new System.Drawing.Point(126, 3);
+            this.btnSearch.Location = new System.Drawing.Point(171, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(20, 20);
             this.btnSearch.TabIndex = 2;
@@ -125,7 +131,8 @@
             // checkQuadTab
             // 
             this.checkQuadTab.AutoSize = true;
-            this.checkQuadTab.Location = new System.Drawing.Point(3, 7);
+            this.checkQuadTab.Location = new System.Drawing.Point(48, 9);
+            this.checkQuadTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkQuadTab.Name = "checkQuadTab";
             this.checkQuadTab.Size = new System.Drawing.Size(15, 14);
             this.checkQuadTab.TabIndex = 4;
@@ -137,13 +144,13 @@
             // btnClose
             // 
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.BackgroundImage = global::POExileDirection.Properties.Resources.CloseButton_45_45_48_24px;
             this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(148, 3);
+            this.btnClose.Location = new System.Drawing.Point(193, 4);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(20, 20);
             this.btnClose.TabIndex = 3;
@@ -159,10 +166,11 @@
             this.textBoxTOP.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBoxTOP.ForeColor = System.Drawing.Color.White;
             this.textBoxTOP.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBoxTOP.Location = new System.Drawing.Point(100, 8);
+            this.textBoxTOP.Location = new System.Drawing.Point(147, 9);
+            this.textBoxTOP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxTOP.MaxLength = 2;
             this.textBoxTOP.Name = "textBoxTOP";
-            this.textBoxTOP.Size = new System.Drawing.Size(19, 14);
+            this.textBoxTOP.Size = new System.Drawing.Size(14, 14);
             this.textBoxTOP.TabIndex = 1;
             this.textBoxTOP.Text = "1";
             this.textBoxTOP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -177,10 +185,11 @@
             this.textBoxLEFT.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBoxLEFT.ForeColor = System.Drawing.Color.White;
             this.textBoxLEFT.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBoxLEFT.Location = new System.Drawing.Point(48, 8);
+            this.textBoxLEFT.Location = new System.Drawing.Point(95, 9);
+            this.textBoxLEFT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxLEFT.MaxLength = 2;
             this.textBoxLEFT.Name = "textBoxLEFT";
-            this.textBoxLEFT.Size = new System.Drawing.Size(19, 14);
+            this.textBoxLEFT.Size = new System.Drawing.Size(14, 14);
             this.textBoxLEFT.TabIndex = 0;
             this.textBoxLEFT.Text = "1";
             this.textBoxLEFT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -188,17 +197,32 @@
             this.textBoxLEFT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxLEFT_KeyPress);
             this.textBoxLEFT.Leave += new System.EventHandler(this.TextBoxLEFT_Leave);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(4, 7);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 15);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Quad?";
+            this.label3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Label1_MouseDown);
+            this.label3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Label1_MouseMove);
+            this.label3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Label1_MouseUp);
+            // 
             // GuideGridForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(171, 27);
+            this.ClientSize = new System.Drawing.Size(219, 27);
             this.ControlBox = false;
             this.Controls.Add(this.textBoxTOP);
             this.Controls.Add(this.textBoxLEFT);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "GuideGridForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
@@ -229,5 +253,6 @@
         private System.Windows.Forms.TextBox textBoxTOP;
         private System.Windows.Forms.TextBox textBoxLEFT;
         private System.Windows.Forms.ToolTip DeadlyToolTip;
+        private System.Windows.Forms.Label label3;
     }
 }

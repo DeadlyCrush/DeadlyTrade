@@ -70,7 +70,7 @@ namespace POExileDirection
                 ptLeftTop = new Point(rcPOE.left, rcPOE.top );
                 InteropCommon.ClientToScreen(LauncherForm.g_handlePathOfExile, ref ptLeftTop);
                 ptRightBottom = new Point(rcPOE.right, rcPOE.bottom);
-                InteropCommon.ClientToScreen(LauncherForm.g_handlePathOfExile, ref ptRightBottom);
+                InteropCommon.ClientToScreen(LauncherForm.g_handlePathOfExile, ref ptRightBottom); 
 
                 nTitleHeight = ptLeftTop.Y - rcPOE.top;
 

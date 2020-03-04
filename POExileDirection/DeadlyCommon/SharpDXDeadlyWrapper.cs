@@ -21,7 +21,7 @@ namespace POExileDirection.DeadlyCommon
             try
             {
                 _xAudio2 = new XAudio2();
-                _masteringVoice = new MasteringVoice(_xAudio2);
+                _masteringVoice = new MasteringVoice(_xAudio2); 
                 _masteringVoice.SetVolume(nVolume/100f, 0);
 
                 _nativeFilestream = new NativeFileStream(strFileName, NativeFileMode.Open, NativeFileAccess.Read, NativeFileShare.Read);

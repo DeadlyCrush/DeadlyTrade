@@ -59,14 +59,14 @@ namespace POExileDirection
         #endregion
 
         private static string OldData
-        {
+        { 
             get; set;
         }
 
         public static string GetUnicodeText()
         {
             if (!IsClipboardFormatAvailable(CF_UNICODETEXT))
-                return null;
+                return null; 
 
             try
             {

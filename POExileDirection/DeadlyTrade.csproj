@@ -13,7 +13,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>POExileDirection</RootNamespace>
     <AssemblyName>DeadlyTrade</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -171,7 +171,7 @@
     <Compile Include="Authentication\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Authentication\LoginForm.designer.cs">
+    <Compile Include="Authentication\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DeadlyCommon\DeadlyEventHandler.cs" />
@@ -186,7 +186,7 @@
     <Compile Include="DeadlyNotification\RemainingForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeadlyNotification\RemainingForm.designer.cs">
+    <Compile Include="DeadlyNotification\RemainingForm.Designer.cs">
       <DependentUpon>RemainingForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DeadlyOverlay\FlaskICONTimer.cs">
@@ -198,19 +198,19 @@
     <Compile Include="DeadlyOverlay\FlaskTimerCircleForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeadlyOverlay\FlaskTimerCircleForm.designer.cs">
+    <Compile Include="DeadlyOverlay\FlaskTimerCircleForm.Designer.cs">
       <DependentUpon>FlaskTimerCircleForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DeadlyOverlay\LabyOverlayForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeadlyOverlay\LabyOverlayForm.designer.cs">
+    <Compile Include="DeadlyOverlay\LabyOverlayForm.Designer.cs">
       <DependentUpon>LabyOverlayForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DeadlyOverlay\LaunchedOverlayIMAGEForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeadlyOverlay\LaunchedOverlayIMAGEForm.designer.cs">
+    <Compile Include="DeadlyOverlay\LaunchedOverlayIMAGEForm.Designer.cs">
       <DependentUpon>LaunchedOverlayIMAGEForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DeadlyPriceCheck\DeadlyPriceAPI.cs" />
@@ -807,6 +807,7 @@
     <None Include="Resources\top_bar_symbol.png" />
     <None Include="Resources\top_bar_bg_symbol_800_40.png" />
     <None Include="Resources\top_bar_bg_symbol.png" />
+    <None Include="Resources\CI.bmp" />
     <Content Include="res\Currency\curr_alch.png" />
     <Content Include="res\Currency\curr_alt.png" />
     <Content Include="res\Currency\curr_ancient.png" />

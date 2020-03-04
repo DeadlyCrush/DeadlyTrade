@@ -106,4 +106,4 @@ D:\GitDesk\DeadlyTrade\POExileDirection\obj\x64\Release\DeadlyTrade.csproj.Gener
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\x64\Release\DeadlyTrade.csproj.CopyComplete
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\x64\Release\DeadlyTrade.exe
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\x64\Release\DeadlyTrade.pdb
-D:\GitDesk\DeadlyTrade\POExileDirection\obj\x64\Release\POExileDirection.LoginForm.resources
+D:\GitDesk\DeadlyTrade\POExileDirection\obj\x64\Release\SignUpDemo.LoginForm.resources

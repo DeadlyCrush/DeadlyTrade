@@ -381,4 +381,4 @@ D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\Microsoft.DirectX.Direct3D.dll
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\Microsoft.DirectX.dll
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\Microsoft.DirectX.Direct3D.xml
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Debug\Microsoft.DirectX.xml
-D:\GitDesk\DeadlyTrade\POExileDirection\obj\Debug\POExileDirection.LoginForm.resources
+D:\GitDesk\DeadlyTrade\POExileDirection\obj\Debug\SignUpDemo.LoginForm.resources

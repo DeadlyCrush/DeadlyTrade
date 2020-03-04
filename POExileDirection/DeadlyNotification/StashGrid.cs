@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Reflection;
+using System.Runtime.InteropServices;
 
 namespace POExileDirection
 {
@@ -32,7 +33,7 @@ namespace POExileDirection
             this.StartPosition = FormStartPosition.Manual;
 
             SetFormStyle();
-            Init_Controls();
+            //? Temporary Init_Controls();
             Visible = true;
         }
 
@@ -41,16 +42,46 @@ namespace POExileDirection
             ControlForm.bfrmStashGridShow = false;
         }
 
+        const int DWMA_EXTENDED_FRAME_BOUNDS = 9;
+        RECT rcAttrBound;
+        private RECT rcPOE;
+        int nTitleHeight;
+        Point ptLeftTop;
+        Point ptRightBottom;
+        RECT rcClient;
+        RECT rcTitleBound;
         private void SetFormStyle()
         {
             this.ControlBox = false;
             DoubleBuffered = true;
-            SetStyle(ControlStyles.ResizeRedraw, true);            
+            //////SetStyle(ControlStyles.ResizeRedraw, true);            
+            InteropCommon.GetWindowRect(LauncherForm.g_handlePathOfExile, out rcPOE);
+            Left = rcPOE.left;
+            Top = rcPOE.top;
+            InteropCommon.DwmGetWindowAttribute(LauncherForm.g_handlePathOfExile, DWMA_EXTENDED_FRAME_BOUNDS, out rcAttrBound, Marshal.SizeOf(typeof(RECT)));
+            rcTitleBound.left = rcAttrBound.left - rcPOE.left;
+            rcTitleBound.top = rcAttrBound.top - rcPOE.top;
+            rcTitleBound.right = rcAttrBound.right - rcPOE.right;
+            rcTitleBound.bottom = rcAttrBound.bottom - rcPOE.bottom;
 
-            this.Left = 19;
-            this.Top = 166;
-            this.Width = 55;
-            this.Height = 55;
+            if (!LauncherForm.g_isWindowdedFullScreen)
+            {
+                InteropCommon.GetClientRect(LauncherForm.g_handlePathOfExile, out rcClient);
+                ptLeftTop = new Point(rcPOE.left, rcPOE.top );
+                InteropCommon.ClientToScreen(LauncherForm.g_handlePathOfExile, ref ptLeftTop);
+                ptRightBottom = new Point(rcPOE.right, rcPOE.bottom);
+                InteropCommon.ClientToScreen(LauncherForm.g_handlePathOfExile, ref ptRightBottom);
+
+                nTitleHeight = ptLeftTop.Y - rcPOE.top;
+
+                Width = rcPOE.right / 2;
+                Height = rcPOE.bottom;
+            }
+            else
+            {
+                Width = LauncherForm.resolution_width / 2;
+                Height = LauncherForm.resolution_height;
+            }
         }
 
         #region ⨌⨌ Init. Controls ⨌⨌
@@ -150,84 +181,101 @@ namespace POExileDirection
 
         private void StashGrid_Paint(object sender, PaintEventArgs e)
         {
-            // Draw Grip
-            Rectangle rc = new Rectangle(Width - g_nGrip, Height - g_nGrip, g_nGrip, g_nGrip);
-            ControlPaint.DrawSizeGrip(e.Graphics, Color.Red, rc);
-
-            // Draw Rectangle
-            // BBBBBB Pen AquaPen = new Pen(Color.Aqua, 2);
-            // BBBBBB Rectangle rcBox = new Rectangle(2, 2, LauncherForm.g_nGridWidth - 3, LauncherForm.g_nGridHeight - 3);
-
-            /*
-            // Draw Grip
-            Rectangle rc = new Rectangle(this.Width - g_nGrip, this.Height - g_nGrip, g_nGrip, g_nGrip);
-            ControlPaint.DrawSizeGrip(e.Graphics, Color.Red, rc);
-
-            // Draw Rectangle
-            Pen AquaPen = new Pen(Color.Aqua, 2);
-            Rectangle rcBox = new Rectangle(2, 2, this.Width-3, this.Height-3);
-            */
-
-            // BBBBBB  e.Graphics.DrawRectangle(AquaPen, rcBox);
-
-            #region ⨌⨌ Back up. Draw Calculated Grid ⨌⨌
-            // Draw Stash Box Guide Grid
-            //double dWidth = this.Width;
-            //double dHeight = this.Height;
-            //int nCellWidth = Convert.ToInt32(Math.Truncate(dWidth / 12));
-            //int nCellHeight = Convert.ToInt32(Math.Truncate(dHeight / 12));
-
-            double dWidth = this.Width + 4.5;
-            double dHeight = this.Height + 4.5;
-            int nCellWidth = Convert.ToInt32(Math.Truncate(dWidth / 12));
-            int nCellHeight = Convert.ToInt32(Math.Truncate(dHeight / 12));
-            int nCellWidth4x4 = Convert.ToInt32(Math.Truncate(dWidth / 24));
-            int nCellHeight4x4 = Convert.ToInt32(Math.Truncate(dHeight / 24));
-
-            int nLeft = 0;
-            int nTop = 0;
-            Rectangle rcBox = new Rectangle(0,0, nCellWidth, nCellHeight);
-
-            Pen AquaPen = new Pen(Color.Aqua, 1);
-            Pen DarkRed = new Pen(Color.DarkRed, 2);
-            // DarkRed.Alignment = PenAlignment.Center;
-
-            Rectangle[,] g_arrayRect4x4 = new Rectangle[24, 24];
-            Rectangle[,] g_arrayRect1x1 = new Rectangle[12, 12];
-
-            // 4x4 Aqua
-            for (int iRow = 0; iRow < 24; iRow++) // ROWS
+            try
             {
-                nTop = iRow * (nCellWidth4x4);
-
-                for (int jCell = 0; jCell < 24; jCell++) // COLLUMS
+                double dLeft;
+                double dTop;
+                double dRight;
+                double dBottom;
+                double dGridNormal;
+                if (!LauncherForm.g_isWindowdedFullScreen)
                 {
-                    nLeft = jCell * (nCellHeight4x4);
+                    dLeft = Math.Round((rcClient.bottom + rcTitleBound.top) * 0.0125f);
+                    dTop = Math.Round((rcClient.bottom + rcTitleBound.top) * 0.146625f);
+                    dRight = Math.Round((rcClient.bottom + rcTitleBound.top) * 0.603875f);
+                    dBottom = Math.Round((rcClient.bottom + rcTitleBound.top) * 0.738f);
+                    dGridNormal = Math.Round(((rcClient.bottom + rcTitleBound.top) * 0.591375 - 4) / 12);
+                }
+                else
+                {
+                    dLeft = Math.Round(LauncherForm.resolution_height * 0.0125f);
+                    dTop = Math.Round(LauncherForm.resolution_height * 0.146625f);
+                    dRight = Math.Round(LauncherForm.resolution_height * 0.603875f);
+                    dBottom = Math.Round(LauncherForm.resolution_height * 0.738f);
+                    dGridNormal = Math.Round((LauncherForm.resolution_height * 0.591375 - 4) / 12);
+                }
+                
+                double dWidth = dRight - dLeft;
+                double dHeight = dBottom - dTop;
 
-                    rcBox = new Rectangle(nLeft, nTop, nCellHeight4x4, nCellWidth4x4);
-                    g_arrayRect4x4[iRow, jCell] = rcBox;
+                int nGridQuad = Convert.ToInt32(dGridNormal/2);
 
-                    e.Graphics.DrawRectangle(AquaPen, g_arrayRect4x4[iRow, jCell]);
+                //TODO : Top Margin.
+                Rectangle rcBoxStashBorder = new Rectangle(Convert.ToInt32(dLeft), Convert.ToInt32(dTop), Convert.ToInt32(dWidth), Convert.ToInt32(dHeight));
+                Pen DarkRed = new Pen(Color.DarkRed, 2);
+                e.Graphics.DrawRectangle(DarkRed, rcBoxStashBorder);
+
+                Rectangle rcCell;
+                Pen NormalPen = new Pen(Color.Aqua, 1);
+                int nLeft = Convert.ToInt32(dLeft);
+                int nTop = Convert.ToInt32(dTop);
+
+                if (!LauncherForm.g_isWindowdedFullScreen)
+                {
+                    nTop = nTop + rcTitleBound.top;// nTitleHeight;
+                }
+
+                Rectangle[,] g_arrayRect1x1 = new Rectangle[12, 12];
+                // 1x1 Normal
+                for (int i = 0; i < 12; i++) // ROWS
+                {
+                    for (int j = 0; j < 12; j++) // COLLUMS
+                    {
+                        rcCell = new Rectangle(nLeft, nTop, Convert.ToInt32(dGridNormal), Convert.ToInt32(dGridNormal));
+                        e.Graphics.DrawRectangle(NormalPen, rcCell);
+
+                        g_arrayRect1x1[i, j] = rcCell;
+                        nLeft = nLeft + Convert.ToInt32(dGridNormal); // Next Col.
+                    }
+                    nLeft = Convert.ToInt32(dLeft); // Back to First COL.
+                    nTop = nTop + Convert.ToInt32(dGridNormal); // Next Row.
+                }
+
+                Pen QuadPen = new Pen(Color.Plum, 1);
+                Rectangle rcQuad = new Rectangle();
+                // 4x4 Quad
+                //TODO : if show quad grid checked in settings
+                for (int i = 0; i < 12; i++) // ROWS
+                {
+                    for (int j = 0; j < 12; j++) // COLLUMS
+                    {
+                        rcCell = g_arrayRect1x1[i, j];
+
+                        /*
+                        +------------+
+                        +     +      +
+                        +-----+------+
+                        +     +      +
+                        +------------+
+                        */
+                        for (int iQuad = 0; iQuad < 2; iQuad++)
+                        {
+                            for (int jQuad = 0; jQuad < 2; jQuad++) // Quad Cell in Each normal Cell.
+                            {
+                                rcQuad.X = rcCell.Left + jQuad * nGridQuad;
+                                rcQuad.Y = rcCell.Top + jQuad * nGridQuad;
+                                rcQuad.Width = nGridQuad;
+                                rcQuad.Height = nGridQuad;
+                                e.Graphics.DrawRectangle(QuadPen, rcQuad);
+                            }
+                            rcQuad.Y = rcCell.Top + iQuad * nGridQuad; // Next Row in Each normal Cell.
+                        }
+                    }
                 }
             }
-
-            nLeft = 0;
-            nTop = 0;
-            // 1x1 Red
-            //ControlForm.g_arrayRect1x1 = new Rectangle[12, 12];
-            for (int i=0; i<12; i++) // ROWS
+            catch (Exception ex)
             {
-                nTop = i * nCellHeight;
-
-                for (int j=0; j<12; j++) // COLLUMS
-                {
-                    nLeft = j * nCellWidth;
-
-                    rcBox = new Rectangle(nLeft, nTop, nCellWidth, nCellHeight);
-                    g_arrayRect1x1[i, j] = rcBox;
-
-                    e.Graphics.DrawRectangle(DarkRed, g_arrayRect1x1[i, j]);
-                }                
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
 
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
@@ -255,7 +303,7 @@ namespace POExileDirection
             LauncherForm.g_nGridTop = Top;
             LauncherForm.g_nGridWidth = Width;
             LauncherForm.g_nGridHeight = Height;
-            #endregion
+            //#endregion
         }
 
         protected override void WndProc(ref Message m)

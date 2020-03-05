@@ -58,6 +58,9 @@ namespace POExileDirection
         public static DateTime _dtLogin { get; set; }
         public static SqlConnection _sqlcon { get; set; }
 
+        public static Rectangle[,] g_arrayRect1x1 = new Rectangle[12, 12];
+        public static Rectangle[,] g_arrayRect4x4 = new Rectangle[24, 24];
+
         #region [[[[[ Pre-Check :: MOUSE WHEEL and HOT KEYS ]]]]]
         public static string g_strYNMouseWheelStashTab { get; set; } // Added 1.3.9.6 Ver.
         public static string g_strYNUseEmergencyHOTKEY { get; set; }
@@ -282,6 +285,7 @@ namespace POExileDirection
         public static List<string> g_strArrGREENAlert { get; set; }
 
         private DateTime ScrollTick;
+        internal static Screen g_ScreenLocation;
 
         protected override CreateParams CreateParams
         {
@@ -545,22 +549,6 @@ namespace POExileDirection
             _strMacAddress = NICMacAddress();
 
             GetPOE_IngameUserOption();
-
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (resolution_width < 1920 && resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (resolution_width < 1600 && resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-
 
             btnLauncherLogin_Click(this, new EventArgs());
             //TEST TTTTTTT
@@ -1391,7 +1379,12 @@ namespace POExileDirection
             g_handlePathOfExile = InteropCommon.FindWindow("POEWindowClass", "Path of Exile"); // ClassName = POEWindowClass
             // g_handleDeadlyTrade = FindWindow("WindowsForms10.Window.8.app.0.141b42a_r6_ad1", null); // DeadlyTrade CLASSID = "WindowsForms10.Window.8.app.0.141b42a_r6_ad1"
 
-            Thread.Sleep(10);
+            //InteropCommon.GetWindowRect(g_handlePathOfExile, out g_rcPOE);
+            //_rcOLDPOEWinRect = g_rcPOE;
+
+            Thread.Sleep(100);
+            timerCheckFocus.Start();
+
             frmMainControl = new ControlForm();
             frmMainControl.ShowIcon = false;
             frmMainControl.ShowInTaskbar = false;
@@ -1408,10 +1401,10 @@ namespace POExileDirection
             InteropCommon.SetForegroundWindow(g_handlePathOfExile);
         }
 
-#region [[[[[ TimerDetect Tick ]]]]]
+        #region [[[[[ TimerDetect Tick ]]]]]
         private void TimerDetect_Tick(object sender, EventArgs e)
         {
-#region ⨌⨌ Wait for POE Launching ⨌⨌
+            #region ⨌⨌ Wait for POE Launching ⨌⨌
             g_handlePathOfExile = InteropCommon.FindWindow("POEWindowClass", "Path of Exile"); // ClassName = POEWindowClass
             if (g_handlePathOfExile != IntPtr.Zero)
             {
@@ -1539,9 +1532,9 @@ namespace POExileDirection
                 InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                 this.BringToFront();
             }
-#endregion
+            #endregion
         } 
-#endregion
+        #endregion
 
         private void RunDeadlyTradeManager()
         {
@@ -1560,7 +1553,7 @@ namespace POExileDirection
             }
         }
 
-#region [[[[[ Real Time Supporters Scrolling ]]]]]
+        #region [[[[[ Real Time Supporters Scrolling ]]]]]
         private async Task ScrollingText()
         {
             //Task.Run(() =>
@@ -1569,9 +1562,9 @@ namespace POExileDirection
                 labelSupportersRealTime.Text.Substring(1, labelSupportersRealTime.Text.Length - 1) + labelSupportersRealTime.Text.Substring(0, 1);
             //});
         }
-#endregion
+        #endregion
 
-#region [[[[[ TODO : CHECK UPDATE AVAILABLE ]]]]]
+        #region [[[[[ TODO : CHECK UPDATE AVAILABLE ]]]]]
         // Added 1.3.9.2
         //private async Task CheckUpdateLoop()
         //{
@@ -1669,9 +1662,9 @@ namespace POExileDirection
         //        await Task.Delay(1000*60*60*1); // 1000ms(1s) * 60 = 60s(1m) * 60 = 60m(1h) * 1 = 1h
         //    }
         //} 
-#endregion
+        #endregion
 
-#region [[[[[ Get JSON Data : DeadlyInformation ]]]]]
+        #region [[[[[ Get JSON Data : DeadlyInformation ]]]]]
         private void Get_deadlyInformationData()
         {
             var tmpData = new DeadlyInformation();
@@ -1682,7 +1675,7 @@ namespace POExileDirection
                 MissingMemberHandling = MissingMemberHandling.Ignore
             };
 
-#region ⨌⨌ Get Deadly JSON Data ⨌⨌
+            #region ⨌⨌ Get Deadly JSON Data ⨌⨌
             try
             {
                 using (var r = new StreamReader(Application.StartupPath + "\\AtlasDrop\\ZoneInform.json"))
@@ -1837,7 +1830,7 @@ namespace POExileDirection
                 else
                     Application.Exit();
             }
-#endregion
+            #endregion
 
             deadlyInformationData = tmpData;
             try
@@ -1909,9 +1902,9 @@ namespace POExileDirection
                 }
             }
         }
-#endregion
+        #endregion
 
-#region [[[[[ Drag Moving ]]]]]
+        #region [[[[[ Drag Moving ]]]]]
         private void PictureBox3_MouseDown(object sender, MouseEventArgs e)
         {
             nMoving = 1;
@@ -1931,7 +1924,7 @@ namespace POExileDirection
         {
             nMoving = 0;
         } 
-#endregion
+        #endregion
 
         private void BtnMinimize_Click(object sender, EventArgs e)
         {
@@ -1953,7 +1946,7 @@ namespace POExileDirection
             }
         }
 
-#region ⨌⨌ NotifyIcon : Tray ⨌⨌
+        #region ⨌⨌ NotifyIcon : Tray ⨌⨌
         private void NotifyIconDeadlyTrade_DoubleClick(object sender, EventArgs e)
         {
             this.Show();
@@ -1974,7 +1967,7 @@ namespace POExileDirection
             this.Close();
             Application.Exit();
         }
-#endregion
+        #endregion
 
         private void BtnStartAddon_Click(object sender, EventArgs e)
         {
@@ -2006,11 +1999,10 @@ namespace POExileDirection
             timerScrolling.Stop();
             timerScrolling.Dispose();
 
-            timerCheckFocus.Start();
             Start_ControlForm();
         }
 
-#region ⨌⨌ FormClosed : Dispose All ⨌⨌
+        #region ⨌⨌ FormClosed : Dispose All ⨌⨌
         private void BtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -2029,7 +2021,7 @@ namespace POExileDirection
             if (ninjaData != null) ninjaData = null;
             if (deadlyInformationData != null) deadlyInformationData = null;
         }
-#endregion
+        #endregion
 
         private void btnCleaner_Click(object sender, EventArgs e)
         {
@@ -2184,7 +2176,7 @@ namespace POExileDirection
             }
         }
 
-#region [[[[[ Timer Check Focus ON/OFF - POE, DeadlyTrade ]]]]]
+        #region [[[[[ Timer Check Focus ON/OFF - POE, DeadlyTrade ]]]]]
         private void timerCheckFocus_Tick(object sender, EventArgs e)
         {
             try
@@ -2216,10 +2208,10 @@ namespace POExileDirection
                 //TODO: if (bNeedtoShowAvailabeUpdate)
                 //TODO:     ShowAvailabeUpdatePanel();
 
-                if(!g_FocusLosing) // FOCUSED
-                {
-                    DetectResolutionChanging(); //  Check & Get changed resolution.
-                }
+                //if(!g_FocusLosing) // FOCUSED
+                //{
+                //    DetectResolutionChanging(); //  Check & Get changed resolution.
+                //}
             }
             catch (Exception ex)
             {
@@ -2227,49 +2219,43 @@ namespace POExileDirection
                 timerCheckFocus.Dispose();
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
-        } 
-#endregion
+        }
+        #endregion
+
+        #region [[[[[ TODO : Multiple Monitor ]]]]]
+        /*
+        public static RECT g_rcPOE;
+        public static RECT g_rcClient;
+        public static Point g_ptLeftTop;
+        private RECT _rcOLDPOEWinRect;
+        public static bool g_bIsPOESizeChanged { get; set; }
+
         private void DetectResolutionChanging()
         {
-            DeadlyLog4Net._log.Info(String.Format("TEMP resolution_height : {0}, resolution_width : {1}", resolution_height.ToString(), resolution_width.ToString()));
-            String strPathPOEConifg = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            strPathPOEConifg = strPathPOEConifg + "\\My Games\\Path of Exile\\production_Config.ini";
-            IniParser parser = new IniParser(strPathPOEConifg);
-
-            string strTemp = String.Empty;
-            int nCheck_height = 0;
-            int nCheck_width = 0;
             try
             {
-                bool bIsChanged = false;
-                nCheck_height = Convert.ToInt32(parser.GetSetting("DISPLAY", "resolution_height"));
-                nCheck_width = Convert.ToInt32(parser.GetSetting("DISPLAY", "resolution_width"));
-                strTemp = parser.GetSetting("DISPLAY", "borderless_windowed_fullscreen");
-                if (!String.IsNullOrEmpty(strTemp))
-                {
-                    if (strTemp.ToUpper() == "TRUE")
-                        g_isWindowdedFullScreen = true;
-                    else
-                        g_isWindowdedFullScreen = false;
+                // if(Screen.AllScreens.Length > 0)
+                //g_ScreenLocation = Screen.FromPoint(Cursor.Position); // Screen.FromControl(this); // by Form Control.
 
-                    // if Old State is Windowded and State Changed to Windowded FullScreen.
-                    if (g_isWindowdedFullScreenOLD != g_isWindowdedFullScreen && g_isWindowdedFullScreenOLD == false)
-                        bIsChanged = true;
-                }
-                if (nCheck_height != resolution_height || nCheck_width != resolution_width)
+                InteropCommon.GetWindowRect(g_handlePathOfExile, out g_rcPOE);
+                if (g_rcPOE.left != _rcOLDPOEWinRect.left || g_rcPOE.top != _rcOLDPOEWinRect.top ||
+                    g_rcPOE.right != _rcOLDPOEWinRect.right || g_rcPOE.bottom != _rcOLDPOEWinRect.bottom)
                 {
-                    if (bIsChanged || !g_isWindowdedFullScreen)
-                    {
-                        resolution_height = nCheck_height;
-                        resolution_width = nCheck_width;
-                        DeadlyLog4Net._log.Info(String.Format("resolution_height : {0}, resolution_width : {1}", resolution_height.ToString(), resolution_width.ToString()));
-                    }
+                    _rcOLDPOEWinRect = g_rcPOE;
+                    g_bIsPOESizeChanged = true;
                 }
+                else
+                    g_bIsPOESizeChanged = false;
+
+                //InteropCommon.GetClientRect(g_handlePathOfExile, out g_rcClient);
+                //InteropCommon.ClientToScreen(g_handlePathOfExile, ref g_ptLeftTop);
             }
             catch (Exception ex)
             {
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
         }
+        */
+        #endregion
     }
 }

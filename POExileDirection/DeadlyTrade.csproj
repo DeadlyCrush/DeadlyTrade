@@ -274,12 +274,6 @@
       <DependentUpon>ITEMIndicatorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="LauncherForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LauncherForm.Designer.cs">
-      <DependentUpon>LauncherForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="DeadlyInformation\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -310,6 +304,12 @@
     </Compile>
     <Compile Include="DeadlyUtility\OptimizerForm.Designer.cs">
       <DependentUpon>OptimizerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LauncherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LauncherForm.designer.cs">
+      <DependentUpon>LauncherForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -409,9 +409,6 @@
     <EmbeddedResource Include="DeadlyNotification\ITEMIndicatorForm.resx">
       <DependentUpon>ITEMIndicatorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LauncherForm.resx">
-      <DependentUpon>LauncherForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DeadlyInformation\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -426,6 +423,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyUtility\OptimizerForm.resx">
       <DependentUpon>OptimizerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LauncherForm.resx">
+      <DependentUpon>LauncherForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -28,41 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnLeftTop = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.panelQuadCheck = new System.Windows.Forms.Panel();
+            this.checkQuadTab = new System.Windows.Forms.CheckBox();
+            this.labelAddonStatus = new System.Windows.Forms.Label();
+            this.panelQuadCheck.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnLeftTop
+            // panelQuadCheck
             // 
-            this.btnLeftTop.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnLeftTop.FlatAppearance.BorderSize = 0;
-            this.btnLeftTop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLeftTop.Image = global::POExileDirection.Properties.Resources.LEFT_TOP_ANCHOR;
-            this.btnLeftTop.Location = new System.Drawing.Point(-1, -1);
-            this.btnLeftTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnLeftTop.Name = "btnLeftTop";
-            this.btnLeftTop.Size = new System.Drawing.Size(16, 16);
-            this.btnLeftTop.TabIndex = 9;
-            this.btnLeftTop.UseVisualStyleBackColor = true;
-            this.btnLeftTop.Visible = false;
-            this.btnLeftTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnLeftTop_MouseDown);
-            this.btnLeftTop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BtnLeftTop_MouseMove);
-            this.btnLeftTop.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnLeftTop_MouseUp);
+            this.panelQuadCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
+            this.panelQuadCheck.Controls.Add(this.labelAddonStatus);
+            this.panelQuadCheck.Controls.Add(this.checkQuadTab);
+            this.panelQuadCheck.Location = new System.Drawing.Point(190, 12);
+            this.panelQuadCheck.Name = "panelQuadCheck";
+            this.panelQuadCheck.Size = new System.Drawing.Size(133, 22);
+            this.panelQuadCheck.TabIndex = 3;
             // 
-            // btnClose
+            // checkQuadTab
             // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Image = global::POExileDirection.Properties.Resources.GridForm_RedCloseButton;
-            this.btnClose.Location = new System.Drawing.Point(21, 13);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(16, 16);
-            this.btnClose.TabIndex = 8;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Visible = false;
-            this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            this.checkQuadTab.AutoSize = true;
+            this.checkQuadTab.Location = new System.Drawing.Point(8, 4);
+            this.checkQuadTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.checkQuadTab.Name = "checkQuadTab";
+            this.checkQuadTab.Size = new System.Drawing.Size(15, 14);
+            this.checkQuadTab.TabIndex = 5;
+            this.checkQuadTab.TabStop = false;
+            this.checkQuadTab.UseVisualStyleBackColor = true;
+            this.checkQuadTab.CheckedChanged += new System.EventHandler(this.checkQuadTab_CheckedChanged);
+            // 
+            // labelAddonStatus
+            // 
+            this.labelAddonStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
+            this.labelAddonStatus.ForeColor = System.Drawing.Color.Bisque;
+            this.labelAddonStatus.Location = new System.Drawing.Point(26, 1);
+            this.labelAddonStatus.Name = "labelAddonStatus";
+            this.labelAddonStatus.Size = new System.Drawing.Size(104, 18);
+            this.labelAddonStatus.TabIndex = 6;
+            this.labelAddonStatus.Text = "Show Quad Grid.";
+            this.labelAddonStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // StashGrid
             // 
@@ -70,10 +73,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(38, 40);
+            this.ClientSize = new System.Drawing.Size(409, 40);
             this.ControlBox = false;
-            this.Controls.Add(this.btnLeftTop);
-            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.panelQuadCheck);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -86,15 +88,17 @@
             this.TransparencyKey = System.Drawing.Color.DarkGray;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.StashGrid_FormClosed);
             this.Load += new System.EventHandler(this.StashGrid_Load);
-            this.SizeChanged += new System.EventHandler(this.StashGrid_SizeChanged);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.StashGrid_Paint);
+            this.panelQuadCheck.ResumeLayout(false);
+            this.panelQuadCheck.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnLeftTop;
-        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Panel panelQuadCheck;
+        private System.Windows.Forms.CheckBox checkQuadTab;
+        private System.Windows.Forms.Label labelAddonStatus;
     }
 }

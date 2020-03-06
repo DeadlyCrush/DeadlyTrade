@@ -5,7 +5,7 @@
 [![Dev Azure Pipeline](https://dev.azure.com/DeadlyCrush/DeadlyTrade/_apis/build/status/DeadlyCrush.DeadlyTrade?branchName=master)](https://dev.azure.com/DeadlyCrush/DeadlyTrade/_build/latest?definitionId=1&branchName=master)
 [![NetFrameWork.Legacy.CI](https://github.com/DeadlyCrush/DeadlyTrade/workflows/NetFrameWork.Legacy.CI/badge.svg?branch=master)](https://github.com/DeadlyCrush/DeadlyTrade/actions)
 
-![GitHub Releases](https://img.shields.io/github/downloads/deadlycrush/deadlytrade/latest/total) [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]() [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]()
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release)](https://github.com/DeadlyCrush/DeadlyTrade/releases)![GitHub Releases](https://img.shields.io/github/downloads/deadlycrush/deadlytrade/latest/total) [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]() [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]()
 
 ## Installation
 - Portable.
@@ -146,7 +146,7 @@ DeadlyTrade / Deadly KOR Team >
 
 ## Download Status (Real-Time)
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release) ![GitHub Releases](https://img.shields.io/github/downloads/deadlycrush/deadlytrade/latest/total) ![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/deadlycrush/deadlytrade/latest?include_prereleases)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release)](https://github.com/DeadlyCrush/DeadlyTrade/releases) ![GitHub Releases](https://img.shields.io/github/downloads/deadlycrush/deadlytrade/latest/total) ![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/deadlycrush/deadlytrade/latest?include_prereleases)
 
 | DeadlyTrade Repository. | Download |
 | ------ | ------ |

@@ -9,7 +9,7 @@
 
 ## Installation
 - Portable.
-- Download latest rlelease and unzip. : https://github.com/DeadlyCrush/DeadlyTrade/releases
+- Download latest rlelease and unzip. : [![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release)](https://github.com/DeadlyCrush/DeadlyTrade/releases)
 - Update Automatically. Update notice panel is shown when update available.
 
 ## Languages

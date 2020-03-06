@@ -2,7 +2,7 @@
 ![Travis (.org)](https://img.shields.io/travis/deadlycrush/deadlytrade?logo=travis)
 [![Build status](https://ci.appveyor.com/api/projects/status/ncnly5qi6uk5gyb9?svg=true)](https://ci.appveyor.com/project/DeadlyCrush/deadlytrade)
 [![buddy pipeline](https://app.buddy.works/rino74eocs/deadlytrade/pipelines/pipeline/242652/badge.svg?token=57fabdfd2da6d0ef73c5b935da30b4e13e1b03c55a68803c1dc07c81bd94c6c1 "buddy pipeline")](https://app.buddy.works/rino74eocs/deadlytrade/pipelines/pipeline/242652)
-[![Build Status](https://dev.azure.com/vscode/VSCode/_apis/build/status/VS%20Code?branchName=master)](https://dev.azure.com/DeadlyCrush/DeadlyTrade/_build?definitionId=1)
+[![Build Status](https://dev.azure.com/DeadlyCrush/DeadlyTrade/_apis/build/status/DeadlyCrush.DeadlyTrade?branchName=master)](https://dev.azure.com/DeadlyCrush/DeadlyTrade/_build?definitionId=1)
 [![Build Status](https://github.com/eduherminio/FileParser/workflows/CI%20GitHub%20Actions/badge.svg)](https://github.com/DeadlyCrush/DeadlyTrade/actions)
 
 ![GitHub Releases](https://img.shields.io/github/downloads/deadlycrush/deadlytrade/latest/total) [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]() [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]()

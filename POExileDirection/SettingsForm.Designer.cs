@@ -1198,9 +1198,9 @@
             this.panel2.Controls.Add(this.label33);
             this.panel2.Controls.Add(this.labelFL1);
             this.panel2.Controls.Add(this.label35);
-            this.panel2.Location = new System.Drawing.Point(15, 118);
+            this.panel2.Location = new System.Drawing.Point(141, 16);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(824, 428);
+            this.panel2.Size = new System.Drawing.Size(609, 161);
             this.panel2.TabIndex = 2;
             // 
             // btn5
@@ -2331,7 +2331,7 @@
             this.panelSkillMain.Controls.Add(this.label68);
             this.panelSkillMain.Location = new System.Drawing.Point(14, 176);
             this.panelSkillMain.Name = "panelSkillMain";
-            this.panelSkillMain.Size = new System.Drawing.Size(38, 41);
+            this.panelSkillMain.Size = new System.Drawing.Size(692, 386);
             this.panelSkillMain.TabIndex = 10;
             // 
             // btnS5

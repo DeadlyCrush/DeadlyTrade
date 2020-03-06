@@ -507,6 +507,7 @@ namespace POExileDirection
             }
             else if (!LauncherForm.g_FocusLosing) // Only Exile Focused.
             {
+                #region [[[[[ HOT KEYS ]]]]]
                 if (e.Modifiers == ovHRemains.fsMod && e.KeyCode == ovHRemains.hotKeys && LauncherForm.g_strYNUseRemainingHOTKEY == "Y" && !bIsSettingsPop)
                 {
                     deadlyRemainEvent(this, new EventArgs());
@@ -532,7 +533,7 @@ namespace POExileDirection
                     deadlyHideoutEvent(this, new EventArgs());
                     return;
                 }
-                else if (e.Modifiers == ovHSearchbyPosition.fsMod && 
+                else if (e.Modifiers == ovHSearchbyPosition.fsMod &&
                         e.KeyCode == ovHSearchbyPosition.hotKeys && LauncherForm.g_strYNUseFindbyPositionHOTKEY == "Y" && !bIsSettingsPop)
                 {
                     deadlySearchPositionEvent(this, new EventArgs());
@@ -543,6 +544,9 @@ namespace POExileDirection
                     deadlyEXITEvent(this, new EventArgs());
                     return;
                 }
+
+                //TODO : NEW HOT KEYS... 
+                #endregion
 
                 // CTRL + C
                 if (e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
@@ -564,6 +568,9 @@ namespace POExileDirection
                         return;
                     }
                 }
+
+                // KAKAO User's CTRL+V → ENTER
+                //TODO : Send When ENTER - Previous Key is CTRL+V
                 // CTRL + V
                 if (e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.V)
                 {
@@ -600,32 +607,15 @@ namespace POExileDirection
                 // FLASK 1
                 if (e.KeyCode == (WindowsHook.Keys)Enum.Parse(typeof(WindowsHook.Keys), LauncherForm.g_Flask1.ToString()) && LauncherForm.g_bToggle1 && !LauncherForm.g_FocusOnAddon)
                 {
-                    /*try
-                    {
-                        FlaskTimerEvent1(this, new EventArgs()); //ControlForm_FlaskTimerEvent2(this, new EventArgs());
-                        InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-                    }
-                    catch (InvalidOperationException ex)
-                    {
-                        DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                    }*/
                     try
                     {
-                        /*if (LauncherForm.g_strFlaskType == "A")
-                        {
-                            if (frmF1 == null) { frmF1 = new FlaskTimerCircleForm(); }
-                            frmF1.nFlaskNumber = 1;
-                            frmF1.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime1);
-                            frmF1.Show();
-                        }
-                        else*/
                         if (!bShowingfrmICONF1) { frmICONF1 = new FlaskICONTimer(); }
                         frmICONF1.nFlaskNumber = 1;
                         frmICONF1.strUseAlertSound = LauncherForm.g_strTimerSound1;
                         frmICONF1.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime1);
                         bShowingfrmICONF1 = true;
                         frmICONF1.Show();
-                        //Thread.Sleep(50);
+                        
                         InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                     }
                     catch (InvalidOperationException ex)
@@ -636,24 +626,15 @@ namespace POExileDirection
                 // FLASK 2
                 else if (e.KeyCode == (WindowsHook.Keys)Enum.Parse(typeof(WindowsHook.Keys), LauncherForm.g_Flask2.ToString()) && LauncherForm.g_bToggle2 && !LauncherForm.g_FocusOnAddon)
                 {
-                    /*try
-                    {
-                        FlaskTimerEvent2(this, new EventArgs()); //ControlForm_FlaskTimerEvent2(this, new EventArgs());
-                        InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-                    }
-                    catch (InvalidOperationException ex)
-                    {
-                        DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                    }*/
                     try
                     {
                         if (!bShowingfrmICONF2) { frmICONF2 = new FlaskICONTimer(); }
                         frmICONF2.nFlaskNumber = 2;
-                        frmICONF2.strUseAlertSound = LauncherForm.g_strTimerSound2;
+                        frmICONF2.strUseAlertSound = LauncherForm.g_strTimerSound1;
                         frmICONF2.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime2);
                         bShowingfrmICONF2 = true;
                         frmICONF2.Show();
-                        //Thread.Sleep(50);
+                        
                         InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                     }
                     catch (InvalidOperationException ex)
@@ -664,24 +645,15 @@ namespace POExileDirection
                 // FLASK 3
                 else if (e.KeyCode == (WindowsHook.Keys)Enum.Parse(typeof(WindowsHook.Keys), LauncherForm.g_Flask3.ToString()) && LauncherForm.g_bToggle3 && !LauncherForm.g_FocusOnAddon)
                 {
-                    /*try
-                    {
-                        FlaskTimerEvent3(this, new EventArgs()); //ControlForm_FlaskTimerEvent3(this, new EventArgs());
-                        InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-                    }
-                    catch (InvalidOperationException ex)
-                    {
-                        DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                    }*/
                     try
                     {
                         if (!bShowingfrmICONF3) { frmICONF3 = new FlaskICONTimer(); }
                         frmICONF3.nFlaskNumber = 3;
-                        frmICONF3.strUseAlertSound = LauncherForm.g_strTimerSound3;
+                        frmICONF3.strUseAlertSound = LauncherForm.g_strTimerSound1;
                         frmICONF3.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime3);
                         bShowingfrmICONF3 = true;
                         frmICONF3.Show();
-                        //Thread.Sleep(50);
+                        
                         InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                     }
                     catch (InvalidOperationException ex)
@@ -692,24 +664,15 @@ namespace POExileDirection
                 // FLASK 4
                 else if (e.KeyCode == (WindowsHook.Keys)Enum.Parse(typeof(WindowsHook.Keys), LauncherForm.g_Flask4.ToString()) && LauncherForm.g_bToggle4 && !LauncherForm.g_FocusOnAddon)
                 {
-                    /*try
-                    {
-                        FlaskTimerEvent4(this, new EventArgs()); //ControlForm_FlaskTimerEvent4(this, new EventArgs());
-                        InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-                    }
-                    catch (InvalidOperationException ex)
-                    {
-                        DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                    }*/
                     try
                     {
                         if (!bShowingfrmICONF4) { frmICONF4 = new FlaskICONTimer(); }
                         frmICONF4.nFlaskNumber = 4;
-                        frmICONF4.strUseAlertSound = LauncherForm.g_strTimerSound4;
+                        frmICONF4.strUseAlertSound = LauncherForm.g_strTimerSound1;
                         frmICONF4.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime4);
                         bShowingfrmICONF4 = true;
                         frmICONF4.Show();
-                        //Thread.Sleep(50);
+                        
                         InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                     }
                     catch (InvalidOperationException ex)
@@ -720,24 +683,15 @@ namespace POExileDirection
                 // FLASK 5
                 else if (e.KeyCode == (WindowsHook.Keys)Enum.Parse(typeof(WindowsHook.Keys), LauncherForm.g_Flask5.ToString()) && LauncherForm.g_bToggle5 && !LauncherForm.g_FocusOnAddon)
                 {
-                    /*try
-                    {
-                        FlaskTimerEvent5(this, new EventArgs()); //ControlForm_FlaskTimerEvent5(this, new EventArgs());
-                        InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-                    }
-                    catch (InvalidOperationException ex)
-                    {
-                        DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                    }*/
                     try
                     {
                         if (!bShowingfrmICONF5) { frmICONF5 = new FlaskICONTimer(); }
                         frmICONF5.nFlaskNumber = 5;
-                        frmICONF5.strUseAlertSound = LauncherForm.g_strTimerSound5;
+                        frmICONF5.strUseAlertSound = LauncherForm.g_strTimerSound1;
                         frmICONF5.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime5);
                         bShowingfrmICONF5 = true;
                         frmICONF5.Show();
-                        //Thread.Sleep(50);
+                        
                         InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                     }
                     catch (InvalidOperationException ex)
@@ -1090,18 +1044,6 @@ namespace POExileDirection
             */
 
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
             DeadlyLog4Net._log.Info($"{MethodBase.GetCurrentMethod().Name} RESOLUTION : " + strINIPath);
 
@@ -1158,7 +1100,7 @@ namespace POExileDirection
                 catch (Exception ex)
                 {
                     MSGForm frmMSG = new MSGForm();
-                    frmMSG.lbMsg.Text = "Unknown Error occured while reading POE log file.\r\n\r\nERROR : ( " + ex.Message + " )";
+                    frmMSG.lbMsg.Text = "Unknown Error occurred while reading POE log file.\r\n\r\nERROR : ( " + ex.Message + " )";
                     frmMSG.ShowDialog();
                     bRet = false;
 
@@ -2441,7 +2383,7 @@ namespace POExileDirection
                 if (HasAlt) { Modifier |= WindowsHook.Keys.Alt; }
                 if (HasShift) { Modifier |= WindowsHook.Keys.Shift; }
 
-                //Get the last key in the shortcut
+                // Get the last key in the shortcut
                 System.Windows.Forms.KeysConverter keyconverter = new System.Windows.Forms.KeysConverter();
 
                 // TO DO More.
@@ -2456,10 +2398,10 @@ namespace POExileDirection
             }
             catch(Exception ex)
             {
-                DeadlyLog4Net._log.Error($"Fail to set hotkey {MethodBase.GetCurrentMethod().Name}", ex);
+                DeadlyLog4Net._log.Error($"Fail to set hotkey {MethodBase.GetCurrentMethod().Name} strText : " + strtext, ex);
                 MSGForm frmMSG = new MSGForm();
                 if (LauncherForm.g_strUILang == "KOR")
-                    frmMSG.lbMsg.Text = "단축키 설정에 오류가 있습니다.\r\n\r\n단축키를 제외한 다른 기능은 정상작동합니다.";
+                    frmMSG.lbMsg.Text = "단축키 설정("+ strtext + ")에 오류가 있습니다.\r\n\r\n단축키를 제외한 다른 기능은 정상작동합니다.";
                 else
                     frmMSG.lbMsg.Text = "Fail to set hotkey.\r\n\r\nBut, all the other function is properly.";
                 frmMSG.ShowDialog();
@@ -2824,10 +2766,10 @@ namespace POExileDirection
 
                         // FLASK SOUND Y/N
                         parser.AddSetting("MISC", "FLASKSOUND1", LauncherForm.g_strTimerSound1);
-                        parser.AddSetting("MISC", "FLASKSOUND2", LauncherForm.g_strTimerSound2);
-                        parser.AddSetting("MISC", "FLASKSOUND3", LauncherForm.g_strTimerSound3);
-                        parser.AddSetting("MISC", "FLASKSOUND4", LauncherForm.g_strTimerSound4);
-                        parser.AddSetting("MISC", "FLASKSOUND5", LauncherForm.g_strTimerSound5);
+                        parser.AddSetting("MISC", "FLASKSOUND2", LauncherForm.g_strTimerSound1);
+                        parser.AddSetting("MISC", "FLASKSOUND3", LauncherForm.g_strTimerSound1);
+                        parser.AddSetting("MISC", "FLASKSOUND4", LauncherForm.g_strTimerSound1);
+                        parser.AddSetting("MISC", "FLASKSOUND5", LauncherForm.g_strTimerSound1);
 
                         // HotKey Use
                         parser.AddSetting("MISC", "HOTKEYHIDEOUT", LauncherForm.g_strYNUseHideoutHOTKEY);
@@ -2861,50 +2803,14 @@ namespace POExileDirection
 
         private void SaveNofiticationMsg()
         {
-            //TODO: g_strCUSTOM1,2,3 Added.
+            //TODO: g_strCUSTOM1,2,3,4 Added.
+            //TODO: All button's Title
 
             var settings = new JsonSerializerSettings
             {
                 NullValueHandling = NullValueHandling.Ignore,
                 MissingMemberHandling = MissingMemberHandling.Ignore
             };
-
-            /*
-            {
-            "Id": "THX",
-            "Msg": "Thanks. gl hf~. (감사합니다.)"
-            },
-            {
-            "Id": "WAIT",
-            "Msg": "Wait a sec pls."
-            },
-            {
-            "Id": "WILLING",
-            "Msg": "Still Willing to Buy?"
-            },
-            {
-            "Id": "SOLD",
-            "Msg": "Sold already. sry."
-            },
-            */
-            /*
-            if (textBoxWait.Text.Length > 0)
-                LauncherForm.g_strnotiWAIT = textBoxWait.Text;
-
-            if (textBoxSold.Text.Length <= 0)
-                LauncherForm.g_strnotiSOLD = textBoxSold.Text;
-
-            if (textBoxDone.Text.Length <= 0)
-                LauncherForm.g_strnotiDONE = textBoxDone.Text;
-
-            if (textBoxResend.Text.Length <= 0)
-                LauncherForm.g_strnotiRESEND = textBoxResend.Text;
-            */
-            //string output = String.Empty;
-            //List<DeadlyAtlas.NotifyMSGCollection> NotifyMSG;
-
-            //NotifyMSG = LauncherForm.deadlyInformationData.InformationMSG.NotifyMSG.Where(retval => retval.Id == "THX").ToList();
-            //NotifyMSG[0].Msg = LauncherForm.g_strnotiDONE;
 
             List<DeadlyAtlas.NotifyMSGCollection> notiMSGUpdate = new List<DeadlyAtlas.NotifyMSGCollection>();
             foreach (var item in LauncherForm.deadlyInformationData.InformationMSG.NotifyMSG)
@@ -3127,40 +3033,6 @@ namespace POExileDirection
                 btnMinimize.BackgroundImage = Properties.Resources.sysMinPOEBg1;
             }
             SetForegroundWindow(handlePOE);*/
-        }
-        #endregion
-
-        #region ⨌⨌ for TEST ⨌⨌
-        private void Button8_Click(object sender, EventArgs e)
-        {
-            NotificationForm frmSelling = new NotificationForm();
-            frmSelling.ShowDialog();
-        }
-
-        private void Button10_Click(object sender, EventArgs e)
-        {
-            // StashGrid ttt = new StashGrid();
-            // ttt.Show();
-
-            //FlaskTimerCircleForm ttt2 = new FlaskTimerCircleForm();
-            //ttt2.nFlaskNumber = 2;
-            //ttt2.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime2);
-            //ttt2.Show();
-
-            //DeadlySyndicateForm ttt3 = new DeadlySyndicateForm();
-            //ttt3.Show();
-
-            //ZoneItemsForm ttt4 = new ZoneItemsForm();
-            //ttt4.strZoneName = "Dungeon";
-            //ttt4.Show();
-
-            // FlaskTransparentForm ttt5 = new FlaskTransparentForm();
-            // ttt5.Show();
-            List<DeadlyAtlas.NotifyMSGCollection> NotifyMSG =
-                    LauncherForm.deadlyInformationData.InformationMSG.NotifyMSG.Where(retval => retval.Id == "THX").ToList();
-
-            string strSendString = String.Format("@{0} {1}", "DeadlyCrush", NotifyMSG[0].Msg);
-            MessageBox.Show(strSendString);
         }
         #endregion
 

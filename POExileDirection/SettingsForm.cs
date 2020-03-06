@@ -296,26 +296,6 @@ namespace POExileDirection
             else
                 checkBox1.Checked = false;
 
-            if (LauncherForm.g_strTimerSound2 == "Y")
-                checkBox2.Checked = true;
-            else
-                checkBox2.Checked = false;
-
-            if (LauncherForm.g_strTimerSound3 == "Y")
-                checkBox3.Checked = true;
-            else
-                checkBox3.Checked = false;
-
-            if (LauncherForm.g_strTimerSound4 == "Y")
-                checkBox4.Checked = true;
-            else
-                checkBox4.Checked = false;
-
-            if (LauncherForm.g_strTimerSound5 == "Y")
-                checkBox5.Checked = true;
-            else
-                checkBox5.Checked = false;
-
             labelSupporters.Text = LauncherForm.g_strDonator;
 
             Visible = true;
@@ -385,7 +365,8 @@ namespace POExileDirection
             double dValidate5 = 0.0;
 
             try
-            {// FLASK TIMER
+            {
+                // FLASK TIMER
                 if (textBoxSEC1.Text.Length < 0 || textBoxSEC2.Text.Length < 0 || textBoxSEC3.Text.Length < 0 || textBoxSEC4.Text.Length < 0 || textBoxSEC5.Text.Length < 0
                     || String.IsNullOrEmpty(textBoxSEC1.Text) || String.IsNullOrEmpty(textBoxSEC2.Text) || String.IsNullOrEmpty(textBoxSEC3.Text)
                         || String.IsNullOrEmpty(textBoxSEC4.Text) || String.IsNullOrEmpty(textBoxSEC5.Text))
@@ -753,10 +734,11 @@ namespace POExileDirection
             panelDonate.BackColor = Color.FromArgb(29, 34, 46);
         }
 
+        #region [[[[[ COLOR Picker - Flask Timer ]]]]]
         private void panelCO1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             DialogResult dRes = colorDialog1.ShowDialog();
-            
+
             if (dRes == DialogResult.OK)
             {
                 panelCO1.BackColor = colorDialog1.Color;
@@ -822,7 +804,8 @@ namespace POExileDirection
                 string strB = colorDialog1.Color.B.ToString();
                 colorStringRGB5 = String.Format("{0},{1},{2}", strR, strG, strB);
             }
-        }
+        } 
+        #endregion
 
         private decimal ConvertoCultureDecimal(string strDecimal)
         {
@@ -1217,8 +1200,8 @@ namespace POExileDirection
             System.Diagnostics.Process.Start("https://www.jumpleasure.me/deadlytrade/?page_id=455");
         }
 
-        private int nFlaskImagePanelFlaskNumber = 0;
         #region [[[[[ Show Flask Image Select Panel :: g_nFlaskImageTimer (Dictionary) ]]]]]
+        private int nFlaskImagePanelFlaskNumber = 0;
         private void pictureFlask1_Click(object sender, EventArgs e)
         {
             panelSetFlaskImage.Width = 335;
@@ -1263,7 +1246,6 @@ namespace POExileDirection
             labelFlaskNumber.Text = "Flast #5";
             panelSetFlaskImage.Visible = true;
         }
-        #endregion
 
         private void btnFlaskCancel_Click(object sender, EventArgs e)
         {
@@ -1329,7 +1311,8 @@ namespace POExileDirection
             panelSetFlaskImage.Visible = false;
             Invalidate();
         }
-
+        #endregion
+                          
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
@@ -1341,33 +1324,33 @@ namespace POExileDirection
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox2.Checked)
-                LauncherForm.g_strTimerSound2 = "Y";
+                LauncherForm.g_strTimerSound1 = "Y";
             else
-                LauncherForm.g_strTimerSound2 = "N";
+                LauncherForm.g_strTimerSound1 = "N";
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox3.Checked)
-                LauncherForm.g_strTimerSound3 = "Y";
+                LauncherForm.g_strTimerSound1 = "Y";
             else
-                LauncherForm.g_strTimerSound3 = "N";
+                LauncherForm.g_strTimerSound1 = "N";
         }
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox4.Checked)
-                LauncherForm.g_strTimerSound4 = "Y";
+                LauncherForm.g_strTimerSound1 = "Y";
             else
-                LauncherForm.g_strTimerSound4 = "N";
+                LauncherForm.g_strTimerSound1 = "N";
         }
 
         private void checkBox5_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox5.Checked)
-                LauncherForm.g_strTimerSound5 = "Y";
+                LauncherForm.g_strTimerSound1 = "Y";
             else
-                LauncherForm.g_strTimerSound5 = "N";
+                LauncherForm.g_strTimerSound1 = "N";
         }
 
         private void xuiSliderFlaskVolume_MouseUp(object sender, MouseEventArgs e)

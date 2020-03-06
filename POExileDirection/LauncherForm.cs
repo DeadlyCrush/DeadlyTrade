@@ -99,11 +99,7 @@ namespace POExileDirection
         public static bool g_bToggle4 { get; set; }
         public static bool g_bToggle5 { get; set; }
 
-        public static string g_strTimerSound1 { get; set; }
-        public static string g_strTimerSound2 { get; set; }
-        public static string g_strTimerSound3 { get; set; }
-        public static string g_strTimerSound4 { get; set; }
-        public static string g_strTimerSound5 { get; set; }
+        public static string g_strTimerSound1 { get; set; }       
         #endregion
 
         #region ⨌⨌ for SKILL TIMER ⨌⨌
@@ -237,6 +233,17 @@ namespace POExileDirection
         public static string g_strCUSTOM1 { get; set; }
         public static string g_strCUSTOM2 { get; set; }
         public static string g_strCUSTOM3 { get; set; }
+        public static string g_strCUSTOM4 { get; set; }
+
+        public static string g_strnotiWAITbtnTITLE { get; set; }
+        public static string g_strnotiSOLDbtnTITLE { get; set; }
+        public static string g_strnotiDONEbtnTITLE { get; set; }
+        public static string g_strCUSTOM1btnTITLE { get; set; }
+        public static string g_strCUSTOM2btnTITLE { get; set; }
+        public static string g_strCUSTOM3btnTITLE { get; set; }
+        public static string g_strCUSTOM4btnTITLE { get; set; }
+
+        public static string g_strNotificationSoundYN { get; set; }
         #endregion
 
         public static IntPtr g_handlePathOfExile { get; set; }
@@ -259,9 +266,12 @@ namespace POExileDirection
         #region [[[[[ Global Variables ]]]]]
         public static string g_strMyNickName { get; set; }
         public static string g_strTRAutoKick { get; set; }
+        public static string g_strTRAutoKickWait { get; set; }
+        public static string g_strTRAutoKickSold { get; set; }
         public static string g_strTRAutoKickCustom1 { get; set; }
         public static string g_strTRAutoKickCustom2 { get; set; }
         public static string g_strTRAutoKickCustom3 { get; set; }
+        public static string g_strTRAutoKickCustom4 { get; set; }
 
         public static int resolution_height { get; set; }
         public static int resolution_width { get; set; }
@@ -813,7 +823,7 @@ namespace POExileDirection
 
             // NOTIFY, TRAY
             this.notifyIconDeadlyTrade.BalloonTipTitle = "Deadly Trade";
-            this.notifyIconDeadlyTrade.BalloonTipText = "Deadly Trade Still Working... (이미 실행중입니다.)";
+            this.notifyIconDeadlyTrade.BalloonTipText = "Deadly Trade Still Working...";
             this.notifyIconDeadlyTrade.Text = "DeadlyTrade ::\r\nDouble Click : launcher\r\nRight Click : menu";
             this.notifyIconDeadlyTrade.BalloonTipIcon = ToolTipIcon.Info;
 
@@ -839,7 +849,7 @@ namespace POExileDirection
             xuiFlatProgressBar1.MaxValue = CNT_NINJACATEGORIES; // Make and Update
             xuiFlatProgressBar2.MaxValue = 20;
 
-            labelAddonStatus.Text = "Addon Data (Not loaded yet)";
+            labelAddonStatus.Text = "Add-on Data (Not loaded yet)";
 
             // TOOLTIP
             DeadlyToolTip.SetToolTip(this.btnMinimize, "Minimize.");
@@ -851,7 +861,7 @@ namespace POExileDirection
         private void ReadyToStartAddon()
         {          
             btnStartAddon.Image = Properties.Resources.DeadlyTradeStartYellowButton;
-            DeadlyToolTip.SetToolTip(btnStartAddon, "Start Addon 'Deadly Trade'");
+            DeadlyToolTip.SetToolTip(btnStartAddon, "Start Add-on 'Deadly Trade'");
 
             g_bCanLaunchAddon = true;
         }
@@ -1043,18 +1053,6 @@ namespace POExileDirection
 
             #region ⨌⨌ Parsing ADDON ConfigPath.ini ⨌⨌
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
             DeadlyLog4Net._log.Info($"{MethodBase.GetCurrentMethod().Name} RESOLUTION : " + strINIPath);
 
@@ -1084,7 +1082,7 @@ namespace POExileDirection
                 }
 
                 g_CurrentLeague = enumUerChoice.ToDescriptionString();
-                labelUserLeague.Text = String.Format("Last Your currecny checked league is '{0}'.", g_CurrentLeague);
+                labelUserLeague.Text = String.Format("Last Your currency checked league is '{0}'.", g_CurrentLeague);
 
                 #region ⨌⨌ GET TIMER SETTING : FLASK, SKILL ⨌⨌
                 // FLASK TIMER
@@ -1131,8 +1129,6 @@ namespace POExileDirection
                 g_SkillTime4 = parser.GetSetting("SKILL", "SKILLTIME4");
                 g_SkillTime5 = parser.GetSetting("SKILL", "SKILLTIME5");
 
-                
-
                 g_SkillTime1 = ConvertoCultureDecimal(g_SkillTime1).ToString();
                 g_SkillTime2 = ConvertoCultureDecimal(g_SkillTime2).ToString();
                 g_SkillTime3 = ConvertoCultureDecimal(g_SkillTime3).ToString();
@@ -1165,8 +1161,15 @@ namespace POExileDirection
                     g_bToggleSkill5 = false;
                 #endregion
 
+                // Check Auto Kick.
                 g_strMyNickName = parser.GetSetting("CHARACTER", "MYNICK");
                 g_strTRAutoKick = parser.GetSetting("CHARACTER", "AUTOKICK");
+                g_strTRAutoKickWait = parser.GetSetting("LOCATIONNOTIFY", "WAIT");
+                g_strTRAutoKickSold = parser.GetSetting("LOCATIONNOTIFY", "SOLD");
+                g_strTRAutoKickCustom1 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOM1");
+                g_strTRAutoKickCustom2 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOM2");
+                g_strTRAutoKickCustom3 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOM3");
+                g_strTRAutoKickCustom4 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOM4");
 
                 g_nGridLeft = Convert.ToInt32(parser.GetSetting("LOCATIONGRID", "LEFT"));
                 g_nGridTop = Convert.ToInt32(parser.GetSetting("LOCATIONGRID", "TOP"));
@@ -1225,7 +1228,49 @@ namespace POExileDirection
                     g_strYNUseAtlasZANAHOTKEY = "Y";
                 DeadlyLog4Net._log.Info("checkAtlasZANA : " + g_strYNUseAtlasZANAHOTKEY);
 
-                //TODO : Trade Notification HotKeys.
+                //-------------------------------------------//
+                // HOTKEY USE Y/N - Trade Notification Panel //
+                //-------------------------------------------//
+
+                g_strYNUseHOTKEYInvite = parser.GetSetting("LOCATIONNOTIFY", "INVITE");
+                if (String.IsNullOrEmpty(g_strYNUseHOTKEYInvite))
+                    g_strYNUseHOTKEYInvite = "N";
+                DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYInvite);
+                
+                g_strYNUseHOTKEYTrade = parser.GetSetting("LOCATIONNOTIFY", "TRADE");
+                if (String.IsNullOrEmpty(g_strYNUseHOTKEYTrade))
+                    g_strYNUseHOTKEYTrade = "N";
+                DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYTrade);
+                
+                g_strYNUseHOTKEYKick = parser.GetSetting("LOCATIONNOTIFY", "KICK");
+                if (String.IsNullOrEmpty(g_strYNUseHOTKEYKick))
+                    g_strYNUseHOTKEYKick = "N";
+                DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYKick);
+
+                g_strYNUseHOTKEYMinimize = parser.GetSetting("LOCATIONNOTIFY", "MINIMIZE");
+                if (String.IsNullOrEmpty(g_strYNUseHOTKEYMinimize))
+                    g_strYNUseHOTKEYMinimize = "N";
+                DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYMinimize);
+
+                g_strYNUseHOTKEYClose = parser.GetSetting("LOCATIONNOTIFY", "CLOSE");
+                if (String.IsNullOrEmpty(g_strYNUseHOTKEYClose))
+                    g_strYNUseHOTKEYClose = "N";
+                DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYClose);
+
+                g_strYNUseHOTKEYWait = parser.GetSetting("LOCATIONNOTIFY", "WAIT");
+                if (String.IsNullOrEmpty(g_strYNUseHOTKEYWait))
+                    g_strYNUseHOTKEYWait = "N";
+                DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYWait);
+
+                g_strYNUseHOTKEYSold = parser.GetSetting("LOCATIONNOTIFY", "SOLD");
+                if (String.IsNullOrEmpty(g_strYNUseHOTKEYSold))
+                    g_strYNUseHOTKEYSold = "N";
+                DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYSold);
+
+                g_strYNUseHOTKEYThx = parser.GetSetting("LOCATIONNOTIFY", "THX");
+                if (String.IsNullOrEmpty(g_strYNUseHOTKEYThx))
+                    g_strYNUseHOTKEYThx = "N";
+                DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYThx);
                 #endregion
 
                 #region [[[[[ push pin LOCK, UNLOCK ]]]]]
@@ -1244,40 +1289,20 @@ namespace POExileDirection
 
                 DeadlyFlaskImage.FlaskImageTimerFromINI();
 
-                string strImageNumber = String.Empty;
-                
-                // USE Y/N SOUND 1
-                strImageNumber = parser.GetSetting("MISC", "FLASKSOUND1");
-                if (String.IsNullOrEmpty(strImageNumber))
+                // USE Y/N Sound Alert - Flask Timer, Notification Panel
+                strTemp = parser.GetSetting("LOCATIONNOTIFY", "FLASKTIMERSOUND");
+                if (String.IsNullOrEmpty(strTemp))
                     g_strTimerSound1 = "N";
                 else
-                    g_strTimerSound1 = strImageNumber;
-                // USE Y/N SOUND 2
-                strImageNumber = parser.GetSetting("MISC", "FLASKSOUND2");
-                if (String.IsNullOrEmpty(strImageNumber))
-                    g_strTimerSound2 = "N";
-                else
-                    g_strTimerSound2 = strImageNumber;
-                // USE Y/N SOUND 3
-                strImageNumber = parser.GetSetting("MISC", "FLASKSOUND3");
-                if (String.IsNullOrEmpty(strImageNumber))
-                    g_strTimerSound3 = "N";
-                else
-                    g_strTimerSound3 = strImageNumber;
-                // USE Y/N SOUND 4
-                strImageNumber = parser.GetSetting("MISC", "FLASKSOUND4");
-                if (String.IsNullOrEmpty(strImageNumber))
-                    g_strTimerSound4 = "N";
-                else
-                    g_strTimerSound4 = strImageNumber;
-                // USE Y/N SOUND 5
-                strImageNumber = parser.GetSetting("MISC", "FLASKSOUND2");
-                if (String.IsNullOrEmpty(strImageNumber))
-                    g_strTimerSound5 = "N";
-                else
-                    g_strTimerSound5 = strImageNumber;
+                    g_strTimerSound1 = strTemp;
 
-                // Notify Volume, Flask Volume
+                strTemp = parser.GetSetting("LOCATIONNOTIFY", "NOTIFICATIONSOUND");
+                if (String.IsNullOrEmpty(strTemp))
+                    g_strNotificationSoundYN = "Y";
+                else
+                    g_strNotificationSoundYN = strTemp;
+
+                // Volume - Flask Timer, Notification Panel
                 g_NotifyVolume = Convert.ToInt32(parser.GetSetting("LOCATIONNOTIFY", "VOLUME"));
                 g_FlaskTimerVolume = Convert.ToInt32(parser.GetSetting("LOCATIONNOTIFY", "VOLUMEFLASKTIMER"));
 
@@ -1288,7 +1313,7 @@ namespace POExileDirection
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
 
                 MSGForm frmMSG = new MSGForm();
-                frmMSG.lbMsg.Text = "Can't read conguration. File seems to be corrupt or delete.\r\nPlease Try again.";
+                frmMSG.lbMsg.Text = "Can't read configuration. File seems to be corrupt or delete.\r\nPlease Try again.";
                 DialogResult dr = frmMSG.ShowDialog();
 
                 // Force Terminate Launcher.
@@ -1505,10 +1530,6 @@ namespace POExileDirection
                     DeadlyFlaskImage.FlaskImageTimerSavetoINI();
 
                     parser.AddSetting("MISC", "FLASKSOUND1", g_strTimerSound1);
-                    parser.AddSetting("MISC", "FLASKSOUND2", g_strTimerSound2);
-                    parser.AddSetting("MISC", "FLASKSOUND3", g_strTimerSound3);
-                    parser.AddSetting("MISC", "FLASKSOUND4", g_strTimerSound4);
-                    parser.AddSetting("MISC", "FLASKSOUND5", g_strTimerSound5);
 
                     parser.AddSetting("LOCATIONNOTIFY", "VOLUME", g_NotifyVolume.ToString());
                     parser.AddSetting("LOCATIONNOTIFY", "VOLUMEFLASKTIMER", g_FlaskTimerVolume.ToString());
@@ -1857,7 +1878,7 @@ namespace POExileDirection
                   deadlyInformationData.MapAlertMSG.MapAlertMSG.Count <= 0)
                 {
                     MSGForm frmMSG = new MSGForm();
-                    frmMSG.lbMsg.Text = "Can't read Deadly Mapping Information~.\r\nPlease check your addon installation and Try again~.";
+                    frmMSG.lbMsg.Text = "Can't read Deadly Mapping Information~.\r\nPlease check your add-on installation and Try again~.";
                     DialogResult dr = frmMSG.ShowDialog();
 
                     // Force Terminate Launcher.
@@ -1870,7 +1891,7 @@ namespace POExileDirection
             catch
             {
                 MSGForm frmMSG = new MSGForm();
-                frmMSG.lbMsg.Text = "Can't read Deadly Mapping Information~!.\r\nPlease check your addon installation and Try again~!.";
+                frmMSG.lbMsg.Text = "Can't read Deadly Mapping Information~!.\r\nPlease check your add-on installation and Try again~!.";
                 DialogResult dr = frmMSG.ShowDialog();
 
                 // Force Terminate Launcher.
@@ -1883,13 +1904,45 @@ namespace POExileDirection
             foreach (var item in deadlyInformationData.InformationMSG.NotifyMSG)
             {
                 if (item.Id == "THX")
+                {
                     g_strnotiDONE = item.Msg;
+                    g_strnotiDONEbtnTITLE = item.Title;
+                }
                 else if (item.Id == "WAIT")
+                {
                     g_strnotiWAIT = item.Msg;
+                    g_strnotiWAITbtnTITLE = item.Title;
+                }
                 else if (item.Id == "WILLING")
+                {
                     g_strnotiRESEND = item.Msg;
+                    // Not Title Button.
+                }
                 else if (item.Id == "SOLD")
+                {
                     g_strnotiSOLD = item.Msg;
+                    g_strnotiSOLDbtnTITLE = item.Title;
+                }
+                else if (item.Id == "CUSTOM1")
+                {
+                    g_strCUSTOM1 = item.Msg;
+                    g_strCUSTOM1btnTITLE = item.Title;
+                }
+                else if (item.Id == "CUSTOM2")
+                {
+                    g_strCUSTOM2 = item.Msg;
+                    g_strCUSTOM2btnTITLE = item.Title;
+                }
+                else if (item.Id == "CUSTOM3")
+                {
+                    g_strCUSTOM3 = item.Msg;
+                    g_strCUSTOM3btnTITLE = item.Title;
+                }
+                else if (item.Id == "CUSTOM4")
+                {
+                    g_strCUSTOM4 = item.Msg;
+                    g_strCUSTOM4btnTITLE = item.Title;
+                }
             }
 
             foreach (var item in deadlyInformationData.MapAlertMSG.MapAlertMSG)
@@ -1909,6 +1962,8 @@ namespace POExileDirection
                     }
                 }
             }
+
+            // TODO : CHAT SCAN MESSAGE
         }
         #endregion
 

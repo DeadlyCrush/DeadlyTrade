@@ -99,7 +99,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnSOUND = new System.Windows.Forms.Button();
+            this.btnSOUNDTrade = new System.Windows.Forms.Button();
             this.labelSNDOnOff = new System.Windows.Forms.Label();
             this.xuiSwitchSoundTrade = new XanderUI.XUISwitch();
             this.label23 = new System.Windows.Forms.Label();
@@ -110,7 +110,7 @@
             this.btnCancelTab2 = new System.Windows.Forms.Button();
             this.labelTradeVolume = new System.Windows.Forms.Label();
             this.xuiSliderVolumeTrade = new XanderUI.XUISlider();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAutoKickCUSTOM4 = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoKickCUSTOM3 = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoKickCUSTOM2 = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoKickCUSTOM1 = new System.Windows.Forms.CheckBox();
@@ -119,7 +119,7 @@
             this.checkBoxAutoKickTHX = new System.Windows.Forms.CheckBox();
             this.textBoxResend = new System.Windows.Forms.TextBox();
             this.textBoxDone = new System.Windows.Forms.TextBox();
-            this.textBoxCustom5 = new System.Windows.Forms.TextBox();
+            this.textBoxCustom4 = new System.Windows.Forms.TextBox();
             this.textBoxCustom3 = new System.Windows.Forms.TextBox();
             this.textBoxCustom2 = new System.Windows.Forms.TextBox();
             this.textBoxCustomTitle4 = new System.Windows.Forms.TextBox();
@@ -147,8 +147,8 @@
             this.btnWaitPls = new System.Windows.Forms.Button();
             this.btnCustom1 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.btnSOUNDFlaskTimer = new System.Windows.Forms.Button();
+            this.labelFlaskSoundUse = new System.Windows.Forms.Label();
             this.xuiSwitchSoundFlaskTimer = new XanderUI.XUISwitch();
             this.labelFlaskTimerVolume = new System.Windows.Forms.Label();
             this.panelSetFlaskImage = new System.Windows.Forms.Panel();
@@ -159,10 +159,8 @@
             this.btnSaveTab3 = new System.Windows.Forms.Button();
             this.btnCancelTab3 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.xuiSliderVolumeFlask = new XanderUI.XUISlider();
             this.label37 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
@@ -176,9 +174,6 @@
             this.panelCO3 = new System.Windows.Forms.Panel();
             this.panelCO2 = new System.Windows.Forms.Panel();
             this.panelCO1 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.labelFL5 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.labelFL4 = new System.Windows.Forms.Label();
@@ -222,9 +217,6 @@
             this.panelE = new System.Windows.Forms.Panel();
             this.panelW = new System.Windows.Forms.Panel();
             this.panelQ = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.panel19 = new System.Windows.Forms.Panel();
             this.lbSkillT = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.lbSkillR = new System.Windows.Forms.Label();
@@ -250,7 +242,17 @@
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.panelTop = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.btnSaveTab6 = new System.Windows.Forms.Button();
+            this.btnCancelTab6 = new System.Windows.Forms.Button();
+            this.btnSaveTab7 = new System.Windows.Forms.Button();
+            this.btnCancelTab7 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btnCancelTab5 = new System.Windows.Forms.Button();
+            this.btnSaveTab5 = new System.Windows.Forms.Button();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.FlatSettingTab.SuspendLayout();
             this.tabHotKeys.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -267,8 +269,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask1)).BeginInit();
             this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.panelTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // FlatSettingTab
@@ -296,6 +300,7 @@
             this.FlatSettingTab.ShowBorder = true;
             this.FlatSettingTab.Size = new System.Drawing.Size(800, 553);
             this.FlatSettingTab.TabIndex = 2;
+            this.FlatSettingTab.SelectedIndexChanged += new System.EventHandler(this.FlatSettingTab_SelectedIndexChanged);
             // 
             // tabHotKeys
             // 
@@ -688,7 +693,7 @@
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnCancel.ForeColor = System.Drawing.Color.Silver;
             this.btnCancel.Location = new System.Drawing.Point(710, 452);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(72, 26);
@@ -1206,7 +1211,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.tabPage2.Controls.Add(this.btnSOUND);
+            this.tabPage2.Controls.Add(this.btnSOUNDTrade);
             this.tabPage2.Controls.Add(this.labelSNDOnOff);
             this.tabPage2.Controls.Add(this.xuiSwitchSoundTrade);
             this.tabPage2.Controls.Add(this.label23);
@@ -1217,7 +1222,7 @@
             this.tabPage2.Controls.Add(this.btnCancelTab2);
             this.tabPage2.Controls.Add(this.labelTradeVolume);
             this.tabPage2.Controls.Add(this.xuiSliderVolumeTrade);
-            this.tabPage2.Controls.Add(this.checkBox2);
+            this.tabPage2.Controls.Add(this.checkBoxAutoKickCUSTOM4);
             this.tabPage2.Controls.Add(this.checkBoxAutoKickCUSTOM3);
             this.tabPage2.Controls.Add(this.checkBoxAutoKickCUSTOM2);
             this.tabPage2.Controls.Add(this.checkBoxAutoKickCUSTOM1);
@@ -1226,7 +1231,7 @@
             this.tabPage2.Controls.Add(this.checkBoxAutoKickTHX);
             this.tabPage2.Controls.Add(this.textBoxResend);
             this.tabPage2.Controls.Add(this.textBoxDone);
-            this.tabPage2.Controls.Add(this.textBoxCustom5);
+            this.tabPage2.Controls.Add(this.textBoxCustom4);
             this.tabPage2.Controls.Add(this.textBoxCustom3);
             this.tabPage2.Controls.Add(this.textBoxCustom2);
             this.tabPage2.Controls.Add(this.textBoxCustomTitle4);
@@ -1261,30 +1266,30 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Trade Panel";
             // 
-            // btnSOUND
+            // btnSOUNDTrade
             // 
-            this.btnSOUND.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
-            this.btnSOUND.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSOUND.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSOUND.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnSOUND.FlatAppearance.BorderSize = 0;
-            this.btnSOUND.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSOUND.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSOUND.ForeColor = System.Drawing.Color.LightCoral;
-            this.btnSOUND.Location = new System.Drawing.Point(662, 32);
-            this.btnSOUND.Name = "btnSOUND";
-            this.btnSOUND.Size = new System.Drawing.Size(14, 14);
-            this.btnSOUND.TabIndex = 79;
-            this.btnSOUND.TabStop = false;
-            this.btnSOUND.Text = "img";
-            this.btnSOUND.UseVisualStyleBackColor = false;
+            this.btnSOUNDTrade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
+            this.btnSOUNDTrade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSOUNDTrade.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSOUNDTrade.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnSOUNDTrade.FlatAppearance.BorderSize = 0;
+            this.btnSOUNDTrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSOUNDTrade.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSOUNDTrade.ForeColor = System.Drawing.Color.LightCoral;
+            this.btnSOUNDTrade.Location = new System.Drawing.Point(564, 32);
+            this.btnSOUNDTrade.Name = "btnSOUNDTrade";
+            this.btnSOUNDTrade.Size = new System.Drawing.Size(14, 14);
+            this.btnSOUNDTrade.TabIndex = 79;
+            this.btnSOUNDTrade.TabStop = false;
+            this.btnSOUNDTrade.Text = "img";
+            this.btnSOUNDTrade.UseVisualStyleBackColor = false;
             // 
             // labelSNDOnOff
             // 
             this.labelSNDOnOff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
             this.labelSNDOnOff.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelSNDOnOff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
-            this.labelSNDOnOff.Location = new System.Drawing.Point(682, 31);
+            this.labelSNDOnOff.Location = new System.Drawing.Point(584, 31);
             this.labelSNDOnOff.Name = "labelSNDOnOff";
             this.labelSNDOnOff.Size = new System.Drawing.Size(28, 16);
             this.labelSNDOnOff.TabIndex = 78;
@@ -1296,7 +1301,7 @@
             this.xuiSwitchSoundTrade.BackColor = System.Drawing.Color.Transparent;
             this.xuiSwitchSoundTrade.HandleOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
             this.xuiSwitchSoundTrade.HandleOnColor = System.Drawing.Color.Tan;
-            this.xuiSwitchSoundTrade.Location = new System.Drawing.Point(711, 29);
+            this.xuiSwitchSoundTrade.Location = new System.Drawing.Point(613, 29);
             this.xuiSwitchSoundTrade.Name = "xuiSwitchSoundTrade";
             this.xuiSwitchSoundTrade.OffColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(98)))), ((int)(((byte)(59)))));
             this.xuiSwitchSoundTrade.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(98)))), ((int)(((byte)(59)))));
@@ -1305,6 +1310,7 @@
             this.xuiSwitchSoundTrade.SwitchStyle = XanderUI.XUISwitch.Style.Horizontal;
             this.xuiSwitchSoundTrade.TabIndex = 2;
             this.xuiSwitchSoundTrade.Text = "xuiSwitch1";
+            this.xuiSwitchSoundTrade.SwitchStateChanged += new System.EventHandler(this.xuiSwitchSoundTrade_SwitchStateChanged);
             // 
             // label23
             // 
@@ -1377,7 +1383,7 @@
             this.btnCancelTab2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelTab2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
             this.btnCancelTab2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelTab2.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnCancelTab2.ForeColor = System.Drawing.Color.Silver;
             this.btnCancelTab2.Location = new System.Drawing.Point(710, 452);
             this.btnCancelTab2.Name = "btnCancelTab2";
             this.btnCancelTab2.Size = new System.Drawing.Size(72, 26);
@@ -1418,16 +1424,16 @@
             this.xuiSliderVolumeTrade.MouseMove += new System.Windows.Forms.MouseEventHandler(this.xuiSliderVolumeTrade_MouseMove);
             this.xuiSliderVolumeTrade.MouseUp += new System.Windows.Forms.MouseEventHandler(this.xuiSliderVolumeTrade_MouseMove);
             // 
-            // checkBox2
+            // checkBoxAutoKickCUSTOM4
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkBox2.Location = new System.Drawing.Point(669, 396);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
-            this.checkBox2.TabIndex = 24;
-            this.checkBox2.UseVisualStyleBackColor = false;
+            this.checkBoxAutoKickCUSTOM4.AutoSize = true;
+            this.checkBoxAutoKickCUSTOM4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkBoxAutoKickCUSTOM4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkBoxAutoKickCUSTOM4.Location = new System.Drawing.Point(669, 396);
+            this.checkBoxAutoKickCUSTOM4.Name = "checkBoxAutoKickCUSTOM4";
+            this.checkBoxAutoKickCUSTOM4.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxAutoKickCUSTOM4.TabIndex = 24;
+            this.checkBoxAutoKickCUSTOM4.UseVisualStyleBackColor = false;
             // 
             // checkBoxAutoKickCUSTOM3
             // 
@@ -1467,7 +1473,7 @@
             this.checkBoxAutoKickWAIT.AutoSize = true;
             this.checkBoxAutoKickWAIT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.checkBoxAutoKickWAIT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkBoxAutoKickWAIT.Location = new System.Drawing.Point(669, 253);
+            this.checkBoxAutoKickWAIT.Location = new System.Drawing.Point(669, 180);
             this.checkBoxAutoKickWAIT.Name = "checkBoxAutoKickWAIT";
             this.checkBoxAutoKickWAIT.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAutoKickWAIT.TabIndex = 12;
@@ -1489,7 +1495,7 @@
             this.checkBoxAutoKickTHX.AutoSize = true;
             this.checkBoxAutoKickTHX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.checkBoxAutoKickTHX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkBoxAutoKickTHX.Location = new System.Drawing.Point(669, 180);
+            this.checkBoxAutoKickTHX.Location = new System.Drawing.Point(669, 253);
             this.checkBoxAutoKickTHX.Name = "checkBoxAutoKickTHX";
             this.checkBoxAutoKickTHX.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAutoKickTHX.TabIndex = 6;
@@ -1515,15 +1521,15 @@
             this.textBoxDone.Size = new System.Drawing.Size(354, 21);
             this.textBoxDone.TabIndex = 11;
             // 
-            // textBoxCustom5
+            // textBoxCustom4
             // 
-            this.textBoxCustom5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
-            this.textBoxCustom5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxCustom5.ForeColor = System.Drawing.Color.Tan;
-            this.textBoxCustom5.Location = new System.Drawing.Point(261, 393);
-            this.textBoxCustom5.Name = "textBoxCustom5";
-            this.textBoxCustom5.Size = new System.Drawing.Size(354, 21);
-            this.textBoxCustom5.TabIndex = 23;
+            this.textBoxCustom4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.textBoxCustom4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxCustom4.ForeColor = System.Drawing.Color.Tan;
+            this.textBoxCustom4.Location = new System.Drawing.Point(261, 393);
+            this.textBoxCustom4.Name = "textBoxCustom4";
+            this.textBoxCustom4.Size = new System.Drawing.Size(354, 21);
+            this.textBoxCustom4.TabIndex = 23;
             // 
             // textBoxCustom3
             // 
@@ -1583,7 +1589,7 @@
             this.textBoxTitleWAIT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
             this.textBoxTitleWAIT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxTitleWAIT.ForeColor = System.Drawing.Color.Tan;
-            this.textBoxTitleWAIT.Location = new System.Drawing.Point(165, 249);
+            this.textBoxTitleWAIT.Location = new System.Drawing.Point(165, 177);
             this.textBoxTitleWAIT.Name = "textBoxTitleWAIT";
             this.textBoxTitleWAIT.Size = new System.Drawing.Size(61, 21);
             this.textBoxTitleWAIT.TabIndex = 10;
@@ -1605,7 +1611,7 @@
             this.textBoxTitleTHX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
             this.textBoxTitleTHX.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxTitleTHX.ForeColor = System.Drawing.Color.Tan;
-            this.textBoxTitleTHX.Location = new System.Drawing.Point(165, 177);
+            this.textBoxTitleTHX.Location = new System.Drawing.Point(165, 249);
             this.textBoxTitleTHX.Name = "textBoxTitleTHX";
             this.textBoxTitleTHX.Size = new System.Drawing.Size(61, 21);
             this.textBoxTitleTHX.TabIndex = 4;
@@ -1859,19 +1865,16 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.tabPage3.Controls.Add(this.pictureBox2);
-            this.tabPage3.Controls.Add(this.button1);
-            this.tabPage3.Controls.Add(this.label4);
+            this.tabPage3.Controls.Add(this.btnSOUNDFlaskTimer);
+            this.tabPage3.Controls.Add(this.labelFlaskSoundUse);
             this.tabPage3.Controls.Add(this.xuiSwitchSoundFlaskTimer);
             this.tabPage3.Controls.Add(this.labelFlaskTimerVolume);
             this.tabPage3.Controls.Add(this.panelSetFlaskImage);
             this.tabPage3.Controls.Add(this.btnSaveTab3);
             this.tabPage3.Controls.Add(this.btnCancelTab3);
             this.tabPage3.Controls.Add(this.label5);
-            this.tabPage3.Controls.Add(this.checkBox1);
             this.tabPage3.Controls.Add(this.xuiSliderVolumeFlask);
             this.tabPage3.Controls.Add(this.label37);
-            this.tabPage3.Controls.Add(this.label15);
             this.tabPage3.Controls.Add(this.label39);
             this.tabPage3.Controls.Add(this.label38);
             this.tabPage3.Controls.Add(this.label36);
@@ -1885,9 +1888,6 @@
             this.tabPage3.Controls.Add(this.panelCO3);
             this.tabPage3.Controls.Add(this.panelCO2);
             this.tabPage3.Controls.Add(this.panelCO1);
-            this.tabPage3.Controls.Add(this.panel14);
-            this.tabPage3.Controls.Add(this.panel13);
-            this.tabPage3.Controls.Add(this.panel10);
             this.tabPage3.Controls.Add(this.labelFL5);
             this.tabPage3.Controls.Add(this.label22);
             this.tabPage3.Controls.Add(this.labelFL4);
@@ -1920,42 +1920,42 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Flask Timer";
             // 
-            // button1
+            // btnSOUNDFlaskTimer
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.LightCoral;
-            this.button1.Location = new System.Drawing.Point(336, 21);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(14, 14);
-            this.button1.TabIndex = 104;
-            this.button1.TabStop = false;
-            this.button1.Text = "img";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSOUNDFlaskTimer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
+            this.btnSOUNDFlaskTimer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSOUNDFlaskTimer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSOUNDFlaskTimer.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnSOUNDFlaskTimer.FlatAppearance.BorderSize = 0;
+            this.btnSOUNDFlaskTimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSOUNDFlaskTimer.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSOUNDFlaskTimer.ForeColor = System.Drawing.Color.LightCoral;
+            this.btnSOUNDFlaskTimer.Location = new System.Drawing.Point(178, 416);
+            this.btnSOUNDFlaskTimer.Name = "btnSOUNDFlaskTimer";
+            this.btnSOUNDFlaskTimer.Size = new System.Drawing.Size(14, 14);
+            this.btnSOUNDFlaskTimer.TabIndex = 104;
+            this.btnSOUNDFlaskTimer.TabStop = false;
+            this.btnSOUNDFlaskTimer.Text = "img";
+            this.btnSOUNDFlaskTimer.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // labelFlaskSoundUse
             // 
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.label4.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
-            this.label4.Location = new System.Drawing.Point(356, 20);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(28, 16);
-            this.label4.TabIndex = 103;
-            this.label4.Text = "OFF";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelFlaskSoundUse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.labelFlaskSoundUse.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelFlaskSoundUse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
+            this.labelFlaskSoundUse.Location = new System.Drawing.Point(198, 415);
+            this.labelFlaskSoundUse.Name = "labelFlaskSoundUse";
+            this.labelFlaskSoundUse.Size = new System.Drawing.Size(28, 16);
+            this.labelFlaskSoundUse.TabIndex = 103;
+            this.labelFlaskSoundUse.Text = "OFF";
+            this.labelFlaskSoundUse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // xuiSwitchSoundFlaskTimer
             // 
             this.xuiSwitchSoundFlaskTimer.BackColor = System.Drawing.Color.Transparent;
             this.xuiSwitchSoundFlaskTimer.HandleOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
             this.xuiSwitchSoundFlaskTimer.HandleOnColor = System.Drawing.Color.Tan;
-            this.xuiSwitchSoundFlaskTimer.Location = new System.Drawing.Point(385, 18);
+            this.xuiSwitchSoundFlaskTimer.Location = new System.Drawing.Point(227, 413);
             this.xuiSwitchSoundFlaskTimer.Name = "xuiSwitchSoundFlaskTimer";
             this.xuiSwitchSoundFlaskTimer.OffColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(98)))), ((int)(((byte)(59)))));
             this.xuiSwitchSoundFlaskTimer.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(98)))), ((int)(((byte)(59)))));
@@ -1964,12 +1964,13 @@
             this.xuiSwitchSoundFlaskTimer.SwitchStyle = XanderUI.XUISwitch.Style.Horizontal;
             this.xuiSwitchSoundFlaskTimer.TabIndex = 100;
             this.xuiSwitchSoundFlaskTimer.Text = "xuiSwitch2";
+            this.xuiSwitchSoundFlaskTimer.SwitchStateChanged += new System.EventHandler(this.xuiSwitchSoundFlaskTimer_SwitchStateChanged);
             // 
             // labelFlaskTimerVolume
             // 
             this.labelFlaskTimerVolume.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.labelFlaskTimerVolume.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.labelFlaskTimerVolume.Location = new System.Drawing.Point(219, 50);
+            this.labelFlaskTimerVolume.Location = new System.Drawing.Point(262, 416);
             this.labelFlaskTimerVolume.Name = "labelFlaskTimerVolume";
             this.labelFlaskTimerVolume.Size = new System.Drawing.Size(90, 15);
             this.labelFlaskTimerVolume.TabIndex = 102;
@@ -1982,9 +1983,9 @@
             this.panelSetFlaskImage.Controls.Add(this.btnFlaskOK);
             this.panelSetFlaskImage.Controls.Add(this.btnFlaskCancel);
             this.panelSetFlaskImage.Controls.Add(this.listViewFlaskImage);
-            this.panelSetFlaskImage.Location = new System.Drawing.Point(32, 116);
+            this.panelSetFlaskImage.Location = new System.Drawing.Point(130, 98);
             this.panelSetFlaskImage.Name = "panelSetFlaskImage";
-            this.panelSetFlaskImage.Size = new System.Drawing.Size(47, 189);
+            this.panelSetFlaskImage.Size = new System.Drawing.Size(10, 22);
             this.panelSetFlaskImage.TabIndex = 99;
             this.panelSetFlaskImage.Visible = false;
             // 
@@ -2000,9 +2001,9 @@
             // 
             // btnFlaskOK
             // 
-            this.btnFlaskOK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
+            this.btnFlaskOK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.btnFlaskOK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFlaskOK.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
+            this.btnFlaskOK.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
             this.btnFlaskOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFlaskOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
             this.btnFlaskOK.Location = new System.Drawing.Point(263, 237);
@@ -2011,12 +2012,13 @@
             this.btnFlaskOK.TabIndex = 1;
             this.btnFlaskOK.Text = "Select";
             this.btnFlaskOK.UseVisualStyleBackColor = false;
+            this.btnFlaskOK.Click += new System.EventHandler(this.btnFlaskOK_Click);
             // 
             // btnFlaskCancel
             // 
-            this.btnFlaskCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
+            this.btnFlaskCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.btnFlaskCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFlaskCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
+            this.btnFlaskCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
             this.btnFlaskCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFlaskCancel.ForeColor = System.Drawing.Color.DarkGray;
             this.btnFlaskCancel.Location = new System.Drawing.Point(185, 237);
@@ -2025,6 +2027,7 @@
             this.btnFlaskCancel.TabIndex = 1;
             this.btnFlaskCancel.Text = "Cancel";
             this.btnFlaskCancel.UseVisualStyleBackColor = false;
+            this.btnFlaskCancel.Click += new System.EventHandler(this.btnFlaskCancel_Click);
             // 
             // listViewFlaskImage
             // 
@@ -2052,6 +2055,7 @@
             this.btnSaveTab3.TabIndex = 97;
             this.btnSaveTab3.Text = "SAVE";
             this.btnSaveTab3.UseVisualStyleBackColor = false;
+            this.btnSaveTab3.Click += new System.EventHandler(this.btnSaveTab3_Click);
             // 
             // btnCancelTab3
             // 
@@ -2060,37 +2064,27 @@
             this.btnCancelTab3.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelTab3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
             this.btnCancelTab3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelTab3.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnCancelTab3.ForeColor = System.Drawing.Color.Silver;
             this.btnCancelTab3.Location = new System.Drawing.Point(712, 449);
             this.btnCancelTab3.Name = "btnCancelTab3";
             this.btnCancelTab3.Size = new System.Drawing.Size(72, 26);
             this.btnCancelTab3.TabIndex = 98;
             this.btnCancelTab3.Text = "CANCEL";
             this.btnCancelTab3.UseVisualStyleBackColor = false;
+            this.btnCancelTab3.Click += new System.EventHandler(this.btnCancelTab3_Click);
             // 
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
             this.label5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label5.Location = new System.Drawing.Point(3, 474);
+            this.label5.Location = new System.Drawing.Point(3, 486);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(786, 52);
+            this.label5.Size = new System.Drawing.Size(786, 40);
             this.label5.TabIndex = 96;
-            this.label5.Text = "blar....";
+            this.label5.Text = "You can change color by click color box and can change Flask Image by click Flask" +
+    ".";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkBox1.Location = new System.Drawing.Point(281, 23);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(49, 19);
-            this.checkBox1.TabIndex = 86;
-            this.checkBox1.Text = "Use";
-            this.checkBox1.UseVisualStyleBackColor = false;
             // 
             // xuiSliderVolumeFlask
             // 
@@ -2100,7 +2094,7 @@
             this.xuiSliderVolumeFlask.FilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(119)))), ((int)(((byte)(215)))));
             this.xuiSliderVolumeFlask.KnobColor = System.Drawing.Color.Gray;
             this.xuiSliderVolumeFlask.KnobImage = null;
-            this.xuiSliderVolumeFlask.Location = new System.Drawing.Point(310, 48);
+            this.xuiSliderVolumeFlask.Location = new System.Drawing.Point(348, 413);
             this.xuiSliderVolumeFlask.Name = "xuiSliderVolumeFlask";
             this.xuiSliderVolumeFlask.Percentage = 50;
             this.xuiSliderVolumeFlask.QuickHopping = false;
@@ -2117,33 +2111,21 @@
             this.label37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label37.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label37.Location = new System.Drawing.Point(217, 96);
+            this.label37.Location = new System.Drawing.Point(227, 29);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(114, 24);
             this.label37.TabIndex = 78;
             this.label37.Text = "POE Key Binding";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label15
-            // 
-            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label15.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label15.Location = new System.Drawing.Point(52, 446);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(79, 24);
-            this.label15.TabIndex = 77;
-            this.label15.Text = "Sound Alert";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label39
             // 
             this.label39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label39.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label39.Location = new System.Drawing.Point(512, 105);
+            this.label39.Location = new System.Drawing.Point(527, 29);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(117, 24);
+            this.label39.Size = new System.Drawing.Size(126, 24);
             this.label39.TabIndex = 76;
             this.label39.Text = "Duration";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2153,9 +2135,9 @@
             this.label38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label38.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label38.Location = new System.Drawing.Point(357, 102);
+            this.label38.Location = new System.Drawing.Point(340, 29);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(98, 24);
+            this.label38.Size = new System.Drawing.Size(188, 24);
             this.label38.TabIndex = 75;
             this.label38.Text = "Color";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2165,7 +2147,7 @@
             this.label36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label36.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label36.Location = new System.Drawing.Point(97, 89);
+            this.label36.Location = new System.Drawing.Point(130, 29);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(98, 24);
             this.label36.TabIndex = 74;
@@ -2178,11 +2160,11 @@
             this.textBoxSEC5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxSEC5.ForeColor = System.Drawing.Color.Tan;
             this.textBoxSEC5.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBoxSEC5.Location = new System.Drawing.Point(474, 398);
+            this.textBoxSEC5.Location = new System.Drawing.Point(543, 348);
             this.textBoxSEC5.MaxLength = 10;
             this.textBoxSEC5.Name = "textBoxSEC5";
             this.textBoxSEC5.Size = new System.Drawing.Size(44, 21);
-            this.textBoxSEC5.TabIndex = 72;
+            this.textBoxSEC5.TabIndex = 4;
             this.textBoxSEC5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxSEC4
@@ -2191,11 +2173,11 @@
             this.textBoxSEC4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxSEC4.ForeColor = System.Drawing.Color.Tan;
             this.textBoxSEC4.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBoxSEC4.Location = new System.Drawing.Point(474, 335);
+            this.textBoxSEC4.Location = new System.Drawing.Point(543, 285);
             this.textBoxSEC4.MaxLength = 10;
             this.textBoxSEC4.Name = "textBoxSEC4";
             this.textBoxSEC4.Size = new System.Drawing.Size(44, 21);
-            this.textBoxSEC4.TabIndex = 73;
+            this.textBoxSEC4.TabIndex = 3;
             this.textBoxSEC4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxSEC3
@@ -2204,11 +2186,11 @@
             this.textBoxSEC3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxSEC3.ForeColor = System.Drawing.Color.Tan;
             this.textBoxSEC3.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBoxSEC3.Location = new System.Drawing.Point(474, 270);
+            this.textBoxSEC3.Location = new System.Drawing.Point(543, 220);
             this.textBoxSEC3.MaxLength = 10;
             this.textBoxSEC3.Name = "textBoxSEC3";
             this.textBoxSEC3.Size = new System.Drawing.Size(44, 21);
-            this.textBoxSEC3.TabIndex = 71;
+            this.textBoxSEC3.TabIndex = 2;
             this.textBoxSEC3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxSEC2
@@ -2217,11 +2199,11 @@
             this.textBoxSEC2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxSEC2.ForeColor = System.Drawing.Color.Tan;
             this.textBoxSEC2.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBoxSEC2.Location = new System.Drawing.Point(474, 205);
+            this.textBoxSEC2.Location = new System.Drawing.Point(543, 155);
             this.textBoxSEC2.MaxLength = 10;
             this.textBoxSEC2.Name = "textBoxSEC2";
             this.textBoxSEC2.Size = new System.Drawing.Size(44, 21);
-            this.textBoxSEC2.TabIndex = 69;
+            this.textBoxSEC2.TabIndex = 1;
             this.textBoxSEC2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxSEC1
@@ -2230,94 +2212,80 @@
             this.textBoxSEC1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxSEC1.ForeColor = System.Drawing.Color.Tan;
             this.textBoxSEC1.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBoxSEC1.Location = new System.Drawing.Point(474, 143);
+            this.textBoxSEC1.Location = new System.Drawing.Point(543, 93);
             this.textBoxSEC1.MaxLength = 10;
             this.textBoxSEC1.Name = "textBoxSEC1";
             this.textBoxSEC1.Size = new System.Drawing.Size(44, 21);
-            this.textBoxSEC1.TabIndex = 70;
+            this.textBoxSEC1.TabIndex = 0;
             this.textBoxSEC1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panelCO5
             // 
             this.panelCO5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.panelCO5.Location = new System.Drawing.Point(385, 415);
+            this.panelCO5.Location = new System.Drawing.Point(429, 348);
             this.panelCO5.Name = "panelCO5";
             this.panelCO5.Size = new System.Drawing.Size(25, 25);
             this.panelCO5.TabIndex = 68;
+            this.panelCO5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panelCO5_MouseDoubleClick);
+            this.panelCO5.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panelCO5_MouseDoubleClick);
             // 
             // panelCO4
             // 
             this.panelCO4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.panelCO4.Location = new System.Drawing.Point(385, 352);
+            this.panelCO4.Location = new System.Drawing.Point(429, 284);
             this.panelCO4.Name = "panelCO4";
             this.panelCO4.Size = new System.Drawing.Size(25, 25);
             this.panelCO4.TabIndex = 67;
+            this.panelCO4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panelCO4_MouseDoubleClick);
+            this.panelCO4.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panelCO4_MouseDoubleClick);
             // 
             // panelCO3
             // 
             this.panelCO3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.panelCO3.Location = new System.Drawing.Point(385, 287);
+            this.panelCO3.Location = new System.Drawing.Point(429, 220);
             this.panelCO3.Name = "panelCO3";
             this.panelCO3.Size = new System.Drawing.Size(25, 25);
             this.panelCO3.TabIndex = 66;
+            this.panelCO3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panelCO3_MouseDoubleClick);
+            this.panelCO3.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panelCO3_MouseDoubleClick);
             // 
             // panelCO2
             // 
             this.panelCO2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.panelCO2.Location = new System.Drawing.Point(385, 222);
+            this.panelCO2.Location = new System.Drawing.Point(429, 157);
             this.panelCO2.Name = "panelCO2";
             this.panelCO2.Size = new System.Drawing.Size(25, 25);
             this.panelCO2.TabIndex = 65;
+            this.panelCO2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panelCO2_MouseDoubleClick);
+            this.panelCO2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panelCO2_MouseDoubleClick);
             // 
             // panelCO1
             // 
             this.panelCO1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.panelCO1.Location = new System.Drawing.Point(385, 159);
+            this.panelCO1.Location = new System.Drawing.Point(429, 94);
             this.panelCO1.Name = "panelCO1";
             this.panelCO1.Size = new System.Drawing.Size(25, 25);
             this.panelCO1.TabIndex = 64;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.panel14.Location = new System.Drawing.Point(458, 143);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(10, 314);
-            this.panel14.TabIndex = 63;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.panel13.Location = new System.Drawing.Point(357, 143);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(10, 314);
-            this.panel13.TabIndex = 62;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.panel10.Location = new System.Drawing.Point(240, 143);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(10, 314);
-            this.panel10.TabIndex = 61;
+            this.panelCO1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panelCO1_MouseDoubleClick);
+            this.panelCO1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panelCO1_MouseDoubleClick);
             // 
             // labelFL5
             // 
-            this.labelFL5.AutoSize = true;
             this.labelFL5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.labelFL5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.labelFL5.Location = new System.Drawing.Point(255, 422);
+            this.labelFL5.Location = new System.Drawing.Point(227, 352);
             this.labelFL5.Name = "labelFL5";
-            this.labelFL5.Size = new System.Drawing.Size(61, 15);
+            this.labelFL5.Size = new System.Drawing.Size(114, 15);
             this.labelFL5.TabIndex = 47;
             this.labelFL5.Text = "FLASK #5";
+            this.labelFL5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label22.Location = new System.Drawing.Point(154, 422);
+            this.label22.Location = new System.Drawing.Point(155, 352);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(61, 15);
             this.label22.TabIndex = 53;
@@ -2325,21 +2293,21 @@
             // 
             // labelFL4
             // 
-            this.labelFL4.AutoSize = true;
             this.labelFL4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.labelFL4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.labelFL4.Location = new System.Drawing.Point(255, 359);
+            this.labelFL4.Location = new System.Drawing.Point(227, 288);
             this.labelFL4.Name = "labelFL4";
-            this.labelFL4.Size = new System.Drawing.Size(61, 15);
+            this.labelFL4.Size = new System.Drawing.Size(114, 15);
             this.labelFL4.TabIndex = 48;
             this.labelFL4.Text = "FLASK #4";
+            this.labelFL4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label24.Location = new System.Drawing.Point(154, 359);
+            this.label24.Location = new System.Drawing.Point(155, 288);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(61, 15);
             this.label24.TabIndex = 49;
@@ -2347,21 +2315,21 @@
             // 
             // labelFL3
             // 
-            this.labelFL3.AutoSize = true;
             this.labelFL3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.labelFL3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.labelFL3.Location = new System.Drawing.Point(255, 294);
+            this.labelFL3.Location = new System.Drawing.Point(227, 224);
             this.labelFL3.Name = "labelFL3";
-            this.labelFL3.Size = new System.Drawing.Size(61, 15);
+            this.labelFL3.Size = new System.Drawing.Size(114, 15);
             this.labelFL3.TabIndex = 50;
             this.labelFL3.Text = "FLASK #3";
+            this.labelFL3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label26.Location = new System.Drawing.Point(154, 294);
+            this.label26.Location = new System.Drawing.Point(155, 224);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(61, 15);
             this.label26.TabIndex = 51;
@@ -2369,21 +2337,21 @@
             // 
             // labelFL2
             // 
-            this.labelFL2.AutoSize = true;
             this.labelFL2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.labelFL2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.labelFL2.Location = new System.Drawing.Point(255, 229);
+            this.labelFL2.Location = new System.Drawing.Point(227, 161);
             this.labelFL2.Name = "labelFL2";
-            this.labelFL2.Size = new System.Drawing.Size(61, 15);
+            this.labelFL2.Size = new System.Drawing.Size(114, 15);
             this.labelFL2.TabIndex = 52;
             this.labelFL2.Text = "FLASK #2";
+            this.labelFL2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label28.Location = new System.Drawing.Point(521, 403);
+            this.label28.Location = new System.Drawing.Point(590, 350);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(51, 15);
             this.label28.TabIndex = 55;
@@ -2394,7 +2362,7 @@
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label29.Location = new System.Drawing.Point(521, 340);
+            this.label29.Location = new System.Drawing.Point(590, 286);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(51, 15);
             this.label29.TabIndex = 54;
@@ -2405,7 +2373,7 @@
             this.label30.AutoSize = true;
             this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label30.Location = new System.Drawing.Point(521, 275);
+            this.label30.Location = new System.Drawing.Point(590, 222);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(51, 15);
             this.label30.TabIndex = 59;
@@ -2416,7 +2384,7 @@
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label31.Location = new System.Drawing.Point(521, 210);
+            this.label31.Location = new System.Drawing.Point(590, 159);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(51, 15);
             this.label31.TabIndex = 58;
@@ -2427,7 +2395,7 @@
             this.label32.AutoSize = true;
             this.label32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label32.Location = new System.Drawing.Point(521, 147);
+            this.label32.Location = new System.Drawing.Point(590, 96);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(51, 15);
             this.label32.TabIndex = 60;
@@ -2438,7 +2406,7 @@
             this.label33.AutoSize = true;
             this.label33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label33.Location = new System.Drawing.Point(154, 229);
+            this.label33.Location = new System.Drawing.Point(155, 161);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(61, 15);
             this.label33.TabIndex = 56;
@@ -2446,21 +2414,21 @@
             // 
             // labelFL1
             // 
-            this.labelFL1.AutoSize = true;
             this.labelFL1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.labelFL1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.labelFL1.Location = new System.Drawing.Point(255, 166);
+            this.labelFL1.Location = new System.Drawing.Point(227, 98);
             this.labelFL1.Name = "labelFL1";
-            this.labelFL1.Size = new System.Drawing.Size(61, 15);
+            this.labelFL1.Size = new System.Drawing.Size(114, 15);
             this.labelFL1.TabIndex = 57;
             this.labelFL1.Text = "FLASK #1";
+            this.labelFL1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label35
             // 
             this.label35.AutoSize = true;
             this.label35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label35.Location = new System.Drawing.Point(154, 166);
+            this.label35.Location = new System.Drawing.Point(155, 98);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(61, 15);
             this.label35.TabIndex = 46;
@@ -2477,7 +2445,7 @@
             this.btn5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5.ForeColor = System.Drawing.Color.Silver;
             this.btn5.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btn5.Location = new System.Drawing.Point(137, 419);
+            this.btn5.Location = new System.Drawing.Point(130, 351);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(14, 14);
             this.btn5.TabIndex = 95;
@@ -2495,7 +2463,7 @@
             this.btn4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.ForeColor = System.Drawing.Color.Silver;
             this.btn4.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btn4.Location = new System.Drawing.Point(139, 356);
+            this.btn4.Location = new System.Drawing.Point(130, 287);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(14, 14);
             this.btn4.TabIndex = 94;
@@ -2513,7 +2481,7 @@
             this.btn3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.ForeColor = System.Drawing.Color.Silver;
             this.btn3.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btn3.Location = new System.Drawing.Point(137, 291);
+            this.btn3.Location = new System.Drawing.Point(130, 224);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(14, 14);
             this.btn3.TabIndex = 93;
@@ -2531,7 +2499,7 @@
             this.btn2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.ForeColor = System.Drawing.Color.Silver;
             this.btn2.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btn2.Location = new System.Drawing.Point(136, 226);
+            this.btn2.Location = new System.Drawing.Point(130, 161);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(14, 14);
             this.btn2.TabIndex = 92;
@@ -2549,7 +2517,7 @@
             this.btn1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.ForeColor = System.Drawing.Color.Silver;
             this.btn1.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btn1.Location = new System.Drawing.Point(136, 164);
+            this.btn1.Location = new System.Drawing.Point(130, 98);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(14, 14);
             this.btn1.TabIndex = 91;
@@ -2560,51 +2528,61 @@
             // 
             this.pictureFlask5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.pictureFlask5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureFlask5.Location = new System.Drawing.Point(416, 397);
+            this.pictureFlask5.Location = new System.Drawing.Point(477, 330);
             this.pictureFlask5.Name = "pictureFlask5";
             this.pictureFlask5.Size = new System.Drawing.Size(30, 60);
             this.pictureFlask5.TabIndex = 83;
             this.pictureFlask5.TabStop = false;
+            this.pictureFlask5.Click += new System.EventHandler(this.pictureFlask5_Click);
+            this.pictureFlask5.DoubleClick += new System.EventHandler(this.pictureFlask5_Click);
             // 
             // pictureFlask4
             // 
             this.pictureFlask4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.pictureFlask4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureFlask4.Location = new System.Drawing.Point(416, 333);
+            this.pictureFlask4.Location = new System.Drawing.Point(477, 266);
             this.pictureFlask4.Name = "pictureFlask4";
             this.pictureFlask4.Size = new System.Drawing.Size(30, 60);
             this.pictureFlask4.TabIndex = 82;
             this.pictureFlask4.TabStop = false;
+            this.pictureFlask4.Click += new System.EventHandler(this.pictureFlask4_Click);
+            this.pictureFlask4.DoubleClick += new System.EventHandler(this.pictureFlask4_Click);
             // 
             // pictureFlask3
             // 
             this.pictureFlask3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.pictureFlask3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureFlask3.Location = new System.Drawing.Point(416, 269);
+            this.pictureFlask3.Location = new System.Drawing.Point(477, 202);
             this.pictureFlask3.Name = "pictureFlask3";
             this.pictureFlask3.Size = new System.Drawing.Size(30, 60);
             this.pictureFlask3.TabIndex = 81;
             this.pictureFlask3.TabStop = false;
+            this.pictureFlask3.Click += new System.EventHandler(this.pictureFlask3_Click);
+            this.pictureFlask3.DoubleClick += new System.EventHandler(this.pictureFlask3_Click);
             // 
             // pictureFlask2
             // 
             this.pictureFlask2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.pictureFlask2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureFlask2.Location = new System.Drawing.Point(416, 206);
+            this.pictureFlask2.Location = new System.Drawing.Point(477, 139);
             this.pictureFlask2.Name = "pictureFlask2";
             this.pictureFlask2.Size = new System.Drawing.Size(30, 60);
             this.pictureFlask2.TabIndex = 80;
             this.pictureFlask2.TabStop = false;
+            this.pictureFlask2.Click += new System.EventHandler(this.pictureFlask2_Click);
+            this.pictureFlask2.DoubleClick += new System.EventHandler(this.pictureFlask2_Click);
             // 
             // pictureFlask1
             // 
             this.pictureFlask1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.pictureFlask1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureFlask1.Location = new System.Drawing.Point(416, 143);
+            this.pictureFlask1.Location = new System.Drawing.Point(477, 76);
             this.pictureFlask1.Name = "pictureFlask1";
             this.pictureFlask1.Size = new System.Drawing.Size(30, 60);
             this.pictureFlask1.TabIndex = 79;
             this.pictureFlask1.TabStop = false;
+            this.pictureFlask1.Click += new System.EventHandler(this.pictureFlask1_Click);
+            this.pictureFlask1.DoubleClick += new System.EventHandler(this.pictureFlask1_Click);
             // 
             // tabPage4
             // 
@@ -2626,9 +2604,6 @@
             this.tabPage4.Controls.Add(this.panelE);
             this.tabPage4.Controls.Add(this.panelW);
             this.tabPage4.Controls.Add(this.panelQ);
-            this.tabPage4.Controls.Add(this.panel17);
-            this.tabPage4.Controls.Add(this.panel18);
-            this.tabPage4.Controls.Add(this.panel19);
             this.tabPage4.Controls.Add(this.lbSkillT);
             this.tabPage4.Controls.Add(this.label55);
             this.tabPage4.Controls.Add(this.lbSkillR);
@@ -2661,11 +2636,11 @@
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
             this.label6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label6.Location = new System.Drawing.Point(3, 474);
+            this.label6.Location = new System.Drawing.Point(3, 486);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(786, 52);
+            this.label6.Size = new System.Drawing.Size(786, 40);
             this.label6.TabIndex = 101;
-            this.label6.Text = "blar....";
+            this.label6.Text = "You can change color by click color box.";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnSaveTab4
@@ -2682,6 +2657,7 @@
             this.btnSaveTab4.TabIndex = 99;
             this.btnSaveTab4.Text = "SAVE";
             this.btnSaveTab4.UseVisualStyleBackColor = false;
+            this.btnSaveTab4.Click += new System.EventHandler(this.btnSaveTab4_Click);
             // 
             // btnCancelTab4
             // 
@@ -2690,24 +2666,25 @@
             this.btnCancelTab4.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelTab4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
             this.btnCancelTab4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelTab4.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnCancelTab4.ForeColor = System.Drawing.Color.Silver;
             this.btnCancelTab4.Location = new System.Drawing.Point(712, 449);
             this.btnCancelTab4.Name = "btnCancelTab4";
             this.btnCancelTab4.Size = new System.Drawing.Size(72, 26);
             this.btnCancelTab4.TabIndex = 100;
             this.btnCancelTab4.Text = "CANCEL";
             this.btnCancelTab4.UseVisualStyleBackColor = false;
+            this.btnCancelTab4.Click += new System.EventHandler(this.btnCancelTab4_Click);
             // 
             // label50
             // 
             this.label50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label50.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label50.Location = new System.Drawing.Point(264, 56);
+            this.label50.Location = new System.Drawing.Point(264, 43);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(114, 38);
+            this.label50.Size = new System.Drawing.Size(135, 24);
             this.label50.TabIndex = 75;
-            this.label50.Text = "Key Setting\r\n(In-game)";
+            this.label50.Text = "POE Key Binding";
             this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label51
@@ -2715,9 +2692,9 @@
             this.label51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label51.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label51.Location = new System.Drawing.Point(482, 56);
+            this.label51.Location = new System.Drawing.Point(495, 43);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(117, 38);
+            this.label51.Size = new System.Drawing.Size(135, 24);
             this.label51.TabIndex = 78;
             this.label51.Text = "Duration";
             this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2727,9 +2704,9 @@
             this.label52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label52.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label52.Location = new System.Drawing.Point(381, 56);
+            this.label52.Location = new System.Drawing.Point(398, 43);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(98, 38);
+            this.label52.Size = new System.Drawing.Size(98, 24);
             this.label52.TabIndex = 77;
             this.label52.Text = "Color";
             this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2739,9 +2716,9 @@
             this.label53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label53.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label53.Location = new System.Drawing.Point(163, 56);
+            this.label53.Location = new System.Drawing.Point(167, 43);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(98, 38);
+            this.label53.Size = new System.Drawing.Size(98, 24);
             this.label53.TabIndex = 76;
             this.label53.Text = "Skill No.";
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2750,8 +2727,9 @@
             // 
             this.textBoxT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
             this.textBoxT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxT.ForeColor = System.Drawing.Color.Tan;
             this.textBoxT.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBoxT.Location = new System.Drawing.Point(500, 272);
+            this.textBoxT.Location = new System.Drawing.Point(515, 263);
             this.textBoxT.MaxLength = 10;
             this.textBoxT.Name = "textBoxT";
             this.textBoxT.Size = new System.Drawing.Size(44, 21);
@@ -2762,8 +2740,9 @@
             // 
             this.textBoxR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
             this.textBoxR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxR.ForeColor = System.Drawing.Color.Tan;
             this.textBoxR.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBoxR.Location = new System.Drawing.Point(500, 231);
+            this.textBoxR.Location = new System.Drawing.Point(515, 222);
             this.textBoxR.MaxLength = 10;
             this.textBoxR.Name = "textBoxR";
             this.textBoxR.Size = new System.Drawing.Size(44, 21);
@@ -2774,8 +2753,9 @@
             // 
             this.textBoxE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
             this.textBoxE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxE.ForeColor = System.Drawing.Color.Tan;
             this.textBoxE.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBoxE.Location = new System.Drawing.Point(500, 190);
+            this.textBoxE.Location = new System.Drawing.Point(515, 181);
             this.textBoxE.MaxLength = 10;
             this.textBoxE.Name = "textBoxE";
             this.textBoxE.Size = new System.Drawing.Size(44, 21);
@@ -2786,8 +2766,9 @@
             // 
             this.textBoxW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
             this.textBoxW.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxW.ForeColor = System.Drawing.Color.Tan;
             this.textBoxW.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBoxW.Location = new System.Drawing.Point(500, 149);
+            this.textBoxW.Location = new System.Drawing.Point(515, 140);
             this.textBoxW.MaxLength = 10;
             this.textBoxW.Name = "textBoxW";
             this.textBoxW.Size = new System.Drawing.Size(44, 21);
@@ -2798,8 +2779,9 @@
             // 
             this.textBoxQ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
             this.textBoxQ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxQ.ForeColor = System.Drawing.Color.Tan;
             this.textBoxQ.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBoxQ.Location = new System.Drawing.Point(500, 109);
+            this.textBoxQ.Location = new System.Drawing.Point(515, 100);
             this.textBoxQ.MaxLength = 10;
             this.textBoxQ.Name = "textBoxQ";
             this.textBoxQ.Size = new System.Drawing.Size(44, 21);
@@ -2809,84 +2791,70 @@
             // panelT
             // 
             this.panelT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.panelT.Location = new System.Drawing.Point(409, 270);
+            this.panelT.Location = new System.Drawing.Point(430, 263);
             this.panelT.Name = "panelT";
             this.panelT.Size = new System.Drawing.Size(25, 25);
             this.panelT.TabIndex = 68;
+            this.panelT.Click += new System.EventHandler(this.PanelT_DoubleClick);
+            this.panelT.DoubleClick += new System.EventHandler(this.PanelT_DoubleClick);
             // 
             // panelR
             // 
             this.panelR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.panelR.Location = new System.Drawing.Point(409, 229);
+            this.panelR.Location = new System.Drawing.Point(430, 222);
             this.panelR.Name = "panelR";
             this.panelR.Size = new System.Drawing.Size(25, 25);
             this.panelR.TabIndex = 67;
+            this.panelR.Click += new System.EventHandler(this.PanelR_DoubleClick);
+            this.panelR.DoubleClick += new System.EventHandler(this.PanelR_DoubleClick);
             // 
             // panelE
             // 
             this.panelE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.panelE.Location = new System.Drawing.Point(409, 188);
+            this.panelE.Location = new System.Drawing.Point(430, 181);
             this.panelE.Name = "panelE";
             this.panelE.Size = new System.Drawing.Size(25, 25);
             this.panelE.TabIndex = 66;
+            this.panelE.Click += new System.EventHandler(this.PanelE_DoubleClick);
+            this.panelE.DoubleClick += new System.EventHandler(this.PanelE_DoubleClick);
             // 
             // panelW
             // 
             this.panelW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.panelW.Location = new System.Drawing.Point(409, 147);
+            this.panelW.Location = new System.Drawing.Point(430, 140);
             this.panelW.Name = "panelW";
             this.panelW.Size = new System.Drawing.Size(25, 25);
             this.panelW.TabIndex = 69;
+            this.panelW.Click += new System.EventHandler(this.PanelW_DoubleClick);
+            this.panelW.DoubleClick += new System.EventHandler(this.PanelW_DoubleClick);
             // 
             // panelQ
             // 
             this.panelQ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.panelQ.Location = new System.Drawing.Point(409, 106);
+            this.panelQ.Location = new System.Drawing.Point(430, 99);
             this.panelQ.Name = "panelQ";
             this.panelQ.Size = new System.Drawing.Size(25, 25);
             this.panelQ.TabIndex = 65;
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.panel17.Location = new System.Drawing.Point(482, 110);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(10, 180);
-            this.panel17.TabIndex = 62;
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.panel18.Location = new System.Drawing.Point(381, 110);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(10, 180);
-            this.panel18.TabIndex = 64;
-            // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.panel19.Location = new System.Drawing.Point(264, 110);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(10, 180);
-            this.panel19.TabIndex = 63;
+            this.panelQ.Click += new System.EventHandler(this.PanelQ_DoubleClick);
+            this.panelQ.DoubleClick += new System.EventHandler(this.PanelQ_DoubleClick);
             // 
             // lbSkillT
             // 
-            this.lbSkillT.AutoSize = true;
             this.lbSkillT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.lbSkillT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.lbSkillT.Location = new System.Drawing.Point(279, 277);
+            this.lbSkillT.Location = new System.Drawing.Point(264, 267);
             this.lbSkillT.Name = "lbSkillT";
-            this.lbSkillT.Size = new System.Drawing.Size(57, 15);
+            this.lbSkillT.Size = new System.Drawing.Size(135, 15);
             this.lbSkillT.TabIndex = 48;
             this.lbSkillT.Text = "SKILL #5";
+            this.lbSkillT.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label55
             // 
             this.label55.AutoSize = true;
             this.label55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label55.Location = new System.Drawing.Point(178, 277);
+            this.label55.Location = new System.Drawing.Point(198, 267);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(57, 15);
             this.label55.TabIndex = 49;
@@ -2894,21 +2862,21 @@
             // 
             // lbSkillR
             // 
-            this.lbSkillR.AutoSize = true;
             this.lbSkillR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.lbSkillR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.lbSkillR.Location = new System.Drawing.Point(279, 236);
+            this.lbSkillR.Location = new System.Drawing.Point(264, 226);
             this.lbSkillR.Name = "lbSkillR";
-            this.lbSkillR.Size = new System.Drawing.Size(57, 15);
+            this.lbSkillR.Size = new System.Drawing.Size(135, 15);
             this.lbSkillR.TabIndex = 50;
             this.lbSkillR.Text = "SKILL #4";
+            this.lbSkillR.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label57
             // 
             this.label57.AutoSize = true;
             this.label57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label57.Location = new System.Drawing.Point(178, 236);
+            this.label57.Location = new System.Drawing.Point(198, 226);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(59, 15);
             this.label57.TabIndex = 51;
@@ -2916,21 +2884,21 @@
             // 
             // lbSkillE
             // 
-            this.lbSkillE.AutoSize = true;
             this.lbSkillE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.lbSkillE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.lbSkillE.Location = new System.Drawing.Point(279, 195);
+            this.lbSkillE.Location = new System.Drawing.Point(264, 185);
             this.lbSkillE.Name = "lbSkillE";
-            this.lbSkillE.Size = new System.Drawing.Size(57, 15);
+            this.lbSkillE.Size = new System.Drawing.Size(135, 15);
             this.lbSkillE.TabIndex = 52;
             this.lbSkillE.Text = "SKILL #3";
+            this.lbSkillE.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label59
             // 
             this.label59.AutoSize = true;
             this.label59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label59.Location = new System.Drawing.Point(178, 195);
+            this.label59.Location = new System.Drawing.Point(198, 185);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(58, 15);
             this.label59.TabIndex = 54;
@@ -2938,21 +2906,21 @@
             // 
             // lbSkillW
             // 
-            this.lbSkillW.AutoSize = true;
             this.lbSkillW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.lbSkillW.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.lbSkillW.Location = new System.Drawing.Point(279, 154);
+            this.lbSkillW.Location = new System.Drawing.Point(264, 144);
             this.lbSkillW.Name = "lbSkillW";
-            this.lbSkillW.Size = new System.Drawing.Size(57, 15);
+            this.lbSkillW.Size = new System.Drawing.Size(135, 15);
             this.lbSkillW.TabIndex = 53;
             this.lbSkillW.Text = "SKILL #2";
+            this.lbSkillW.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label61
             // 
             this.label61.AutoSize = true;
             this.label61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label61.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label61.Location = new System.Drawing.Point(547, 277);
+            this.label61.Location = new System.Drawing.Point(562, 268);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(52, 15);
             this.label61.TabIndex = 60;
@@ -2963,7 +2931,7 @@
             this.label62.AutoSize = true;
             this.label62.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label62.Location = new System.Drawing.Point(547, 236);
+            this.label62.Location = new System.Drawing.Point(562, 227);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(52, 15);
             this.label62.TabIndex = 55;
@@ -2974,7 +2942,7 @@
             this.label63.AutoSize = true;
             this.label63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label63.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label63.Location = new System.Drawing.Point(547, 195);
+            this.label63.Location = new System.Drawing.Point(562, 186);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(52, 15);
             this.label63.TabIndex = 56;
@@ -2985,7 +2953,7 @@
             this.label64.AutoSize = true;
             this.label64.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label64.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label64.Location = new System.Drawing.Point(547, 154);
+            this.label64.Location = new System.Drawing.Point(562, 145);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(52, 15);
             this.label64.TabIndex = 57;
@@ -2996,7 +2964,7 @@
             this.label65.AutoSize = true;
             this.label65.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label65.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label65.Location = new System.Drawing.Point(547, 113);
+            this.label65.Location = new System.Drawing.Point(562, 104);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(52, 15);
             this.label65.TabIndex = 58;
@@ -3007,7 +2975,7 @@
             this.label66.AutoSize = true;
             this.label66.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label66.Location = new System.Drawing.Point(178, 154);
+            this.label66.Location = new System.Drawing.Point(198, 144);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(61, 15);
             this.label66.TabIndex = 59;
@@ -3015,21 +2983,21 @@
             // 
             // lbSkillQ
             // 
-            this.lbSkillQ.AutoSize = true;
             this.lbSkillQ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.lbSkillQ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.lbSkillQ.Location = new System.Drawing.Point(279, 113);
+            this.lbSkillQ.Location = new System.Drawing.Point(264, 103);
             this.lbSkillQ.Name = "lbSkillQ";
-            this.lbSkillQ.Size = new System.Drawing.Size(57, 15);
+            this.lbSkillQ.Size = new System.Drawing.Size(135, 15);
             this.lbSkillQ.TabIndex = 61;
             this.lbSkillQ.Text = "SKILL #1";
+            this.lbSkillQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label68
             // 
             this.label68.AutoSize = true;
             this.label68.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.label68.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label68.Location = new System.Drawing.Point(178, 113);
+            this.label68.Location = new System.Drawing.Point(198, 103);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(59, 15);
             this.label68.TabIndex = 47;
@@ -3046,7 +3014,7 @@
             this.btnS5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnS5.ForeColor = System.Drawing.Color.Silver;
             this.btnS5.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btnS5.Location = new System.Drawing.Point(162, 274);
+            this.btnS5.Location = new System.Drawing.Point(174, 267);
             this.btnS5.Name = "btnS5";
             this.btnS5.Size = new System.Drawing.Size(14, 14);
             this.btnS5.TabIndex = 83;
@@ -3064,7 +3032,7 @@
             this.btnS4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnS4.ForeColor = System.Drawing.Color.Silver;
             this.btnS4.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btnS4.Location = new System.Drawing.Point(162, 233);
+            this.btnS4.Location = new System.Drawing.Point(174, 226);
             this.btnS4.Name = "btnS4";
             this.btnS4.Size = new System.Drawing.Size(14, 14);
             this.btnS4.TabIndex = 82;
@@ -3082,7 +3050,7 @@
             this.btnS3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnS3.ForeColor = System.Drawing.Color.Silver;
             this.btnS3.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btnS3.Location = new System.Drawing.Point(162, 192);
+            this.btnS3.Location = new System.Drawing.Point(174, 185);
             this.btnS3.Name = "btnS3";
             this.btnS3.Size = new System.Drawing.Size(14, 14);
             this.btnS3.TabIndex = 81;
@@ -3100,7 +3068,7 @@
             this.btnS2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnS2.ForeColor = System.Drawing.Color.Silver;
             this.btnS2.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btnS2.Location = new System.Drawing.Point(162, 151);
+            this.btnS2.Location = new System.Drawing.Point(174, 144);
             this.btnS2.Name = "btnS2";
             this.btnS2.Size = new System.Drawing.Size(14, 14);
             this.btnS2.TabIndex = 80;
@@ -3118,7 +3086,7 @@
             this.btnS1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnS1.ForeColor = System.Drawing.Color.Silver;
             this.btnS1.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btnS1.Location = new System.Drawing.Point(162, 110);
+            this.btnS1.Location = new System.Drawing.Point(174, 103);
             this.btnS1.Name = "btnS1";
             this.btnS1.Size = new System.Drawing.Size(14, 14);
             this.btnS1.TabIndex = 79;
@@ -3128,6 +3096,9 @@
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.tabPage5.Controls.Add(this.btnSaveTab5);
+            this.tabPage5.Controls.Add(this.btnCancelTab5);
+            this.tabPage5.Controls.Add(this.label7);
             this.tabPage5.Location = new System.Drawing.Point(4, 20);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
@@ -3138,6 +3109,10 @@
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.tabPage6.Controls.Add(this.webBrowser1);
+            this.tabPage6.Controls.Add(this.label8);
+            this.tabPage6.Controls.Add(this.btnSaveTab6);
+            this.tabPage6.Controls.Add(this.btnCancelTab6);
             this.tabPage6.Location = new System.Drawing.Point(4, 20);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -3148,6 +3123,9 @@
             // tabPage7
             // 
             this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.tabPage7.Controls.Add(this.label12);
+            this.tabPage7.Controls.Add(this.btnSaveTab7);
+            this.tabPage7.Controls.Add(this.btnCancelTab7);
             this.tabPage7.Location = new System.Drawing.Point(4, 20);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
@@ -3182,15 +3160,145 @@
             this.label16.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label16_MouseMove);
             this.label16.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label16_MouseUp);
             // 
-            // pictureBox2
+            // btnSaveTab6
             // 
-            this.pictureBox2.BackgroundImage = global::POExileDirection.Properties.Resources.panel_bottom_line;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 260);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(792, 9);
-            this.pictureBox2.TabIndex = 105;
-            this.pictureBox2.TabStop = false;
+            this.btnSaveTab6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnSaveTab6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveTab6.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnSaveTab6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.btnSaveTab6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveTab6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.btnSaveTab6.Location = new System.Drawing.Point(634, 449);
+            this.btnSaveTab6.Name = "btnSaveTab6";
+            this.btnSaveTab6.Size = new System.Drawing.Size(72, 26);
+            this.btnSaveTab6.TabIndex = 66;
+            this.btnSaveTab6.Text = "SAVE";
+            this.btnSaveTab6.UseVisualStyleBackColor = false;
+            this.btnSaveTab6.Click += new System.EventHandler(this.btnSaveTab6_Click);
+            // 
+            // btnCancelTab6
+            // 
+            this.btnCancelTab6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnCancelTab6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelTab6.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancelTab6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.btnCancelTab6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelTab6.ForeColor = System.Drawing.Color.Silver;
+            this.btnCancelTab6.Location = new System.Drawing.Point(712, 449);
+            this.btnCancelTab6.Name = "btnCancelTab6";
+            this.btnCancelTab6.Size = new System.Drawing.Size(72, 26);
+            this.btnCancelTab6.TabIndex = 67;
+            this.btnCancelTab6.Text = "CANCEL";
+            this.btnCancelTab6.UseVisualStyleBackColor = false;
+            this.btnCancelTab6.Click += new System.EventHandler(this.btnCancelTab6_Click);
+            // 
+            // btnSaveTab7
+            // 
+            this.btnSaveTab7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnSaveTab7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveTab7.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnSaveTab7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.btnSaveTab7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveTab7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.btnSaveTab7.Location = new System.Drawing.Point(634, 449);
+            this.btnSaveTab7.Name = "btnSaveTab7";
+            this.btnSaveTab7.Size = new System.Drawing.Size(72, 26);
+            this.btnSaveTab7.TabIndex = 66;
+            this.btnSaveTab7.Text = "SAVE";
+            this.btnSaveTab7.UseVisualStyleBackColor = false;
+            this.btnSaveTab7.Click += new System.EventHandler(this.btnSaveTab7_Click);
+            // 
+            // btnCancelTab7
+            // 
+            this.btnCancelTab7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnCancelTab7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelTab7.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancelTab7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.btnCancelTab7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelTab7.ForeColor = System.Drawing.Color.Silver;
+            this.btnCancelTab7.Location = new System.Drawing.Point(712, 449);
+            this.btnCancelTab7.Name = "btnCancelTab7";
+            this.btnCancelTab7.Size = new System.Drawing.Size(72, 26);
+            this.btnCancelTab7.TabIndex = 67;
+            this.btnCancelTab7.Text = "CANCEL";
+            this.btnCancelTab7.UseVisualStyleBackColor = false;
+            this.btnCancelTab7.Click += new System.EventHandler(this.btnCancelTab7_Click);
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
+            this.label7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label7.Location = new System.Drawing.Point(3, 486);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(786, 40);
+            this.label7.TabIndex = 102;
+            this.label7.Text = "blar..........";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
+            this.label8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label8.Location = new System.Drawing.Point(3, 486);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(786, 40);
+            this.label8.TabIndex = 103;
+            this.label8.Text = "blar..........";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
+            this.label12.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label12.Location = new System.Drawing.Point(3, 486);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(786, 40);
+            this.label12.TabIndex = 103;
+            this.label12.Text = "blar..........";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnCancelTab5
+            // 
+            this.btnCancelTab5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnCancelTab5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelTab5.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancelTab5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.btnCancelTab5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelTab5.ForeColor = System.Drawing.Color.Silver;
+            this.btnCancelTab5.Location = new System.Drawing.Point(712, 449);
+            this.btnCancelTab5.Name = "btnCancelTab5";
+            this.btnCancelTab5.Size = new System.Drawing.Size(72, 26);
+            this.btnCancelTab5.TabIndex = 104;
+            this.btnCancelTab5.Text = "CANCEL";
+            this.btnCancelTab5.UseVisualStyleBackColor = false;
+            this.btnCancelTab5.Click += new System.EventHandler(this.btnCancelTab5_Click);
+            // 
+            // btnSaveTab5
+            // 
+            this.btnSaveTab5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnSaveTab5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveTab5.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnSaveTab5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.btnSaveTab5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveTab5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.btnSaveTab5.Location = new System.Drawing.Point(634, 449);
+            this.btnSaveTab5.Name = "btnSaveTab5";
+            this.btnSaveTab5.Size = new System.Drawing.Size(72, 26);
+            this.btnSaveTab5.TabIndex = 105;
+            this.btnSaveTab5.Text = "SAVE";
+            this.btnSaveTab5.UseVisualStyleBackColor = false;
+            this.btnSaveTab5.Click += new System.EventHandler(this.btnSaveTab5_Click);
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Location = new System.Drawing.Point(8, 11);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(612, 464);
+            this.webBrowser1.TabIndex = 104;
             // 
             // SettingsOverhaul
             // 
@@ -3232,8 +3340,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask1)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage7.ResumeLayout(false);
             this.panelTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3306,7 +3416,6 @@
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn1;
-        private System.Windows.Forms.CheckBox checkBox1;
         private XanderUI.XUISlider xuiSliderVolumeFlask;
         private System.Windows.Forms.PictureBox pictureFlask5;
         private System.Windows.Forms.PictureBox pictureFlask4;
@@ -3314,7 +3423,6 @@
         private System.Windows.Forms.PictureBox pictureFlask2;
         private System.Windows.Forms.PictureBox pictureFlask1;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label36;
@@ -3328,9 +3436,6 @@
         private System.Windows.Forms.Panel panelCO3;
         private System.Windows.Forms.Panel panelCO2;
         private System.Windows.Forms.Panel panelCO1;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label labelFL5;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label labelFL4;
@@ -3369,9 +3474,6 @@
         private System.Windows.Forms.Panel panelE;
         private System.Windows.Forms.Panel panelW;
         private System.Windows.Forms.Panel panelQ;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Label lbSkillT;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label lbSkillR;
@@ -3449,17 +3551,27 @@
         private System.Windows.Forms.Button btnThanks;
         private System.Windows.Forms.Button btnSold;
         private System.Windows.Forms.Button btnWaitPls;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.TextBox textBoxCustom5;
+        private System.Windows.Forms.CheckBox checkBoxAutoKickCUSTOM4;
+        private System.Windows.Forms.TextBox textBoxCustom4;
         private System.Windows.Forms.TextBox textBoxCustomTitle4;
         private System.Windows.Forms.Button btnCustom4;
         private System.Windows.Forms.Label labelSNDOnOff;
         private XanderUI.XUISwitch xuiSwitchSoundTrade;
-        private System.Windows.Forms.Button btnSOUND;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnSOUNDTrade;
+        private System.Windows.Forms.Button btnSOUNDFlaskTimer;
+        private System.Windows.Forms.Label labelFlaskSoundUse;
         private XanderUI.XUISwitch xuiSwitchSoundFlaskTimer;
         private System.Windows.Forms.Label labelFlaskTimerVolume;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.Button btnSaveTab5;
+        private System.Windows.Forms.Button btnCancelTab5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnSaveTab6;
+        private System.Windows.Forms.Button btnCancelTab6;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnSaveTab7;
+        private System.Windows.Forms.Button btnCancelTab7;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }

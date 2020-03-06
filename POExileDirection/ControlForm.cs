@@ -55,14 +55,14 @@ namespace POExileDirection
         static extern bool GetCursorInfo(out CURSORINFO pci);*/
         #endregion
 
-        public const string POE_WINDOTITLE = "Path of Exile"; // POE Window Title 
-
+        #region [[[[ Drag Moving, Min/Max ]]]]
         private int nMoving = 0;
         private int nMovePosX = 0;
         private int nMovePosY = 0;
 
         private bool bIsMinimized = false;
-        private bool isMainExpand = false;
+        private bool isMainExpand = false; 
+        #endregion
 
         #region [[[[[ Hot Keys ]]]]]
         // Hot Keys
@@ -86,6 +86,15 @@ namespace POExileDirection
 
         static public string keyEXIT { get; set; }// CONTROL+SHIT+SPACE
 
+        public static string keyMAINInvite { get; set; }
+        public static string keyMAINTrade { get; set; }
+        public static string keyMAINKick { get; set; }
+        public static string keyMAINMinimize { get; set; }
+        public static string keyMAINClose { get; set; }
+        public static string keyMAINSold { get; set; }
+        public static string keyMAINWait { get; set; }
+        public static string keyMAINThx { get; set; }
+
         DeadlyHotkeys ovHRemains = new DeadlyHotkeys();
         DeadlyHotkeys ovHJUN = new DeadlyHotkeys();
         DeadlyHotkeys ovHALVA = new DeadlyHotkeys();
@@ -93,6 +102,15 @@ namespace POExileDirection
         DeadlyHotkeys ovHHideout = new DeadlyHotkeys();
         DeadlyHotkeys ovHSearchbyPosition = new DeadlyHotkeys();
         DeadlyHotkeys ovHEXIT = new DeadlyHotkeys();
+
+        DeadlyHotkeys ovHInvite = new DeadlyHotkeys();
+        DeadlyHotkeys ovHTrade = new DeadlyHotkeys();
+        DeadlyHotkeys ovHKick = new DeadlyHotkeys();
+        DeadlyHotkeys ovHMinimize = new DeadlyHotkeys();
+        DeadlyHotkeys ovHClose = new DeadlyHotkeys();
+        DeadlyHotkeys ovHSold = new DeadlyHotkeys();
+        DeadlyHotkeys ovHWait = new DeadlyHotkeys();
+        DeadlyHotkeys ovHThx = new DeadlyHotkeys();
         #endregion
 
         #region [[[[[ Child Forms ]]]]]
@@ -406,6 +424,7 @@ namespace POExileDirection
             Text = "DeadlyTradeForPOE";
         }
 
+        #region [[[[ MousWheel Event System Thread Delegate Invoke ]]]]
         private void MouseWheelThread(object sender, MouseEventExtArgs e)
         {
             MouseWheelExtDelegate delegateInstance =
@@ -463,8 +482,9 @@ namespace POExileDirection
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                 //Task.Factory.StartNew(() =>
             }
-        }
-        
+        } 
+        #endregion
+
         private void GetItemDataThread()
         {
             GetItemDataFromClipboardDelegate delegateInstance =
@@ -841,8 +861,7 @@ namespace POExileDirection
                     _keymouseHooks.MouseWheelExt += _keymouseHooks_MouseWheelExt;
                 }
 
-                // Start LOG Parsing UI Thread. 2020.01.13 Using baackground worker
-                //DeadlyLOGParingTimer.Start();
+                // Start LOG Parsing UI Thread.
                 timerParser.Start();
             }
             else
@@ -1744,6 +1763,7 @@ namespace POExileDirection
 
         private static long gln_LastRead = 0;
 
+        #region [[[[[ Parsing Client Log File ]]]]]
         private void TimerParser_Tick(object sender, EventArgs e)
         {
             ShowHide_Addon_Forms(!LauncherForm.g_FocusLosing);
@@ -2053,7 +2073,9 @@ namespace POExileDirection
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
         }
+        #endregion
 
+        #region [[[[[ Trade Whisper Notification - Check Duplication, Remove ]]]]]
         private bool Check_DuplicateTradeMSG(DeadlyTRADE.TradeMSG trMsg)
         {
             if (g_TradeMsgList.Count == 0)
@@ -2061,7 +2083,7 @@ namespace POExileDirection
 
             bool bRet = false;
 
-            foreach(var objtr in g_TradeMsgList)
+            foreach (var objtr in g_TradeMsgList)
             {
                 if (trMsg.tradePurpose == objtr.tradePurpose
                     && trMsg.nickName == objtr.nickName
@@ -2100,7 +2122,8 @@ namespace POExileDirection
                 }
                 nIndex = nIndex + 1;
             }
-        }
+        } 
+        #endregion
 
         private void ControlForm_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
         {
@@ -2339,6 +2362,38 @@ namespace POExileDirection
             Parse_StringToHotKey(keyEXIT);
             ovHEXIT.fsMod = m_unMod;
             ovHEXIT.hotKeys = m_HotKey;
+
+            Parse_StringToHotKey(keyMAINInvite);
+            ovHInvite.fsMod = m_unMod;
+            ovHInvite.hotKeys = m_HotKey;
+
+            Parse_StringToHotKey(keyMAINTrade);
+            ovHTrade.fsMod = m_unMod;
+            ovHTrade.hotKeys = m_HotKey;
+
+            Parse_StringToHotKey(keyMAINKick);
+            ovHKick.fsMod = m_unMod;
+            ovHKick.hotKeys = m_HotKey;
+
+            Parse_StringToHotKey(keyMAINMinimize);
+            ovHMinimize.fsMod = m_unMod;
+            ovHMinimize.hotKeys = m_HotKey;
+
+            Parse_StringToHotKey(keyMAINClose);
+            ovHClose.fsMod = m_unMod;
+            ovHClose.hotKeys = m_HotKey;
+
+            Parse_StringToHotKey(keyMAINSold);
+            ovHSold.fsMod = m_unMod;
+            ovHSold.hotKeys = m_HotKey;
+
+            Parse_StringToHotKey(keyMAINWait);
+            ovHWait.fsMod = m_unMod;
+            ovHWait.hotKeys = m_HotKey;
+
+            Parse_StringToHotKey(keyMAINThx);
+            ovHThx.fsMod = m_unMod;
+            ovHThx.hotKeys = m_HotKey;
         }
 
         public void Parse_StringToHotKey(string strtext)
@@ -2469,20 +2524,7 @@ namespace POExileDirection
             strImagePath[0] = @".\DeadlyInform\Betrayal.png";
 
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
-            DeadlyLog4Net._log.Info($"{MethodBase.GetCurrentMethod().Name} RESOLUTION : " + strINIPath);
 
             try
             {
@@ -2499,6 +2541,8 @@ namespace POExileDirection
                 string strPath = "";
                 strPath = parser.GetSetting("DIRECTIONHELPER", "POELOGPATH");
 
+                //TODO : User Custom Image.
+                //TODO : Get User Image Path.
                 // Get Image Path
                 /*strImagePath[0] = parser.GetSetting("OVERLAY", "JUN"); // @".\DeadlyInform\Betrayal.png";   // JUN
                 if(strImagePath[0]=="")
@@ -2521,6 +2565,17 @@ namespace POExileDirection
                 keySearchbyPosition = parser.GetSetting("HOTKEY", "F");
                 keyEXIT = parser.GetSetting("HOTKEY", "E");
 
+                // HOT KEYS - Trade Panel
+                keyMAINInvite = parser.GetSetting("HOTKEY", "INVITE");
+                keyMAINTrade = parser.GetSetting("HOTKEY", "TRADE");
+                keyMAINKick = parser.GetSetting("HOTKEY", "KICK");
+                keyMAINMinimize = parser.GetSetting("HOTKEY", "MINIMIZE");
+                keyMAINClose = parser.GetSetting("HOTKEY", "CLOSE");
+                keyMAINSold = parser.GetSetting("HOTKEY", "SOLD");
+                keyMAINWait = parser.GetSetting("HOTKEY", "WAIT");
+                keyMAINThx = parser.GetSetting("HOTKEY", "THX");
+
+                // for Other Language's Key Code.
                 strPath = strPath.Replace("İ", "i");
                 strPath = strPath.Replace("Ý", "i");
 
@@ -2656,8 +2711,30 @@ namespace POExileDirection
             gCF_bIsTextFocused = true;
             try
             {
-                SettingsOverhaul settingsOverhaul = new SettingsOverhaul();
-                settingsOverhaul.Show();
+                using (SettingsOverhaul settingsOverhaul = new SettingsOverhaul())
+                {
+                    settingsOverhaul.keyRemains = keyMAINRemains;
+                    settingsOverhaul.keyJUN = keyMAINJUN;
+                    settingsOverhaul.keyALVA = keyMAINALVA;
+                    settingsOverhaul.keyZANA = keyMAINZANA;
+                    settingsOverhaul.keyHideout = keyMAINHideout;
+                    settingsOverhaul.keySearchbyPosition = keySearchbyPosition;
+                    settingsOverhaul.keyEXIT = keyEXIT;
+                    settingsOverhaul.keyInvite = keyMAINInvite;
+                    settingsOverhaul.keyTrade = keyMAINTrade;
+                    settingsOverhaul.keyKick = keyMAINKick;
+                    settingsOverhaul.keyMinimize = keyMAINMinimize;
+                    settingsOverhaul.keyClose = keyMAINClose;
+                    settingsOverhaul.keySold = keyMAINSold;
+                    settingsOverhaul.keyWait = keyMAINWait;
+                    settingsOverhaul.keyThx = keyMAINThx;
+                    if (settingsOverhaul.ShowDialog() == DialogResult.OK)
+                    {
+                        ;
+                    }
+                    bIsSettingsPop = false;
+                    gCF_bIsTextFocused = false;
+                }
                 return;
                 using (SettingsForm frmSettings = new SettingsForm())
                 {
@@ -4492,6 +4569,7 @@ namespace POExileDirection
             btnMinimize_Click_1(this, new EventArgs());
         }
 
+        #region [[[[[ Drag Moving - SetDesktopLocation ]]]]]
         private void btnDeadlyTrade_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
         {
             if (!LauncherForm.g_pinLOCK)
@@ -4535,7 +4613,8 @@ namespace POExileDirection
             parser.SaveSettings();
 
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-        }
+        } 
+        #endregion
 
         private void ControlForm_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -4547,19 +4626,6 @@ namespace POExileDirection
             DeadlyDBHelper.InsertLoginStatus(LauncherForm._sqlcon, "N", LauncherForm._strIPAddress, LauncherForm._strMacAddress, ".", "LOGOUT", 
                                             LauncherForm.GetCountryByIPINFO(LauncherForm._strIPAddress), LauncherForm.dtLoggedIn, nElapse); 
             DeadlyLog4Net._log.Info("LOGOUT : " + LauncherForm._strIPAddress + LauncherForm._strMacAddress + " Elapsedminute : " + nElapse);
-        }
-
-        private void btnTEST_Click(object sender, EventArgs e)
-        {
-            //DeadlyPriceAPI.GetItemDataFromClipboard(ClipboardHelper.GetUnicodeText());
-            
-            //frmNotify.Show();
-        }
-
-        private void button7_Click_1(object sender, EventArgs e)
-        {
-            //Form1 frm = new Form1();
-            //frmNotify.AddBuyNotifyForm("TEST", frm);
         }
     }
 }

@@ -14,3 +14,6 @@ dotnet_diagnostic.CA1707.severity = none
 
 # CA1031: 일반적인 예외 형식을 catch하지 마세요.
 dotnet_diagnostic.CA1031.severity = none
+
+# CA1305: IFormatProvider를 지정하세요.
+dotnet_diagnostic.CA1305.severity = none

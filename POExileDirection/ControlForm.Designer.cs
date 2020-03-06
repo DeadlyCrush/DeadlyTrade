@@ -43,6 +43,8 @@
             this.btnExpandCollapse = new System.Windows.Forms.Button();
             this.panelUtilityRectBorder = new System.Windows.Forms.Panel();
             this.panelUtility = new System.Windows.Forms.Panel();
+            this.labelSNDOnOff = new System.Windows.Forms.Label();
+            this.xuiSwitch1 = new XanderUI.XUISwitch();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDND = new System.Windows.Forms.Button();
@@ -53,9 +55,11 @@
             this.btnQ = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
             this.btn4 = new System.Windows.Forms.Button();
+            this.btnSOUND = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
+            this.btnDelveInform = new System.Windows.Forms.Button();
             this.labelDND = new System.Windows.Forms.Label();
             this.labelT = new System.Windows.Forms.Label();
             this.labelR = new System.Windows.Forms.Label();
@@ -97,10 +101,6 @@
             this.DeadlyToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timerInit = new System.Windows.Forms.Timer(this.components);
             this.timerParser = new System.Windows.Forms.Timer(this.components);
-            this.xuiSwitch1 = new XanderUI.XUISwitch();
-            this.labelSNDOnOff = new System.Windows.Forms.Label();
-            this.btnSND = new System.Windows.Forms.Button();
-            this.btnDelveInform = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelCOMMAND.SuspendLayout();
             this.panelDrag.SuspendLayout();
@@ -328,7 +328,7 @@
             this.panelUtility.Controls.Add(this.btnQ);
             this.panelUtility.Controls.Add(this.btn5);
             this.panelUtility.Controls.Add(this.btn4);
-            this.panelUtility.Controls.Add(this.btnSND);
+            this.panelUtility.Controls.Add(this.btnSOUND);
             this.panelUtility.Controls.Add(this.btn3);
             this.panelUtility.Controls.Add(this.btn2);
             this.panelUtility.Controls.Add(this.btn1);
@@ -348,6 +348,33 @@
             this.panelUtility.Name = "panelUtility";
             this.panelUtility.Size = new System.Drawing.Size(222, 64);
             this.panelUtility.TabIndex = 45;
+            // 
+            // labelSNDOnOff
+            // 
+            this.labelSNDOnOff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.labelSNDOnOff.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelSNDOnOff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
+            this.labelSNDOnOff.Location = new System.Drawing.Point(30, 41);
+            this.labelSNDOnOff.Name = "labelSNDOnOff";
+            this.labelSNDOnOff.Size = new System.Drawing.Size(28, 16);
+            this.labelSNDOnOff.TabIndex = 49;
+            this.labelSNDOnOff.Text = "OFF";
+            this.labelSNDOnOff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // xuiSwitch1
+            // 
+            this.xuiSwitch1.BackColor = System.Drawing.Color.Transparent;
+            this.xuiSwitch1.HandleOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.xuiSwitch1.HandleOnColor = System.Drawing.Color.Tan;
+            this.xuiSwitch1.Location = new System.Drawing.Point(59, 39);
+            this.xuiSwitch1.Name = "xuiSwitch1";
+            this.xuiSwitch1.OffColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(98)))), ((int)(((byte)(59)))));
+            this.xuiSwitch1.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(98)))), ((int)(((byte)(59)))));
+            this.xuiSwitch1.Size = new System.Drawing.Size(32, 20);
+            this.xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.Off;
+            this.xuiSwitch1.SwitchStyle = XanderUI.XUISwitch.Style.Horizontal;
+            this.xuiSwitch1.TabIndex = 48;
+            this.xuiSwitch1.Text = "xuiSwitch1";
             // 
             // pictureBox3
             // 
@@ -527,6 +554,28 @@
             this.btn4.Click += new System.EventHandler(this.XuiSwitch4_SwitchStateChanged);
             this.btn4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnHideout_Enter);
             // 
+            // btnSOUND
+            // 
+            this.btnSOUND.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
+            this.btnSOUND.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSOUND.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSOUND.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnSOUND.FlatAppearance.BorderSize = 0;
+            this.btnSOUND.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSOUND.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSOUND.ForeColor = System.Drawing.Color.LightCoral;
+            this.btnSOUND.Location = new System.Drawing.Point(6, 42);
+            this.btnSOUND.Name = "btnSOUND";
+            this.btnSOUND.Size = new System.Drawing.Size(14, 14);
+            this.btnSOUND.TabIndex = 38;
+            this.btnSOUND.TabStop = false;
+            this.btnSOUND.Text = "img";
+            this.btnSOUND.UseVisualStyleBackColor = false;
+            this.btnSOUND.Click += new System.EventHandler(this.Button6_Click);
+            this.btnSOUND.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnHideout_Enter);
+            this.btnSOUND.MouseEnter += new System.EventHandler(this.button6_MouseHover);
+            this.btnSOUND.MouseHover += new System.EventHandler(this.button6_MouseHover);
+            // 
             // btn3
             // 
             this.btn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
@@ -586,6 +635,28 @@
             this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.XuiSwitch1_SwitchStateChanged);
             this.btn1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnHideout_Enter);
+            // 
+            // btnDelveInform
+            // 
+            this.btnDelveInform.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
+            this.btnDelveInform.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDelveInform.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelveInform.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnDelveInform.FlatAppearance.BorderSize = 0;
+            this.btnDelveInform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelveInform.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelveInform.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.btnDelveInform.Image = global::POExileDirection.Properties.Resources.icon_re_13;
+            this.btnDelveInform.Location = new System.Drawing.Point(147, 38);
+            this.btnDelveInform.Name = "btnDelveInform";
+            this.btnDelveInform.Size = new System.Drawing.Size(24, 24);
+            this.btnDelveInform.TabIndex = 42;
+            this.btnDelveInform.TabStop = false;
+            this.btnDelveInform.UseVisualStyleBackColor = false;
+            this.btnDelveInform.Click += new System.EventHandler(this.Button3_Click);
+            this.btnDelveInform.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnHideout_Enter);
+            this.btnDelveInform.MouseEnter += new System.EventHandler(this.button3_MouseHover);
+            this.btnDelveInform.MouseHover += new System.EventHandler(this.button3_MouseHover);
             // 
             // labelDND
             // 
@@ -1267,77 +1338,6 @@
             // 
             this.timerParser.Tick += new System.EventHandler(this.TimerParser_Tick);
             // 
-            // xuiSwitch1
-            // 
-            this.xuiSwitch1.BackColor = System.Drawing.Color.Transparent;
-            this.xuiSwitch1.HandleOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.xuiSwitch1.HandleOnColor = System.Drawing.Color.Tan;
-            this.xuiSwitch1.Location = new System.Drawing.Point(59, 39);
-            this.xuiSwitch1.Name = "xuiSwitch1";
-            this.xuiSwitch1.OffColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(98)))), ((int)(((byte)(59)))));
-            this.xuiSwitch1.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(98)))), ((int)(((byte)(59)))));
-            this.xuiSwitch1.Size = new System.Drawing.Size(32, 20);
-            this.xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.Off;
-            this.xuiSwitch1.SwitchStyle = XanderUI.XUISwitch.Style.Horizontal;
-            this.xuiSwitch1.TabIndex = 48;
-            this.xuiSwitch1.Text = "xuiSwitch1";
-            // 
-            // labelSNDOnOff
-            // 
-            this.labelSNDOnOff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.labelSNDOnOff.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.labelSNDOnOff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
-            this.labelSNDOnOff.Location = new System.Drawing.Point(30, 41);
-            this.labelSNDOnOff.Name = "labelSNDOnOff";
-            this.labelSNDOnOff.Size = new System.Drawing.Size(28, 16);
-            this.labelSNDOnOff.TabIndex = 49;
-            this.labelSNDOnOff.Text = "OFF";
-            this.labelSNDOnOff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnSND
-            // 
-            this.btnSND.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
-            this.btnSND.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSND.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSND.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnSND.FlatAppearance.BorderSize = 0;
-            this.btnSND.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSND.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSND.ForeColor = System.Drawing.Color.LightCoral;
-            this.btnSND.Location = new System.Drawing.Point(6, 42);
-            this.btnSND.Name = "btnSND";
-            this.btnSND.Size = new System.Drawing.Size(14, 14);
-            this.btnSND.TabIndex = 38;
-            this.btnSND.TabStop = false;
-            this.btnSND.Text = "img";
-            this.btnSND.UseVisualStyleBackColor = false;
-            this.btnSND.Click += new System.EventHandler(this.Button6_Click);
-            this.btnSND.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnHideout_Enter);
-            this.btnSND.MouseEnter += new System.EventHandler(this.button6_MouseHover);
-            this.btnSND.MouseHover += new System.EventHandler(this.button6_MouseHover);
-            // 
-            // btnDelveInform
-            // 
-            this.btnDelveInform.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
-            this.btnDelveInform.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDelveInform.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelveInform.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnDelveInform.FlatAppearance.BorderSize = 0;
-            this.btnDelveInform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelveInform.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelveInform.ForeColor = System.Drawing.Color.MediumSpringGreen;
-            this.btnDelveInform.Image = global::POExileDirection.Properties.Resources.icon_re_13;
-            this.btnDelveInform.Location = new System.Drawing.Point(147, 38);
-            this.btnDelveInform.Name = "btnDelveInform";
-            this.btnDelveInform.Size = new System.Drawing.Size(24, 24);
-            this.btnDelveInform.TabIndex = 42;
-            this.btnDelveInform.TabStop = false;
-            this.btnDelveInform.UseVisualStyleBackColor = false;
-            this.btnDelveInform.Click += new System.EventHandler(this.Button3_Click);
-            this.btnDelveInform.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnHideout_Enter);
-            this.btnDelveInform.MouseEnter += new System.EventHandler(this.button3_MouseHover);
-            this.btnDelveInform.MouseHover += new System.EventHandler(this.button3_MouseHover);
-            // 
             // ControlForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 11F);
@@ -1455,7 +1455,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label labelSNDOnOff;
         private XanderUI.XUISwitch xuiSwitch1;
-        private System.Windows.Forms.Button btnSND;
+        private System.Windows.Forms.Button btnSOUND;
         private System.Windows.Forms.Button btnDelveInform;
     }
 }

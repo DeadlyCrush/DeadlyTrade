@@ -73,6 +73,21 @@ namespace POExileDirection
 
         [Description("KICK")]
         HOTKEYNAME_KICK,
+
+        [Description("MINIMIZE")]
+        HOTKEYNAME_MINIMIZE,
+
+        [Description("CLOSE")]
+        HOTKEYNAME_CLOSE,
+
+        [Description("SOLD")]
+        HOTKEYNAME_SOLD,
+
+        [Description("WAIT")]
+        HOTKEYNAME_WAIT,
+
+        [Description("THX")]
+        HOTKEYNAME_THX,
     };
 
     public static class HOTKEYNAME_STRINGExtensions

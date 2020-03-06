@@ -25,6 +25,11 @@ namespace POExileDirection
         public string keyInvite;
         public string keyTrade;
         public string keyKick;
+        public string keyMinimize;
+        public string keyClose;
+        public string keySold;
+        public string keyWait;
+        public string keyThx;
 
         // Timer Color
         public string colorStringRGB1;
@@ -147,9 +152,15 @@ namespace POExileDirection
             textBoxPositionSearch.Text = keySearchbyPosition;
             textBoxEXIT.Text = keyEXIT;
 
-            //TODO keyInvite;
-            //TODO keyTrade;
-            //TODO keyKick;
+            // HOTKEYS - Trade Panel.
+            textHotKeyInvite.Text = keyInvite;
+            textHotKeyTradeRequest.Text = keyTrade;
+            textHotKeyKickLeave.Text = keyKick;
+            textHotKeyPanelMinimize.Text = keyMinimize;
+            textHotKeyPanelClose.Text = keyClose;
+            textHotKeySold.Text = keySold;
+            textHotKeyWait.Text = keyWait;
+            textHotKeyThx.Text = keyThx;
 
             // HotKey Use
             if (LauncherForm.g_strYNUseRemainingHOTKEY == "Y")
@@ -180,6 +191,46 @@ namespace POExileDirection
                 checkEmergency.Checked = true;
             else
                 checkEmergency.Checked = false;
+
+            // CTRL+MOUSEWHEEL
+            if (LauncherForm.g_strYNMouseWheelStashTab == "Y")
+                checkMouseWheel.Checked = true;
+            else
+                checkMouseWheel.Checked = false;
+
+            // HotKey Use - Trade Panel.
+            if (LauncherForm.g_strYNUseHOTKEYInvite == "Y")
+                checkInvite.Checked = true;
+            else
+                checkInvite.Checked = false;
+            if (LauncherForm.g_strYNUseHOTKEYTrade == "Y")
+                checkTrade.Checked = true;
+            else
+                checkTrade.Checked = false;
+            if (LauncherForm.g_strYNUseHOTKEYKick == "Y")
+                checkUseHotkeyKick.Checked = true;
+            else
+                checkUseHotkeyKick.Checked = false;
+            if (LauncherForm.g_strYNUseHOTKEYMinimize == "Y")
+                checkTradePanelMinimize.Checked = true;
+            else
+                checkTradePanelMinimize.Checked = false;
+            if (LauncherForm.g_strYNUseHOTKEYClose == "Y")
+                checkTradePanelClose.Checked = true;
+            else
+                checkTradePanelClose.Checked = false;
+            if (LauncherForm.g_strYNUseHOTKEYSold == "Y")
+                checkHotkeySold.Checked = true;
+            else
+                checkHotkeySold.Checked = false;
+            if (LauncherForm.g_strYNUseHOTKEYWait == "Y")
+                checkHotkeyWait.Checked = true;
+            else
+                checkHotkeyWait.Checked = false;
+            if (LauncherForm.g_strYNUseHOTKEYThx == "Y")
+                checkHotkeyThx.Checked = true;
+            else
+                checkHotkeyThx.Checked = false;
         }
         #endregion
 
@@ -268,8 +319,8 @@ namespace POExileDirection
             lbSkillR.Text = ((Keys)LauncherForm.g_Skill4).ToString();
             lbSkillT.Text = ((Keys)LauncherForm.g_Skill5).ToString();
 
-            xuiSliderFlaskVolume.Percentage = LauncherForm.g_FlaskTimerVolume;
-            labelFlaskVolume.Text = "Volume = " + xuiSliderFlaskVolume.Percentage.ToString();
+            xuiSliderVolumeFlask.Percentage = LauncherForm.g_FlaskTimerVolume;
+            labelFlaskVolume.Text = "Volume = " + xuiSliderVolumeFlask.Percentage.ToString();
 
             Set_FlaskImageList();
 
@@ -296,8 +347,9 @@ namespace POExileDirection
         #region [[[[[ GetTradeNotificationSettings() ]]]]]
         private void GetTradeNotificationSettings()
         {
-            xuiSlider1.Percentage = LauncherForm.g_NotifyVolume;
-            labelVolume.Text = "Volume = " + xuiSlider1.Percentage.ToString();
+            xuiSliderVolumeTrade.Percentage = LauncherForm.g_NotifyVolume;
+            xuiSliderVolumeTrade.FilledColor = Color.Tan;
+            labelTradeVolume.Text = "Volume = " + xuiSliderVolumeTrade.Percentage.ToString();
 
             //TODO : Check Use Sound Alert.
 
@@ -319,9 +371,9 @@ namespace POExileDirection
             // TRADING PANEL
             textBoxCharacterNick.Text = parser.GetSetting("CHARACTER", "MYNICK");
             if (parser.GetSetting("CHARACTER", "AUTOKICK") == "Y")
-                checkBoxAutoKick.Checked = true;
+                checkBoxAutoKickTHX.Checked = true;
             else
-                checkBoxAutoKick.Checked = false;
+                checkBoxAutoKickTHX.Checked = false;
 
             try
             {
@@ -469,21 +521,21 @@ namespace POExileDirection
                 LauncherForm.g_strCUSTOM3 = textBoxCustom3.Text;
 
             // AUTO KICK : THX
-            if (checkBoxAutoKick.Checked)
+            if (checkBoxAutoKickTHX.Checked)
                 LauncherForm.g_strTRAutoKick = "Y";
             else
                 LauncherForm.g_strTRAutoKick = "N";
 
             // AUTO KICK : CUSTOM1,2,3
-            if (chkCustom1.Checked)
+            if (checkBoxAutoKickCUSTOM1.Checked)
                 LauncherForm.g_strTRAutoKickCustom1 = "Y";
             else
                 LauncherForm.g_strTRAutoKickCustom1 = "N";
-            if (chkCustom2.Checked)
+            if (checkBoxAutoKickCUSTOM2.Checked)
                 LauncherForm.g_strTRAutoKickCustom2 = "Y";
             else
                 LauncherForm.g_strTRAutoKickCustom2 = "N";
-            if (chkCustom3.Checked)
+            if (checkBoxAutoKickCUSTOM3.Checked)
                 LauncherForm.g_strTRAutoKickCustom3 = "Y";
             else
                 LauncherForm.g_strTRAutoKickCustom3 = "N";
@@ -521,6 +573,22 @@ namespace POExileDirection
                 textBoxPositionSearch.Text = string.Empty;
             else if (strWhich == "EXIT")
                 textBoxEXIT.Text = string.Empty;
+            else if (strWhich == "INVITE")
+                textHotKeyInvite.Text = string.Empty;
+            else if (strWhich == "TRADE")
+                textHotKeyTradeRequest.Text = string.Empty;
+            else if (strWhich == "KICK")
+                textHotKeyKickLeave.Text = string.Empty;
+            else if (strWhich == "MINIMIZE")
+                textHotKeyPanelMinimize.Text = string.Empty;
+            else if (strWhich == "CLOSE")
+                textHotKeyPanelClose.Text = string.Empty;
+            else if (strWhich == "SOLD")
+                textHotKeySold.Text = string.Empty;
+            else if (strWhich == "WAIT")
+                textHotKeyWait.Text = string.Empty;
+            else if (strWhich == "THX")
+                textHotKeyThx.Text = string.Empty;
 
             //Set the backspace button to specify that the user does not want to use a shortcut.
             if (e.KeyData == Keys.Back)
@@ -548,6 +616,22 @@ namespace POExileDirection
                         textBoxPositionSearch.Text = modifier.ToUpper() + ";" + e.KeyCode.ToString();
                     else if (strWhich == "EXIT")
                         textBoxEXIT.Text = modifier.ToUpper() + ";" + e.KeyCode.ToString();
+                    else if (strWhich == "INVITE")
+                        textHotKeyInvite.Text = modifier.ToUpper() + ";" + e.KeyCode.ToString();
+                    else if (strWhich == "TRADE")
+                        textHotKeyTradeRequest.Text = modifier.ToUpper() + ";" + e.KeyCode.ToString();
+                    else if (strWhich == "KICK")
+                        textHotKeyKickLeave.Text = modifier.ToUpper() + ";" + e.KeyCode.ToString();
+                    else if (strWhich == "MINIMIZE")
+                        textHotKeyPanelMinimize.Text = modifier.ToUpper() + ";" + e.KeyCode.ToString();
+                    else if (strWhich == "CLOSE")
+                        textHotKeyPanelClose.Text = modifier.ToUpper() + ";" + e.KeyCode.ToString();
+                    else if (strWhich == "SOLD")
+                        textHotKeySold.Text = modifier.ToUpper() + ";" + e.KeyCode.ToString();
+                    else if (strWhich == "WAIT")
+                        textHotKeyWait.Text = modifier.ToUpper() + ";" + e.KeyCode.ToString();
+                    else if (strWhich == "THX")
+                        textHotKeyThx.Text = modifier.ToUpper() + ";" + e.KeyCode.ToString();
                 }
                 else
                 {
@@ -565,6 +649,22 @@ namespace POExileDirection
                         textBoxPositionSearch.Text = "NONE;" + e.KeyCode.ToString();
                     else if (strWhich == "EXIT")
                         textBoxEXIT.Text = "NONE;" + e.KeyCode.ToString();
+                    else if (strWhich == "INVITE")
+                        textHotKeyInvite.Text = "NONE;" + e.KeyCode.ToString();
+                    else if (strWhich == "TRADE")
+                        textHotKeyTradeRequest.Text = "NONE;" + e.KeyCode.ToString();
+                    else if (strWhich == "KICK")
+                        textHotKeyKickLeave.Text = "NONE;" + e.KeyCode.ToString();
+                    else if (strWhich == "MINIMIZE")
+                        textHotKeyPanelMinimize.Text = "NONE;" + e.KeyCode.ToString();
+                    else if (strWhich == "CLOSE")
+                        textHotKeyPanelClose.Text = "NONE;" + e.KeyCode.ToString();
+                    else if (strWhich == "SOLD")
+                        textHotKeySold.Text = "NONE;" + e.KeyCode.ToString();
+                    else if (strWhich == "WAIT")
+                        textHotKeyWait.Text = "NONE;" + e.KeyCode.ToString();
+                    else if (strWhich == "THX")
+                        textHotKeyThx.Text = "NONE;" + e.KeyCode.ToString();
                 }
             }
 
@@ -584,6 +684,23 @@ namespace POExileDirection
                     textBoxPositionSearch.Text = keySearchbyPosition;
                 else if (strWhich == "EXIT")
                     textBoxEXIT.Text = keySearchbyPosition;
+
+                else if (strWhich == "INVITE")
+                    textHotKeyInvite.Text = string.Empty;
+                else if (strWhich == "TRADE")
+                    textHotKeyTradeRequest.Text = string.Empty;
+                else if (strWhich == "KICK")
+                    textHotKeyKickLeave.Text = string.Empty;
+                else if (strWhich == "MINIMIZE")
+                    textHotKeyPanelMinimize.Text = string.Empty;
+                else if (strWhich == "CLOSE")
+                    textHotKeyPanelClose.Text = string.Empty;
+                else if (strWhich == "SOLD")
+                    textHotKeySold.Text = string.Empty;
+                else if (strWhich == "WAIT")
+                    textHotKeyWait.Text = string.Empty;
+                else if (strWhich == "THX")
+                    textHotKeyThx.Text = string.Empty;
             }
 
             keyRemains = textRemains.Text;
@@ -631,10 +748,63 @@ namespace POExileDirection
         {
             GetSet_HotKey(e, HOTKEYNAME_STRINGExtensions.ToDescriptionString(HOTKEYNAME_STRING.HOTKEYNAME_EXIT));
         }
-        //TODO : Trade Notification Panel HotKeys.
+
+        private void textHotKeyInvite_KeyDown(object sender, KeyEventArgs e)
+        {
+            GetSet_HotKey(e, HOTKEYNAME_STRINGExtensions.ToDescriptionString(HOTKEYNAME_STRING.HOTKEYNAME_INVITE));
+        }
+
+        private void textHotKeyTradeRequest_KeyDown(object sender, KeyEventArgs e)
+        {
+            GetSet_HotKey(e, HOTKEYNAME_STRINGExtensions.ToDescriptionString(HOTKEYNAME_STRING.HOTKEYNAME_TRADE));
+        }
+
+        private void textHotKeyKickLeave_KeyDown(object sender, KeyEventArgs e)
+        {
+            GetSet_HotKey(e, HOTKEYNAME_STRINGExtensions.ToDescriptionString(HOTKEYNAME_STRING.HOTKEYNAME_KICK));
+        }
+
+        private void textHotKeyPanelMinimize_KeyDown(object sender, KeyEventArgs e)
+        {
+            GetSet_HotKey(e, HOTKEYNAME_STRINGExtensions.ToDescriptionString(HOTKEYNAME_STRING.HOTKEYNAME_MINIMIZE));
+        }
+
+        private void textHotKeyPanelClose_KeyDown(object sender, KeyEventArgs e)
+        {
+            GetSet_HotKey(e, HOTKEYNAME_STRINGExtensions.ToDescriptionString(HOTKEYNAME_STRING.HOTKEYNAME_MINIMIZE));
+        }
+
+        private void textHotKeySold_KeyDown(object sender, KeyEventArgs e)
+        {
+            GetSet_HotKey(e, HOTKEYNAME_STRINGExtensions.ToDescriptionString(HOTKEYNAME_STRING.HOTKEYNAME_SOLD));
+        }
+
+        private void textHotKeyWait_KeyDown(object sender, KeyEventArgs e)
+        {
+            GetSet_HotKey(e, HOTKEYNAME_STRINGExtensions.ToDescriptionString(HOTKEYNAME_STRING.HOTKEYNAME_WAIT));
+        }
+
+        private void textHotKeyThx_KeyDown(object sender, KeyEventArgs e)
+        {
+            GetSet_HotKey(e, HOTKEYNAME_STRINGExtensions.ToDescriptionString(HOTKEYNAME_STRING.HOTKEYNAME_THX));
+        }
         #endregion
 
-        #region [[[[[ Text Changed Event ]]]]]
+        #region [[[[[ Text Changed Event - BUTTON TITLE ]]]]]
+        private void textBoxTitleTHX_TextChanged(object sender, EventArgs e)
+        {
+            btnThanks.Text = textBoxTitleTHX.Text;
+        }
+
+        private void textBoxTitleSOLD_TextChanged(object sender, EventArgs e)
+        {
+            btnSold.Text = textBoxTitleSOLD.Text;
+        }
+
+        private void textBoxTitleWAIT_TextChanged(object sender, EventArgs e)
+        {
+            btnWaitPls.Text = textBoxTitleWAIT.Text;
+        }
         private void textBoxCustomTitle1_TextChanged(object sender, EventArgs e)
         {
             btnCustom1.Text = textBoxCustomTitle1.Text;
@@ -648,6 +818,10 @@ namespace POExileDirection
         private void textBoxCustomTitle3_TextChanged(object sender, EventArgs e)
         {
             btnCustom3.Text = textBoxCustomTitle3.Text;
+        }
+        private void textBoxCustomTitle4_TextChanged(object sender, EventArgs e)
+        {
+            btnCustom4.Text = textBoxCustomTitle4.Text;
         }
         #endregion
 
@@ -674,15 +848,6 @@ namespace POExileDirection
         #endregion
 
         #region [[[[[ Dispose & Close ]]]]]
-        private void btnCloseSettings_Click(object sender, EventArgs e)
-        {
-            DisposeGarbage();
-            _nTabIndex = FlatSettingTab.SelectedIndex;
-
-            btnCloseSettings.DialogResult = DialogResult.Cancel;
-            Close();
-        }
-
         private void DisposeGarbage()
         {
             pictureFlask1.Dispose();
@@ -691,6 +856,20 @@ namespace POExileDirection
             pictureFlask4.Dispose();
             pictureFlask5.Dispose();
         }
+        #endregion
+
+        #region [[[[[ Volume Slider - Trade Notification, Flask Timer ]]]]]
+        private void xuiSliderVolumeTrade_MouseMove(object sender, MouseEventArgs e)
+        {
+            LauncherForm.g_NotifyVolume = xuiSliderVolumeTrade.Percentage;
+            labelTradeVolume.Text = "Volume = " + xuiSliderVolumeTrade.Percentage.ToString();
+        }
+
+        private void xuiSliderVolumeFlask_MouseMove(object sender, MouseEventArgs e)
+        {
+            LauncherForm.g_FlaskTimerVolume = xuiSliderVolumeFlask.Percentage;
+            labelFlaskTimerVolume.Text = "Volume = " + xuiSliderVolumeFlask.Percentage.ToString();
+        } 
         #endregion
     }
 }

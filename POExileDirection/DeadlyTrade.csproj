@@ -808,6 +808,7 @@
     <None Include="Resources\top_bar_bg_symbol_800_40.png" />
     <None Include="Resources\top_bar_bg_symbol.png" />
     <None Include="Resources\CI.bmp" />
+    <None Include="Resources\top_bg.png" />
     <Content Include="res\Currency\curr_alch.png" />
     <Content Include="res\Currency\curr_alt.png" />
     <Content Include="res\Currency\curr_ancient.png" />

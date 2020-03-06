@@ -70,6 +70,14 @@ namespace POExileDirection
         public static string g_strYNUseHideoutHOTKEY { get; set; }
         public static string g_strYNUseIncursionALVAHOTKEY { get; set; }
         public static string g_strYNUseAtlasZANAHOTKEY { get; set; }
+        public static string g_strYNUseHOTKEYInvite { get; set; }
+        public static string g_strYNUseHOTKEYTrade { get; set; }
+        public static string g_strYNUseHOTKEYKick { get; set; }
+        public static string g_strYNUseHOTKEYMinimize { get; set; }
+        public static string g_strYNUseHOTKEYClose { get; set; }
+        public static string g_strYNUseHOTKEYSold { get; set; }
+        public static string g_strYNUseHOTKEYWait { get; set; }
+        public static string g_strYNUseHOTKEYThx { get; set; }
         #endregion
 
         #region ⨌⨌ for FLASK TIMER ⨌⨌

@@ -289,6 +289,9 @@
             this.panelTop = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.openFileDialogJUN = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialogALVA = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialogZANA = new System.Windows.Forms.OpenFileDialog();
             this.FlatSettingTab.SuspendLayout();
             this.tabHotKeys.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -3351,6 +3354,7 @@
             this.xuiCheckBoxCustomZANA.TabIndex = 109;
             this.xuiCheckBoxCustomZANA.Text = "Use Custom Image";
             this.xuiCheckBoxCustomZANA.TickThickness = 2;
+            this.xuiCheckBoxCustomZANA.CheckedStateChanged += new System.EventHandler(this.xuiCheckBoxCustomZANA_CheckedStateChanged);
             // 
             // xuiCheckBoxDefaultZANA
             // 
@@ -3366,6 +3370,7 @@
             this.xuiCheckBoxDefaultZANA.TabIndex = 109;
             this.xuiCheckBoxDefaultZANA.Text = "Default Image";
             this.xuiCheckBoxDefaultZANA.TickThickness = 3;
+            this.xuiCheckBoxDefaultZANA.CheckedStateChanged += new System.EventHandler(this.xuiCheckBoxDefaultZANA_CheckedStateChanged);
             // 
             // xuiCheckBoxCustomALVA
             // 
@@ -3381,6 +3386,7 @@
             this.xuiCheckBoxCustomALVA.TabIndex = 109;
             this.xuiCheckBoxCustomALVA.Text = "Use Custom Image";
             this.xuiCheckBoxCustomALVA.TickThickness = 2;
+            this.xuiCheckBoxCustomALVA.CheckedStateChanged += new System.EventHandler(this.xuiCheckBoxCustomALVA_CheckedStateChanged);
             // 
             // xuiCheckBoxDefaultALVA
             // 
@@ -3396,6 +3402,7 @@
             this.xuiCheckBoxDefaultALVA.TabIndex = 109;
             this.xuiCheckBoxDefaultALVA.Text = "Default Image";
             this.xuiCheckBoxDefaultALVA.TickThickness = 3;
+            this.xuiCheckBoxDefaultALVA.CheckedStateChanged += new System.EventHandler(this.xuiCheckBoxDefaultALVA_CheckedStateChanged);
             // 
             // xuiCheckBoxCustomJUN
             // 
@@ -3411,6 +3418,7 @@
             this.xuiCheckBoxCustomJUN.TabIndex = 109;
             this.xuiCheckBoxCustomJUN.Text = "Use Custom Image";
             this.xuiCheckBoxCustomJUN.TickThickness = 2;
+            this.xuiCheckBoxCustomJUN.CheckedStateChanged += new System.EventHandler(this.xuiCheckBoxCustomJUN_CheckedStateChanged);
             // 
             // xuiCheckBoxDefaultJUN
             // 
@@ -3426,6 +3434,7 @@
             this.xuiCheckBoxDefaultJUN.TabIndex = 109;
             this.xuiCheckBoxDefaultJUN.Text = "Default Image";
             this.xuiCheckBoxDefaultJUN.TickThickness = 3;
+            this.xuiCheckBoxDefaultJUN.CheckedStateChanged += new System.EventHandler(this.xuiCheckBoxDefaultJUN_CheckedStateChanged);
             // 
             // button1
             // 
@@ -3495,7 +3504,7 @@
             this.btnBrowseZANA.TabIndex = 105;
             this.btnBrowseZANA.Text = "BROWSE FILE";
             this.btnBrowseZANA.UseVisualStyleBackColor = false;
-            this.btnBrowseZANA.Click += new System.EventHandler(this.btnSaveTab5_Click);
+            this.btnBrowseZANA.Click += new System.EventHandler(this.btnBrowseZANA_Click);
             // 
             // btnBrowseALVA
             // 
@@ -3511,7 +3520,7 @@
             this.btnBrowseALVA.TabIndex = 105;
             this.btnBrowseALVA.Text = "BROWSE FILE";
             this.btnBrowseALVA.UseVisualStyleBackColor = false;
-            this.btnBrowseALVA.Click += new System.EventHandler(this.btnSaveTab5_Click);
+            this.btnBrowseALVA.Click += new System.EventHandler(this.btnBrowseALVA_Click);
             // 
             // btnBrowseJUN
             // 
@@ -3527,7 +3536,7 @@
             this.btnBrowseJUN.TabIndex = 105;
             this.btnBrowseJUN.Text = "BROWSE FILE";
             this.btnBrowseJUN.UseVisualStyleBackColor = false;
-            this.btnBrowseJUN.Click += new System.EventHandler(this.btnSaveTab5_Click);
+            this.btnBrowseJUN.Click += new System.EventHandler(this.btnBrowseJUN_Click);
             // 
             // btnSaveTab5
             // 
@@ -4177,5 +4186,8 @@
         private System.Windows.Forms.CheckBox checkAutoCloseSold;
         private System.Windows.Forms.CheckBox checkAutoCloseThx;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.OpenFileDialog openFileDialogJUN;
+        private System.Windows.Forms.OpenFileDialog openFileDialogALVA;
+        private System.Windows.Forms.OpenFileDialog openFileDialogZANA;
     }
 }

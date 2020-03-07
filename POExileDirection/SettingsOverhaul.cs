@@ -492,7 +492,12 @@ namespace POExileDirection
 
         private void GetOverlaySettings()
         {
-            ;
+            labelPathJUN.Text = ControlForm.g_strImagePath[0];
+            Bitmap bmp = ResizePictureKeepAspecRatio(ControlForm.g_strImagePath[0], 200, 150);
+            pictureBoxJUN.Image = bmp;
+
+            labelPathALVA.Text = ControlForm.g_strImagePath[1];
+            labelPathZANA.Text = ControlForm.g_strImagePath[2];
         }
 
         private void GetHelpSettings()
@@ -1424,6 +1429,132 @@ namespace POExileDirection
             DisposeGarbage();
             btnCancelTab7.DialogResult = DialogResult.Cancel;
             Close();
+        }
+        #endregion
+
+        #region [[[[[ Overlay Image Check State Changed - Default / Custom ]]]]]
+        System.Drawing.Bitmap OriginBMP;
+        System.Drawing.Bitmap NewBMP;
+        private System.Drawing.Bitmap ResizePictureKeepAspecRatio(string strImagePath, int nWidth, int nHeight)
+        {
+            OriginBMP = new System.Drawing.Bitmap(strImagePath);
+
+            int iWidth;
+            int iHeight;
+            if ((nHeight == 0) && (nWidth != 0))
+            {
+                iWidth = nWidth;
+                iHeight = (OriginBMP.Size.Height * iWidth / OriginBMP.Size.Width);
+            }
+            else if ((nHeight != 0) && (nWidth == 0))
+            {
+                iHeight = nHeight;
+                iWidth = (OriginBMP.Size.Width * iHeight / OriginBMP.Size.Height);
+            }
+            else
+            {
+                iWidth = nWidth;
+                iHeight = nHeight;
+            }
+
+            NewBMP = new System.Drawing.Bitmap(iWidth, iHeight);
+            return NewBMP;
+
+            /*graphicTemp = System.Drawing.Graphics.FromImage(NewBMP);
+            graphicTemp.CompositingMode = System.Drawing.Drawing2D.CompositingMode.SourceOver;
+            graphicTemp.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+            graphicTemp.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            graphicTemp.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+            graphicTemp.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            graphicTemp.DrawImage(bmp, 0, 0, iWidth, iHeight);
+            graphicTemp.Dispose();
+            System.Drawing.Imaging.EncoderParameters encoderParams = new System.Drawing.Imaging.EncoderParameters();
+            System.Drawing.Imaging.EncoderParameter encoderParam = new System.Drawing.Imaging.EncoderParameter(System.Drawing.Imaging.Encoder.Quality, ImageQuality);
+            encoderParams.Param[0] = encoderParam;
+            System.Drawing.Imaging.ImageCodecInfo[] arrayICI = System.Drawing.Imaging.ImageCodecInfo.GetImageEncoders();
+            for (int fwd = 0; fwd <= arrayICI.Length - 1; fwd++)
+            {
+                if (arrayICI[fwd].FormatDescription.Equals("JPEG"))
+                {
+                    NewBMP.Save(Des, arrayICI[fwd], encoderParams);
+                }
+            }
+
+            NewBMP.Dispose();
+            bmp.Dispose();*/
+        }
+
+        private void xuiCheckBoxDefaultJUN_CheckedStateChanged(object sender, EventArgs e)
+        {
+            if(xuiCheckBoxDefaultJUN.Checked == true)
+            {
+                ControlForm.g_strImagePath[0] = @".\DeadlyInform\Betrayal.png";
+                labelPathJUN.Text = ControlForm.g_strImagePath[0];
+                btnBrowseJUN.Enabled = false;
+
+                xuiCheckBoxCustomJUN.Checked = false;
+            }
+            else
+            {
+                xuiCheckBoxCustomJUN.Checked = true;
+            }
+        }
+
+        private void xuiCheckBoxCustomJUN_CheckedStateChanged(object sender, EventArgs e)
+        {
+            if (xuiCheckBoxCustomJUN.Checked == true)
+            {
+                btnBrowseJUN.Enabled = true;
+                xuiCheckBoxDefaultJUN.Checked = false;
+            }
+            else
+            {
+                xuiCheckBoxDefaultJUN.Checked = true;
+            }
+        }
+
+        private void btnBrowseJUN_Click(object sender, EventArgs e)
+        {
+            if (openFileDialogJUN.ShowDialog() == DialogResult.OK)
+                labelPathJUN.Text = openFileDialogJUN.FileName;
+
+            if (!String.IsNullOrEmpty(labelPathJUN.Text))
+            {
+                ControlForm.g_strImagePath[0] = labelPathJUN.Text;
+                Bitmap bmp = ResizePictureKeepAspecRatio(ControlForm.g_strImagePath[0], 200, 150);
+                pictureBoxJUN.Image = bmp;
+            }
+        }
+
+        
+        private void xuiCheckBoxDefaultALVA_CheckedStateChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void xuiCheckBoxCustomALVA_CheckedStateChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBrowseALVA_Click(object sender, EventArgs e)
+        {
+
+        }
+                
+        private void xuiCheckBoxDefaultZANA_CheckedStateChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void xuiCheckBoxCustomZANA_CheckedStateChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBrowseZANA_Click(object sender, EventArgs e)
+        {
+
         }
         #endregion
 

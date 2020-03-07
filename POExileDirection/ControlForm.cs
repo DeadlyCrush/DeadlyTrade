@@ -115,7 +115,7 @@ namespace POExileDirection
 
         #region [[[[[ Child Forms ]]]]]
         // OVERLAY
-        string[] strImagePath = new string[3];
+        public static string[] g_strImagePath = new string[3];
 
         // QUEST HELPER
         MainForm frmMainForm = null;
@@ -902,7 +902,7 @@ namespace POExileDirection
         {
             if (!bIMGOvelayActivatedMAP)
                 frmIMGOverlayMAP = new ImageOverlayFormMap();
-            frmIMGOverlayMAP.m_strImagePath = strImagePath[2];
+            frmIMGOverlayMAP.m_strImagePath = g_strImagePath[2];
             frmIMGOverlayMAP.nZoom = 0;
             frmIMGOverlayMAP.Load_Image();
             IMGOverlayForm_Show_Hide((int)OVERLAY_WHAT.OVER_MAP);
@@ -912,7 +912,7 @@ namespace POExileDirection
         {
             if (!bIMGOvelayActivatedALVA)
                 frmIMGOverlayALVA = new ImageOverlayFormAlva();
-            frmIMGOverlayALVA.m_strImagePath = strImagePath[1];
+            frmIMGOverlayALVA.m_strImagePath = g_strImagePath[1];
             frmIMGOverlayALVA.nZoom = 0;
             frmIMGOverlayALVA.Load_Image();
             IMGOverlayForm_Show_Hide((int)OVERLAY_WHAT.OVER_ALVA);
@@ -924,7 +924,7 @@ namespace POExileDirection
                 frmIMGOverlay = new DeadlySyndicateForm();*/ // RollBack to Image File Overlay 1.3.9.0 Ver.
             if (!bIMGOvelayActivated)
                 frmIMGOverlay = new ImageOverlayForm();
-            frmIMGOverlay.m_strImagePath = strImagePath[0];
+            frmIMGOverlay.m_strImagePath = g_strImagePath[0];
             frmIMGOverlay.nZoom = 0;
             frmIMGOverlay.Load_Image();
             IMGOverlayForm_Show_Hide((int)OVERLAY_WHAT.OVER_JUN);
@@ -2487,17 +2487,17 @@ namespace POExileDirection
                 string strZANADefualt = parser.GetSetting("OVERLAY", "ZANADEFAULT");
 
                 // Get Image Path
-                strImagePath[0] = parser.GetSetting("OVERLAY", "JUN"); // @".\DeadlyInform\Betrayal.png";   // JUN
-                if(String.IsNullOrEmpty(strImagePath[0]) || strJUNDefualt.Trim().ToUpper()=="Y")
-                    strImagePath[0] = @".\DeadlyInform\Betrayal.png";
+                g_strImagePath[0] = parser.GetSetting("OVERLAY", "JUN"); // @".\DeadlyInform\Betrayal.png";   // JUN
+                if(String.IsNullOrEmpty(g_strImagePath[0]) || strJUNDefualt.Trim().ToUpper()=="Y")
+                    g_strImagePath[0] = @".\DeadlyInform\Betrayal.png";
 
-                strImagePath[1] = parser.GetSetting("OVERLAY", "ALVA"); // @".\DeadlyInform\Incursion.png";  // ALVA
-                if (String.IsNullOrEmpty(strImagePath[1]) || strALVADefualt.Trim().ToUpper() == "Y")
-                    strImagePath[1] = @".\DeadlyInform\Incursion.png";
+                g_strImagePath[1] = parser.GetSetting("OVERLAY", "ALVA"); // @".\DeadlyInform\Incursion.png";  // ALVA
+                if (String.IsNullOrEmpty(g_strImagePath[1]) || strALVADefualt.Trim().ToUpper() == "Y")
+                    g_strImagePath[1] = @".\DeadlyInform\Incursion.png";
 
-                strImagePath[2] = parser.GetSetting("OVERLAY", "ZANA"); // @".\DeadlyInform\Atlas.png";      // ZANA
-                if (String.IsNullOrEmpty(strImagePath[2]) || strZANADefualt.Trim().ToUpper() == "Y")
-                    strImagePath[2] = @".\DeadlyInform\Atlas.png";
+                g_strImagePath[2] = parser.GetSetting("OVERLAY", "ZANA"); // @".\DeadlyInform\Atlas.png";      // ZANA
+                if (String.IsNullOrEmpty(g_strImagePath[2]) || strZANADefualt.Trim().ToUpper() == "Y")
+                    g_strImagePath[2] = @".\DeadlyInform\Atlas.png";
 
                 // HOT KEYS
                 keyMAINRemains = parser.GetSetting("HOTKEY", "R");
@@ -2601,7 +2601,7 @@ namespace POExileDirection
             if (!bIMGOvelayActivated)
                 frmIMGOverlay = new ImageOverlayForm();
             // JUN
-            frmIMGOverlay.m_strImagePath = strImagePath[0];
+            frmIMGOverlay.m_g_strImagePath = strImagePath[0];
             frmIMGOverlay.nZoom = 0;
             frmIMGOverlay.Load_Image();
             IMGOverlayForm_Show_Hide((int)OVERLAY_WHAT.OVER_JUN);
@@ -2612,7 +2612,7 @@ namespace POExileDirection
             if (!bIMGOvelayActivatedALVA)
                 frmIMGOverlayALVA = new ImageOverlayFormAlva();
             // ALVA
-            frmIMGOverlayALVA.m_strImagePath = strImagePath[1];
+            frmIMGOverlayALVA.m_strImagePath = g_strImagePath[1];
             frmIMGOverlayALVA.nZoom = 0;
             frmIMGOverlayALVA.Load_Image();
             IMGOverlayForm_Show_Hide((int)OVERLAY_WHAT.OVER_ALVA);
@@ -2623,7 +2623,7 @@ namespace POExileDirection
             if (!bIMGOvelayActivatedMAP)
                 frmIMGOverlayMAP = new ImageOverlayFormMap();
             // ZANA
-            frmIMGOverlayMAP.m_strImagePath = strImagePath[2];
+            frmIMGOverlayMAP.m_strImagePath = g_strImagePath[2];
             frmIMGOverlayMAP.nZoom = 0;
             frmIMGOverlayMAP.Load_Image();
             IMGOverlayForm_Show_Hide((int)OVERLAY_WHAT.OVER_MAP);
@@ -4173,7 +4173,7 @@ namespace POExileDirection
             if (!bIMGOvelayActivatedMAP)
                 frmIMGOverlayMAP = new ImageOverlayFormMap();
             // ZANA
-            frmIMGOverlayMAP.m_strImagePath = strImagePath[2];
+            frmIMGOverlayMAP.m_strImagePath = g_strImagePath[2];
             frmIMGOverlayMAP.nZoom = 0;
             frmIMGOverlayMAP.Load_Image();
             IMGOverlayForm_Show_Hide((int)OVERLAY_WHAT.OVER_MAP);

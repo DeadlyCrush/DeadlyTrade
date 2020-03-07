@@ -135,6 +135,7 @@
             this.Name = "ImageOverlayForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "ImageOverlayFormAlva";
             this.TopMost = true;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ImageOverlayForm_FormClosing);

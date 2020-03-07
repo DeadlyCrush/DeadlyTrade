@@ -238,6 +238,14 @@
             this.btnS2 = new System.Windows.Forms.Button();
             this.btnS1 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.pictureBoxZANA = new System.Windows.Forms.PictureBox();
+            this.pictureBoxALVA = new System.Windows.Forms.PictureBox();
+            this.pictureBoxJUN = new System.Windows.Forms.PictureBox();
+            this.xuiCheckBoxCustomJUN = new XanderUI.XUICheckBox();
+            this.xuiCheckBoxDefaultJUN = new XanderUI.XUICheckBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.btnSaveTab5 = new System.Windows.Forms.Button();
             this.btnCancelTab5 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -253,6 +261,16 @@
             this.panelTop = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.xuiCheckBoxDefaultALVA = new XanderUI.XUICheckBox();
+            this.xuiCheckBoxCustomALVA = new XanderUI.XUICheckBox();
+            this.xuiCheckBoxDefaultZANA = new XanderUI.XUICheckBox();
+            this.xuiCheckBoxCustomZANA = new XanderUI.XUICheckBox();
+            this.labelPathJUN = new System.Windows.Forms.Label();
+            this.labelPathALVA = new System.Windows.Forms.Label();
+            this.labelPathZANA = new System.Windows.Forms.Label();
+            this.btnBrowseJUN = new System.Windows.Forms.Button();
+            this.btnBrowseALVA = new System.Windows.Forms.Button();
+            this.btnBrowseZANA = new System.Windows.Forms.Button();
             this.FlatSettingTab.SuspendLayout();
             this.tabHotKeys.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -270,6 +288,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask1)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxZANA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxALVA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJUN)).BeginInit();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.panelTop.SuspendLayout();
@@ -3096,6 +3117,24 @@
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.tabPage5.Controls.Add(this.labelPathZANA);
+            this.tabPage5.Controls.Add(this.labelPathALVA);
+            this.tabPage5.Controls.Add(this.labelPathJUN);
+            this.tabPage5.Controls.Add(this.pictureBoxZANA);
+            this.tabPage5.Controls.Add(this.pictureBoxALVA);
+            this.tabPage5.Controls.Add(this.pictureBoxJUN);
+            this.tabPage5.Controls.Add(this.xuiCheckBoxCustomZANA);
+            this.tabPage5.Controls.Add(this.xuiCheckBoxDefaultZANA);
+            this.tabPage5.Controls.Add(this.xuiCheckBoxCustomALVA);
+            this.tabPage5.Controls.Add(this.xuiCheckBoxDefaultALVA);
+            this.tabPage5.Controls.Add(this.xuiCheckBoxCustomJUN);
+            this.tabPage5.Controls.Add(this.xuiCheckBoxDefaultJUN);
+            this.tabPage5.Controls.Add(this.button1);
+            this.tabPage5.Controls.Add(this.button6);
+            this.tabPage5.Controls.Add(this.button11);
+            this.tabPage5.Controls.Add(this.btnBrowseZANA);
+            this.tabPage5.Controls.Add(this.btnBrowseALVA);
+            this.tabPage5.Controls.Add(this.btnBrowseJUN);
             this.tabPage5.Controls.Add(this.btnSaveTab5);
             this.tabPage5.Controls.Add(this.btnCancelTab5);
             this.tabPage5.Controls.Add(this.label7);
@@ -3105,6 +3144,114 @@
             this.tabPage5.Size = new System.Drawing.Size(792, 529);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Overlay";
+            // 
+            // pictureBoxZANA
+            // 
+            this.pictureBoxZANA.Location = new System.Drawing.Point(55, 325);
+            this.pictureBoxZANA.Name = "pictureBoxZANA";
+            this.pictureBoxZANA.Size = new System.Drawing.Size(200, 150);
+            this.pictureBoxZANA.TabIndex = 110;
+            this.pictureBoxZANA.TabStop = false;
+            // 
+            // pictureBoxALVA
+            // 
+            this.pictureBoxALVA.Location = new System.Drawing.Point(55, 169);
+            this.pictureBoxALVA.Name = "pictureBoxALVA";
+            this.pictureBoxALVA.Size = new System.Drawing.Size(200, 150);
+            this.pictureBoxALVA.TabIndex = 110;
+            this.pictureBoxALVA.TabStop = false;
+            // 
+            // pictureBoxJUN
+            // 
+            this.pictureBoxJUN.Location = new System.Drawing.Point(55, 13);
+            this.pictureBoxJUN.Name = "pictureBoxJUN";
+            this.pictureBoxJUN.Size = new System.Drawing.Size(200, 150);
+            this.pictureBoxJUN.TabIndex = 110;
+            this.pictureBoxJUN.TabStop = false;
+            // 
+            // xuiCheckBoxCustomJUN
+            // 
+            this.xuiCheckBoxCustomJUN.CheckboxCheckColor = System.Drawing.Color.WhiteSmoke;
+            this.xuiCheckBoxCustomJUN.CheckboxColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(145)))), ((int)(((byte)(130)))));
+            this.xuiCheckBoxCustomJUN.CheckboxHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.xuiCheckBoxCustomJUN.CheckboxStyle = XanderUI.XUICheckBox.Style.Material;
+            this.xuiCheckBoxCustomJUN.Checked = false;
+            this.xuiCheckBoxCustomJUN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.xuiCheckBoxCustomJUN.Location = new System.Drawing.Point(304, 93);
+            this.xuiCheckBoxCustomJUN.Name = "xuiCheckBoxCustomJUN";
+            this.xuiCheckBoxCustomJUN.Size = new System.Drawing.Size(136, 18);
+            this.xuiCheckBoxCustomJUN.TabIndex = 109;
+            this.xuiCheckBoxCustomJUN.Text = "Use Custom Image";
+            this.xuiCheckBoxCustomJUN.TickThickness = 2;
+            // 
+            // xuiCheckBoxDefaultJUN
+            // 
+            this.xuiCheckBoxDefaultJUN.CheckboxCheckColor = System.Drawing.Color.WhiteSmoke;
+            this.xuiCheckBoxDefaultJUN.CheckboxColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(145)))), ((int)(((byte)(130)))));
+            this.xuiCheckBoxDefaultJUN.CheckboxHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.xuiCheckBoxDefaultJUN.CheckboxStyle = XanderUI.XUICheckBox.Style.Material;
+            this.xuiCheckBoxDefaultJUN.Checked = true;
+            this.xuiCheckBoxDefaultJUN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.xuiCheckBoxDefaultJUN.Location = new System.Drawing.Point(304, 69);
+            this.xuiCheckBoxDefaultJUN.Name = "xuiCheckBoxDefaultJUN";
+            this.xuiCheckBoxDefaultJUN.Size = new System.Drawing.Size(107, 18);
+            this.xuiCheckBoxDefaultJUN.TabIndex = 109;
+            this.xuiCheckBoxDefaultJUN.Text = "Default Image";
+            this.xuiCheckBoxDefaultJUN.TickThickness = 3;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Moccasin;
+            this.button1.Image = global::POExileDirection.Properties.Resources.icon_re_05;
+            this.button1.Location = new System.Drawing.Point(274, 388);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(24, 24);
+            this.button1.TabIndex = 108;
+            this.button1.TabStop = false;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.button6.Image = global::POExileDirection.Properties.Resources.icon_re_13;
+            this.button6.Location = new System.Drawing.Point(274, 233);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(24, 24);
+            this.button6.TabIndex = 107;
+            this.button6.TabStop = false;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button11.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button11.Image = global::POExileDirection.Properties.Resources.icon_re_12;
+            this.button11.Location = new System.Drawing.Point(274, 78);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(24, 24);
+            this.button11.TabIndex = 106;
+            this.button11.TabStop = false;
+            this.button11.UseVisualStyleBackColor = false;
             // 
             // btnSaveTab5
             // 
@@ -3300,6 +3447,147 @@
             this.label16.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label16_MouseMove);
             this.label16.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label16_MouseUp);
             // 
+            // xuiCheckBoxDefaultALVA
+            // 
+            this.xuiCheckBoxDefaultALVA.CheckboxCheckColor = System.Drawing.Color.WhiteSmoke;
+            this.xuiCheckBoxDefaultALVA.CheckboxColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(145)))), ((int)(((byte)(130)))));
+            this.xuiCheckBoxDefaultALVA.CheckboxHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.xuiCheckBoxDefaultALVA.CheckboxStyle = XanderUI.XUICheckBox.Style.Material;
+            this.xuiCheckBoxDefaultALVA.Checked = true;
+            this.xuiCheckBoxDefaultALVA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.xuiCheckBoxDefaultALVA.Location = new System.Drawing.Point(304, 224);
+            this.xuiCheckBoxDefaultALVA.Name = "xuiCheckBoxDefaultALVA";
+            this.xuiCheckBoxDefaultALVA.Size = new System.Drawing.Size(107, 18);
+            this.xuiCheckBoxDefaultALVA.TabIndex = 109;
+            this.xuiCheckBoxDefaultALVA.Text = "Default Image";
+            this.xuiCheckBoxDefaultALVA.TickThickness = 3;
+            // 
+            // xuiCheckBoxCustomALVA
+            // 
+            this.xuiCheckBoxCustomALVA.CheckboxCheckColor = System.Drawing.Color.WhiteSmoke;
+            this.xuiCheckBoxCustomALVA.CheckboxColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(145)))), ((int)(((byte)(130)))));
+            this.xuiCheckBoxCustomALVA.CheckboxHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.xuiCheckBoxCustomALVA.CheckboxStyle = XanderUI.XUICheckBox.Style.Material;
+            this.xuiCheckBoxCustomALVA.Checked = false;
+            this.xuiCheckBoxCustomALVA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.xuiCheckBoxCustomALVA.Location = new System.Drawing.Point(304, 248);
+            this.xuiCheckBoxCustomALVA.Name = "xuiCheckBoxCustomALVA";
+            this.xuiCheckBoxCustomALVA.Size = new System.Drawing.Size(136, 18);
+            this.xuiCheckBoxCustomALVA.TabIndex = 109;
+            this.xuiCheckBoxCustomALVA.Text = "Use Custom Image";
+            this.xuiCheckBoxCustomALVA.TickThickness = 2;
+            // 
+            // xuiCheckBoxDefaultZANA
+            // 
+            this.xuiCheckBoxDefaultZANA.CheckboxCheckColor = System.Drawing.Color.WhiteSmoke;
+            this.xuiCheckBoxDefaultZANA.CheckboxColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(145)))), ((int)(((byte)(130)))));
+            this.xuiCheckBoxDefaultZANA.CheckboxHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.xuiCheckBoxDefaultZANA.CheckboxStyle = XanderUI.XUICheckBox.Style.Material;
+            this.xuiCheckBoxDefaultZANA.Checked = true;
+            this.xuiCheckBoxDefaultZANA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.xuiCheckBoxDefaultZANA.Location = new System.Drawing.Point(304, 379);
+            this.xuiCheckBoxDefaultZANA.Name = "xuiCheckBoxDefaultZANA";
+            this.xuiCheckBoxDefaultZANA.Size = new System.Drawing.Size(107, 18);
+            this.xuiCheckBoxDefaultZANA.TabIndex = 109;
+            this.xuiCheckBoxDefaultZANA.Text = "Default Image";
+            this.xuiCheckBoxDefaultZANA.TickThickness = 3;
+            // 
+            // xuiCheckBoxCustomZANA
+            // 
+            this.xuiCheckBoxCustomZANA.CheckboxCheckColor = System.Drawing.Color.WhiteSmoke;
+            this.xuiCheckBoxCustomZANA.CheckboxColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(145)))), ((int)(((byte)(130)))));
+            this.xuiCheckBoxCustomZANA.CheckboxHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.xuiCheckBoxCustomZANA.CheckboxStyle = XanderUI.XUICheckBox.Style.Material;
+            this.xuiCheckBoxCustomZANA.Checked = false;
+            this.xuiCheckBoxCustomZANA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.xuiCheckBoxCustomZANA.Location = new System.Drawing.Point(304, 403);
+            this.xuiCheckBoxCustomZANA.Name = "xuiCheckBoxCustomZANA";
+            this.xuiCheckBoxCustomZANA.Size = new System.Drawing.Size(136, 18);
+            this.xuiCheckBoxCustomZANA.TabIndex = 109;
+            this.xuiCheckBoxCustomZANA.Text = "Use Custom Image";
+            this.xuiCheckBoxCustomZANA.TickThickness = 2;
+            // 
+            // labelPathJUN
+            // 
+            this.labelPathJUN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelPathJUN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
+            this.labelPathJUN.Location = new System.Drawing.Point(274, 14);
+            this.labelPathJUN.Name = "labelPathJUN";
+            this.labelPathJUN.Size = new System.Drawing.Size(447, 20);
+            this.labelPathJUN.TabIndex = 111;
+            this.labelPathJUN.Text = "D:\\DeadlyTrade\\DeadlyInform\\jun.png";
+            this.labelPathJUN.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelPathALVA
+            // 
+            this.labelPathALVA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelPathALVA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
+            this.labelPathALVA.Location = new System.Drawing.Point(274, 170);
+            this.labelPathALVA.Name = "labelPathALVA";
+            this.labelPathALVA.Size = new System.Drawing.Size(447, 20);
+            this.labelPathALVA.TabIndex = 111;
+            this.labelPathALVA.Text = "D:\\DeadlyTrade\\DeadlyInform\\alva.png";
+            this.labelPathALVA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelPathZANA
+            // 
+            this.labelPathZANA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelPathZANA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
+            this.labelPathZANA.Location = new System.Drawing.Point(274, 326);
+            this.labelPathZANA.Name = "labelPathZANA";
+            this.labelPathZANA.Size = new System.Drawing.Size(447, 20);
+            this.labelPathZANA.TabIndex = 111;
+            this.labelPathZANA.Text = "D:\\DeadlyTrade\\DeadlyInform\\zana.png";
+            this.labelPathZANA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnBrowseJUN
+            // 
+            this.btnBrowseJUN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnBrowseJUN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBrowseJUN.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnBrowseJUN.FlatAppearance.BorderColor = System.Drawing.Color.Tan;
+            this.btnBrowseJUN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBrowseJUN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.btnBrowseJUN.Location = new System.Drawing.Point(592, 68);
+            this.btnBrowseJUN.Name = "btnBrowseJUN";
+            this.btnBrowseJUN.Size = new System.Drawing.Size(129, 42);
+            this.btnBrowseJUN.TabIndex = 105;
+            this.btnBrowseJUN.Text = "BROWSE FILE";
+            this.btnBrowseJUN.UseVisualStyleBackColor = false;
+            this.btnBrowseJUN.Click += new System.EventHandler(this.btnSaveTab5_Click);
+            // 
+            // btnBrowseALVA
+            // 
+            this.btnBrowseALVA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnBrowseALVA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBrowseALVA.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnBrowseALVA.FlatAppearance.BorderColor = System.Drawing.Color.Tan;
+            this.btnBrowseALVA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBrowseALVA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.btnBrowseALVA.Location = new System.Drawing.Point(592, 223);
+            this.btnBrowseALVA.Name = "btnBrowseALVA";
+            this.btnBrowseALVA.Size = new System.Drawing.Size(129, 42);
+            this.btnBrowseALVA.TabIndex = 105;
+            this.btnBrowseALVA.Text = "BROWSE FILE";
+            this.btnBrowseALVA.UseVisualStyleBackColor = false;
+            this.btnBrowseALVA.Click += new System.EventHandler(this.btnSaveTab5_Click);
+            // 
+            // btnBrowseZANA
+            // 
+            this.btnBrowseZANA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnBrowseZANA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBrowseZANA.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnBrowseZANA.FlatAppearance.BorderColor = System.Drawing.Color.Tan;
+            this.btnBrowseZANA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBrowseZANA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.btnBrowseZANA.Location = new System.Drawing.Point(592, 378);
+            this.btnBrowseZANA.Name = "btnBrowseZANA";
+            this.btnBrowseZANA.Size = new System.Drawing.Size(129, 42);
+            this.btnBrowseZANA.TabIndex = 105;
+            this.btnBrowseZANA.Text = "BROWSE FILE";
+            this.btnBrowseZANA.UseVisualStyleBackColor = false;
+            this.btnBrowseZANA.Click += new System.EventHandler(this.btnSaveTab5_Click);
+            // 
             // SettingsOverhaul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -3341,6 +3629,9 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxZANA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxALVA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJUN)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             this.panelTop.ResumeLayout(false);
@@ -3573,5 +3864,23 @@
         private System.Windows.Forms.Button btnSaveTab7;
         private System.Windows.Forms.Button btnCancelTab7;
         private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.PictureBox pictureBoxZANA;
+        private System.Windows.Forms.PictureBox pictureBoxALVA;
+        private System.Windows.Forms.PictureBox pictureBoxJUN;
+        private XanderUI.XUICheckBox xuiCheckBoxCustomJUN;
+        private XanderUI.XUICheckBox xuiCheckBoxDefaultJUN;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label labelPathZANA;
+        private System.Windows.Forms.Label labelPathALVA;
+        private System.Windows.Forms.Label labelPathJUN;
+        private XanderUI.XUICheckBox xuiCheckBoxCustomZANA;
+        private XanderUI.XUICheckBox xuiCheckBoxDefaultZANA;
+        private XanderUI.XUICheckBox xuiCheckBoxCustomALVA;
+        private XanderUI.XUICheckBox xuiCheckBoxDefaultALVA;
+        private System.Windows.Forms.Button btnBrowseZANA;
+        private System.Windows.Forms.Button btnBrowseALVA;
+        private System.Windows.Forms.Button btnBrowseJUN;
     }
 }

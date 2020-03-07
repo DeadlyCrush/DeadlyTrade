@@ -2463,8 +2463,6 @@ namespace POExileDirection
         #region ⨌⨌ Init. Form Location ⨌⨌
         public void Init_ControlFormPosition()
         {
-            strImagePath[0] = @".\DeadlyInform\Betrayal.png";
-
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
             IniParser parser = new IniParser(strINIPath);
 
@@ -2483,19 +2481,22 @@ namespace POExileDirection
                 string strPath = "";
                 strPath = parser.GetSetting("DIRECTIONHELPER", "POELOGPATH");
 
-                //TODO : User Custom Image.
-                //TODO : Get User Image Path.
+                // Check User Custom Overlay or Default Overlay.
+                string strJUNDefualt = parser.GetSetting("OVERLAY", "JUNDEFAULT");
+                string strALVADefualt = parser.GetSetting("OVERLAY", "ALVADEFAULT");
+                string strZANADefualt = parser.GetSetting("OVERLAY", "ZANADEFAULT");
+
                 // Get Image Path
-                /*strImagePath[0] = parser.GetSetting("OVERLAY", "JUN"); // @".\DeadlyInform\Betrayal.png";   // JUN
-                if(strImagePath[0]=="")
-                    strImagePath[0] = @".\DeadlyInform\Betrayal.png";*/
+                strImagePath[0] = parser.GetSetting("OVERLAY", "JUN"); // @".\DeadlyInform\Betrayal.png";   // JUN
+                if(String.IsNullOrEmpty(strImagePath[0]) || strJUNDefualt.Trim().ToUpper()=="Y")
+                    strImagePath[0] = @".\DeadlyInform\Betrayal.png";
 
                 strImagePath[1] = parser.GetSetting("OVERLAY", "ALVA"); // @".\DeadlyInform\Incursion.png";  // ALVA
-                if (strImagePath[1] == "")
+                if (String.IsNullOrEmpty(strImagePath[1]) || strALVADefualt.Trim().ToUpper() == "Y")
                     strImagePath[1] = @".\DeadlyInform\Incursion.png";
 
                 strImagePath[2] = parser.GetSetting("OVERLAY", "ZANA"); // @".\DeadlyInform\Atlas.png";      // ZANA
-                if (strImagePath[2] == "")
+                if (String.IsNullOrEmpty(strImagePath[2]) || strZANADefualt.Trim().ToUpper() == "Y")
                     strImagePath[2] = @".\DeadlyInform\Atlas.png";
 
                 // HOT KEYS

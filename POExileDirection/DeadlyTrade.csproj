@@ -311,7 +311,7 @@
     <Compile Include="LauncherForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LauncherForm.designer.cs">
+    <Compile Include="LauncherForm.Designer.cs">
       <DependentUpon>LauncherForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />

@@ -1232,42 +1232,42 @@ namespace POExileDirection
                 // HOTKEY USE Y/N - Trade Notification Panel //
                 //-------------------------------------------//
 
-                g_strYNUseHOTKEYInvite = parser.GetSetting("LOCATIONNOTIFY", "INVITE");
+                g_strYNUseHOTKEYInvite = parser.GetSetting("NOTIFYHOTKEY", "INVITE");
                 if (String.IsNullOrEmpty(g_strYNUseHOTKEYInvite))
                     g_strYNUseHOTKEYInvite = "N";
                 DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYInvite);
                 
-                g_strYNUseHOTKEYTrade = parser.GetSetting("LOCATIONNOTIFY", "TRADE");
+                g_strYNUseHOTKEYTrade = parser.GetSetting("NOTIFYHOTKEY", "TRADE");
                 if (String.IsNullOrEmpty(g_strYNUseHOTKEYTrade))
                     g_strYNUseHOTKEYTrade = "N";
                 DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYTrade);
                 
-                g_strYNUseHOTKEYKick = parser.GetSetting("LOCATIONNOTIFY", "KICK");
+                g_strYNUseHOTKEYKick = parser.GetSetting("NOTIFYHOTKEY", "KICK");
                 if (String.IsNullOrEmpty(g_strYNUseHOTKEYKick))
                     g_strYNUseHOTKEYKick = "N";
                 DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYKick);
 
-                g_strYNUseHOTKEYMinimize = parser.GetSetting("LOCATIONNOTIFY", "MINIMIZE");
+                g_strYNUseHOTKEYMinimize = parser.GetSetting("NOTIFYHOTKEY", "MINIMIZE");
                 if (String.IsNullOrEmpty(g_strYNUseHOTKEYMinimize))
                     g_strYNUseHOTKEYMinimize = "N";
                 DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYMinimize);
 
-                g_strYNUseHOTKEYClose = parser.GetSetting("LOCATIONNOTIFY", "CLOSE");
+                g_strYNUseHOTKEYClose = parser.GetSetting("NOTIFYHOTKEY", "CLOSE");
                 if (String.IsNullOrEmpty(g_strYNUseHOTKEYClose))
                     g_strYNUseHOTKEYClose = "N";
                 DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYClose);
 
-                g_strYNUseHOTKEYWait = parser.GetSetting("LOCATIONNOTIFY", "WAIT");
+                g_strYNUseHOTKEYWait = parser.GetSetting("NOTIFYHOTKEY", "WAIT");
                 if (String.IsNullOrEmpty(g_strYNUseHOTKEYWait))
                     g_strYNUseHOTKEYWait = "N";
                 DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYWait);
 
-                g_strYNUseHOTKEYSold = parser.GetSetting("LOCATIONNOTIFY", "SOLD");
+                g_strYNUseHOTKEYSold = parser.GetSetting("NOTIFYHOTKEY", "SOLD");
                 if (String.IsNullOrEmpty(g_strYNUseHOTKEYSold))
                     g_strYNUseHOTKEYSold = "N";
                 DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYSold);
 
-                g_strYNUseHOTKEYThx = parser.GetSetting("LOCATIONNOTIFY", "THX");
+                g_strYNUseHOTKEYThx = parser.GetSetting("NOTIFYHOTKEY", "THX");
                 if (String.IsNullOrEmpty(g_strYNUseHOTKEYThx))
                     g_strYNUseHOTKEYThx = "N";
                 DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYThx);

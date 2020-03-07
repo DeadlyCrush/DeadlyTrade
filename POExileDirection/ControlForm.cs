@@ -2672,54 +2672,45 @@ namespace POExileDirection
                     settingsOverhaul.keyThx = keyMAINThx;
                     if (settingsOverhaul.ShowDialog() == DialogResult.OK)
                     {
-                        ;
-                    }
-                    bIsSettingsPop = false;
-                    gCF_bIsTextFocused = false;
-                }
-                return;
-                using (SettingsForm frmSettings = new SettingsForm())
-                {
-                    frmSettings.keyRemains = keyMAINRemains;
-                    frmSettings.keyJUN = keyMAINJUN;
-                    frmSettings.keyALVA = keyMAINALVA;
-                    frmSettings.keyZANA = keyMAINZANA;
-                    frmSettings.keyHideout = keyMAINHideout; // hideout
-                    frmSettings.keySearchbyPosition = keySearchbyPosition;
-                    frmSettings.keyEXIT = keyEXIT;
-                    if (frmSettings.ShowDialog() == DialogResult.OK)
-                    {
-                        keyMAINRemains = frmSettings.keyRemains;
-                        keyMAINJUN = frmSettings.keyJUN;
-                        keyMAINALVA = frmSettings.keyALVA;
-                        keyMAINZANA = frmSettings.keyZANA;
-                        keyMAINHideout = frmSettings.keyHideout;
-                        keySearchbyPosition = frmSettings.keySearchbyPosition;
-                        keyEXIT = frmSettings.keyEXIT;
-
-                        //x UnRegisterHotKeys();
-
-                        //x Register_HotKeys();
-                        Thread.Sleep(200);
-
-                        SaveNofiticationMsg(); //TODO: g_strCUSTOM1,2,3 Added.
-                        Thread.Sleep(200);
-
                         string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-                        if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-                        {
-                            strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                            if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                            else if (LauncherForm.resolution_width < 1280)
-                                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-                        }
-                        else if (LauncherForm.resolution_width > 1920)
-                            strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
                         IniParser parser = new IniParser(strINIPath);
 
+                        #region [[[[[ TAB1 - HOT KEYS ]]]]]
+                        // HotKey Use - MAIN                        
+                        parser.AddSetting("MISC", "REMAINING", LauncherForm.g_strYNUseRemainingHOTKEY);
+                        parser.AddSetting("MISC", "HOTKEYSYNDICATE", LauncherForm.g_strYNUseSyndicateJUNHOTKEY);
+                        parser.AddSetting("MISC", "HOTKEYALVAINCURSION", LauncherForm.g_strYNUseIncursionALVAHOTKEY);
+                        parser.AddSetting("MISC", "HOTKEYZANAATLAS", LauncherForm.g_strYNUseAtlasZANAHOTKEY);
+                        parser.AddSetting("MISC", "HOTKEYHIDEOUT", LauncherForm.g_strYNUseHideoutHOTKEY);
+                        parser.AddSetting("MISC", "FINDBYPOSTION", LauncherForm.g_strYNUseFindbyPositionHOTKEY);
+                        parser.AddSetting("MISC", "EMERGENCY", LauncherForm.g_strYNUseEmergencyHOTKEY);
+                        // Check Use - CTRL+MOUSEWHEEL
+                        parser.AddSetting("MISC", "MOUSESTASHTAB", LauncherForm.g_strYNMouseWheelStashTab);
+                        // HotKey Use - MAIN  - Trade Notification Panel
+                        parser.AddSetting("NOTIFYHOTKEY", "INVITE", LauncherForm.g_strYNUseHOTKEYInvite);
+                        parser.AddSetting("NOTIFYHOTKEY", "TRADE", LauncherForm.g_strYNUseHOTKEYTrade);
+                        parser.AddSetting("NOTIFYHOTKEY", "KICK", LauncherForm.g_strYNUseHOTKEYKick);
+                        parser.AddSetting("NOTIFYHOTKEY", "MINIMIZE", LauncherForm.g_strYNUseHOTKEYMinimize);
+                        parser.AddSetting("NOTIFYHOTKEY", "CLOSE", LauncherForm.g_strYNUseHOTKEYClose);
+                        parser.AddSetting("NOTIFYHOTKEY", "SOLD", LauncherForm.g_strYNUseHOTKEYSold);
+                        parser.AddSetting("NOTIFYHOTKEY", "WAIT", LauncherForm.g_strYNUseHOTKEYWait);
+                        parser.AddSetting("NOTIFYHOTKEY", "THX", LauncherForm.g_strYNUseHOTKEYThx);
+                        // HOT KYES BINDING
+                        keyMAINRemains = settingsOverhaul.keyRemains;
+                        keyMAINJUN = settingsOverhaul.keyJUN;
+                        keyMAINALVA = settingsOverhaul.keyALVA;
+                        keyMAINZANA = settingsOverhaul.keyZANA;
+                        keyMAINHideout = settingsOverhaul.keyHideout;
+                        keySearchbyPosition = settingsOverhaul.keySearchbyPosition;
+                        keyEXIT = settingsOverhaul.keyEXIT;
+                        keyMAINInvite = settingsOverhaul.keyInvite;
+                        keyMAINTrade = settingsOverhaul.keyTrade;
+                        keyMAINKick = settingsOverhaul.keyKick;
+                        keyMAINMinimize = settingsOverhaul.keyMinimize;
+                        keyMAINClose = settingsOverhaul.keyClose;
+                        keyMAINSold = settingsOverhaul.keySold;
+                        keyMAINWait = settingsOverhaul.keyWait;
+                        keyMAINThx = settingsOverhaul.keyThx;
                         parser.AddSetting("HOTKEY", "R", keyMAINRemains);
                         parser.AddSetting("HOTKEY", "J", keyMAINJUN);
                         parser.AddSetting("HOTKEY", "A", keyMAINALVA);
@@ -2727,85 +2718,91 @@ namespace POExileDirection
                         parser.AddSetting("HOTKEY", "H", keyMAINHideout);
                         parser.AddSetting("HOTKEY", "F", keySearchbyPosition);
                         parser.AddSetting("HOTKEY", "E", keyEXIT);
+                        parser.AddSetting("HOTKEY", "INVITE", keyMAINInvite);
+                        parser.AddSetting("HOTKEY", "TRADE", keyMAINTrade);
+                        parser.AddSetting("HOTKEY", "KICK", keyMAINKick);
+                        parser.AddSetting("HOTKEY", "MINIMIZE", keyMAINMinimize);
+                        parser.AddSetting("HOTKEY", "CLOSE", keyMAINClose);
+                        parser.AddSetting("HOTKEY", "SOLD", keyMAINSold);
+                        parser.AddSetting("HOTKEY", "WAIT", keyMAINWait);
+                        parser.AddSetting("HOTKEY", "THX", keyMAINThx);
+                        #endregion
 
+                        #region [[[[[ TAB2 - TRADE PANEL ]]]]]
+                        // Button Title & Text.
+                        Thread.Sleep(100);
+                        SaveNofiticationMsg();
+                        Thread.Sleep(100);
+                        // My Character NickName
+                        parser.AddSetting("CHARACTER", "MYNICK", LauncherForm.g_strMyNickName);
+                        // Notification Volume, Use Sound Alert Y/N
+                        parser.AddSetting("LOCATIONNOTIFY", "VOLUME", LauncherForm.g_NotifyVolume.ToString());
+                        parser.AddSetting("LOCATIONNOTIFY", "NOTIFICATIONSOUND", LauncherForm.g_strNotificationSoundYN);
+                        // CHECK AUTO KICK Y/N
+                        parser.AddSetting("CHARACTER", "AUTOKICK", LauncherForm.g_strTRAutoKick);
+                        parser.AddSetting("LOCATIONNOTIFY", "WAIT", LauncherForm.g_strTRAutoKickWait);
+                        parser.AddSetting("LOCATIONNOTIFY", "SOLD", LauncherForm.g_strTRAutoKickSold);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOM1", LauncherForm.g_strTRAutoKickCustom1);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOM2", LauncherForm.g_strTRAutoKickCustom2);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOM3", LauncherForm.g_strTRAutoKickCustom3);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOM4", LauncherForm.g_strTRAutoKickCustom4);
+                        #endregion
+
+                        #region [[[[[ TAB3 - FLASK TIMER ]]]]]
                         // FLASK COLOR
-                        parser.AddSetting("MISC", "FLASK1COLOR", frmSettings.colorStringRGB1);
-                        parser.AddSetting("MISC", "FLASK2COLOR", frmSettings.colorStringRGB2);
-                        parser.AddSetting("MISC", "FLASK3COLOR", frmSettings.colorStringRGB3);
-                        parser.AddSetting("MISC", "FLASK4COLOR", frmSettings.colorStringRGB4);
-                        parser.AddSetting("MISC", "FLASK5COLOR", frmSettings.colorStringRGB5);
+                        parser.AddSetting("MISC", "FLASK1COLOR", settingsOverhaul.colorStringRGB1);
+                        parser.AddSetting("MISC", "FLASK2COLOR", settingsOverhaul.colorStringRGB2);
+                        parser.AddSetting("MISC", "FLASK3COLOR", settingsOverhaul.colorStringRGB3);
+                        parser.AddSetting("MISC", "FLASK4COLOR", settingsOverhaul.colorStringRGB4);
+                        parser.AddSetting("MISC", "FLASK5COLOR", settingsOverhaul.colorStringRGB5);
                         // FLASK TIMER
                         parser.AddSetting("MISC", "FLASKTIME1", LauncherForm.g_FlaskTime1);
                         parser.AddSetting("MISC", "FLASKTIME2", LauncherForm.g_FlaskTime2);
                         parser.AddSetting("MISC", "FLASKTIME3", LauncherForm.g_FlaskTime3);
                         parser.AddSetting("MISC", "FLASKTIME4", LauncherForm.g_FlaskTime4);
                         parser.AddSetting("MISC", "FLASKTIME5", LauncherForm.g_FlaskTime5);
+                        // Use Sound Alert Y/N
+                        parser.AddSetting("LOCATIONNOTIFY", "FLASKTIMERSOUND", LauncherForm.g_strTimerSound1);
+                        parser.AddSetting("LOCATIONNOTIFY", "VOLUMEFLASKTIMER", LauncherForm.g_FlaskTimerVolume.ToString());
+                        #endregion
 
+                        #region [[[[[ TAB4 - SKILL TIMER ]]]]]
                         // SKILL COLOR
-                        parser.AddSetting("SKILL", "SKILL1COLOR", frmSettings.colorStringRGBQ);
-                        parser.AddSetting("SKILL", "SKILL2COLOR", frmSettings.colorStringRGBW);
-                        parser.AddSetting("SKILL", "SKILL3COLOR", frmSettings.colorStringRGBE);
-                        parser.AddSetting("SKILL", "SKILL4COLOR", frmSettings.colorStringRGBR);
-                        parser.AddSetting("SKILL", "SKILL5COLOR", frmSettings.colorStringRGBT);
+                        parser.AddSetting("SKILL", "SKILL1COLOR", settingsOverhaul.colorStringRGBQ);
+                        parser.AddSetting("SKILL", "SKILL2COLOR", settingsOverhaul.colorStringRGBW);
+                        parser.AddSetting("SKILL", "SKILL3COLOR", settingsOverhaul.colorStringRGBE);
+                        parser.AddSetting("SKILL", "SKILL4COLOR", settingsOverhaul.colorStringRGBR);
+                        parser.AddSetting("SKILL", "SKILL5COLOR", settingsOverhaul.colorStringRGBT);
                         // SKILL TIMER
                         parser.AddSetting("SKILL", "SKILLTIME1", LauncherForm.g_SkillTime1);
                         parser.AddSetting("SKILL", "SKILLTIME2", LauncherForm.g_SkillTime2);
                         parser.AddSetting("SKILL", "SKILLTIME3", LauncherForm.g_SkillTime3);
                         parser.AddSetting("SKILL", "SKILLTIME4", LauncherForm.g_SkillTime4);
                         parser.AddSetting("SKILL", "SKILLTIME5", LauncherForm.g_SkillTime5);
+                        #endregion
 
-                        // My Character NickName and Trade Setting
-                        parser.AddSetting("CHARACTER", "MYNICK", LauncherForm.g_strMyNickName);
-                        parser.AddSetting("CHARACTER", "AUTOKICK", LauncherForm.g_strTRAutoKick);
-
-                        //TODO : check box custom1,2,3 g_strTRAutoKickCustom1,2,3 - "CHARACTER", "AUTOKICK" Search All~!
-
-                        // Notification Volume, Flask Timer Volume
-                        parser.AddSetting("LOCATIONNOTIFY", "VOLUME", LauncherForm.g_NotifyVolume.ToString());
-                        parser.AddSetting("LOCATIONNOTIFY", "VOLUMEFLASKTIMER", LauncherForm.g_FlaskTimerVolume.ToString());
-
-                        // FLASK SOUND Y/N
-                        parser.AddSetting("MISC", "FLASKSOUND1", LauncherForm.g_strTimerSound1);
-                        parser.AddSetting("MISC", "FLASKSOUND2", LauncherForm.g_strTimerSound1);
-                        parser.AddSetting("MISC", "FLASKSOUND3", LauncherForm.g_strTimerSound1);
-                        parser.AddSetting("MISC", "FLASKSOUND4", LauncherForm.g_strTimerSound1);
-                        parser.AddSetting("MISC", "FLASKSOUND5", LauncherForm.g_strTimerSound1);
-
-                        // HotKey Use
-                        parser.AddSetting("MISC", "HOTKEYHIDEOUT", LauncherForm.g_strYNUseHideoutHOTKEY);
-                        parser.AddSetting("MISC", "EMERGENCY", LauncherForm.g_strYNUseEmergencyHOTKEY);
-                        parser.AddSetting("MISC", "REMAINING", LauncherForm.g_strYNUseRemainingHOTKEY);
-                        parser.AddSetting("MISC", "FINDBYPOSTION", LauncherForm.g_strYNUseFindbyPositionHOTKEY);
-                        parser.AddSetting("MISC", "HOTKEYSYNDICATE", LauncherForm.g_strYNUseSyndicateJUNHOTKEY);
-                        parser.AddSetting("MISC", "HOTKEYALVAINCURSION", LauncherForm.g_strYNUseIncursionALVAHOTKEY);
-                        parser.AddSetting("MISC", "HOTKEYZANAATLAS", LauncherForm.g_strYNUseAtlasZANAHOTKEY);
+                        #region [[[[[ TAB5 - OVERLAY ]]]]]
+                        #endregion
 
                         parser.SaveSettings();
                         parser = null;
-
-                        bIsSettingsPop = false;
-                        gCF_bIsTextFocused = false;
                     }
-                    else
-                    {
-                        bIsSettingsPop = false;
-                        gCF_bIsTextFocused = false;
-                    }
+                    bIsSettingsPop = false;
+                    gCF_bIsTextFocused = false;
                 }
 
                 InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
             }
             catch (Exception ex)
             {
+                InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
         }
 
+        #region [[[[[ Update JSON Data - Save to \\DeadlyInform\\NotificationMSG.json ]]]]]
         private void SaveNofiticationMsg()
         {
-            //TODO: g_strCUSTOM1,2,3,4 Added.
-            //TODO: All button's Title
-
             var settings = new JsonSerializerSettings
             {
                 NullValueHandling = NullValueHandling.Ignore,
@@ -2816,13 +2813,45 @@ namespace POExileDirection
             foreach (var item in LauncherForm.deadlyInformationData.InformationMSG.NotifyMSG)
             {
                 if (item.Id == "THX")
+                {
                     item.Msg = LauncherForm.g_strnotiDONE;
+                    item.Title = LauncherForm.g_strnotiDONEbtnTITLE;
+                }
                 else if (item.Id == "WAIT")
+                {
                     item.Msg = LauncherForm.g_strnotiWAIT;
+                    item.Title = LauncherForm.g_strnotiWAITbtnTITLE;
+                }
                 else if (item.Id == "WILLING")
+                {
                     item.Msg = LauncherForm.g_strnotiRESEND;
+                    // This Button has not Title.
+                }
                 else if (item.Id == "SOLD")
+                {
                     item.Msg = LauncherForm.g_strnotiSOLD;
+                    item.Title = LauncherForm.g_strnotiSOLDbtnTITLE;
+                }
+                else if (item.Id == "CUSTOM1")
+                {
+                    item.Msg = LauncherForm.g_strCUSTOM1;
+                    item.Title = LauncherForm.g_strCUSTOM1btnTITLE;
+                }
+                else if (item.Id == "CUSTOM2")
+                {
+                    item.Msg = LauncherForm.g_strCUSTOM2;
+                    item.Title = LauncherForm.g_strCUSTOM2btnTITLE;
+                }
+                else if (item.Id == "CUSTOM3")
+                {
+                    item.Msg = LauncherForm.g_strCUSTOM3;
+                    item.Title = LauncherForm.g_strCUSTOM3btnTITLE;
+                }
+                else if (item.Id == "CUSTOM4")
+                {
+                    item.Msg = LauncherForm.g_strCUSTOM4;
+                    item.Title = LauncherForm.g_strCUSTOM4btnTITLE;
+                }
 
                 notiMSGUpdate.Add(item);
             }
@@ -2830,7 +2859,8 @@ namespace POExileDirection
             string output = JsonConvert.SerializeObject(notiMSGUpdate, Formatting.Indented);
             output = "{   \"NotifyMSG\": " + output + " }";
             File.WriteAllText(Application.StartupPath + "\\DeadlyInform\\NotificationMSG.json", output);
-        }
+        } 
+        #endregion
         #endregion
 
         #region ⨌⨌ STASH GRID ⨌⨌

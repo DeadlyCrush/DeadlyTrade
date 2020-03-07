@@ -238,21 +238,21 @@
             this.btnS2 = new System.Windows.Forms.Button();
             this.btnS1 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btnSaveTab5 = new System.Windows.Forms.Button();
+            this.btnCancelTab5 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnSaveTab6 = new System.Windows.Forms.Button();
+            this.btnCancelTab6 = new System.Windows.Forms.Button();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btnSaveTab7 = new System.Windows.Forms.Button();
+            this.btnCancelTab7 = new System.Windows.Forms.Button();
             this.panelTop = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.btnSaveTab6 = new System.Windows.Forms.Button();
-            this.btnCancelTab6 = new System.Windows.Forms.Button();
-            this.btnSaveTab7 = new System.Windows.Forms.Button();
-            this.btnCancelTab7 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.btnCancelTab5 = new System.Windows.Forms.Button();
-            this.btnSaveTab5 = new System.Windows.Forms.Button();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.FlatSettingTab.SuspendLayout();
             this.tabHotKeys.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -3106,6 +3106,50 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Overlay";
             // 
+            // btnSaveTab5
+            // 
+            this.btnSaveTab5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnSaveTab5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveTab5.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnSaveTab5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.btnSaveTab5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveTab5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.btnSaveTab5.Location = new System.Drawing.Point(634, 449);
+            this.btnSaveTab5.Name = "btnSaveTab5";
+            this.btnSaveTab5.Size = new System.Drawing.Size(72, 26);
+            this.btnSaveTab5.TabIndex = 105;
+            this.btnSaveTab5.Text = "SAVE";
+            this.btnSaveTab5.UseVisualStyleBackColor = false;
+            this.btnSaveTab5.Click += new System.EventHandler(this.btnSaveTab5_Click);
+            // 
+            // btnCancelTab5
+            // 
+            this.btnCancelTab5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnCancelTab5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelTab5.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancelTab5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.btnCancelTab5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelTab5.ForeColor = System.Drawing.Color.Silver;
+            this.btnCancelTab5.Location = new System.Drawing.Point(712, 449);
+            this.btnCancelTab5.Name = "btnCancelTab5";
+            this.btnCancelTab5.Size = new System.Drawing.Size(72, 26);
+            this.btnCancelTab5.TabIndex = 104;
+            this.btnCancelTab5.Text = "CANCEL";
+            this.btnCancelTab5.UseVisualStyleBackColor = false;
+            this.btnCancelTab5.Click += new System.EventHandler(this.btnCancelTab5_Click);
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
+            this.label7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label7.Location = new System.Drawing.Point(3, 486);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(786, 40);
+            this.label7.TabIndex = 102;
+            this.label7.Text = "blar..........";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
@@ -3120,45 +3164,25 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Help";
             // 
-            // tabPage7
+            // webBrowser1
             // 
-            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.tabPage7.Controls.Add(this.label12);
-            this.tabPage7.Controls.Add(this.btnSaveTab7);
-            this.tabPage7.Controls.Add(this.btnCancelTab7);
-            this.tabPage7.Location = new System.Drawing.Point(4, 20);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(792, 529);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Hall Of Fame";
+            this.webBrowser1.Location = new System.Drawing.Point(8, 11);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(612, 464);
+            this.webBrowser1.TabIndex = 104;
             // 
-            // panelTop
+            // label8
             // 
-            this.panelTop.BackgroundImage = global::POExileDirection.Properties.Resources.top_bg;
-            this.panelTop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelTop.Controls.Add(this.label16);
-            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(800, 40);
-            this.panelTop.TabIndex = 1;
-            // 
-            // label16
-            // 
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label16.Location = new System.Drawing.Point(0, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(800, 40);
-            this.label16.TabIndex = 7;
-            this.label16.Text = "DeadlyTrade Settings";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label16.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label16_MouseDown);
-            this.label16.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label16_MouseMove);
-            this.label16.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label16_MouseUp);
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
+            this.label8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label8.Location = new System.Drawing.Point(3, 486);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(786, 40);
+            this.label8.TabIndex = 103;
+            this.label8.Text = "blar..........";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnSaveTab6
             // 
@@ -3192,6 +3216,31 @@
             this.btnCancelTab6.UseVisualStyleBackColor = false;
             this.btnCancelTab6.Click += new System.EventHandler(this.btnCancelTab6_Click);
             // 
+            // tabPage7
+            // 
+            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.tabPage7.Controls.Add(this.label12);
+            this.tabPage7.Controls.Add(this.btnSaveTab7);
+            this.tabPage7.Controls.Add(this.btnCancelTab7);
+            this.tabPage7.Location = new System.Drawing.Point(4, 20);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(792, 529);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Hall Of Fame";
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
+            this.label12.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label12.Location = new System.Drawing.Point(3, 486);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(786, 40);
+            this.label12.TabIndex = 103;
+            this.label12.Text = "blar..........";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // btnSaveTab7
             // 
             this.btnSaveTab7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
@@ -3224,81 +3273,32 @@
             this.btnCancelTab7.UseVisualStyleBackColor = false;
             this.btnCancelTab7.Click += new System.EventHandler(this.btnCancelTab7_Click);
             // 
-            // label7
+            // panelTop
             // 
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
-            this.label7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label7.Location = new System.Drawing.Point(3, 486);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(786, 40);
-            this.label7.TabIndex = 102;
-            this.label7.Text = "blar..........";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panelTop.BackgroundImage = global::POExileDirection.Properties.Resources.top_bg;
+            this.panelTop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelTop.Controls.Add(this.label16);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(800, 40);
+            this.panelTop.TabIndex = 1;
             // 
-            // label8
+            // label16
             // 
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
-            this.label8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label8.Location = new System.Drawing.Point(3, 486);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(786, 40);
-            this.label8.TabIndex = 103;
-            this.label8.Text = "blar..........";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
-            this.label12.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label12.Location = new System.Drawing.Point(3, 486);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(786, 40);
-            this.label12.TabIndex = 103;
-            this.label12.Text = "blar..........";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnCancelTab5
-            // 
-            this.btnCancelTab5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnCancelTab5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelTab5.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelTab5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
-            this.btnCancelTab5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelTab5.ForeColor = System.Drawing.Color.Silver;
-            this.btnCancelTab5.Location = new System.Drawing.Point(712, 449);
-            this.btnCancelTab5.Name = "btnCancelTab5";
-            this.btnCancelTab5.Size = new System.Drawing.Size(72, 26);
-            this.btnCancelTab5.TabIndex = 104;
-            this.btnCancelTab5.Text = "CANCEL";
-            this.btnCancelTab5.UseVisualStyleBackColor = false;
-            this.btnCancelTab5.Click += new System.EventHandler(this.btnCancelTab5_Click);
-            // 
-            // btnSaveTab5
-            // 
-            this.btnSaveTab5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnSaveTab5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSaveTab5.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSaveTab5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
-            this.btnSaveTab5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaveTab5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.btnSaveTab5.Location = new System.Drawing.Point(634, 449);
-            this.btnSaveTab5.Name = "btnSaveTab5";
-            this.btnSaveTab5.Size = new System.Drawing.Size(72, 26);
-            this.btnSaveTab5.TabIndex = 105;
-            this.btnSaveTab5.Text = "SAVE";
-            this.btnSaveTab5.UseVisualStyleBackColor = false;
-            this.btnSaveTab5.Click += new System.EventHandler(this.btnSaveTab5_Click);
-            // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Location = new System.Drawing.Point(8, 11);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(612, 464);
-            this.webBrowser1.TabIndex = 104;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label16.Location = new System.Drawing.Point(0, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(800, 40);
+            this.label16.TabIndex = 7;
+            this.label16.Text = "DeadlyTrade Settings";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label16.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label16_MouseDown);
+            this.label16.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label16_MouseMove);
+            this.label16.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label16_MouseUp);
             // 
             // SettingsOverhaul
             // 

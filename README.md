@@ -5,7 +5,7 @@
 [![Dev Azure Pipeline](https://dev.azure.com/DeadlyCrush/DeadlyTrade/_apis/build/status/DeadlyCrush.DeadlyTrade?branchName=master)](https://dev.azure.com/DeadlyCrush/DeadlyTrade/_build/latest?definitionId=1&branchName=master)
 [![NetFrameWork.Legacy.CI](https://github.com/DeadlyCrush/DeadlyTrade/workflows/NetFrameWork.Legacy.CI/badge.svg?branch=master)](https://github.com/DeadlyCrush/DeadlyTrade/actions)
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release)](https://github.com/DeadlyCrush/DeadlyTrade/releases) ![GitHub Releases](https://img.shields.io/github/downloads/deadlycrush/deadlytrade/latest/total) [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]() [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]()
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release)](https://github.com/DeadlyCrush/DeadlyTrade/releases) ![GitHub Releases](https://img.shields.io/github/downloads/deadlycrush/deadlytrade/latest/total) [![Github Overhaul Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)](https://github.com/DeadlyCrush/DeadlyTrade/releases) [![Github Previous Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]() ![Github Last Commit DateTime](https://badgen.net/github/last-commit/deadlycrush/deadlytrade)
 
 ## Installation
 | Download | Latest |
@@ -106,6 +106,12 @@ Welcome
 [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/Gd7MjCz) [![Discord](https://img.shields.io/discord/463752820026376202.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/Gd7MjCz) ![Discord](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Total&prefix=%20&query=approximate_member_count&suffix=%20users&url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FryjUA7r%3Fwith_counts%3Dtrue) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://github.com/DeadlyCrush/DeadlyTrade/blob/master/CODE_OF_CONDUCT.md) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/DeadlyCrush/DeadlyTrade/blob/master/LICENSE)
 
 All Exile~ and Developers.
+
+## Let me know Any Bug, Any Suggestion
+[![Github Open Issues](https://badgen.net/github/open-issues/deadlycrush/deadlytrade)](https://github.com/DeadlyCrush/DeadlyTrade/issues) [![Github Open Issues](https://badgen.net/github/closed-issues/deadlycrush/deadlytrade)](https://github.com/DeadlyCrush/DeadlyTrade/issues?q=is%3Aissue+is%3Aclosed)
+### Issue Tracking
+- Added Zap auto trigger that pulling new github issue to our Jira agile board for effective maintenance.
+![Zap Trigger](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbH8ukx%2FbtqCynLFLXD%2FJJcZWMGMZ1aUcK5MmWQCwK%2Fimg.png)
 
 ## Special Thanks to
 - Since the Korean launch of Path Of Exile, Localizing existing add-on programs affected me in many aspects. 

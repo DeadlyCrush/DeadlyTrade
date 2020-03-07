@@ -102,6 +102,7 @@
             this.btnSOUNDTrade = new System.Windows.Forms.Button();
             this.labelSNDOnOff = new System.Windows.Forms.Label();
             this.xuiSwitchSoundTrade = new XanderUI.XUISwitch();
+            this.label4 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
@@ -110,11 +111,18 @@
             this.btnCancelTab2 = new System.Windows.Forms.Button();
             this.labelTradeVolume = new System.Windows.Forms.Label();
             this.xuiSliderVolumeTrade = new XanderUI.XUISlider();
+            this.checkAutoCloseCustom4 = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoKickCUSTOM4 = new System.Windows.Forms.CheckBox();
+            this.checkAutoCloseCustom3 = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoKickCUSTOM3 = new System.Windows.Forms.CheckBox();
+            this.checkAutoCloseCustom2 = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoKickCUSTOM2 = new System.Windows.Forms.CheckBox();
+            this.checkAutoCloseCustom1 = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoKickCUSTOM1 = new System.Windows.Forms.CheckBox();
+            this.checkAutoCloseWait = new System.Windows.Forms.CheckBox();
+            this.checkAutoCloseSold = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoKickWAIT = new System.Windows.Forms.CheckBox();
+            this.checkAutoCloseThx = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoKickSOLD = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoKickTHX = new System.Windows.Forms.CheckBox();
             this.textBoxResend = new System.Windows.Forms.TextBox();
@@ -260,6 +268,16 @@
             this.btnCancelTab5 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.linkLabel10 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.label8 = new System.Windows.Forms.Label();
             this.btnSaveTab6 = new System.Windows.Forms.Button();
@@ -271,16 +289,6 @@
             this.panelTop = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel10 = new System.Windows.Forms.LinkLabel();
             this.FlatSettingTab.SuspendLayout();
             this.tabHotKeys.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -1245,6 +1253,7 @@
             this.tabPage2.Controls.Add(this.btnSOUNDTrade);
             this.tabPage2.Controls.Add(this.labelSNDOnOff);
             this.tabPage2.Controls.Add(this.xuiSwitchSoundTrade);
+            this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.label23);
             this.tabPage2.Controls.Add(this.label21);
             this.tabPage2.Controls.Add(this.label45);
@@ -1253,11 +1262,18 @@
             this.tabPage2.Controls.Add(this.btnCancelTab2);
             this.tabPage2.Controls.Add(this.labelTradeVolume);
             this.tabPage2.Controls.Add(this.xuiSliderVolumeTrade);
+            this.tabPage2.Controls.Add(this.checkAutoCloseCustom4);
             this.tabPage2.Controls.Add(this.checkBoxAutoKickCUSTOM4);
+            this.tabPage2.Controls.Add(this.checkAutoCloseCustom3);
             this.tabPage2.Controls.Add(this.checkBoxAutoKickCUSTOM3);
+            this.tabPage2.Controls.Add(this.checkAutoCloseCustom2);
             this.tabPage2.Controls.Add(this.checkBoxAutoKickCUSTOM2);
+            this.tabPage2.Controls.Add(this.checkAutoCloseCustom1);
             this.tabPage2.Controls.Add(this.checkBoxAutoKickCUSTOM1);
+            this.tabPage2.Controls.Add(this.checkAutoCloseWait);
+            this.tabPage2.Controls.Add(this.checkAutoCloseSold);
             this.tabPage2.Controls.Add(this.checkBoxAutoKickWAIT);
+            this.tabPage2.Controls.Add(this.checkAutoCloseThx);
             this.tabPage2.Controls.Add(this.checkBoxAutoKickSOLD);
             this.tabPage2.Controls.Add(this.checkBoxAutoKickTHX);
             this.tabPage2.Controls.Add(this.textBoxResend);
@@ -1343,6 +1359,18 @@
             this.xuiSwitchSoundTrade.Text = "xuiSwitch1";
             this.xuiSwitchSoundTrade.SwitchStateChanged += new System.EventHandler(this.xuiSwitchSoundTrade_SwitchStateChanged);
             // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label4.Location = new System.Drawing.Point(686, 135);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 24);
+            this.label4.TabIndex = 76;
+            this.label4.Text = "CLOSE";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label23
             // 
             this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
@@ -1350,9 +1378,9 @@
             this.label23.ForeColor = System.Drawing.Color.DarkOrange;
             this.label23.Location = new System.Drawing.Point(628, 135);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(98, 24);
+            this.label23.Size = new System.Drawing.Size(59, 24);
             this.label23.TabIndex = 76;
-            this.label23.Text = "AUTO KICK";
+            this.label23.Text = "KICK";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label21
@@ -1455,67 +1483,144 @@
             this.xuiSliderVolumeTrade.MouseMove += new System.Windows.Forms.MouseEventHandler(this.xuiSliderVolumeTrade_MouseMove);
             this.xuiSliderVolumeTrade.MouseUp += new System.Windows.Forms.MouseEventHandler(this.xuiSliderVolumeTrade_MouseMove);
             // 
+            // checkAutoCloseCustom4
+            // 
+            this.checkAutoCloseCustom4.AutoSize = true;
+            this.checkAutoCloseCustom4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkAutoCloseCustom4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkAutoCloseCustom4.Location = new System.Drawing.Point(709, 396);
+            this.checkAutoCloseCustom4.Name = "checkAutoCloseCustom4";
+            this.checkAutoCloseCustom4.Size = new System.Drawing.Size(15, 14);
+            this.checkAutoCloseCustom4.TabIndex = 24;
+            this.checkAutoCloseCustom4.UseVisualStyleBackColor = false;
+            // 
             // checkBoxAutoKickCUSTOM4
             // 
             this.checkBoxAutoKickCUSTOM4.AutoSize = true;
             this.checkBoxAutoKickCUSTOM4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.checkBoxAutoKickCUSTOM4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkBoxAutoKickCUSTOM4.Location = new System.Drawing.Point(669, 396);
+            this.checkBoxAutoKickCUSTOM4.Location = new System.Drawing.Point(652, 396);
             this.checkBoxAutoKickCUSTOM4.Name = "checkBoxAutoKickCUSTOM4";
             this.checkBoxAutoKickCUSTOM4.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAutoKickCUSTOM4.TabIndex = 24;
             this.checkBoxAutoKickCUSTOM4.UseVisualStyleBackColor = false;
+            // 
+            // checkAutoCloseCustom3
+            // 
+            this.checkAutoCloseCustom3.AutoSize = true;
+            this.checkAutoCloseCustom3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkAutoCloseCustom3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkAutoCloseCustom3.Location = new System.Drawing.Point(709, 360);
+            this.checkAutoCloseCustom3.Name = "checkAutoCloseCustom3";
+            this.checkAutoCloseCustom3.Size = new System.Drawing.Size(15, 14);
+            this.checkAutoCloseCustom3.TabIndex = 21;
+            this.checkAutoCloseCustom3.UseVisualStyleBackColor = false;
             // 
             // checkBoxAutoKickCUSTOM3
             // 
             this.checkBoxAutoKickCUSTOM3.AutoSize = true;
             this.checkBoxAutoKickCUSTOM3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.checkBoxAutoKickCUSTOM3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkBoxAutoKickCUSTOM3.Location = new System.Drawing.Point(669, 360);
+            this.checkBoxAutoKickCUSTOM3.Location = new System.Drawing.Point(652, 360);
             this.checkBoxAutoKickCUSTOM3.Name = "checkBoxAutoKickCUSTOM3";
             this.checkBoxAutoKickCUSTOM3.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAutoKickCUSTOM3.TabIndex = 21;
             this.checkBoxAutoKickCUSTOM3.UseVisualStyleBackColor = false;
+            // 
+            // checkAutoCloseCustom2
+            // 
+            this.checkAutoCloseCustom2.AutoSize = true;
+            this.checkAutoCloseCustom2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkAutoCloseCustom2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkAutoCloseCustom2.Location = new System.Drawing.Point(709, 324);
+            this.checkAutoCloseCustom2.Name = "checkAutoCloseCustom2";
+            this.checkAutoCloseCustom2.Size = new System.Drawing.Size(15, 14);
+            this.checkAutoCloseCustom2.TabIndex = 18;
+            this.checkAutoCloseCustom2.UseVisualStyleBackColor = false;
             // 
             // checkBoxAutoKickCUSTOM2
             // 
             this.checkBoxAutoKickCUSTOM2.AutoSize = true;
             this.checkBoxAutoKickCUSTOM2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.checkBoxAutoKickCUSTOM2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkBoxAutoKickCUSTOM2.Location = new System.Drawing.Point(669, 324);
+            this.checkBoxAutoKickCUSTOM2.Location = new System.Drawing.Point(652, 324);
             this.checkBoxAutoKickCUSTOM2.Name = "checkBoxAutoKickCUSTOM2";
             this.checkBoxAutoKickCUSTOM2.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAutoKickCUSTOM2.TabIndex = 18;
             this.checkBoxAutoKickCUSTOM2.UseVisualStyleBackColor = false;
+            // 
+            // checkAutoCloseCustom1
+            // 
+            this.checkAutoCloseCustom1.AutoSize = true;
+            this.checkAutoCloseCustom1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkAutoCloseCustom1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkAutoCloseCustom1.Location = new System.Drawing.Point(709, 288);
+            this.checkAutoCloseCustom1.Name = "checkAutoCloseCustom1";
+            this.checkAutoCloseCustom1.Size = new System.Drawing.Size(15, 14);
+            this.checkAutoCloseCustom1.TabIndex = 15;
+            this.checkAutoCloseCustom1.UseVisualStyleBackColor = false;
             // 
             // checkBoxAutoKickCUSTOM1
             // 
             this.checkBoxAutoKickCUSTOM1.AutoSize = true;
             this.checkBoxAutoKickCUSTOM1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.checkBoxAutoKickCUSTOM1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkBoxAutoKickCUSTOM1.Location = new System.Drawing.Point(669, 288);
+            this.checkBoxAutoKickCUSTOM1.Location = new System.Drawing.Point(652, 288);
             this.checkBoxAutoKickCUSTOM1.Name = "checkBoxAutoKickCUSTOM1";
             this.checkBoxAutoKickCUSTOM1.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAutoKickCUSTOM1.TabIndex = 15;
             this.checkBoxAutoKickCUSTOM1.UseVisualStyleBackColor = false;
+            // 
+            // checkAutoCloseWait
+            // 
+            this.checkAutoCloseWait.AutoSize = true;
+            this.checkAutoCloseWait.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkAutoCloseWait.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkAutoCloseWait.Location = new System.Drawing.Point(709, 180);
+            this.checkAutoCloseWait.Name = "checkAutoCloseWait";
+            this.checkAutoCloseWait.Size = new System.Drawing.Size(15, 14);
+            this.checkAutoCloseWait.TabIndex = 12;
+            this.checkAutoCloseWait.UseVisualStyleBackColor = false;
+            // 
+            // checkAutoCloseSold
+            // 
+            this.checkAutoCloseSold.AutoSize = true;
+            this.checkAutoCloseSold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkAutoCloseSold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkAutoCloseSold.Location = new System.Drawing.Point(709, 216);
+            this.checkAutoCloseSold.Name = "checkAutoCloseSold";
+            this.checkAutoCloseSold.Size = new System.Drawing.Size(15, 14);
+            this.checkAutoCloseSold.TabIndex = 9;
+            this.checkAutoCloseSold.UseVisualStyleBackColor = false;
             // 
             // checkBoxAutoKickWAIT
             // 
             this.checkBoxAutoKickWAIT.AutoSize = true;
             this.checkBoxAutoKickWAIT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.checkBoxAutoKickWAIT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkBoxAutoKickWAIT.Location = new System.Drawing.Point(669, 180);
+            this.checkBoxAutoKickWAIT.Location = new System.Drawing.Point(652, 180);
             this.checkBoxAutoKickWAIT.Name = "checkBoxAutoKickWAIT";
             this.checkBoxAutoKickWAIT.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAutoKickWAIT.TabIndex = 12;
             this.checkBoxAutoKickWAIT.UseVisualStyleBackColor = false;
+            // 
+            // checkAutoCloseThx
+            // 
+            this.checkAutoCloseThx.AutoSize = true;
+            this.checkAutoCloseThx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkAutoCloseThx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkAutoCloseThx.Location = new System.Drawing.Point(709, 253);
+            this.checkAutoCloseThx.Name = "checkAutoCloseThx";
+            this.checkAutoCloseThx.Size = new System.Drawing.Size(15, 14);
+            this.checkAutoCloseThx.TabIndex = 6;
+            this.checkAutoCloseThx.UseVisualStyleBackColor = false;
             // 
             // checkBoxAutoKickSOLD
             // 
             this.checkBoxAutoKickSOLD.AutoSize = true;
             this.checkBoxAutoKickSOLD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.checkBoxAutoKickSOLD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkBoxAutoKickSOLD.Location = new System.Drawing.Point(669, 216);
+            this.checkBoxAutoKickSOLD.Location = new System.Drawing.Point(652, 216);
             this.checkBoxAutoKickSOLD.Name = "checkBoxAutoKickSOLD";
             this.checkBoxAutoKickSOLD.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAutoKickSOLD.TabIndex = 9;
@@ -1526,7 +1631,7 @@
             this.checkBoxAutoKickTHX.AutoSize = true;
             this.checkBoxAutoKickTHX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.checkBoxAutoKickTHX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkBoxAutoKickTHX.Location = new System.Drawing.Point(669, 253);
+            this.checkBoxAutoKickTHX.Location = new System.Drawing.Point(652, 253);
             this.checkBoxAutoKickTHX.Name = "checkBoxAutoKickTHX";
             this.checkBoxAutoKickTHX.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAutoKickTHX.TabIndex = 6;
@@ -1836,7 +1941,7 @@
             this.btnThanks.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThanks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
             this.btnThanks.Image = ((System.Drawing.Image)(resources.GetObject("btnThanks.Image")));
-            this.btnThanks.Location = new System.Drawing.Point(66, 177);
+            this.btnThanks.Location = new System.Drawing.Point(66, 248);
             this.btnThanks.Name = "btnThanks";
             this.btnThanks.Size = new System.Drawing.Size(64, 22);
             this.btnThanks.TabIndex = 59;
@@ -1870,7 +1975,7 @@
             this.btnWaitPls.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWaitPls.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
             this.btnWaitPls.Image = ((System.Drawing.Image)(resources.GetObject("btnWaitPls.Image")));
-            this.btnWaitPls.Location = new System.Drawing.Point(66, 248);
+            this.btnWaitPls.Location = new System.Drawing.Point(66, 177);
             this.btnWaitPls.Name = "btnWaitPls";
             this.btnWaitPls.Size = new System.Drawing.Size(64, 22);
             this.btnWaitPls.TabIndex = 59;
@@ -3492,6 +3597,136 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Help";
             // 
+            // linkLabel10
+            // 
+            this.linkLabel10.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel10.AutoSize = true;
+            this.linkLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel10.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel10.Location = new System.Drawing.Point(631, 330);
+            this.linkLabel10.Name = "linkLabel10";
+            this.linkLabel10.Size = new System.Drawing.Size(85, 15);
+            this.linkLabel10.TabIndex = 105;
+            this.linkLabel10.TabStop = true;
+            this.linkLabel10.Text = "Main Features";
+            // 
+            // linkLabel9
+            // 
+            this.linkLabel9.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel9.AutoSize = true;
+            this.linkLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel9.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel9.Location = new System.Drawing.Point(631, 303);
+            this.linkLabel9.Name = "linkLabel9";
+            this.linkLabel9.Size = new System.Drawing.Size(85, 15);
+            this.linkLabel9.TabIndex = 105;
+            this.linkLabel9.TabStop = true;
+            this.linkLabel9.Text = "Main Features";
+            // 
+            // linkLabel8
+            // 
+            this.linkLabel8.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel8.AutoSize = true;
+            this.linkLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel8.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel8.Location = new System.Drawing.Point(631, 276);
+            this.linkLabel8.Name = "linkLabel8";
+            this.linkLabel8.Size = new System.Drawing.Size(85, 15);
+            this.linkLabel8.TabIndex = 105;
+            this.linkLabel8.TabStop = true;
+            this.linkLabel8.Text = "Main Features";
+            // 
+            // linkLabel7
+            // 
+            this.linkLabel7.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel7.AutoSize = true;
+            this.linkLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel7.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel7.Location = new System.Drawing.Point(631, 249);
+            this.linkLabel7.Name = "linkLabel7";
+            this.linkLabel7.Size = new System.Drawing.Size(85, 15);
+            this.linkLabel7.TabIndex = 105;
+            this.linkLabel7.TabStop = true;
+            this.linkLabel7.Text = "Main Features";
+            // 
+            // linkLabel6
+            // 
+            this.linkLabel6.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel6.AutoSize = true;
+            this.linkLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel6.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel6.Location = new System.Drawing.Point(631, 222);
+            this.linkLabel6.Name = "linkLabel6";
+            this.linkLabel6.Size = new System.Drawing.Size(85, 15);
+            this.linkLabel6.TabIndex = 105;
+            this.linkLabel6.TabStop = true;
+            this.linkLabel6.Text = "Main Features";
+            // 
+            // linkLabel5
+            // 
+            this.linkLabel5.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel5.AutoSize = true;
+            this.linkLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel5.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel5.Location = new System.Drawing.Point(631, 195);
+            this.linkLabel5.Name = "linkLabel5";
+            this.linkLabel5.Size = new System.Drawing.Size(85, 15);
+            this.linkLabel5.TabIndex = 105;
+            this.linkLabel5.TabStop = true;
+            this.linkLabel5.Text = "Main Features";
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel4.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel4.Location = new System.Drawing.Point(631, 168);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(85, 15);
+            this.linkLabel4.TabIndex = 105;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "Main Features";
+            // 
+            // linkLabel3
+            // 
+            this.linkLabel3.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel3.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel3.Location = new System.Drawing.Point(631, 141);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(85, 15);
+            this.linkLabel3.TabIndex = 105;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "Main Features";
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel2.Location = new System.Drawing.Point(631, 114);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(85, 15);
+            this.linkLabel2.TabIndex = 105;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Main Features";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.linkLabel1.LinkColor = System.Drawing.Color.PapayaWhip;
+            this.linkLabel1.Location = new System.Drawing.Point(631, 87);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(85, 15);
+            this.linkLabel1.TabIndex = 105;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Main Features";
+            // 
             // webBrowser1
             // 
             this.webBrowser1.Location = new System.Drawing.Point(8, 11);
@@ -3628,136 +3863,6 @@
             this.label16.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label16_MouseDown);
             this.label16.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label16_MouseMove);
             this.label16.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label16_MouseUp);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel1.LinkColor = System.Drawing.Color.PapayaWhip;
-            this.linkLabel1.Location = new System.Drawing.Point(631, 23);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(85, 15);
-            this.linkLabel1.TabIndex = 105;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Main Features";
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel2.Location = new System.Drawing.Point(631, 50);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(85, 15);
-            this.linkLabel2.TabIndex = 105;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Main Features";
-            // 
-            // linkLabel3
-            // 
-            this.linkLabel3.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel3.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel3.Location = new System.Drawing.Point(631, 77);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(85, 15);
-            this.linkLabel3.TabIndex = 105;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "Main Features";
-            // 
-            // linkLabel4
-            // 
-            this.linkLabel4.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel4.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel4.Location = new System.Drawing.Point(631, 104);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(85, 15);
-            this.linkLabel4.TabIndex = 105;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "Main Features";
-            // 
-            // linkLabel5
-            // 
-            this.linkLabel5.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel5.AutoSize = true;
-            this.linkLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel5.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel5.Location = new System.Drawing.Point(631, 131);
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(85, 15);
-            this.linkLabel5.TabIndex = 105;
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "Main Features";
-            // 
-            // linkLabel6
-            // 
-            this.linkLabel6.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel6.AutoSize = true;
-            this.linkLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel6.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel6.Location = new System.Drawing.Point(631, 158);
-            this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(85, 15);
-            this.linkLabel6.TabIndex = 105;
-            this.linkLabel6.TabStop = true;
-            this.linkLabel6.Text = "Main Features";
-            // 
-            // linkLabel7
-            // 
-            this.linkLabel7.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel7.AutoSize = true;
-            this.linkLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel7.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel7.Location = new System.Drawing.Point(631, 185);
-            this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(85, 15);
-            this.linkLabel7.TabIndex = 105;
-            this.linkLabel7.TabStop = true;
-            this.linkLabel7.Text = "Main Features";
-            // 
-            // linkLabel8
-            // 
-            this.linkLabel8.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel8.AutoSize = true;
-            this.linkLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel8.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel8.Location = new System.Drawing.Point(631, 212);
-            this.linkLabel8.Name = "linkLabel8";
-            this.linkLabel8.Size = new System.Drawing.Size(85, 15);
-            this.linkLabel8.TabIndex = 105;
-            this.linkLabel8.TabStop = true;
-            this.linkLabel8.Text = "Main Features";
-            // 
-            // linkLabel9
-            // 
-            this.linkLabel9.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel9.AutoSize = true;
-            this.linkLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel9.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel9.Location = new System.Drawing.Point(631, 239);
-            this.linkLabel9.Name = "linkLabel9";
-            this.linkLabel9.Size = new System.Drawing.Size(85, 15);
-            this.linkLabel9.TabIndex = 105;
-            this.linkLabel9.TabStop = true;
-            this.linkLabel9.Text = "Main Features";
-            // 
-            // linkLabel10
-            // 
-            this.linkLabel10.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel10.AutoSize = true;
-            this.linkLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel10.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.linkLabel10.Location = new System.Drawing.Point(631, 266);
-            this.linkLabel10.Name = "linkLabel10";
-            this.linkLabel10.Size = new System.Drawing.Size(85, 15);
-            this.linkLabel10.TabIndex = 105;
-            this.linkLabel10.TabStop = true;
-            this.linkLabel10.Text = "Main Features";
             // 
             // SettingsOverhaul
             // 
@@ -4064,5 +4169,13 @@
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.CheckBox checkAutoCloseCustom4;
+        private System.Windows.Forms.CheckBox checkAutoCloseCustom3;
+        private System.Windows.Forms.CheckBox checkAutoCloseCustom2;
+        private System.Windows.Forms.CheckBox checkAutoCloseCustom1;
+        private System.Windows.Forms.CheckBox checkAutoCloseWait;
+        private System.Windows.Forms.CheckBox checkAutoCloseSold;
+        private System.Windows.Forms.CheckBox checkAutoCloseThx;
+        private System.Windows.Forms.Label label4;
     }
 }

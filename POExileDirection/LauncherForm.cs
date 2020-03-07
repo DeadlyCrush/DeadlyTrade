@@ -273,6 +273,14 @@ namespace POExileDirection
         public static string g_strTRAutoKickCustom3 { get; set; }
         public static string g_strTRAutoKickCustom4 { get; set; }
 
+        public static string g_strTRAutoCloseThx { get; set; }
+        public static string g_strTRAutoCloseWait { get; set; }
+        public static string g_strTRAutoCloseSold { get; set; }
+        public static string g_strTRAutoCloseCustom1 { get; set; }
+        public static string g_strTRAutoCloseCustom2 { get; set; }
+        public static string g_strTRAutoCloseCustom3 { get; set; }
+        public static string g_strTRAutoCloseCustom4 { get; set; }
+
         public static int resolution_height { get; set; }
         public static int resolution_width { get; set; }
 
@@ -1170,6 +1178,14 @@ namespace POExileDirection
                 g_strTRAutoKickCustom2 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOM2");
                 g_strTRAutoKickCustom3 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOM3");
                 g_strTRAutoKickCustom4 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOM4");
+
+                g_strTRAutoCloseThx = parser.GetSetting("LOCATIONNOTIFY", "THXCLOSE");
+                g_strTRAutoCloseWait = parser.GetSetting("LOCATIONNOTIFY", "WAITCLOSE");
+                g_strTRAutoCloseSold = parser.GetSetting("LOCATIONNOTIFY", "SOLDCLOSE");
+                g_strTRAutoCloseCustom1 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE1");
+                g_strTRAutoCloseCustom2 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE2");
+                g_strTRAutoCloseCustom3 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE3");
+                g_strTRAutoCloseCustom4 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE4");
 
                 g_nGridLeft = Convert.ToInt32(parser.GetSetting("LOCATIONGRID", "LEFT"));
                 g_nGridTop = Convert.ToInt32(parser.GetSetting("LOCATIONGRID", "TOP"));

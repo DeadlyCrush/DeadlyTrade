@@ -3931,13 +3931,9 @@ namespace POExileDirection
 
         public void DNDSetState()
         {
-            InputSimulator iSim = new InputSimulator();
-
-            // Need to press ALT because the SetForegroundWindow sometimes does not work
-            // Removed 2019.0712 iSim.Keyboard.KeyPress(VirtualKeyCode.MENU);
-
-            // Make POE the foreground application and send input
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
+
+            InputSimulator iSim = new InputSimulator();            
             if(m_bISDND)
             {
                 btnDND.Image = Properties.Resources.check_off;
@@ -3948,16 +3944,9 @@ namespace POExileDirection
                 btnDND.Image = Properties.Resources.check_on;
                 m_bISDND = true;
             }
-
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            // Send the input
             iSim.Keyboard.TextEntry("/dnd");
-
-            // Send RETURN
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
         }
 
         private void BtnManagerie_Click(object sender, EventArgs e)
@@ -3967,23 +3956,12 @@ namespace POExileDirection
 
         private void GO_Managerie() // /menagerie
         {
-            InputSimulator iSim = new InputSimulator();
-
-            // Need to press ALT because the SetForegroundWindow sometimes does not work
-            // Removed 2019.0712 iSim.Keyboard.KeyPress(VirtualKeyCode.MENU);
-
-            // Make POE the foreground application and send input
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
+            InputSimulator iSim = new InputSimulator();            
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            // Send the input
             iSim.Keyboard.TextEntry("/menagerie");
-
-            // Send RETURN
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
         }
 
         private void BtnDELVE_Click(object sender, EventArgs e)
@@ -3993,23 +3971,12 @@ namespace POExileDirection
 
         private void GO_Delve()
         {
-            InputSimulator iSim = new InputSimulator();
-
-            // Need to press ALT because the SetForegroundWindow sometimes does not work
-            // Removed 2019.0712 iSim.Keyboard.KeyPress(VirtualKeyCode.MENU);
-
-            // Make POE the foreground application and send input
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
+            InputSimulator iSim = new InputSimulator();
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            // Send the input
             iSim.Keyboard.TextEntry("/delve");
-
-            // Send RETURN
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
         }
 
         private void BtnPassives_Click(object sender, EventArgs e)
@@ -4029,23 +3996,12 @@ namespace POExileDirection
 
         private void SendPOECommand(string strSendString)
         {
-            InputSimulator iSim = new InputSimulator();
-
-            // Need to press ALT because the SetForegroundWindow sometimes does not work
-            // Removed 2019.0712 iSim.Keyboard.KeyPress(VirtualKeyCode.MENU);
-
-            // Make POE the foreground application and send input
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
+            InputSimulator iSim = new InputSimulator();
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            // Send the input
             iSim.Keyboard.TextEntry(strSendString);
-
-            // Send RETURN
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
         }
 
         private void BtnEXIT_Click(object sender, EventArgs e)
@@ -4055,23 +4011,12 @@ namespace POExileDirection
 
         private void EXITtoCharacterSelcection()
         {
-            InputSimulator iSim = new InputSimulator();
-
-            // Need to press ALT because the SetForegroundWindow sometimes does not work
-            // Removed 2019.0712 iSim.Keyboard.KeyPress(VirtualKeyCode.MENU);
-
-            // Make POE the foreground application and send input
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
+            InputSimulator iSim = new InputSimulator();
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            // Send the input
             iSim.Keyboard.TextEntry("/exit");
-
-            // Send RETURN
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
         }
 
         private void BtnCMD_Click(object sender, EventArgs e)

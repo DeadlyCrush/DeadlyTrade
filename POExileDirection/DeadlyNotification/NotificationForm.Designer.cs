@@ -320,7 +320,7 @@
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.BtnSold_Click);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             this.button1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NotificationForm_KeyDown);
             // 
             // button2
@@ -339,7 +339,7 @@
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.BtnSold_Click);
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             this.button2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NotificationForm_KeyDown);
             // 
             // button3
@@ -358,7 +358,7 @@
             this.button3.TabIndex = 1;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Visible = false;
-            this.button3.Click += new System.EventHandler(this.BtnSold_Click);
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             this.button3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NotificationForm_KeyDown);
             // 
             // button4
@@ -377,7 +377,7 @@
             this.button4.TabIndex = 1;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Visible = false;
-            this.button4.Click += new System.EventHandler(this.BtnSold_Click);
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             this.button4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NotificationForm_KeyDown);
             // 
             // btnSold

@@ -45,9 +45,6 @@ namespace POExileDirection
         public string colorStringRGBR;
         public string colorStringRGBT;
 
-        // TAB INDEX
-        public int _nTabIndex = 0;
-
         // DRAG
         private int nMoving = 0;
         private int nMovePosX = 0;
@@ -337,6 +334,42 @@ namespace POExileDirection
                 checkBoxAutoKickCUSTOM4.Checked = true;
             else
                 checkBoxAutoKickCUSTOM4.Checked = false;
+
+            // Auto Close
+            if (LauncherForm.g_strTRAutoCloseThx.Trim().ToUpper() == "Y")
+                checkAutoCloseThx.Checked = true;
+            else
+                checkAutoCloseThx.Checked = false;
+
+            if (LauncherForm.g_strTRAutoCloseWait.Trim().ToUpper() == "Y")
+                checkAutoCloseWait.Checked = true;
+            else
+                checkAutoCloseWait.Checked = false;
+
+            if (LauncherForm.g_strTRAutoCloseSold.Trim().ToUpper() == "Y")
+                checkAutoCloseSold.Checked = true;
+            else
+                checkAutoCloseSold.Checked = false;
+
+            if (LauncherForm.g_strTRAutoCloseCustom1.Trim().ToUpper() == "Y")
+                checkAutoCloseCustom1.Checked = true;
+            else
+                checkAutoCloseCustom1.Checked = false;
+
+            if (LauncherForm.g_strTRAutoCloseCustom2.Trim().ToUpper() == "Y")
+                checkAutoCloseCustom2.Checked = true;
+            else
+                checkAutoCloseCustom2.Checked = false;
+
+            if (LauncherForm.g_strTRAutoCloseCustom3.Trim().ToUpper() == "Y")
+                checkAutoCloseCustom3.Checked = true;
+            else
+                checkAutoCloseCustom3.Checked = false;
+
+            if (LauncherForm.g_strTRAutoCloseCustom4.Trim().ToUpper() == "Y")
+                checkAutoCloseCustom4.Checked = true;
+            else
+                checkAutoCloseCustom4.Checked = false;
 
             // TITLE
             textBoxTitleWAIT.Text = LauncherForm.g_strnotiWAITbtnTITLE;
@@ -1296,7 +1329,6 @@ namespace POExileDirection
         private void btnSave_Click(object sender, EventArgs e)
         {
             DisposeGarbage();
-            _nTabIndex = FlatSettingTab.SelectedIndex;
 
             SetAllTabsValues();
             btnSave.DialogResult = DialogResult.OK;
@@ -1311,7 +1343,6 @@ namespace POExileDirection
         private void btnSaveTab2_Click(object sender, EventArgs e)
         {
             DisposeGarbage();
-            _nTabIndex = FlatSettingTab.SelectedIndex;
 
             SetAllTabsValues();
             btnCancelTab2.DialogResult = DialogResult.OK;
@@ -1326,7 +1357,6 @@ namespace POExileDirection
         private void btnSaveTab3_Click(object sender, EventArgs e)
         {
             DisposeGarbage();
-            _nTabIndex = FlatSettingTab.SelectedIndex;
 
             SetAllTabsValues();
             btnCancelTab3.DialogResult = DialogResult.OK;
@@ -1342,7 +1372,6 @@ namespace POExileDirection
         private void btnSaveTab4_Click(object sender, EventArgs e)
         {
             DisposeGarbage();
-            _nTabIndex = FlatSettingTab.SelectedIndex;
 
             SetAllTabsValues();
             btnCancelTab4.DialogResult = DialogResult.OK;
@@ -1357,7 +1386,6 @@ namespace POExileDirection
         private void btnSaveTab5_Click(object sender, EventArgs e)
         {
             DisposeGarbage();
-            _nTabIndex = FlatSettingTab.SelectedIndex;
 
             SetAllTabsValues();
             btnCancelTab5.DialogResult = DialogResult.OK;
@@ -1372,7 +1400,6 @@ namespace POExileDirection
         private void btnSaveTab6_Click(object sender, EventArgs e)
         {
             DisposeGarbage();
-            _nTabIndex = FlatSettingTab.SelectedIndex;
 
             SetAllTabsValues();
             btnCancelTab6.DialogResult = DialogResult.OK;
@@ -1387,7 +1414,6 @@ namespace POExileDirection
         private void btnSaveTab7_Click(object sender, EventArgs e)
         {
             DisposeGarbage();
-            _nTabIndex = FlatSettingTab.SelectedIndex;
 
             SetAllTabsValues();
             btnCancelTab7.DialogResult = DialogResult.OK;
@@ -1564,6 +1590,35 @@ namespace POExileDirection
                     LauncherForm.g_strTRAutoKickCustom4 = "Y";
                 else
                     LauncherForm.g_strTRAutoKickCustom4 = "N";
+                // CHECK - AUTO CLOSE : WAIT,SOLD, THX, CUSTOM 1,2,3,4
+                if (checkAutoCloseWait.Checked)
+                    LauncherForm.g_strTRAutoCloseWait = "Y";
+                else
+                    LauncherForm.g_strTRAutoCloseWait = "N";
+                if (checkAutoCloseSold.Checked)
+                    LauncherForm.g_strTRAutoCloseSold = "Y";
+                else
+                    LauncherForm.g_strTRAutoCloseSold = "N";
+                if (checkAutoCloseThx.Checked)
+                    LauncherForm.g_strTRAutoCloseThx = "Y";
+                else
+                    LauncherForm.g_strTRAutoCloseThx = "N";
+                if (checkAutoCloseCustom1.Checked)
+                    LauncherForm.g_strTRAutoCloseCustom1 = "Y";
+                else
+                    LauncherForm.g_strTRAutoCloseCustom1 = "N";
+                if (checkAutoCloseCustom2.Checked)
+                    LauncherForm.g_strTRAutoCloseCustom2 = "Y";
+                else
+                    LauncherForm.g_strTRAutoCloseCustom2 = "N";
+                if (checkAutoCloseCustom3.Checked)
+                    LauncherForm.g_strTRAutoCloseCustom3 = "Y";
+                else
+                    LauncherForm.g_strTRAutoCloseCustom3 = "N";
+                if (checkAutoCloseCustom4.Checked)
+                    LauncherForm.g_strTRAutoCloseCustom4 = "Y";
+                else
+                    LauncherForm.g_strTRAutoCloseCustom4 = "N";
                 #endregion
 
                 #region[[[[[ TAB3 - FLASK ]]]]]

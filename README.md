@@ -99,6 +99,11 @@ You can disable any feature you don’t want to use while launching the add-on a
 - POEExileDirection coverted to DeadlyTrade in new empty Project 1year ago.
 - MercuryTrdae(Exslims) All Korean UI&Functions Version Jun,2019 until Exslims no longer maintain officially.
 
+### Behind...
+It started from inspired Mercurytrade when I made and share Korean version of Mecurytrade. Addon name 'DeadlyTrade' also  inspired by 'MercuryTrade' including my respect to great exslims mercury trade.
+
+I forked and made Mercury Trade KOR version with Korean UI and every functions for Korean user and shared until Exslims no longer maintain officially. I managed MercuryTrade KOR and Improving DeadlyTrade 0.1.0.1 over and over. And I prepared overhaul version after Exslim said officially that he will does not maintain.
+
 ## Join our community & Welcome Contributors
 
 Welcome

@@ -1,24 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace POExileDirection
 {
     public partial class NotificationContainer : Form
     {
+        #region [[[[[ Variables ]]]]
         private int nMoving = 0;
         private int nMovePosX = 0;
         private int nMovePosY = 0;
 
         private string sLeft = String.Empty;
         private string sTop = String.Empty;
+
+        private bool _bHolderCollapse= false; 
+        #endregion
 
         protected override CreateParams CreateParams
         {
@@ -40,18 +38,6 @@ namespace POExileDirection
         private void NotificationContainer_Load(object sender, EventArgs e)
         {
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             sLeft = parser.GetSetting("LOCATIONNOTIFY", "LEFT");
@@ -63,14 +49,13 @@ namespace POExileDirection
 
         public void AddNotifyForm(NotificationForm frmNotifyPanel)
         {
-            Height = Height + 114;
             try
             {
                 if (frmNotifyPanel != null)
                 {
                     Panel p = new Panel();
                     p.Name = "Notification_" + (panelNOTIFICATION.Controls.Count + 1);
-                    p.Size = new Size(frmNotifyPanel.Width, 114);
+                    p.Size = new Size(frmNotifyPanel.Width, 122);
 
                     NotificationForm.panelName = p.Name;
                     frmNotifyPanel.FormClosed += FrmNotifyPanel_FormClosed;
@@ -88,6 +73,10 @@ namespace POExileDirection
                     panelNOTIFICATION.Controls.Add(p);
 
                     PanelAdjust(p);
+
+                    Height = Height + 122;
+                    // Show Holder
+                    panelHolder_ShowHide();
                 }
             }
             catch (Exception ex)
@@ -96,11 +85,42 @@ namespace POExileDirection
             }
         }
 
+        private void btnPanelArrow_Click(object sender, EventArgs e)
+        {
+            if (_bHolderCollapse)
+                _bHolderCollapse = false;
+            else
+                _bHolderCollapse = true;
+
+            panelHolder_ShowHide();
+        }
+
+        private void panelHolder_ShowHide()
+        {
+            if (_bHolderCollapse)
+            {
+                panelHolder.Height = 28;
+                btnPanelArrow.Image = Properties.Resources.PanelHolderArrow_dwon;
+            }
+            else
+            {
+                panelHolder.Height = this.Height - 121;
+                btnPanelArrow.Image = Properties.Resources.PanelHolderArrow_up;
+            }
+
+            if (panelNOTIFICATION.Controls.Count + 1 > 2)
+                btnPanelArrow.Visible = true;
+            else
+                btnPanelArrow.Visible = false;
+        }
+
         private void FrmNotifyPanel_SizeChanged(object sender, EventArgs e)
         {
             Panel parentPanel = ((Form)sender).Parent as Panel;
             Form frmSender = (Form)sender as Form;
             parentPanel.Height = frmSender.Height;
+
+            panelHolder_ShowHide();
         }
 
         private void FrmNotifyPanel_FormClosed(object sender, FormClosedEventArgs e)
@@ -109,8 +129,10 @@ namespace POExileDirection
             parentPanel.Visible = false;
             parentPanel.Dispose();
 
-            if(Height > 113)
-                Height = Height - 114;
+            if(Height > 122)
+                Height = Height - 122;
+
+            panelHolder_ShowHide();
         }
 
         private void PanelAdjust(Panel newPanel)
@@ -125,6 +147,7 @@ namespace POExileDirection
                 return;
         }
 
+        #region [[[[[ Moving by Drag ]]]]]
         private void pictureMovingBar_MouseDown(object sender, MouseEventArgs e)
         {
             nMoving = 1;
@@ -145,24 +168,13 @@ namespace POExileDirection
             nMoving = 0;
 
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
             DeadlyLog4Net._log.Info($"{MethodBase.GetCurrentMethod().Name} RESOLUTION : " + strINIPath);
 
             parser.AddSetting("LOCATIONNOTIFY", "LEFT", this.Left.ToString());
             parser.AddSetting("LOCATIONNOTIFY", "TOP", this.Top.ToString());
             parser.SaveSettings();
-        }
+        } 
+        #endregion
     }
 }

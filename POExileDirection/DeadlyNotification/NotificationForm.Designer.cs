@@ -36,10 +36,13 @@
             this.labelPrice = new System.Windows.Forms.Label();
             this.panelMiddle = new System.Windows.Forms.Panel();
             this.checkQuadTab = new XanderUI.XUICheckBox();
+            this.labelLeague = new System.Windows.Forms.Label();
+            this.DeadlyToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.xuiVolumeController1 = new XanderUI.XUIVolumeController();
             this.btnWhisper = new System.Windows.Forms.Button();
             this.btnWhois = new System.Windows.Forms.Button();
             this.btnWilling = new System.Windows.Forms.Button();
-            this.labelLeague = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureCurrency = new System.Windows.Forms.PictureBox();
@@ -50,9 +53,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnSold = new System.Windows.Forms.Button();
-            this.DeadlyToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.xuiVolumeController1 = new XanderUI.XUIVolumeController();
             this.panelTop = new System.Windows.Forms.Panel();
             this.pictureArrow = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -82,19 +82,18 @@
             this.labelElapsed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(87)))), ((int)(((byte)(55)))));
             this.labelElapsed.Location = new System.Drawing.Point(416, 5);
             this.labelElapsed.Name = "labelElapsed";
-            this.labelElapsed.Size = new System.Drawing.Size(70, 18);
+            this.labelElapsed.Size = new System.Drawing.Size(74, 12);
             this.labelElapsed.TabIndex = 0;
             this.labelElapsed.Text = "0h 00m 00s";
-            this.labelElapsed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelElapsed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelStashTabDetail
             // 
-            this.labelStashTabDetail.AutoEllipsis = true;
-            this.labelStashTabDetail.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelStashTabDetail.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStashTabDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(200)))), ((int)(((byte)(124)))));
-            this.labelStashTabDetail.Location = new System.Drawing.Point(135, 26);
+            this.labelStashTabDetail.Location = new System.Drawing.Point(135, 33);
             this.labelStashTabDetail.Name = "labelStashTabDetail";
-            this.labelStashTabDetail.Size = new System.Drawing.Size(255, 20);
+            this.labelStashTabDetail.Size = new System.Drawing.Size(255, 12);
             this.labelStashTabDetail.TabIndex = 0;
             this.labelStashTabDetail.Text = "(00, 00) TabName ( Offer : 0000? )";
             this.labelStashTabDetail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -102,25 +101,23 @@
             // 
             // labelNickName
             // 
-            this.labelNickName.AutoEllipsis = true;
-            this.labelNickName.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelNickName.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNickName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(200)))), ((int)(((byte)(124)))));
-            this.labelNickName.Location = new System.Drawing.Point(25, 26);
+            this.labelNickName.Location = new System.Drawing.Point(25, 33);
             this.labelNickName.Name = "labelNickName";
-            this.labelNickName.Size = new System.Drawing.Size(94, 20);
+            this.labelNickName.Size = new System.Drawing.Size(94, 12);
             this.labelNickName.TabIndex = 0;
-            this.labelNickName.Text = "NickName Nick";
+            this.labelNickName.Text = "Nick Name\r\nNick Name";
             this.labelNickName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelNickName.DoubleClick += new System.EventHandler(this.BtnWhois_Click);
             // 
             // labelPrice
             // 
-            this.labelPrice.AutoEllipsis = true;
-            this.labelPrice.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelPrice.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(200)))), ((int)(((byte)(124)))));
-            this.labelPrice.Location = new System.Drawing.Point(390, 26);
+            this.labelPrice.Location = new System.Drawing.Point(390, 33);
             this.labelPrice.Name = "labelPrice";
-            this.labelPrice.Size = new System.Drawing.Size(73, 20);
+            this.labelPrice.Size = new System.Drawing.Size(73, 12);
             this.labelPrice.TabIndex = 0;
             this.labelPrice.Text = "99999";
             this.labelPrice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -149,10 +146,10 @@
             this.panelMiddle.Controls.Add(this.button4);
             this.panelMiddle.Controls.Add(this.btnSold);
             this.panelMiddle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelMiddle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMiddle.Location = new System.Drawing.Point(0, 28);
+            this.panelMiddle.Location = new System.Drawing.Point(1, 27);
+            this.panelMiddle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelMiddle.Name = "panelMiddle";
-            this.panelMiddle.Size = new System.Drawing.Size(494, 85);
+            this.panelMiddle.Size = new System.Drawing.Size(492, 93);
             this.panelMiddle.TabIndex = 7;
             // 
             // checkQuadTab
@@ -163,13 +160,38 @@
             this.checkQuadTab.CheckboxStyle = XanderUI.XUICheckBox.Style.Material;
             this.checkQuadTab.Checked = false;
             this.checkQuadTab.ForeColor = System.Drawing.Color.White;
-            this.checkQuadTab.Location = new System.Drawing.Point(120, 29);
+            this.checkQuadTab.Location = new System.Drawing.Point(120, 33);
+            this.checkQuadTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkQuadTab.Name = "checkQuadTab";
             this.checkQuadTab.Size = new System.Drawing.Size(12, 12);
             this.checkQuadTab.TabIndex = 12;
             this.checkQuadTab.TickThickness = 3;
             this.DeadlyToolTip.SetToolTip(this.checkQuadTab, "Check if Quad Stash Tab");
             this.checkQuadTab.Click += new System.EventHandler(this.checkQuadTab_Click);
+            // 
+            // labelLeague
+            // 
+            this.labelLeague.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(87)))), ((int)(((byte)(55)))));
+            this.labelLeague.Location = new System.Drawing.Point(48, 5);
+            this.labelLeague.Name = "labelLeague";
+            this.labelLeague.Size = new System.Drawing.Size(320, 15);
+            this.labelLeague.TabIndex = 0;
+            this.labelLeague.Text = "LeagueName (1ex = 999c)";
+            this.labelLeague.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelLeague.Click += new System.EventHandler(this.LabelItemName_Click);
+            // 
+            // DeadlyToolTip
+            // 
+            this.DeadlyToolTip.AutoPopDelay = 5000;
+            this.DeadlyToolTip.BackColor = System.Drawing.Color.Transparent;
+            this.DeadlyToolTip.ForeColor = System.Drawing.Color.DarkRed;
+            this.DeadlyToolTip.InitialDelay = 200;
+            this.DeadlyToolTip.ReshowDelay = 100;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // btnWhisper
             // 
@@ -182,6 +204,7 @@
             this.btnWhisper.ForeColor = System.Drawing.Color.White;
             this.btnWhisper.Image = global::POExileDirection.Properties.Resources.panel_whisper;
             this.btnWhisper.Location = new System.Drawing.Point(28, 6);
+            this.btnWhisper.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnWhisper.Name = "btnWhisper";
             this.btnWhisper.Size = new System.Drawing.Size(14, 14);
             this.btnWhisper.TabIndex = 1;
@@ -198,7 +221,8 @@
             this.btnWhois.FlatAppearance.BorderSize = 0;
             this.btnWhois.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWhois.Image = global::POExileDirection.Properties.Resources.panel_bg_man;
-            this.btnWhois.Location = new System.Drawing.Point(7, 27);
+            this.btnWhois.Location = new System.Drawing.Point(7, 32);
+            this.btnWhois.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnWhois.Name = "btnWhois";
             this.btnWhois.Size = new System.Drawing.Size(14, 14);
             this.btnWhois.TabIndex = 1;
@@ -216,6 +240,7 @@
             this.btnWilling.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWilling.Image = global::POExileDirection.Properties.Resources.top_bar_resend1;
             this.btnWilling.Location = new System.Drawing.Point(8, 6);
+            this.btnWilling.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnWilling.Name = "btnWilling";
             this.btnWilling.Size = new System.Drawing.Size(14, 14);
             this.btnWilling.TabIndex = 1;
@@ -223,22 +248,11 @@
             this.btnWilling.Click += new System.EventHandler(this.BtnWilling_Click);
             this.btnWilling.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NotificationForm_KeyDown);
             // 
-            // labelLeague
-            // 
-            this.labelLeague.AutoEllipsis = true;
-            this.labelLeague.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(87)))), ((int)(((byte)(55)))));
-            this.labelLeague.Location = new System.Drawing.Point(48, 5);
-            this.labelLeague.Name = "labelLeague";
-            this.labelLeague.Size = new System.Drawing.Size(320, 18);
-            this.labelLeague.TabIndex = 0;
-            this.labelLeague.Text = "LeagueName (1ex = 999c)";
-            this.labelLeague.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labelLeague.Click += new System.EventHandler(this.LabelItemName_Click);
-            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::POExileDirection.Properties.Resources.panel_time;
             this.pictureBox4.Location = new System.Drawing.Point(402, 7);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(12, 12);
             this.pictureBox4.TabIndex = 5;
@@ -248,9 +262,10 @@
             // 
             this.pictureBox3.BackgroundImage = global::POExileDirection.Properties.Resources.panel_bottom_line;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 45);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 52);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(493, 9);
+            this.pictureBox3.Size = new System.Drawing.Size(493, 11);
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
@@ -259,7 +274,8 @@
             this.pictureCurrency.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.pictureCurrency.BackgroundImage = global::POExileDirection.Properties.Resources.QuestionMark_20px;
             this.pictureCurrency.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureCurrency.Location = new System.Drawing.Point(466, 24);
+            this.pictureCurrency.Location = new System.Drawing.Point(466, 28);
+            this.pictureCurrency.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureCurrency.Name = "pictureCurrency";
             this.pictureCurrency.Size = new System.Drawing.Size(20, 20);
             this.pictureCurrency.TabIndex = 2;
@@ -274,12 +290,13 @@
             this.btnThanks.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnThanks.FlatAppearance.BorderSize = 0;
             this.btnThanks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThanks.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnThanks.ForeColor = System.Drawing.Color.Black;
+            this.btnThanks.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnThanks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
             this.btnThanks.Image = global::POExileDirection.Properties.Resources.Button_bg;
-            this.btnThanks.Location = new System.Drawing.Point(422, 56);
+            this.btnThanks.Location = new System.Drawing.Point(424, 62);
+            this.btnThanks.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnThanks.Name = "btnThanks";
-            this.btnThanks.Size = new System.Drawing.Size(64, 22);
+            this.btnThanks.Size = new System.Drawing.Size(64, 28);
             this.btnThanks.TabIndex = 1;
             this.btnThanks.UseVisualStyleBackColor = false;
             this.btnThanks.Click += new System.EventHandler(this.BtnThanks_Click);
@@ -293,12 +310,13 @@
             this.btnWaitPls.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnWaitPls.FlatAppearance.BorderSize = 0;
             this.btnWaitPls.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWaitPls.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnWaitPls.ForeColor = System.Drawing.Color.White;
+            this.btnWaitPls.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnWaitPls.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
             this.btnWaitPls.Image = ((System.Drawing.Image)(resources.GetObject("btnWaitPls.Image")));
-            this.btnWaitPls.Location = new System.Drawing.Point(352, 56);
+            this.btnWaitPls.Location = new System.Drawing.Point(354, 62);
+            this.btnWaitPls.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnWaitPls.Name = "btnWaitPls";
-            this.btnWaitPls.Size = new System.Drawing.Size(64, 22);
+            this.btnWaitPls.Size = new System.Drawing.Size(64, 28);
             this.btnWaitPls.TabIndex = 1;
             this.btnWaitPls.UseVisualStyleBackColor = false;
             this.btnWaitPls.Click += new System.EventHandler(this.BtnWaitpls_Click);
@@ -312,11 +330,13 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(212, 56);
+            this.button1.Location = new System.Drawing.Point(214, 62);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(64, 22);
+            this.button1.Size = new System.Drawing.Size(64, 28);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Visible = false;
@@ -331,11 +351,13 @@
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button2.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(142, 56);
+            this.button2.Location = new System.Drawing.Point(144, 62);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(64, 22);
+            this.button2.Size = new System.Drawing.Size(64, 28);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Visible = false;
@@ -350,11 +372,13 @@
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button3.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(72, 56);
+            this.button3.Location = new System.Drawing.Point(74, 62);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(64, 22);
+            this.button3.Size = new System.Drawing.Size(64, 28);
             this.button3.TabIndex = 1;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Visible = false;
@@ -369,11 +393,13 @@
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button4.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(2, 56);
+            this.button4.Location = new System.Drawing.Point(4, 62);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(64, 22);
+            this.button4.Size = new System.Drawing.Size(64, 28);
             this.button4.TabIndex = 1;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Visible = false;
@@ -388,28 +414,17 @@
             this.btnSold.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnSold.FlatAppearance.BorderSize = 0;
             this.btnSold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSold.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnSold.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnSold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
             this.btnSold.Image = ((System.Drawing.Image)(resources.GetObject("btnSold.Image")));
-            this.btnSold.Location = new System.Drawing.Point(282, 56);
+            this.btnSold.Location = new System.Drawing.Point(284, 62);
+            this.btnSold.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSold.Name = "btnSold";
-            this.btnSold.Size = new System.Drawing.Size(64, 22);
+            this.btnSold.Size = new System.Drawing.Size(64, 28);
             this.btnSold.TabIndex = 1;
             this.btnSold.UseVisualStyleBackColor = false;
             this.btnSold.Click += new System.EventHandler(this.BtnSold_Click);
             this.btnSold.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NotificationForm_KeyDown);
-            // 
-            // DeadlyToolTip
-            // 
-            this.DeadlyToolTip.AutoPopDelay = 5000;
-            this.DeadlyToolTip.BackColor = System.Drawing.Color.Transparent;
-            this.DeadlyToolTip.ForeColor = System.Drawing.Color.DarkRed;
-            this.DeadlyToolTip.InitialDelay = 200;
-            this.DeadlyToolTip.ReshowDelay = 100;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 200;
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // panelTop
             // 
@@ -429,6 +444,7 @@
             this.panelTop.Controls.Add(this.labelPriceAtTitle);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(494, 28);
             this.panelTop.TabIndex = 0;
@@ -437,9 +453,10 @@
             // 
             this.pictureArrow.BackColor = System.Drawing.Color.Transparent;
             this.pictureArrow.Image = global::POExileDirection.Properties.Resources.top_bar_arrow;
-            this.pictureArrow.Location = new System.Drawing.Point(237, 12);
+            this.pictureArrow.Location = new System.Drawing.Point(237, 11);
+            this.pictureArrow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureArrow.Name = "pictureArrow";
-            this.pictureArrow.Size = new System.Drawing.Size(16, 7);
+            this.pictureArrow.Size = new System.Drawing.Size(16, 9);
             this.pictureArrow.TabIndex = 13;
             this.pictureArrow.TabStop = false;
             this.pictureArrow.Click += new System.EventHandler(this.LabelItemName_Click);
@@ -447,9 +464,10 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::POExileDirection.Properties.Resources.top_bar_line;
-            this.pictureBox8.Location = new System.Drawing.Point(467, 9);
+            this.pictureBox8.Location = new System.Drawing.Point(467, 8);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(1, 11);
+            this.pictureBox8.Size = new System.Drawing.Size(1, 14);
             this.pictureBox8.TabIndex = 12;
             this.pictureBox8.TabStop = false;
             // 
@@ -462,9 +480,10 @@
             this.btnMinMax.FlatAppearance.BorderSize = 0;
             this.btnMinMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinMax.Image = global::POExileDirection.Properties.Resources.top_bar_size_control;
-            this.btnMinMax.Location = new System.Drawing.Point(17, 9);
+            this.btnMinMax.Location = new System.Drawing.Point(16, 8);
+            this.btnMinMax.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMinMax.Name = "btnMinMax";
-            this.btnMinMax.Size = new System.Drawing.Size(10, 10);
+            this.btnMinMax.Size = new System.Drawing.Size(10, 12);
             this.btnMinMax.TabIndex = 9;
             this.btnMinMax.UseVisualStyleBackColor = false;
             this.btnMinMax.Click += new System.EventHandler(this.btnMinMax_Click);
@@ -472,9 +491,10 @@
             // pictureHideoutVert
             // 
             this.pictureHideoutVert.Image = global::POExileDirection.Properties.Resources.top_bar_line;
-            this.pictureHideoutVert.Location = new System.Drawing.Point(390, 9);
+            this.pictureHideoutVert.Location = new System.Drawing.Point(390, 8);
+            this.pictureHideoutVert.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureHideoutVert.Name = "pictureHideoutVert";
-            this.pictureHideoutVert.Size = new System.Drawing.Size(1, 11);
+            this.pictureHideoutVert.Size = new System.Drawing.Size(1, 14);
             this.pictureHideoutVert.TabIndex = 10;
             this.pictureHideoutVert.TabStop = false;
             // 
@@ -489,9 +509,10 @@
             this.btnClose.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(473, 7);
+            this.btnClose.Location = new System.Drawing.Point(473, 6);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(13, 13);
+            this.btnClose.Size = new System.Drawing.Size(13, 16);
             this.btnClose.TabIndex = 1;
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
@@ -506,9 +527,10 @@
             this.btnInvite.FlatAppearance.BorderSize = 0;
             this.btnInvite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInvite.Image = global::POExileDirection.Properties.Resources.top_bar_partyadd;
-            this.btnInvite.Location = new System.Drawing.Point(399, 7);
+            this.btnInvite.Location = new System.Drawing.Point(399, 6);
+            this.btnInvite.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnInvite.Name = "btnInvite";
-            this.btnInvite.Size = new System.Drawing.Size(17, 13);
+            this.btnInvite.Size = new System.Drawing.Size(17, 16);
             this.btnInvite.TabIndex = 1;
             this.btnInvite.UseVisualStyleBackColor = false;
             this.btnInvite.Click += new System.EventHandler(this.BtnInvite_Click);
@@ -523,9 +545,10 @@
             this.btnKick.FlatAppearance.BorderSize = 0;
             this.btnKick.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKick.Image = global::POExileDirection.Properties.Resources.top_bar_partyexit;
-            this.btnKick.Location = new System.Drawing.Point(443, 10);
+            this.btnKick.Location = new System.Drawing.Point(443, 9);
+            this.btnKick.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnKick.Name = "btnKick";
-            this.btnKick.Size = new System.Drawing.Size(16, 10);
+            this.btnKick.Size = new System.Drawing.Size(16, 12);
             this.btnKick.TabIndex = 1;
             this.btnKick.UseVisualStyleBackColor = false;
             this.btnKick.Click += new System.EventHandler(this.BtnKick_Click);
@@ -540,9 +563,10 @@
             this.btnTrade.FlatAppearance.BorderSize = 0;
             this.btnTrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTrade.Image = global::POExileDirection.Properties.Resources.top_bar_Transaction;
-            this.btnTrade.Location = new System.Drawing.Point(422, 8);
+            this.btnTrade.Location = new System.Drawing.Point(422, 7);
+            this.btnTrade.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTrade.Name = "btnTrade";
-            this.btnTrade.Size = new System.Drawing.Size(15, 13);
+            this.btnTrade.Size = new System.Drawing.Size(15, 16);
             this.btnTrade.TabIndex = 1;
             this.btnTrade.UseVisualStyleBackColor = false;
             this.btnTrade.Click += new System.EventHandler(this.BtnTrade_Click);
@@ -557,9 +581,10 @@
             this.btnHideout.FlatAppearance.BorderSize = 0;
             this.btnHideout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHideout.Image = global::POExileDirection.Properties.Resources.top_bar_home;
-            this.btnHideout.Location = new System.Drawing.Point(370, 7);
+            this.btnHideout.Location = new System.Drawing.Point(370, 6);
+            this.btnHideout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHideout.Name = "btnHideout";
-            this.btnHideout.Size = new System.Drawing.Size(14, 13);
+            this.btnHideout.Size = new System.Drawing.Size(14, 16);
             this.btnHideout.TabIndex = 1;
             this.btnHideout.UseVisualStyleBackColor = false;
             this.btnHideout.Click += new System.EventHandler(this.BtnHideout_Click);
@@ -567,13 +592,12 @@
             // 
             // labelItemName
             // 
-            this.labelItemName.AutoEllipsis = true;
             this.labelItemName.BackColor = System.Drawing.Color.Transparent;
             this.labelItemName.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelItemName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(110)))), ((int)(((byte)(23)))));
-            this.labelItemName.Location = new System.Drawing.Point(31, 4);
+            this.labelItemName.Location = new System.Drawing.Point(28, 5);
             this.labelItemName.Name = "labelItemName";
-            this.labelItemName.Size = new System.Drawing.Size(200, 20);
+            this.labelItemName.Size = new System.Drawing.Size(200, 17);
             this.labelItemName.TabIndex = 0;
             this.labelItemName.Text = "Very Expensive Item  (아이템)";
             this.labelItemName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -589,8 +613,9 @@
             this.btnCurrency.Font = new System.Drawing.Font("Cambria", 9.75F);
             this.btnCurrency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(110)))), ((int)(((byte)(23)))));
             this.btnCurrency.Location = new System.Drawing.Point(308, 3);
+            this.btnCurrency.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCurrency.Name = "btnCurrency";
-            this.btnCurrency.Size = new System.Drawing.Size(20, 20);
+            this.btnCurrency.Size = new System.Drawing.Size(20, 25);
             this.btnCurrency.TabIndex = 1;
             this.btnCurrency.Text = "?";
             this.btnCurrency.UseVisualStyleBackColor = false;
@@ -600,13 +625,12 @@
             // 
             // labelPriceAtTitle
             // 
-            this.labelPriceAtTitle.AutoEllipsis = true;
             this.labelPriceAtTitle.BackColor = System.Drawing.Color.Transparent;
             this.labelPriceAtTitle.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPriceAtTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(110)))), ((int)(((byte)(23)))));
-            this.labelPriceAtTitle.Location = new System.Drawing.Point(259, 4);
+            this.labelPriceAtTitle.Location = new System.Drawing.Point(259, 6);
             this.labelPriceAtTitle.Name = "labelPriceAtTitle";
-            this.labelPriceAtTitle.Size = new System.Drawing.Size(45, 20);
+            this.labelPriceAtTitle.Size = new System.Drawing.Size(45, 17);
             this.labelPriceAtTitle.TabIndex = 0;
             this.labelPriceAtTitle.Text = "99999";
             this.labelPriceAtTitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -614,15 +638,17 @@
             // 
             // NotificationForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(494, 113);
+            this.ClientSize = new System.Drawing.Size(494, 120);
             this.ControlBox = false;
             this.Controls.Add(this.panelMiddle);
             this.Controls.Add(this.panelTop);
             this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "NotificationForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;

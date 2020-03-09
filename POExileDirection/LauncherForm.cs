@@ -1904,8 +1904,9 @@ namespace POExileDirection
                         Application.Exit();
                 }
             }
-            catch
+            catch (Exception ex)
             {
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                 MSGForm frmMSG = new MSGForm();
                 frmMSG.lbMsg.Text = "Can't read Deadly Mapping Information~!.\r\nPlease check your add-on installation and Try again~!.";
                 DialogResult dr = frmMSG.ShowDialog();
@@ -1917,66 +1918,80 @@ namespace POExileDirection
                     Application.Exit();
             }
 
-            foreach (var item in deadlyInformationData.InformationMSG.NotifyMSG)
+            try
             {
-                if (item.Id == "THX")
+                foreach (var item in deadlyInformationData.InformationMSG.NotifyMSG)
                 {
-                    g_strnotiDONE = item.Msg;
-                    g_strnotiDONEbtnTITLE = item.Title;
-                }
-                else if (item.Id == "WAIT")
-                {
-                    g_strnotiWAIT = item.Msg;
-                    g_strnotiWAITbtnTITLE = item.Title;
-                }
-                else if (item.Id == "WILLING")
-                {
-                    g_strnotiRESEND = item.Msg;
-                    // Not Title Button.
-                }
-                else if (item.Id == "SOLD")
-                {
-                    g_strnotiSOLD = item.Msg;
-                    g_strnotiSOLDbtnTITLE = item.Title;
-                }
-                else if (item.Id == "CUSTOM1")
-                {
-                    g_strCUSTOM1 = item.Msg;
-                    g_strCUSTOM1btnTITLE = item.Title;
-                }
-                else if (item.Id == "CUSTOM2")
-                {
-                    g_strCUSTOM2 = item.Msg;
-                    g_strCUSTOM2btnTITLE = item.Title;
-                }
-                else if (item.Id == "CUSTOM3")
-                {
-                    g_strCUSTOM3 = item.Msg;
-                    g_strCUSTOM3btnTITLE = item.Title;
-                }
-                else if (item.Id == "CUSTOM4")
-                {
-                    g_strCUSTOM4 = item.Msg;
-                    g_strCUSTOM4btnTITLE = item.Title;
+                    if (item.Id == "THX")
+                    {
+                        g_strnotiDONE = item.Msg;
+                        g_strnotiDONEbtnTITLE = item.Title;
+                    }
+                    else if (item.Id == "WAIT")
+                    {
+                        g_strnotiWAIT = item.Msg;
+                        g_strnotiWAITbtnTITLE = item.Title;
+                    }
+                    else if (item.Id == "WILLING")
+                    {
+                        g_strnotiRESEND = item.Msg;
+                        // Not Title Button.
+                    }
+                    else if (item.Id == "SOLD")
+                    {
+                        g_strnotiSOLD = item.Msg;
+                        g_strnotiSOLDbtnTITLE = item.Title;
+                    }
+                    else if (item.Id == "CUSTOM1")
+                    {
+                        g_strCUSTOM1 = item.Msg;
+                        g_strCUSTOM1btnTITLE = item.Title;
+                    }
+                    else if (item.Id == "CUSTOM2")
+                    {
+                        g_strCUSTOM2 = item.Msg;
+                        g_strCUSTOM2btnTITLE = item.Title;
+                    }
+                    else if (item.Id == "CUSTOM3")
+                    {
+                        g_strCUSTOM3 = item.Msg;
+                        g_strCUSTOM3btnTITLE = item.Title;
+                    }
+                    else if (item.Id == "CUSTOM4")
+                    {
+                        g_strCUSTOM4 = item.Msg;
+                        g_strCUSTOM4btnTITLE = item.Title;
+                    }
                 }
             }
-
-            foreach (var item in deadlyInformationData.MapAlertMSG.MapAlertMSG)
+            catch (Exception ex)
             {
-                if (item.Id == "RED")
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+            }
+
+            try
+            {
+                foreach (var item in deadlyInformationData.MapAlertMSG.MapAlertMSG)
                 {
-                    foreach (var itemMsg in item.Msg)
+                    if (item.Id == "RED")
                     {
-                        g_strArrREDAlert.Add(itemMsg);
+                        foreach (var itemMsg in item.Msg)
+                        {
+                            g_strArrREDAlert.Add(itemMsg);
+                        }
+                    }
+                    else if (item.Id == "GREEN")
+                    {
+                        foreach (var itemMsg in item.Msg)
+                        {
+                            g_strArrGREENAlert.Add(itemMsg);
+                        }
                     }
                 }
-                else if (item.Id == "GREEN")
-                {
-                    foreach (var itemMsg in item.Msg)
-                    {
-                        g_strArrGREENAlert.Add(itemMsg);
-                    }
-                }
+            }
+            catch (Exception ex)
+            {
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
 
             // TODO : CHAT SCAN MESSAGE

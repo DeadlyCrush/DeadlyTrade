@@ -901,22 +901,33 @@ namespace POExileDirection
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
+            string strElapsed = String.Empty;
+
             DateTime nowTime = DateTime.Now;
             double elapsedsecs = ((TimeSpan)(nowTime - rcvDateTime)).TotalSeconds;
             TimeSpan tSpan = TimeSpan.FromSeconds(elapsedsecs);
-            string strElapsed = string.Format("{0:D1}h {1:D2}m {2:D2}s",
-                                tSpan.Hours,
-                                tSpan.Minutes,
-                                tSpan.Seconds);
+            if(tSpan.Hours > 0)
+            {
+                strElapsed = string.Format("{0:D1}h {1:D2}m {2:D2}s", tSpan.Hours, tSpan.Minutes, tSpan.Seconds);
+            }
+            if (tSpan.Minutes > 0)
+            {
+                strElapsed = string.Format("{0:D2}m {1:D2}s", tSpan.Minutes, tSpan.Seconds);
+            }
+
+            if (tSpan.Minutes != -1)
+            {
+                strElapsed = string.Format("{0:D2}s", tSpan.Seconds);
+            }
             labelElapsed.Text = strElapsed;
 
-            if (LauncherForm.g_pinLOCK)
-                ControlForm.frmNotificationContainer.pictureMovingBar.Visible = false;
-            else
-            {
-                ControlForm.frmNotificationContainer.pictureMovingBar.BringToFront();
-                ControlForm.frmNotificationContainer.pictureMovingBar.Visible = true;
-            }
+            //if (LauncherForm.g_pinLOCK)
+            //    ControlForm.frmNotificationContainer.pictureMovingBar.Visible = false;
+            //else
+            //{
+            //    ControlForm.frmNotificationContainer.pictureMovingBar.BringToFront();
+            //    ControlForm.frmNotificationContainer.pictureMovingBar.Visible = true;
+            //}
         }
 
         private void NotificationForm_KeyDown(object sender, KeyEventArgs e)

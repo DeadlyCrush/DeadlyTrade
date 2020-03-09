@@ -493,11 +493,22 @@ namespace POExileDirection
         private void GetOverlaySettings()
         {
             labelPathJUN.Text = ControlForm.g_strImagePath[0];
-            Bitmap bmp = ResizePictureKeepAspecRatio(ControlForm.g_strImagePath[0], 200, 150);
-            pictureBoxJUN.Image = bmp;
+            using (Bitmap bmp1 = ResizePictureKeepAspecRatio(ControlForm.g_strImagePath[0], 200, 150))
+            {
+                pictureBoxJUN.Image = bmp1;
+            }
 
             labelPathALVA.Text = ControlForm.g_strImagePath[1];
+            using (Bitmap bmp2 = ResizePictureKeepAspecRatio(ControlForm.g_strImagePath[1], 200, 150))
+            {
+                pictureBoxALVA.Image = bmp2;
+            }
+
             labelPathZANA.Text = ControlForm.g_strImagePath[2];
+            using (Bitmap bmp3 = ResizePictureKeepAspecRatio(ControlForm.g_strImagePath[2], 200, 150))
+            {
+                pictureBoxZANA.Image = bmp3;
+            }
         }
 
         private void GetHelpSettings()

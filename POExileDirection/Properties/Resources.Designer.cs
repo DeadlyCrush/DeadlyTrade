@@ -1473,6 +1473,26 @@ namespace POExileDirection.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap PanelHolderArrow_dwon {
+            get {
+                object obj = ResourceManager.GetObject("PanelHolderArrow_dwon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap PanelHolderArrow_up {
+            get {
+                object obj = ResourceManager.GetObject("PanelHolderArrow_up", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap PayPal_Donate_Button {
             get {
                 object obj = ResourceManager.GetObject("PayPal-Donate-Button", resourceCulture);

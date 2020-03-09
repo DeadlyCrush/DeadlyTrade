@@ -2601,7 +2601,7 @@ namespace POExileDirection
             if (!bIMGOvelayActivated)
                 frmIMGOverlay = new ImageOverlayForm();
             // JUN
-            frmIMGOverlay.m_g_strImagePath = strImagePath[0];
+            frmIMGOverlay.m_strImagePath = g_strImagePath[0];
             frmIMGOverlay.nZoom = 0;
             frmIMGOverlay.Load_Image();
             IMGOverlayForm_Show_Hide((int)OVERLAY_WHAT.OVER_JUN);

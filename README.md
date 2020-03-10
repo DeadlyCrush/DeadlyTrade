@@ -13,6 +13,15 @@
 | Download latest release and unzip. It is portable. | [![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release)](https://github.com/DeadlyCrush/DeadlyTrade/releases) |
 |Checking & Update Automatically when Launch. |Update notice panel is shown when update available.|
 
+## Release Schedule 1.4.0.1/1.4.0.2
+
+# 1st Update 1.4.0.1 : 
+- rework (Trade Notification, ChatScan, Settings, UI) + a few new useful features. + bug fix. + stablized.
+→  2020.03.10~2020.03.11 (local time in Korea)
+# 2nd Update 1.4.0.2 :
+- Add price check related main features like trademacro and currenycop.
+→  2020.03.13~2020.03.14 (local time in Korea)
+
 ## Languages
 * [C#, .Net Core/Web] - Front End, Web API
 * [Cli] - Interop, Core API

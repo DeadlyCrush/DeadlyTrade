@@ -17,9 +17,11 @@
 
 ### 1st Update 1.4.0.1 : 
 - rework (Trade Notification, ChatScan, Settings, UI) + a few new useful features. + bug fix. + stablized.
+
 →  2020.03.10~2020.03.11 (local time in Korea)
 ### 2nd Update 1.4.0.2 :
 - Add price check related main features like trademacro and currenycop.
+
 →  2020.03.13~2020.03.14 (local time in Korea)
 
 ## Languages

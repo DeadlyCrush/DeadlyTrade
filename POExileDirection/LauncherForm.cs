@@ -281,6 +281,23 @@ namespace POExileDirection
         public static string g_strTRAutoCloseCustom3 { get; set; }
         public static string g_strTRAutoCloseCustom4 { get; set; }
 
+        public static string g_strTRADECheckYNThx { get; set; }
+        public static string g_strTRADECheckYNWait { get; set; }
+        public static string g_strTRADECheckYNSold { get; set; }
+        public static string g_strTRADECheckYNCustom1 { get; set; }
+        public static string g_strTRADECheckYNCustom2 { get; set; }
+        public static string g_strTRADECheckYNCustom3 { get; set; }
+        public static string g_strTRADECheckYNCustom4 { get; set; }
+
+        public static string g_strINVITECheckYNThx { get; set; }
+        public static string g_strINVITECheckYNWait { get; set; }
+        public static string g_strINVITECheckYNSold { get; set; }
+        public static string g_strINVITECheckYNCustom1 { get; set; }
+        public static string g_strINVITECheckYNCustom2 { get; set; }
+        public static string g_strINVITECheckYNCustom3 { get; set; }
+        public static string g_strINVITECheckYNCustom4 { get; set; }
+
+
         public static int resolution_height { get; set; }
         public static int resolution_width { get; set; }
 
@@ -1186,6 +1203,23 @@ namespace POExileDirection
                 g_strTRAutoCloseCustom2 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE2");
                 g_strTRAutoCloseCustom3 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE3");
                 g_strTRAutoCloseCustom4 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE4");
+
+                // Check - Trade & Invite
+                g_strTRADECheckYNThx = parser.GetSetting("LOCATIONNOTIFY", "THXCLOSE");
+                g_strTRADECheckYNWait = parser.GetSetting("LOCATIONNOTIFY", "WAITCLOSE");
+                g_strTRADECheckYNSold = parser.GetSetting("LOCATIONNOTIFY", "SOLDCLOSE");
+                g_strTRADECheckYNCustom1 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE1");
+                g_strTRADECheckYNCustom2 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE2");
+                g_strTRADECheckYNCustom3 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE3");
+                g_strTRADECheckYNCustom4 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE4");
+
+                g_strINVITECheckYNThx = parser.GetSetting("LOCATIONNOTIFY", "THXCLOSE");
+                g_strINVITECheckYNWait = parser.GetSetting("LOCATIONNOTIFY", "WAITCLOSE");
+                g_strINVITECheckYNSold = parser.GetSetting("LOCATIONNOTIFY", "SOLDCLOSE");
+                g_strINVITECheckYNCustom1 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE1");
+                g_strINVITECheckYNCustom2 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE2");
+                g_strINVITECheckYNCustom3 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE3");
+                g_strINVITECheckYNCustom4 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE4");
 
                 g_nGridLeft = Convert.ToInt32(parser.GetSetting("LOCATIONGRID", "LEFT"));
                 g_nGridTop = Convert.ToInt32(parser.GetSetting("LOCATIONGRID", "TOP"));

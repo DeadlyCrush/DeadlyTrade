@@ -1,2 +1,2 @@
-팔 때 : r255 g236 b26 html #FFEC1A
-살 때 : r26 g204 b255 html #1ACCFF
+팔 때 : r255 g236 b26 html #FFEC1A (노랑 화살표)
+살 때 : r26 g204 b255 html #1ACCFF (파랑 화살표)

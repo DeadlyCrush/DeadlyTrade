@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.panelHolder = new System.Windows.Forms.Panel();
-            this.btnPanelArrow = new System.Windows.Forms.Button();
             this.panelNOTIFICATION = new System.Windows.Forms.Panel();
+            this.btnPanelArrow = new System.Windows.Forms.Button();
             this.panelHolder.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelHolder
             // 
-            this.panelHolder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(42)))), ((int)(((byte)(0)))));
+            this.panelHolder.BackColor = System.Drawing.Color.DarkGray;
             this.panelHolder.Controls.Add(this.btnPanelArrow);
             this.panelHolder.Location = new System.Drawing.Point(0, 0);
             this.panelHolder.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -46,6 +46,15 @@
             this.panelHolder.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureMovingBar_MouseDown);
             this.panelHolder.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureMovingBar_MouseMove);
             this.panelHolder.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureMovingBar_MouseUp);
+            // 
+            // panelNOTIFICATION
+            // 
+            this.panelNOTIFICATION.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelNOTIFICATION.Location = new System.Drawing.Point(13, 0);
+            this.panelNOTIFICATION.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelNOTIFICATION.Name = "panelNOTIFICATION";
+            this.panelNOTIFICATION.Size = new System.Drawing.Size(495, 121);
+            this.panelNOTIFICATION.TabIndex = 3;
             // 
             // btnPanelArrow
             // 
@@ -65,15 +74,6 @@
             this.btnPanelArrow.UseVisualStyleBackColor = false;
             this.btnPanelArrow.Visible = false;
             this.btnPanelArrow.Click += new System.EventHandler(this.btnPanelArrow_Click);
-            // 
-            // panelNOTIFICATION
-            // 
-            this.panelNOTIFICATION.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelNOTIFICATION.Location = new System.Drawing.Point(14, 0);
-            this.panelNOTIFICATION.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panelNOTIFICATION.Name = "panelNOTIFICATION";
-            this.panelNOTIFICATION.Size = new System.Drawing.Size(494, 121);
-            this.panelNOTIFICATION.TabIndex = 3;
             // 
             // NotificationContainer
             // 

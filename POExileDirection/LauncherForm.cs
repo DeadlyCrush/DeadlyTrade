@@ -599,18 +599,6 @@ namespace POExileDirection
             // TTTTT Get_NinjaData();
         }
 
-        private void Check_Authentication()
-        {
-            DeadlyLog4Net._log.Info("Check_Authentication  : " + _strIPAddress + _strMacAddress);
-
-            panelLogin.Left = 5;
-            panelLogin.Top = 6;
-            panelLogin.Width = 548;
-            panelLogin.Height = 536;
-            panelLogin.Visible = true;
-            panelLogin.BringToFront();
-        }
-
         private void LauncherForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             _strIPAddress = getInternalIP();
@@ -647,10 +635,7 @@ namespace POExileDirection
 
                 if (strisLogin == "Y")
                 {
-                    labelMsg.Text = "Already logged in. Disconnect existing user?";
-                    Check_Authentication();
-                    btnForceLogin.Visible = true;
-                    btnForceLogin.Enabled = true;
+                    ;//
                 }
 
                 //if (checkBoxAutoLogin.Checked)
@@ -662,7 +647,6 @@ namespace POExileDirection
                 DeadlyLog4Net._log.Info("LOGIN Welcome : " + _strIPAddress + _strMacAddress);
 
                 // Now Check Update available.
-                panelLogin.Visible = false;
                 // AutoUpdater check server's xml.
                 AutoUpdateCheck();
             }
@@ -721,7 +705,6 @@ namespace POExileDirection
             DeadlyLog4Net._log.Info("LOGIN Welcome : " + _strIPAddress + _strMacAddress);
 
             // Now Check Update available.
-            panelLogin.Visible = false;
             // AutoUpdater check server's xml.
             AutoUpdateCheck();
         }
@@ -807,11 +790,11 @@ namespace POExileDirection
 
         public void AutoUpdateCheck()
         {
-            // Waiting Panel : 558, 573
-            this.panelWaiting.Left = 1;
-            this.panelWaiting.Top = 1;
-            this.panelWaiting.Width = 558;
-            this.panelWaiting.Height = 545;
+            // Waiting Panel
+            this.panelWaiting.Left = 0;
+            this.panelWaiting.Top = 0;
+            this.panelWaiting.Width = 556;
+            this.panelWaiting.Height = 416;
             this.panelWaiting.Visible = true;
 
             try
@@ -1086,25 +1069,39 @@ namespace POExileDirection
                 string strUserChoideLeague = parser.GetSetting("LEAGUE", "USERCHOICE");
                 int nUserChoice = Convert.ToInt32(strUserChoideLeague);
 
-                LEAGUE_STRING enumUerChoice = LEAGUE_STRING.LEAGUE_CURRENT;
+                LEAGUE_STRING enumUerChoice = LEAGUE_STRING.LEAGUE_STANDARD;
                 switch (nUserChoice)
                 {
                     case 0:
-                        enumUerChoice = LEAGUE_STRING.LEAGUE_CURRENT;
-                        break;
-                    case 1:
                         enumUerChoice = LEAGUE_STRING.LEAGUE_STANDARD;
                         break;
-                    case 2:
-                        enumUerChoice = LEAGUE_STRING.LEAGUE_HDCORE_CURRENT;
-                        break;
-                    case 3:
+                    case 1:
                         enumUerChoice = LEAGUE_STRING.LEAGUE_HDCORE_STANDARD;
                         break;
                     default:
-                        enumUerChoice = LEAGUE_STRING.LEAGUE_CURRENT;
+                        enumUerChoice = LEAGUE_STRING.LEAGUE_STANDARD;
                         break;
                 }
+
+                //LEAGUE_STRING enumUerChoice = LEAGUE_STRING.LEAGUE_CURRENT;
+                //switch (nUserChoice)
+                //{
+                //    case 0:
+                //        enumUerChoice = LEAGUE_STRING.LEAGUE_CURRENT;
+                //        break;
+                //    case 1:
+                //        enumUerChoice = LEAGUE_STRING.LEAGUE_STANDARD;
+                //        break;
+                //    case 2:
+                //        enumUerChoice = LEAGUE_STRING.LEAGUE_HDCORE_CURRENT;
+                //        break;
+                //    case 3:
+                //        enumUerChoice = LEAGUE_STRING.LEAGUE_HDCORE_STANDARD;
+                //        break;
+                //    default:
+                //        enumUerChoice = LEAGUE_STRING.LEAGUE_CURRENT;
+                //        break;
+                //}
 
                 g_CurrentLeague = enumUerChoice.ToDescriptionString();
                 labelUserLeague.Text = String.Format("Last Your currency checked league is '{0}'.", g_CurrentLeague);
@@ -1392,10 +1389,10 @@ namespace POExileDirection
             timerScrolling.Start();
 
             launcherTimer.Start();
-#if !DEBUG
+//#if !DEBUG
             frmNinja = new NinjaForm();
             frmNinja.GetNinJaDataSync();
-#endif
+//#endif
         }
 
         private void LauncherTimer_Tick(object sender, EventArgs e)
@@ -1405,9 +1402,9 @@ namespace POExileDirection
             labelNINJASTATUS.Text = "POE.NINJA Data ("+ g_NinjaUpdatedTime + ")";
 
             xuiFlatProgressBar1.Value = g_NinjaFileMakeAndUpdateCNT;
-#if !DEBUG
+//#if !DEBUG
             if (g_NinjaFileMakeAndUpdateCNT >= CNT_NINJACATEGORIES)
-#endif
+//#endif
             {
                 try
                 {
@@ -1552,18 +1549,6 @@ namespace POExileDirection
                     // TTTTTTT // TTTTTTTg_POELogPath = @"D:\DAUM GAMES\PATH OF EXILE\LOGS\TESTCLIENT.TXT"; 
 
                     string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-                    if (resolution_width < 1920 && resolution_height < 1080)
-                    {
-                        strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                        if (resolution_width < 1600 && resolution_height < 1024)
-                            strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                        else if (LauncherForm.resolution_width < 1280)
-                            strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-                    }
-                    else if (resolution_width > 1920)
-                        strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
                     IniParser parser = new IniParser(strINIPath);
                     DeadlyLog4Net._log.Info($"{MethodBase.GetCurrentMethod().Name} RESOLUTION : " + strINIPath);
 
@@ -2276,18 +2261,6 @@ namespace POExileDirection
         private void btnPaypalSub_Click_1(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.jumpleasure.me/deadlytrade/?page_id=455");
-        }
-
-        private void btnHide_Click(object sender, EventArgs e)
-        {
-            panelDonate.Visible = false;
-        }
-
-        private void btnDonate_Click(object sender, EventArgs e)
-        {
-            panelDonate.Width = 548;
-            panelDonate.Height = 100;
-            panelDonate.Visible = true;
         }
 
         private void timerScrolling_Tick(object sender, EventArgs e)

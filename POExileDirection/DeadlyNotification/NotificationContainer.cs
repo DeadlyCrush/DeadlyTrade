@@ -109,9 +109,15 @@ namespace POExileDirection
             }
 
             if (panelNOTIFICATION.Controls.Count + 1 > 2)
+            {
+                panelHolder.BackColor = Color.FromArgb(74, 42, 0);
                 btnPanelArrow.Visible = true;
+            }
             else
+            {
+                panelHolder.BackColor = Color.DarkGray;
                 btnPanelArrow.Visible = false;
+            }
         }
 
         private void FrmNotifyPanel_SizeChanged(object sender, EventArgs e)

@@ -36,13 +36,10 @@
             this.labelPrice = new System.Windows.Forms.Label();
             this.panelMiddle = new System.Windows.Forms.Panel();
             this.checkQuadTab = new XanderUI.XUICheckBox();
-            this.labelLeague = new System.Windows.Forms.Label();
-            this.DeadlyToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.xuiVolumeController1 = new XanderUI.XUIVolumeController();
             this.btnWhisper = new System.Windows.Forms.Button();
             this.btnWhois = new System.Windows.Forms.Button();
             this.btnWilling = new System.Windows.Forms.Button();
+            this.labelLeague = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureCurrency = new System.Windows.Forms.PictureBox();
@@ -53,6 +50,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnSold = new System.Windows.Forms.Button();
+            this.DeadlyToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.xuiVolumeController1 = new XanderUI.XUIVolumeController();
             this.panelTop = new System.Windows.Forms.Panel();
             this.pictureArrow = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -79,7 +79,7 @@
             // labelElapsed
             // 
             this.labelElapsed.AutoEllipsis = true;
-            this.labelElapsed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(87)))), ((int)(((byte)(55)))));
+            this.labelElapsed.ForeColor = System.Drawing.Color.Tan;
             this.labelElapsed.Location = new System.Drawing.Point(416, 5);
             this.labelElapsed.Name = "labelElapsed";
             this.labelElapsed.Size = new System.Drawing.Size(74, 12);
@@ -146,10 +146,10 @@
             this.panelMiddle.Controls.Add(this.button4);
             this.panelMiddle.Controls.Add(this.btnSold);
             this.panelMiddle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelMiddle.Location = new System.Drawing.Point(1, 27);
+            this.panelMiddle.Location = new System.Drawing.Point(0, 27);
             this.panelMiddle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelMiddle.Name = "panelMiddle";
-            this.panelMiddle.Size = new System.Drawing.Size(492, 93);
+            this.panelMiddle.Size = new System.Drawing.Size(494, 93);
             this.panelMiddle.TabIndex = 7;
             // 
             // checkQuadTab
@@ -169,30 +169,6 @@
             this.DeadlyToolTip.SetToolTip(this.checkQuadTab, "Check if Quad Stash Tab");
             this.checkQuadTab.Click += new System.EventHandler(this.checkQuadTab_Click);
             // 
-            // labelLeague
-            // 
-            this.labelLeague.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(87)))), ((int)(((byte)(55)))));
-            this.labelLeague.Location = new System.Drawing.Point(48, 5);
-            this.labelLeague.Name = "labelLeague";
-            this.labelLeague.Size = new System.Drawing.Size(320, 15);
-            this.labelLeague.TabIndex = 0;
-            this.labelLeague.Text = "LeagueName (1ex = 999c)";
-            this.labelLeague.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labelLeague.Click += new System.EventHandler(this.LabelItemName_Click);
-            // 
-            // DeadlyToolTip
-            // 
-            this.DeadlyToolTip.AutoPopDelay = 5000;
-            this.DeadlyToolTip.BackColor = System.Drawing.Color.Transparent;
-            this.DeadlyToolTip.ForeColor = System.Drawing.Color.DarkRed;
-            this.DeadlyToolTip.InitialDelay = 200;
-            this.DeadlyToolTip.ReshowDelay = 100;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 200;
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
-            // 
             // btnWhisper
             // 
             this.btnWhisper.BackColor = System.Drawing.Color.Transparent;
@@ -202,7 +178,7 @@
             this.btnWhisper.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWhisper.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnWhisper.ForeColor = System.Drawing.Color.White;
-            this.btnWhisper.Image = global::POExileDirection.Properties.Resources.panel_whisper;
+            this.btnWhisper.Image = global::POExileDirection.Properties.Resources.panel_whisper1;
             this.btnWhisper.Location = new System.Drawing.Point(28, 6);
             this.btnWhisper.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnWhisper.Name = "btnWhisper";
@@ -220,7 +196,7 @@
             this.btnWhois.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnWhois.FlatAppearance.BorderSize = 0;
             this.btnWhois.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWhois.Image = global::POExileDirection.Properties.Resources.panel_bg_man;
+            this.btnWhois.Image = global::POExileDirection.Properties.Resources.top_bar_user_sell;
             this.btnWhois.Location = new System.Drawing.Point(7, 32);
             this.btnWhois.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnWhois.Name = "btnWhois";
@@ -238,7 +214,7 @@
             this.btnWilling.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnWilling.FlatAppearance.BorderSize = 0;
             this.btnWilling.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWilling.Image = global::POExileDirection.Properties.Resources.top_bar_resend1;
+            this.btnWilling.Image = global::POExileDirection.Properties.Resources.top_bar_resend;
             this.btnWilling.Location = new System.Drawing.Point(8, 6);
             this.btnWilling.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnWilling.Name = "btnWilling";
@@ -248,9 +224,20 @@
             this.btnWilling.Click += new System.EventHandler(this.BtnWilling_Click);
             this.btnWilling.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NotificationForm_KeyDown);
             // 
+            // labelLeague
+            // 
+            this.labelLeague.ForeColor = System.Drawing.Color.Tan;
+            this.labelLeague.Location = new System.Drawing.Point(48, 5);
+            this.labelLeague.Name = "labelLeague";
+            this.labelLeague.Size = new System.Drawing.Size(320, 15);
+            this.labelLeague.TabIndex = 0;
+            this.labelLeague.Text = "LeagueName (1ex = 999c)";
+            this.labelLeague.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelLeague.Click += new System.EventHandler(this.LabelItemName_Click);
+            // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::POExileDirection.Properties.Resources.panel_time;
+            this.pictureBox4.Image = global::POExileDirection.Properties.Resources.panel_time1;
             this.pictureBox4.Location = new System.Drawing.Point(402, 7);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox4.Name = "pictureBox4";
@@ -426,6 +413,19 @@
             this.btnSold.Click += new System.EventHandler(this.BtnSold_Click);
             this.btnSold.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NotificationForm_KeyDown);
             // 
+            // DeadlyToolTip
+            // 
+            this.DeadlyToolTip.AutoPopDelay = 5000;
+            this.DeadlyToolTip.BackColor = System.Drawing.Color.Transparent;
+            this.DeadlyToolTip.ForeColor = System.Drawing.Color.DarkRed;
+            this.DeadlyToolTip.InitialDelay = 200;
+            this.DeadlyToolTip.ReshowDelay = 100;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
             // panelTop
             // 
             this.panelTop.BackColor = System.Drawing.Color.DarkGray;
@@ -452,7 +452,7 @@
             // pictureArrow
             // 
             this.pictureArrow.BackColor = System.Drawing.Color.Transparent;
-            this.pictureArrow.Image = global::POExileDirection.Properties.Resources.top_bar_arrow;
+            this.pictureArrow.Image = global::POExileDirection.Properties.Resources.top_bar_arrow_sell;
             this.pictureArrow.Location = new System.Drawing.Point(237, 11);
             this.pictureArrow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureArrow.Name = "pictureArrow";
@@ -464,10 +464,10 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::POExileDirection.Properties.Resources.top_bar_line;
-            this.pictureBox8.Location = new System.Drawing.Point(467, 8);
+            this.pictureBox8.Location = new System.Drawing.Point(467, 9);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(1, 14);
+            this.pictureBox8.Size = new System.Drawing.Size(1, 11);
             this.pictureBox8.TabIndex = 12;
             this.pictureBox8.TabStop = false;
             // 
@@ -480,7 +480,7 @@
             this.btnMinMax.FlatAppearance.BorderSize = 0;
             this.btnMinMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinMax.Image = global::POExileDirection.Properties.Resources.top_bar_size_control;
-            this.btnMinMax.Location = new System.Drawing.Point(16, 8);
+            this.btnMinMax.Location = new System.Drawing.Point(15, 8);
             this.btnMinMax.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMinMax.Name = "btnMinMax";
             this.btnMinMax.Size = new System.Drawing.Size(10, 12);
@@ -491,10 +491,10 @@
             // pictureHideoutVert
             // 
             this.pictureHideoutVert.Image = global::POExileDirection.Properties.Resources.top_bar_line;
-            this.pictureHideoutVert.Location = new System.Drawing.Point(390, 8);
+            this.pictureHideoutVert.Location = new System.Drawing.Point(390, 9);
             this.pictureHideoutVert.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureHideoutVert.Name = "pictureHideoutVert";
-            this.pictureHideoutVert.Size = new System.Drawing.Size(1, 14);
+            this.pictureHideoutVert.Size = new System.Drawing.Size(1, 11);
             this.pictureHideoutVert.TabIndex = 10;
             this.pictureHideoutVert.TabStop = false;
             // 
@@ -509,7 +509,7 @@
             this.btnClose.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(473, 6);
+            this.btnClose.Location = new System.Drawing.Point(473, 5);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(13, 16);
@@ -527,7 +527,7 @@
             this.btnInvite.FlatAppearance.BorderSize = 0;
             this.btnInvite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInvite.Image = global::POExileDirection.Properties.Resources.top_bar_partyadd;
-            this.btnInvite.Location = new System.Drawing.Point(399, 6);
+            this.btnInvite.Location = new System.Drawing.Point(399, 4);
             this.btnInvite.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnInvite.Name = "btnInvite";
             this.btnInvite.Size = new System.Drawing.Size(17, 16);
@@ -545,7 +545,7 @@
             this.btnKick.FlatAppearance.BorderSize = 0;
             this.btnKick.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKick.Image = global::POExileDirection.Properties.Resources.top_bar_partyexit;
-            this.btnKick.Location = new System.Drawing.Point(443, 9);
+            this.btnKick.Location = new System.Drawing.Point(443, 7);
             this.btnKick.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnKick.Name = "btnKick";
             this.btnKick.Size = new System.Drawing.Size(16, 12);
@@ -563,7 +563,7 @@
             this.btnTrade.FlatAppearance.BorderSize = 0;
             this.btnTrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTrade.Image = global::POExileDirection.Properties.Resources.top_bar_Transaction;
-            this.btnTrade.Location = new System.Drawing.Point(422, 7);
+            this.btnTrade.Location = new System.Drawing.Point(422, 5);
             this.btnTrade.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTrade.Name = "btnTrade";
             this.btnTrade.Size = new System.Drawing.Size(15, 16);
@@ -581,7 +581,7 @@
             this.btnHideout.FlatAppearance.BorderSize = 0;
             this.btnHideout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHideout.Image = global::POExileDirection.Properties.Resources.top_bar_home;
-            this.btnHideout.Location = new System.Drawing.Point(370, 6);
+            this.btnHideout.Location = new System.Drawing.Point(370, 4);
             this.btnHideout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHideout.Name = "btnHideout";
             this.btnHideout.Size = new System.Drawing.Size(14, 16);
@@ -674,7 +674,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panelTop;
-        private System.Windows.Forms.Label labelItemName;
         private System.Windows.Forms.Panel panelMiddle;
         private System.Windows.Forms.PictureBox pictureCurrency;
         private System.Windows.Forms.Button btnClose;
@@ -709,5 +708,6 @@
         private XanderUI.XUICheckBox checkQuadTab;
         private System.Windows.Forms.Button btnCurrency;
         private System.Windows.Forms.Label labelPriceAtTitle;
+        private System.Windows.Forms.Label labelItemName;
     }
 }

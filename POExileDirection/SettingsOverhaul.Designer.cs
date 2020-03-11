@@ -32,6 +32,15 @@
             this.FlatSettingTab = new XanderUI.XUIFlatTab();
             this.tabHotKeys = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnT = new System.Windows.Forms.Button();
+            this.btnW = new System.Windows.Forms.Button();
+            this.btnS = new System.Windows.Forms.Button();
+            this.btnMinMax = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.textHotKeyPanelClose = new System.Windows.Forms.TextBox();
             this.textHotKeyPanelMinimize = new System.Windows.Forms.TextBox();
             this.textHotKeyKickLeave = new System.Windows.Forms.TextBox();
@@ -63,6 +72,11 @@
             this.checkHideout = new System.Windows.Forms.CheckBox();
             this.checkSyndicateJUN = new System.Windows.Forms.CheckBox();
             this.checkRemaining = new System.Windows.Forms.CheckBox();
+            this.btnSearchStash = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
@@ -82,10 +96,15 @@
             this.textALVA = new System.Windows.Forms.TextBox();
             this.textJUN = new System.Windows.Forms.TextBox();
             this.textRemains = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnSOUNDTrade = new System.Windows.Forms.Button();
             this.labelSNDOnOff = new System.Windows.Forms.Label();
             this.xuiSwitchSoundTrade = new XanderUI.XUISwitch();
+            this.label44 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
@@ -94,18 +113,32 @@
             this.btnCancelTab2 = new System.Windows.Forms.Button();
             this.labelTradeVolume = new System.Windows.Forms.Label();
             this.xuiSliderVolumeTrade = new XanderUI.XUISlider();
+            this.checkINVITECustom4 = new System.Windows.Forms.CheckBox();
             this.checkAutoCloseCustom4 = new System.Windows.Forms.CheckBox();
+            this.checkTRADECustom4 = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoKickCUSTOM4 = new System.Windows.Forms.CheckBox();
+            this.checkINVITECustom3 = new System.Windows.Forms.CheckBox();
             this.checkAutoCloseCustom3 = new System.Windows.Forms.CheckBox();
+            this.checkTRADECustom3 = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoKickCUSTOM3 = new System.Windows.Forms.CheckBox();
+            this.checkINVITECustom2 = new System.Windows.Forms.CheckBox();
             this.checkAutoCloseCustom2 = new System.Windows.Forms.CheckBox();
+            this.checkTRADECustom2 = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoKickCUSTOM2 = new System.Windows.Forms.CheckBox();
+            this.checkINVITECustom1 = new System.Windows.Forms.CheckBox();
             this.checkAutoCloseCustom1 = new System.Windows.Forms.CheckBox();
+            this.checkTRADECustom1 = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoKickCUSTOM1 = new System.Windows.Forms.CheckBox();
+            this.checkINVITEWait = new System.Windows.Forms.CheckBox();
             this.checkAutoCloseWait = new System.Windows.Forms.CheckBox();
+            this.checkINVITESold = new System.Windows.Forms.CheckBox();
             this.checkAutoCloseSold = new System.Windows.Forms.CheckBox();
+            this.checkTRADEWait = new System.Windows.Forms.CheckBox();
+            this.checkINVITEThx = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoKickWAIT = new System.Windows.Forms.CheckBox();
+            this.checkTRADESold = new System.Windows.Forms.CheckBox();
             this.checkAutoCloseThx = new System.Windows.Forms.CheckBox();
+            this.checkTRADEThx = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoKickSOLD = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoKickTHX = new System.Windows.Forms.CheckBox();
             this.textBoxResend = new System.Windows.Forms.TextBox();
@@ -127,6 +160,16 @@
             this.label43 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnCustom2 = new System.Windows.Forms.Button();
+            this.btnCustom4 = new System.Windows.Forms.Button();
+            this.btnCustom3 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.btnThanks = new System.Windows.Forms.Button();
+            this.btnSold = new System.Windows.Forms.Button();
+            this.btnWaitPls = new System.Windows.Forms.Button();
+            this.btnCustom1 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnSOUNDFlaskTimer = new System.Windows.Forms.Button();
             this.labelFlaskSoundUse = new System.Windows.Forms.Label();
@@ -170,6 +213,16 @@
             this.label33 = new System.Windows.Forms.Label();
             this.labelFL1 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
+            this.btn5 = new System.Windows.Forms.Button();
+            this.btn4 = new System.Windows.Forms.Button();
+            this.btn3 = new System.Windows.Forms.Button();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.btn1 = new System.Windows.Forms.Button();
+            this.pictureFlask5 = new System.Windows.Forms.PictureBox();
+            this.pictureFlask4 = new System.Windows.Forms.PictureBox();
+            this.pictureFlask3 = new System.Windows.Forms.PictureBox();
+            this.pictureFlask2 = new System.Windows.Forms.PictureBox();
+            this.pictureFlask1 = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label6 = new System.Windows.Forms.Label();
             this.btnSaveTab4 = new System.Windows.Forms.Button();
@@ -203,6 +256,11 @@
             this.label66 = new System.Windows.Forms.Label();
             this.lbSkillQ = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
+            this.btnS5 = new System.Windows.Forms.Button();
+            this.btnS4 = new System.Windows.Forms.Button();
+            this.btnS3 = new System.Windows.Forms.Button();
+            this.btnS2 = new System.Windows.Forms.Button();
+            this.btnS1 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.labelPathZANA = new System.Windows.Forms.Label();
             this.labelPathALVA = new System.Windows.Forms.Label();
@@ -219,6 +277,12 @@
             this.btnSaveTab5 = new System.Windows.Forms.Button();
             this.btnCancelTab5 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBoxZANA = new System.Windows.Forms.PictureBox();
+            this.pictureBoxALVA = new System.Windows.Forms.PictureBox();
+            this.pictureBoxJUN = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.linkLabel10 = new System.Windows.Forms.LinkLabel();
             this.linkLabel9 = new System.Windows.Forms.LinkLabel();
@@ -242,94 +306,30 @@
             this.openFileDialogJUN = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialogALVA = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialogZANA = new System.Windows.Forms.OpenFileDialog();
-            this.checkTRADEThx = new System.Windows.Forms.CheckBox();
-            this.checkTRADESold = new System.Windows.Forms.CheckBox();
-            this.checkINVITEThx = new System.Windows.Forms.CheckBox();
-            this.checkTRADEWait = new System.Windows.Forms.CheckBox();
-            this.checkINVITESold = new System.Windows.Forms.CheckBox();
-            this.checkINVITEWait = new System.Windows.Forms.CheckBox();
-            this.checkTRADECustom1 = new System.Windows.Forms.CheckBox();
-            this.checkINVITECustom1 = new System.Windows.Forms.CheckBox();
-            this.checkTRADECustom2 = new System.Windows.Forms.CheckBox();
-            this.checkINVITECustom2 = new System.Windows.Forms.CheckBox();
-            this.checkTRADECustom3 = new System.Windows.Forms.CheckBox();
-            this.checkINVITECustom3 = new System.Windows.Forms.CheckBox();
-            this.checkTRADECustom4 = new System.Windows.Forms.CheckBox();
-            this.checkINVITECustom4 = new System.Windows.Forms.CheckBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.btnT = new System.Windows.Forms.Button();
-            this.btnW = new System.Windows.Forms.Button();
-            this.btnS = new System.Windows.Forms.Button();
-            this.btnMinMax = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.btnSearchStash = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnSOUNDTrade = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnCustom2 = new System.Windows.Forms.Button();
-            this.btnCustom4 = new System.Windows.Forms.Button();
-            this.btnCustom3 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.btnThanks = new System.Windows.Forms.Button();
-            this.btnSold = new System.Windows.Forms.Button();
-            this.btnWaitPls = new System.Windows.Forms.Button();
-            this.btnCustom1 = new System.Windows.Forms.Button();
-            this.btn5 = new System.Windows.Forms.Button();
-            this.btn4 = new System.Windows.Forms.Button();
-            this.btn3 = new System.Windows.Forms.Button();
-            this.btn2 = new System.Windows.Forms.Button();
-            this.btn1 = new System.Windows.Forms.Button();
-            this.pictureFlask5 = new System.Windows.Forms.PictureBox();
-            this.pictureFlask4 = new System.Windows.Forms.PictureBox();
-            this.pictureFlask3 = new System.Windows.Forms.PictureBox();
-            this.pictureFlask2 = new System.Windows.Forms.PictureBox();
-            this.pictureFlask1 = new System.Windows.Forms.PictureBox();
-            this.btnS5 = new System.Windows.Forms.Button();
-            this.btnS4 = new System.Windows.Forms.Button();
-            this.btnS3 = new System.Windows.Forms.Button();
-            this.btnS2 = new System.Windows.Forms.Button();
-            this.btnS1 = new System.Windows.Forms.Button();
-            this.pictureBoxZANA = new System.Windows.Forms.PictureBox();
-            this.pictureBoxALVA = new System.Windows.Forms.PictureBox();
-            this.pictureBoxJUN = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
             this.panelTop = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.FlatSettingTab.SuspendLayout();
             this.tabHotKeys.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.panelSetFlaskImage.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            this.panelSetFlaskImage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask1)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxZANA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxALVA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJUN)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.panelTop.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -447,6 +447,143 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(792, 529);
             this.panel1.TabIndex = 8;
+            // 
+            // btnT
+            // 
+            this.btnT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
+            this.btnT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnT.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnT.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnT.FlatAppearance.BorderSize = 0;
+            this.btnT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnT.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnT.ForeColor = System.Drawing.Color.Black;
+            this.btnT.Image = ((System.Drawing.Image)(resources.GetObject("btnT.Image")));
+            this.btnT.Location = new System.Drawing.Point(516, 324);
+            this.btnT.Name = "btnT";
+            this.btnT.Size = new System.Drawing.Size(64, 20);
+            this.btnT.TabIndex = 78;
+            this.btnT.UseVisualStyleBackColor = false;
+            // 
+            // btnW
+            // 
+            this.btnW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
+            this.btnW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnW.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnW.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnW.FlatAppearance.BorderSize = 0;
+            this.btnW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnW.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnW.ForeColor = System.Drawing.Color.White;
+            this.btnW.Image = ((System.Drawing.Image)(resources.GetObject("btnW.Image")));
+            this.btnW.Location = new System.Drawing.Point(516, 287);
+            this.btnW.Name = "btnW";
+            this.btnW.Size = new System.Drawing.Size(64, 20);
+            this.btnW.TabIndex = 79;
+            this.btnW.UseVisualStyleBackColor = false;
+            // 
+            // btnS
+            // 
+            this.btnS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
+            this.btnS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnS.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnS.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnS.FlatAppearance.BorderSize = 0;
+            this.btnS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnS.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnS.Image = global::POExileDirection.Properties.Resources.Button_bg;
+            this.btnS.Location = new System.Drawing.Point(516, 250);
+            this.btnS.Name = "btnS";
+            this.btnS.Size = new System.Drawing.Size(64, 20);
+            this.btnS.TabIndex = 80;
+            this.btnS.UseVisualStyleBackColor = false;
+            // 
+            // btnMinMax
+            // 
+            this.btnMinMax.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinMax.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMinMax.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnMinMax.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnMinMax.FlatAppearance.BorderSize = 0;
+            this.btnMinMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinMax.Image = global::POExileDirection.Properties.Resources.top_bar_size_control;
+            this.btnMinMax.Location = new System.Drawing.Point(174, 370);
+            this.btnMinMax.Name = "btnMinMax";
+            this.btnMinMax.Size = new System.Drawing.Size(10, 10);
+            this.btnMinMax.TabIndex = 77;
+            this.btnMinMax.UseVisualStyleBackColor = false;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(172, 407);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(13, 13);
+            this.btnClose.TabIndex = 76;
+            this.btnClose.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::POExileDirection.Properties.Resources.panel_bottom_line;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 209);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(792, 9);
+            this.pictureBox5.TabIndex = 75;
+            this.pictureBox5.TabStop = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Image = global::POExileDirection.Properties.Resources.top_bar_partyadd;
+            this.button7.Location = new System.Drawing.Point(173, 252);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(17, 13);
+            this.button7.TabIndex = 72;
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Image = global::POExileDirection.Properties.Resources.top_bar_partyexit;
+            this.button8.Location = new System.Drawing.Point(173, 330);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(16, 10);
+            this.button8.TabIndex = 73;
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button9.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button9.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Image = global::POExileDirection.Properties.Resources.top_bar_Transaction;
+            this.button9.Location = new System.Drawing.Point(172, 290);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(15, 13);
+            this.button9.TabIndex = 74;
+            this.button9.UseVisualStyleBackColor = false;
             // 
             // textHotKeyPanelClose
             // 
@@ -783,6 +920,96 @@
             this.checkRemaining.TabIndex = 51;
             this.checkRemaining.UseVisualStyleBackColor = false;
             // 
+            // btnSearchStash
+            // 
+            this.btnSearchStash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnSearchStash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearchStash.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnSearchStash.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnSearchStash.FlatAppearance.BorderSize = 0;
+            this.btnSearchStash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchStash.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnSearchStash.ForeColor = System.Drawing.Color.White;
+            this.btnSearchStash.Image = global::POExileDirection.Properties.Resources.icon_re_02;
+            this.btnSearchStash.Location = new System.Drawing.Point(556, 78);
+            this.btnSearchStash.Name = "btnSearchStash";
+            this.btnSearchStash.Size = new System.Drawing.Size(24, 24);
+            this.btnSearchStash.TabIndex = 48;
+            this.btnSearchStash.TabStop = false;
+            this.btnSearchStash.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = global::POExileDirection.Properties.Resources.icon_re_01;
+            this.button5.Location = new System.Drawing.Point(556, 37);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(24, 24);
+            this.button5.TabIndex = 47;
+            this.button5.TabStop = false;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Moccasin;
+            this.button4.Image = global::POExileDirection.Properties.Resources.icon_re_05;
+            this.button4.Location = new System.Drawing.Point(170, 158);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(24, 24);
+            this.button4.TabIndex = 46;
+            this.button4.TabStop = false;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.button3.Image = global::POExileDirection.Properties.Resources.icon_re_13;
+            this.button3.Location = new System.Drawing.Point(170, 119);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(24, 24);
+            this.button3.TabIndex = 45;
+            this.button3.TabStop = false;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button2.Image = global::POExileDirection.Properties.Resources.icon_re_12;
+            this.button2.Location = new System.Drawing.Point(170, 78);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(24, 24);
+            this.button2.TabIndex = 44;
+            this.button2.TabStop = false;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // label25
             // 
             this.label25.AutoSize = true;
@@ -1013,6 +1240,32 @@
             this.textRemains.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textRemains.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textRemains_KeyDown);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.pictureBox1.Enabled = false;
+            this.pictureBox1.Image = global::POExileDirection.Properties.Resources.cmd_06;
+            this.pictureBox1.Location = new System.Drawing.Point(488, 119);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(95, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.pictureBox4.Enabled = false;
+            this.pictureBox4.Image = global::POExileDirection.Properties.Resources.RemainBGBOX_32_32;
+            this.pictureBox4.Location = new System.Drawing.Point(167, 35);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
@@ -1095,6 +1348,26 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Trade Panel";
             // 
+            // btnSOUNDTrade
+            // 
+            this.btnSOUNDTrade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnSOUNDTrade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSOUNDTrade.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSOUNDTrade.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnSOUNDTrade.FlatAppearance.BorderSize = 0;
+            this.btnSOUNDTrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSOUNDTrade.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSOUNDTrade.ForeColor = System.Drawing.Color.LightCoral;
+            this.btnSOUNDTrade.Image = global::POExileDirection.Properties.Resources.Volume_16x16_Mute;
+            this.btnSOUNDTrade.Location = new System.Drawing.Point(663, 33);
+            this.btnSOUNDTrade.Name = "btnSOUNDTrade";
+            this.btnSOUNDTrade.Size = new System.Drawing.Size(17, 17);
+            this.btnSOUNDTrade.TabIndex = 79;
+            this.btnSOUNDTrade.TabStop = false;
+            this.btnSOUNDTrade.Text = "img";
+            this.btnSOUNDTrade.UseVisualStyleBackColor = false;
+            this.btnSOUNDTrade.Click += new System.EventHandler(this.btnSOUNDTrade_Click);
+            // 
             // labelSNDOnOff
             // 
             this.labelSNDOnOff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
@@ -1123,6 +1396,18 @@
             this.xuiSwitchSoundTrade.Text = "xuiSwitch1";
             this.xuiSwitchSoundTrade.SwitchStateChanged += new System.EventHandler(this.xuiSwitchSoundTrade_SwitchStateChanged);
             // 
+            // label44
+            // 
+            this.label44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label44.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label44.Location = new System.Drawing.Point(72, 135);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(50, 24);
+            this.label44.TabIndex = 76;
+            this.label44.Text = "TRADE";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
@@ -1134,6 +1419,18 @@
             this.label4.TabIndex = 76;
             this.label4.Text = "CLOSE";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label15
+            // 
+            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label15.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label15.Location = new System.Drawing.Point(23, 135);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(50, 24);
+            this.label15.TabIndex = 76;
+            this.label15.Text = "INVITE";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label23
             // 
@@ -1247,6 +1544,18 @@
             this.xuiSliderVolumeTrade.MouseMove += new System.Windows.Forms.MouseEventHandler(this.xuiSliderVolumeTrade_MouseMove);
             this.xuiSliderVolumeTrade.MouseUp += new System.Windows.Forms.MouseEventHandler(this.xuiSliderVolumeTrade_MouseMove);
             // 
+            // checkINVITECustom4
+            // 
+            this.checkINVITECustom4.AutoSize = true;
+            this.checkINVITECustom4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkINVITECustom4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkINVITECustom4.Location = new System.Drawing.Point(40, 396);
+            this.checkINVITECustom4.Name = "checkINVITECustom4";
+            this.checkINVITECustom4.Size = new System.Drawing.Size(15, 14);
+            this.checkINVITECustom4.TabIndex = 24;
+            this.checkINVITECustom4.UseVisualStyleBackColor = false;
+            this.checkINVITECustom4.CheckedChanged += new System.EventHandler(this.checkINVITECustom4_CheckedChanged);
+            // 
             // checkAutoCloseCustom4
             // 
             this.checkAutoCloseCustom4.AutoSize = true;
@@ -1257,6 +1566,18 @@
             this.checkAutoCloseCustom4.Size = new System.Drawing.Size(15, 14);
             this.checkAutoCloseCustom4.TabIndex = 24;
             this.checkAutoCloseCustom4.UseVisualStyleBackColor = false;
+            // 
+            // checkTRADECustom4
+            // 
+            this.checkTRADECustom4.AutoSize = true;
+            this.checkTRADECustom4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkTRADECustom4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkTRADECustom4.Location = new System.Drawing.Point(88, 396);
+            this.checkTRADECustom4.Name = "checkTRADECustom4";
+            this.checkTRADECustom4.Size = new System.Drawing.Size(15, 14);
+            this.checkTRADECustom4.TabIndex = 24;
+            this.checkTRADECustom4.UseVisualStyleBackColor = false;
+            this.checkTRADECustom4.CheckedChanged += new System.EventHandler(this.checkTRADECustom4_CheckedChanged);
             // 
             // checkBoxAutoKickCUSTOM4
             // 
@@ -1269,6 +1590,18 @@
             this.checkBoxAutoKickCUSTOM4.TabIndex = 24;
             this.checkBoxAutoKickCUSTOM4.UseVisualStyleBackColor = false;
             // 
+            // checkINVITECustom3
+            // 
+            this.checkINVITECustom3.AutoSize = true;
+            this.checkINVITECustom3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkINVITECustom3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkINVITECustom3.Location = new System.Drawing.Point(40, 360);
+            this.checkINVITECustom3.Name = "checkINVITECustom3";
+            this.checkINVITECustom3.Size = new System.Drawing.Size(15, 14);
+            this.checkINVITECustom3.TabIndex = 21;
+            this.checkINVITECustom3.UseVisualStyleBackColor = false;
+            this.checkINVITECustom3.CheckedChanged += new System.EventHandler(this.checkINVITECustom3_CheckedChanged);
+            // 
             // checkAutoCloseCustom3
             // 
             this.checkAutoCloseCustom3.AutoSize = true;
@@ -1279,6 +1612,18 @@
             this.checkAutoCloseCustom3.Size = new System.Drawing.Size(15, 14);
             this.checkAutoCloseCustom3.TabIndex = 21;
             this.checkAutoCloseCustom3.UseVisualStyleBackColor = false;
+            // 
+            // checkTRADECustom3
+            // 
+            this.checkTRADECustom3.AutoSize = true;
+            this.checkTRADECustom3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkTRADECustom3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkTRADECustom3.Location = new System.Drawing.Point(88, 360);
+            this.checkTRADECustom3.Name = "checkTRADECustom3";
+            this.checkTRADECustom3.Size = new System.Drawing.Size(15, 14);
+            this.checkTRADECustom3.TabIndex = 21;
+            this.checkTRADECustom3.UseVisualStyleBackColor = false;
+            this.checkTRADECustom3.CheckedChanged += new System.EventHandler(this.checkTRADECustom3_CheckedChanged);
             // 
             // checkBoxAutoKickCUSTOM3
             // 
@@ -1291,6 +1636,18 @@
             this.checkBoxAutoKickCUSTOM3.TabIndex = 21;
             this.checkBoxAutoKickCUSTOM3.UseVisualStyleBackColor = false;
             // 
+            // checkINVITECustom2
+            // 
+            this.checkINVITECustom2.AutoSize = true;
+            this.checkINVITECustom2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkINVITECustom2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkINVITECustom2.Location = new System.Drawing.Point(40, 324);
+            this.checkINVITECustom2.Name = "checkINVITECustom2";
+            this.checkINVITECustom2.Size = new System.Drawing.Size(15, 14);
+            this.checkINVITECustom2.TabIndex = 18;
+            this.checkINVITECustom2.UseVisualStyleBackColor = false;
+            this.checkINVITECustom2.CheckedChanged += new System.EventHandler(this.checkINVITECustom2_CheckedChanged);
+            // 
             // checkAutoCloseCustom2
             // 
             this.checkAutoCloseCustom2.AutoSize = true;
@@ -1301,6 +1658,18 @@
             this.checkAutoCloseCustom2.Size = new System.Drawing.Size(15, 14);
             this.checkAutoCloseCustom2.TabIndex = 18;
             this.checkAutoCloseCustom2.UseVisualStyleBackColor = false;
+            // 
+            // checkTRADECustom2
+            // 
+            this.checkTRADECustom2.AutoSize = true;
+            this.checkTRADECustom2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkTRADECustom2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkTRADECustom2.Location = new System.Drawing.Point(88, 324);
+            this.checkTRADECustom2.Name = "checkTRADECustom2";
+            this.checkTRADECustom2.Size = new System.Drawing.Size(15, 14);
+            this.checkTRADECustom2.TabIndex = 18;
+            this.checkTRADECustom2.UseVisualStyleBackColor = false;
+            this.checkTRADECustom2.CheckedChanged += new System.EventHandler(this.checkTRADECustom2_CheckedChanged);
             // 
             // checkBoxAutoKickCUSTOM2
             // 
@@ -1313,6 +1682,18 @@
             this.checkBoxAutoKickCUSTOM2.TabIndex = 18;
             this.checkBoxAutoKickCUSTOM2.UseVisualStyleBackColor = false;
             // 
+            // checkINVITECustom1
+            // 
+            this.checkINVITECustom1.AutoSize = true;
+            this.checkINVITECustom1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkINVITECustom1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkINVITECustom1.Location = new System.Drawing.Point(40, 288);
+            this.checkINVITECustom1.Name = "checkINVITECustom1";
+            this.checkINVITECustom1.Size = new System.Drawing.Size(15, 14);
+            this.checkINVITECustom1.TabIndex = 15;
+            this.checkINVITECustom1.UseVisualStyleBackColor = false;
+            this.checkINVITECustom1.CheckedChanged += new System.EventHandler(this.checkINVITECustom1_CheckedChanged);
+            // 
             // checkAutoCloseCustom1
             // 
             this.checkAutoCloseCustom1.AutoSize = true;
@@ -1323,6 +1704,18 @@
             this.checkAutoCloseCustom1.Size = new System.Drawing.Size(15, 14);
             this.checkAutoCloseCustom1.TabIndex = 15;
             this.checkAutoCloseCustom1.UseVisualStyleBackColor = false;
+            // 
+            // checkTRADECustom1
+            // 
+            this.checkTRADECustom1.AutoSize = true;
+            this.checkTRADECustom1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkTRADECustom1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkTRADECustom1.Location = new System.Drawing.Point(88, 288);
+            this.checkTRADECustom1.Name = "checkTRADECustom1";
+            this.checkTRADECustom1.Size = new System.Drawing.Size(15, 14);
+            this.checkTRADECustom1.TabIndex = 15;
+            this.checkTRADECustom1.UseVisualStyleBackColor = false;
+            this.checkTRADECustom1.CheckedChanged += new System.EventHandler(this.checkTRADECustom1_CheckedChanged);
             // 
             // checkBoxAutoKickCUSTOM1
             // 
@@ -1335,6 +1728,18 @@
             this.checkBoxAutoKickCUSTOM1.TabIndex = 15;
             this.checkBoxAutoKickCUSTOM1.UseVisualStyleBackColor = false;
             // 
+            // checkINVITEWait
+            // 
+            this.checkINVITEWait.AutoSize = true;
+            this.checkINVITEWait.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkINVITEWait.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkINVITEWait.Location = new System.Drawing.Point(40, 180);
+            this.checkINVITEWait.Name = "checkINVITEWait";
+            this.checkINVITEWait.Size = new System.Drawing.Size(15, 14);
+            this.checkINVITEWait.TabIndex = 12;
+            this.checkINVITEWait.UseVisualStyleBackColor = false;
+            this.checkINVITEWait.CheckedChanged += new System.EventHandler(this.checkINVITEWait_CheckedChanged);
+            // 
             // checkAutoCloseWait
             // 
             this.checkAutoCloseWait.AutoSize = true;
@@ -1345,6 +1750,18 @@
             this.checkAutoCloseWait.Size = new System.Drawing.Size(15, 14);
             this.checkAutoCloseWait.TabIndex = 12;
             this.checkAutoCloseWait.UseVisualStyleBackColor = false;
+            // 
+            // checkINVITESold
+            // 
+            this.checkINVITESold.AutoSize = true;
+            this.checkINVITESold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkINVITESold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkINVITESold.Location = new System.Drawing.Point(40, 216);
+            this.checkINVITESold.Name = "checkINVITESold";
+            this.checkINVITESold.Size = new System.Drawing.Size(15, 14);
+            this.checkINVITESold.TabIndex = 9;
+            this.checkINVITESold.UseVisualStyleBackColor = false;
+            this.checkINVITESold.CheckedChanged += new System.EventHandler(this.checkINVITESold_CheckedChanged);
             // 
             // checkAutoCloseSold
             // 
@@ -1357,6 +1774,30 @@
             this.checkAutoCloseSold.TabIndex = 9;
             this.checkAutoCloseSold.UseVisualStyleBackColor = false;
             // 
+            // checkTRADEWait
+            // 
+            this.checkTRADEWait.AutoSize = true;
+            this.checkTRADEWait.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkTRADEWait.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkTRADEWait.Location = new System.Drawing.Point(88, 180);
+            this.checkTRADEWait.Name = "checkTRADEWait";
+            this.checkTRADEWait.Size = new System.Drawing.Size(15, 14);
+            this.checkTRADEWait.TabIndex = 12;
+            this.checkTRADEWait.UseVisualStyleBackColor = false;
+            this.checkTRADEWait.CheckedChanged += new System.EventHandler(this.checkTRADEWait_CheckedChanged);
+            // 
+            // checkINVITEThx
+            // 
+            this.checkINVITEThx.AutoSize = true;
+            this.checkINVITEThx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkINVITEThx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkINVITEThx.Location = new System.Drawing.Point(40, 253);
+            this.checkINVITEThx.Name = "checkINVITEThx";
+            this.checkINVITEThx.Size = new System.Drawing.Size(15, 14);
+            this.checkINVITEThx.TabIndex = 6;
+            this.checkINVITEThx.UseVisualStyleBackColor = false;
+            this.checkINVITEThx.CheckedChanged += new System.EventHandler(this.checkINVITEThx_CheckedChanged);
+            // 
             // checkBoxAutoKickWAIT
             // 
             this.checkBoxAutoKickWAIT.AutoSize = true;
@@ -1368,6 +1809,18 @@
             this.checkBoxAutoKickWAIT.TabIndex = 12;
             this.checkBoxAutoKickWAIT.UseVisualStyleBackColor = false;
             // 
+            // checkTRADESold
+            // 
+            this.checkTRADESold.AutoSize = true;
+            this.checkTRADESold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkTRADESold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkTRADESold.Location = new System.Drawing.Point(88, 216);
+            this.checkTRADESold.Name = "checkTRADESold";
+            this.checkTRADESold.Size = new System.Drawing.Size(15, 14);
+            this.checkTRADESold.TabIndex = 9;
+            this.checkTRADESold.UseVisualStyleBackColor = false;
+            this.checkTRADESold.CheckedChanged += new System.EventHandler(this.checkTRADESold_CheckedChanged);
+            // 
             // checkAutoCloseThx
             // 
             this.checkAutoCloseThx.AutoSize = true;
@@ -1378,6 +1831,18 @@
             this.checkAutoCloseThx.Size = new System.Drawing.Size(15, 14);
             this.checkAutoCloseThx.TabIndex = 6;
             this.checkAutoCloseThx.UseVisualStyleBackColor = false;
+            // 
+            // checkTRADEThx
+            // 
+            this.checkTRADEThx.AutoSize = true;
+            this.checkTRADEThx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.checkTRADEThx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.checkTRADEThx.Location = new System.Drawing.Point(88, 253);
+            this.checkTRADEThx.Name = "checkTRADEThx";
+            this.checkTRADEThx.Size = new System.Drawing.Size(15, 14);
+            this.checkTRADEThx.TabIndex = 6;
+            this.checkTRADEThx.UseVisualStyleBackColor = false;
+            this.checkTRADEThx.CheckedChanged += new System.EventHandler(this.checkTRADEThx_CheckedChanged);
             // 
             // checkBoxAutoKickSOLD
             // 
@@ -1602,6 +2067,165 @@
             this.label14.TabIndex = 20;
             this.label14.Text = "Current Character Name";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::POExileDirection.Properties.Resources.panel_bottom_line;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 109);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(792, 9);
+            this.pictureBox3.TabIndex = 68;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btnCustom2
+            // 
+            this.btnCustom2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnCustom2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCustom2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnCustom2.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnCustom2.FlatAppearance.BorderSize = 0;
+            this.btnCustom2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustom2.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnCustom2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.btnCustom2.Image = ((System.Drawing.Image)(resources.GetObject("btnCustom2.Image")));
+            this.btnCustom2.Location = new System.Drawing.Point(125, 322);
+            this.btnCustom2.Name = "btnCustom2";
+            this.btnCustom2.Size = new System.Drawing.Size(64, 22);
+            this.btnCustom2.TabIndex = 62;
+            this.btnCustom2.UseVisualStyleBackColor = false;
+            // 
+            // btnCustom4
+            // 
+            this.btnCustom4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnCustom4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCustom4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnCustom4.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnCustom4.FlatAppearance.BorderSize = 0;
+            this.btnCustom4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustom4.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnCustom4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.btnCustom4.Image = ((System.Drawing.Image)(resources.GetObject("btnCustom4.Image")));
+            this.btnCustom4.Location = new System.Drawing.Point(125, 393);
+            this.btnCustom4.Name = "btnCustom4";
+            this.btnCustom4.Size = new System.Drawing.Size(64, 22);
+            this.btnCustom4.TabIndex = 61;
+            this.btnCustom4.UseVisualStyleBackColor = false;
+            // 
+            // btnCustom3
+            // 
+            this.btnCustom3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnCustom3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCustom3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnCustom3.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnCustom3.FlatAppearance.BorderSize = 0;
+            this.btnCustom3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustom3.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnCustom3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.btnCustom3.Image = ((System.Drawing.Image)(resources.GetObject("btnCustom3.Image")));
+            this.btnCustom3.Location = new System.Drawing.Point(125, 357);
+            this.btnCustom3.Name = "btnCustom3";
+            this.btnCustom3.Size = new System.Drawing.Size(64, 22);
+            this.btnCustom3.TabIndex = 61;
+            this.btnCustom3.UseVisualStyleBackColor = false;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button13.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Image = global::POExileDirection.Properties.Resources.top_bar_partyexit;
+            this.button13.Location = new System.Drawing.Point(58, 33);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(16, 10);
+            this.button13.TabIndex = 54;
+            this.button13.UseVisualStyleBackColor = false;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button10.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button10.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Image = global::POExileDirection.Properties.Resources.top_bar_resend;
+            this.button10.Location = new System.Drawing.Point(58, 62);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(14, 14);
+            this.button10.TabIndex = 56;
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // btnThanks
+            // 
+            this.btnThanks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnThanks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnThanks.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnThanks.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnThanks.FlatAppearance.BorderSize = 0;
+            this.btnThanks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThanks.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThanks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.btnThanks.Image = ((System.Drawing.Image)(resources.GetObject("btnThanks.Image")));
+            this.btnThanks.Location = new System.Drawing.Point(125, 248);
+            this.btnThanks.Name = "btnThanks";
+            this.btnThanks.Size = new System.Drawing.Size(64, 22);
+            this.btnThanks.TabIndex = 59;
+            this.btnThanks.UseVisualStyleBackColor = false;
+            // 
+            // btnSold
+            // 
+            this.btnSold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnSold.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSold.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnSold.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnSold.FlatAppearance.BorderSize = 0;
+            this.btnSold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSold.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.btnSold.Image = ((System.Drawing.Image)(resources.GetObject("btnSold.Image")));
+            this.btnSold.Location = new System.Drawing.Point(125, 212);
+            this.btnSold.Name = "btnSold";
+            this.btnSold.Size = new System.Drawing.Size(64, 22);
+            this.btnSold.TabIndex = 59;
+            this.btnSold.UseVisualStyleBackColor = false;
+            // 
+            // btnWaitPls
+            // 
+            this.btnWaitPls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnWaitPls.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnWaitPls.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnWaitPls.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnWaitPls.FlatAppearance.BorderSize = 0;
+            this.btnWaitPls.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWaitPls.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWaitPls.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.btnWaitPls.Image = ((System.Drawing.Image)(resources.GetObject("btnWaitPls.Image")));
+            this.btnWaitPls.Location = new System.Drawing.Point(125, 177);
+            this.btnWaitPls.Name = "btnWaitPls";
+            this.btnWaitPls.Size = new System.Drawing.Size(64, 22);
+            this.btnWaitPls.TabIndex = 59;
+            this.btnWaitPls.UseVisualStyleBackColor = false;
+            // 
+            // btnCustom1
+            // 
+            this.btnCustom1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnCustom1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCustom1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnCustom1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnCustom1.FlatAppearance.BorderSize = 0;
+            this.btnCustom1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustom1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustom1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.btnCustom1.Image = ((System.Drawing.Image)(resources.GetObject("btnCustom1.Image")));
+            this.btnCustom1.Location = new System.Drawing.Point(125, 285);
+            this.btnCustom1.Name = "btnCustom1";
+            this.btnCustom1.Size = new System.Drawing.Size(64, 22);
+            this.btnCustom1.TabIndex = 59;
+            this.btnCustom1.UseVisualStyleBackColor = false;
             // 
             // tabPage3
             // 
@@ -2185,6 +2809,156 @@
             this.label35.TabIndex = 46;
             this.label35.Text = "FLASK #1";
             // 
+            // btn5
+            // 
+            this.btn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btn5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn5.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btn5.FlatAppearance.BorderSize = 0;
+            this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5.ForeColor = System.Drawing.Color.Silver;
+            this.btn5.Image = global::POExileDirection.Properties.Resources.check_on;
+            this.btn5.Location = new System.Drawing.Point(130, 351);
+            this.btn5.Name = "btn5";
+            this.btn5.Size = new System.Drawing.Size(14, 14);
+            this.btn5.TabIndex = 95;
+            this.btn5.TabStop = false;
+            this.btn5.UseVisualStyleBackColor = false;
+            // 
+            // btn4
+            // 
+            this.btn4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn4.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btn4.FlatAppearance.BorderSize = 0;
+            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4.ForeColor = System.Drawing.Color.Silver;
+            this.btn4.Image = global::POExileDirection.Properties.Resources.check_on;
+            this.btn4.Location = new System.Drawing.Point(130, 287);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(14, 14);
+            this.btn4.TabIndex = 94;
+            this.btn4.TabStop = false;
+            this.btn4.UseVisualStyleBackColor = false;
+            // 
+            // btn3
+            // 
+            this.btn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn3.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btn3.FlatAppearance.BorderSize = 0;
+            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3.ForeColor = System.Drawing.Color.Silver;
+            this.btn3.Image = global::POExileDirection.Properties.Resources.check_on;
+            this.btn3.Location = new System.Drawing.Point(130, 224);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(14, 14);
+            this.btn3.TabIndex = 93;
+            this.btn3.TabStop = false;
+            this.btn3.UseVisualStyleBackColor = false;
+            // 
+            // btn2
+            // 
+            this.btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn2.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btn2.FlatAppearance.BorderSize = 0;
+            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2.ForeColor = System.Drawing.Color.Silver;
+            this.btn2.Image = global::POExileDirection.Properties.Resources.check_on;
+            this.btn2.Location = new System.Drawing.Point(130, 161);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(14, 14);
+            this.btn2.TabIndex = 92;
+            this.btn2.TabStop = false;
+            this.btn2.UseVisualStyleBackColor = false;
+            // 
+            // btn1
+            // 
+            this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btn1.FlatAppearance.BorderSize = 0;
+            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1.ForeColor = System.Drawing.Color.Silver;
+            this.btn1.Image = global::POExileDirection.Properties.Resources.check_on;
+            this.btn1.Location = new System.Drawing.Point(130, 98);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(14, 14);
+            this.btn1.TabIndex = 91;
+            this.btn1.TabStop = false;
+            this.btn1.UseVisualStyleBackColor = false;
+            // 
+            // pictureFlask5
+            // 
+            this.pictureFlask5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.pictureFlask5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureFlask5.Location = new System.Drawing.Point(477, 330);
+            this.pictureFlask5.Name = "pictureFlask5";
+            this.pictureFlask5.Size = new System.Drawing.Size(30, 60);
+            this.pictureFlask5.TabIndex = 83;
+            this.pictureFlask5.TabStop = false;
+            this.pictureFlask5.Click += new System.EventHandler(this.pictureFlask5_Click);
+            this.pictureFlask5.DoubleClick += new System.EventHandler(this.pictureFlask5_Click);
+            // 
+            // pictureFlask4
+            // 
+            this.pictureFlask4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.pictureFlask4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureFlask4.Location = new System.Drawing.Point(477, 266);
+            this.pictureFlask4.Name = "pictureFlask4";
+            this.pictureFlask4.Size = new System.Drawing.Size(30, 60);
+            this.pictureFlask4.TabIndex = 82;
+            this.pictureFlask4.TabStop = false;
+            this.pictureFlask4.Click += new System.EventHandler(this.pictureFlask4_Click);
+            this.pictureFlask4.DoubleClick += new System.EventHandler(this.pictureFlask4_Click);
+            // 
+            // pictureFlask3
+            // 
+            this.pictureFlask3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.pictureFlask3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureFlask3.Location = new System.Drawing.Point(477, 202);
+            this.pictureFlask3.Name = "pictureFlask3";
+            this.pictureFlask3.Size = new System.Drawing.Size(30, 60);
+            this.pictureFlask3.TabIndex = 81;
+            this.pictureFlask3.TabStop = false;
+            this.pictureFlask3.Click += new System.EventHandler(this.pictureFlask3_Click);
+            this.pictureFlask3.DoubleClick += new System.EventHandler(this.pictureFlask3_Click);
+            // 
+            // pictureFlask2
+            // 
+            this.pictureFlask2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.pictureFlask2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureFlask2.Location = new System.Drawing.Point(477, 139);
+            this.pictureFlask2.Name = "pictureFlask2";
+            this.pictureFlask2.Size = new System.Drawing.Size(30, 60);
+            this.pictureFlask2.TabIndex = 80;
+            this.pictureFlask2.TabStop = false;
+            this.pictureFlask2.Click += new System.EventHandler(this.pictureFlask2_Click);
+            this.pictureFlask2.DoubleClick += new System.EventHandler(this.pictureFlask2_Click);
+            // 
+            // pictureFlask1
+            // 
+            this.pictureFlask1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.pictureFlask1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureFlask1.Location = new System.Drawing.Point(477, 76);
+            this.pictureFlask1.Name = "pictureFlask1";
+            this.pictureFlask1.Size = new System.Drawing.Size(30, 60);
+            this.pictureFlask1.TabIndex = 79;
+            this.pictureFlask1.TabStop = false;
+            this.pictureFlask1.Click += new System.EventHandler(this.pictureFlask1_Click);
+            this.pictureFlask1.DoubleClick += new System.EventHandler(this.pictureFlask1_Click);
+            // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
@@ -2614,6 +3388,96 @@
             this.label68.TabIndex = 47;
             this.label68.Text = "SKILL #Q";
             // 
+            // btnS5
+            // 
+            this.btnS5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnS5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnS5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnS5.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnS5.FlatAppearance.BorderSize = 0;
+            this.btnS5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnS5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnS5.ForeColor = System.Drawing.Color.Silver;
+            this.btnS5.Image = global::POExileDirection.Properties.Resources.check_on;
+            this.btnS5.Location = new System.Drawing.Point(174, 267);
+            this.btnS5.Name = "btnS5";
+            this.btnS5.Size = new System.Drawing.Size(14, 14);
+            this.btnS5.TabIndex = 83;
+            this.btnS5.TabStop = false;
+            this.btnS5.UseVisualStyleBackColor = false;
+            // 
+            // btnS4
+            // 
+            this.btnS4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnS4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnS4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnS4.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnS4.FlatAppearance.BorderSize = 0;
+            this.btnS4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnS4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnS4.ForeColor = System.Drawing.Color.Silver;
+            this.btnS4.Image = global::POExileDirection.Properties.Resources.check_on;
+            this.btnS4.Location = new System.Drawing.Point(174, 226);
+            this.btnS4.Name = "btnS4";
+            this.btnS4.Size = new System.Drawing.Size(14, 14);
+            this.btnS4.TabIndex = 82;
+            this.btnS4.TabStop = false;
+            this.btnS4.UseVisualStyleBackColor = false;
+            // 
+            // btnS3
+            // 
+            this.btnS3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnS3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnS3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnS3.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnS3.FlatAppearance.BorderSize = 0;
+            this.btnS3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnS3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnS3.ForeColor = System.Drawing.Color.Silver;
+            this.btnS3.Image = global::POExileDirection.Properties.Resources.check_on;
+            this.btnS3.Location = new System.Drawing.Point(174, 185);
+            this.btnS3.Name = "btnS3";
+            this.btnS3.Size = new System.Drawing.Size(14, 14);
+            this.btnS3.TabIndex = 81;
+            this.btnS3.TabStop = false;
+            this.btnS3.UseVisualStyleBackColor = false;
+            // 
+            // btnS2
+            // 
+            this.btnS2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnS2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnS2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnS2.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnS2.FlatAppearance.BorderSize = 0;
+            this.btnS2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnS2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnS2.ForeColor = System.Drawing.Color.Silver;
+            this.btnS2.Image = global::POExileDirection.Properties.Resources.check_on;
+            this.btnS2.Location = new System.Drawing.Point(174, 144);
+            this.btnS2.Name = "btnS2";
+            this.btnS2.Size = new System.Drawing.Size(14, 14);
+            this.btnS2.TabIndex = 80;
+            this.btnS2.TabStop = false;
+            this.btnS2.UseVisualStyleBackColor = false;
+            // 
+            // btnS1
+            // 
+            this.btnS1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.btnS1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnS1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnS1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnS1.FlatAppearance.BorderSize = 0;
+            this.btnS1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnS1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnS1.ForeColor = System.Drawing.Color.Silver;
+            this.btnS1.Image = global::POExileDirection.Properties.Resources.check_on;
+            this.btnS1.Location = new System.Drawing.Point(174, 103);
+            this.btnS1.Name = "btnS1";
+            this.btnS1.Size = new System.Drawing.Size(14, 14);
+            this.btnS1.TabIndex = 79;
+            this.btnS1.TabStop = false;
+            this.btnS1.UseVisualStyleBackColor = false;
+            // 
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
@@ -2865,6 +3729,84 @@
             this.label7.TabIndex = 102;
             this.label7.Text = "blar..........";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBoxZANA
+            // 
+            this.pictureBoxZANA.Location = new System.Drawing.Point(55, 325);
+            this.pictureBoxZANA.Name = "pictureBoxZANA";
+            this.pictureBoxZANA.Size = new System.Drawing.Size(200, 150);
+            this.pictureBoxZANA.TabIndex = 110;
+            this.pictureBoxZANA.TabStop = false;
+            // 
+            // pictureBoxALVA
+            // 
+            this.pictureBoxALVA.Location = new System.Drawing.Point(55, 169);
+            this.pictureBoxALVA.Name = "pictureBoxALVA";
+            this.pictureBoxALVA.Size = new System.Drawing.Size(200, 150);
+            this.pictureBoxALVA.TabIndex = 110;
+            this.pictureBoxALVA.TabStop = false;
+            // 
+            // pictureBoxJUN
+            // 
+            this.pictureBoxJUN.Location = new System.Drawing.Point(55, 13);
+            this.pictureBoxJUN.Name = "pictureBoxJUN";
+            this.pictureBoxJUN.Size = new System.Drawing.Size(200, 150);
+            this.pictureBoxJUN.TabIndex = 110;
+            this.pictureBoxJUN.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Moccasin;
+            this.button1.Image = global::POExileDirection.Properties.Resources.icon_re_05;
+            this.button1.Location = new System.Drawing.Point(274, 388);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(24, 24);
+            this.button1.TabIndex = 108;
+            this.button1.TabStop = false;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.button6.Image = global::POExileDirection.Properties.Resources.icon_re_13;
+            this.button6.Location = new System.Drawing.Point(274, 233);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(24, 24);
+            this.button6.TabIndex = 107;
+            this.button6.TabStop = false;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button11.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button11.Image = global::POExileDirection.Properties.Resources.icon_re_12;
+            this.button11.Location = new System.Drawing.Point(274, 78);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(24, 24);
+            this.button11.TabIndex = 106;
+            this.button11.TabStop = false;
+            this.button11.UseVisualStyleBackColor = false;
             // 
             // tabPage6
             // 
@@ -3130,933 +4072,6 @@
             this.btnCancelTab7.UseVisualStyleBackColor = false;
             this.btnCancelTab7.Click += new System.EventHandler(this.btnCancelTab7_Click);
             // 
-            // checkTRADEThx
-            // 
-            this.checkTRADEThx.AutoSize = true;
-            this.checkTRADEThx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkTRADEThx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkTRADEThx.Location = new System.Drawing.Point(88, 253);
-            this.checkTRADEThx.Name = "checkTRADEThx";
-            this.checkTRADEThx.Size = new System.Drawing.Size(15, 14);
-            this.checkTRADEThx.TabIndex = 6;
-            this.checkTRADEThx.UseVisualStyleBackColor = false;
-            // 
-            // checkTRADESold
-            // 
-            this.checkTRADESold.AutoSize = true;
-            this.checkTRADESold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkTRADESold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkTRADESold.Location = new System.Drawing.Point(88, 216);
-            this.checkTRADESold.Name = "checkTRADESold";
-            this.checkTRADESold.Size = new System.Drawing.Size(15, 14);
-            this.checkTRADESold.TabIndex = 9;
-            this.checkTRADESold.UseVisualStyleBackColor = false;
-            // 
-            // checkINVITEThx
-            // 
-            this.checkINVITEThx.AutoSize = true;
-            this.checkINVITEThx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkINVITEThx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkINVITEThx.Location = new System.Drawing.Point(40, 253);
-            this.checkINVITEThx.Name = "checkINVITEThx";
-            this.checkINVITEThx.Size = new System.Drawing.Size(15, 14);
-            this.checkINVITEThx.TabIndex = 6;
-            this.checkINVITEThx.UseVisualStyleBackColor = false;
-            // 
-            // checkTRADEWait
-            // 
-            this.checkTRADEWait.AutoSize = true;
-            this.checkTRADEWait.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkTRADEWait.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkTRADEWait.Location = new System.Drawing.Point(88, 180);
-            this.checkTRADEWait.Name = "checkTRADEWait";
-            this.checkTRADEWait.Size = new System.Drawing.Size(15, 14);
-            this.checkTRADEWait.TabIndex = 12;
-            this.checkTRADEWait.UseVisualStyleBackColor = false;
-            // 
-            // checkINVITESold
-            // 
-            this.checkINVITESold.AutoSize = true;
-            this.checkINVITESold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkINVITESold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkINVITESold.Location = new System.Drawing.Point(40, 216);
-            this.checkINVITESold.Name = "checkINVITESold";
-            this.checkINVITESold.Size = new System.Drawing.Size(15, 14);
-            this.checkINVITESold.TabIndex = 9;
-            this.checkINVITESold.UseVisualStyleBackColor = false;
-            // 
-            // checkINVITEWait
-            // 
-            this.checkINVITEWait.AutoSize = true;
-            this.checkINVITEWait.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkINVITEWait.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkINVITEWait.Location = new System.Drawing.Point(40, 180);
-            this.checkINVITEWait.Name = "checkINVITEWait";
-            this.checkINVITEWait.Size = new System.Drawing.Size(15, 14);
-            this.checkINVITEWait.TabIndex = 12;
-            this.checkINVITEWait.UseVisualStyleBackColor = false;
-            // 
-            // checkTRADECustom1
-            // 
-            this.checkTRADECustom1.AutoSize = true;
-            this.checkTRADECustom1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkTRADECustom1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkTRADECustom1.Location = new System.Drawing.Point(88, 288);
-            this.checkTRADECustom1.Name = "checkTRADECustom1";
-            this.checkTRADECustom1.Size = new System.Drawing.Size(15, 14);
-            this.checkTRADECustom1.TabIndex = 15;
-            this.checkTRADECustom1.UseVisualStyleBackColor = false;
-            // 
-            // checkINVITECustom1
-            // 
-            this.checkINVITECustom1.AutoSize = true;
-            this.checkINVITECustom1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkINVITECustom1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkINVITECustom1.Location = new System.Drawing.Point(40, 288);
-            this.checkINVITECustom1.Name = "checkINVITECustom1";
-            this.checkINVITECustom1.Size = new System.Drawing.Size(15, 14);
-            this.checkINVITECustom1.TabIndex = 15;
-            this.checkINVITECustom1.UseVisualStyleBackColor = false;
-            // 
-            // checkTRADECustom2
-            // 
-            this.checkTRADECustom2.AutoSize = true;
-            this.checkTRADECustom2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkTRADECustom2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkTRADECustom2.Location = new System.Drawing.Point(88, 324);
-            this.checkTRADECustom2.Name = "checkTRADECustom2";
-            this.checkTRADECustom2.Size = new System.Drawing.Size(15, 14);
-            this.checkTRADECustom2.TabIndex = 18;
-            this.checkTRADECustom2.UseVisualStyleBackColor = false;
-            // 
-            // checkINVITECustom2
-            // 
-            this.checkINVITECustom2.AutoSize = true;
-            this.checkINVITECustom2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkINVITECustom2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkINVITECustom2.Location = new System.Drawing.Point(40, 324);
-            this.checkINVITECustom2.Name = "checkINVITECustom2";
-            this.checkINVITECustom2.Size = new System.Drawing.Size(15, 14);
-            this.checkINVITECustom2.TabIndex = 18;
-            this.checkINVITECustom2.UseVisualStyleBackColor = false;
-            // 
-            // checkTRADECustom3
-            // 
-            this.checkTRADECustom3.AutoSize = true;
-            this.checkTRADECustom3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkTRADECustom3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkTRADECustom3.Location = new System.Drawing.Point(88, 360);
-            this.checkTRADECustom3.Name = "checkTRADECustom3";
-            this.checkTRADECustom3.Size = new System.Drawing.Size(15, 14);
-            this.checkTRADECustom3.TabIndex = 21;
-            this.checkTRADECustom3.UseVisualStyleBackColor = false;
-            // 
-            // checkINVITECustom3
-            // 
-            this.checkINVITECustom3.AutoSize = true;
-            this.checkINVITECustom3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkINVITECustom3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkINVITECustom3.Location = new System.Drawing.Point(40, 360);
-            this.checkINVITECustom3.Name = "checkINVITECustom3";
-            this.checkINVITECustom3.Size = new System.Drawing.Size(15, 14);
-            this.checkINVITECustom3.TabIndex = 21;
-            this.checkINVITECustom3.UseVisualStyleBackColor = false;
-            // 
-            // checkTRADECustom4
-            // 
-            this.checkTRADECustom4.AutoSize = true;
-            this.checkTRADECustom4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkTRADECustom4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkTRADECustom4.Location = new System.Drawing.Point(88, 396);
-            this.checkTRADECustom4.Name = "checkTRADECustom4";
-            this.checkTRADECustom4.Size = new System.Drawing.Size(15, 14);
-            this.checkTRADECustom4.TabIndex = 24;
-            this.checkTRADECustom4.UseVisualStyleBackColor = false;
-            // 
-            // checkINVITECustom4
-            // 
-            this.checkINVITECustom4.AutoSize = true;
-            this.checkINVITECustom4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.checkINVITECustom4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.checkINVITECustom4.Location = new System.Drawing.Point(40, 396);
-            this.checkINVITECustom4.Name = "checkINVITECustom4";
-            this.checkINVITECustom4.Size = new System.Drawing.Size(15, 14);
-            this.checkINVITECustom4.TabIndex = 24;
-            this.checkINVITECustom4.UseVisualStyleBackColor = false;
-            // 
-            // label15
-            // 
-            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label15.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label15.Location = new System.Drawing.Point(23, 135);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(50, 24);
-            this.label15.TabIndex = 76;
-            this.label15.Text = "INVITE";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label44
-            // 
-            this.label44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label44.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label44.Location = new System.Drawing.Point(72, 135);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(50, 24);
-            this.label44.TabIndex = 76;
-            this.label44.Text = "TRADE";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnT
-            // 
-            this.btnT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
-            this.btnT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnT.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnT.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnT.FlatAppearance.BorderSize = 0;
-            this.btnT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnT.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnT.ForeColor = System.Drawing.Color.Black;
-            this.btnT.Image = ((System.Drawing.Image)(resources.GetObject("btnT.Image")));
-            this.btnT.Location = new System.Drawing.Point(516, 324);
-            this.btnT.Name = "btnT";
-            this.btnT.Size = new System.Drawing.Size(64, 20);
-            this.btnT.TabIndex = 78;
-            this.btnT.UseVisualStyleBackColor = false;
-            // 
-            // btnW
-            // 
-            this.btnW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
-            this.btnW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnW.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnW.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnW.FlatAppearance.BorderSize = 0;
-            this.btnW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnW.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnW.ForeColor = System.Drawing.Color.White;
-            this.btnW.Image = ((System.Drawing.Image)(resources.GetObject("btnW.Image")));
-            this.btnW.Location = new System.Drawing.Point(516, 287);
-            this.btnW.Name = "btnW";
-            this.btnW.Size = new System.Drawing.Size(64, 20);
-            this.btnW.TabIndex = 79;
-            this.btnW.UseVisualStyleBackColor = false;
-            // 
-            // btnS
-            // 
-            this.btnS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
-            this.btnS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnS.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnS.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnS.FlatAppearance.BorderSize = 0;
-            this.btnS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnS.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnS.Image = global::POExileDirection.Properties.Resources.Button_bg;
-            this.btnS.Location = new System.Drawing.Point(516, 250);
-            this.btnS.Name = "btnS";
-            this.btnS.Size = new System.Drawing.Size(64, 20);
-            this.btnS.TabIndex = 80;
-            this.btnS.UseVisualStyleBackColor = false;
-            // 
-            // btnMinMax
-            // 
-            this.btnMinMax.BackColor = System.Drawing.Color.Transparent;
-            this.btnMinMax.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMinMax.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnMinMax.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnMinMax.FlatAppearance.BorderSize = 0;
-            this.btnMinMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinMax.Image = global::POExileDirection.Properties.Resources.top_bar_size_control;
-            this.btnMinMax.Location = new System.Drawing.Point(174, 370);
-            this.btnMinMax.Name = "btnMinMax";
-            this.btnMinMax.Size = new System.Drawing.Size(10, 10);
-            this.btnMinMax.TabIndex = 77;
-            this.btnMinMax.UseVisualStyleBackColor = false;
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(172, 407);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(13, 13);
-            this.btnClose.TabIndex = 76;
-            this.btnClose.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = global::POExileDirection.Properties.Resources.panel_bottom_line;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 209);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(792, 9);
-            this.pictureBox5.TabIndex = 75;
-            this.pictureBox5.TabStop = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Image = global::POExileDirection.Properties.Resources.top_bar_partyadd;
-            this.button7.Location = new System.Drawing.Point(173, 252);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(17, 13);
-            this.button7.TabIndex = 72;
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Image = global::POExileDirection.Properties.Resources.top_bar_partyexit;
-            this.button8.Location = new System.Drawing.Point(173, 330);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(16, 10);
-            this.button8.TabIndex = 73;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button9.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Image = global::POExileDirection.Properties.Resources.top_bar_Transaction;
-            this.button9.Location = new System.Drawing.Point(172, 290);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(15, 13);
-            this.button9.TabIndex = 74;
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // btnSearchStash
-            // 
-            this.btnSearchStash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnSearchStash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearchStash.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnSearchStash.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnSearchStash.FlatAppearance.BorderSize = 0;
-            this.btnSearchStash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchStash.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnSearchStash.ForeColor = System.Drawing.Color.White;
-            this.btnSearchStash.Image = global::POExileDirection.Properties.Resources.icon_re_02;
-            this.btnSearchStash.Location = new System.Drawing.Point(556, 78);
-            this.btnSearchStash.Name = "btnSearchStash";
-            this.btnSearchStash.Size = new System.Drawing.Size(24, 24);
-            this.btnSearchStash.TabIndex = 48;
-            this.btnSearchStash.TabStop = false;
-            this.btnSearchStash.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = global::POExileDirection.Properties.Resources.icon_re_01;
-            this.button5.Location = new System.Drawing.Point(556, 37);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(24, 24);
-            this.button5.TabIndex = 47;
-            this.button5.TabStop = false;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Moccasin;
-            this.button4.Image = global::POExileDirection.Properties.Resources.icon_re_05;
-            this.button4.Location = new System.Drawing.Point(170, 158);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(24, 24);
-            this.button4.TabIndex = 46;
-            this.button4.TabStop = false;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.MediumSpringGreen;
-            this.button3.Image = global::POExileDirection.Properties.Resources.icon_re_13;
-            this.button3.Location = new System.Drawing.Point(170, 119);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(24, 24);
-            this.button3.TabIndex = 45;
-            this.button3.TabStop = false;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button2.Image = global::POExileDirection.Properties.Resources.icon_re_12;
-            this.button2.Location = new System.Drawing.Point(170, 78);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(24, 24);
-            this.button2.TabIndex = 44;
-            this.button2.TabStop = false;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pictureBox1.Enabled = false;
-            this.pictureBox1.Image = global::POExileDirection.Properties.Resources.cmd_06;
-            this.pictureBox1.Location = new System.Drawing.Point(488, 119);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(95, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pictureBox4.Enabled = false;
-            this.pictureBox4.Image = global::POExileDirection.Properties.Resources.RemainBGBOX_32_32;
-            this.pictureBox4.Location = new System.Drawing.Point(167, 35);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
-            // 
-            // btnSOUNDTrade
-            // 
-            this.btnSOUNDTrade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnSOUNDTrade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSOUNDTrade.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSOUNDTrade.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnSOUNDTrade.FlatAppearance.BorderSize = 0;
-            this.btnSOUNDTrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSOUNDTrade.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSOUNDTrade.ForeColor = System.Drawing.Color.LightCoral;
-            this.btnSOUNDTrade.Image = global::POExileDirection.Properties.Resources.Volume_16x16;
-            this.btnSOUNDTrade.Location = new System.Drawing.Point(663, 34);
-            this.btnSOUNDTrade.Name = "btnSOUNDTrade";
-            this.btnSOUNDTrade.Size = new System.Drawing.Size(14, 14);
-            this.btnSOUNDTrade.TabIndex = 79;
-            this.btnSOUNDTrade.TabStop = false;
-            this.btnSOUNDTrade.Text = "img";
-            this.btnSOUNDTrade.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::POExileDirection.Properties.Resources.panel_bottom_line;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 109);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(792, 9);
-            this.pictureBox3.TabIndex = 68;
-            this.pictureBox3.TabStop = false;
-            // 
-            // btnCustom2
-            // 
-            this.btnCustom2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnCustom2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCustom2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnCustom2.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnCustom2.FlatAppearance.BorderSize = 0;
-            this.btnCustom2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCustom2.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnCustom2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.btnCustom2.Image = ((System.Drawing.Image)(resources.GetObject("btnCustom2.Image")));
-            this.btnCustom2.Location = new System.Drawing.Point(125, 322);
-            this.btnCustom2.Name = "btnCustom2";
-            this.btnCustom2.Size = new System.Drawing.Size(64, 22);
-            this.btnCustom2.TabIndex = 62;
-            this.btnCustom2.UseVisualStyleBackColor = false;
-            // 
-            // btnCustom4
-            // 
-            this.btnCustom4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnCustom4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCustom4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnCustom4.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnCustom4.FlatAppearance.BorderSize = 0;
-            this.btnCustom4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCustom4.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnCustom4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.btnCustom4.Image = ((System.Drawing.Image)(resources.GetObject("btnCustom4.Image")));
-            this.btnCustom4.Location = new System.Drawing.Point(125, 393);
-            this.btnCustom4.Name = "btnCustom4";
-            this.btnCustom4.Size = new System.Drawing.Size(64, 22);
-            this.btnCustom4.TabIndex = 61;
-            this.btnCustom4.UseVisualStyleBackColor = false;
-            // 
-            // btnCustom3
-            // 
-            this.btnCustom3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnCustom3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCustom3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnCustom3.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnCustom3.FlatAppearance.BorderSize = 0;
-            this.btnCustom3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCustom3.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnCustom3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.btnCustom3.Image = ((System.Drawing.Image)(resources.GetObject("btnCustom3.Image")));
-            this.btnCustom3.Location = new System.Drawing.Point(125, 357);
-            this.btnCustom3.Name = "btnCustom3";
-            this.btnCustom3.Size = new System.Drawing.Size(64, 22);
-            this.btnCustom3.TabIndex = 61;
-            this.btnCustom3.UseVisualStyleBackColor = false;
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button13.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Image = global::POExileDirection.Properties.Resources.top_bar_partyexit;
-            this.button13.Location = new System.Drawing.Point(58, 33);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(16, 10);
-            this.button13.TabIndex = 54;
-            this.button13.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button10.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button10.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Image = global::POExileDirection.Properties.Resources.top_bar_resend1;
-            this.button10.Location = new System.Drawing.Point(58, 62);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(14, 14);
-            this.button10.TabIndex = 56;
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // btnThanks
-            // 
-            this.btnThanks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnThanks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnThanks.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnThanks.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnThanks.FlatAppearance.BorderSize = 0;
-            this.btnThanks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThanks.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThanks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.btnThanks.Image = ((System.Drawing.Image)(resources.GetObject("btnThanks.Image")));
-            this.btnThanks.Location = new System.Drawing.Point(125, 248);
-            this.btnThanks.Name = "btnThanks";
-            this.btnThanks.Size = new System.Drawing.Size(64, 22);
-            this.btnThanks.TabIndex = 59;
-            this.btnThanks.UseVisualStyleBackColor = false;
-            // 
-            // btnSold
-            // 
-            this.btnSold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnSold.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSold.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnSold.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnSold.FlatAppearance.BorderSize = 0;
-            this.btnSold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSold.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.btnSold.Image = ((System.Drawing.Image)(resources.GetObject("btnSold.Image")));
-            this.btnSold.Location = new System.Drawing.Point(125, 212);
-            this.btnSold.Name = "btnSold";
-            this.btnSold.Size = new System.Drawing.Size(64, 22);
-            this.btnSold.TabIndex = 59;
-            this.btnSold.UseVisualStyleBackColor = false;
-            // 
-            // btnWaitPls
-            // 
-            this.btnWaitPls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnWaitPls.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnWaitPls.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnWaitPls.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnWaitPls.FlatAppearance.BorderSize = 0;
-            this.btnWaitPls.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWaitPls.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWaitPls.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.btnWaitPls.Image = ((System.Drawing.Image)(resources.GetObject("btnWaitPls.Image")));
-            this.btnWaitPls.Location = new System.Drawing.Point(125, 177);
-            this.btnWaitPls.Name = "btnWaitPls";
-            this.btnWaitPls.Size = new System.Drawing.Size(64, 22);
-            this.btnWaitPls.TabIndex = 59;
-            this.btnWaitPls.UseVisualStyleBackColor = false;
-            // 
-            // btnCustom1
-            // 
-            this.btnCustom1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnCustom1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCustom1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnCustom1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnCustom1.FlatAppearance.BorderSize = 0;
-            this.btnCustom1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCustom1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustom1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.btnCustom1.Image = ((System.Drawing.Image)(resources.GetObject("btnCustom1.Image")));
-            this.btnCustom1.Location = new System.Drawing.Point(125, 285);
-            this.btnCustom1.Name = "btnCustom1";
-            this.btnCustom1.Size = new System.Drawing.Size(64, 22);
-            this.btnCustom1.TabIndex = 59;
-            this.btnCustom1.UseVisualStyleBackColor = false;
-            // 
-            // btn5
-            // 
-            this.btn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btn5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn5.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btn5.FlatAppearance.BorderSize = 0;
-            this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.ForeColor = System.Drawing.Color.Silver;
-            this.btn5.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btn5.Location = new System.Drawing.Point(130, 351);
-            this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(14, 14);
-            this.btn5.TabIndex = 95;
-            this.btn5.TabStop = false;
-            this.btn5.UseVisualStyleBackColor = false;
-            // 
-            // btn4
-            // 
-            this.btn4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn4.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btn4.FlatAppearance.BorderSize = 0;
-            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.ForeColor = System.Drawing.Color.Silver;
-            this.btn4.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btn4.Location = new System.Drawing.Point(130, 287);
-            this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(14, 14);
-            this.btn4.TabIndex = 94;
-            this.btn4.TabStop = false;
-            this.btn4.UseVisualStyleBackColor = false;
-            // 
-            // btn3
-            // 
-            this.btn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn3.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btn3.FlatAppearance.BorderSize = 0;
-            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.ForeColor = System.Drawing.Color.Silver;
-            this.btn3.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btn3.Location = new System.Drawing.Point(130, 224);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(14, 14);
-            this.btn3.TabIndex = 93;
-            this.btn3.TabStop = false;
-            this.btn3.UseVisualStyleBackColor = false;
-            // 
-            // btn2
-            // 
-            this.btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn2.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btn2.FlatAppearance.BorderSize = 0;
-            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.ForeColor = System.Drawing.Color.Silver;
-            this.btn2.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btn2.Location = new System.Drawing.Point(130, 161);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(14, 14);
-            this.btn2.TabIndex = 92;
-            this.btn2.TabStop = false;
-            this.btn2.UseVisualStyleBackColor = false;
-            // 
-            // btn1
-            // 
-            this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btn1.FlatAppearance.BorderSize = 0;
-            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.ForeColor = System.Drawing.Color.Silver;
-            this.btn1.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btn1.Location = new System.Drawing.Point(130, 98);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(14, 14);
-            this.btn1.TabIndex = 91;
-            this.btn1.TabStop = false;
-            this.btn1.UseVisualStyleBackColor = false;
-            // 
-            // pictureFlask5
-            // 
-            this.pictureFlask5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.pictureFlask5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureFlask5.Location = new System.Drawing.Point(477, 330);
-            this.pictureFlask5.Name = "pictureFlask5";
-            this.pictureFlask5.Size = new System.Drawing.Size(30, 60);
-            this.pictureFlask5.TabIndex = 83;
-            this.pictureFlask5.TabStop = false;
-            this.pictureFlask5.Click += new System.EventHandler(this.pictureFlask5_Click);
-            this.pictureFlask5.DoubleClick += new System.EventHandler(this.pictureFlask5_Click);
-            // 
-            // pictureFlask4
-            // 
-            this.pictureFlask4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.pictureFlask4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureFlask4.Location = new System.Drawing.Point(477, 266);
-            this.pictureFlask4.Name = "pictureFlask4";
-            this.pictureFlask4.Size = new System.Drawing.Size(30, 60);
-            this.pictureFlask4.TabIndex = 82;
-            this.pictureFlask4.TabStop = false;
-            this.pictureFlask4.Click += new System.EventHandler(this.pictureFlask4_Click);
-            this.pictureFlask4.DoubleClick += new System.EventHandler(this.pictureFlask4_Click);
-            // 
-            // pictureFlask3
-            // 
-            this.pictureFlask3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.pictureFlask3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureFlask3.Location = new System.Drawing.Point(477, 202);
-            this.pictureFlask3.Name = "pictureFlask3";
-            this.pictureFlask3.Size = new System.Drawing.Size(30, 60);
-            this.pictureFlask3.TabIndex = 81;
-            this.pictureFlask3.TabStop = false;
-            this.pictureFlask3.Click += new System.EventHandler(this.pictureFlask3_Click);
-            this.pictureFlask3.DoubleClick += new System.EventHandler(this.pictureFlask3_Click);
-            // 
-            // pictureFlask2
-            // 
-            this.pictureFlask2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.pictureFlask2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureFlask2.Location = new System.Drawing.Point(477, 139);
-            this.pictureFlask2.Name = "pictureFlask2";
-            this.pictureFlask2.Size = new System.Drawing.Size(30, 60);
-            this.pictureFlask2.TabIndex = 80;
-            this.pictureFlask2.TabStop = false;
-            this.pictureFlask2.Click += new System.EventHandler(this.pictureFlask2_Click);
-            this.pictureFlask2.DoubleClick += new System.EventHandler(this.pictureFlask2_Click);
-            // 
-            // pictureFlask1
-            // 
-            this.pictureFlask1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.pictureFlask1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureFlask1.Location = new System.Drawing.Point(477, 76);
-            this.pictureFlask1.Name = "pictureFlask1";
-            this.pictureFlask1.Size = new System.Drawing.Size(30, 60);
-            this.pictureFlask1.TabIndex = 79;
-            this.pictureFlask1.TabStop = false;
-            this.pictureFlask1.Click += new System.EventHandler(this.pictureFlask1_Click);
-            this.pictureFlask1.DoubleClick += new System.EventHandler(this.pictureFlask1_Click);
-            // 
-            // btnS5
-            // 
-            this.btnS5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnS5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnS5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnS5.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnS5.FlatAppearance.BorderSize = 0;
-            this.btnS5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnS5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnS5.ForeColor = System.Drawing.Color.Silver;
-            this.btnS5.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btnS5.Location = new System.Drawing.Point(174, 267);
-            this.btnS5.Name = "btnS5";
-            this.btnS5.Size = new System.Drawing.Size(14, 14);
-            this.btnS5.TabIndex = 83;
-            this.btnS5.TabStop = false;
-            this.btnS5.UseVisualStyleBackColor = false;
-            // 
-            // btnS4
-            // 
-            this.btnS4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnS4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnS4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnS4.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnS4.FlatAppearance.BorderSize = 0;
-            this.btnS4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnS4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnS4.ForeColor = System.Drawing.Color.Silver;
-            this.btnS4.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btnS4.Location = new System.Drawing.Point(174, 226);
-            this.btnS4.Name = "btnS4";
-            this.btnS4.Size = new System.Drawing.Size(14, 14);
-            this.btnS4.TabIndex = 82;
-            this.btnS4.TabStop = false;
-            this.btnS4.UseVisualStyleBackColor = false;
-            // 
-            // btnS3
-            // 
-            this.btnS3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnS3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnS3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnS3.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnS3.FlatAppearance.BorderSize = 0;
-            this.btnS3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnS3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnS3.ForeColor = System.Drawing.Color.Silver;
-            this.btnS3.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btnS3.Location = new System.Drawing.Point(174, 185);
-            this.btnS3.Name = "btnS3";
-            this.btnS3.Size = new System.Drawing.Size(14, 14);
-            this.btnS3.TabIndex = 81;
-            this.btnS3.TabStop = false;
-            this.btnS3.UseVisualStyleBackColor = false;
-            // 
-            // btnS2
-            // 
-            this.btnS2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnS2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnS2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnS2.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnS2.FlatAppearance.BorderSize = 0;
-            this.btnS2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnS2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnS2.ForeColor = System.Drawing.Color.Silver;
-            this.btnS2.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btnS2.Location = new System.Drawing.Point(174, 144);
-            this.btnS2.Name = "btnS2";
-            this.btnS2.Size = new System.Drawing.Size(14, 14);
-            this.btnS2.TabIndex = 80;
-            this.btnS2.TabStop = false;
-            this.btnS2.UseVisualStyleBackColor = false;
-            // 
-            // btnS1
-            // 
-            this.btnS1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.btnS1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnS1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnS1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnS1.FlatAppearance.BorderSize = 0;
-            this.btnS1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnS1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnS1.ForeColor = System.Drawing.Color.Silver;
-            this.btnS1.Image = global::POExileDirection.Properties.Resources.check_on;
-            this.btnS1.Location = new System.Drawing.Point(174, 103);
-            this.btnS1.Name = "btnS1";
-            this.btnS1.Size = new System.Drawing.Size(14, 14);
-            this.btnS1.TabIndex = 79;
-            this.btnS1.TabStop = false;
-            this.btnS1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBoxZANA
-            // 
-            this.pictureBoxZANA.Location = new System.Drawing.Point(55, 325);
-            this.pictureBoxZANA.Name = "pictureBoxZANA";
-            this.pictureBoxZANA.Size = new System.Drawing.Size(200, 150);
-            this.pictureBoxZANA.TabIndex = 110;
-            this.pictureBoxZANA.TabStop = false;
-            // 
-            // pictureBoxALVA
-            // 
-            this.pictureBoxALVA.Location = new System.Drawing.Point(55, 169);
-            this.pictureBoxALVA.Name = "pictureBoxALVA";
-            this.pictureBoxALVA.Size = new System.Drawing.Size(200, 150);
-            this.pictureBoxALVA.TabIndex = 110;
-            this.pictureBoxALVA.TabStop = false;
-            // 
-            // pictureBoxJUN
-            // 
-            this.pictureBoxJUN.Location = new System.Drawing.Point(55, 13);
-            this.pictureBoxJUN.Name = "pictureBoxJUN";
-            this.pictureBoxJUN.Size = new System.Drawing.Size(200, 150);
-            this.pictureBoxJUN.TabIndex = 110;
-            this.pictureBoxJUN.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Moccasin;
-            this.button1.Image = global::POExileDirection.Properties.Resources.icon_re_05;
-            this.button1.Location = new System.Drawing.Point(274, 388);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(24, 24);
-            this.button1.TabIndex = 108;
-            this.button1.TabStop = false;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.MediumSpringGreen;
-            this.button6.Image = global::POExileDirection.Properties.Resources.icon_re_13;
-            this.button6.Location = new System.Drawing.Point(274, 233);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(24, 24);
-            this.button6.TabIndex = 107;
-            this.button6.TabStop = false;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button11.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button11.Image = global::POExileDirection.Properties.Resources.icon_re_12;
-            this.button11.Location = new System.Drawing.Point(274, 78);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(24, 24);
-            this.button11.TabIndex = 106;
-            this.button11.TabStop = false;
-            this.button11.UseVisualStyleBackColor = false;
-            // 
             // panelTop
             // 
             this.panelTop.BackgroundImage = global::POExileDirection.Properties.Resources.top_bg;
@@ -4108,29 +4123,29 @@
             this.tabHotKeys.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.panelSetFlaskImage.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
-            this.tabPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.panelSetFlaskImage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlask1)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxZANA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxALVA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJUN)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
             this.panelTop.ResumeLayout(false);
             this.ResumeLayout(false);
 

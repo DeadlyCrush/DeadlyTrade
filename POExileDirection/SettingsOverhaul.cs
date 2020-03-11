@@ -289,11 +289,15 @@ namespace POExileDirection
 
             if (LauncherForm.g_strNotificationSoundYN == "Y")
             {
+                btnSOUNDTrade.Image = Properties.Resources.Volume_16x16;
+                labelSNDOnOff.ForeColor = Color.FromArgb(235, 182, 111);
                 labelSNDOnOff.Text = "ON";
                 xuiSwitchSoundTrade.SwitchState = XanderUI.XUISwitch.State.On;
             }
             else
             {
+                btnSOUNDTrade.Image = Properties.Resources.Volume_16x16_Mute;
+                labelSNDOnOff.ForeColor = Color.FromArgb(28, 21, 16);
                 labelSNDOnOff.Text = "OFF";
                 xuiSwitchSoundTrade.SwitchState = XanderUI.XUISwitch.State.Off;
             }
@@ -370,6 +374,66 @@ namespace POExileDirection
                 checkAutoCloseCustom4.Checked = true;
             else
                 checkAutoCloseCustom4.Checked = false;
+
+            // Function Trade Request
+            if (LauncherForm.g_strTRADECheckYNThx.Trim().ToUpper() == "Y")
+                checkTRADEThx.Checked = true;
+            else
+                checkTRADEThx.Checked = false;
+            if (LauncherForm.g_strTRADECheckYNWait.Trim().ToUpper() == "Y")
+                checkTRADEWait.Checked = true;
+            else
+                checkTRADEWait.Checked = false;
+            if (LauncherForm.g_strTRADECheckYNSold.Trim().ToUpper() == "Y")
+                checkTRADESold.Checked = true;
+            else
+                checkTRADESold.Checked = false;
+            if (LauncherForm.g_strTRADECheckYNCustom1.Trim().ToUpper() == "Y")
+                checkTRADECustom1.Checked = true;
+            else
+                checkTRADECustom1.Checked = false;
+            if (LauncherForm.g_strTRADECheckYNCustom2.Trim().ToUpper() == "Y")
+                checkTRADECustom2.Checked = true;
+            else
+                checkTRADECustom2.Checked = false;
+            if (LauncherForm.g_strTRADECheckYNCustom3.Trim().ToUpper() == "Y")
+                checkTRADECustom3.Checked = true;
+            else
+                checkTRADECustom3.Checked = false;
+            if (LauncherForm.g_strTRADECheckYNCustom4.Trim().ToUpper() == "Y")
+                checkTRADECustom4.Checked = true;
+            else
+                checkTRADECustom4.Checked = false;
+
+            // Function INVITE
+            if (LauncherForm.g_strINVITECheckYNThx.Trim().ToUpper() == "Y")
+                checkINVITEThx.Checked = true;
+            else
+                checkINVITEThx.Checked = false;
+            if (LauncherForm.g_strINVITECheckYNWait.Trim().ToUpper() == "Y")
+                checkINVITEWait.Checked = true;
+            else
+                checkINVITEWait.Checked = false;
+            if (LauncherForm.g_strINVITECheckYNSold.Trim().ToUpper() == "Y")
+                checkINVITESold.Checked = true;
+            else
+                checkINVITESold.Checked = false;
+            if (LauncherForm.g_strINVITECheckYNCustom1.Trim().ToUpper() == "Y")
+                checkINVITECustom1.Checked = true;
+            else
+                checkINVITECustom1.Checked = false;
+            if (LauncherForm.g_strINVITECheckYNCustom2.Trim().ToUpper() == "Y")
+                checkINVITECustom2.Checked = true;
+            else
+                checkINVITECustom2.Checked = false;
+            if (LauncherForm.g_strINVITECheckYNCustom3.Trim().ToUpper() == "Y")
+                checkINVITECustom3.Checked = true;
+            else
+                checkINVITECustom3.Checked = false;
+            if (LauncherForm.g_strINVITECheckYNCustom4.Trim().ToUpper() == "Y")
+                checkINVITECustom4.Checked = true;
+            else
+                checkINVITECustom4.Checked = false;
 
             // TITLE
             textBoxTitleWAIT.Text = LauncherForm.g_strnotiWAITbtnTITLE;
@@ -1054,15 +1118,29 @@ namespace POExileDirection
             labelFlaskTimerVolume.Text = "Volume = " + xuiSliderVolumeFlask.Percentage.ToString();
         }
 
+        private void btnSOUNDTrade_Click(object sender, EventArgs e)
+        {
+            if (xuiSwitchSoundTrade.SwitchState == XanderUI.XUISwitch.State.On)
+                xuiSwitchSoundTrade.SwitchState = XanderUI.XUISwitch.State.Off;
+            else
+                xuiSwitchSoundTrade.SwitchState = XanderUI.XUISwitch.State.On;
+
+            xuiSwitchSoundTrade_SwitchStateChanged(sender, e);
+        }
+
         private void xuiSwitchSoundTrade_SwitchStateChanged(object sender, EventArgs e)
         {
             if (xuiSwitchSoundTrade.SwitchState == XanderUI.XUISwitch.State.On)
             {
+                btnSOUNDTrade.Image = Properties.Resources.Volume_16x16;
+                labelSNDOnOff.ForeColor = Color.FromArgb(235, 182, 111);
                 labelSNDOnOff.Text = "ON";
                 LauncherForm.g_strNotificationSoundYN = "Y";
             }
             else
             {
+                btnSOUNDTrade.Image = Properties.Resources.Volume_16x16_Mute;
+                labelSNDOnOff.ForeColor = Color.FromArgb(28, 21, 16);
                 labelSNDOnOff.Text = "OFF";
                 LauncherForm.g_strNotificationSoundYN = "N";
             }
@@ -1761,6 +1839,64 @@ namespace POExileDirection
                     LauncherForm.g_strTRAutoCloseCustom4 = "Y";
                 else
                     LauncherForm.g_strTRAutoCloseCustom4 = "N";
+                // CHECK - Function INVITE
+                if (checkINVITEWait.Checked)
+                    LauncherForm.g_strINVITECheckYNWait = "Y";
+                else
+                    LauncherForm.g_strINVITECheckYNWait = "N";
+                if (checkINVITESold.Checked)
+                    LauncherForm.g_strINVITECheckYNSold = "Y";
+                else
+                    LauncherForm.g_strINVITECheckYNSold = "N";
+                if (checkINVITEThx.Checked)
+                    LauncherForm.g_strINVITECheckYNThx = "Y";
+                else
+                    LauncherForm.g_strINVITECheckYNThx = "N";
+                if (checkINVITECustom1.Checked)
+                    LauncherForm.g_strINVITECheckYNCustom1 = "Y";
+                else
+                    LauncherForm.g_strINVITECheckYNCustom1 = "N";
+                if (checkINVITECustom2.Checked)
+                    LauncherForm.g_strINVITECheckYNCustom2 = "Y";
+                else
+                    LauncherForm.g_strINVITECheckYNCustom2 = "N";
+                if (checkINVITECustom3.Checked)
+                    LauncherForm.g_strINVITECheckYNCustom3 = "Y";
+                else
+                    LauncherForm.g_strINVITECheckYNCustom3 = "N";
+                if (checkINVITECustom4.Checked)
+                    LauncherForm.g_strINVITECheckYNCustom4 = "Y";
+                else
+                    LauncherForm.g_strINVITECheckYNCustom4 = "N";
+                // CHECK - Function Trade Request
+                if (checkTRADEWait.Checked)
+                    LauncherForm.g_strTRADECheckYNWait = "Y";
+                else
+                    LauncherForm.g_strTRADECheckYNWait = "N";
+                if (checkTRADESold.Checked)
+                    LauncherForm.g_strTRADECheckYNSold = "Y";
+                else
+                    LauncherForm.g_strTRADECheckYNSold = "N";
+                if (checkTRADEThx.Checked)
+                    LauncherForm.g_strTRADECheckYNThx = "Y";
+                else
+                    LauncherForm.g_strTRADECheckYNThx = "N";
+                if (checkTRADECustom1.Checked)
+                    LauncherForm.g_strTRADECheckYNCustom1 = "Y";
+                else
+                    LauncherForm.g_strTRADECheckYNCustom1 = "N";
+                if (checkTRADECustom2.Checked)
+                    LauncherForm.g_strTRADECheckYNCustom2 = "Y";
+                else
+                    LauncherForm.g_strTRADECheckYNCustom2 = "N";
+                if (checkTRADECustom3.Checked)
+                    LauncherForm.g_strTRADECheckYNCustom3 = "Y";
+                else
+                    LauncherForm.g_strTRADECheckYNCustom3 = "N";
+                if (checkTRADECustom4.Checked)
+                    LauncherForm.g_strTRADECheckYNCustom4 = "Y";
+                else
+                    LauncherForm.g_strTRADECheckYNCustom4 = "N";
                 #endregion
 
                 #region[[[[[ TAB3 - FLASK ]]]]]
@@ -1878,6 +2014,151 @@ namespace POExileDirection
 
             if (webBrowser1 != null) webBrowser1.Dispose();
         }
+        #endregion
+
+        #region [[[[[ INVITE Check Box Limit to Other Check Box. ]]]]]
+        private void checkINVITEWait_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkINVITEWait.Checked == true)
+            {
+                checkTRADEWait.Checked = false;
+                checkBoxAutoKickWAIT.Checked = false;
+                checkAutoCloseWait.Checked = false;
+            }
+        }
+
+        private void checkINVITESold_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkINVITESold.Checked == true)
+            {
+                checkTRADESold.Checked = false;
+                checkBoxAutoKickSOLD.Checked = false;
+                checkAutoCloseSold.Checked = false;
+            }
+        }
+
+        private void checkINVITEThx_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkINVITEThx.Checked == true)
+            {
+                checkTRADEThx.Checked = false;
+                checkBoxAutoKickTHX.Checked = false;
+                checkAutoCloseThx.Checked = false;
+            }
+        }
+
+        private void checkINVITECustom1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkINVITECustom1.Checked == true)
+            {
+                checkTRADECustom1.Checked = false;
+                checkBoxAutoKickCUSTOM1.Checked = false;
+                checkAutoCloseCustom1.Checked = false;
+            }
+        }
+
+        private void checkINVITECustom2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkINVITECustom2.Checked == true)
+            {
+                checkTRADECustom2.Checked = false;
+                checkBoxAutoKickCUSTOM2.Checked = false;
+                checkAutoCloseCustom2.Checked = false;
+            }
+        }
+
+        private void checkINVITECustom3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkINVITECustom3.Checked == true)
+            {
+                checkTRADECustom3.Checked = false;
+                checkBoxAutoKickCUSTOM3.Checked = false;
+                checkAutoCloseCustom3.Checked = false;
+            }
+        }
+
+        private void checkINVITECustom4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkINVITECustom4.Checked == true)
+            {
+                checkTRADECustom4.Checked = false;
+                checkBoxAutoKickCUSTOM4.Checked = false;
+                checkAutoCloseCustom4.Checked = false;
+            }
+
+        }
+        #endregion
+
+        #region [[[[[ TRADE Check Box - Limit to Other check box ]]]]]
+        private void checkTRADEWait_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkTRADEWait.Checked == true)
+            {
+                checkINVITEWait.Checked = false;
+                checkBoxAutoKickWAIT.Checked = false;
+                checkAutoCloseWait.Checked = false;
+            }
+        }
+
+        private void checkTRADESold_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkTRADESold.Checked == true)
+            {
+                checkINVITESold.Checked = false;
+                checkBoxAutoKickSOLD.Checked = false;
+                checkAutoCloseSold.Checked = false;
+            }
+        }
+
+        private void checkTRADEThx_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkTRADEThx.Checked == true)
+            {
+                checkINVITEThx.Checked = false;
+                checkBoxAutoKickTHX.Checked = false;
+                checkAutoCloseThx.Checked = false;
+            }
+        }
+
+        private void checkTRADECustom1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkTRADECustom1.Checked == true)
+            {
+                checkINVITECustom1.Checked = false;
+                checkBoxAutoKickCUSTOM1.Checked = false;
+                checkAutoCloseCustom1.Checked = false;
+            }
+        }
+
+        private void checkTRADECustom2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkTRADECustom2.Checked == true)
+            {
+                checkINVITECustom2.Checked = false;
+                checkBoxAutoKickCUSTOM2.Checked = false;
+                checkAutoCloseCustom2.Checked = false;
+            }
+        }
+
+        private void checkTRADECustom3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkTRADECustom3.Checked == true)
+            {
+                checkINVITECustom3.Checked = false;
+                checkBoxAutoKickCUSTOM3.Checked = false;
+                checkAutoCloseCustom3.Checked = false;
+            }
+        }
+
+        private void checkTRADECustom4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkTRADECustom4.Checked == true)
+            {
+                checkINVITECustom4.Checked = false;
+                checkBoxAutoKickCUSTOM4.Checked = false;
+                checkAutoCloseCustom4.Checked = false;
+            }
+        } 
         #endregion
     }
 }

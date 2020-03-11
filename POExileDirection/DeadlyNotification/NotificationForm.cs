@@ -105,12 +105,17 @@ namespace POExileDirection
                 // Show Hideout button, Hide Sold button
                 btnHideout.Visible = true;
                 pictureHideoutVert.Visible = true;
-                btnSold.Visible = false;
                 DeadlyToolTip.SetToolTip(this.btnKick, "Leave Party");
+
+                // Change COLOR and IMAGE to BUY
+                pictureArrow.Image = Properties.Resources.top_bar_arrow_buy;
+                btnWhois.Image = Properties.Resources.top_bar_user_buy;
+                labelNickName.ForeColor = Color.FromArgb(0, 26, 204, 255);
+                labelStashTabDetail.ForeColor = Color.FromArgb(0, 26, 204, 255);
             }
             else
             {
-                labelItemName.Left = 31;
+                labelItemName.Left = 28;
                 pictureArrow.Left = 237;
                 labelPriceAtTitle.Left = 259;
                 btnCurrency.Left = 308;
@@ -118,24 +123,29 @@ namespace POExileDirection
                 // Hide Hideout button, Show Sold button
                 btnHideout.Visible = false;
                 pictureHideoutVert.Visible = false;
-                btnSold.Visible = true;
                 DeadlyToolTip.SetToolTip(this.btnKick, "Kick From Party");
+
+                // Change COLOR and IMAGE to BUY
+                pictureArrow.Image = Properties.Resources.top_bar_arrow_sell;
+                btnWhois.Image = Properties.Resources.top_bar_user_sell;
+                labelNickName.ForeColor = Color.FromArgb(0, 255, 236, 26);
+                labelStashTabDetail.ForeColor = Color.FromArgb(0, 255, 236, 26);
             }
             double nCalcRet = 0;
             double dSelectedCurr = 0;
             ControlForm.CurrencyCalcDictionary.TryGetValue("Exalted Orb", out dSelectedCurr);
             labelLeague.Text = String.Format("{0} (1ex={1}c)", tradeItem.league, dSelectedCurr.ToString("N1"));
 
-            //if (labelNickName.Text.Length > 13)
-            //    labelNickName.Text = tradeItem.nickName.Substring(0, 12);
-            //else
-                labelNickName.Text = tradeItem.nickName;
-            //if (labelItemName.Text.Length > 25)
-            //    labelItemName.Text = tradeItem.itemName.Substring(0, 24);
-            //else
-                labelItemName.Text = tradeItem.itemName;
+            labelNickName.Text = tradeItem.nickName;
+            labelItemName.Text = tradeItem.itemName;
             string strTabDetail = String.Format("({0}, {1}) {2}", tradeItem.xPos, tradeItem.yPos, tradeItem.tabName);
             labelStashTabDetail.Text = strTabDetail;
+            if(Convert.ToInt32(tradeItem.priceCall) >= Convert.ToInt32(dSelectedCurr.ToString("N1")) || // 1엑잘 상당의 카오스오브
+               Convert.ToInt32(tradeItem.priceCall)>=1 && tradeItem.whichCurrency.ToUpper().Contains("Exal") || tradeItem.whichCurrency.ToUpper().Contains("Exa")) // 1엑잘 이상
+            {
+                // Over 1exalted.
+                labelPrice.ForeColor = Color.Tomato;
+            }
             labelPrice.Text = tradeItem.priceCall;
             labelPriceAtTitle.Text = tradeItem.priceCall;
 
@@ -529,7 +539,6 @@ namespace POExileDirection
 
             try
             {
-                labelLeague.Text = tradeItem.league;
                 if (tradeItem.offerMSG.Length > 0 && !String.IsNullOrEmpty(tradeItem.offerMSG))
                     labelStashTabDetail.Text = labelStashTabDetail.Text + "( "+ tradeItem.offerMSG + " )";
 
@@ -956,11 +965,16 @@ namespace POExileDirection
             {
                 InputSimulator iSim = new InputSimulator();
                 iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-            
+
                 string strSendString = String.Empty;
                 try
                 {
-                    strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strnotiDONE);
+                    if (LauncherForm.g_strINVITECheckYNThx == "Y")
+                        strSendString = String.Format("/invite {0}", thisTradeMsg.nickName);
+                    else if (LauncherForm.g_strTRADECheckYNThx == "Y")
+                        strSendString = String.Format("/tradewith {0}", thisTradeMsg.nickName);
+                    else
+                        strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strnotiDONE);
                 }
                 catch
                 {
@@ -986,7 +1000,12 @@ namespace POExileDirection
                 string strSendString = String.Empty;
                 try
                 {
-                    strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strnotiWAIT);
+                    if (LauncherForm.g_strINVITECheckYNWait == "Y")
+                        strSendString = String.Format("/invite {0}", thisTradeMsg.nickName);
+                    else if (LauncherForm.g_strTRADECheckYNWait == "Y")
+                        strSendString = String.Format("/tradewith {0}", thisTradeMsg.nickName);
+                    else
+                        strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strnotiWAIT);
                 }
                 catch
                 {
@@ -1012,7 +1031,12 @@ namespace POExileDirection
                 string strSendString = String.Empty;
                 try
                 {
-                    strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strnotiSOLD);
+                    if (LauncherForm.g_strINVITECheckYNSold == "Y")
+                        strSendString = String.Format("/invite {0}", thisTradeMsg.nickName);
+                    else if (LauncherForm.g_strTRADECheckYNSold == "Y")
+                        strSendString = String.Format("/tradewith {0}", thisTradeMsg.nickName);
+                    else
+                        strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strnotiSOLD);
                 }
                 catch
                 {
@@ -1039,7 +1063,12 @@ namespace POExileDirection
                 string strSendString = String.Empty;
                 try
                 {
-                    strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strCUSTOM1);
+                    if (LauncherForm.g_strINVITECheckYNCustom1 == "Y")
+                        strSendString = String.Format("/invite {0}", thisTradeMsg.nickName);
+                    else if (LauncherForm.g_strTRADECheckYNCustom1 == "Y")
+                        strSendString = String.Format("/tradewith {0}", thisTradeMsg.nickName);
+                    else
+                        strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strCUSTOM1);
                 }
                 catch
                 {
@@ -1066,7 +1095,12 @@ namespace POExileDirection
                 string strSendString = String.Empty;
                 try
                 {
-                    strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strCUSTOM2);
+                    if (LauncherForm.g_strINVITECheckYNCustom2 == "Y")
+                        strSendString = String.Format("/invite {0}", thisTradeMsg.nickName);
+                    else if (LauncherForm.g_strTRADECheckYNCustom2 == "Y")
+                        strSendString = String.Format("/tradewith {0}", thisTradeMsg.nickName);
+                    else
+                        strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strCUSTOM2);
                 }
                 catch
                 {
@@ -1093,7 +1127,12 @@ namespace POExileDirection
                 string strSendString = String.Empty;
                 try
                 {
-                    strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strCUSTOM3);
+                    if (LauncherForm.g_strINVITECheckYNCustom3 == "Y")
+                        strSendString = String.Format("/invite {0}", thisTradeMsg.nickName);
+                    else if (LauncherForm.g_strTRADECheckYNCustom3 == "Y")
+                        strSendString = String.Format("/tradewith {0}", thisTradeMsg.nickName);
+                    else
+                        strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strCUSTOM3);
                 }
                 catch
                 {

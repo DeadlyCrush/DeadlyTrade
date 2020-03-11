@@ -266,7 +266,7 @@ namespace POExileDirection
                 Check_UILanguageWrapping();
                 Set_TradeMessageRegEx();
 
-                Thread.Sleep(100);
+                Thread.Sleep(100);               
             }
         }
 
@@ -795,6 +795,13 @@ namespace POExileDirection
         #region [[[[[ TimerInit ]]]]]
         private void TimerInit_Tick(object sender, EventArgs e)
         {
+            if (m_InitCNT == 0)
+            {
+                frmStashGrid = new StashGrid();
+                frmStashGrid.Owner = this;
+                frmStashGrid.Show();
+            }
+
             // Initializing... Waiting Image.
             m_InitCNT = m_InitCNT + 1;
             if (m_InitCNT > 10)
@@ -806,6 +813,8 @@ namespace POExileDirection
                 Thread.Sleep(100);
                 panelInit.Visible = false;
                 panelDrag.Visible = true;
+
+                frmStashGrid.Close();
 
                 _keymouseHooks = Hook.GlobalEvents();
                 _keymouseHooks.KeyDown += _keymouseHooks_KeyDown;
@@ -4318,6 +4327,34 @@ namespace POExileDirection
             DeadlyDBHelper.InsertLoginStatus(LauncherForm._sqlcon, "N", LauncherForm._strIPAddress, LauncherForm._strMacAddress, ".", "LOGOUT", 
                                             LauncherForm.GetCountryByIPINFO(LauncherForm._strIPAddress), LauncherForm.dtLoggedIn, nElapse); 
             DeadlyLog4Net._log.Info("LOGOUT : " + LauncherForm._strIPAddress + LauncherForm._strMacAddress + " Elapsedminute : " + nElapse);
+        }
+
+        private void xuiSwitch1_SwitchStateChanged_1(object sender, EventArgs e)
+        {
+            if(xuiSwitch1.SwitchState == XanderUI.XUISwitch.State.On)
+            {
+                labelSNDOnOff.ForeColor = Color.FromArgb(235, 182, 111);
+                labelSNDOnOff.Text = "ON";
+                btnSOUND.Image = Properties.Resources.Volume_16x16;
+                LauncherForm.g_strTimerSound1 = "Y";
+            }
+            else
+            {
+                labelSNDOnOff.ForeColor = Color.FromArgb(28, 21, 16);
+                labelSNDOnOff.Text = "OFF";
+                btnSOUND.Image = Properties.Resources.Volume_16x16_Mute;
+                LauncherForm.g_strTimerSound1 = "N";
+            }
+        }
+
+        private void btnSOUND_Click(object sender, EventArgs e)
+        {
+            if (xuiSwitch1.SwitchState == XanderUI.XUISwitch.State.On)
+                xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.Off;
+            else
+                xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.On;
+
+            xuiSwitch1_SwitchStateChanged_1(sender, e);
         }
     }
 }

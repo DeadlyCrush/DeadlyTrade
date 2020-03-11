@@ -45,10 +45,10 @@ namespace POExileDirection
                 Width = 105;
                 labelNickName.Text = strNickName;
                 if (!String.IsNullOrEmpty(strLableText))
-                    label1.Text = strLableText;
+                    labelNickName.Text = strLableText;
                 StartPosition = FormStartPosition.CenterScreen;
                 TopMost = true;
-                Top = Top - 235;
+                Top = Top - 100;
 
                 Visible = true;
 

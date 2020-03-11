@@ -58,6 +58,8 @@ namespace POExileDirection
         private bool bTab5 = false;
         private bool bTab6 = false;
         private bool bTab7 = false;
+
+        int _nInitCNT = 0;
         #endregion
 
         protected override CreateParams CreateParams
@@ -83,46 +85,23 @@ namespace POExileDirection
             TopMost = true;
             ShowInTaskbar = false;
 
-            GetHotkeySettings();                // TAB 1
-
+            timer1.Start();
             Visible = true;
-        }
 
-        private void FlatSettingTab_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            switch (FlatSettingTab.SelectedIndex)
-            {
-                case 0:
-                    if (!bTab1)
-                        GetHotkeySettings();                // TAB 1
-                    break;
-                case 1:
-                    if (!bTab2)
-                        GetTradeNotificationSettings();     // TAB 2
-                    break;
-                case 2:
-                    if (!bTab3)
-                        GetFlaskAndSkllTimerSettings();     // TAB 3,4
-                    break;
-                case 3:
-                    if (!bTab4)
-                        GetFlaskAndSkllTimerSettings();     // TAB 3,4
-                    break;
-                case 4:
-                    if (!bTab5)
-                        GetOverlaySettings();               // TAB 5
-                    break;
-                case 5:
-                    if (!bTab6)
-                        GetHelpSettings();                  // TAB 6
-                    break;
-                case 6:
-                    if (!bTab7)
-                        GetHallOfFameSettings();            // TAB 7
-                    break;
-                default:
-                    break;
-            }
+            GetHotkeySettings();                // TAB 1
+            _nInitCNT = _nInitCNT + 1;
+            GetTradeNotificationSettings();     // TAB 2
+            _nInitCNT = _nInitCNT + 1;
+            GetFlaskAndSkllTimerSettings();     // TAB 3,4
+            _nInitCNT = _nInitCNT + 1;
+            GetFlaskAndSkllTimerSettings();     // TAB 3,4
+            _nInitCNT = _nInitCNT + 1;
+            GetOverlaySettings();               // TAB 5
+            _nInitCNT = _nInitCNT + 1;
+            GetHelpSettings();                  // TAB 6
+            _nInitCNT = _nInitCNT + 1;
+            GetHallOfFameSettings();            // TAB 7
+            _nInitCNT = _nInitCNT + 1;
         }
 
         #region [[[[[ Utility Functions ]]]]]
@@ -2158,7 +2137,26 @@ namespace POExileDirection
                 checkBoxAutoKickCUSTOM4.Checked = false;
                 checkAutoCloseCustom4.Checked = false;
             }
-        } 
+        }
         #endregion
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            panelWaiting.Width = 800;
+            panelWaiting.Height = 562;
+            panelWaiting.Visible = true;
+
+            if(_nInitCNT>=7)
+            {
+                panelWaiting.Visible = false;
+                timer1.Stop();
+            }
+        }
+
+        private void SettingsOverhaul_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (panelWaiting != null) panelWaiting.Dispose();
+            if (timer1 != null) timer1.Dispose();
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsOverhaul));
             this.FlatSettingTab = new XanderUI.XUIFlatTab();
             this.tabHotKeys = new System.Windows.Forms.TabPage();
@@ -308,6 +309,12 @@
             this.openFileDialogZANA = new System.Windows.Forms.OpenFileDialog();
             this.panelTop = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panelWaiting = new System.Windows.Forms.Panel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.FlatSettingTab.SuspendLayout();
             this.tabHotKeys.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -331,6 +338,8 @@
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.panelTop.SuspendLayout();
+            this.panelWaiting.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // FlatSettingTab
@@ -358,7 +367,6 @@
             this.FlatSettingTab.ShowBorder = true;
             this.FlatSettingTab.Size = new System.Drawing.Size(800, 553);
             this.FlatSettingTab.TabIndex = 2;
-            this.FlatSettingTab.SelectedIndexChanged += new System.EventHandler(this.FlatSettingTab_SelectedIndexChanged);
             // 
             // tabHotKeys
             // 
@@ -4099,6 +4107,63 @@
             this.label16.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label16_MouseMove);
             this.label16.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label16_MouseUp);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // panelWaiting
+            // 
+            this.panelWaiting.BackColor = System.Drawing.Color.White;
+            this.panelWaiting.Controls.Add(this.label46);
+            this.panelWaiting.Controls.Add(this.label47);
+            this.panelWaiting.Controls.Add(this.label49);
+            this.panelWaiting.Controls.Add(this.pictureBox2);
+            this.panelWaiting.Location = new System.Drawing.Point(0, 38);
+            this.panelWaiting.Name = "panelWaiting";
+            this.panelWaiting.Size = new System.Drawing.Size(29, 23);
+            this.panelWaiting.TabIndex = 7;
+            this.panelWaiting.Visible = false;
+            // 
+            // label46
+            // 
+            this.label46.ForeColor = System.Drawing.Color.Black;
+            this.label46.Location = new System.Drawing.Point(156, 334);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(479, 49);
+            this.label46.TabIndex = 1;
+            this.label46.Text = "Wait a moment pls....";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label47
+            // 
+            this.label47.ForeColor = System.Drawing.Color.Black;
+            this.label47.Location = new System.Drawing.Point(348, 238);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(78, 25);
+            this.label47.TabIndex = 1;
+            this.label47.Text = "DeadlyTrade";
+            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label49
+            // 
+            this.label49.ForeColor = System.Drawing.Color.Black;
+            this.label49.Location = new System.Drawing.Point(156, 130);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(479, 49);
+            this.label49.TabIndex = 1;
+            this.label49.Text = "Initializing....";
+            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = global::POExileDirection.Properties.Resources.lg_double_ring_spinner;
+            this.pictureBox2.Location = new System.Drawing.Point(261, 122);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(256, 256);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // SettingsOverhaul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -4106,6 +4171,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
             this.ClientSize = new System.Drawing.Size(800, 600);
             this.ControlBox = false;
+            this.Controls.Add(this.panelWaiting);
             this.Controls.Add(this.FlatSettingTab);
             this.Controls.Add(this.panelTop);
             this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -4118,6 +4184,7 @@
             this.ShowInTaskbar = false;
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.DarkGray;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SettingsOverhaul_FormClosed);
             this.Load += new System.EventHandler(this.SettingsOverhaul_Load);
             this.FlatSettingTab.ResumeLayout(false);
             this.tabHotKeys.ResumeLayout(false);
@@ -4147,6 +4214,8 @@
             this.tabPage6.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.panelTop.ResumeLayout(false);
+            this.panelWaiting.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4431,5 +4500,11 @@
         private System.Windows.Forms.CheckBox checkINVITEThx;
         private System.Windows.Forms.CheckBox checkTRADESold;
         private System.Windows.Forms.CheckBox checkTRADEThx;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panelWaiting;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

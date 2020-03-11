@@ -59,7 +59,6 @@ namespace POExileDirection
         public static SqlConnection _sqlcon { get; set; }
 
         public static Rectangle[,] g_arrayRect1x1 = new Rectangle[12, 12];
-        public static Rectangle[,] g_arrayRect4x4 = new Rectangle[24, 24];
 
         #region [[[[[ Pre-Check :: MOUSE WHEEL and HOT KEYS ]]]]]
         public static string g_strYNMouseWheelStashTab { get; set; } // Added 1.3.9.6 Ver.

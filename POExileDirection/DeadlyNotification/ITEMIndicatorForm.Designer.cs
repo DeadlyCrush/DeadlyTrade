@@ -36,14 +36,14 @@
             this.labelPriceAtTitle = new System.Windows.Forms.Label();
             this.labelItemName = new System.Windows.Forms.Label();
             this.panelFunctions = new System.Windows.Forms.Panel();
+            this.btnSold = new System.Windows.Forms.Button();
+            this.btnWait = new System.Windows.Forms.Button();
+            this.btnThx = new System.Windows.Forms.Button();
             this.pictureHideoutVert = new System.Windows.Forms.PictureBox();
             this.btnInvite = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.btnKick = new System.Windows.Forms.Button();
             this.btnTrade = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnThx = new System.Windows.Forms.Button();
-            this.btnWait = new System.Windows.Forms.Button();
-            this.btnSold = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTop.SuspendLayout();
             this.panelFunctions.SuspendLayout();
@@ -52,8 +52,8 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::POExileDirection.Properties.Resources.GRID_INDICATOR;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::POExileDirection.Properties.Resources.GRID_INDICATOR;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
@@ -151,6 +151,57 @@
             this.panelFunctions.Size = new System.Drawing.Size(288, 30);
             this.panelFunctions.TabIndex = 2;
             // 
+            // btnSold
+            // 
+            this.btnSold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
+            this.btnSold.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSold.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnSold.FlatAppearance.BorderColor = System.Drawing.Color.SlateGray;
+            this.btnSold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSold.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSold.Location = new System.Drawing.Point(107, 5);
+            this.btnSold.Name = "btnSold";
+            this.btnSold.Size = new System.Drawing.Size(45, 22);
+            this.btnSold.TabIndex = 4;
+            this.btnSold.Text = "Sold";
+            this.btnSold.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSold.UseVisualStyleBackColor = false;
+            this.btnSold.Click += new System.EventHandler(this.btnSold_Click);
+            // 
+            // btnWait
+            // 
+            this.btnWait.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
+            this.btnWait.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnWait.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnWait.FlatAppearance.BorderColor = System.Drawing.Color.SlateGray;
+            this.btnWait.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWait.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnWait.Location = new System.Drawing.Point(56, 5);
+            this.btnWait.Name = "btnWait";
+            this.btnWait.Size = new System.Drawing.Size(45, 22);
+            this.btnWait.TabIndex = 3;
+            this.btnWait.Text = "Wait";
+            this.btnWait.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnWait.UseVisualStyleBackColor = false;
+            this.btnWait.Click += new System.EventHandler(this.btnWait_Click);
+            // 
+            // btnThx
+            // 
+            this.btnThx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
+            this.btnThx.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThx.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnThx.FlatAppearance.BorderColor = System.Drawing.Color.SlateGray;
+            this.btnThx.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThx.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnThx.Location = new System.Drawing.Point(5, 5);
+            this.btnThx.Name = "btnThx";
+            this.btnThx.Size = new System.Drawing.Size(45, 22);
+            this.btnThx.TabIndex = 2;
+            this.btnThx.Text = "Thx";
+            this.btnThx.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnThx.UseVisualStyleBackColor = false;
+            this.btnThx.Click += new System.EventHandler(this.btnThx_Click);
+            // 
             // pictureHideoutVert
             // 
             this.pictureHideoutVert.Image = ((System.Drawing.Image)(resources.GetObject("pictureHideoutVert.Image")));
@@ -177,6 +228,24 @@
             this.btnInvite.TabIndex = 5;
             this.btnInvite.UseVisualStyleBackColor = false;
             this.btnInvite.Click += new System.EventHandler(this.btnInvite_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(268, 3);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(18, 24);
+            this.btnClose.TabIndex = 8;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnKick
             // 
@@ -211,75 +280,6 @@
             this.btnTrade.TabIndex = 6;
             this.btnTrade.UseVisualStyleBackColor = false;
             this.btnTrade.Click += new System.EventHandler(this.btnTrade_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(268, 3);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(18, 24);
-            this.btnClose.TabIndex = 8;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnThx
-            // 
-            this.btnThx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.btnThx.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThx.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnThx.FlatAppearance.BorderColor = System.Drawing.Color.SlateGray;
-            this.btnThx.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThx.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnThx.Location = new System.Drawing.Point(5, 5);
-            this.btnThx.Name = "btnThx";
-            this.btnThx.Size = new System.Drawing.Size(45, 22);
-            this.btnThx.TabIndex = 2;
-            this.btnThx.Text = "Thx";
-            this.btnThx.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnThx.UseVisualStyleBackColor = false;
-            this.btnThx.Click += new System.EventHandler(this.btnThx_Click);
-            // 
-            // btnWait
-            // 
-            this.btnWait.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.btnWait.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnWait.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnWait.FlatAppearance.BorderColor = System.Drawing.Color.SlateGray;
-            this.btnWait.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWait.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnWait.Location = new System.Drawing.Point(56, 5);
-            this.btnWait.Name = "btnWait";
-            this.btnWait.Size = new System.Drawing.Size(45, 22);
-            this.btnWait.TabIndex = 3;
-            this.btnWait.Text = "Wait";
-            this.btnWait.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnWait.UseVisualStyleBackColor = false;
-            this.btnWait.Click += new System.EventHandler(this.btnWait_Click);
-            // 
-            // btnSold
-            // 
-            this.btnSold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.btnSold.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSold.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSold.FlatAppearance.BorderColor = System.Drawing.Color.SlateGray;
-            this.btnSold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSold.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSold.Location = new System.Drawing.Point(107, 5);
-            this.btnSold.Name = "btnSold";
-            this.btnSold.Size = new System.Drawing.Size(45, 22);
-            this.btnSold.TabIndex = 4;
-            this.btnSold.Text = "Sold";
-            this.btnSold.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSold.UseVisualStyleBackColor = false;
-            this.btnSold.Click += new System.EventHandler(this.btnSold_Click);
             // 
             // ITEMIndicatorForm
             // 

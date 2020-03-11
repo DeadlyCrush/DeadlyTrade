@@ -148,8 +148,6 @@ namespace POExileDirection
                                 rcQuad.Height = nGridQuad;
                                 if(checkQuadTab.Checked)
                                     e.Graphics.DrawRectangle(QuadPen, rcQuad);
-
-                                LauncherForm.g_arrayRect4x4[i*2 + iQuad, j*2 + jQuad] = rcCell;
                             }
                             rcQuad.Y = rcCell.Top + iQuad * nGridQuad; // Next Row in Each normal Cell.
                         }

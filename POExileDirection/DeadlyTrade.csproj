@@ -824,6 +824,10 @@
     <None Include="Resources\top_bar_arrow_sell1.png" />
     <None Include="Resources\top_bar_user_sell.png" />
     <None Include="Resources\Volume_16x16_Mute.png" />
+    <None Include="Resources\someoneentered_bg2.png" />
+    <None Include="Resources\someoneentered_bg.png" />
+    <None Include="Resources\MonsterRemaining_bg2.png" />
+    <None Include="Resources\someoneentered_bg21.png" />
     <Content Include="res\Currency\curr_alch.png" />
     <Content Include="res\Currency\curr_alt.png" />
     <Content Include="res\Currency\curr_ancient.png" />

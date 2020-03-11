@@ -2120,14 +2120,14 @@ namespace POExileDirection
             else
             {
                 // ZONE
-                g_DeadlyRegEx.RegExZoneEnteredENG = new Regex(@": You have entered (.*)\.", RegexOptions.IgnoreCase);
-                g_DeadlyRegEx.RegExZoneEnteredKOR = new Regex(@": (.*)에 진입했습니다.", RegexOptions.IgnoreCase); // for Korean Client. ex) [INFO Client 14932] : 오아시스에 진입했습니다.
+                g_DeadlyRegEx.RegExZoneEnteredENG = new Regex(@": You have entered (.*)\.(.*)$", RegexOptions.IgnoreCase);
+                g_DeadlyRegEx.RegExZoneEnteredKOR = new Regex(@": (.*)에 진입했습니다.(.*)$", RegexOptions.IgnoreCase); // for Korean Client. ex) [INFO Client 14932] : 오아시스에 진입했습니다.
 
                 // MONSTER
-                g_DeadlyRegEx.RegExMonsterRemainsENG = new Regex(@": (.*) monsters remain."); // : 3 monsters remain.
-                g_DeadlyRegEx.RegExMonsterRemainsENGMore = new Regex(@": More than (.*) monsters remain."); // : More than 50 monsters remain.
-                g_DeadlyRegEx.RegExMonsterRemainsKOR = new Regex(@": 몬스터 (.*)개체가 남아있습니다."); // : 몬스터 0개체가 남아있습니다.
-                g_DeadlyRegEx.RegExMonsterRemainsKORMore = new Regex(@": 몬스터가 (.*)개체 이상 남아있습니다."); // : 몬스터가 50개체 이상 남아있습니다.
+                g_DeadlyRegEx.RegExMonsterRemainsENG = new Regex(@": (.*) monsters remain.(.*)$"); // : 3 monsters remain.
+                g_DeadlyRegEx.RegExMonsterRemainsENGMore = new Regex(@": More than (.*) monsters remain.(.*)$"); // : More than 50 monsters remain.
+                g_DeadlyRegEx.RegExMonsterRemainsKOR = new Regex(@": 몬스터 (.*)개체가 남아있습니다.(.*)$"); // : 몬스터 0개체가 남아있습니다.
+                g_DeadlyRegEx.RegExMonsterRemainsKORMore = new Regex(@": 몬스터가 (.*)개체 이상 남아있습니다.(.*)$"); // : 몬스터가 50개체 이상 남아있습니다.
 
                 // Joined the area.
                 g_DeadlyRegEx.RegExJoinedAreKOR = new Regex(@": (.*) has joined the area."); // : Ian_Curtis has joined the area.

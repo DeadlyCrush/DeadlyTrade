@@ -42,9 +42,8 @@ namespace POExileDirection
             this.TopMost = true;
             this.FormBorderStyle = FormBorderStyle.None;
 
-            // Fix Size 82,70
-            this.Width = 82;
-            this.Height = 70;
+            this.Width = 129;
+            this.Height = 129;
             this.StartPosition = FormStartPosition.CenterScreen;
             this.TopMost = true;
 

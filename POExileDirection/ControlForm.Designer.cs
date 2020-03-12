@@ -32,6 +32,32 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelCOMMAND = new System.Windows.Forms.Panel();
+            this.panelUtilityRectBorder = new System.Windows.Forms.Panel();
+            this.panelUtility = new System.Windows.Forms.Panel();
+            this.labelSNDOnOff = new System.Windows.Forms.Label();
+            this.xuiSwitch1 = new XanderUI.XUISwitch();
+            this.labelDND = new System.Windows.Forms.Label();
+            this.labelT = new System.Windows.Forms.Label();
+            this.labelR = new System.Windows.Forms.Label();
+            this.labelE = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.labelW = new System.Windows.Forms.Label();
+            this.labelQ = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panelInit = new System.Windows.Forms.Panel();
+            this.panelUpdateAvailable = new System.Windows.Forms.Panel();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.labelUpdateReadyVersion = new System.Windows.Forms.Label();
+            this.DeadlyToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.timerInit = new System.Windows.Forms.Timer(this.components);
+            this.timerParser = new System.Windows.Forms.Timer(this.components);
+            this.pictureBoxMiya = new System.Windows.Forms.PictureBox();
+            this.pictureBoxInit = new System.Windows.Forms.PictureBox();
             this.btnDELVE = new System.Windows.Forms.Button();
             this.btnManagerie = new System.Windows.Forms.Button();
             this.btnEXIT = new System.Windows.Forms.Button();
@@ -41,10 +67,6 @@
             this.panelDrag = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnExpandCollapse = new System.Windows.Forms.Button();
-            this.panelUtilityRectBorder = new System.Windows.Forms.Panel();
-            this.panelUtility = new System.Windows.Forms.Panel();
-            this.labelSNDOnOff = new System.Windows.Forms.Label();
-            this.xuiSwitch1 = new XanderUI.XUISwitch();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDND = new System.Windows.Forms.Button();
@@ -59,18 +81,6 @@
             this.btn3 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
-            this.labelDND = new System.Windows.Forms.Label();
-            this.labelT = new System.Windows.Forms.Label();
-            this.labelR = new System.Windows.Forms.Label();
-            this.labelE = new System.Windows.Forms.Label();
-            this.labelW = new System.Windows.Forms.Label();
-            this.labelQ = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.btnHideout = new System.Windows.Forms.Button();
             this.btnDeadlyTrade = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
@@ -90,29 +100,19 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.panelInit = new System.Windows.Forms.Panel();
-            this.pictureBoxMiya = new System.Windows.Forms.PictureBox();
-            this.pictureBoxInit = new System.Windows.Forms.PictureBox();
-            this.panelUpdateAvailable = new System.Windows.Forms.Panel();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.labelUpdateReadyVersion = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.DeadlyToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.timerInit = new System.Windows.Forms.Timer(this.components);
-            this.timerParser = new System.Windows.Forms.Timer(this.components);
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panelCOMMAND.SuspendLayout();
-            this.panelDrag.SuspendLayout();
             this.panelUtilityRectBorder.SuspendLayout();
             this.panelUtility.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
             this.panelInit.SuspendLayout();
+            this.panelUpdateAvailable.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMiya)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInit)).BeginInit();
-            this.panelUpdateAvailable.SuspendLayout();
+            this.panelDrag.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,6 +147,335 @@
             this.panelCOMMAND.Size = new System.Drawing.Size(19, 14);
             this.panelCOMMAND.TabIndex = 25;
             this.panelCOMMAND.Visible = false;
+            // 
+            // panelUtilityRectBorder
+            // 
+            this.panelUtilityRectBorder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(98)))), ((int)(((byte)(59)))));
+            this.panelUtilityRectBorder.Controls.Add(this.panelUtility);
+            this.panelUtilityRectBorder.Location = new System.Drawing.Point(14, 52);
+            this.panelUtilityRectBorder.Name = "panelUtilityRectBorder";
+            this.panelUtilityRectBorder.Size = new System.Drawing.Size(224, 66);
+            this.panelUtilityRectBorder.TabIndex = 46;
+            this.panelUtilityRectBorder.Visible = false;
+            // 
+            // panelUtility
+            // 
+            this.panelUtility.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.panelUtility.Controls.Add(this.labelSNDOnOff);
+            this.panelUtility.Controls.Add(this.xuiSwitch1);
+            this.panelUtility.Controls.Add(this.pictureBox3);
+            this.panelUtility.Controls.Add(this.pictureBox1);
+            this.panelUtility.Controls.Add(this.btnDND);
+            this.panelUtility.Controls.Add(this.btnT);
+            this.panelUtility.Controls.Add(this.btnR);
+            this.panelUtility.Controls.Add(this.btnE);
+            this.panelUtility.Controls.Add(this.btnW);
+            this.panelUtility.Controls.Add(this.btnQ);
+            this.panelUtility.Controls.Add(this.btn5);
+            this.panelUtility.Controls.Add(this.btn4);
+            this.panelUtility.Controls.Add(this.btnSOUND);
+            this.panelUtility.Controls.Add(this.btn3);
+            this.panelUtility.Controls.Add(this.btn2);
+            this.panelUtility.Controls.Add(this.btn1);
+            this.panelUtility.Controls.Add(this.labelDND);
+            this.panelUtility.Controls.Add(this.labelT);
+            this.panelUtility.Controls.Add(this.labelR);
+            this.panelUtility.Controls.Add(this.labelE);
+            this.panelUtility.Controls.Add(this.label6);
+            this.panelUtility.Controls.Add(this.labelW);
+            this.panelUtility.Controls.Add(this.labelQ);
+            this.panelUtility.Controls.Add(this.label5);
+            this.panelUtility.Controls.Add(this.label4);
+            this.panelUtility.Controls.Add(this.label3);
+            this.panelUtility.Controls.Add(this.label2);
+            this.panelUtility.Controls.Add(this.label1);
+            this.panelUtility.Location = new System.Drawing.Point(1, 1);
+            this.panelUtility.Name = "panelUtility";
+            this.panelUtility.Size = new System.Drawing.Size(222, 64);
+            this.panelUtility.TabIndex = 45;
+            // 
+            // labelSNDOnOff
+            // 
+            this.labelSNDOnOff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.labelSNDOnOff.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelSNDOnOff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
+            this.labelSNDOnOff.Location = new System.Drawing.Point(30, 43);
+            this.labelSNDOnOff.Name = "labelSNDOnOff";
+            this.labelSNDOnOff.Size = new System.Drawing.Size(28, 16);
+            this.labelSNDOnOff.TabIndex = 49;
+            this.labelSNDOnOff.Text = "OFF";
+            this.labelSNDOnOff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // xuiSwitch1
+            // 
+            this.xuiSwitch1.BackColor = System.Drawing.Color.Transparent;
+            this.xuiSwitch1.HandleOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.xuiSwitch1.HandleOnColor = System.Drawing.Color.Tan;
+            this.xuiSwitch1.Location = new System.Drawing.Point(59, 41);
+            this.xuiSwitch1.Name = "xuiSwitch1";
+            this.xuiSwitch1.OffColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(98)))), ((int)(((byte)(59)))));
+            this.xuiSwitch1.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(98)))), ((int)(((byte)(59)))));
+            this.xuiSwitch1.Size = new System.Drawing.Size(32, 20);
+            this.xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.Off;
+            this.xuiSwitch1.SwitchStyle = XanderUI.XUISwitch.Style.Horizontal;
+            this.xuiSwitch1.TabIndex = 48;
+            this.xuiSwitch1.Text = "xuiSwitch1";
+            this.xuiSwitch1.SwitchStateChanged += new System.EventHandler(this.xuiSwitch1_SwitchStateChanged_1);
+            // 
+            // labelDND
+            // 
+            this.labelDND.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.labelDND.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelDND.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
+            this.labelDND.Location = new System.Drawing.Point(192, 24);
+            this.labelDND.Name = "labelDND";
+            this.labelDND.Size = new System.Drawing.Size(28, 12);
+            this.labelDND.TabIndex = 22;
+            this.labelDND.Text = "DND";
+            this.labelDND.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelT
+            // 
+            this.labelT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.labelT.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
+            this.labelT.Location = new System.Drawing.Point(174, 24);
+            this.labelT.Name = "labelT";
+            this.labelT.Size = new System.Drawing.Size(12, 12);
+            this.labelT.TabIndex = 22;
+            this.labelT.Text = "T";
+            this.labelT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelR
+            // 
+            this.labelR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.labelR.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
+            this.labelR.Location = new System.Drawing.Point(157, 24);
+            this.labelR.Name = "labelR";
+            this.labelR.Size = new System.Drawing.Size(12, 12);
+            this.labelR.TabIndex = 22;
+            this.labelR.Text = "R";
+            this.labelR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelE
+            // 
+            this.labelE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.labelE.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
+            this.labelE.Location = new System.Drawing.Point(138, 24);
+            this.labelE.Name = "labelE";
+            this.labelE.Size = new System.Drawing.Size(12, 12);
+            this.labelE.TabIndex = 22;
+            this.labelE.Text = "E";
+            this.labelE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.label6.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Italic);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
+            this.label6.Location = new System.Drawing.Point(103, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(116, 12);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "DeadlyTrade 1.4.0.1";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // labelW
+            // 
+            this.labelW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.labelW.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelW.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
+            this.labelW.Location = new System.Drawing.Point(120, 24);
+            this.labelW.Name = "labelW";
+            this.labelW.Size = new System.Drawing.Size(12, 12);
+            this.labelW.TabIndex = 22;
+            this.labelW.Text = "W";
+            this.labelW.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelQ
+            // 
+            this.labelQ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.labelQ.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelQ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
+            this.labelQ.Location = new System.Drawing.Point(101, 24);
+            this.labelQ.Name = "labelQ";
+            this.labelQ.Size = new System.Drawing.Size(12, 12);
+            this.labelQ.TabIndex = 22;
+            this.labelQ.Text = "Q";
+            this.labelQ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.label5.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
+            this.label5.Location = new System.Drawing.Point(79, 24);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(12, 12);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "5";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.label4.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
+            this.label4.Location = new System.Drawing.Point(61, 24);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(12, 12);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "4";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.label3.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
+            this.label3.Location = new System.Drawing.Point(43, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(12, 12);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "3";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.label2.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
+            this.label2.Location = new System.Drawing.Point(24, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(12, 12);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "2";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.label1.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
+            this.label1.Location = new System.Drawing.Point(7, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(12, 12);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "1";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.btnHideout);
+            this.panel6.Controls.Add(this.btnDeadlyTrade);
+            this.panel6.Controls.Add(this.btnHelp);
+            this.panel6.Controls.Add(this.btnSearchRegion);
+            this.panel6.Controls.Add(this.btnScan);
+            this.panel6.Controls.Add(this.btnSearchStash);
+            this.panel6.Controls.Add(this.btnCMD);
+            this.panel6.Controls.Add(this.btnLOCK);
+            this.panel6.Controls.Add(this.btnClose);
+            this.panel6.Controls.Add(this.btnUserOverlay);
+            this.panel6.Controls.Add(this.btnList);
+            this.panel6.Controls.Add(this.btnLabOverlay);
+            this.panel6.Controls.Add(this.button6);
+            this.panel6.Controls.Add(this.button5);
+            this.panel6.Controls.Add(this.button9);
+            this.panel6.Controls.Add(this.button4);
+            this.panel6.Controls.Add(this.button3);
+            this.panel6.Controls.Add(this.button2);
+            this.panel6.Controls.Add(this.button1);
+            this.panel6.Location = new System.Drawing.Point(14, -2);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(224, 51);
+            this.panel6.TabIndex = 29;
+            // 
+            // panelInit
+            // 
+            this.panelInit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelInit.Controls.Add(this.pictureBoxMiya);
+            this.panelInit.Controls.Add(this.pictureBoxInit);
+            this.panelInit.Location = new System.Drawing.Point(185, 171);
+            this.panelInit.Name = "panelInit";
+            this.panelInit.Size = new System.Drawing.Size(24, 25);
+            this.panelInit.TabIndex = 24;
+            // 
+            // panelUpdateAvailable
+            // 
+            this.panelUpdateAvailable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(46)))));
+            this.panelUpdateAvailable.Controls.Add(this.btnUpdate);
+            this.panelUpdateAvailable.Controls.Add(this.labelUpdateReadyVersion);
+            this.panelUpdateAvailable.Controls.Add(this.pictureBox2);
+            this.panelUpdateAvailable.Location = new System.Drawing.Point(7, 131);
+            this.panelUpdateAvailable.Name = "panelUpdateAvailable";
+            this.panelUpdateAvailable.Size = new System.Drawing.Size(12, 74);
+            this.panelUpdateAvailable.TabIndex = 28;
+            this.panelUpdateAvailable.Visible = false;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(57, 122);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(115, 20);
+            this.btnUpdate.TabIndex = 17;
+            this.btnUpdate.Text = "OK. Close Addon";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // labelUpdateReadyVersion
+            // 
+            this.labelUpdateReadyVersion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
+            this.labelUpdateReadyVersion.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelUpdateReadyVersion.ForeColor = System.Drawing.Color.Bisque;
+            this.labelUpdateReadyVersion.Location = new System.Drawing.Point(5, 6);
+            this.labelUpdateReadyVersion.Name = "labelUpdateReadyVersion";
+            this.labelUpdateReadyVersion.Size = new System.Drawing.Size(231, 31);
+            this.labelUpdateReadyVersion.TabIndex = 1;
+            this.labelUpdateReadyVersion.Text = "1.3.9.6 Update is available\r\nPlease close and restart Addon.";
+            this.labelUpdateReadyVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DeadlyToolTip
+            // 
+            this.DeadlyToolTip.AutoPopDelay = 5000;
+            this.DeadlyToolTip.InitialDelay = 200;
+            this.DeadlyToolTip.ReshowDelay = 100;
+            // 
+            // timerInit
+            // 
+            this.timerInit.Interval = 200;
+            this.timerInit.Tick += new System.EventHandler(this.TimerInit_Tick);
+            // 
+            // timerParser
+            // 
+            this.timerParser.Tick += new System.EventHandler(this.TimerParser_Tick);
+            // 
+            // pictureBoxMiya
+            // 
+            this.pictureBoxMiya.BackgroundImage = global::POExileDirection.Properties.Resources.DeadlyTradeLauncherICON;
+            this.pictureBoxMiya.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxMiya.Location = new System.Drawing.Point(54, 72);
+            this.pictureBoxMiya.Name = "pictureBoxMiya";
+            this.pictureBoxMiya.Size = new System.Drawing.Size(24, 24);
+            this.pictureBoxMiya.TabIndex = 27;
+            this.pictureBoxMiya.TabStop = false;
+            // 
+            // pictureBoxInit
+            // 
+            this.pictureBoxInit.Image = global::POExileDirection.Properties.Resources.spiiner_172_203;
+            this.pictureBoxInit.Location = new System.Drawing.Point(0, 1);
+            this.pictureBoxInit.Name = "pictureBoxInit";
+            this.pictureBoxInit.Size = new System.Drawing.Size(228, 203);
+            this.pictureBoxInit.TabIndex = 0;
+            this.pictureBoxInit.TabStop = false;
             // 
             // btnDELVE
             // 
@@ -302,80 +631,6 @@
             this.btnExpandCollapse.UseVisualStyleBackColor = false;
             this.btnExpandCollapse.Click += new System.EventHandler(this.btnExpandCollapse_Click);
             this.btnExpandCollapse.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnHideout_Enter);
-            // 
-            // panelUtilityRectBorder
-            // 
-            this.panelUtilityRectBorder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(98)))), ((int)(((byte)(59)))));
-            this.panelUtilityRectBorder.Controls.Add(this.panelUtility);
-            this.panelUtilityRectBorder.Location = new System.Drawing.Point(14, 52);
-            this.panelUtilityRectBorder.Name = "panelUtilityRectBorder";
-            this.panelUtilityRectBorder.Size = new System.Drawing.Size(224, 66);
-            this.panelUtilityRectBorder.TabIndex = 46;
-            this.panelUtilityRectBorder.Visible = false;
-            // 
-            // panelUtility
-            // 
-            this.panelUtility.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.panelUtility.Controls.Add(this.labelSNDOnOff);
-            this.panelUtility.Controls.Add(this.xuiSwitch1);
-            this.panelUtility.Controls.Add(this.pictureBox3);
-            this.panelUtility.Controls.Add(this.pictureBox1);
-            this.panelUtility.Controls.Add(this.btnDND);
-            this.panelUtility.Controls.Add(this.btnT);
-            this.panelUtility.Controls.Add(this.btnR);
-            this.panelUtility.Controls.Add(this.btnE);
-            this.panelUtility.Controls.Add(this.btnW);
-            this.panelUtility.Controls.Add(this.btnQ);
-            this.panelUtility.Controls.Add(this.btn5);
-            this.panelUtility.Controls.Add(this.btn4);
-            this.panelUtility.Controls.Add(this.btnSOUND);
-            this.panelUtility.Controls.Add(this.btn3);
-            this.panelUtility.Controls.Add(this.btn2);
-            this.panelUtility.Controls.Add(this.btn1);
-            this.panelUtility.Controls.Add(this.labelDND);
-            this.panelUtility.Controls.Add(this.labelT);
-            this.panelUtility.Controls.Add(this.labelR);
-            this.panelUtility.Controls.Add(this.labelE);
-            this.panelUtility.Controls.Add(this.label6);
-            this.panelUtility.Controls.Add(this.labelW);
-            this.panelUtility.Controls.Add(this.labelQ);
-            this.panelUtility.Controls.Add(this.label5);
-            this.panelUtility.Controls.Add(this.label4);
-            this.panelUtility.Controls.Add(this.label3);
-            this.panelUtility.Controls.Add(this.label2);
-            this.panelUtility.Controls.Add(this.label1);
-            this.panelUtility.Location = new System.Drawing.Point(1, 1);
-            this.panelUtility.Name = "panelUtility";
-            this.panelUtility.Size = new System.Drawing.Size(222, 64);
-            this.panelUtility.TabIndex = 45;
-            // 
-            // labelSNDOnOff
-            // 
-            this.labelSNDOnOff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.labelSNDOnOff.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.labelSNDOnOff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
-            this.labelSNDOnOff.Location = new System.Drawing.Point(30, 43);
-            this.labelSNDOnOff.Name = "labelSNDOnOff";
-            this.labelSNDOnOff.Size = new System.Drawing.Size(28, 16);
-            this.labelSNDOnOff.TabIndex = 49;
-            this.labelSNDOnOff.Text = "OFF";
-            this.labelSNDOnOff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // xuiSwitch1
-            // 
-            this.xuiSwitch1.BackColor = System.Drawing.Color.Transparent;
-            this.xuiSwitch1.HandleOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.xuiSwitch1.HandleOnColor = System.Drawing.Color.Tan;
-            this.xuiSwitch1.Location = new System.Drawing.Point(59, 41);
-            this.xuiSwitch1.Name = "xuiSwitch1";
-            this.xuiSwitch1.OffColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(98)))), ((int)(((byte)(59)))));
-            this.xuiSwitch1.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(98)))), ((int)(((byte)(59)))));
-            this.xuiSwitch1.Size = new System.Drawing.Size(32, 20);
-            this.xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.Off;
-            this.xuiSwitch1.SwitchStyle = XanderUI.XUISwitch.Style.Horizontal;
-            this.xuiSwitch1.TabIndex = 48;
-            this.xuiSwitch1.Text = "xuiSwitch1";
-            this.xuiSwitch1.SwitchStateChanged += new System.EventHandler(this.xuiSwitch1_SwitchStateChanged_1);
             // 
             // pictureBox3
             // 
@@ -635,165 +890,6 @@
             this.btn1.Click += new System.EventHandler(this.XuiSwitch1_SwitchStateChanged);
             this.btn1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnHideout_Enter);
             // 
-            // labelDND
-            // 
-            this.labelDND.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.labelDND.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.labelDND.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
-            this.labelDND.Location = new System.Drawing.Point(192, 24);
-            this.labelDND.Name = "labelDND";
-            this.labelDND.Size = new System.Drawing.Size(28, 12);
-            this.labelDND.TabIndex = 22;
-            this.labelDND.Text = "DND";
-            this.labelDND.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelT
-            // 
-            this.labelT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.labelT.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.labelT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
-            this.labelT.Location = new System.Drawing.Point(174, 24);
-            this.labelT.Name = "labelT";
-            this.labelT.Size = new System.Drawing.Size(12, 12);
-            this.labelT.TabIndex = 22;
-            this.labelT.Text = "T";
-            this.labelT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelR
-            // 
-            this.labelR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.labelR.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.labelR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
-            this.labelR.Location = new System.Drawing.Point(157, 24);
-            this.labelR.Name = "labelR";
-            this.labelR.Size = new System.Drawing.Size(12, 12);
-            this.labelR.TabIndex = 22;
-            this.labelR.Text = "R";
-            this.labelR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelE
-            // 
-            this.labelE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.labelE.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.labelE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
-            this.labelE.Location = new System.Drawing.Point(138, 24);
-            this.labelE.Name = "labelE";
-            this.labelE.Size = new System.Drawing.Size(12, 12);
-            this.labelE.TabIndex = 22;
-            this.labelE.Text = "E";
-            this.labelE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelW
-            // 
-            this.labelW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.labelW.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.labelW.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
-            this.labelW.Location = new System.Drawing.Point(120, 24);
-            this.labelW.Name = "labelW";
-            this.labelW.Size = new System.Drawing.Size(12, 12);
-            this.labelW.TabIndex = 22;
-            this.labelW.Text = "W";
-            this.labelW.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelQ
-            // 
-            this.labelQ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.labelQ.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.labelQ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
-            this.labelQ.Location = new System.Drawing.Point(101, 24);
-            this.labelQ.Name = "labelQ";
-            this.labelQ.Size = new System.Drawing.Size(12, 12);
-            this.labelQ.TabIndex = 22;
-            this.labelQ.Text = "Q";
-            this.labelQ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.label5.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
-            this.label5.Location = new System.Drawing.Point(79, 24);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(12, 12);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "5";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.label4.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
-            this.label4.Location = new System.Drawing.Point(61, 24);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(12, 12);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "4";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.label3.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
-            this.label3.Location = new System.Drawing.Point(43, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(12, 12);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "3";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.label2.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
-            this.label2.Location = new System.Drawing.Point(24, 24);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(12, 12);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "2";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.label1.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
-            this.label1.Location = new System.Drawing.Point(7, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(12, 12);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "1";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel6
-            // 
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.btnHideout);
-            this.panel6.Controls.Add(this.btnDeadlyTrade);
-            this.panel6.Controls.Add(this.btnHelp);
-            this.panel6.Controls.Add(this.btnSearchRegion);
-            this.panel6.Controls.Add(this.btnScan);
-            this.panel6.Controls.Add(this.btnSearchStash);
-            this.panel6.Controls.Add(this.btnCMD);
-            this.panel6.Controls.Add(this.btnLOCK);
-            this.panel6.Controls.Add(this.btnClose);
-            this.panel6.Controls.Add(this.btnUserOverlay);
-            this.panel6.Controls.Add(this.btnList);
-            this.panel6.Controls.Add(this.btnLabOverlay);
-            this.panel6.Controls.Add(this.button6);
-            this.panel6.Controls.Add(this.button5);
-            this.panel6.Controls.Add(this.button9);
-            this.panel6.Controls.Add(this.button4);
-            this.panel6.Controls.Add(this.button3);
-            this.panel6.Controls.Add(this.button2);
-            this.panel6.Controls.Add(this.button1);
-            this.panel6.Location = new System.Drawing.Point(14, -2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(224, 51);
-            this.panel6.TabIndex = 29;
-            // 
             // btnHideout
             // 
             this.btnHideout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
@@ -854,13 +950,14 @@
             this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHelp.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnHelp.ForeColor = System.Drawing.Color.White;
-            this.btnHelp.Image = global::POExileDirection.Properties.Resources.icon_re_16;
-            this.btnHelp.Location = new System.Drawing.Point(147, 25);
+            this.btnHelp.Image = global::POExileDirection.Properties.Resources.icon_re_16_Fossil;
+            this.btnHelp.Location = new System.Drawing.Point(97, 25);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(24, 24);
             this.btnHelp.TabIndex = 46;
             this.btnHelp.TabStop = false;
             this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             this.btnHelp.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnHideout_Enter);
             this.btnHelp.MouseEnter += new System.EventHandler(this.btnHelp_MouseHover);
             this.btnHelp.MouseHover += new System.EventHandler(this.btnHelp_MouseHover);
@@ -1036,7 +1133,7 @@
             this.btnList.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnList.ForeColor = System.Drawing.Color.LightCoral;
             this.btnList.Image = global::POExileDirection.Properties.Resources.icon_re_14;
-            this.btnList.Location = new System.Drawing.Point(97, 25);
+            this.btnList.Location = new System.Drawing.Point(147, 25);
             this.btnList.Name = "btnList";
             this.btnList.Size = new System.Drawing.Size(24, 24);
             this.btnList.TabIndex = 36;
@@ -1222,75 +1319,6 @@
             this.button1.MouseEnter += new System.EventHandler(this.button1_MouseHover);
             this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
-            // panelInit
-            // 
-            this.panelInit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panelInit.Controls.Add(this.pictureBoxMiya);
-            this.panelInit.Controls.Add(this.pictureBoxInit);
-            this.panelInit.Location = new System.Drawing.Point(185, 171);
-            this.panelInit.Name = "panelInit";
-            this.panelInit.Size = new System.Drawing.Size(24, 25);
-            this.panelInit.TabIndex = 24;
-            // 
-            // pictureBoxMiya
-            // 
-            this.pictureBoxMiya.BackgroundImage = global::POExileDirection.Properties.Resources.DeadlyTradeLauncherICON;
-            this.pictureBoxMiya.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxMiya.Location = new System.Drawing.Point(54, 72);
-            this.pictureBoxMiya.Name = "pictureBoxMiya";
-            this.pictureBoxMiya.Size = new System.Drawing.Size(24, 24);
-            this.pictureBoxMiya.TabIndex = 27;
-            this.pictureBoxMiya.TabStop = false;
-            // 
-            // pictureBoxInit
-            // 
-            this.pictureBoxInit.Image = global::POExileDirection.Properties.Resources.spiiner_172_203;
-            this.pictureBoxInit.Location = new System.Drawing.Point(0, 1);
-            this.pictureBoxInit.Name = "pictureBoxInit";
-            this.pictureBoxInit.Size = new System.Drawing.Size(228, 203);
-            this.pictureBoxInit.TabIndex = 0;
-            this.pictureBoxInit.TabStop = false;
-            // 
-            // panelUpdateAvailable
-            // 
-            this.panelUpdateAvailable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(46)))));
-            this.panelUpdateAvailable.Controls.Add(this.btnUpdate);
-            this.panelUpdateAvailable.Controls.Add(this.labelUpdateReadyVersion);
-            this.panelUpdateAvailable.Controls.Add(this.pictureBox2);
-            this.panelUpdateAvailable.Location = new System.Drawing.Point(7, 131);
-            this.panelUpdateAvailable.Name = "panelUpdateAvailable";
-            this.panelUpdateAvailable.Size = new System.Drawing.Size(12, 74);
-            this.panelUpdateAvailable.TabIndex = 28;
-            this.panelUpdateAvailable.Visible = false;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(57, 122);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(115, 20);
-            this.btnUpdate.TabIndex = 17;
-            this.btnUpdate.Text = "OK. Close Addon";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // labelUpdateReadyVersion
-            // 
-            this.labelUpdateReadyVersion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.labelUpdateReadyVersion.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.labelUpdateReadyVersion.ForeColor = System.Drawing.Color.Bisque;
-            this.labelUpdateReadyVersion.Location = new System.Drawing.Point(5, 6);
-            this.labelUpdateReadyVersion.Name = "labelUpdateReadyVersion";
-            this.labelUpdateReadyVersion.Size = new System.Drawing.Size(231, 31);
-            this.labelUpdateReadyVersion.TabIndex = 1;
-            this.labelUpdateReadyVersion.Text = "1.3.9.6 Update is available\r\nPlease close and restart Addon.";
-            this.labelUpdateReadyVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::POExileDirection.Properties.Resources.checkMarkMoving_116_55;
@@ -1299,33 +1327,6 @@
             this.pictureBox2.Size = new System.Drawing.Size(115, 55);
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            // 
-            // DeadlyToolTip
-            // 
-            this.DeadlyToolTip.AutoPopDelay = 5000;
-            this.DeadlyToolTip.InitialDelay = 200;
-            this.DeadlyToolTip.ReshowDelay = 100;
-            // 
-            // timerInit
-            // 
-            this.timerInit.Interval = 200;
-            this.timerInit.Tick += new System.EventHandler(this.TimerInit_Tick);
-            // 
-            // timerParser
-            // 
-            this.timerParser.Tick += new System.EventHandler(this.TimerParser_Tick);
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.label6.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Italic);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
-            this.label6.Location = new System.Drawing.Point(103, 45);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 12);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "DeadlyTrade 1.4.0.1";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ControlForm
             // 
@@ -1358,16 +1359,16 @@
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ControlForm_KeyUp);
             this.panel1.ResumeLayout(false);
             this.panelCOMMAND.ResumeLayout(false);
-            this.panelDrag.ResumeLayout(false);
             this.panelUtilityRectBorder.ResumeLayout(false);
             this.panelUtility.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panelInit.ResumeLayout(false);
+            this.panelUpdateAvailable.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMiya)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInit)).EndInit();
-            this.panelUpdateAvailable.ResumeLayout(false);
+            this.panelDrag.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 

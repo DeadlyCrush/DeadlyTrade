@@ -628,20 +628,24 @@ namespace POExileDirection
             string strisLogin = String.Empty;
             try
             {
+                dtLoggedIn = DateTime.Now;
                 _strIPAddress = getInternalIP();
                 _strMacAddress = NICMacAddress();
-                strisLogin = DeadlyDBHelper.IsLoggedIn(_sqlcon, _strIPAddress, _strMacAddress);
+                strisLogin = DeadlyDBHelper.IsLoggedInCurrent(_sqlcon, _strIPAddress, _strMacAddress);
 
-                if (strisLogin == "Y")
+                if (strisLogin == "X")
                 {
-                    ;//
+                    DeadlyDBHelper.InsertLoginCurrent(_sqlcon, "Y", _strIPAddress, _strMacAddress, ".", ".", dtLoggedIn);
+                }
+                else if(strisLogin == "N")
+                {
+                    DeadlyDBHelper.UpdateLoginCurrent(_sqlcon, "Y", _strIPAddress, _strMacAddress, dtLoggedIn);
                 }
 
                 //if (checkBoxAutoLogin.Checked)
                 //    SaveLoginInformEncrypt();
 
-                // Insert Action Log.
-                dtLoggedIn = DateTime.Now;
+                // Insert Action Log.                
                 DeadlyDBHelper.InsertLoginStatus(_sqlcon, "Y", _strIPAddress, _strMacAddress, ".", "LOGIN", GetCountryByIPINFO(_strIPAddress), dtLoggedIn, 0);
                 DeadlyLog4Net._log.Info("LOGIN Welcome : " + _strIPAddress + _strMacAddress);
 

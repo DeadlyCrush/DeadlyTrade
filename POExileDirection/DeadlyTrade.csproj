@@ -204,6 +204,12 @@
     <Compile Include="DeadlyOverlay\FlaskTimerCircleForm.Designer.cs">
       <DependentUpon>FlaskTimerCircleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeadlyOverlay\FossilForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeadlyOverlay\FossilForm.Designer.cs">
+      <DependentUpon>FossilForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeadlyOverlay\LabyOverlayForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -333,12 +339,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SettingsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SettingsForm.Designer.cs">
-      <DependentUpon>SettingsForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="DeadlyOverlay\SkillTimerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -378,6 +378,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyOverlay\FlaskTimerCircleForm.resx">
       <DependentUpon>FlaskTimerCircleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeadlyOverlay\FossilForm.resx">
+      <DependentUpon>FossilForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyOverlay\LabyOverlayForm.resx">
       <DependentUpon>LabyOverlayForm.cs</DependentUpon>
@@ -440,9 +443,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyUtility\ScanChatForm.resx">
       <DependentUpon>ScanChatForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SettingsForm.resx">
-      <DependentUpon>SettingsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyOverlay\SkillTimerForm.resx">
       <DependentUpon>SkillTimerForm.cs</DependentUpon>
@@ -829,6 +829,7 @@
     <None Include="Resources\MonsterRemaining_bg2.png" />
     <None Include="Resources\someoneentered_bg21.png" />
     <None Include="Resources\21.png" />
+    <None Include="Resources\icon_re_16_Fossil.png" />
     <Content Include="res\Currency\curr_alch.png" />
     <Content Include="res\Currency\curr_alt.png" />
     <Content Include="res\Currency\curr_ancient.png" />

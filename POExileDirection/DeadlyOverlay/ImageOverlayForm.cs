@@ -16,7 +16,6 @@ namespace POExileDirection
         int nLeft = 0;
         int nTop = 0;
 
-        private Graphics gGDIfx;
         public string m_strImagePath = null;
 
         Image img = null;

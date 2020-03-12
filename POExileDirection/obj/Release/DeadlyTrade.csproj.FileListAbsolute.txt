@@ -160,7 +160,6 @@ D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\AutoUpdater.NET.xml
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\log4net.xml
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\Newtonsoft.Json.xml
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\DeadlyTrade.csprojAssemblyReference.cache
-D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\SignUpDemo.LoginForm.resources
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.NotificationContainer.resources
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.RemainingForm.resources
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.FlaskICONTimer.resources
@@ -185,7 +184,6 @@ D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.OptimizerFo
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.Properties.Resources.resources
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.PublicStashForm.resources
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.ScanChatForm.resources
-D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.SettingsForm.resources
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.SkillTimerForm.resources
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.SomeOneEnteredForm.resources
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.StashGrid.resources
@@ -206,3 +204,8 @@ D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\SharpDX.XAudio2.pdb
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\SharpDX.XAudio2.xml
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\Microsoft.DirectX.Direct3D.xml
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\Microsoft.DirectX.xml
+D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\Markdig.dll
+D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\Markdig.pdb
+D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\Markdig.xml
+D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.LoginForm.resources
+D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.FossilForm.resources

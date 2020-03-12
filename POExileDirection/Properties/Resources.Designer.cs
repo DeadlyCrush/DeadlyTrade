@@ -193,16 +193,6 @@ namespace POExileDirection.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap BecomeDeadlyTradePatron {
-            get {
-                object obj = ResourceManager.GetObject("BecomeDeadlyTradePatron", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
         internal static System.Drawing.Bitmap BestiaryOrb_24px {
             get {
                 object obj = ResourceManager.GetObject("BestiaryOrb_24px", resourceCulture);
@@ -1043,6 +1033,16 @@ namespace POExileDirection.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_re_16_Fossil {
+            get {
+                object obj = ResourceManager.GetObject("icon_re_16_Fossil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_re_17 {
             get {
                 object obj = ResourceManager.GetObject("icon_re_17", resourceCulture);
@@ -1496,26 +1496,6 @@ namespace POExileDirection.Properties {
         internal static System.Drawing.Bitmap PanelHolderArrow_up {
             get {
                 object obj = ResourceManager.GetObject("PanelHolderArrow_up", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap PayPal_Donate_Button {
-            get {
-                object obj = ResourceManager.GetObject("PayPal-Donate-Button", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap PayPal_Donate_CARD {
-            get {
-                object obj = ResourceManager.GetObject("PayPal-Donate-CARD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1993,36 +1973,6 @@ namespace POExileDirection.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap Toonation {
-            get {
-                object obj = ResourceManager.GetObject("Toonation", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap Toonation1 {
-            get {
-                object obj = ResourceManager.GetObject("Toonation1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap ToonationA {
-            get {
-                object obj = ResourceManager.GetObject("ToonationA", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
         internal static System.Drawing.Bitmap top_bar_arrow_buy {
             get {
                 object obj = ResourceManager.GetObject("top_bar_arrow_buy", resourceCulture);
@@ -2216,16 +2166,6 @@ namespace POExileDirection.Properties {
         internal static System.Drawing.Bitmap TradeCommand_24px {
             get {
                 object obj = ResourceManager.GetObject("TradeCommand_24px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap twitch {
-            get {
-                object obj = ResourceManager.GetObject("twitch", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

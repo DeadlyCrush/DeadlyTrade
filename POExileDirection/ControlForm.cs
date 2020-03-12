@@ -170,6 +170,9 @@ namespace POExileDirection
         ScanChatForm frmScanChat = null;
         public static bool g_bIsSCANOn { get; set; }
 
+        FossilForm frmFossil = null;
+        public static bool g_bIsFossilOn { get; set; }
+
         public static NotificationContainer frmNotificationContainer = new NotificationContainer();
         public static bool g_bIsNofiticationContainerOn { get; set; }
 
@@ -1183,6 +1186,9 @@ namespace POExileDirection
             {
                 if (bShow)
                 {
+                    if (g_bIsFossilOn)
+                        frmFossil.Show();
+
                     if (g_bIsSearchPop)
                         frmSearchStash.Show();
 
@@ -1226,6 +1232,9 @@ namespace POExileDirection
                 }
                 else
                 {
+                    if (g_bIsFossilOn)
+                        frmFossil.Hide();
+
                     if (g_bIsSearchPop)
                         frmSearchStash.Hide();
 
@@ -4336,6 +4345,8 @@ namespace POExileDirection
             nElapse = Convert.ToInt32(elapsedmin);
             if (nElapse < 0)
                 nElapse = 0;
+
+            DeadlyDBHelper.UpdateLoginCurrent(LauncherForm._sqlcon, "N", LauncherForm._strIPAddress, LauncherForm._strMacAddress, DateTime.Now);
             DeadlyDBHelper.InsertLoginStatus(LauncherForm._sqlcon, "N", LauncherForm._strIPAddress, LauncherForm._strMacAddress, ".", "LOGOUT", 
                                             LauncherForm.GetCountryByIPINFO(LauncherForm._strIPAddress), LauncherForm.dtLoggedIn, nElapse); 
             DeadlyLog4Net._log.Info("LOGOUT : " + LauncherForm._strIPAddress + LauncherForm._strMacAddress + " Elapsedminute : " + nElapse);
@@ -4367,6 +4378,23 @@ namespace POExileDirection
                 xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.On;
 
             xuiSwitch1_SwitchStateChanged_1(sender, e);
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            if (!g_bIsFossilOn)
+            {
+                g_bIsFossilOn = true;
+
+                frmFossil = new FossilForm();
+                frmFossil.Show();
+            }
+            else
+            {
+                g_bIsFossilOn = false;
+
+                frmFossil.Close();
+            }
         }
     }
 }

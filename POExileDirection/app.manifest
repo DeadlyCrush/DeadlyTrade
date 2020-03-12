@@ -17,7 +17,7 @@
             이 요소를 제거합니다.
         -->
         <!-- <requestedExecutionLevel level="asInvoker" uiAccess="false" /> -->
-        <requestedExecutionLevel level="requireAdministrator" uiAccess="false" />
+        <!--requestedExecutionLevel level="requireAdministrator" uiAccess="false" /-->
       </requestedPrivileges>
     </security>
   </trustInfo>

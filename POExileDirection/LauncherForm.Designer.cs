@@ -42,6 +42,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelUpdateContents = new System.Windows.Forms.Panel();
+            this.labelPatchNote = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.labelUpdateTitle = new System.Windows.Forms.Label();
             this.pictureBoxKOREA = new System.Windows.Forms.PictureBox();
@@ -92,7 +93,6 @@
             this.timerDetect = new System.Windows.Forms.Timer(this.components);
             this.timerScrolling = new System.Windows.Forms.Timer(this.components);
             this.timerCheckFocus = new System.Windows.Forms.Timer(this.components);
-            this.labelPatchNote = new System.Windows.Forms.TextBox();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
@@ -261,6 +261,18 @@
             this.panelUpdateContents.Size = new System.Drawing.Size(65, 46);
             this.panelUpdateContents.TabIndex = 19;
             this.panelUpdateContents.Visible = false;
+            // 
+            // labelPatchNote
+            // 
+            this.labelPatchNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
+            this.labelPatchNote.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.labelPatchNote.ForeColor = System.Drawing.Color.Bisque;
+            this.labelPatchNote.Location = new System.Drawing.Point(4, 32);
+            this.labelPatchNote.Multiline = true;
+            this.labelPatchNote.Name = "labelPatchNote";
+            this.labelPatchNote.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.labelPatchNote.Size = new System.Drawing.Size(550, 383);
+            this.labelPatchNote.TabIndex = 14;
             // 
             // panel4
             // 
@@ -735,26 +747,26 @@
             this.toolStripSeparator1,
             this.toolStripMenuItem2});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(180, 54);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 76);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Image = global::POExileDirection.Properties.Resources.sysMaxPOEBg;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(179, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem1.Text = "Maximize Launcher";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.ToolStripMenuItem1_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(176, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Image = global::POExileDirection.Properties.Resources.sysClosePOEBg;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(179, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem2.Text = "Exit DeadlyTrade";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.ToolStripMenuItem2_Click);
             // 
@@ -775,18 +787,6 @@
             // timerCheckFocus
             // 
             this.timerCheckFocus.Tick += new System.EventHandler(this.timerCheckFocus_Tick);
-            // 
-            // labelPatchNote
-            // 
-            this.labelPatchNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.labelPatchNote.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.labelPatchNote.ForeColor = System.Drawing.Color.Bisque;
-            this.labelPatchNote.Location = new System.Drawing.Point(4, 32);
-            this.labelPatchNote.Multiline = true;
-            this.labelPatchNote.Name = "labelPatchNote";
-            this.labelPatchNote.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.labelPatchNote.Size = new System.Drawing.Size(550, 383);
-            this.labelPatchNote.TabIndex = 14;
             // 
             // LauncherForm
             // 

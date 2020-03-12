@@ -109,6 +109,80 @@ namespace POExileDirection
 
     public static class DeadlyDBHelper
     {
+        public static string IsLoggedInCurrent(SqlConnection _sqlcon, string strIP, string strMac)
+        {
+            string strisLogin = "N";
+            string strSQL = String.Format("SELECT isLogin, IPAddress, MacAddress FROM DeadlyCurrent Where IPAddress = '{0}' and MacAddress = '{1}' ", strIP, strMac);
+
+            SqlCommand sqlCmd = new SqlCommand();
+            SqlDataAdapter sqlAdapt = new SqlDataAdapter(strSQL, _sqlcon);
+            DataTable dt = new DataTable();
+            try
+            {
+                if (_sqlcon.State != ConnectionState.Open) _sqlcon.Open();
+                sqlAdapt.Fill(dt);
+
+                if (dt.Rows.Count == 0)
+                {
+                    strisLogin = "X";
+                }
+                else
+                {
+                    DataRow dr = dt.Rows[0];
+                    if (dr["isLogin"].ToString() == "Y" &&
+                        (dr["IPAddress"].ToString() == strIP || dr["MacAddress"].ToString() == strMac))
+                    {
+                        strisLogin = "Y";
+                    }
+                    else
+                        strisLogin = "N";
+                }
+
+                dt.Dispose();
+                sqlCmd.Dispose();
+                sqlAdapt.Dispose();
+
+                return strisLogin;
+            }
+            catch (Exception ex)
+            {
+                dt.Dispose();
+                sqlCmd.Dispose();
+                sqlAdapt.Dispose();
+
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+                return strisLogin;
+            }
+        }
+
+        public static void UpdateLoginCurrent(SqlConnection _sqlcon, string strisLogin, string strIP, string strMac, DateTime dtActionDate)
+        {
+            SqlCommand sqlCmd = new SqlCommand();
+            try
+            {
+                if (_sqlcon.State != ConnectionState.Open) _sqlcon.Open();
+
+                sqlCmd.Connection = _sqlcon;
+                sqlCmd.CommandType = CommandType.Text;
+                sqlCmd.CommandText = @"UPDATE DeadlyCurrent SET isLogin=@isLogin, ActionDate=@ActionDate where IPAddress=@IPAddress and MacAddress=@MacAddress";
+
+                sqlCmd.Parameters.AddWithValue("@isLogin", strisLogin);
+                sqlCmd.Parameters.AddWithValue("@ActionDate", dtActionDate);
+                sqlCmd.Parameters.AddWithValue("@IPAddress", strIP);
+                sqlCmd.Parameters.AddWithValue("@MacAddress", strMac);
+
+                sqlCmd.ExecuteNonQuery();
+
+                sqlCmd.Dispose();
+                if (_sqlcon.State == ConnectionState.Open) _sqlcon.Close();
+            }
+            catch (Exception ex)
+            {
+                sqlCmd.Dispose();
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+            }
+        }
+
         public static string IsLoggedIn(SqlConnection _sqlcon, string strIP, string strMac)
         {
             string strisLogin = "N";
@@ -155,6 +229,46 @@ namespace POExileDirection
                 return strisLogin;
             }
         }
+
+        public static void InsertLoginCurrent(SqlConnection _sqlcon, string strisLogin, string strIP, string strMac, string strNick,
+            string strID, DateTime dtActionDate)
+        {
+            if (strNick == "" || String.IsNullOrEmpty(strNick))
+                strNick = ".";
+
+            if (strID == "" || String.IsNullOrEmpty(strID))
+                strID = ".";
+
+            SqlCommand sqlCmd = new SqlCommand();
+            try
+            {
+                if (_sqlcon.State != ConnectionState.Open) _sqlcon.Open();
+
+
+                sqlCmd.Connection = _sqlcon;
+                sqlCmd.CommandType = CommandType.Text;
+                sqlCmd.CommandText = @"INSERT INTO DeadlyCurrent(IPAddress,MacAddress,UserID,CharacterName,isLogin, ActionDate) 
+                            VALUES(@IPAddress,@MacAddress,@UserID,@CharacterName,@isLogin,@ActionDate)";
+
+                sqlCmd.Parameters.AddWithValue("@IPAddress", strIP);
+                sqlCmd.Parameters.AddWithValue("@MacAddress", strMac);
+                sqlCmd.Parameters.AddWithValue("@CharacterName", strNick);
+                sqlCmd.Parameters.AddWithValue("@UserID", dtActionDate);
+                sqlCmd.Parameters.AddWithValue("@isLogin", strisLogin);
+                sqlCmd.Parameters.AddWithValue("@ActionDate", dtActionDate);
+
+                sqlCmd.ExecuteNonQuery();
+
+                sqlCmd.Dispose();
+                if (_sqlcon.State == ConnectionState.Open) _sqlcon.Close();
+            }
+            catch (Exception ex)
+            {
+                sqlCmd.Dispose();
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+            }
+        }
+
         public static void InsertLoginStatus(SqlConnection _sqlcon, string strisLogin, string strIP, string strMac, string strNick,
             string strAction, string strCountryEN, DateTime dtActionDate, int nElapsedTime)
         {

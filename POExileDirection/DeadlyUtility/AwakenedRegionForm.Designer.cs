@@ -155,7 +155,7 @@
             this.labelRegion.Name = "labelRegion";
             this.labelRegion.Size = new System.Drawing.Size(457, 22);
             this.labelRegion.TabIndex = 16;
-            this.labelRegion.Text = "Open Stash && Click Region";
+            this.labelRegion.Text = "Open Stash && Click Region\'s Map";
             this.labelRegion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -321,7 +321,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(457, 22);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Search Atlas Region :: Click Region Button. (Highlight in Stash)";
+            this.label1.Text = "Open Stash && Click Region Button. (Highlight in Stash)";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabPage2
@@ -359,6 +359,7 @@
             // 
             // listViewPantheon
             // 
+            this.listViewPantheon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
             this.listViewPantheon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listViewPantheon.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
@@ -366,6 +367,7 @@
             this.Map,
             this.Tier});
             this.listViewPantheon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listViewPantheon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
             this.listViewPantheon.FullRowSelect = true;
             this.listViewPantheon.GridLines = true;
             this.listViewPantheon.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
@@ -377,7 +379,7 @@
             this.listViewPantheon.TabIndex = 16;
             this.listViewPantheon.UseCompatibleStateImageBehavior = false;
             this.listViewPantheon.View = System.Windows.Forms.View.Details;
-            this.listViewPantheon.Visible = false;
+            this.listViewPantheon.DoubleClick += new System.EventHandler(this.listViewPantheon_DoubleClick);
             // 
             // columnHeader1
             // 

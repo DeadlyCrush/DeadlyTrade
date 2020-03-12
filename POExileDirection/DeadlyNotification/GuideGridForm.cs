@@ -45,6 +45,9 @@ namespace POExileDirection
             textBoxLEFT.Select();
             textBoxLEFT.Focus();
 
+            Width = 219;
+            Height = 27;
+
             ControlForm.gCF_bIsTextFocused = true;
         }
 

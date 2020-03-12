@@ -33,13 +33,6 @@
             this.btnZoomIn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnLauncherLogin = new System.Windows.Forms.Button();
-            this.listViewPantheon = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.God = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Map = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Tier = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.labelPhanteon = new System.Windows.Forms.Label();
             this.panelTop.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,79 +121,11 @@
             this.label2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel1_MouseMove);
             this.label2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Panel1_MouseUp);
             // 
-            // btnLauncherLogin
-            // 
-            this.btnLauncherLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
-            this.btnLauncherLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLauncherLogin.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLauncherLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLauncherLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLauncherLogin.Location = new System.Drawing.Point(5, 23);
-            this.btnLauncherLogin.Name = "btnLauncherLogin";
-            this.btnLauncherLogin.Size = new System.Drawing.Size(132, 22);
-            this.btnLauncherLogin.TabIndex = 6;
-            this.btnLauncherLogin.Text = "Phanteon Inform.";
-            this.btnLauncherLogin.UseVisualStyleBackColor = false;
-            this.btnLauncherLogin.Click += new System.EventHandler(this.btnLauncherLogin_Click);
-            // 
-            // listViewPantheon
-            // 
-            this.listViewPantheon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listViewPantheon.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.God,
-            this.Map,
-            this.Tier});
-            this.listViewPantheon.FullRowSelect = true;
-            this.listViewPantheon.GridLines = true;
-            this.listViewPantheon.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
-            this.listViewPantheon.HideSelection = false;
-            this.listViewPantheon.Location = new System.Drawing.Point(5, 52);
-            this.listViewPantheon.MultiSelect = false;
-            this.listViewPantheon.Name = "listViewPantheon";
-            this.listViewPantheon.Size = new System.Drawing.Size(445, 516);
-            this.listViewPantheon.TabIndex = 7;
-            this.listViewPantheon.UseCompatibleStateImageBehavior = false;
-            this.listViewPantheon.View = System.Windows.Forms.View.Details;
-            this.listViewPantheon.Visible = false;
-            this.listViewPantheon.DoubleClick += new System.EventHandler(this.listViewPantheon_DoubleClick);
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Width = 0;
-            // 
-            // God
-            // 
-            this.God.Width = 200;
-            // 
-            // Map
-            // 
-            this.Map.Width = 200;
-            // 
-            // Tier
-            // 
-            this.Tier.Width = 40;
-            // 
-            // labelPhanteon
-            // 
-            this.labelPhanteon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
-            this.labelPhanteon.ForeColor = System.Drawing.Color.Bisque;
-            this.labelPhanteon.Location = new System.Drawing.Point(144, 23);
-            this.labelPhanteon.Name = "labelPhanteon";
-            this.labelPhanteon.Size = new System.Drawing.Size(306, 22);
-            this.labelPhanteon.TabIndex = 8;
-            this.labelPhanteon.Text = "Double click listed item to copy map name.";
-            this.labelPhanteon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelPhanteon.Visible = false;
-            // 
             // ImageOverlayFormMap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 586);
-            this.Controls.Add(this.labelPhanteon);
-            this.Controls.Add(this.listViewPantheon);
-            this.Controls.Add(this.btnLauncherLogin);
             this.Controls.Add(this.panelTop);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -229,12 +154,5 @@
         private System.Windows.Forms.Button btnZoomIn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnLauncherLogin;
-        private System.Windows.Forms.ListView listViewPantheon;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader God;
-        private System.Windows.Forms.ColumnHeader Map;
-        private System.Windows.Forms.ColumnHeader Tier;
-        private System.Windows.Forms.Label labelPhanteon;
     }
 }

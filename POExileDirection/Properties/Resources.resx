@@ -142,14 +142,8 @@
   <data name="Amber Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Amber Oil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DeadlyTrade_Bottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\res\DeadlyCrush_Capture_Modify\DeadlyTrade_Bottom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="top_bar_arrow_buy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\top_bar_arrow_buy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Teal Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Teal Oil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MaxButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\DeadlyCrush_Capture_Modify\MaxButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,14 +151,17 @@
   <data name="NewKR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NewKR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="check_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\check_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="chaos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\Currency\chaos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="to_bar_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\to_bar_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TradeCommand_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\TopMostMain\TradeCommand_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_re_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_re_08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sysMinPOEBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\sysMinPOEBg.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,8 +184,11 @@
   <data name="Lex" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DeadlyTrade_LOGO_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DeadlyTrade_LOGO_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="check_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\check_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ValdoKR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ValdoKR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,20 +220,14 @@
   <data name="Close_45_45_48_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\TopMostMain\Close_45_45_48_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="top_bar_Transaction" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\top_bar_Transaction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="social_you_tube" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\Notification\social media\social_you_tube.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="List" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\List.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="QuestionMark_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QuestionMark_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chaos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\res\Currency\chaos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DeadlyTrade_Bottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\DeadlyCrush_Capture_Modify\DeadlyTrade_Bottom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="uniqueJewel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\NINJA\uniqueJewel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,6 +244,9 @@
   <data name="Woe7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\NINJA\Woe7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DeadlyCrush_Top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\DeadlyCrush_Capture_Modify\DeadlyCrush_Top.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="twitch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\2019_0729\twitch.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -259,14 +256,14 @@
   <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="LABMerc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LABMerc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RemainBGBOX_48_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\RemainBGBOX_48_48.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panel_bottom_line" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\panel_bottom_line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Search_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\TopMostMain\Search_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -301,8 +298,11 @@
   <data name="Watchstone_24px_alpha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Watchstone_24px_alpha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Camera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="recycle-bin_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\recycle-bin_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="top_bar_size-control" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\top_bar_size-control.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cmd_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cmd_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -310,8 +310,8 @@
   <data name="sysMinPOEBg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\sysMinPOEBg.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dollar_image_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dollar_image_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DeadlyTradeWaitingButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\DeadlyCrush_Capture_Modify\DeadlyTradeWaitingButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Lira" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lira.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -328,14 +328,14 @@
   <data name="arrow_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrow_up2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="asecplz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\res\DeadlyCrush_Capture_Modify\asecplz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_re_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_re_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_re_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_re_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dollar_image_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dollar_image_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="top_bar_minimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\top_bar_minimize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -348,9 +348,6 @@
   </data>
   <data name="sysMaxPOEBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\sysMaxPOEBg.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GreaterScarabBreach" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\res\NINJA\GreaterScarabBreach.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\2019_0730\Settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -418,6 +415,9 @@
   <data name="UFlask" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\NINJA\UFlask.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Configure3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Configure3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="LABNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LABNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -466,6 +466,9 @@
   <data name="NICO_22px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\DeadlyCrush_Capture_Modify\NICO_22px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="PayPal-Donate-CARD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PayPal-Donate-CARD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon_re_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_re_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -481,11 +484,11 @@
   <data name="top_bar_bg_noline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\top_bar_bg_noline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="socket-red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\socket-red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Violet Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Violet Oil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Reroll2x2A" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\res\NINJA\Reroll2x2A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="social_facebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\Notification\social media\social_facebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -508,6 +511,9 @@
   <data name="icon_re_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_re_06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="NinJaCurrencyBG_75_23_2nd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\NinJaCurrencyBG_75_23_2nd.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Map_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Map_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -523,20 +529,23 @@
   <data name="icon_re_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_re_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="asecplz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\DeadlyCrush_Capture_Modify\asecplz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_blue_play_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_blue_play_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Close_45_45_48_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\TopMostMain\Close_45_45_48_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DeadlyTradeWaitingButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\res\DeadlyCrush_Capture_Modify\DeadlyTradeWaitingButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="panel_time1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\panel_time1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GRID_RECT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\GRID\GRID_RECT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CurrencyRerollRare" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\res\NINJA\CurrencyRerollRare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DIVInventoryIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\NINJA\DIVInventoryIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panel_time1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\panel_time1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="watchstones_2px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\watchstones_2px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -547,8 +556,8 @@
   <data name="icon_re_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_re_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Map_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Map_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="top_bar_arrow_sell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\top_bar_arrow_sell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GridForm_RedCloseButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\GridForm_RedCloseButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -571,11 +580,8 @@
   <data name="check_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\check_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Chaos Orb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\res\Currency\Chaos Orb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RemainBGBOX_32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\res\RemainBGBOX_32_32.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Mirros_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\Mirros_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Hideout_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\TopMostMain\Hideout_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -595,17 +601,11 @@
   <data name="icon_re_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_re_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Configure3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Configure3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ProximaKR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ProximaKR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Camera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_re_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_re_05.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Opalescent Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Opalescent Oil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -625,11 +625,11 @@
   <data name="DeadlyTradeLauncherICON" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DeadlyTradeLauncherICON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DeadlyCrush_Top" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\res\DeadlyCrush_Capture_Modify\DeadlyCrush_Top.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RemainBGBOX_32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\RemainBGBOX_32_32.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="socket-red" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\socket-red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BestiaryOrb_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BestiaryOrb_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -637,8 +637,8 @@
   <data name="FragmentPhoenix" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\NINJA\FragmentPhoenix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DIVInventoryIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\res\NINJA\DIVInventoryIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DeadlyTrade_LOGO_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeadlyTrade_LOGO_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CI" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CI.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -670,20 +670,20 @@
   <data name="MinButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\DeadlyCrush_Capture_Modify\MinButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="button_blue_play_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\button_blue_play_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="close1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="UWeapon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\NINJA\UWeapon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="close1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="KickFromParty_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\TopMostMain\KickFromParty_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="top_bar_arrow_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\top_bar_arrow_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Amulet_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Amulet_on1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Chaos Orb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\Currency\Chaos Orb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Crimson Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Crimson Oil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -697,9 +697,6 @@
   <data name="social_twitter_bird" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\social_twitter_bird.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="recycle-bin_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\recycle-bin_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="expand" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\DeadlyCrush_Capture_Modify\expand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -709,8 +706,8 @@
   <data name="PayPal-Donate-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PayPal-Donate-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MAPGorge3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\res\NINJA\MAPGorge3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Map_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Map_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Volume_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Volume_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -721,23 +718,32 @@
   <data name="Exalted Orbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\Currency\Exalted Orbs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Invite_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\TopMostMain\Invite_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_re_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_re_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ALVA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\ALVA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="top_bar_size-control" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\top_bar_size-control.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Amulet_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Amulet_on1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="End" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\End.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_re_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_re_08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MAPGorge3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\NINJA\MAPGorge3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="top_bar_bg_symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\top_bar_bg_symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="someoneentered_bg21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\someoneentered_bg21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BecomeDeadlyTradePatron" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BecomeDeadlyTradePatron.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -747,9 +753,6 @@
   </data>
   <data name="icon_re_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_re_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="KickFromParty_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\res\TopMostMain\KickFromParty_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Settings_BGBOX" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\Settings_BGBOX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -766,14 +769,14 @@
   <data name="moving_bar_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\moving_bar_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="panel_bottom_line" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\panel_bottom_line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GreaterScarabBreach" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\NINJA\GreaterScarabBreach.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="blog" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CurrencyRerollRare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\NINJA\CurrencyRerollRare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="top_bar_Transaction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\top_bar_Transaction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cmd_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cmd_06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -784,8 +787,8 @@
   <data name="vertical_line1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vertical_line1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NinJaCurrencyBG_75_23_2nd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\res\NinJaCurrencyBG_75_23_2nd.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Reroll2x2A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\NINJA\Reroll2x2A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Re_SendMessage_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\TopMostMain\Re_SendMessage_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -793,11 +796,11 @@
   <data name="vertical_line" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vertical_line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PayPal-Donate-CARD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PayPal-Donate-CARD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="QuestionMark_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QuestionMark_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="top_bar_arrow_sell" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\top_bar_arrow_sell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ProximaKR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProximaKR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AgateAmuletUnique" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\NINJA\AgateAmuletUnique.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -805,13 +808,13 @@
   <data name="ToonationA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ToonationA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Mirros_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\res\Mirros_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Teal Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Teal Oil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LABUber" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LABUber.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="someoneentered_bg21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\someoneentered_bg21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

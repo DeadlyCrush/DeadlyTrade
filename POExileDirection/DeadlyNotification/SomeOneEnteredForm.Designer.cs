@@ -31,8 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelNickName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.labelNickName = new System.Windows.Forms.Label();
+            this.labelNOTICE = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +54,17 @@
             this.panel1.Size = new System.Drawing.Size(128, 43);
             this.panel1.TabIndex = 2;
             // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::POExileDirection.Properties.Resources.someoneentered_bg21;
+            this.panel2.Controls.Add(this.labelNOTICE);
+            this.panel2.Controls.Add(this.labelNickName);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(128, 43);
+            this.panel2.TabIndex = 4;
+            // 
             // labelNickName
             // 
             this.labelNickName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(14)))), ((int)(((byte)(7)))));
@@ -66,15 +78,19 @@
             this.labelNickName.Text = "Nick Name";
             this.labelNickName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel2
+            // labelNOTICE
             // 
-            this.panel2.BackgroundImage = global::POExileDirection.Properties.Resources.someoneentered_bg21;
-            this.panel2.Controls.Add(this.labelNickName);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(128, 43);
-            this.panel2.TabIndex = 4;
+            this.labelNOTICE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(178)))), ((int)(((byte)(112)))));
+            this.labelNOTICE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelNOTICE.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNOTICE.ForeColor = System.Drawing.Color.DimGray;
+            this.labelNOTICE.Location = new System.Drawing.Point(25, 4);
+            this.labelNOTICE.Name = "labelNOTICE";
+            this.labelNOTICE.Size = new System.Drawing.Size(77, 12);
+            this.labelNOTICE.TabIndex = 4;
+            this.labelNOTICE.Text = "Notice";
+            this.labelNOTICE.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelNOTICE.Visible = false;
             // 
             // SomeOneEnteredForm
             // 
@@ -89,6 +105,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(128, 43);
             this.Name = "SomeOneEnteredForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
@@ -106,5 +123,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label labelNickName;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label labelNOTICE;
     }
 }

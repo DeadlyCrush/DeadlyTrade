@@ -31,6 +31,8 @@ namespace POExileDirection
         {
             InitializeComponent();
             Text = "DeadlyTradeForPOE";
+            Width = 128;
+            Height = 43;
         }
 
         private void SomeOneEnteredForm_Load(object sender, EventArgs e)
@@ -49,7 +51,11 @@ namespace POExileDirection
                 StartPosition = FormStartPosition.CenterScreen;
                 TopMost = true;
                 Top = Top - 100;
-
+                if (strLableText == "Copied.")
+                {
+                    labelNOTICE.Text = strNickName;
+                    labelNOTICE.Visible = true;
+                }
                 Visible = true;
 
                 timer1.Start();

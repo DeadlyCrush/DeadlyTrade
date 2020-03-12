@@ -61,31 +61,6 @@ namespace POExileDirection
             Visible = true;
         }
 
-        private void Show_ListView()
-        {
-            try
-            {
-                foreach (var item in DeadlyTranslation.Phanteons)
-                {
-                    ListViewItem lvItem = new ListViewItem();
-                    lvItem.Text = "";
-                    lvItem.SubItems.Add(item.strGodName);
-                    lvItem.SubItems.Add(item.strMapName);
-                    lvItem.SubItems.Add(item.strTier);
-                    if(item.strTier == "" || String.IsNullOrEmpty(item.strTier))
-                        lvItem.BackColor = Color.Bisque;
-
-                    listViewPantheon.Items.Add(lvItem);
-                }
-
-                bInitListviewDone = true;
-            }
-            catch (Exception ex)
-            {
-                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-            }
-        }
-
         #region ⨌⨌ Init. Controls ⨌⨌
         public void Init_Controls()
         {
@@ -287,40 +262,6 @@ namespace POExileDirection
         {
             if (gGDIfx != null) gGDIfx.Dispose();
             if (img != null) img.Dispose();
-        }
-
-        private void btnLauncherLogin_Click(object sender, EventArgs e)
-        {
-            if (!bListViewShowing)
-            {
-                if(!bInitListviewDone)
-                    Show_ListView();
-
-                btnLauncherLogin.Text = "Hide Phanteon List";
-                bListViewShowing = true;
-                labelPhanteon.Visible = true;
-                listViewPantheon.Visible = true;
-            }
-            else
-            {
-                btnLauncherLogin.Text = "Phanteon Inform.";
-                bListViewShowing = false;
-                labelPhanteon.Visible = false;
-                listViewPantheon.Visible = false;
-            }
-        }
-
-        private void listViewPantheon_DoubleClick(object sender, EventArgs e)
-        {
-            // Copy Map Name
-            int nIndex = listViewPantheon.FocusedItem.Index;
-            string strSelectedMapName = listViewPantheon.Items[nIndex].SubItems[2].Text;
-            Clipboard.SetText(strSelectedMapName);
-
-            SomeOneEnteredForm frmJoined = new SomeOneEnteredForm();
-            frmJoined.strNickName = "Map Name";
-            frmJoined.strLableText = "Copied.";
-            frmJoined.Show();
         }
     }
 }

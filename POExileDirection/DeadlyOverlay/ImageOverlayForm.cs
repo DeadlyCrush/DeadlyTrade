@@ -13,6 +13,8 @@ namespace POExileDirection
 
         //RECT rectPOE;
         //RECT rectPOEBackup;
+        int nLeft = 0;
+        int nTop = 0;
 
         private Graphics gGDIfx;
         public string m_strImagePath = null;
@@ -55,6 +57,8 @@ namespace POExileDirection
             #endregion
 
             Init_Controls();
+            nLeft = Left;
+            nTop = Top;
 
             Visible = true;
         }
@@ -99,60 +103,59 @@ namespace POExileDirection
             IniParser parser = new IniParser(strINIPath);
 
             string sZoom = parser.GetSetting("LOCATIONIMG", "ZOOM");
-            img = resizeImage(img, new Size(img.Width + Int32.Parse(sZoom), img.Height + Int32.Parse(sZoom)));
+            //img = resizeImage(img, new Size(img.Width + Int32.Parse(sZoom), img.Height + Int32.Parse(sZoom)));
+
+            nZoom = Convert.ToInt32(sZoom);
+            SetImage();
         }
 
-        private static Image resizeImage(Image imgToResize, Size size)
+        private void SetImage()
         {
-            return (Image)(new Bitmap(imgToResize, size));
-        }
-
-        private void ImageOverlayForm_Paint(object sender, PaintEventArgs e)
-        {
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-            IniParser parser = new IniParser(strINIPath);
-
-            string sLeft = parser.GetSetting("LOCATIONIMG", "LEFT");
-            string sTop = parser.GetSetting("LOCATIONIMG", "TOP");
-            string sZoom = parser.GetSetting("LOCATIONIMG", "ZOOM");
-
-            if (sLeft == null) sLeft = "0";
-            if (sTop == null) sTop = "0";
-            if (sZoom == null) sZoom = "0";
-
-            gGDIfx = e.Graphics;
-            gGDIfx.DrawImage(img, new Point(0, 0));
-            this.Top = Int32.Parse(sTop);
-            this.Left = Int32.Parse(sLeft);
-            this.Width = img.Width;
-            this.Height = img.Height;
-
-            #region ⨌⨌ Removed ⨌⨌
-            /*switch (nButtonNumber)
-            {                    
-                case 3: // Incursion.png
-                    gGDIfx.DrawImage(Bitmap.FromFile(@".\DeadlyInform\Incursion.png"), new Point(0, 25));
-                    break;
-                case 4:// Betrayal.png
-                    gGDIfx.DrawImage(Bitmap.FromFile(@".\DeadlyInform\Betrayal.png"), new Point(0, 25));
-                    break;
-                case 6: // ExpensiveItemB.png
-                    gGDIfx.DrawImage(Bitmap.FromFile(@".\DeadlyInform\ExpensiveItemB.png"), new Point(0, 25));
-                    break;
-                case 7: // Atlas.png
-                    gGDIfx.DrawImage(Bitmap.FromFile(@".\DeadlyInform\Atlas.png"), new Point(0, 25));
-                    break;
-                case 9: // Vendorrecipe.png
-                    gGDIfx.DrawImage(Bitmap.FromFile(@".\DeadlyInform\Vendorrecipe.png"), new Point(0, 25));
-                    break;
-                case 0:
-                    gGDIfx.DrawImage(Bitmap.FromFile(@".\DeadlyInform\Currency.png"), new Point(0, 25));
-                    break;
-                default:
-                    break;
+            int iWidth = 0;
+            int iHeight = 0;
+            int nWidth = 0;
+            int nHeight = 0;
+            if (nZoom != 0)
+            {
+                nWidth = img.Width + (img.Width * nZoom / 10);
+                nHeight = img.Height + (img.Height * nZoom / 10);
             }
-            */
-            #endregion
+            else
+            {
+                nWidth = img.Width;
+                nHeight = img.Height;
+            }
+
+
+            if ((nHeight == 0) && (nWidth != 0))
+            {
+                iWidth = nWidth;
+                iHeight = (img.Size.Height * iWidth / img.Size.Width);
+            }
+            else if ((nHeight != 0) && (nWidth == 0))
+            {
+                iHeight = nHeight;
+                iWidth = (img.Size.Width * iHeight / img.Size.Height);
+            }
+            else
+            {
+                iWidth = nWidth;
+                iHeight = nHeight;
+            }
+
+            RECT rcClient;
+            InteropCommon.GetClientRect(LauncherForm.g_handlePathOfExile, out rcClient);
+
+            Width = iWidth;
+            if (Width > rcClient.right) Width = rcClient.right;
+            Height = iHeight + 16;
+            if (Height > rcClient.bottom) Height = rcClient.bottom;
+
+            Left = nLeft;
+            Top = nTop;
+
+            pictureBox1.BackgroundImage = null;
+            pictureBox1.BackgroundImage = img;
         }
 
         private void Panel1_MouseDown(object sender, MouseEventArgs e)
@@ -198,25 +201,12 @@ namespace POExileDirection
             nZoom = Int32.Parse(sZoom);
 
             img = Bitmap.FromFile(m_strImagePath);
-            nZoom = nZoom - 100;
-            if (img.Width + nZoom > 0 && img.Height + nZoom > 0)
-            {
-                try
-                {
-                    img = resizeImage(img, new Size(img.Width + nZoom, img.Height + nZoom));
+            nZoom = nZoom - 1;
+            
+            parser.AddSetting("LOCATIONIMG", "ZOOM", nZoom.ToString());
+            parser.SaveSettings();
 
-                    parser.AddSetting("LOCATIONIMG", "ZOOM", nZoom.ToString());
-                    parser.SaveSettings();
-
-                    this.Invalidate();
-                    this.Update();
-                    this.Refresh();
-                }
-                catch (Exception ex)
-                {
-                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                }
-            }
+            SetImage();
         }
 
         private void BtnZoomIn_Click(object sender, EventArgs e)
@@ -226,27 +216,12 @@ namespace POExileDirection
 
             string sZoom = parser.GetSetting("LOCATIONIMG", "ZOOM");
             nZoom = Int32.Parse(sZoom);
+            nZoom = nZoom + 1;
 
-            img = Bitmap.FromFile(m_strImagePath);
-            nZoom = nZoom + 100;
-            if (img.Width + nZoom <= 1920 && img.Height + nZoom <= 1080)
-            {
-                try
-                {
-                    img = resizeImage(img, new Size(img.Width + nZoom, img.Height + nZoom));
+            parser.AddSetting("LOCATIONIMG", "ZOOM", nZoom.ToString());
+            parser.SaveSettings();
 
-                    parser.AddSetting("LOCATIONIMG", "ZOOM", nZoom.ToString());
-                    parser.SaveSettings();
-
-                    this.Invalidate();
-                    this.Update();
-                    this.Refresh();
-                }
-                catch (Exception ex)
-                {
-                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                }
-            }
+            SetImage();
         }
 
         private void ImageOverlayForm_FormClosed(object sender, FormClosedEventArgs e)

@@ -14,6 +14,8 @@ namespace POExileDirection
         public int nStashX = 0;
         public int nStashY = 0;
 
+        public bool bIsMagnify = false;
+
         public string _strItemName = String.Empty;
         public string _strPrice = String.Empty;
         public string _strBmpPath = String.Empty;
@@ -72,6 +74,12 @@ namespace POExileDirection
                 labelItemName.ForeColor = Color.FromArgb(0, 26, 204, 255);
             else
                 labelItemName.ForeColor = Color.FromArgb(0, 255, 236, 26);
+
+            if(bIsMagnify)
+            {
+                panelTop.Visible = false;
+                panelFunctions.Visible = false;
+            }
 
             SetIndicatorPictureBox();
         }
@@ -168,46 +176,37 @@ namespace POExileDirection
             {
                 if(bIsQuad)
                 {
-                    int nCol = 0;
-                    if (nStashX == 1) nCol = 0;
-                    else if (nStashX == 24) nCol = 12;
-                    else nCol = nStashX / 2;
-
-                    int nRow = 0;
-                    if (nStashY == 1) nRow = 0;
-                    else if (nStashY == 24) nRow = 12;
-                    else nRow = nStashY / 2;
-
                     // 4x4 Quad
                     Rectangle rcCell;
-                    Rectangle rcQuad = new Rectangle();
 
-                    rcCell = LauncherForm.g_arrayRect1x1[nCol, nRow];
 
-                    int nColLoop = 0;
-                    if (nStashX / 2 == 0) nColLoop = 2;
-                    else nColLoop = 1;
+                    int nY = (int)Math.Round((float)nStashY/2, MidpointRounding.AwayFromZero);
+                    int nX = (int)Math.Round((float)nStashX/2, MidpointRounding.AwayFromZero);
 
-                    int nRowLoop = 0;
-                    if (nStashY / 2 == 0) nRowLoop = 2;
-                    else nRowLoop = 1;
+                    if (nStashX == 1 && nStashY == 1)
+                        rcCell = LauncherForm.g_arrayRect1x1[0, 0];
+                    else if (nStashX == 1)
+                        rcCell = LauncherForm.g_arrayRect1x1[nY - 1, 0];
+                    else if (nStashY == 1)
+                        rcCell = LauncherForm.g_arrayRect1x1[0, nX - 1];
+                    else
+                        rcCell = LauncherForm.g_arrayRect1x1[nY - 1, nX - 1];
+                    int nWidth = rcCell.Width / 2;
+                    int nHeight = rcCell.Height / 2;
 
-                    for (int iQuad = 0; iQuad < nColLoop; iQuad++)
-                    {
-                        for (int jQuad = 0; jQuad < nRowLoop; jQuad++) // Quad Cell in Each normal Cell.
-                        {
-                            rcQuad.X = rcCell.Left + jQuad * rcCell.Width / 2;
-                            rcQuad.Y = rcCell.Top + jQuad * rcCell.Width / 2;
-                            rcQuad.Width = rcCell.Width/2;
-                            rcQuad.Height = rcCell.Height/2;
-                        }
-                        rcQuad.Y = rcCell.Top + iQuad * rcCell.Width / 2; // Next Row in Each normal Cell.
-                    }
 
-                    Left = rcQuad.Left;
-                    Top = rcQuad.Top;
-                    pictureBox1.Width = rcQuad.Width;
-                    pictureBox1.Height = rcQuad.Height;
+                    if (nStashX % 2 == 0)
+                        Left = rcCell.Left + nWidth;
+                    else
+                        Left = rcCell.Left;
+
+                    if (nStashY % 2 == 0)
+                        Top = rcCell.Top + nHeight;
+                    else
+                        Top = rcCell.Top;
+                    
+                    pictureBox1.Width = nWidth;
+                    pictureBox1.Height = nHeight;
 
                     checkQuadTab.Checked = true;
                 }

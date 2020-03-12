@@ -33,6 +33,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
             this.checkQuadTab = new System.Windows.Forms.CheckBox();
@@ -40,7 +41,6 @@
             this.textBoxTOP = new System.Windows.Forms.TextBox();
             this.textBoxLEFT = new System.Windows.Forms.TextBox();
             this.DeadlyToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,6 +64,9 @@
             this.panel1.Size = new System.Drawing.Size(219, 27);
             this.panel1.TabIndex = 8;
             this.panel1.Enter += new System.EventHandler(this.panel1_Enter);
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
             // pictureBox2
             // 
@@ -99,6 +102,19 @@
             this.label2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Label2_MouseDown);
             this.label2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Label2_MouseMove);
             this.label2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Label2_MouseUp);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(4, 7);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 15);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Quad?";
+            this.label3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Label1_MouseDown);
+            this.label3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Label1_MouseMove);
+            this.label3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Label1_MouseUp);
             // 
             // label1
             // 
@@ -196,19 +212,6 @@
             this.textBoxLEFT.Enter += new System.EventHandler(this.TextBoxLEFT_Enter);
             this.textBoxLEFT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxLEFT_KeyPress);
             this.textBoxLEFT.Leave += new System.EventHandler(this.TextBoxLEFT_Leave);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(4, 7);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 15);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Quad?";
-            this.label3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Label1_MouseDown);
-            this.label3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Label1_MouseMove);
-            this.label3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Label1_MouseUp);
             // 
             // GuideGridForm
             // 

@@ -2042,7 +2042,7 @@
             this.panelDonateContact.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panelDonateContact.Location = new System.Drawing.Point(10, 282);
             this.panelDonateContact.Name = "panelDonateContact";
-            this.panelDonateContact.Size = new System.Drawing.Size(73, 87);
+            this.panelDonateContact.Size = new System.Drawing.Size(221, 176);
             this.panelDonateContact.TabIndex = 17;
             // 
             // label56
@@ -2240,7 +2240,7 @@
             this.panelHallOfFame.Controls.Add(this.label45);
             this.panelHallOfFame.Location = new System.Drawing.Point(15, 238);
             this.panelHallOfFame.Name = "panelHallOfFame";
-            this.panelHallOfFame.Size = new System.Drawing.Size(23, 34);
+            this.panelHallOfFame.Size = new System.Drawing.Size(848, 438);
             this.panelHallOfFame.TabIndex = 17;
             // 
             // labelSupporters
@@ -2331,7 +2331,7 @@
             this.panelSkillMain.Controls.Add(this.label68);
             this.panelSkillMain.Location = new System.Drawing.Point(14, 176);
             this.panelSkillMain.Name = "panelSkillMain";
-            this.panelSkillMain.Size = new System.Drawing.Size(692, 386);
+            this.panelSkillMain.Size = new System.Drawing.Size(238, 30);
             this.panelSkillMain.TabIndex = 10;
             // 
             // btnS5

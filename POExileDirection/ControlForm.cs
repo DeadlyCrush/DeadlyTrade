@@ -240,6 +240,10 @@ namespace POExileDirection
 
         public static bool gCF_bIsTextFocused { get; set; }
 
+        public static string strJUNDefualt { get; set; }
+        public static string strALVADefualt { get; set; }
+        public static string strZANADefualt { get; set; }
+
         //MapAlertForm frmMapModResult = null;
 
         public ControlForm()
@@ -2359,7 +2363,7 @@ namespace POExileDirection
 
                 if (String.IsNullOrEmpty(strtext))
                 {
-                    DeadlyLog4Net._log.Info("Empty Hot Key Text : " + strtext);
+                    //DeadlyLog4Net._log.Info("Empty Hot Key Text : " + strtext);
                     return;
                 }
 
@@ -2491,9 +2495,9 @@ namespace POExileDirection
                 strPath = parser.GetSetting("DIRECTIONHELPER", "POELOGPATH");
 
                 // Check User Custom Overlay or Default Overlay.
-                string strJUNDefualt = parser.GetSetting("OVERLAY", "JUNDEFAULT");
-                string strALVADefualt = parser.GetSetting("OVERLAY", "ALVADEFAULT");
-                string strZANADefualt = parser.GetSetting("OVERLAY", "ZANADEFAULT");
+                strJUNDefualt = parser.GetSetting("OVERLAY", "JUNDEFAULT");
+                strALVADefualt = parser.GetSetting("OVERLAY", "ALVADEFAULT");
+                strZANADefualt = parser.GetSetting("OVERLAY", "ZANADEFAULT");
 
                 // Get Image Path
                 g_strImagePath[0] = parser.GetSetting("OVERLAY", "JUN"); // @".\DeadlyInform\Betrayal.png";   // JUN
@@ -2792,6 +2796,14 @@ namespace POExileDirection
                         #endregion
 
                         #region [[[[[ TAB5 - OVERLAY ]]]]]
+                        parser.AddSetting("OVERLAY", "JUNDEFAULT", strJUNDefualt);
+                        parser.AddSetting("OVERLAY", "JUN", g_strImagePath[0]);
+
+                        parser.AddSetting("OVERLAY", "ALVADEFAULT", strALVADefualt);
+                        parser.AddSetting("OVERLAY", "ALVA", g_strImagePath[1]);
+
+                        parser.AddSetting("OVERLAY", "ZANADEFAULT", strZANADefualt);
+                        parser.AddSetting("OVERLAY", "ZANA", g_strImagePath[2]);
                         #endregion
 
                         parser.SaveSettings();

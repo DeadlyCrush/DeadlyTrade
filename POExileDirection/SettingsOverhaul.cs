@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -81,13 +82,12 @@ namespace POExileDirection
 
         private void SettingsOverhaul_Load(object sender, EventArgs e)
         {
-            Visible = false;
             TopMost = true;
             ShowInTaskbar = false;
 
             timer1.Start();
-            Visible = true;
 
+            Thread.Sleep(300);
             GetHotkeySettings();                // TAB 1
             _nInitCNT = _nInitCNT + 1;
             GetTradeNotificationSettings();     // TAB 2
@@ -535,22 +535,60 @@ namespace POExileDirection
 
         private void GetOverlaySettings()
         {
-            labelPathJUN.Text = ControlForm.g_strImagePath[0];
-            using (Bitmap bmp1 = ResizePictureKeepAspecRatio(ControlForm.g_strImagePath[0], 200, 150))
+            try
             {
-                pictureBoxJUN.Image = bmp1;
-            }
+                if (ControlForm.strJUNDefualt == "Y")
+                {
+                    xuiCheckBoxDefaultJUN.Checked = true;
+                    btnBrowseJUN.Enabled = false;
+                }
+                else
+                {
+                    xuiCheckBoxDefaultJUN.Checked = false;
+                    btnBrowseJUN.Enabled = true;
+                }
 
-            labelPathALVA.Text = ControlForm.g_strImagePath[1];
-            using (Bitmap bmp2 = ResizePictureKeepAspecRatio(ControlForm.g_strImagePath[1], 200, 150))
-            {
-                pictureBoxALVA.Image = bmp2;
-            }
+                if (ControlForm.strALVADefualt == "Y")
+                {
+                    xuiCheckBoxDefaultALVA.Checked = true;
+                    btnBrowseALVA.Enabled = false;
+                }
+                else
+                {
+                    xuiCheckBoxDefaultALVA.Checked = false;
+                    btnBrowseALVA.Enabled = true;
+                }
 
-            labelPathZANA.Text = ControlForm.g_strImagePath[2];
-            using (Bitmap bmp3 = ResizePictureKeepAspecRatio(ControlForm.g_strImagePath[2], 200, 150))
+                if (ControlForm.strZANADefualt == "Y")
+                {
+                    xuiCheckBoxDefaultZANA.Checked = true;
+                    btnBrowseZANA.Enabled = false;
+                }
+                else
+                {
+                    xuiCheckBoxDefaultZANA.Checked = false;
+                    btnBrowseZANA.Enabled = true;
+                }                
+
+                if (String.IsNullOrEmpty(ControlForm.g_strImagePath[0]) || xuiCheckBoxDefaultJUN.Checked == true)
+                    ControlForm.g_strImagePath[0] = @".\DeadlyInform\Betrayal.png";
+
+                if (String.IsNullOrEmpty(ControlForm.g_strImagePath[1]) || xuiCheckBoxDefaultALVA.Checked == true)
+                    ControlForm.g_strImagePath[1] = @".\DeadlyInform\Incursion.png";
+
+                if (String.IsNullOrEmpty(ControlForm.g_strImagePath[2]) || xuiCheckBoxDefaultZANA.Checked == true)
+                    ControlForm.g_strImagePath[2] = @".\DeadlyInform\Atlas.png";
+
+                labelPathJUN.Text = ControlForm.g_strImagePath[0];
+                pictureBoxJUN.BackgroundImage = Image.FromFile(ControlForm.g_strImagePath[0]);
+                labelPathALVA.Text = ControlForm.g_strImagePath[1];
+                pictureBoxALVA.BackgroundImage = Image.FromFile(ControlForm.g_strImagePath[1]);
+                labelPathZANA.Text = ControlForm.g_strImagePath[2];
+                pictureBoxZANA.BackgroundImage = Image.FromFile(ControlForm.g_strImagePath[2]);
+            }
+            catch (Exception ex)
             {
-                pictureBoxZANA.Image = bmp3;
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
         }
 
@@ -576,8 +614,8 @@ namespace POExileDirection
 
         private void GetHallOfFameSettings()
         {
-            ;
-            //labelSupporters.Text = LauncherForm.g_strDonator;
+            labelDateTime.Text = DateTime.Now.ToString("yyyy/MM/dd");
+            textBoxSupporter.Text = LauncherForm.g_strDonator;
         }
 
         #region [[[[[ Function : GetSet_Hotkey ]]]]]
@@ -1559,70 +1597,107 @@ namespace POExileDirection
                 ControlForm.g_strImagePath[0] = @".\DeadlyInform\Betrayal.png";
                 labelPathJUN.Text = ControlForm.g_strImagePath[0];
                 btnBrowseJUN.Enabled = false;
-
-                xuiCheckBoxCustomJUN.Checked = false;
+                ControlForm.strJUNDefualt = "N";
             }
             else
-            {
-                xuiCheckBoxCustomJUN.Checked = true;
-            }
-        }
-
-        private void xuiCheckBoxCustomJUN_CheckedStateChanged(object sender, EventArgs e)
-        {
-            if (xuiCheckBoxCustomJUN.Checked == true)
             {
                 btnBrowseJUN.Enabled = true;
-                xuiCheckBoxDefaultJUN.Checked = false;
-            }
-            else
-            {
-                xuiCheckBoxDefaultJUN.Checked = true;
+                ControlForm.strJUNDefualt = "Y";
             }
         }
 
         private void btnBrowseJUN_Click(object sender, EventArgs e)
         {
-            if (openFileDialogJUN.ShowDialog() == DialogResult.OK)
-                labelPathJUN.Text = openFileDialogJUN.FileName;
-
-            if (!String.IsNullOrEmpty(labelPathJUN.Text))
+            try
             {
-                ControlForm.g_strImagePath[0] = labelPathJUN.Text;
-                Bitmap bmp = ResizePictureKeepAspecRatio(ControlForm.g_strImagePath[0], 200, 150);
-                pictureBoxJUN.Image = bmp;
+                if (openFileDialogJUN.ShowDialog() == DialogResult.OK)
+                    labelPathJUN.Text = openFileDialogJUN.FileName;
+
+                if (!String.IsNullOrEmpty(labelPathJUN.Text))
+                {
+                    pictureBoxJUN.BackgroundImage = null;
+                    ControlForm.g_strImagePath[0] = labelPathJUN.Text;
+                    pictureBoxJUN.BackgroundImage = Image.FromFile(ControlForm.g_strImagePath[0]);
+                }
+            }
+            catch (Exception ex)
+            {
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
         }
-
         
         private void xuiCheckBoxDefaultALVA_CheckedStateChanged(object sender, EventArgs e)
         {
+            if (xuiCheckBoxDefaultALVA.Checked == true)
+            {
+                ControlForm.g_strImagePath[1] = @".\DeadlyInform\Incursion.png";
+                labelPathALVA.Text = ControlForm.g_strImagePath[1];
+                btnBrowseALVA.Enabled = false;
 
-        }
-
-        private void xuiCheckBoxCustomALVA_CheckedStateChanged(object sender, EventArgs e)
-        {
-
+                ControlForm.strALVADefualt = "N";
+            }
+            else
+            {
+                btnBrowseALVA.Enabled = true;
+                ControlForm.strALVADefualt = "Y";
+            }
         }
 
         private void btnBrowseALVA_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (openFileDialogALVA.ShowDialog() == DialogResult.OK)
+                    labelPathALVA.Text = openFileDialogALVA.FileName;
 
+                if (!String.IsNullOrEmpty(labelPathALVA.Text))
+                {
+                    pictureBoxALVA.BackgroundImage = null;
+                    ControlForm.g_strImagePath[1] = labelPathALVA.Text;
+                    pictureBoxALVA.BackgroundImage = Image.FromFile(ControlForm.g_strImagePath[1]);
+                }
+            }
+            catch (Exception ex)
+            {
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+            }
         }
                 
         private void xuiCheckBoxDefaultZANA_CheckedStateChanged(object sender, EventArgs e)
         {
+            if (xuiCheckBoxDefaultZANA.Checked == true)
+            {
+                ControlForm.g_strImagePath[2] = @".\DeadlyInform\Atlas.png";
+                labelPathZANA.Text = ControlForm.g_strImagePath[2];
+                btnBrowseZANA.Enabled = false;
 
-        }
-
-        private void xuiCheckBoxCustomZANA_CheckedStateChanged(object sender, EventArgs e)
-        {
-
+                ControlForm.strZANADefualt = "N";
+            }
+            else
+            {
+                btnBrowseZANA.Enabled = true;
+                ControlForm.strZANADefualt = "Y";
+            }
         }
 
         private void btnBrowseZANA_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (openFileDialogZANA.ShowDialog() == DialogResult.OK)
+                    labelPathZANA.Text = openFileDialogZANA.FileName;
 
+                if (!String.IsNullOrEmpty(labelPathZANA.Text))
+                {
+                    pictureBoxZANA.BackgroundImage = null;
+                    ControlForm.g_strImagePath[2] = labelPathZANA.Text;
+                    pictureBoxZANA.BackgroundImage = Image.FromFile(ControlForm.g_strImagePath[2]);
+                }
+            }
+            catch (Exception ex)
+            {
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+            }
         }
         #endregion
 
@@ -2146,8 +2221,9 @@ namespace POExileDirection
             panelWaiting.Height = 562;
             panelWaiting.Visible = true;
 
-            if(_nInitCNT>=7)
+            if (_nInitCNT>=7)
             {
+                Thread.Sleep(500);
                 panelWaiting.Visible = false;
                 timer1.Stop();
             }
@@ -2157,6 +2233,33 @@ namespace POExileDirection
         {
             if (panelWaiting != null) panelWaiting.Dispose();
             if (timer1 != null) timer1.Dispose();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            // ENG
+            System.Diagnostics.Process.Start("https://discord.gg/Gd7MjCz");
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            // KOR
+            System.Diagnostics.Process.Start("https://discord.gg/ryjUA7r");
+        }
+
+        private void btnSOUNDFlaskTimer_Click(object sender, EventArgs e)
+        {
+            if (xuiSwitchSoundFlaskTimer.SwitchState == XanderUI.XUISwitch.State.On)
+                xuiSwitchSoundFlaskTimer.SwitchState = XanderUI.XUISwitch.State.Off;
+            else
+                xuiSwitchSoundFlaskTimer.SwitchState = XanderUI.XUISwitch.State.On;
+
+            xuiSwitchSoundFlaskTimer_SwitchStateChanged(sender, e);
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/DeadlyCrush/DeadlyTrade");
         }
     }
 }

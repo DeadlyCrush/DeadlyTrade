@@ -244,10 +244,10 @@
     <Compile Include="ControlForm.Designer.cs">
       <DependentUpon>ControlForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DeadlyUtility\GuideGridForm.cs">
+    <Compile Include="DeadlyNotification\GuideGridForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeadlyUtility\GuideGridForm.Designer.cs">
+    <Compile Include="DeadlyNotification\GuideGridForm.Designer.cs">
       <DependentUpon>GuideGridForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DeadlyOverlay\ImageOverlayFormMap.cs">
@@ -397,7 +397,7 @@
     <EmbeddedResource Include="ControlForm.resx">
       <DependentUpon>ControlForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DeadlyUtility\GuideGridForm.resx">
+    <EmbeddedResource Include="DeadlyNotification\GuideGridForm.resx">
       <DependentUpon>GuideGridForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyOverlay\ImageOverlayFormMap.resx">

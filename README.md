@@ -27,6 +27,21 @@
 
 [![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTNfMTUx/MDAxNTgxNTMwNTg1Mzc3.FFWw_SfHrU1IaNDnGArMz2uy7QCnoR5IAdsAZxWcjC4g.uhQyyNZe9y2sch0qBdNNUqMEjbVv2F19udQvLxiDaN4g.PNG.eocsdev2/image.png?type=w773)](https://youtu.be/CC-UjKUfOpY)
 
+### Trade Notification
+Provide clipboard parsing when Kakao user buying that can be useful for kakao user. Find item by position function can be useful for who struggle with other languages message not Eng. Also deadlytrade can parse and pop panel when trade whisper by ggg user even if kakao user set default trade message language to Korean.
+
+![TradeNotification](https://media.discordapp.net/attachments/676442578505433090/688032178784698383/8d50885a-6081-4726-b548-fb01f12ea2c9.png?width=616&height=467)
+
+![TradeNotification](https://media.discordapp.net/attachments/676442578505433090/688041387266015259/unknown.png)
+
+![TradeNotification](https://media.discordapp.net/attachments/676442578505433090/688032227560390669/db1773de-42c6-4d9a-8118-c5a1ce91b836.png?width=618&height=467)
+
+![TradeNotification](https://media.discordapp.net/attachments/676442578505433090/688030454514843652/88d1c9bf-a5a5-4a46-8533-3a625924a689.png?width=432&height=467)
+
+![TradeNotification](https://media.discordapp.net/attachments/676442578505433090/688030528984842260/322513ae-e413-4cea-a1d5-f19640a022ca.png?width=432&height=467)
+
+![TradeNotification](https://media.discordapp.net/attachments/676442578505433090/688031237700321295/unknown.png?width=495&height=468)
+
 ### Atlas Overlay new feature added.
 [![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTNfNjUg/MDAxNTgxNTMwNjk1NDA0.02lfDR79X4qIkEL-rzAjZK0gMqIHrTsLRXRf0b3SpMEg.Qmkzb9Lg9pqZzKNYHKKgUDGGe24OBgMlKh2w301JlA0g.PNG.eocsdev2/2020_0213_002.png?type=w773)](https://youtu.be/MVxWsaGGbGA)
 
@@ -37,17 +52,10 @@
 [![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTNfODkg/MDAxNTgxNTM1MTg3MTI2.9VteEcqMrnmpsN2lPggXszyHB5SdaE04PuO443My274g.f0U6wti9o1BGF3anb43FYXDWArZx-49GEHWX-i5gng0g.PNG.eocsdev2/2020_0213_004.png?type=w773)](https://youtu.be/M1R05mVXYcY)
 
 ### Annoint information rework.
-[![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTZfMjMz/MDAxNTgxODM2ODM0NjIw.N5QQ5PPvb3vxfnzo1Kr2qo1kQrlSAB5AZi5URhSReusg.UWWMEqG0oZR_JdV11dDp6Z1nyYOfLm5iJsXN_x3-eXwg.PNG.eocsdev2/2020_0216_006.png?type=w773)](https://youtu.be/2OuqruR_E1Y)
+[![Watch the video](https://media.discordapp.net/attachments/676442578505433090/688034551674830893/9745eaee-2642-495f-8838-66aae05a59b3.png)](https://youtu.be/2OuqruR_E1Y)
 
 ### Better speed.
 [![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTNfMjUx/MDAxNTgxNTM1NjkwMTAz.hYn_oQIDueeeKBnv_JtCI1MSy_a8dsLn8qboFKagrk8g.0vZCPSyojgZJNcz5X-OMfhW345OJ_9MGBjIRfNXsTG8g.PNG.eocsdev2/2020_0213_005.png?type=w773)](https://youtu.be/a5axIiNkzXo)
-
-## Trade Notification
-Provide clipboard parsing when Kakao user buying that can be useful for kakao user. Find item by position function can be useful for who struggle with other languages message not Eng. Also deadlytrade can parse and pop panel when trade whisper by ggg user even if kakao user set default trade message language to Korean.
-
-![TradeNotification](https://postfiles.pstatic.net/MjAyMDAyMTZfNjgg/MDAxNTgxODQzNTgyMzcx.AOTOUVAL9Yr0q-1j0VUgAU3p7rVq2toqgIrVGl7t47Ag._dK9znT8e5Fzi_mvWSonKsqtd7wkHiwxeV5okMPFI0Ag.PNG.eocsdev2/2020_0216_004.png?type=w773)
-
-![TradeNotification](https://postfiles.pstatic.net/MjAyMDAyMTdfODUg/MDAxNTgxODcwODA4ODE5.1PWAwkD2ppat2X7vbkwyNStOnB46bvAxaDurY2MlvZYg.v1QdLM5hk5guQnM_tqAlv-3Y5sw3_C3OYTnsIE7YFEsg.PNG.eocsdev2/%EC%9D%B4%EB%AF%B8%EC%A7%80_005_-_%EB%B3%B5%EC%82%AC%EB%B3%B8.png?type=w773)
 
 ## Settings
 ![](DeadlyCrush_Setting.gif)

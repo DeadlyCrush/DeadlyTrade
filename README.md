@@ -5,12 +5,12 @@
 [![Dev Azure Pipeline](https://dev.azure.com/DeadlyCrush/DeadlyTrade/_apis/build/status/DeadlyCrush.DeadlyTrade?branchName=master)](https://dev.azure.com/DeadlyCrush/DeadlyTrade/_build/latest?definitionId=1&branchName=master)
 [![NetFrameWork.Legacy.CI](https://github.com/DeadlyCrush/DeadlyTrade/workflows/NetFrameWork.Legacy.CI/badge.svg?branch=master)](https://github.com/DeadlyCrush/DeadlyTrade/actions)
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release)](https://github.com/DeadlyCrush/DeadlyTrade/releases) ![GitHub Releases](https://img.shields.io/github/downloads/deadlycrush/deadlytrade/latest/total) [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)]() [![Github All Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]()
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release)](https://github.com/DeadlyCrush/DeadlyTrade/releases) ![GitHub Releases](https://img.shields.io/github/downloads/deadlycrush/deadlytrade/latest/total) [![Github Overhaul Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade/total.svg)](https://github.com/DeadlyCrush/DeadlyTrade/releases) [![Github Previous Releases](https://img.shields.io/github/downloads/DeadlyCrush/DeadlyTrade-Closed-Overhaul-Version-Open/total.svg)]() ![Github Last Commit DateTime](https://badgen.net/github/last-commit/deadlycrush/deadlytrade) 
 
 ## Installation
 | Download | Latest |
 | ------ | ------ |
-| Download latest rlelease and unzip. It is portable. | [![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release)](https://github.com/DeadlyCrush/DeadlyTrade/releases) |
+| Download latest release and unzip. It is portable. | [![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release)](https://github.com/DeadlyCrush/DeadlyTrade/releases) |
 |Checking & Update Automatically when Launch. |Update notice panel is shown when update available.|
 
 ## Languages
@@ -20,8 +20,10 @@
 
 # DeadlyTrade Main Features and Useful Functions.
 
+* Please check detailed Explanation in POE Forum : https://www.pathofexile.com/forum/view-thread/2785386
+
 ### Main HUD rework.
-![Main HUD](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FnEVUM%2FbtqB10JTI9i%2FJhmAdkoH4eelxJOJk7QJ81%2Fimg.jpg)
+![Main HUD](https://cdn.discordapp.com/attachments/676421822882775042/688027459622535233/new_main_hud_v3.jpg)
 
 [![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTNfMTUx/MDAxNTgxNTMwNTg1Mzc3.FFWw_SfHrU1IaNDnGArMz2uy7QCnoR5IAdsAZxWcjC4g.uhQyyNZe9y2sch0qBdNNUqMEjbVv2F19udQvLxiDaN4g.PNG.eocsdev2/image.png?type=w773)](https://youtu.be/CC-UjKUfOpY)
 
@@ -63,21 +65,23 @@ Provide clipboard parsing when Kakao user buying that can be useful for kakao us
 ![Overlay](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fc2upZ5%2FbtqCaf02ZbF%2F3t5mrMjThEiZE5KnOtAtA0%2Fimg.png)
 
 ## Misc.
-Find Item by Position (Left, Top)
+- CTRL+MOUSE WHEEL : Moving stash tab by Ctrl+Mouse Wheel
 
-![Misc](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdCllsC%2FbtqB7PJtr4y%2FF53jA7idpiFwZnBwz1knRk%2Fimg.jpg)
+- Find Item by Position (Left, Top)
 
-Monster Remaining.
+- ![Misc](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdCllsC%2FbtqB7PJtr4y%2FF53jA7idpiFwZnBwz1knRk%2Fimg.jpg)
 
-![Misc](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2F7OBIQ%2FbtqB7OjvPG2%2F5xpH4WtipqeEdDjU4mAU40%2Fimg.png)
+- Monster Remaining.
 
-Someone entered.  ( hideout )
+- ![Misc](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2F7OBIQ%2FbtqB7OjvPG2%2F5xpH4WtipqeEdDjU4mAU40%2Fimg.png)
 
-![Misc](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FNJRse%2FbtqB7NY8zH2%2FvI890WrOkKDfJ13YO0mEa1%2Fimg.png)
+- Someone entered.  ( hideout )
 
-POE Command
+- ![Misc](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FNJRse%2FbtqB7NY8zH2%2FvI890WrOkKDfJ13YO0mEa1%2Fimg.png)
 
-![Misc](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FQAy58%2FbtqB8bMh0s9%2FAkVqjNMa4mvUpcKOBI6qx1%2Fimg.png)
+- POE Command
+
+- ![Misc](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FQAy58%2FbtqB8bMh0s9%2FAkVqjNMa4mvUpcKOBI6qx1%2Fimg.png)
 
 ## Default Hot Keys (Can change in Settings)
 - Hideout : F5
@@ -99,6 +103,11 @@ You can disable any feature you don’t want to use while launching the add-on a
 - POEExileDirection coverted to DeadlyTrade in new empty Project 1year ago.
 - MercuryTrdae(Exslims) All Korean UI&Functions Version Jun,2019 until Exslims no longer maintain officially.
 
+### Behind...
+It started from inspired Mercurytrade when I made and share Korean version of Mecurytrade. Addon name 'DeadlyTrade' also  inspired by 'MercuryTrade' including my respect to great exslims mercury trade. But All of my add-ons including this, DeadlyTrade, started empty handed, completely on my own and It comply with ggg's TOS.
+
+I released DeadlyTrade beta version After the Mid-June, 2019 official launch of Kakao client. I forked and made Mercury Trade KOR version with Korean UI and every functions for Korean user and shared until great Exslims no longer maintain officially. I managed MercuryTrade KOR and Improving DeadlyTrade 0.1.0.1 over and over. And I prepared overhaul version after Exslim said officially that he will does not maintain.
+
 ## Join our community & Welcome Contributors
 
 Welcome
@@ -106,6 +115,12 @@ Welcome
 [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/Gd7MjCz) [![Discord](https://img.shields.io/discord/463752820026376202.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/Gd7MjCz) ![Discord](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Total&prefix=%20&query=approximate_member_count&suffix=%20users&url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FryjUA7r%3Fwith_counts%3Dtrue) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://github.com/DeadlyCrush/DeadlyTrade/blob/master/CODE_OF_CONDUCT.md) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/DeadlyCrush/DeadlyTrade/blob/master/LICENSE)
 
 All Exile~ and Developers.
+
+## Let me know Any Bug, Any Suggestion
+[![Github Open Issues](https://badgen.net/github/open-issues/deadlycrush/deadlytrade)](https://github.com/DeadlyCrush/DeadlyTrade/issues) [![Github Open Issues](https://badgen.net/github/closed-issues/deadlycrush/deadlytrade)](https://github.com/DeadlyCrush/DeadlyTrade/issues?q=is%3Aissue+is%3Aclosed)
+### Issue Tracking
+- Added Zap auto trigger that pulling new github issue to our Jira agile board for effective maintenance.
+![Zap Trigger](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbH8ukx%2FbtqCynLFLXD%2FJJcZWMGMZ1aUcK5MmWQCwK%2Fimg.png)
 
 ## Special Thanks to
 - Since the Korean launch of Path Of Exile, Localizing existing add-on programs affected me in many aspects. 
@@ -147,7 +162,7 @@ DeadlyTrade / Deadly KOR Team >
 
 ## Download Status (Real-Time)
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release)](https://github.com/DeadlyCrush/DeadlyTrade/releases) ![GitHub Releases](https://img.shields.io/github/downloads/deadlycrush/deadlytrade/latest/total) ![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/deadlycrush/deadlytrade/latest?include_prereleases)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release)](https://github.com/DeadlyCrush/DeadlyTrade/releases) ![GitHub Releases](https://img.shields.io/github/downloads/deadlycrush/deadlytrade/latest/total) ![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/deadlycrush/deadlytrade/latest?include_prereleases) ![Github Last Commit DateTime](https://badgen.net/github/last-commit/deadlycrush/deadlytrade)
 
 | DeadlyTrade Repository. | Download |
 | ------ | ------ |

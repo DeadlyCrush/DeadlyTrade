@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("DeadlyTrade Overhaul")]
 [assembly: AssemblyDescription("Path Of Exile Total Addon")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("https://www.jumpleasure.me/deadlytrade - DeadlyCrush [Deadly KOR]")]
+[assembly: AssemblyCompany("https://github.com/DeadlyCrush/DeadlyTrade - DeadlyCrush [Deadly KOR]")]
 [assembly: AssemblyProduct("DeadlyCrush's Path Of Exile All-In-On Addon (Goal)")]
 [assembly: AssemblyCopyright("Copyright ©  2019 Jumpleasure Soft by DeadlyCrush [Deadly KOR]")]
 [assembly: AssemblyTrademark("DeadlyTrade KOR")]

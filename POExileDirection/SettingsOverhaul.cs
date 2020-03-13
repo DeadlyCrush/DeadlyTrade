@@ -86,6 +86,8 @@ namespace POExileDirection
             TopMost = true;
             ShowInTaskbar = false;
 
+            webBrowser1.ScriptErrorsSuppressed = true;
+
             timer1.Start();
 
             Thread.Sleep(300);
@@ -597,14 +599,15 @@ namespace POExileDirection
         {
             try
             {
-                string strFilePath = String.Format("{0}\\{1}", Application.StartupPath, "HELP.md");
-                string strMDText = String.Empty;
-                if (File.Exists(strFilePath))
-                {
-                    strMDText = File.ReadAllText(strFilePath);
-                    var htmlCode = Markdig.Markdown.ToHtml(strMDText);
-                    webBrowser1.DocumentText = htmlCode;
-                }
+                //string strFilePath = String.Format("{0}\\{1}", Application.StartupPath, "HELP.md");
+                //string strMDText = String.Empty;
+                //if (File.Exists(strFilePath))
+                //{
+                //    strMDText = File.ReadAllText(strFilePath);
+                //    var htmlCode = Markdig.Markdown.ToHtml(strMDText);
+                //    webBrowser1.DocumentText = htmlCode;
+                //}
+                webBrowser1.Navigate("https://www.jumpleasure.me/deadlytrade/?lang=en");
             }
             catch (Exception ex)
             {
@@ -1509,34 +1512,6 @@ namespace POExileDirection
             btnCancelTab5.DialogResult = DialogResult.Cancel;
             Close();
         }
-        private void btnSaveTab6_Click(object sender, EventArgs e)
-        {
-            DisposeGarbage();
-
-            SetAllTabsValues();
-            btnCancelTab6.DialogResult = DialogResult.OK;
-            Close();
-        }
-        private void btnCancelTab6_Click(object sender, EventArgs e)
-        {
-            DisposeGarbage();
-            btnCancelTab6.DialogResult = DialogResult.Cancel;
-            Close();
-        }
-        private void btnSaveTab7_Click(object sender, EventArgs e)
-        {
-            DisposeGarbage();
-
-            SetAllTabsValues();
-            btnCancelTab7.DialogResult = DialogResult.OK;
-            Close();
-        }
-        private void btnCancelTab7_Click(object sender, EventArgs e)
-        {
-            DisposeGarbage();
-            btnCancelTab7.DialogResult = DialogResult.Cancel;
-            Close();
-        }
         #endregion
 
         #region [[[[[ Overlay Image Check State Changed - Default / Custom ]]]]]
@@ -2261,6 +2236,30 @@ namespace POExileDirection
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/DeadlyCrush/DeadlyTrade");
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            // ENG
+            System.Diagnostics.Process.Start("https://discord.gg/Gd7MjCz");
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            // KOR
+            System.Diagnostics.Process.Start("https://discord.gg/ryjUA7r");
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            DisposeGarbage();
+            Close();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            DisposeGarbage();
+            Close();
         }
     }
 }

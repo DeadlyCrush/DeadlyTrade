@@ -209,4 +209,4 @@ D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\Markdig.pdb
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\Markdig.xml
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.LoginForm.resources
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.FossilForm.resources
-D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.DeadlyNotification.TradeHistory.resources
+D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.TradeHistory.resources

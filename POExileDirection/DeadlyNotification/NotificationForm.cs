@@ -542,7 +542,12 @@ namespace POExileDirection
             if (bFoundCurrencyImage)
                 btnCurrency.Text = "";
             else
-                btnCurrency.Text = strCurreny.Substring(0,1);
+            {
+                if (!String.IsNullOrEmpty(strCurreny))
+                    btnCurrency.Text = strCurreny.Substring(0, 1);
+                else
+                    btnCurrency.Text = "";
+            }
             #endregion
 
             try
@@ -783,7 +788,7 @@ namespace POExileDirection
             }
             else
             {
-                Height = 113;
+                Height = 120;
                 bIsMinimized = false;
             }
         }

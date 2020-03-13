@@ -17,17 +17,17 @@ namespace POExileDirection
 {
     public enum LEAGUE_STRING
     {
-        //[Description("Metamorph")]
-        //LEAGUE_CURRENT,
-
         [Description("Standard")]
         LEAGUE_STANDARD,
 
-        //[Description("Hardcore Metamorph")]
-        //LEAGUE_HDCORE_CURRENT,
-
         [Description("Hardcore")]
         LEAGUE_HDCORE_STANDARD,
+
+        [Description("Delirium")]
+        LEAGUE_CURRENT,
+
+        [Description("Hardcore Delirium")]
+        LEAGUE_HDCORE_CURRENT,       
     };
 
     public static class LEAGUE_STRINGExtensions

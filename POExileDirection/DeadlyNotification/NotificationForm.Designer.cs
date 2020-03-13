@@ -615,7 +615,7 @@
             this.btnCurrency.Location = new System.Drawing.Point(308, 3);
             this.btnCurrency.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCurrency.Name = "btnCurrency";
-            this.btnCurrency.Size = new System.Drawing.Size(20, 25);
+            this.btnCurrency.Size = new System.Drawing.Size(20, 20);
             this.btnCurrency.TabIndex = 1;
             this.btnCurrency.Text = "?";
             this.btnCurrency.UseVisualStyleBackColor = false;

@@ -100,11 +100,13 @@ namespace POExileDirection
             if (_bHolderCollapse)
             {
                 panelHolder.Height = 28;
+                Height = panelHolder.Height;
                 btnPanelArrow.Image = Properties.Resources.PanelHolderArrow_dwon;
             }
             else
             {
-                panelHolder.Height = this.Height - 121;
+                panelHolder.Height = panelNOTIFICATION.Controls.Count * 121;
+                Height = panelHolder.Height;
                 btnPanelArrow.Image = Properties.Resources.PanelHolderArrow_up;
             }
 

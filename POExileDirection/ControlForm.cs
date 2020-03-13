@@ -1078,7 +1078,7 @@ namespace POExileDirection
 
             try
             {
-                g_LogFilePath = parser.GetSetting("DIRECTIONHELPER", "POELOGPATH"); ;
+                g_LogFilePath = LauncherForm.g_POELogPath;
                 /*
                 [LOCATION]
                 LEFT=1385

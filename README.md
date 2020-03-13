@@ -13,17 +13,6 @@
 | Download latest release and unzip. It is portable. | [![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release)](https://github.com/DeadlyCrush/DeadlyTrade/releases) |
 |Checking & Update Automatically when Launch. |Update notice panel is shown when update available.|
 
-## Release Schedule 1.4.0.1/1.4.0.2
-
-### 1st Update 1.4.0.1 : 
-- rework (Trade Notification, ChatScan, Settings, UI) + a few new useful features. + bug fix. + stablized.
-
-- 2020.03.10~2020.03.11 (local time in Korea)
-### 2nd Update 1.4.0.2 :
-- Add price check related main features like trademacro and currenycop.
-
-- 2020.03.13~2020.03.14 (local time in Korea)
-
 ## Languages
 * [C#, .Net Core/Web] - Front End, Web API
 * [Cli] - Interop, Core API
@@ -31,8 +20,10 @@
 
 # DeadlyTrade Main Features and Useful Functions.
 
+* Please check detailed Explanation in POE Forum : https://www.pathofexile.com/forum/view-thread/2785386
+
 ### Main HUD rework.
-![Main HUD](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FnEVUM%2FbtqB10JTI9i%2FJhmAdkoH4eelxJOJk7QJ81%2Fimg.jpg)
+![Main HUD](https://cdn.discordapp.com/attachments/676421822882775042/688027459622535233/new_main_hud_v3.jpg)
 
 [![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTNfMTUx/MDAxNTgxNTMwNTg1Mzc3.FFWw_SfHrU1IaNDnGArMz2uy7QCnoR5IAdsAZxWcjC4g.uhQyyNZe9y2sch0qBdNNUqMEjbVv2F19udQvLxiDaN4g.PNG.eocsdev2/image.png?type=w773)](https://youtu.be/CC-UjKUfOpY)
 

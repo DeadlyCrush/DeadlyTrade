@@ -28,143 +28,128 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LaunchedOverlayIMAGEForm));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnZoomOut = new System.Windows.Forms.Button();
-            this.btnZoomIn = new System.Windows.Forms.Button();
+            this.panelTop = new System.Windows.Forms.Panel();
+            this.btnZoomout = new System.Windows.Forms.Button();
+            this.btnZoomin = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.labelTitle = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBoxOverlay = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOverlay)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelTop
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btnZoomOut);
-            this.panel1.Controls.Add(this.btnZoomIn);
-            this.panel1.Controls.Add(this.btnClose);
-            this.panel1.Controls.Add(this.labelTitle);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Font = new System.Drawing.Font("Arial", 9F);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(920, 17);
-            this.panel1.TabIndex = 1;
-            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
-            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
-            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
+            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.panelTop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelTop.Controls.Add(this.btnZoomout);
+            this.panelTop.Controls.Add(this.btnZoomin);
+            this.panelTop.Controls.Add(this.btnClose);
+            this.panelTop.Controls.Add(this.label2);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(445, 20);
+            this.panelTop.TabIndex = 6;
+            this.panelTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panelTop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panelTop.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
-            // btnZoomOut
+            // btnZoomout
             // 
-            this.btnZoomOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnZoomOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnZoomOut.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnZoomOut.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnZoomOut.FlatAppearance.BorderSize = 0;
-            this.btnZoomOut.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
-            this.btnZoomOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            this.btnZoomOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
-            this.btnZoomOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZoomOut.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnZoomOut.Image = ((System.Drawing.Image)(resources.GetObject("btnZoomOut.Image")));
-            this.btnZoomOut.Location = new System.Drawing.Point(864, 0);
-            this.btnZoomOut.MaximumSize = new System.Drawing.Size(920, 455);
-            this.btnZoomOut.Name = "btnZoomOut";
-            this.btnZoomOut.Size = new System.Drawing.Size(18, 15);
-            this.btnZoomOut.TabIndex = 16;
-            this.btnZoomOut.UseVisualStyleBackColor = true;
-            this.btnZoomOut.Click += new System.EventHandler(this.btnZoomOut_Click);
+            this.btnZoomout.BackColor = System.Drawing.Color.Transparent;
+            this.btnZoomout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnZoomout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnZoomout.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnZoomout.FlatAppearance.BorderSize = 0;
+            this.btnZoomout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnZoomout.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnZoomout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnZoomout.Location = new System.Drawing.Point(392, 0);
+            this.btnZoomout.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnZoomout.Name = "btnZoomout";
+            this.btnZoomout.Size = new System.Drawing.Size(17, 18);
+            this.btnZoomout.TabIndex = 11;
+            this.btnZoomout.Text = "-";
+            this.btnZoomout.UseVisualStyleBackColor = false;
             // 
-            // btnZoomIn
+            // btnZoomin
             // 
-            this.btnZoomIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnZoomIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnZoomIn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnZoomIn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnZoomIn.FlatAppearance.BorderSize = 0;
-            this.btnZoomIn.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
-            this.btnZoomIn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            this.btnZoomIn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
-            this.btnZoomIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZoomIn.Image = ((System.Drawing.Image)(resources.GetObject("btnZoomIn.Image")));
-            this.btnZoomIn.Location = new System.Drawing.Point(882, 0);
-            this.btnZoomIn.Name = "btnZoomIn";
-            this.btnZoomIn.Size = new System.Drawing.Size(18, 15);
-            this.btnZoomIn.TabIndex = 15;
-            this.btnZoomIn.UseVisualStyleBackColor = true;
-            this.btnZoomIn.Click += new System.EventHandler(this.btnZoomIn_Click);
+            this.btnZoomin.BackColor = System.Drawing.Color.Transparent;
+            this.btnZoomin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnZoomin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnZoomin.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnZoomin.FlatAppearance.BorderSize = 0;
+            this.btnZoomin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnZoomin.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnZoomin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnZoomin.Location = new System.Drawing.Point(409, 0);
+            this.btnZoomin.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnZoomin.Name = "btnZoomin";
+            this.btnZoomin.Size = new System.Drawing.Size(17, 18);
+            this.btnZoomin.TabIndex = 10;
+            this.btnZoomin.Text = "+";
+            this.btnZoomin.UseVisualStyleBackColor = false;
             // 
             // btnClose
             // 
-            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
-            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Image = global::POExileDirection.Properties.Resources.SysClose_39_44_56_17px;
-            this.btnClose.Location = new System.Drawing.Point(900, 0);
+            this.btnClose.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnClose.Location = new System.Drawing.Point(426, 0);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(18, 15);
-            this.btnClose.TabIndex = 14;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnClose.Size = new System.Drawing.Size(17, 18);
+            this.btnClose.TabIndex = 9;
+            this.btnClose.Text = "x";
+            this.btnClose.UseVisualStyleBackColor = false;
             // 
-            // labelTitle
+            // label2
             // 
-            this.labelTitle.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelTitle.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.labelTitle.Location = new System.Drawing.Point(0, 0);
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(359, 15);
-            this.labelTitle.TabIndex = 1;
-            this.labelTitle.Text = "DeadlyTrade Overlay Labyrinth ::  from POE LAB";
-            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
-            this.labelTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
-            this.labelTitle.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(386, 18);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Labyrinth information. (POE Lab)";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.label2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.label2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
-            // panel2
+            // pictureBox1
             // 
-            this.panel2.Controls.Add(this.pictureBoxOverlay);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 17);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(920, 438);
-            this.panel2.TabIndex = 2;
-            // 
-            // pictureBoxOverlay
-            // 
-            this.pictureBoxOverlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxOverlay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBoxOverlay.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxOverlay.Name = "pictureBoxOverlay";
-            this.pictureBoxOverlay.Size = new System.Drawing.Size(920, 438);
-            this.pictureBoxOverlay.TabIndex = 1;
-            this.pictureBoxOverlay.TabStop = false;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(445, 170);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // LaunchedOverlayIMAGEForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(64)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(920, 455);
+            this.ClientSize = new System.Drawing.Size(445, 190);
             this.ControlBox = false;
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panelTop);
+            this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(920, 455);
+            this.MaximumSize = new System.Drawing.Size(920, 569);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(240, 119);
+            this.MinimumSize = new System.Drawing.Size(240, 149);
             this.Name = "LaunchedOverlayIMAGEForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
@@ -172,20 +157,19 @@
             this.Text = "LaunchedOverlayIMAGEForm";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.LaunchedOverlayIMAGEForm_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOverlay)).EndInit();
+            this.panelTop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label labelTitle;
-        private System.Windows.Forms.Button btnZoomOut;
-        private System.Windows.Forms.Button btnZoomIn;
+
+        private System.Windows.Forms.Panel panelTop;
+        private System.Windows.Forms.Button btnZoomout;
+        private System.Windows.Forms.Button btnZoomin;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBoxOverlay; 
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

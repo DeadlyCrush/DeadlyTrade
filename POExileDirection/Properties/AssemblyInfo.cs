@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("DeadlyTrade Overhaul")]
 [assembly: AssemblyDescription("Path Of Exile Total Addon")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("https://www.jumpleasure.me/deadlytrade - DeadlyCrush [Deadly KOR]")]
+[assembly: AssemblyCompany("https://github.com/DeadlyCrush/DeadlyTrade - DeadlyCrush [Deadly KOR]")]
 [assembly: AssemblyProduct("DeadlyCrush's Path Of Exile All-In-On Addon (Goal)")]
 [assembly: AssemblyCopyright("Copyright ©  2019 Jumpleasure Soft by DeadlyCrush [Deadly KOR]")]
 [assembly: AssemblyTrademark("DeadlyTrade KOR")]
@@ -33,7 +33,7 @@ using System.Runtime.InteropServices;
 // 모든 값을 지정하거나 아래와 같이 '*'를 사용하여 빌드 번호 및 수정 번호를
 // 기본값으로 할 수 있습니다.
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.4.0.0")]
-[assembly: AssemblyFileVersion("1.4.0.0")]
+[assembly: AssemblyVersion("1.4.0.1")]
+[assembly: AssemblyFileVersion("1.4.0.1")]
 [assembly: log4net.Config.XmlConfigurator(ConfigFile = "log4net.config", Watch = true)]
 [assembly: NeutralResourcesLanguage("en")]

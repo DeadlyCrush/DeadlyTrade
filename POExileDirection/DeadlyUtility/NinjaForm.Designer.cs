@@ -206,9 +206,7 @@
             this.cbLeague.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbLeague.FormattingEnabled = true;
             this.cbLeague.Items.AddRange(new object[] {
-            "Metamorph",
             "Standard",
-            "Hardcore Metamorph",
             "Hardcore"});
             this.cbLeague.Location = new System.Drawing.Point(10, 53);
             this.cbLeague.Name = "cbLeague";

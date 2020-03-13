@@ -5,3 +5,21 @@ dotnet_diagnostic.IDE0055.severity = none
 
 # CA2211: 비상수 필드는 표시할 수 없습니다.
 dotnet_diagnostic.CA2211.severity = suggestion
+
+# IDE1006: 명명 스타일
+dotnet_diagnostic.IDE1006.severity = none
+
+# CA1707: 식별자에는 밑줄을 사용할 수 없습니다.
+dotnet_diagnostic.CA1707.severity = none
+
+# CA1031: 일반적인 예외 형식을 catch하지 마세요.
+dotnet_diagnostic.CA1031.severity = none
+
+# CA1305: IFormatProvider를 지정하세요.
+dotnet_diagnostic.CA1305.severity = none
+
+# CA1303: 리터럴을 지역화된 매개 변수로 전달하지 마십시오.
+dotnet_diagnostic.CA1303.severity = none
+
+# CA1304: CultureInfo를 지정하세요.
+dotnet_diagnostic.CA1304.severity = none

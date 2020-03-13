@@ -58,6 +58,8 @@ namespace POExileDirection
         public static DateTime _dtLogin { get; set; }
         public static SqlConnection _sqlcon { get; set; }
 
+        public static Rectangle[,] g_arrayRect1x1 = new Rectangle[12, 12];
+
         #region [[[[[ Pre-Check :: MOUSE WHEEL and HOT KEYS ]]]]]
         public static string g_strYNMouseWheelStashTab { get; set; } // Added 1.3.9.6 Ver.
         public static string g_strYNUseEmergencyHOTKEY { get; set; }
@@ -67,6 +69,14 @@ namespace POExileDirection
         public static string g_strYNUseHideoutHOTKEY { get; set; }
         public static string g_strYNUseIncursionALVAHOTKEY { get; set; }
         public static string g_strYNUseAtlasZANAHOTKEY { get; set; }
+        public static string g_strYNUseHOTKEYInvite { get; set; }
+        public static string g_strYNUseHOTKEYTrade { get; set; }
+        public static string g_strYNUseHOTKEYKick { get; set; }
+        public static string g_strYNUseHOTKEYMinimize { get; set; }
+        public static string g_strYNUseHOTKEYClose { get; set; }
+        public static string g_strYNUseHOTKEYSold { get; set; }
+        public static string g_strYNUseHOTKEYWait { get; set; }
+        public static string g_strYNUseHOTKEYThx { get; set; }
         #endregion
 
         #region ⨌⨌ for FLASK TIMER ⨌⨌
@@ -88,11 +98,7 @@ namespace POExileDirection
         public static bool g_bToggle4 { get; set; }
         public static bool g_bToggle5 { get; set; }
 
-        public static string g_strTimerSound1 { get; set; }
-        public static string g_strTimerSound2 { get; set; }
-        public static string g_strTimerSound3 { get; set; }
-        public static string g_strTimerSound4 { get; set; }
-        public static string g_strTimerSound5 { get; set; }
+        public static string g_strTimerSound1 { get; set; }       
         #endregion
 
         #region ⨌⨌ for SKILL TIMER ⨌⨌
@@ -226,6 +232,17 @@ namespace POExileDirection
         public static string g_strCUSTOM1 { get; set; }
         public static string g_strCUSTOM2 { get; set; }
         public static string g_strCUSTOM3 { get; set; }
+        public static string g_strCUSTOM4 { get; set; }
+
+        public static string g_strnotiWAITbtnTITLE { get; set; }
+        public static string g_strnotiSOLDbtnTITLE { get; set; }
+        public static string g_strnotiDONEbtnTITLE { get; set; }
+        public static string g_strCUSTOM1btnTITLE { get; set; }
+        public static string g_strCUSTOM2btnTITLE { get; set; }
+        public static string g_strCUSTOM3btnTITLE { get; set; }
+        public static string g_strCUSTOM4btnTITLE { get; set; }
+
+        public static string g_strNotificationSoundYN { get; set; }
         #endregion
 
         public static IntPtr g_handlePathOfExile { get; set; }
@@ -248,9 +265,37 @@ namespace POExileDirection
         #region [[[[[ Global Variables ]]]]]
         public static string g_strMyNickName { get; set; }
         public static string g_strTRAutoKick { get; set; }
+        public static string g_strTRAutoKickWait { get; set; }
+        public static string g_strTRAutoKickSold { get; set; }
         public static string g_strTRAutoKickCustom1 { get; set; }
         public static string g_strTRAutoKickCustom2 { get; set; }
         public static string g_strTRAutoKickCustom3 { get; set; }
+        public static string g_strTRAutoKickCustom4 { get; set; }
+
+        public static string g_strTRAutoCloseThx { get; set; }
+        public static string g_strTRAutoCloseWait { get; set; }
+        public static string g_strTRAutoCloseSold { get; set; }
+        public static string g_strTRAutoCloseCustom1 { get; set; }
+        public static string g_strTRAutoCloseCustom2 { get; set; }
+        public static string g_strTRAutoCloseCustom3 { get; set; }
+        public static string g_strTRAutoCloseCustom4 { get; set; }
+
+        public static string g_strTRADECheckYNThx { get; set; }
+        public static string g_strTRADECheckYNWait { get; set; }
+        public static string g_strTRADECheckYNSold { get; set; }
+        public static string g_strTRADECheckYNCustom1 { get; set; }
+        public static string g_strTRADECheckYNCustom2 { get; set; }
+        public static string g_strTRADECheckYNCustom3 { get; set; }
+        public static string g_strTRADECheckYNCustom4 { get; set; }
+
+        public static string g_strINVITECheckYNThx { get; set; }
+        public static string g_strINVITECheckYNWait { get; set; }
+        public static string g_strINVITECheckYNSold { get; set; }
+        public static string g_strINVITECheckYNCustom1 { get; set; }
+        public static string g_strINVITECheckYNCustom2 { get; set; }
+        public static string g_strINVITECheckYNCustom3 { get; set; }
+        public static string g_strINVITECheckYNCustom4 { get; set; }
+
 
         public static int resolution_height { get; set; }
         public static int resolution_width { get; set; }
@@ -282,6 +327,7 @@ namespace POExileDirection
         public static List<string> g_strArrGREENAlert { get; set; }
 
         private DateTime ScrollTick;
+        internal static Screen g_ScreenLocation;
 
         protected override CreateParams CreateParams
         {
@@ -314,7 +360,7 @@ namespace POExileDirection
             catch (Exception ex)
             {
                 ipInfo.Country = "Unknown";
-                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+                //DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
 
             return ipInfo.Country;
@@ -546,38 +592,10 @@ namespace POExileDirection
 
             GetPOE_IngameUserOption();
 
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (resolution_width < 1920 && resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (resolution_width < 1600 && resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
-            IniParser parser = new IniParser(strINIPath);
-
-
             btnLauncherLogin_Click(this, new EventArgs());
             //TEST TTTTTTT
             // TTTTT panelWaiting.Visible = false;
             // TTTTT Get_NinjaData();
-        }
-
-        private void Check_Authentication()
-        {
-            DeadlyLog4Net._log.Info("Check_Authentication  : " + _strIPAddress + _strMacAddress);
-
-            panelLogin.Left = 5;
-            panelLogin.Top = 6;
-            panelLogin.Width = 548;
-            panelLogin.Height = 536;
-            panelLogin.Visible = true;
-            panelLogin.BringToFront();
         }
 
         private void LauncherForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -610,28 +628,28 @@ namespace POExileDirection
             string strisLogin = String.Empty;
             try
             {
+                dtLoggedIn = DateTime.Now;
                 _strIPAddress = getInternalIP();
                 _strMacAddress = NICMacAddress();
-                strisLogin = DeadlyDBHelper.IsLoggedIn(_sqlcon, _strIPAddress, _strMacAddress);
+                strisLogin = DeadlyDBHelper.IsLoggedInCurrent(_sqlcon, _strIPAddress, _strMacAddress);
 
-                if (strisLogin == "Y")
+                if (strisLogin == "X")
                 {
-                    labelMsg.Text = "Already logged in. Disconnect existing user?";
-                    Check_Authentication();
-                    btnForceLogin.Visible = true;
-                    btnForceLogin.Enabled = true;
+                    DeadlyDBHelper.InsertLoginCurrent(_sqlcon, "Y", _strIPAddress, _strMacAddress, ".", ".", dtLoggedIn);
+                }
+                else if(strisLogin == "N")
+                {
+                    DeadlyDBHelper.UpdateLoginCurrent(_sqlcon, "Y", _strIPAddress, _strMacAddress, dtLoggedIn);
                 }
 
                 //if (checkBoxAutoLogin.Checked)
                 //    SaveLoginInformEncrypt();
 
-                // Insert Action Log.
-                dtLoggedIn = DateTime.Now;
+                // Insert Action Log.                
                 DeadlyDBHelper.InsertLoginStatus(_sqlcon, "Y", _strIPAddress, _strMacAddress, ".", "LOGIN", GetCountryByIPINFO(_strIPAddress), dtLoggedIn, 0);
                 DeadlyLog4Net._log.Info("LOGIN Welcome : " + _strIPAddress + _strMacAddress);
 
                 // Now Check Update available.
-                panelLogin.Visible = false;
                 // AutoUpdater check server's xml.
                 AutoUpdateCheck();
             }
@@ -690,7 +708,6 @@ namespace POExileDirection
             DeadlyLog4Net._log.Info("LOGIN Welcome : " + _strIPAddress + _strMacAddress);
 
             // Now Check Update available.
-            panelLogin.Visible = false;
             // AutoUpdater check server's xml.
             AutoUpdateCheck();
         }
@@ -776,11 +793,11 @@ namespace POExileDirection
 
         public void AutoUpdateCheck()
         {
-            // Waiting Panel : 558, 573
-            this.panelWaiting.Left = 1;
-            this.panelWaiting.Top = 1;
-            this.panelWaiting.Width = 558;
-            this.panelWaiting.Height = 545;
+            // Waiting Panel
+            this.panelWaiting.Left = 0;
+            this.panelWaiting.Top = 0;
+            this.panelWaiting.Width = 556;
+            this.panelWaiting.Height = 416;
             this.panelWaiting.Visible = true;
 
             try
@@ -817,7 +834,7 @@ namespace POExileDirection
 
             // NOTIFY, TRAY
             this.notifyIconDeadlyTrade.BalloonTipTitle = "Deadly Trade";
-            this.notifyIconDeadlyTrade.BalloonTipText = "Deadly Trade Still Working... (이미 실행중입니다.)";
+            this.notifyIconDeadlyTrade.BalloonTipText = "Deadly Trade Still Working...";
             this.notifyIconDeadlyTrade.Text = "DeadlyTrade ::\r\nDouble Click : launcher\r\nRight Click : menu";
             this.notifyIconDeadlyTrade.BalloonTipIcon = ToolTipIcon.Info;
 
@@ -843,7 +860,7 @@ namespace POExileDirection
             xuiFlatProgressBar1.MaxValue = CNT_NINJACATEGORIES; // Make and Update
             xuiFlatProgressBar2.MaxValue = 20;
 
-            labelAddonStatus.Text = "Addon Data (Not loaded yet)";
+            labelAddonStatus.Text = "Add-on Data (Not loaded yet)";
 
             // TOOLTIP
             DeadlyToolTip.SetToolTip(this.btnMinimize, "Minimize.");
@@ -855,7 +872,7 @@ namespace POExileDirection
         private void ReadyToStartAddon()
         {          
             btnStartAddon.Image = Properties.Resources.DeadlyTradeStartYellowButton;
-            DeadlyToolTip.SetToolTip(btnStartAddon, "Start Addon 'Deadly Trade'");
+            DeadlyToolTip.SetToolTip(btnStartAddon, "Start Add-on 'Deadly Trade'");
 
             g_bCanLaunchAddon = true;
         }
@@ -1047,18 +1064,6 @@ namespace POExileDirection
 
             #region ⨌⨌ Parsing ADDON ConfigPath.ini ⨌⨌
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
             DeadlyLog4Net._log.Info($"{MethodBase.GetCurrentMethod().Name} RESOLUTION : " + strINIPath);
 
@@ -1067,28 +1072,42 @@ namespace POExileDirection
                 string strUserChoideLeague = parser.GetSetting("LEAGUE", "USERCHOICE");
                 int nUserChoice = Convert.ToInt32(strUserChoideLeague);
 
-                LEAGUE_STRING enumUerChoice = LEAGUE_STRING.LEAGUE_CURRENT;
+                LEAGUE_STRING enumUerChoice = LEAGUE_STRING.LEAGUE_STANDARD;
                 switch (nUserChoice)
                 {
                     case 0:
-                        enumUerChoice = LEAGUE_STRING.LEAGUE_CURRENT;
-                        break;
-                    case 1:
                         enumUerChoice = LEAGUE_STRING.LEAGUE_STANDARD;
                         break;
-                    case 2:
-                        enumUerChoice = LEAGUE_STRING.LEAGUE_HDCORE_CURRENT;
-                        break;
-                    case 3:
+                    case 1:
                         enumUerChoice = LEAGUE_STRING.LEAGUE_HDCORE_STANDARD;
                         break;
                     default:
-                        enumUerChoice = LEAGUE_STRING.LEAGUE_CURRENT;
+                        enumUerChoice = LEAGUE_STRING.LEAGUE_STANDARD;
                         break;
                 }
 
+                //LEAGUE_STRING enumUerChoice = LEAGUE_STRING.LEAGUE_CURRENT;
+                //switch (nUserChoice)
+                //{
+                //    case 0:
+                //        enumUerChoice = LEAGUE_STRING.LEAGUE_CURRENT;
+                //        break;
+                //    case 1:
+                //        enumUerChoice = LEAGUE_STRING.LEAGUE_STANDARD;
+                //        break;
+                //    case 2:
+                //        enumUerChoice = LEAGUE_STRING.LEAGUE_HDCORE_CURRENT;
+                //        break;
+                //    case 3:
+                //        enumUerChoice = LEAGUE_STRING.LEAGUE_HDCORE_STANDARD;
+                //        break;
+                //    default:
+                //        enumUerChoice = LEAGUE_STRING.LEAGUE_CURRENT;
+                //        break;
+                //}
+
                 g_CurrentLeague = enumUerChoice.ToDescriptionString();
-                labelUserLeague.Text = String.Format("Last Your currecny checked league is '{0}'.", g_CurrentLeague);
+                labelUserLeague.Text = String.Format("Last Your currency checked league is '{0}'.", g_CurrentLeague);
 
                 #region ⨌⨌ GET TIMER SETTING : FLASK, SKILL ⨌⨌
                 // FLASK TIMER
@@ -1135,8 +1154,6 @@ namespace POExileDirection
                 g_SkillTime4 = parser.GetSetting("SKILL", "SKILLTIME4");
                 g_SkillTime5 = parser.GetSetting("SKILL", "SKILLTIME5");
 
-                
-
                 g_SkillTime1 = ConvertoCultureDecimal(g_SkillTime1).ToString();
                 g_SkillTime2 = ConvertoCultureDecimal(g_SkillTime2).ToString();
                 g_SkillTime3 = ConvertoCultureDecimal(g_SkillTime3).ToString();
@@ -1169,8 +1186,40 @@ namespace POExileDirection
                     g_bToggleSkill5 = false;
                 #endregion
 
+                // Check Auto Kick.
                 g_strMyNickName = parser.GetSetting("CHARACTER", "MYNICK");
                 g_strTRAutoKick = parser.GetSetting("CHARACTER", "AUTOKICK");
+                g_strTRAutoKickWait = parser.GetSetting("LOCATIONNOTIFY", "WAIT");
+                g_strTRAutoKickSold = parser.GetSetting("LOCATIONNOTIFY", "SOLD");
+                g_strTRAutoKickCustom1 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOM1");
+                g_strTRAutoKickCustom2 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOM2");
+                g_strTRAutoKickCustom3 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOM3");
+                g_strTRAutoKickCustom4 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOM4");
+
+                g_strTRAutoCloseThx = parser.GetSetting("LOCATIONNOTIFY", "THXCLOSE");
+                g_strTRAutoCloseWait = parser.GetSetting("LOCATIONNOTIFY", "WAITCLOSE");
+                g_strTRAutoCloseSold = parser.GetSetting("LOCATIONNOTIFY", "SOLDCLOSE");
+                g_strTRAutoCloseCustom1 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE1");
+                g_strTRAutoCloseCustom2 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE2");
+                g_strTRAutoCloseCustom3 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE3");
+                g_strTRAutoCloseCustom4 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE4");
+
+                // Check - Trade & Invite
+                g_strTRADECheckYNThx = parser.GetSetting("LOCATIONNOTIFY", "THXCLOSE");
+                g_strTRADECheckYNWait = parser.GetSetting("LOCATIONNOTIFY", "WAITCLOSE");
+                g_strTRADECheckYNSold = parser.GetSetting("LOCATIONNOTIFY", "SOLDCLOSE");
+                g_strTRADECheckYNCustom1 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE1");
+                g_strTRADECheckYNCustom2 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE2");
+                g_strTRADECheckYNCustom3 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE3");
+                g_strTRADECheckYNCustom4 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE4");
+
+                g_strINVITECheckYNThx = parser.GetSetting("LOCATIONNOTIFY", "THXCLOSE");
+                g_strINVITECheckYNWait = parser.GetSetting("LOCATIONNOTIFY", "WAITCLOSE");
+                g_strINVITECheckYNSold = parser.GetSetting("LOCATIONNOTIFY", "SOLDCLOSE");
+                g_strINVITECheckYNCustom1 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE1");
+                g_strINVITECheckYNCustom2 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE2");
+                g_strINVITECheckYNCustom3 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE3");
+                g_strINVITECheckYNCustom4 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE4");
 
                 g_nGridLeft = Convert.ToInt32(parser.GetSetting("LOCATIONGRID", "LEFT"));
                 g_nGridTop = Convert.ToInt32(parser.GetSetting("LOCATIONGRID", "TOP"));
@@ -1229,7 +1278,49 @@ namespace POExileDirection
                     g_strYNUseAtlasZANAHOTKEY = "Y";
                 DeadlyLog4Net._log.Info("checkAtlasZANA : " + g_strYNUseAtlasZANAHOTKEY);
 
-                //TODO : Trade Notification HotKeys.
+                //-------------------------------------------//
+                // HOTKEY USE Y/N - Trade Notification Panel //
+                //-------------------------------------------//
+
+                g_strYNUseHOTKEYInvite = parser.GetSetting("NOTIFYHOTKEY", "INVITE");
+                if (String.IsNullOrEmpty(g_strYNUseHOTKEYInvite))
+                    g_strYNUseHOTKEYInvite = "N";
+                DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYInvite);
+                
+                g_strYNUseHOTKEYTrade = parser.GetSetting("NOTIFYHOTKEY", "TRADE");
+                if (String.IsNullOrEmpty(g_strYNUseHOTKEYTrade))
+                    g_strYNUseHOTKEYTrade = "N";
+                DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYTrade);
+                
+                g_strYNUseHOTKEYKick = parser.GetSetting("NOTIFYHOTKEY", "KICK");
+                if (String.IsNullOrEmpty(g_strYNUseHOTKEYKick))
+                    g_strYNUseHOTKEYKick = "N";
+                DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYKick);
+
+                g_strYNUseHOTKEYMinimize = parser.GetSetting("NOTIFYHOTKEY", "MINIMIZE");
+                if (String.IsNullOrEmpty(g_strYNUseHOTKEYMinimize))
+                    g_strYNUseHOTKEYMinimize = "N";
+                DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYMinimize);
+
+                g_strYNUseHOTKEYClose = parser.GetSetting("NOTIFYHOTKEY", "CLOSE");
+                if (String.IsNullOrEmpty(g_strYNUseHOTKEYClose))
+                    g_strYNUseHOTKEYClose = "N";
+                DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYClose);
+
+                g_strYNUseHOTKEYWait = parser.GetSetting("NOTIFYHOTKEY", "WAIT");
+                if (String.IsNullOrEmpty(g_strYNUseHOTKEYWait))
+                    g_strYNUseHOTKEYWait = "N";
+                DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYWait);
+
+                g_strYNUseHOTKEYSold = parser.GetSetting("NOTIFYHOTKEY", "SOLD");
+                if (String.IsNullOrEmpty(g_strYNUseHOTKEYSold))
+                    g_strYNUseHOTKEYSold = "N";
+                DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYSold);
+
+                g_strYNUseHOTKEYThx = parser.GetSetting("NOTIFYHOTKEY", "THX");
+                if (String.IsNullOrEmpty(g_strYNUseHOTKEYThx))
+                    g_strYNUseHOTKEYThx = "N";
+                DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYThx);
                 #endregion
 
                 #region [[[[[ push pin LOCK, UNLOCK ]]]]]
@@ -1248,40 +1339,20 @@ namespace POExileDirection
 
                 DeadlyFlaskImage.FlaskImageTimerFromINI();
 
-                string strImageNumber = String.Empty;
-                
-                // USE Y/N SOUND 1
-                strImageNumber = parser.GetSetting("MISC", "FLASKSOUND1");
-                if (String.IsNullOrEmpty(strImageNumber))
+                // USE Y/N Sound Alert - Flask Timer, Notification Panel
+                strTemp = parser.GetSetting("LOCATIONNOTIFY", "FLASKTIMERSOUND");
+                if (String.IsNullOrEmpty(strTemp))
                     g_strTimerSound1 = "N";
                 else
-                    g_strTimerSound1 = strImageNumber;
-                // USE Y/N SOUND 2
-                strImageNumber = parser.GetSetting("MISC", "FLASKSOUND2");
-                if (String.IsNullOrEmpty(strImageNumber))
-                    g_strTimerSound2 = "N";
-                else
-                    g_strTimerSound2 = strImageNumber;
-                // USE Y/N SOUND 3
-                strImageNumber = parser.GetSetting("MISC", "FLASKSOUND3");
-                if (String.IsNullOrEmpty(strImageNumber))
-                    g_strTimerSound3 = "N";
-                else
-                    g_strTimerSound3 = strImageNumber;
-                // USE Y/N SOUND 4
-                strImageNumber = parser.GetSetting("MISC", "FLASKSOUND4");
-                if (String.IsNullOrEmpty(strImageNumber))
-                    g_strTimerSound4 = "N";
-                else
-                    g_strTimerSound4 = strImageNumber;
-                // USE Y/N SOUND 5
-                strImageNumber = parser.GetSetting("MISC", "FLASKSOUND2");
-                if (String.IsNullOrEmpty(strImageNumber))
-                    g_strTimerSound5 = "N";
-                else
-                    g_strTimerSound5 = strImageNumber;
+                    g_strTimerSound1 = strTemp;
 
-                // Notify Volume, Flask Volume
+                strTemp = parser.GetSetting("LOCATIONNOTIFY", "NOTIFICATIONSOUND");
+                if (String.IsNullOrEmpty(strTemp))
+                    g_strNotificationSoundYN = "Y";
+                else
+                    g_strNotificationSoundYN = strTemp;
+
+                // Volume - Flask Timer, Notification Panel
                 g_NotifyVolume = Convert.ToInt32(parser.GetSetting("LOCATIONNOTIFY", "VOLUME"));
                 g_FlaskTimerVolume = Convert.ToInt32(parser.GetSetting("LOCATIONNOTIFY", "VOLUMEFLASKTIMER"));
 
@@ -1292,7 +1363,7 @@ namespace POExileDirection
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
 
                 MSGForm frmMSG = new MSGForm();
-                frmMSG.lbMsg.Text = "Can't read conguration. File seems to be corrupt or delete.\r\nPlease Try again.";
+                frmMSG.lbMsg.Text = "Can't read configuration. File seems to be corrupt or delete.\r\nPlease Try again.";
                 DialogResult dr = frmMSG.ShowDialog();
 
                 // Force Terminate Launcher.
@@ -1321,10 +1392,10 @@ namespace POExileDirection
             timerScrolling.Start();
 
             launcherTimer.Start();
-#if !DEBUG
+//#if !DEBUG
             frmNinja = new NinjaForm();
             frmNinja.GetNinJaDataSync();
-#endif
+//#endif
         }
 
         private void LauncherTimer_Tick(object sender, EventArgs e)
@@ -1334,9 +1405,9 @@ namespace POExileDirection
             labelNINJASTATUS.Text = "POE.NINJA Data ("+ g_NinjaUpdatedTime + ")";
 
             xuiFlatProgressBar1.Value = g_NinjaFileMakeAndUpdateCNT;
-#if !DEBUG
+//#if !DEBUG
             if (g_NinjaFileMakeAndUpdateCNT >= CNT_NINJACATEGORIES)
-#endif
+//#endif
             {
                 try
                 {
@@ -1391,7 +1462,12 @@ namespace POExileDirection
             g_handlePathOfExile = InteropCommon.FindWindow("POEWindowClass", "Path of Exile"); // ClassName = POEWindowClass
             // g_handleDeadlyTrade = FindWindow("WindowsForms10.Window.8.app.0.141b42a_r6_ad1", null); // DeadlyTrade CLASSID = "WindowsForms10.Window.8.app.0.141b42a_r6_ad1"
 
-            Thread.Sleep(10);
+            //InteropCommon.GetWindowRect(g_handlePathOfExile, out g_rcPOE);
+            //_rcOLDPOEWinRect = g_rcPOE;
+
+            Thread.Sleep(100);
+            timerCheckFocus.Start();
+
             frmMainControl = new ControlForm();
             frmMainControl.ShowIcon = false;
             frmMainControl.ShowInTaskbar = false;
@@ -1408,10 +1484,10 @@ namespace POExileDirection
             InteropCommon.SetForegroundWindow(g_handlePathOfExile);
         }
 
-#region [[[[[ TimerDetect Tick ]]]]]
+        #region [[[[[ TimerDetect Tick ]]]]]
         private void TimerDetect_Tick(object sender, EventArgs e)
         {
-#region ⨌⨌ Wait for POE Launching ⨌⨌
+            #region ⨌⨌ Wait for POE Launching ⨌⨌
             g_handlePathOfExile = InteropCommon.FindWindow("POEWindowClass", "Path of Exile"); // ClassName = POEWindowClass
             if (g_handlePathOfExile != IntPtr.Zero)
             {
@@ -1476,18 +1552,6 @@ namespace POExileDirection
                     // TTTTTTT // TTTTTTTg_POELogPath = @"D:\DAUM GAMES\PATH OF EXILE\LOGS\TESTCLIENT.TXT"; 
 
                     string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-                    if (resolution_width < 1920 && resolution_height < 1080)
-                    {
-                        strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                        if (resolution_width < 1600 && resolution_height < 1024)
-                            strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                        else if (LauncherForm.resolution_width < 1280)
-                            strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-                    }
-                    else if (resolution_width > 1920)
-                        strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
                     IniParser parser = new IniParser(strINIPath);
                     DeadlyLog4Net._log.Info($"{MethodBase.GetCurrentMethod().Name} RESOLUTION : " + strINIPath);
 
@@ -1504,10 +1568,6 @@ namespace POExileDirection
                     DeadlyFlaskImage.FlaskImageTimerSavetoINI();
 
                     parser.AddSetting("MISC", "FLASKSOUND1", g_strTimerSound1);
-                    parser.AddSetting("MISC", "FLASKSOUND2", g_strTimerSound2);
-                    parser.AddSetting("MISC", "FLASKSOUND3", g_strTimerSound3);
-                    parser.AddSetting("MISC", "FLASKSOUND4", g_strTimerSound4);
-                    parser.AddSetting("MISC", "FLASKSOUND5", g_strTimerSound5);
 
                     parser.AddSetting("LOCATIONNOTIFY", "VOLUME", g_NotifyVolume.ToString());
                     parser.AddSetting("LOCATIONNOTIFY", "VOLUMEFLASKTIMER", g_FlaskTimerVolume.ToString());
@@ -1539,9 +1599,9 @@ namespace POExileDirection
                 InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                 this.BringToFront();
             }
-#endregion
+            #endregion
         } 
-#endregion
+        #endregion
 
         private void RunDeadlyTradeManager()
         {
@@ -1560,7 +1620,7 @@ namespace POExileDirection
             }
         }
 
-#region [[[[[ Real Time Supporters Scrolling ]]]]]
+        #region [[[[[ Real Time Supporters Scrolling ]]]]]
         private async Task ScrollingText()
         {
             //Task.Run(() =>
@@ -1569,9 +1629,9 @@ namespace POExileDirection
                 labelSupportersRealTime.Text.Substring(1, labelSupportersRealTime.Text.Length - 1) + labelSupportersRealTime.Text.Substring(0, 1);
             //});
         }
-#endregion
+        #endregion
 
-#region [[[[[ TODO : CHECK UPDATE AVAILABLE ]]]]]
+        #region [[[[[ TODO : CHECK UPDATE AVAILABLE ]]]]]
         // Added 1.3.9.2
         //private async Task CheckUpdateLoop()
         //{
@@ -1669,9 +1729,9 @@ namespace POExileDirection
         //        await Task.Delay(1000*60*60*1); // 1000ms(1s) * 60 = 60s(1m) * 60 = 60m(1h) * 1 = 1h
         //    }
         //} 
-#endregion
+        #endregion
 
-#region [[[[[ Get JSON Data : DeadlyInformation ]]]]]
+        #region [[[[[ Get JSON Data : DeadlyInformation ]]]]]
         private void Get_deadlyInformationData()
         {
             var tmpData = new DeadlyInformation();
@@ -1682,7 +1742,7 @@ namespace POExileDirection
                 MissingMemberHandling = MissingMemberHandling.Ignore
             };
 
-#region ⨌⨌ Get Deadly JSON Data ⨌⨌
+            #region ⨌⨌ Get Deadly JSON Data ⨌⨌
             try
             {
                 using (var r = new StreamReader(Application.StartupPath + "\\AtlasDrop\\ZoneInform.json"))
@@ -1837,7 +1897,7 @@ namespace POExileDirection
                 else
                     Application.Exit();
             }
-#endregion
+            #endregion
 
             deadlyInformationData = tmpData;
             try
@@ -1856,7 +1916,7 @@ namespace POExileDirection
                   deadlyInformationData.MapAlertMSG.MapAlertMSG.Count <= 0)
                 {
                     MSGForm frmMSG = new MSGForm();
-                    frmMSG.lbMsg.Text = "Can't read Deadly Mapping Information~.\r\nPlease check your addon installation and Try again~.";
+                    frmMSG.lbMsg.Text = "Can't read Deadly Mapping Information~.\r\nPlease check your add-on installation and Try again~.";
                     DialogResult dr = frmMSG.ShowDialog();
 
                     // Force Terminate Launcher.
@@ -1866,10 +1926,11 @@ namespace POExileDirection
                         Application.Exit();
                 }
             }
-            catch
+            catch (Exception ex)
             {
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                 MSGForm frmMSG = new MSGForm();
-                frmMSG.lbMsg.Text = "Can't read Deadly Mapping Information~!.\r\nPlease check your addon installation and Try again~!.";
+                frmMSG.lbMsg.Text = "Can't read Deadly Mapping Information~!.\r\nPlease check your add-on installation and Try again~!.";
                 DialogResult dr = frmMSG.ShowDialog();
 
                 // Force Terminate Launcher.
@@ -1879,39 +1940,87 @@ namespace POExileDirection
                     Application.Exit();
             }
 
-            foreach (var item in deadlyInformationData.InformationMSG.NotifyMSG)
+            try
             {
-                if (item.Id == "THX")
-                    g_strnotiDONE = item.Msg;
-                else if (item.Id == "WAIT")
-                    g_strnotiWAIT = item.Msg;
-                else if (item.Id == "WILLING")
-                    g_strnotiRESEND = item.Msg;
-                else if (item.Id == "SOLD")
-                    g_strnotiSOLD = item.Msg;
+                foreach (var item in deadlyInformationData.InformationMSG.NotifyMSG)
+                {
+                    if (item.Id == "THX")
+                    {
+                        g_strnotiDONE = item.Msg;
+                        g_strnotiDONEbtnTITLE = item.Title;
+                    }
+                    else if (item.Id == "WAIT")
+                    {
+                        g_strnotiWAIT = item.Msg;
+                        g_strnotiWAITbtnTITLE = item.Title;
+                    }
+                    else if (item.Id == "WILLING")
+                    {
+                        g_strnotiRESEND = item.Msg;
+                        // Not Title Button.
+                    }
+                    else if (item.Id == "SOLD")
+                    {
+                        g_strnotiSOLD = item.Msg;
+                        g_strnotiSOLDbtnTITLE = item.Title;
+                    }
+                    else if (item.Id == "CUSTOM1")
+                    {
+                        g_strCUSTOM1 = item.Msg;
+                        g_strCUSTOM1btnTITLE = item.Title;
+                    }
+                    else if (item.Id == "CUSTOM2")
+                    {
+                        g_strCUSTOM2 = item.Msg;
+                        g_strCUSTOM2btnTITLE = item.Title;
+                    }
+                    else if (item.Id == "CUSTOM3")
+                    {
+                        g_strCUSTOM3 = item.Msg;
+                        g_strCUSTOM3btnTITLE = item.Title;
+                    }
+                    else if (item.Id == "CUSTOM4")
+                    {
+                        g_strCUSTOM4 = item.Msg;
+                        g_strCUSTOM4btnTITLE = item.Title;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
 
-            foreach (var item in deadlyInformationData.MapAlertMSG.MapAlertMSG)
+            try
             {
-                if (item.Id == "RED")
+                foreach (var item in deadlyInformationData.MapAlertMSG.MapAlertMSG)
                 {
-                    foreach (var itemMsg in item.Msg)
+                    if (item.Id == "RED")
                     {
-                        g_strArrREDAlert.Add(itemMsg);
+                        foreach (var itemMsg in item.Msg)
+                        {
+                            g_strArrREDAlert.Add(itemMsg);
+                        }
                     }
-                }
-                else if (item.Id == "GREEN")
-                {
-                    foreach (var itemMsg in item.Msg)
+                    else if (item.Id == "GREEN")
                     {
-                        g_strArrGREENAlert.Add(itemMsg);
+                        foreach (var itemMsg in item.Msg)
+                        {
+                            g_strArrGREENAlert.Add(itemMsg);
+                        }
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+            }
+
+            // TODO : CHAT SCAN MESSAGE
         }
-#endregion
+        #endregion
 
-#region [[[[[ Drag Moving ]]]]]
+        #region [[[[[ Drag Moving ]]]]]
         private void PictureBox3_MouseDown(object sender, MouseEventArgs e)
         {
             nMoving = 1;
@@ -1931,7 +2040,7 @@ namespace POExileDirection
         {
             nMoving = 0;
         } 
-#endregion
+        #endregion
 
         private void BtnMinimize_Click(object sender, EventArgs e)
         {
@@ -1953,7 +2062,7 @@ namespace POExileDirection
             }
         }
 
-#region ⨌⨌ NotifyIcon : Tray ⨌⨌
+        #region ⨌⨌ NotifyIcon : Tray ⨌⨌
         private void NotifyIconDeadlyTrade_DoubleClick(object sender, EventArgs e)
         {
             this.Show();
@@ -1974,7 +2083,7 @@ namespace POExileDirection
             this.Close();
             Application.Exit();
         }
-#endregion
+        #endregion
 
         private void BtnStartAddon_Click(object sender, EventArgs e)
         {
@@ -2006,11 +2115,10 @@ namespace POExileDirection
             timerScrolling.Stop();
             timerScrolling.Dispose();
 
-            timerCheckFocus.Start();
             Start_ControlForm();
         }
 
-#region ⨌⨌ FormClosed : Dispose All ⨌⨌
+        #region ⨌⨌ FormClosed : Dispose All ⨌⨌
         private void BtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -2029,7 +2137,7 @@ namespace POExileDirection
             if (ninjaData != null) ninjaData = null;
             if (deadlyInformationData != null) deadlyInformationData = null;
         }
-#endregion
+        #endregion
 
         private void btnCleaner_Click(object sender, EventArgs e)
         {
@@ -2158,18 +2266,6 @@ namespace POExileDirection
             System.Diagnostics.Process.Start("https://www.jumpleasure.me/deadlytrade/?page_id=455");
         }
 
-        private void btnHide_Click(object sender, EventArgs e)
-        {
-            panelDonate.Visible = false;
-        }
-
-        private void btnDonate_Click(object sender, EventArgs e)
-        {
-            panelDonate.Width = 548;
-            panelDonate.Height = 100;
-            panelDonate.Visible = true;
-        }
-
         private void timerScrolling_Tick(object sender, EventArgs e)
         {
             try
@@ -2184,7 +2280,7 @@ namespace POExileDirection
             }
         }
 
-#region [[[[[ Timer Check Focus ON/OFF - POE, DeadlyTrade ]]]]]
+        #region [[[[[ Timer Check Focus ON/OFF - POE, DeadlyTrade ]]]]]
         private void timerCheckFocus_Tick(object sender, EventArgs e)
         {
             try
@@ -2216,10 +2312,10 @@ namespace POExileDirection
                 //TODO: if (bNeedtoShowAvailabeUpdate)
                 //TODO:     ShowAvailabeUpdatePanel();
 
-                if(!g_FocusLosing) // FOCUSED
-                {
-                    DetectResolutionChanging(); //  Check & Get changed resolution.
-                }
+                //if(!g_FocusLosing) // FOCUSED
+                //{
+                //    DetectResolutionChanging(); //  Check & Get changed resolution.
+                //}
             }
             catch (Exception ex)
             {
@@ -2227,49 +2323,43 @@ namespace POExileDirection
                 timerCheckFocus.Dispose();
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
-        } 
-#endregion
+        }
+        #endregion
+
+        #region [[[[[ TODO : Multiple Monitor ]]]]]
+        /*
+        public static RECT g_rcPOE;
+        public static RECT g_rcClient;
+        public static Point g_ptLeftTop;
+        private RECT _rcOLDPOEWinRect;
+        public static bool g_bIsPOESizeChanged { get; set; }
+
         private void DetectResolutionChanging()
         {
-            DeadlyLog4Net._log.Info(String.Format("TEMP resolution_height : {0}, resolution_width : {1}", resolution_height.ToString(), resolution_width.ToString()));
-            String strPathPOEConifg = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            strPathPOEConifg = strPathPOEConifg + "\\My Games\\Path of Exile\\production_Config.ini";
-            IniParser parser = new IniParser(strPathPOEConifg);
-
-            string strTemp = String.Empty;
-            int nCheck_height = 0;
-            int nCheck_width = 0;
             try
             {
-                bool bIsChanged = false;
-                nCheck_height = Convert.ToInt32(parser.GetSetting("DISPLAY", "resolution_height"));
-                nCheck_width = Convert.ToInt32(parser.GetSetting("DISPLAY", "resolution_width"));
-                strTemp = parser.GetSetting("DISPLAY", "borderless_windowed_fullscreen");
-                if (!String.IsNullOrEmpty(strTemp))
-                {
-                    if (strTemp.ToUpper() == "TRUE")
-                        g_isWindowdedFullScreen = true;
-                    else
-                        g_isWindowdedFullScreen = false;
+                // if(Screen.AllScreens.Length > 0)
+                //g_ScreenLocation = Screen.FromPoint(Cursor.Position); // Screen.FromControl(this); // by Form Control.
 
-                    // if Old State is Windowded and State Changed to Windowded FullScreen.
-                    if (g_isWindowdedFullScreenOLD != g_isWindowdedFullScreen && g_isWindowdedFullScreenOLD == false)
-                        bIsChanged = true;
-                }
-                if (nCheck_height != resolution_height || nCheck_width != resolution_width)
+                InteropCommon.GetWindowRect(g_handlePathOfExile, out g_rcPOE);
+                if (g_rcPOE.left != _rcOLDPOEWinRect.left || g_rcPOE.top != _rcOLDPOEWinRect.top ||
+                    g_rcPOE.right != _rcOLDPOEWinRect.right || g_rcPOE.bottom != _rcOLDPOEWinRect.bottom)
                 {
-                    if (bIsChanged || !g_isWindowdedFullScreen)
-                    {
-                        resolution_height = nCheck_height;
-                        resolution_width = nCheck_width;
-                        DeadlyLog4Net._log.Info(String.Format("resolution_height : {0}, resolution_width : {1}", resolution_height.ToString(), resolution_width.ToString()));
-                    }
+                    _rcOLDPOEWinRect = g_rcPOE;
+                    g_bIsPOESizeChanged = true;
                 }
+                else
+                    g_bIsPOESizeChanged = false;
+
+                //InteropCommon.GetClientRect(g_handlePathOfExile, out g_rcClient);
+                //InteropCommon.ClientToScreen(g_handlePathOfExile, ref g_ptLeftTop);
             }
             catch (Exception ex)
             {
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
         }
+        */
+        #endregion
     }
 }

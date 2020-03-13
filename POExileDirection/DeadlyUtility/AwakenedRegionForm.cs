@@ -16,6 +16,8 @@ namespace POExileDirection
         public int m_nRight;
         public int m_nTop;
 
+        private bool bInitListviewDone = false;
+
         protected override CreateParams CreateParams
         {
             get
@@ -48,6 +50,31 @@ namespace POExileDirection
                 btnIRT.BackgroundImage = Properties.Resources.ProximaKR;
                 btnILB.BackgroundImage = Properties.Resources.GairnsKR;
                 btnIRB.BackgroundImage = Properties.Resources.ValdoKR;
+            }
+
+            if (!bInitListviewDone)
+                Show_ListView();
+        }
+
+        private void Show_ListView()
+        {
+            try
+            {
+                foreach (var item in DeadlyTranslation.Phanteons)
+                {
+                    ListViewItem lvItem = new ListViewItem();
+                    lvItem.Text = "";
+                    lvItem.SubItems.Add(item.strGodName);
+                    lvItem.SubItems.Add(item.strMapName);
+                    lvItem.SubItems.Add(item.strTier);
+                    listViewPantheon.Items.Add(lvItem);
+                }
+
+                bInitListviewDone = true;
+            }
+            catch (Exception ex)
+            {
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
         }
 
@@ -480,7 +507,20 @@ namespace POExileDirection
             panel1.Dispose();
             ControlForm.bISearchRegionOn = false;
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-        } 
+        }
         #endregion
+
+        private void listViewPantheon_DoubleClick(object sender, EventArgs e)
+        {
+            // Copy Map Name
+            int nIndex = listViewPantheon.FocusedItem.Index;
+            string strSelectedMapName = listViewPantheon.Items[nIndex].SubItems[2].Text;
+            Clipboard.SetText(strSelectedMapName);
+
+            SomeOneEnteredForm frmJoined = new SomeOneEnteredForm();
+            frmJoined.strNickName = strSelectedMapName;
+            frmJoined.strLableText = "Copied.";
+            frmJoined.Show();
+        }
     }
 }

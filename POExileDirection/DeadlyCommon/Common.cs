@@ -17,17 +17,17 @@ namespace POExileDirection
 {
     public enum LEAGUE_STRING
     {
-        [Description("Metamorph")]
-        LEAGUE_CURRENT,
-
         [Description("Standard")]
         LEAGUE_STANDARD,
 
-        [Description("Hardcore Metamorph")]
-        LEAGUE_HDCORE_CURRENT,
-
         [Description("Hardcore")]
         LEAGUE_HDCORE_STANDARD,
+
+        [Description("Delirium")]
+        LEAGUE_CURRENT,
+
+        [Description("Hardcore Delirium")]
+        LEAGUE_HDCORE_CURRENT,       
     };
 
     public static class LEAGUE_STRINGExtensions
@@ -73,6 +73,21 @@ namespace POExileDirection
 
         [Description("KICK")]
         HOTKEYNAME_KICK,
+
+        [Description("MINIMIZE")]
+        HOTKEYNAME_MINIMIZE,
+
+        [Description("CLOSE")]
+        HOTKEYNAME_CLOSE,
+
+        [Description("SOLD")]
+        HOTKEYNAME_SOLD,
+
+        [Description("WAIT")]
+        HOTKEYNAME_WAIT,
+
+        [Description("THX")]
+        HOTKEYNAME_THX,
     };
 
     public static class HOTKEYNAME_STRINGExtensions
@@ -94,6 +109,80 @@ namespace POExileDirection
 
     public static class DeadlyDBHelper
     {
+        public static string IsLoggedInCurrent(SqlConnection _sqlcon, string strIP, string strMac)
+        {
+            string strisLogin = "N";
+            string strSQL = String.Format("SELECT isLogin, IPAddress, MacAddress FROM DeadlyCurrent Where IPAddress = '{0}' and MacAddress = '{1}' ", strIP, strMac);
+
+            SqlCommand sqlCmd = new SqlCommand();
+            SqlDataAdapter sqlAdapt = new SqlDataAdapter(strSQL, _sqlcon);
+            DataTable dt = new DataTable();
+            try
+            {
+                if (_sqlcon.State != ConnectionState.Open) _sqlcon.Open();
+                sqlAdapt.Fill(dt);
+
+                if (dt.Rows.Count == 0)
+                {
+                    strisLogin = "X";
+                }
+                else
+                {
+                    DataRow dr = dt.Rows[0];
+                    if (dr["isLogin"].ToString() == "Y" &&
+                        (dr["IPAddress"].ToString() == strIP || dr["MacAddress"].ToString() == strMac))
+                    {
+                        strisLogin = "Y";
+                    }
+                    else
+                        strisLogin = "N";
+                }
+
+                dt.Dispose();
+                sqlCmd.Dispose();
+                sqlAdapt.Dispose();
+
+                return strisLogin;
+            }
+            catch (Exception ex)
+            {
+                dt.Dispose();
+                sqlCmd.Dispose();
+                sqlAdapt.Dispose();
+
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+                return strisLogin;
+            }
+        }
+
+        public static void UpdateLoginCurrent(SqlConnection _sqlcon, string strisLogin, string strIP, string strMac, DateTime dtActionDate)
+        {
+            SqlCommand sqlCmd = new SqlCommand();
+            try
+            {
+                if (_sqlcon.State != ConnectionState.Open) _sqlcon.Open();
+
+                sqlCmd.Connection = _sqlcon;
+                sqlCmd.CommandType = CommandType.Text;
+                sqlCmd.CommandText = @"UPDATE DeadlyCurrent SET isLogin=@isLogin, ActionDate=@ActionDate where IPAddress=@IPAddress and MacAddress=@MacAddress";
+
+                sqlCmd.Parameters.AddWithValue("@isLogin", strisLogin);
+                sqlCmd.Parameters.AddWithValue("@ActionDate", dtActionDate);
+                sqlCmd.Parameters.AddWithValue("@IPAddress", strIP);
+                sqlCmd.Parameters.AddWithValue("@MacAddress", strMac);
+
+                sqlCmd.ExecuteNonQuery();
+
+                sqlCmd.Dispose();
+                if (_sqlcon.State == ConnectionState.Open) _sqlcon.Close();
+            }
+            catch (Exception ex)
+            {
+                sqlCmd.Dispose();
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+            }
+        }
+
         public static string IsLoggedIn(SqlConnection _sqlcon, string strIP, string strMac)
         {
             string strisLogin = "N";
@@ -140,6 +229,46 @@ namespace POExileDirection
                 return strisLogin;
             }
         }
+
+        public static void InsertLoginCurrent(SqlConnection _sqlcon, string strisLogin, string strIP, string strMac, string strNick,
+            string strID, DateTime dtActionDate)
+        {
+            if (strNick == "" || String.IsNullOrEmpty(strNick))
+                strNick = ".";
+
+            if (strID == "" || String.IsNullOrEmpty(strID))
+                strID = ".";
+
+            SqlCommand sqlCmd = new SqlCommand();
+            try
+            {
+                if (_sqlcon.State != ConnectionState.Open) _sqlcon.Open();
+
+
+                sqlCmd.Connection = _sqlcon;
+                sqlCmd.CommandType = CommandType.Text;
+                sqlCmd.CommandText = @"INSERT INTO DeadlyCurrent(IPAddress,MacAddress,UserID,CharacterName,isLogin, ActionDate) 
+                            VALUES(@IPAddress,@MacAddress,@UserID,@CharacterName,@isLogin,@ActionDate)";
+
+                sqlCmd.Parameters.AddWithValue("@IPAddress", strIP);
+                sqlCmd.Parameters.AddWithValue("@MacAddress", strMac);
+                sqlCmd.Parameters.AddWithValue("@CharacterName", strNick);
+                sqlCmd.Parameters.AddWithValue("@UserID", dtActionDate);
+                sqlCmd.Parameters.AddWithValue("@isLogin", strisLogin);
+                sqlCmd.Parameters.AddWithValue("@ActionDate", dtActionDate);
+
+                sqlCmd.ExecuteNonQuery();
+
+                sqlCmd.Dispose();
+                if (_sqlcon.State == ConnectionState.Open) _sqlcon.Close();
+            }
+            catch (Exception ex)
+            {
+                sqlCmd.Dispose();
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+            }
+        }
+
         public static void InsertLoginStatus(SqlConnection _sqlcon, string strisLogin, string strIP, string strMac, string strNick,
             string strAction, string strCountryEN, DateTime dtActionDate, int nElapsedTime)
         {
@@ -514,6 +643,7 @@ namespace POExileDirection
         public class NotifyMSGCollection
         {
             public string Id { get; set; }
+            public string Title { get; set; }
             public string Msg { get; set; }
         }
 
@@ -546,18 +676,6 @@ namespace POExileDirection
         public static void FlaskImageTimerFromINI()
         {
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             string strImageNumber = String.Empty;
@@ -598,18 +716,6 @@ namespace POExileDirection
         public static void FlaskImageTimerSavetoINI()
         {
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             parser.AddSetting("MISC", "FLASKIMAGE1", g_nFlaskImageTimer[0].ToString());
@@ -625,18 +731,6 @@ namespace POExileDirection
         public static void FlaskImageTimerSavetoINI_FlaskImageKeyValue(int nFlaskImagePanelFlaskNumber, int nValue)
         {
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             switch (nFlaskImagePanelFlaskNumber)

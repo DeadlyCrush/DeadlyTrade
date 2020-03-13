@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadlyTradeManager", "Deadl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadlyTradeNetworth", "DeadlyTradeNetworth\DeadlyTradeNetworth.csproj", "{2CE608D1-177A-4A93-8097-77957384F734}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D6661B67-D58F-44BA-A44B-D8CDFFCCE2AB}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,7 +65,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		VisualSVNWorkingCopyRoot = .
 		SolutionGuid = {CE627A2C-8798-4704-8C2B-63F8D0D5BFCC}
+		VisualSVNWorkingCopyRoot = .
 	EndGlobalSection
 EndGlobal

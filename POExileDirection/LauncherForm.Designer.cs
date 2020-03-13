@@ -36,28 +36,15 @@
             this.btnMinimize = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panelLogin = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.labelMsg = new System.Windows.Forms.Label();
-            this.btnForceLogin = new System.Windows.Forms.Button();
             this.panelWaiting = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panelDonate = new System.Windows.Forms.Panel();
-            this.btnPaypalSub = new System.Windows.Forms.Button();
-            this.btnHide = new System.Windows.Forms.Button();
-            this.btnPaypalMain = new System.Windows.Forms.Button();
-            this.btnToonation = new System.Windows.Forms.Button();
-            this.btnPatron = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
             this.panelUpdateContents = new System.Windows.Forms.Panel();
+            this.labelPatchNote = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.labelUpdateTitle = new System.Windows.Forms.Label();
-            this.labelPatchNote = new System.Windows.Forms.Label();
             this.pictureBoxKOREA = new System.Windows.Forms.PictureBox();
             this.labelSupportersRealTime = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -109,13 +96,8 @@
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panelLogin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
             this.panelWaiting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panelDonate.SuspendLayout();
             this.panelUpdateContents.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKOREA)).BeginInit();
@@ -185,9 +167,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.panel2.Controls.Add(this.panelLogin);
             this.panel2.Controls.Add(this.panelWaiting);
-            this.panel2.Controls.Add(this.panelDonate);
             this.panel2.Controls.Add(this.panelUpdateContents);
             this.panel2.Controls.Add(this.pictureBoxKOREA);
             this.panel2.Controls.Add(this.labelSupportersRealTime);
@@ -216,75 +196,8 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 43);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(558, 648);
+            this.panel2.Size = new System.Drawing.Size(558, 460);
             this.panel2.TabIndex = 3;
-            // 
-            // panelLogin
-            // 
-            this.panelLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
-            this.panelLogin.Controls.Add(this.pictureBox7);
-            this.panelLogin.Controls.Add(this.panel9);
-            this.panelLogin.Location = new System.Drawing.Point(0, 0);
-            this.panelLogin.Name = "panelLogin";
-            this.panelLogin.Size = new System.Drawing.Size(43, 34);
-            this.panelLogin.TabIndex = 20;
-            this.panelLogin.Visible = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::POExileDirection.Properties.Resources.Signiture_Vertical2_width100;
-            this.pictureBox7.Location = new System.Drawing.Point(229, 117);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(100, 66);
-            this.pictureBox7.TabIndex = 25;
-            this.pictureBox7.TabStop = false;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.panel9.Controls.Add(this.panel10);
-            this.panel9.Controls.Add(this.btnForceLogin);
-            this.panel9.Location = new System.Drawing.Point(47, 194);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(472, 126);
-            this.panel9.TabIndex = 24;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(46)))));
-            this.panel10.Controls.Add(this.labelMsg);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(472, 36);
-            this.panel10.TabIndex = 0;
-            // 
-            // labelMsg
-            // 
-            this.labelMsg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(46)))));
-            this.labelMsg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelMsg.ForeColor = System.Drawing.Color.Coral;
-            this.labelMsg.Location = new System.Drawing.Point(0, 0);
-            this.labelMsg.Name = "labelMsg";
-            this.labelMsg.Size = new System.Drawing.Size(472, 36);
-            this.labelMsg.TabIndex = 4;
-            this.labelMsg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnForceLogin
-            // 
-            this.btnForceLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.btnForceLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnForceLogin.Enabled = false;
-            this.btnForceLogin.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnForceLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnForceLogin.ForeColor = System.Drawing.Color.Silver;
-            this.btnForceLogin.Location = new System.Drawing.Point(166, 60);
-            this.btnForceLogin.Name = "btnForceLogin";
-            this.btnForceLogin.Size = new System.Drawing.Size(130, 46);
-            this.btnForceLogin.TabIndex = 5;
-            this.btnForceLogin.Text = "Force Login.";
-            this.btnForceLogin.UseVisualStyleBackColor = false;
-            this.btnForceLogin.Click += new System.EventHandler(this.btnForceLogin_Click);
             // 
             // panelWaiting
             // 
@@ -293,9 +206,9 @@
             this.panelWaiting.Controls.Add(this.label8);
             this.panelWaiting.Controls.Add(this.label6);
             this.panelWaiting.Controls.Add(this.pictureBox2);
-            this.panelWaiting.Location = new System.Drawing.Point(174, 74);
+            this.panelWaiting.Location = new System.Drawing.Point(189, 74);
             this.panelWaiting.Name = "panelWaiting";
-            this.panelWaiting.Size = new System.Drawing.Size(28, 27);
+            this.panelWaiting.Size = new System.Drawing.Size(97, 50);
             this.panelWaiting.TabIndex = 6;
             // 
             // label7
@@ -338,129 +251,28 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // panelDonate
-            // 
-            this.panelDonate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(30)))), ((int)(((byte)(40)))));
-            this.panelDonate.Controls.Add(this.btnPaypalSub);
-            this.panelDonate.Controls.Add(this.btnHide);
-            this.panelDonate.Controls.Add(this.btnPaypalMain);
-            this.panelDonate.Controls.Add(this.btnToonation);
-            this.panelDonate.Controls.Add(this.btnPatron);
-            this.panelDonate.Controls.Add(this.label10);
-            this.panelDonate.Location = new System.Drawing.Point(18, 426);
-            this.panelDonate.Name = "panelDonate";
-            this.panelDonate.Size = new System.Drawing.Size(38, 34);
-            this.panelDonate.TabIndex = 18;
-            this.panelDonate.Visible = false;
-            // 
-            // btnPaypalSub
-            // 
-            this.btnPaypalSub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.btnPaypalSub.BackgroundImage = global::POExileDirection.Properties.Resources.PayPal_Donate_Button;
-            this.btnPaypalSub.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPaypalSub.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPaypalSub.Enabled = false;
-            this.btnPaypalSub.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPaypalSub.FlatAppearance.BorderSize = 0;
-            this.btnPaypalSub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPaypalSub.ForeColor = System.Drawing.Color.White;
-            this.btnPaypalSub.Location = new System.Drawing.Point(440, 49);
-            this.btnPaypalSub.Name = "btnPaypalSub";
-            this.btnPaypalSub.Size = new System.Drawing.Size(99, 19);
-            this.btnPaypalSub.TabIndex = 16;
-            this.btnPaypalSub.UseVisualStyleBackColor = false;
-            this.btnPaypalSub.Click += new System.EventHandler(this.btnPaypalSub_Click_1);
-            // 
-            // btnHide
-            // 
-            this.btnHide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.btnHide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHide.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHide.ForeColor = System.Drawing.Color.White;
-            this.btnHide.Location = new System.Drawing.Point(240, 75);
-            this.btnHide.Name = "btnHide";
-            this.btnHide.Size = new System.Drawing.Size(78, 21);
-            this.btnHide.TabIndex = 18;
-            this.btnHide.Text = "Hide";
-            this.btnHide.UseVisualStyleBackColor = false;
-            this.btnHide.Click += new System.EventHandler(this.btnHide_Click);
-            // 
-            // btnPaypalMain
-            // 
-            this.btnPaypalMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.btnPaypalMain.BackgroundImage = global::POExileDirection.Properties.Resources.PayPal_Donate_CARD;
-            this.btnPaypalMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPaypalMain.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPaypalMain.Enabled = false;
-            this.btnPaypalMain.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPaypalMain.FlatAppearance.BorderSize = 0;
-            this.btnPaypalMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPaypalMain.ForeColor = System.Drawing.Color.White;
-            this.btnPaypalMain.Location = new System.Drawing.Point(335, 49);
-            this.btnPaypalMain.Name = "btnPaypalMain";
-            this.btnPaypalMain.Size = new System.Drawing.Size(99, 19);
-            this.btnPaypalMain.TabIndex = 16;
-            this.btnPaypalMain.UseVisualStyleBackColor = false;
-            // 
-            // btnToonation
-            // 
-            this.btnToonation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.btnToonation.BackgroundImage = global::POExileDirection.Properties.Resources.ToonationA;
-            this.btnToonation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnToonation.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnToonation.Enabled = false;
-            this.btnToonation.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnToonation.FlatAppearance.BorderSize = 0;
-            this.btnToonation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnToonation.ForeColor = System.Drawing.Color.White;
-            this.btnToonation.Location = new System.Drawing.Point(114, 49);
-            this.btnToonation.Name = "btnToonation";
-            this.btnToonation.Size = new System.Drawing.Size(99, 19);
-            this.btnToonation.TabIndex = 16;
-            this.btnToonation.UseVisualStyleBackColor = false;
-            this.btnToonation.Click += new System.EventHandler(this.btnToonation_Click);
-            // 
-            // btnPatron
-            // 
-            this.btnPatron.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.btnPatron.BackgroundImage = global::POExileDirection.Properties.Resources.BecomeDeadlyTradePatron;
-            this.btnPatron.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPatron.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPatron.Enabled = false;
-            this.btnPatron.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPatron.FlatAppearance.BorderSize = 0;
-            this.btnPatron.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPatron.ForeColor = System.Drawing.Color.White;
-            this.btnPatron.Location = new System.Drawing.Point(9, 49);
-            this.btnPatron.Name = "btnPatron";
-            this.btnPatron.Size = new System.Drawing.Size(99, 19);
-            this.btnPatron.TabIndex = 16;
-            this.btnPatron.UseVisualStyleBackColor = false;
-            this.btnPatron.Click += new System.EventHandler(this.btnPatron_Click);
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(46)))));
-            this.label10.ForeColor = System.Drawing.Color.Bisque;
-            this.label10.Location = new System.Drawing.Point(9, 7);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(532, 34);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "Donation will only be used for development improvements and server maintenance.\r\n" +
-    "Thank you Exile. Good luck && Have fun~!";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // panelUpdateContents
             // 
             this.panelUpdateContents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
-            this.panelUpdateContents.Controls.Add(this.panel4);
             this.panelUpdateContents.Controls.Add(this.labelPatchNote);
+            this.panelUpdateContents.Controls.Add(this.panel4);
             this.panelUpdateContents.Location = new System.Drawing.Point(0, 0);
             this.panelUpdateContents.Name = "panelUpdateContents";
-            this.panelUpdateContents.Size = new System.Drawing.Size(49, 28);
+            this.panelUpdateContents.Size = new System.Drawing.Size(65, 46);
             this.panelUpdateContents.TabIndex = 19;
             this.panelUpdateContents.Visible = false;
+            // 
+            // labelPatchNote
+            // 
+            this.labelPatchNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
+            this.labelPatchNote.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.labelPatchNote.ForeColor = System.Drawing.Color.Bisque;
+            this.labelPatchNote.Location = new System.Drawing.Point(4, 32);
+            this.labelPatchNote.Multiline = true;
+            this.labelPatchNote.Name = "labelPatchNote";
+            this.labelPatchNote.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.labelPatchNote.Size = new System.Drawing.Size(550, 383);
+            this.labelPatchNote.TabIndex = 14;
             // 
             // panel4
             // 
@@ -469,7 +281,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(49, 30);
+            this.panel4.Size = new System.Drawing.Size(65, 28);
             this.panel4.TabIndex = 13;
             // 
             // labelUpdateTitle
@@ -478,25 +290,16 @@
             this.labelUpdateTitle.ForeColor = System.Drawing.Color.Bisque;
             this.labelUpdateTitle.Location = new System.Drawing.Point(0, 0);
             this.labelUpdateTitle.Name = "labelUpdateTitle";
-            this.labelUpdateTitle.Size = new System.Drawing.Size(49, 30);
+            this.labelUpdateTitle.Size = new System.Drawing.Size(65, 28);
             this.labelUpdateTitle.TabIndex = 0;
             this.labelUpdateTitle.Text = "DeadlyTrade 1.3.9.6 Updated contents.";
             this.labelUpdateTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelPatchNote
-            // 
-            this.labelPatchNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
-            this.labelPatchNote.ForeColor = System.Drawing.Color.Silver;
-            this.labelPatchNote.Location = new System.Drawing.Point(7, 37);
-            this.labelPatchNote.Name = "labelPatchNote";
-            this.labelPatchNote.Size = new System.Drawing.Size(544, 548);
-            this.labelPatchNote.TabIndex = 5;
             // 
             // pictureBoxKOREA
             // 
             this.pictureBoxKOREA.BackgroundImage = global::POExileDirection.Properties.Resources.flag_korea;
             this.pictureBoxKOREA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxKOREA.Location = new System.Drawing.Point(525, 467);
+            this.pictureBoxKOREA.Location = new System.Drawing.Point(525, 389);
             this.pictureBoxKOREA.Name = "pictureBoxKOREA";
             this.pictureBoxKOREA.Size = new System.Drawing.Size(28, 28);
             this.pictureBoxKOREA.TabIndex = 13;
@@ -507,7 +310,7 @@
             // 
             this.labelSupportersRealTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
             this.labelSupportersRealTime.ForeColor = System.Drawing.Color.Violet;
-            this.labelSupportersRealTime.Location = new System.Drawing.Point(120, 401);
+            this.labelSupportersRealTime.Location = new System.Drawing.Point(120, 323);
             this.labelSupportersRealTime.Name = "labelSupportersRealTime";
             this.labelSupportersRealTime.Size = new System.Drawing.Size(422, 14);
             this.labelSupportersRealTime.TabIndex = 4;
@@ -581,7 +384,7 @@
             // label14
             // 
             this.label14.ForeColor = System.Drawing.Color.Bisque;
-            this.label14.Location = new System.Drawing.Point(12, 398);
+            this.label14.Location = new System.Drawing.Point(12, 320);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(105, 21);
             this.label14.TabIndex = 4;
@@ -677,7 +480,7 @@
             // labelReady
             // 
             this.labelReady.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
-            this.labelReady.Location = new System.Drawing.Point(125, 426);
+            this.labelReady.Location = new System.Drawing.Point(125, 348);
             this.labelReady.Name = "labelReady";
             this.labelReady.Size = new System.Drawing.Size(329, 20);
             this.labelReady.TabIndex = 4;
@@ -783,7 +586,7 @@
             this.panel1.Controls.Add(this.btnExitAndUpdate);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 605);
+            this.panel1.Location = new System.Drawing.Point(0, 417);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(558, 43);
             this.panel1.TabIndex = 7;
@@ -820,7 +623,7 @@
             this.btnStartAddon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStartAddon.ForeColor = System.Drawing.Color.LightBlue;
             this.btnStartAddon.Image = global::POExileDirection.Properties.Resources.DeadlyTradeWaitingButton;
-            this.btnStartAddon.Location = new System.Drawing.Point(189, 444);
+            this.btnStartAddon.Location = new System.Drawing.Point(189, 366);
             this.btnStartAddon.Name = "btnStartAddon";
             this.btnStartAddon.Size = new System.Drawing.Size(190, 53);
             this.btnStartAddon.TabIndex = 5;
@@ -851,7 +654,7 @@
             // labelUI
             // 
             this.labelUI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
-            this.labelUI.Location = new System.Drawing.Point(387, 473);
+            this.labelUI.Location = new System.Drawing.Point(387, 395);
             this.labelUI.Name = "labelUI";
             this.labelUI.Size = new System.Drawing.Size(132, 20);
             this.labelUI.TabIndex = 4;
@@ -862,7 +665,7 @@
             // labelClient
             // 
             this.labelClient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
-            this.labelClient.Location = new System.Drawing.Point(5, 473);
+            this.labelClient.Location = new System.Drawing.Point(5, 395);
             this.labelClient.Name = "labelClient";
             this.labelClient.Size = new System.Drawing.Size(151, 20);
             this.labelClient.TabIndex = 4;
@@ -944,26 +747,26 @@
             this.toolStripSeparator1,
             this.toolStripMenuItem2});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(180, 54);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 76);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Image = global::POExileDirection.Properties.Resources.sysMaxPOEBg;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(179, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem1.Text = "Maximize Launcher";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.ToolStripMenuItem1_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(176, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Image = global::POExileDirection.Properties.Resources.sysClosePOEBg;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(179, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem2.Text = "Exit DeadlyTrade";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.ToolStripMenuItem2_Click);
             // 
@@ -990,7 +793,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(558, 691);
+            this.ClientSize = new System.Drawing.Size(558, 503);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelTop);
@@ -1010,14 +813,10 @@
             this.panelTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panelLogin.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.panel9.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
             this.panelWaiting.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panelDonate.ResumeLayout(false);
             this.panelUpdateContents.ResumeLayout(false);
+            this.panelUpdateContents.PerformLayout();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKOREA)).EndInit();
             this.panel6.ResumeLayout(false);
@@ -1085,12 +884,6 @@
         private System.Windows.Forms.Button btnCleaner;
         private System.Windows.Forms.Button btnRestore;
         private System.Windows.Forms.Button btnBackup;
-        private System.Windows.Forms.Button btnToonation;
-        private System.Windows.Forms.Button btnPatron;
-        private System.Windows.Forms.Button btnPaypalSub;
-        private System.Windows.Forms.Button btnPaypalMain;
-        private System.Windows.Forms.Panel panelDonate;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label labelLastBackup;
         private System.Windows.Forms.Label labelLastCheck;
         private System.Windows.Forms.Label labelSupportersRealTime;
@@ -1098,17 +891,10 @@
         private System.Windows.Forms.Panel panelUpdateContents;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label labelUpdateTitle;
-        private System.Windows.Forms.Label labelPatchNote;
         private System.Windows.Forms.Button btnExitAndUpdate;
-        private System.Windows.Forms.Button btnHide;
         private System.Windows.Forms.Timer timerScrolling;
-        private System.Windows.Forms.Panel panelLogin;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label labelMsg;
-        private System.Windows.Forms.Button btnForceLogin;
-        private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Timer timerCheckFocus;
+        private System.Windows.Forms.TextBox labelPatchNote;
     }
 }

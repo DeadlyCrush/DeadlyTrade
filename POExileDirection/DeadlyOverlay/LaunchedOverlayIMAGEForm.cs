@@ -13,64 +13,128 @@ namespace POExileDirection
     public partial class LaunchedOverlayIMAGEForm : Form
     {
         #region Class Global Variables
-        private Bitmap scaledBitmap = null;
+        int nLeft = 0;
+        int nTop = 0;
+
+        Image img = null;
         private int nMoving = 0;
         private int nMovePosX = 0;
         private int nMovePosY = 0;
+
+        public int nZoom = 0;
         #endregion
 
         public LaunchedOverlayIMAGEForm()
         {
             InitializeComponent();
-            Text = "DeadlyTradeForPOE";
+            Text = "DeadlyTradeForPOE";        
+        }
 
-            scaledBitmap = LabyOverlayForm.g_OverlayLABBmp;
-            pictureBoxOverlay.BackgroundImage = scaledBitmap;
+        private void LaunchedOverlayIMAGEForm_Load(object sender, EventArgs e)
+        {
+            this.StartPosition = FormStartPosition.Manual;
+            Left = 0;
+            Top = 0;
 
-            labelTitle.Text = "[" + LabyOverlayForm._LabName + "] DeadlyTrade Overlay Labyrinth ::  from POE LAB";
+            img = LabyOverlayForm.g_OverlayLABBmp;
+            label2.Text = "[" + LabyOverlayForm._LabName + "] Labyrinth (POE Lab)";
 
-            this.btnZoomIn.FlatStyle = FlatStyle.Flat;
-            this.btnZoomIn.BackColor = Color.Transparent;
-            this.btnZoomIn.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            this.btnZoomIn.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            this.btnZoomIn.FlatAppearance.BorderColor = Color.FromArgb(0, 39, 44, 56);
-            this.btnZoomIn.FlatAppearance.BorderSize = 0;
-            this.btnZoomIn.TabStop = false;
+            btnClose.FlatStyle = FlatStyle.Flat;
+            btnClose.BackColor = Color.Transparent;
+            btnClose.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnClose.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnClose.TabStop = false;
+            btnZoomin.FlatStyle = FlatStyle.Flat;
+            btnZoomin.BackColor = Color.Transparent;
+            btnZoomin.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnZoomin.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnZoomin.TabStop = false;
+            btnZoomout.FlatStyle = FlatStyle.Flat;
+            btnZoomout.BackColor = Color.Transparent;
+            btnZoomout.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnZoomout.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnZoomout.TabStop = false;
 
-            this.btnZoomOut.FlatStyle = FlatStyle.Flat;
-            this.btnZoomOut.BackColor = Color.Transparent;
-            this.btnZoomOut.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            this.btnZoomOut.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            this.btnZoomOut.FlatAppearance.BorderColor = Color.FromArgb(0, 39, 44, 56);
-            this.btnZoomOut.FlatAppearance.BorderSize = 0;
-            this.btnZoomOut.TabStop = false;
+            SetImage();
+        }
 
-            this.btnClose.FlatStyle = FlatStyle.Flat;
-            this.btnClose.BackColor = Color.Transparent;
-            this.btnClose.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            this.btnClose.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            this.btnClose.FlatAppearance.BorderColor = Color.FromArgb(0, 39, 44, 56);
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.TabStop = false;
+        private bool SetImage()
+        {
+            int nCatch = 0;
+
+            int iWidth = 0;
+            int iHeight = 0;
+            int nWidth = 0;
+            int nHeight = 0;
+            if (nZoom != 0)
+            {
+                nWidth = img.Width + (img.Width * nZoom / 10);
+                nHeight = img.Height + (img.Height * nZoom / 10);
+            }
+            else
+            {
+                nWidth = img.Width;
+                nHeight = img.Height;
+            }
+
+
+            if ((nHeight == 0) && (nWidth != 0))
+            {
+                iWidth = nWidth;
+                iHeight = (img.Size.Height * iWidth / img.Size.Width);
+            }
+            else if ((nHeight != 0) && (nWidth == 0))
+            {
+                iHeight = nHeight;
+                iWidth = (img.Size.Width * iHeight / img.Size.Height);
+            }
+            else
+            {
+                iWidth = nWidth;
+                iHeight = nHeight;
+            }
+
+            Rectangle rcPrimary = Screen.PrimaryScreen.Bounds;
+            Width = iWidth;
+            if (Width > rcPrimary.Width)
+            {
+                Width = rcPrimary.Width;
+                nCatch = nCatch + 1;
+            }
+            Height = iHeight + 16;
+            if (Height > rcPrimary.Height)
+            {
+                Height = rcPrimary.Height;
+                nCatch = nCatch + 1;
+            }
+
+            Left = nLeft;
+            Top = nTop;
+
+            if (nCatch > 1)
+                return false;
+
+            pictureBox1.BackgroundImage = null;
+            pictureBox1.BackgroundImage = img;
+
+            return true;
         }
 
         private void btnZoomOut_Click(object sender, EventArgs e)
         {
-            if ((Width - 50) >= 240 && (Height - 50) >= 119)
+            nZoom = nZoom - 1;
+            if (!SetImage())
             {
-                scaledBitmap = DeadlyImageCommon.ScaleImage(scaledBitmap, Width - 50, Height - 50);
-                Width = scaledBitmap.Width;
-                Height = scaledBitmap.Height;
+                nZoom = nZoom + 1;
             }
         }
 
         private void btnZoomIn_Click(object sender, EventArgs e)
         {
-            if ((Width + 50) <= 920 && (Height + 50) <= 455)
+            nZoom = nZoom + 1;
+            if (!SetImage())
             {
-                scaledBitmap = DeadlyImageCommon.ScaleImage(scaledBitmap, Width + 50, Height + 50);
-                Width = scaledBitmap.Width;
-                Height = scaledBitmap.Height;
+                nZoom = nZoom - 1;
             }
         }
 
@@ -99,11 +163,6 @@ namespace POExileDirection
         private void panel1_MouseUp(object sender, MouseEventArgs e)
         {
             nMoving = 0;
-        }
-
-        private void LaunchedOverlayIMAGEForm_Load(object sender, EventArgs e)
-        {
-            ;
         }
     }
 }

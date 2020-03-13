@@ -45,6 +45,9 @@ namespace POExileDirection
             textBoxLEFT.Select();
             textBoxLEFT.Focus();
 
+            Width = 219;
+            Height = 27;
+
             ControlForm.gCF_bIsTextFocused = true;
         }
 
@@ -64,18 +67,6 @@ namespace POExileDirection
             this.Text = String.Empty;
 
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             try
@@ -114,6 +105,7 @@ namespace POExileDirection
             Close();
         }
 
+        #region [[[[[ Moving by Drag ]]]]]
         private void Label1_MouseDown(object sender, MouseEventArgs e)
         {
             ControlForm.gCF_bIsTextFocused = true;
@@ -127,7 +119,7 @@ namespace POExileDirection
             if (nMoving == 1)
             {
                 ControlForm.gCF_bIsTextFocused = true;
-                this.SetDesktopLocation((MousePosition.X -18) - nMovePosX, (MousePosition.Y-8) - nMovePosY);
+                this.SetDesktopLocation((MousePosition.X - 18) - nMovePosX, (MousePosition.Y - 8) - nMovePosY);
             }
         }
 
@@ -136,18 +128,6 @@ namespace POExileDirection
             nMoving = 0;
 
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             parser.AddSetting("MISC", "GUIDELEFT", Left.ToString());
@@ -169,7 +149,7 @@ namespace POExileDirection
             if (nMoving == 1)
             {
                 ControlForm.gCF_bIsTextFocused = true;
-                this.SetDesktopLocation((MousePosition.X - 70) - nMovePosX, (MousePosition.Y-8) - nMovePosY);
+                this.SetDesktopLocation((MousePosition.X - 70) - nMovePosX, (MousePosition.Y - 8) - nMovePosY);
             }
         }
 
@@ -178,18 +158,6 @@ namespace POExileDirection
             nMoving = 0;
 
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             parser.AddSetting("MISC", "GUIDELEFT", Left.ToString());
@@ -197,6 +165,37 @@ namespace POExileDirection
             parser.SaveSettings();
             ControlForm.gCF_bIsTextFocused = true;
         }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ControlForm.gCF_bIsTextFocused = true;
+            nMoving = 1;
+            nMovePosX = e.X;
+            nMovePosY = e.Y;
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (nMoving == 1)
+            {
+                ControlForm.gCF_bIsTextFocused = true;
+                this.SetDesktopLocation(MousePosition.X - nMovePosX, MousePosition.Y - nMovePosY);
+            }
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            nMoving = 0;
+
+            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
+            IniParser parser = new IniParser(strINIPath);
+
+            parser.AddSetting("MISC", "GUIDELEFT", Left.ToString());
+            parser.AddSetting("MISC", "GUIDETOP", Top.ToString());
+            parser.SaveSettings();
+            ControlForm.gCF_bIsTextFocused = true;
+        } 
+        #endregion
 
         private void BtnSearch_Click(object sender, EventArgs e)
         {
@@ -246,6 +245,7 @@ namespace POExileDirection
             itemIndicator.bIsQuad = bIsQuad;
             itemIndicator.nStashX = nStashX;
             itemIndicator.nStashY = nStashY;
+            itemIndicator.bIsMagnify = true;
             itemIndicator.Owner = this;
             itemIndicator.Show();
 

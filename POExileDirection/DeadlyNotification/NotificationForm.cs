@@ -105,12 +105,17 @@ namespace POExileDirection
                 // Show Hideout button, Hide Sold button
                 btnHideout.Visible = true;
                 pictureHideoutVert.Visible = true;
-                btnSold.Visible = false;
                 DeadlyToolTip.SetToolTip(this.btnKick, "Leave Party");
+
+                // Change COLOR and IMAGE to BUY
+                pictureArrow.Image = Properties.Resources.top_bar_arrow_buy;
+                btnWhois.Image = Properties.Resources.top_bar_user_buy;
+                labelNickName.ForeColor = Color.FromArgb(0, 26, 204, 255);
+                labelStashTabDetail.ForeColor = Color.FromArgb(0, 26, 204, 255);
             }
             else
             {
-                labelItemName.Left = 31;
+                labelItemName.Left = 28;
                 pictureArrow.Left = 237;
                 labelPriceAtTitle.Left = 259;
                 btnCurrency.Left = 308;
@@ -118,24 +123,37 @@ namespace POExileDirection
                 // Hide Hideout button, Show Sold button
                 btnHideout.Visible = false;
                 pictureHideoutVert.Visible = false;
-                btnSold.Visible = true;
                 DeadlyToolTip.SetToolTip(this.btnKick, "Kick From Party");
+
+                // Change COLOR and IMAGE to BUY
+                pictureArrow.Image = Properties.Resources.top_bar_arrow_sell;
+                btnWhois.Image = Properties.Resources.top_bar_user_sell;
+                labelNickName.ForeColor = Color.FromArgb(0, 255, 236, 26);
+                labelStashTabDetail.ForeColor = Color.FromArgb(0, 255, 236, 26);
             }
+
             double nCalcRet = 0;
             double dSelectedCurr = 0;
             ControlForm.CurrencyCalcDictionary.TryGetValue("Exalted Orb", out dSelectedCurr);
             labelLeague.Text = String.Format("{0} (1ex={1}c)", tradeItem.league, dSelectedCurr.ToString("N1"));
 
-            //if (labelNickName.Text.Length > 13)
-            //    labelNickName.Text = tradeItem.nickName.Substring(0, 12);
-            //else
-                labelNickName.Text = tradeItem.nickName;
-            //if (labelItemName.Text.Length > 25)
-            //    labelItemName.Text = tradeItem.itemName.Substring(0, 24);
-            //else
-                labelItemName.Text = tradeItem.itemName;
-            string strTabDetail = String.Format("({0}, {1}) {2}", tradeItem.xPos, tradeItem.yPos, tradeItem.tabName);
-            labelStashTabDetail.Text = strTabDetail;
+            labelNickName.Text = tradeItem.nickName;
+            labelItemName.Text = tradeItem.itemName;
+            if (!String.IsNullOrEmpty(tradeItem.xPos) && !String.IsNullOrEmpty(tradeItem.yPos) && !String.IsNullOrEmpty(tradeItem.tabName))
+            {
+                string strTabDetail = String.Format("({0}, {1}) {2}", tradeItem.xPos, tradeItem.yPos, tradeItem.tabName);
+                labelStashTabDetail.Text = strTabDetail;
+            }
+
+            if (!String.IsNullOrEmpty(tradeItem.priceCall))
+            {
+                if (Convert.ToInt32(tradeItem.priceCall) >= Convert.ToInt32(dSelectedCurr.ToString("N1")) || // 1엑잘 상당의 카오스오브
+                 Convert.ToInt32(tradeItem.priceCall) >= 1 && tradeItem.whichCurrency.ToUpper().Contains("Exal") || tradeItem.whichCurrency.ToUpper().Contains("Exa")) // 1엑잘 이상
+                {
+                    // Over 1exalted.
+                    labelPrice.ForeColor = Color.Tomato;
+                }
+            }
             labelPrice.Text = tradeItem.priceCall;
             labelPriceAtTitle.Text = tradeItem.priceCall;
 
@@ -524,25 +542,34 @@ namespace POExileDirection
             if (bFoundCurrencyImage)
                 btnCurrency.Text = "";
             else
-                btnCurrency.Text = strCurreny.Substring(0,1);
+            {
+                if (!String.IsNullOrEmpty(strCurreny))
+                    btnCurrency.Text = strCurreny.Substring(0, 1);
+                else
+                    btnCurrency.Text = "";
+            }
             #endregion
 
             try
             {
-                labelLeague.Text = tradeItem.league;
                 if (tradeItem.offerMSG.Length > 0 && !String.IsNullOrEmpty(tradeItem.offerMSG))
                     labelStashTabDetail.Text = labelStashTabDetail.Text + "( "+ tradeItem.offerMSG + " )";
 
-                if (Convert.ToInt32(tradeItem.xPos) > 12 || Convert.ToInt32(tradeItem.yPos) > 12)
+                if (!String.IsNullOrEmpty(tradeItem.xPos) && !String.IsNullOrEmpty(tradeItem.yPos))
                 {
-                    checkQuadTab.Checked = true;
-                    bIsQuadStash = true;
+                    if (Convert.ToInt32(tradeItem.xPos) > 12 || Convert.ToInt32(tradeItem.yPos) > 12)
+                    {
+                        checkQuadTab.Checked = true;
+                        bIsQuadStash = true;
+                    }
+                    else
+                    {
+                        checkQuadTab.Checked = false;
+                        bIsQuadStash = false;
+                    }
                 }
                 else
-                {
-                    checkQuadTab.Checked = false;
-                    bIsQuadStash = false;
-                }
+                    checkQuadTab.Visible = false;
 
                 rcvDateTime = DateTime.Now;
 
@@ -564,14 +591,10 @@ namespace POExileDirection
             DeadlyToolTip.SetToolTip(this.btnInvite, "Invite to Party"); 
             DeadlyToolTip.SetToolTip(this.btnTrade, "Trade Request"); 
             DeadlyToolTip.SetToolTip(this.btnClose, "Close This Message");
-            DeadlyToolTip.SetToolTip(this.btnThanks, "Send 'Thanks' Message and Close Panel");
-            DeadlyToolTip.SetToolTip(this.btnWaitPls, "Send 'pls.. Wait a sec.' Message");
-            DeadlyToolTip.SetToolTip(this.btnSold, "Send 'Sold already' and Close Panel");
             DeadlyToolTip.SetToolTip(this.btnHideout, "Visit Hideout");
-            DeadlyToolTip.SetToolTip(this.btnWhois, "Whois? Buyer Information");
             DeadlyToolTip.SetToolTip(this.btnWilling, "Send 'Still willing to buy?' Message");
             DeadlyToolTip.SetToolTip(this.checkQuadTab, "Check if it is Quad(4x4) Stash");
-            DeadlyToolTip.SetToolTip(this.btnMinMax, "Minimize or Maximaze");
+            DeadlyToolTip.SetToolTip(this.btnMinMax, "Minimize or Maximize");
             DeadlyToolTip.SetToolTip(this.btnWhisper, "Whisper (PM)");
             DeadlyToolTip.SetToolTip(this.btnWhois, "Send CMD /whois"); 
 
@@ -598,18 +621,51 @@ namespace POExileDirection
             btnThanks.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             btnThanks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             btnThanks.TabStop = false;
+            if (!String.IsNullOrEmpty(LauncherForm.g_strnotiDONEbtnTITLE))
+            {
+                btnThanks.Text = LauncherForm.g_strnotiDONEbtnTITLE;
+                btnThanks.Enabled = true;
+                btnThanks.Visible = true;
+            }
+            else
+            {
+                btnThanks.Enabled = false;
+                btnThanks.Visible = false;
+            }
 
             btnWaitPls.FlatStyle = FlatStyle.Flat;
             btnWaitPls.BackColor = System.Drawing.Color.Transparent;
             btnWaitPls.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             btnWaitPls.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             btnWaitPls.TabStop = false;
+            if (!String.IsNullOrEmpty(LauncherForm.g_strnotiWAITbtnTITLE))
+            {
+                btnWaitPls.Text = LauncherForm.g_strnotiWAITbtnTITLE;
+                btnWaitPls.Enabled = true;
+                btnWaitPls.Visible = true;
+            }
+            else
+            {
+                btnWaitPls.Enabled = false;
+                btnWaitPls.Visible = false;
+            }
 
             btnSold.FlatStyle = FlatStyle.Flat;
             btnSold.BackColor = System.Drawing.Color.Transparent;
             btnSold.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             btnSold.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             btnSold.TabStop = false;
+            if (!String.IsNullOrEmpty(LauncherForm.g_strnotiSOLDbtnTITLE))
+            {
+                btnSold.Text = LauncherForm.g_strnotiSOLDbtnTITLE;
+                btnSold.Enabled = true;
+                btnSold.Visible = true;
+            }
+            else
+            {
+                btnSold.Enabled = false;
+                btnSold.Visible = false;
+            }
 
             btnHideout.FlatStyle = FlatStyle.Flat;
             btnHideout.BackColor = System.Drawing.Color.Transparent;
@@ -652,6 +708,58 @@ namespace POExileDirection
             btnWhois.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             btnWhois.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             btnWhois.TabStop = false;
+
+            // CUSTOM1
+            if(!String.IsNullOrEmpty(LauncherForm.g_strCUSTOM1btnTITLE))
+            {
+                button1.Text = LauncherForm.g_strCUSTOM1btnTITLE;
+                button1.Enabled = true;
+                button1.Visible = true;
+            }
+            else
+            {
+                button1.Enabled = false;
+                button1.Visible = false;
+            }
+
+            // CUSTOM2
+            if (!String.IsNullOrEmpty(LauncherForm.g_strCUSTOM2btnTITLE))
+            {
+                button2.Text = LauncherForm.g_strCUSTOM2btnTITLE;
+                button2.Enabled = true;
+                button2.Visible = true;
+            }
+            else
+            {
+                button2.Enabled = false;
+                button2.Visible = false;
+            }
+
+            // CUSTOM3
+            if (!String.IsNullOrEmpty(LauncherForm.g_strCUSTOM3btnTITLE))
+            {
+                button3.Text = LauncherForm.g_strCUSTOM3btnTITLE;
+                button3.Enabled = true;
+                button3.Visible = true;
+            }
+            else
+            {
+                button3.Enabled = false;
+                button3.Visible = false;
+            }
+
+            // CUSTOM4
+            if (!String.IsNullOrEmpty(LauncherForm.g_strCUSTOM4btnTITLE))
+            {
+                button4.Text = LauncherForm.g_strCUSTOM4btnTITLE;
+                button4.Enabled = true;
+                button4.Visible = true;
+            }
+            else
+            {
+                button4.Enabled = false;
+                button4.Visible = false;
+            }
         }
         #endregion
 
@@ -680,7 +788,7 @@ namespace POExileDirection
             }
             else
             {
-                Height = 113;
+                Height = 120;
                 bIsMinimized = false;
             }
         }
@@ -730,22 +838,16 @@ namespace POExileDirection
             }
         }
 
+        #region [[[[[ Function Button - Invite, Kick, Willing, Whois, Hideout, Trade ]]]]]
         private void BtnInvite_Click(object sender, EventArgs e)
         {
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
             InputSimulator iSim = new InputSimulator();
-
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            // Send Invite
             string strSendString = String.Format("/invite {0}", thisTradeMsg.nickName);
             iSim.Keyboard.TextEntry(strSendString);
-
-            // Send RETURN
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
         }
 
         private void BtnKick_Click(object sender, EventArgs e)
@@ -753,18 +855,12 @@ namespace POExileDirection
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
             InputSimulator iSim = new InputSimulator();
-
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
             string strSendString = String.Format("/kick {0}", thisTradeMsg.nickName);
             if (thisTradeMsg.tradePurpose == "BUY")
                 strSendString = String.Format("/kick {0}", LauncherForm.g_strMyNickName);
             iSim.Keyboard.TextEntry(strSendString);
-
-            // Send RETURN
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
         }
 
         private void BtnWilling_Click(object sender, EventArgs e)
@@ -772,31 +868,28 @@ namespace POExileDirection
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
             InputSimulator iSim = new InputSimulator();
-
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
             string strSendString = String.Empty;
-            try
+            if (!String.IsNullOrEmpty(thisTradeMsg.fullMSG))
             {
-                if (thisTradeMsg.tradePurpose == "SELL")
-                    strSendString = String.Format("@{0} {1} 'Your Offer : {2}'", thisTradeMsg.nickName, LauncherForm.g_strnotiRESEND, thisTradeMsg.fullMSG);
-                else
-                    strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, thisTradeMsg.fullMSG); // Send Buy Msg. (FULL)
+                try
+                {
+                    if (thisTradeMsg.tradePurpose == "SELL")
+                        strSendString = String.Format("@{0} {1} 'Your Offer : {2}'", thisTradeMsg.nickName, LauncherForm.g_strnotiRESEND, thisTradeMsg.fullMSG);
+                    else
+                        strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, thisTradeMsg.fullMSG); // Send Buy Msg. (FULL)
+                }
+                catch
+                {
+                    if (thisTradeMsg.tradePurpose == "SELL")
+                        strSendString = String.Format("@{0} still willing to buy? 'Your Offer : {1}'", thisTradeMsg.nickName, thisTradeMsg.fullMSG);
+                    else
+                        strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, thisTradeMsg.fullMSG); // Send Buy Msg. (FULL)
+                }
+
+                iSim.Keyboard.TextEntry(strSendString);
+                iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
             }
-            catch
-            {
-                if (thisTradeMsg.tradePurpose == "SELL")
-                    strSendString = String.Format("@{0} still willing to buy? 'Your Offer : {1}'", thisTradeMsg.nickName, thisTradeMsg.fullMSG);
-                else
-                    strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, thisTradeMsg.fullMSG); // Send Buy Msg. (FULL)
-            }
-
-            iSim.Keyboard.TextEntry(strSendString);
-
-            // Send RETURN
-            iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
         }
 
         private void BtnWhois_Click(object sender, EventArgs e)
@@ -804,16 +897,10 @@ namespace POExileDirection
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
             InputSimulator iSim = new InputSimulator();
-
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
             string strSendString = String.Format("/whois {0}", thisTradeMsg.nickName);
             iSim.Keyboard.TextEntry(strSendString);
-
-            // Send RETURN
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
         }
 
         private void BtnHideout_Click(object sender, EventArgs e)
@@ -821,16 +908,10 @@ namespace POExileDirection
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
             InputSimulator iSim = new InputSimulator();
-
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
             string strSendString = String.Format("/hideout {0}", thisTradeMsg.nickName);
             iSim.Keyboard.TextEntry(strSendString);
-
-            // Send RETURN
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
         }
 
         private void BtnTrade_Click(object sender, EventArgs e)
@@ -838,126 +919,42 @@ namespace POExileDirection
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
             InputSimulator iSim = new InputSimulator();
-
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
             string strSendString = String.Format("/tradewith {0}", thisTradeMsg.nickName);
             iSim.Keyboard.TextEntry(strSendString);
-
-            // Send RETURN
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
-        }
-
-        private void BtnThanks_Click(object sender, EventArgs e)
-        {
-            InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-
-            InputSimulator iSim = new InputSimulator();
-
-            iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            string strSendString = String.Empty;
-
-            try
-            {
-                strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strnotiDONE);
-            }
-            catch
-            {
-                strSendString = String.Format("@{0} thanks. gl hf~.", thisTradeMsg.nickName);
-            }
-
-            iSim.Keyboard.TextEntry(strSendString);
-
-            // Send RETURN
-            iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
-
-            if (LauncherForm.g_strTRAutoKick == "Y")
-                BtnKick_Click(sender, e);
-
-            Close();
-        }
+        } 
+        #endregion
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
+            string strElapsed = String.Empty;
+
             DateTime nowTime = DateTime.Now;
             double elapsedsecs = ((TimeSpan)(nowTime - rcvDateTime)).TotalSeconds;
             TimeSpan tSpan = TimeSpan.FromSeconds(elapsedsecs);
-            string strElapsed = string.Format("{0:D1}h {1:D2}m {2:D2}s",
-                                tSpan.Hours,
-                                tSpan.Minutes,
-                                tSpan.Seconds);
+            if(tSpan.Hours > 0)
+            {
+                strElapsed = string.Format("{0:D1}h {1:D2}m {2:D2}s", tSpan.Hours, tSpan.Minutes, tSpan.Seconds);
+            }
+            if (tSpan.Minutes > 0)
+            {
+                strElapsed = string.Format("{0:D2}m {1:D2}s", tSpan.Minutes, tSpan.Seconds);
+            }
+
+            if (tSpan.Minutes != -1)
+            {
+                strElapsed = string.Format("{0:D2}s", tSpan.Seconds);
+            }
             labelElapsed.Text = strElapsed;
 
-            if (LauncherForm.g_pinLOCK)
-                ControlForm.frmNotificationContainer.pictureMovingBar.Visible = false;
-            else
-            {
-                ControlForm.frmNotificationContainer.pictureMovingBar.BringToFront();
-                ControlForm.frmNotificationContainer.pictureMovingBar.Visible = true;
-            }
-        }
-
-        private void BtnWaitpls_Click(object sender, EventArgs e)
-        {
-            InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-
-            InputSimulator iSim = new InputSimulator();
-
-            iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            // Send Invite
-            string strSendString = String.Empty;
-
-            try
-            {
-                strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strnotiWAIT);
-            }
-            catch
-            {
-                strSendString = String.Format("@{0} wait a sec pls..", thisTradeMsg.nickName);
-            }
-
-            iSim.Keyboard.TextEntry(strSendString);
-
-            // Send RETURN
-            iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
-        }
-
-        private void BtnSold_Click(object sender, EventArgs e)
-        {
-            InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-
-            InputSimulator iSim = new InputSimulator();
-
-            iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            // Send Invite
-            string strSendString = String.Empty;
-
-            try
-            {
-                strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strnotiSOLD);
-            }
-            catch
-            {
-                strSendString = String.Format("@{0} sold already. sry.", thisTradeMsg.nickName);
-            }
-
-            iSim.Keyboard.TextEntry(strSendString);
-
-            // Send RETURN
-            iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
-
-            BtnClose_Click(sender, e);
+            //if (LauncherForm.g_pinLOCK)
+            //    ControlForm.frmNotificationContainer.pictureMovingBar.Visible = false;
+            //else
+            //{
+            //    ControlForm.frmNotificationContainer.pictureMovingBar.BringToFront();
+            //    ControlForm.frmNotificationContainer.pictureMovingBar.Visible = true;
+            //}
         }
 
         private void NotificationForm_KeyDown(object sender, KeyEventArgs e)
@@ -978,24 +975,236 @@ namespace POExileDirection
                 return;
         }
 
+        #region [[[[[ Button - THX, WAIT, SOLD, CUSTOM1, 2, 3, 4 ]]]]
+        private void BtnThanks_Click(object sender, EventArgs e)
+        {
+            InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
+            if (!String.IsNullOrEmpty(LauncherForm.g_strnotiDONE))
+            {
+                InputSimulator iSim = new InputSimulator();
+                iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+
+                string strSendString = String.Empty;
+                try
+                {
+                    if (LauncherForm.g_strINVITECheckYNThx == "Y")
+                        strSendString = String.Format("/invite {0}", thisTradeMsg.nickName);
+                    else if (LauncherForm.g_strTRADECheckYNThx == "Y")
+                        strSendString = String.Format("/tradewith {0}", thisTradeMsg.nickName);
+                    else
+                        strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strnotiDONE);
+                }
+                catch
+                {
+                    strSendString = String.Format("@{0} thanks. gl hf~.", thisTradeMsg.nickName);
+                }
+                iSim.Keyboard.TextEntry(strSendString);
+                iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+
+                if (LauncherForm.g_strTRAutoKick == "Y")
+                    BtnKick_Click(sender, e);
+                if (LauncherForm.g_strTRAutoCloseThx == "Y")
+                    BtnClose_Click(sender, e);
+            }
+        }
+
+        private void BtnWaitpls_Click(object sender, EventArgs e)
+        {
+            InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
+            if (!String.IsNullOrEmpty(LauncherForm.g_strnotiWAIT))
+            {
+                InputSimulator iSim = new InputSimulator();
+                iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+                string strSendString = String.Empty;
+                try
+                {
+                    if (LauncherForm.g_strINVITECheckYNWait == "Y")
+                        strSendString = String.Format("/invite {0}", thisTradeMsg.nickName);
+                    else if (LauncherForm.g_strTRADECheckYNWait == "Y")
+                        strSendString = String.Format("/tradewith {0}", thisTradeMsg.nickName);
+                    else
+                        strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strnotiWAIT);
+                }
+                catch
+                {
+                    strSendString = String.Format("@{0} wait a sec pls..", thisTradeMsg.nickName);
+                }
+                iSim.Keyboard.TextEntry(strSendString);
+                iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+
+                if (LauncherForm.g_strTRAutoKickWait == "Y")
+                    BtnKick_Click(sender, e);
+                if (LauncherForm.g_strTRAutoCloseWait == "Y")
+                    BtnClose_Click(sender, e);
+            }
+        }
+
+        private void BtnSold_Click(object sender, EventArgs e)
+        {
+            InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
+            if (!String.IsNullOrEmpty(LauncherForm.g_strnotiSOLD))
+            {
+                InputSimulator iSim = new InputSimulator();
+                iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+                string strSendString = String.Empty;
+                try
+                {
+                    if (LauncherForm.g_strINVITECheckYNSold == "Y")
+                        strSendString = String.Format("/invite {0}", thisTradeMsg.nickName);
+                    else if (LauncherForm.g_strTRADECheckYNSold == "Y")
+                        strSendString = String.Format("/tradewith {0}", thisTradeMsg.nickName);
+                    else
+                        strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strnotiSOLD);
+                }
+                catch
+                {
+                    strSendString = String.Format("@{0} sold already. sry.", thisTradeMsg.nickName);
+                }
+                iSim.Keyboard.TextEntry(strSendString);
+                iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+
+                if (LauncherForm.g_strTRAutoKickSold == "Y")
+                    BtnKick_Click(sender, e);
+                if (LauncherForm.g_strTRAutoCloseSold == "Y")
+                    BtnClose_Click(sender, e);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
+            if (!String.IsNullOrEmpty(LauncherForm.g_strCUSTOM1))
+            {
+                InputSimulator iSim = new InputSimulator();
+                iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+            
+                string strSendString = String.Empty;
+                try
+                {
+                    if (LauncherForm.g_strINVITECheckYNCustom1 == "Y")
+                        strSendString = String.Format("/invite {0}", thisTradeMsg.nickName);
+                    else if (LauncherForm.g_strTRADECheckYNCustom1 == "Y")
+                        strSendString = String.Format("/tradewith {0}", thisTradeMsg.nickName);
+                    else
+                        strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strCUSTOM1);
+                }
+                catch
+                {
+                    strSendString = String.Format("@{0} .", thisTradeMsg.nickName);
+                }
+                iSim.Keyboard.TextEntry(strSendString);
+                iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+
+                if (LauncherForm.g_strTRAutoKickCustom1 == "Y")
+                    BtnKick_Click(sender, e);
+                if (LauncherForm.g_strTRAutoCloseCustom1 == "Y")
+                    BtnClose_Click(sender, e);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
+            if (!String.IsNullOrEmpty(LauncherForm.g_strCUSTOM2))
+            {
+                InputSimulator iSim = new InputSimulator();
+                iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+            
+                string strSendString = String.Empty;
+                try
+                {
+                    if (LauncherForm.g_strINVITECheckYNCustom2 == "Y")
+                        strSendString = String.Format("/invite {0}", thisTradeMsg.nickName);
+                    else if (LauncherForm.g_strTRADECheckYNCustom2 == "Y")
+                        strSendString = String.Format("/tradewith {0}", thisTradeMsg.nickName);
+                    else
+                        strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strCUSTOM2);
+                }
+                catch
+                {
+                    strSendString = String.Format("@{0} .", thisTradeMsg.nickName);
+                }
+                iSim.Keyboard.TextEntry(strSendString);
+                iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+
+                if (LauncherForm.g_strTRAutoKickCustom2 == "Y")
+                    BtnKick_Click(sender, e);
+                if (LauncherForm.g_strTRAutoCloseCustom2 == "Y")
+                    BtnClose_Click(sender, e);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
+            if (!String.IsNullOrEmpty(LauncherForm.g_strCUSTOM3))
+            {
+                InputSimulator iSim = new InputSimulator();
+                iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+            
+                string strSendString = String.Empty;
+                try
+                {
+                    if (LauncherForm.g_strINVITECheckYNCustom3 == "Y")
+                        strSendString = String.Format("/invite {0}", thisTradeMsg.nickName);
+                    else if (LauncherForm.g_strTRADECheckYNCustom3 == "Y")
+                        strSendString = String.Format("/tradewith {0}", thisTradeMsg.nickName);
+                    else
+                        strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strCUSTOM3);
+                }
+                catch
+                {
+                    strSendString = String.Format("@{0} .", thisTradeMsg.nickName);
+                }
+                iSim.Keyboard.TextEntry(strSendString);
+                iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+
+                if (LauncherForm.g_strTRAutoKickCustom3 == "Y")
+                    BtnKick_Click(sender, e);
+                if (LauncherForm.g_strTRAutoCloseCustom3 == "Y")
+                    BtnClose_Click(sender, e);
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
+            if (!String.IsNullOrEmpty(LauncherForm.g_strCUSTOM4))
+            {
+                InputSimulator iSim = new InputSimulator();
+                iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+            
+                string strSendString = String.Empty;
+                try
+                {
+                    strSendString = String.Format("@{0} {1}", thisTradeMsg.nickName, LauncherForm.g_strCUSTOM4);
+                }
+                catch
+                {
+                    strSendString = String.Format("@{0} .", thisTradeMsg.nickName);
+                }
+                iSim.Keyboard.TextEntry(strSendString);
+                iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+
+                if (LauncherForm.g_strTRAutoKickCustom4 == "Y")
+                    BtnKick_Click(sender, e);
+                if (LauncherForm.g_strTRAutoCloseCustom4 == "Y")
+                    BtnClose_Click(sender, e);
+            }
+        } 
+        #endregion
+
         private void btnWhisper_Click(object sender, EventArgs e)
         {
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-
-            InputSimulator iSim = new InputSimulator();
-
-            iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            // Send Invite
-            string strSendString = String.Empty;
-
-            strSendString = String.Format("@{0} ", thisTradeMsg.nickName);
-
-            iSim.Keyboard.TextEntry(strSendString);
-
-            // Send RETURN
-            //iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-            //iSim = null;
+            if (!String.IsNullOrEmpty(thisTradeMsg.nickName))
+            {
+                InputSimulator iSim = new InputSimulator();
+                iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+                string strSendString = String.Empty;
+                strSendString = String.Format("@{0} ", thisTradeMsg.nickName);
+                iSim.Keyboard.TextEntry(strSendString);
+            }
         }
 
         private void checkQuadTab_Click(object sender, EventArgs e)

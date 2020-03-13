@@ -55,14 +55,14 @@ namespace POExileDirection
         static extern bool GetCursorInfo(out CURSORINFO pci);*/
         #endregion
 
-        public const string POE_WINDOTITLE = "Path of Exile"; // POE Window Title 
-
+        #region [[[[ Drag Moving, Min/Max ]]]]
         private int nMoving = 0;
         private int nMovePosX = 0;
         private int nMovePosY = 0;
 
         private bool bIsMinimized = false;
-        private bool isMainExpand = false;
+        private bool isMainExpand = false; 
+        #endregion
 
         #region [[[[[ Hot Keys ]]]]]
         // Hot Keys
@@ -86,6 +86,15 @@ namespace POExileDirection
 
         static public string keyEXIT { get; set; }// CONTROL+SHIT+SPACE
 
+        public static string keyMAINInvite { get; set; }
+        public static string keyMAINTrade { get; set; }
+        public static string keyMAINKick { get; set; }
+        public static string keyMAINMinimize { get; set; }
+        public static string keyMAINClose { get; set; }
+        public static string keyMAINSold { get; set; }
+        public static string keyMAINWait { get; set; }
+        public static string keyMAINThx { get; set; }
+
         DeadlyHotkeys ovHRemains = new DeadlyHotkeys();
         DeadlyHotkeys ovHJUN = new DeadlyHotkeys();
         DeadlyHotkeys ovHALVA = new DeadlyHotkeys();
@@ -93,11 +102,20 @@ namespace POExileDirection
         DeadlyHotkeys ovHHideout = new DeadlyHotkeys();
         DeadlyHotkeys ovHSearchbyPosition = new DeadlyHotkeys();
         DeadlyHotkeys ovHEXIT = new DeadlyHotkeys();
+
+        DeadlyHotkeys ovHInvite = new DeadlyHotkeys();
+        DeadlyHotkeys ovHTrade = new DeadlyHotkeys();
+        DeadlyHotkeys ovHKick = new DeadlyHotkeys();
+        DeadlyHotkeys ovHMinimize = new DeadlyHotkeys();
+        DeadlyHotkeys ovHClose = new DeadlyHotkeys();
+        DeadlyHotkeys ovHSold = new DeadlyHotkeys();
+        DeadlyHotkeys ovHWait = new DeadlyHotkeys();
+        DeadlyHotkeys ovHThx = new DeadlyHotkeys();
         #endregion
 
         #region [[[[[ Child Forms ]]]]]
         // OVERLAY
-        string[] strImagePath = new string[3];
+        public static string[] g_strImagePath = new string[3];
 
         // QUEST HELPER
         MainForm frmMainForm = null;
@@ -151,6 +169,12 @@ namespace POExileDirection
 
         ScanChatForm frmScanChat = null;
         public static bool g_bIsSCANOn { get; set; }
+
+        FossilForm frmFossil = null;
+        public static bool g_bIsFossilOn { get; set; }
+
+        TradeHistory frmHistory = null;
+        public static bool g_bIsHistoryOn { get; set; }
 
         public static NotificationContainer frmNotificationContainer = new NotificationContainer();
         public static bool g_bIsNofiticationContainerOn { get; set; }
@@ -206,6 +230,7 @@ namespace POExileDirection
         #region [[[[[ Trade Notification :: Trade Message ]]]]]
         private static DeadlyRegEx g_DeadlyRegEx = new DeadlyRegEx();
         public static List<DeadlyTRADE.TradeMSG> g_TradeMsgList = new List<DeadlyTRADE.TradeMSG>();
+        public static List<DeadlyTRADE.TradeMSG> g_TradeMsgListHistory = new List<DeadlyTRADE.TradeMSG>();
         public static int g_nNotificationShownCNT { get; set; }
         public static int g_nNotificationPanelShownCNT { get; set; }
 
@@ -221,6 +246,10 @@ namespace POExileDirection
         private bool m_bISDND = false;
 
         public static bool gCF_bIsTextFocused { get; set; }
+
+        public static string strJUNDefualt { get; set; }
+        public static string strALVADefualt { get; set; }
+        public static string strZANADefualt { get; set; }
 
         //MapAlertForm frmMapModResult = null;
 
@@ -248,7 +277,7 @@ namespace POExileDirection
                 Check_UILanguageWrapping();
                 Set_TradeMessageRegEx();
 
-                Thread.Sleep(100);
+                Thread.Sleep(100);               
             }
         }
 
@@ -352,6 +381,12 @@ namespace POExileDirection
             btnDeadlyTrade.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnDeadlyTrade.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnDeadlyTrade.TabStop = false;
+
+            btnTradeHistory.FlatStyle = FlatStyle.Flat;
+            btnTradeHistory.BackColor = Color.Transparent;
+            btnTradeHistory.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnTradeHistory.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnTradeHistory.TabStop = false;            
         }
         #endregion
 
@@ -387,6 +422,8 @@ namespace POExileDirection
             Set_FlaskTimerToggleSwitch();
             Set_SkillTimerToggleSwitch();
 
+            btnExpandCollapse_Click(this, new EventArgs());
+
             #region [[[[[ Set EventHandler ]]]]]
             deadlyHideoutEvent += ControlForm_deadlyHideoutEvent;
             deadlyRemainEvent += ControlForm_deadlyRemainEvent;
@@ -406,6 +443,7 @@ namespace POExileDirection
             Text = "DeadlyTradeForPOE";
         }
 
+        #region [[[[ MousWheel Event System Thread Delegate Invoke ]]]]
         private void MouseWheelThread(object sender, MouseEventExtArgs e)
         {
             MouseWheelExtDelegate delegateInstance =
@@ -463,8 +501,9 @@ namespace POExileDirection
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                 //Task.Factory.StartNew(() =>
             }
-        }
-        
+        } 
+        #endregion
+
         private void GetItemDataThread()
         {
             GetItemDataFromClipboardDelegate delegateInstance =
@@ -477,16 +516,18 @@ namespace POExileDirection
         // KEY HOOK
         private void _keymouseHooks_KeyDown(object sender, WindowsHook.KeyEventArgs e)
         {
-            // CTRL + C 
-            if (LauncherForm.g_FocusLosing && e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
+            //// CTRL + C 
+            //if (LauncherForm.g_FocusLosing && e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
+            //{
+            //    //TODO : Trade Site.
+            //    // is it trade whisper?
+            //    DeadlyLog4Net._log.Info("CTRL+C for Trading");
+            //    return;
+            //}
+            //else 
+            if (!LauncherForm.g_FocusLosing) // Only Exile Focused.
             {
-                //TODO : Trade Site.
-                // is it trade whisper?
-                DeadlyLog4Net._log.Info("CTRL+C for Trading");
-                return;
-            }
-            else if (!LauncherForm.g_FocusLosing) // Only Exile Focused.
-            {
+                #region [[[[[ HOT KEYS ]]]]]
                 if (e.Modifiers == ovHRemains.fsMod && e.KeyCode == ovHRemains.hotKeys && LauncherForm.g_strYNUseRemainingHOTKEY == "Y" && !bIsSettingsPop)
                 {
                     deadlyRemainEvent(this, new EventArgs());
@@ -512,7 +553,7 @@ namespace POExileDirection
                     deadlyHideoutEvent(this, new EventArgs());
                     return;
                 }
-                else if (e.Modifiers == ovHSearchbyPosition.fsMod && 
+                else if (e.Modifiers == ovHSearchbyPosition.fsMod &&
                         e.KeyCode == ovHSearchbyPosition.hotKeys && LauncherForm.g_strYNUseFindbyPositionHOTKEY == "Y" && !bIsSettingsPop)
                 {
                     deadlySearchPositionEvent(this, new EventArgs());
@@ -524,26 +565,32 @@ namespace POExileDirection
                     return;
                 }
 
+                //TODO : NEW HOT KEYS... 
+                #endregion
+
                 // CTRL + C
-                if (e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
-                {
-                    // is it price checking?
-                    try
-                    {
-                        m_strClipboardText = ClipboardHelper.GetUnicodeText();
-                        if (m_strClipboardText.Contains("--------"))
-                        {
-                            Thread t = new Thread(new ThreadStart(GetItemDataThread));
-                            t.Start();
-                        }
-                        return;
-                    }
-                    catch (InvalidOperationException ex)
-                    {
-                        DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                        return;
-                    }
-                }
+                //if (e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
+                //{
+                //    // is it price checking?
+                //    try
+                //    {
+                //        m_strClipboardText = ClipboardHelper.GetUnicodeText();
+                //        if (m_strClipboardText.Contains("--------"))
+                //        {
+                //            Thread t = new Thread(new ThreadStart(GetItemDataThread));
+                //            t.Start();
+                //        }
+                //        return;
+                //    }
+                //    catch (InvalidOperationException ex)
+                //    {
+                //        DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+                //        return;
+                //    }
+                //}
+
+                // KAKAO User's CTRL+V → ENTER
+                //TODO : Send When ENTER - Previous Key is CTRL+V
                 // CTRL + V
                 if (e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.V)
                 {
@@ -580,32 +627,15 @@ namespace POExileDirection
                 // FLASK 1
                 if (e.KeyCode == (WindowsHook.Keys)Enum.Parse(typeof(WindowsHook.Keys), LauncherForm.g_Flask1.ToString()) && LauncherForm.g_bToggle1 && !LauncherForm.g_FocusOnAddon)
                 {
-                    /*try
-                    {
-                        FlaskTimerEvent1(this, new EventArgs()); //ControlForm_FlaskTimerEvent2(this, new EventArgs());
-                        InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-                    }
-                    catch (InvalidOperationException ex)
-                    {
-                        DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                    }*/
                     try
                     {
-                        /*if (LauncherForm.g_strFlaskType == "A")
-                        {
-                            if (frmF1 == null) { frmF1 = new FlaskTimerCircleForm(); }
-                            frmF1.nFlaskNumber = 1;
-                            frmF1.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime1);
-                            frmF1.Show();
-                        }
-                        else*/
                         if (!bShowingfrmICONF1) { frmICONF1 = new FlaskICONTimer(); }
                         frmICONF1.nFlaskNumber = 1;
                         frmICONF1.strUseAlertSound = LauncherForm.g_strTimerSound1;
                         frmICONF1.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime1);
                         bShowingfrmICONF1 = true;
                         frmICONF1.Show();
-                        //Thread.Sleep(50);
+                        
                         InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                     }
                     catch (InvalidOperationException ex)
@@ -616,24 +646,15 @@ namespace POExileDirection
                 // FLASK 2
                 else if (e.KeyCode == (WindowsHook.Keys)Enum.Parse(typeof(WindowsHook.Keys), LauncherForm.g_Flask2.ToString()) && LauncherForm.g_bToggle2 && !LauncherForm.g_FocusOnAddon)
                 {
-                    /*try
-                    {
-                        FlaskTimerEvent2(this, new EventArgs()); //ControlForm_FlaskTimerEvent2(this, new EventArgs());
-                        InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-                    }
-                    catch (InvalidOperationException ex)
-                    {
-                        DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                    }*/
                     try
                     {
                         if (!bShowingfrmICONF2) { frmICONF2 = new FlaskICONTimer(); }
                         frmICONF2.nFlaskNumber = 2;
-                        frmICONF2.strUseAlertSound = LauncherForm.g_strTimerSound2;
+                        frmICONF2.strUseAlertSound = LauncherForm.g_strTimerSound1;
                         frmICONF2.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime2);
                         bShowingfrmICONF2 = true;
                         frmICONF2.Show();
-                        //Thread.Sleep(50);
+                        
                         InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                     }
                     catch (InvalidOperationException ex)
@@ -644,24 +665,15 @@ namespace POExileDirection
                 // FLASK 3
                 else if (e.KeyCode == (WindowsHook.Keys)Enum.Parse(typeof(WindowsHook.Keys), LauncherForm.g_Flask3.ToString()) && LauncherForm.g_bToggle3 && !LauncherForm.g_FocusOnAddon)
                 {
-                    /*try
-                    {
-                        FlaskTimerEvent3(this, new EventArgs()); //ControlForm_FlaskTimerEvent3(this, new EventArgs());
-                        InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-                    }
-                    catch (InvalidOperationException ex)
-                    {
-                        DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                    }*/
                     try
                     {
                         if (!bShowingfrmICONF3) { frmICONF3 = new FlaskICONTimer(); }
                         frmICONF3.nFlaskNumber = 3;
-                        frmICONF3.strUseAlertSound = LauncherForm.g_strTimerSound3;
+                        frmICONF3.strUseAlertSound = LauncherForm.g_strTimerSound1;
                         frmICONF3.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime3);
                         bShowingfrmICONF3 = true;
                         frmICONF3.Show();
-                        //Thread.Sleep(50);
+                        
                         InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                     }
                     catch (InvalidOperationException ex)
@@ -672,24 +684,15 @@ namespace POExileDirection
                 // FLASK 4
                 else if (e.KeyCode == (WindowsHook.Keys)Enum.Parse(typeof(WindowsHook.Keys), LauncherForm.g_Flask4.ToString()) && LauncherForm.g_bToggle4 && !LauncherForm.g_FocusOnAddon)
                 {
-                    /*try
-                    {
-                        FlaskTimerEvent4(this, new EventArgs()); //ControlForm_FlaskTimerEvent4(this, new EventArgs());
-                        InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-                    }
-                    catch (InvalidOperationException ex)
-                    {
-                        DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                    }*/
                     try
                     {
                         if (!bShowingfrmICONF4) { frmICONF4 = new FlaskICONTimer(); }
                         frmICONF4.nFlaskNumber = 4;
-                        frmICONF4.strUseAlertSound = LauncherForm.g_strTimerSound4;
+                        frmICONF4.strUseAlertSound = LauncherForm.g_strTimerSound1;
                         frmICONF4.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime4);
                         bShowingfrmICONF4 = true;
                         frmICONF4.Show();
-                        //Thread.Sleep(50);
+                        
                         InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                     }
                     catch (InvalidOperationException ex)
@@ -700,24 +703,15 @@ namespace POExileDirection
                 // FLASK 5
                 else if (e.KeyCode == (WindowsHook.Keys)Enum.Parse(typeof(WindowsHook.Keys), LauncherForm.g_Flask5.ToString()) && LauncherForm.g_bToggle5 && !LauncherForm.g_FocusOnAddon)
                 {
-                    /*try
-                    {
-                        FlaskTimerEvent5(this, new EventArgs()); //ControlForm_FlaskTimerEvent5(this, new EventArgs());
-                        InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-                    }
-                    catch (InvalidOperationException ex)
-                    {
-                        DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                    }*/
                     try
                     {
                         if (!bShowingfrmICONF5) { frmICONF5 = new FlaskICONTimer(); }
                         frmICONF5.nFlaskNumber = 5;
-                        frmICONF5.strUseAlertSound = LauncherForm.g_strTimerSound5;
+                        frmICONF5.strUseAlertSound = LauncherForm.g_strTimerSound1;
                         frmICONF5.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime5);
                         bShowingfrmICONF5 = true;
                         frmICONF5.Show();
-                        //Thread.Sleep(50);
+                        
                         InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                     }
                     catch (InvalidOperationException ex)
@@ -821,6 +815,13 @@ namespace POExileDirection
         #region [[[[[ TimerInit ]]]]]
         private void TimerInit_Tick(object sender, EventArgs e)
         {
+            if (m_InitCNT == 0)
+            {
+                frmStashGrid = new StashGrid();
+                frmStashGrid.Owner = this;
+                frmStashGrid.Show();
+            }
+
             // Initializing... Waiting Image.
             m_InitCNT = m_InitCNT + 1;
             if (m_InitCNT > 10)
@@ -833,6 +834,8 @@ namespace POExileDirection
                 panelInit.Visible = false;
                 panelDrag.Visible = true;
 
+                frmStashGrid.Close();
+
                 _keymouseHooks = Hook.GlobalEvents();
                 _keymouseHooks.KeyDown += _keymouseHooks_KeyDown;
                 if (LauncherForm.g_strYNMouseWheelStashTab == "Y" && !Debugger.IsAttached)
@@ -841,8 +844,7 @@ namespace POExileDirection
                     _keymouseHooks.MouseWheelExt += _keymouseHooks_MouseWheelExt;
                 }
 
-                // Start LOG Parsing UI Thread. 2020.01.13 Using baackground worker
-                //DeadlyLOGParingTimer.Start();
+                // Start LOG Parsing UI Thread.
                 timerParser.Start();
             }
             else
@@ -929,7 +931,7 @@ namespace POExileDirection
         {
             if (!bIMGOvelayActivatedMAP)
                 frmIMGOverlayMAP = new ImageOverlayFormMap();
-            frmIMGOverlayMAP.m_strImagePath = strImagePath[2];
+            frmIMGOverlayMAP.m_strImagePath = g_strImagePath[2];
             frmIMGOverlayMAP.nZoom = 0;
             frmIMGOverlayMAP.Load_Image();
             IMGOverlayForm_Show_Hide((int)OVERLAY_WHAT.OVER_MAP);
@@ -939,7 +941,7 @@ namespace POExileDirection
         {
             if (!bIMGOvelayActivatedALVA)
                 frmIMGOverlayALVA = new ImageOverlayFormAlva();
-            frmIMGOverlayALVA.m_strImagePath = strImagePath[1];
+            frmIMGOverlayALVA.m_strImagePath = g_strImagePath[1];
             frmIMGOverlayALVA.nZoom = 0;
             frmIMGOverlayALVA.Load_Image();
             IMGOverlayForm_Show_Hide((int)OVERLAY_WHAT.OVER_ALVA);
@@ -951,7 +953,7 @@ namespace POExileDirection
                 frmIMGOverlay = new DeadlySyndicateForm();*/ // RollBack to Image File Overlay 1.3.9.0 Ver.
             if (!bIMGOvelayActivated)
                 frmIMGOverlay = new ImageOverlayForm();
-            frmIMGOverlay.m_strImagePath = strImagePath[0];
+            frmIMGOverlay.m_strImagePath = g_strImagePath[0];
             frmIMGOverlay.nZoom = 0;
             frmIMGOverlay.Load_Image();
             IMGOverlayForm_Show_Hide((int)OVERLAY_WHAT.OVER_JUN);
@@ -1071,24 +1073,12 @@ namespace POExileDirection
             */
 
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
             DeadlyLog4Net._log.Info($"{MethodBase.GetCurrentMethod().Name} RESOLUTION : " + strINIPath);
 
             try
             {
-                g_LogFilePath = parser.GetSetting("DIRECTIONHELPER", "POELOGPATH"); ;
+                g_LogFilePath = LauncherForm.g_POELogPath;
                 /*
                 [LOCATION]
                 LEFT=1385
@@ -1139,7 +1129,7 @@ namespace POExileDirection
                 catch (Exception ex)
                 {
                     MSGForm frmMSG = new MSGForm();
-                    frmMSG.lbMsg.Text = "Unknown Error occured while reading POE log file.\r\n\r\nERROR : ( " + ex.Message + " )";
+                    frmMSG.lbMsg.Text = "Unknown Error occurred while reading POE log file.\r\n\r\nERROR : ( " + ex.Message + " )";
                     frmMSG.ShowDialog();
                     bRet = false;
 
@@ -1209,6 +1199,12 @@ namespace POExileDirection
             {
                 if (bShow)
                 {
+                    if (g_bIsHistoryOn)
+                        frmHistory.Show();
+
+                    if (g_bIsFossilOn)
+                        frmFossil.Show();
+
                     if (g_bIsSearchPop)
                         frmSearchStash.Show();
 
@@ -1252,6 +1248,12 @@ namespace POExileDirection
                 }
                 else
                 {
+                    if (g_bIsHistoryOn)
+                        frmHistory.Hide();
+
+                    if (g_bIsFossilOn)
+                        frmFossil.Hide();
+
                     if (g_bIsSearchPop)
                         frmSearchStash.Hide();
 
@@ -1345,6 +1347,7 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisper)) return true;
                     g_TradeMsgList.Add(tradeWhisper);
+                    g_TradeMsgListHistory.Add(tradeWhisper);
 
                     NotificationForm frmNotifyPanel = new NotificationForm();
                     frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
@@ -1401,6 +1404,7 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisperCurr)) return true;
                     g_TradeMsgList.Add(tradeWhisperCurr);
+                    g_TradeMsgListHistory.Add(tradeWhisperCurr);
 
                     NotificationForm frmNotifyPanel = new NotificationForm();
                     frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
@@ -1456,6 +1460,7 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisper2Un)) return true;
                     g_TradeMsgList.Add(tradeWhisper2Un);
+                    g_TradeMsgListHistory.Add(tradeWhisper2Un);
 
                     NotificationForm frmNotifyPanel = new NotificationForm();
                     frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
@@ -1508,6 +1513,7 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisper2)) return true;
                     g_TradeMsgList.Add(tradeWhisper2);
+                    g_TradeMsgListHistory.Add(tradeWhisper2);
 
                     NotificationForm frmNotifyPanel = new NotificationForm();
                     frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
@@ -1560,6 +1566,7 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisper3)) return true;
                     g_TradeMsgList.Add(tradeWhisper3);
+                    g_TradeMsgListHistory.Add(tradeWhisper3);
 
                     NotificationForm frmNotifyPanel = new NotificationForm();
                     frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
@@ -1612,6 +1619,7 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisper4)) return true;
                     g_TradeMsgList.Add(tradeWhisper4);
+                    g_TradeMsgListHistory.Add(tradeWhisper4);
 
                     NotificationForm frmNotifyPanel = new NotificationForm();
                     frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
@@ -1664,6 +1672,7 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisperENMAP)) return true;
                     g_TradeMsgList.Add(tradeWhisperENMAP);
+                    g_TradeMsgListHistory.Add(tradeWhisperENMAP);
 
                     NotificationForm frmNotifyPanel = new NotificationForm();
                     frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
@@ -1716,6 +1725,7 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisper2)) return true;
                     g_TradeMsgList.Add(tradeWhisper2);
+                    g_TradeMsgListHistory.Add(tradeWhisper2);
 
                     NotificationForm frmNotifyPanel = new NotificationForm();
                     frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
@@ -1744,6 +1754,7 @@ namespace POExileDirection
 
         private static long gln_LastRead = 0;
 
+        #region [[[[[ Parsing Client Log File ]]]]]
         private void TimerParser_Tick(object sender, EventArgs e)
         {
             ShowHide_Addon_Forms(!LauncherForm.g_FocusLosing);
@@ -1942,6 +1953,9 @@ namespace POExileDirection
 
                                     if (strTradePurpose != null && strTradePurpose != "")
                                     {
+                                        if (g_TradeMsgListHistory.Count >= 50)
+                                            g_TradeMsgListHistory.RemoveAt(0);
+
                                         if (WhisperCheck_ENGPriceWithTabName(strTradePurpose, readLineString))
                                             return;
 
@@ -2053,7 +2067,9 @@ namespace POExileDirection
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
         }
+        #endregion
 
+        #region [[[[[ Trade Whisper Notification - Check Duplication, Remove ]]]]]
         private bool Check_DuplicateTradeMSG(DeadlyTRADE.TradeMSG trMsg)
         {
             if (g_TradeMsgList.Count == 0)
@@ -2061,7 +2077,7 @@ namespace POExileDirection
 
             bool bRet = false;
 
-            foreach(var objtr in g_TradeMsgList)
+            foreach (var objtr in g_TradeMsgList)
             {
                 if (trMsg.tradePurpose == objtr.tradePurpose
                     && trMsg.nickName == objtr.nickName
@@ -2100,7 +2116,8 @@ namespace POExileDirection
                 }
                 nIndex = nIndex + 1;
             }
-        }
+        } 
+        #endregion
 
         private void ControlForm_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
         {
@@ -2155,14 +2172,14 @@ namespace POExileDirection
             else
             {
                 // ZONE
-                g_DeadlyRegEx.RegExZoneEnteredENG = new Regex(@": You have entered (.*)\.", RegexOptions.IgnoreCase);
-                g_DeadlyRegEx.RegExZoneEnteredKOR = new Regex(@": (.*)에 진입했습니다.", RegexOptions.IgnoreCase); // for Korean Client. ex) [INFO Client 14932] : 오아시스에 진입했습니다.
+                g_DeadlyRegEx.RegExZoneEnteredENG = new Regex(@": You have entered (.*)\.(.*)$", RegexOptions.IgnoreCase);
+                g_DeadlyRegEx.RegExZoneEnteredKOR = new Regex(@": (.*)에 진입했습니다.(.*)$", RegexOptions.IgnoreCase); // for Korean Client. ex) [INFO Client 14932] : 오아시스에 진입했습니다.
 
                 // MONSTER
-                g_DeadlyRegEx.RegExMonsterRemainsENG = new Regex(@": (.*) monsters remain."); // : 3 monsters remain.
-                g_DeadlyRegEx.RegExMonsterRemainsENGMore = new Regex(@": More than (.*) monsters remain."); // : More than 50 monsters remain.
-                g_DeadlyRegEx.RegExMonsterRemainsKOR = new Regex(@": 몬스터 (.*)개체가 남아있습니다."); // : 몬스터 0개체가 남아있습니다.
-                g_DeadlyRegEx.RegExMonsterRemainsKORMore = new Regex(@": 몬스터가 (.*)개체 이상 남아있습니다."); // : 몬스터가 50개체 이상 남아있습니다.
+                g_DeadlyRegEx.RegExMonsterRemainsENG = new Regex(@": (.*) monsters remain.(.*)$"); // : 3 monsters remain.
+                g_DeadlyRegEx.RegExMonsterRemainsENGMore = new Regex(@": More than (.*) monsters remain.(.*)$"); // : More than 50 monsters remain.
+                g_DeadlyRegEx.RegExMonsterRemainsKOR = new Regex(@": 몬스터 (.*)개체가 남아있습니다.(.*)$"); // : 몬스터 0개체가 남아있습니다.
+                g_DeadlyRegEx.RegExMonsterRemainsKORMore = new Regex(@": 몬스터가 (.*)개체 이상 남아있습니다.(.*)$"); // : 몬스터가 50개체 이상 남아있습니다.
 
                 // Joined the area.
                 g_DeadlyRegEx.RegExJoinedAreKOR = new Regex(@": (.*) has joined the area."); // : Ian_Curtis has joined the area.
@@ -2339,6 +2356,38 @@ namespace POExileDirection
             Parse_StringToHotKey(keyEXIT);
             ovHEXIT.fsMod = m_unMod;
             ovHEXIT.hotKeys = m_HotKey;
+
+            Parse_StringToHotKey(keyMAINInvite);
+            ovHInvite.fsMod = m_unMod;
+            ovHInvite.hotKeys = m_HotKey;
+
+            Parse_StringToHotKey(keyMAINTrade);
+            ovHTrade.fsMod = m_unMod;
+            ovHTrade.hotKeys = m_HotKey;
+
+            Parse_StringToHotKey(keyMAINKick);
+            ovHKick.fsMod = m_unMod;
+            ovHKick.hotKeys = m_HotKey;
+
+            Parse_StringToHotKey(keyMAINMinimize);
+            ovHMinimize.fsMod = m_unMod;
+            ovHMinimize.hotKeys = m_HotKey;
+
+            Parse_StringToHotKey(keyMAINClose);
+            ovHClose.fsMod = m_unMod;
+            ovHClose.hotKeys = m_HotKey;
+
+            Parse_StringToHotKey(keyMAINSold);
+            ovHSold.fsMod = m_unMod;
+            ovHSold.hotKeys = m_HotKey;
+
+            Parse_StringToHotKey(keyMAINWait);
+            ovHWait.fsMod = m_unMod;
+            ovHWait.hotKeys = m_HotKey;
+
+            Parse_StringToHotKey(keyMAINThx);
+            ovHThx.fsMod = m_unMod;
+            ovHThx.hotKeys = m_HotKey;
         }
 
         public void Parse_StringToHotKey(string strtext)
@@ -2353,7 +2402,7 @@ namespace POExileDirection
 
                 if (String.IsNullOrEmpty(strtext))
                 {
-                    DeadlyLog4Net._log.Info("Empty Hot Key Text : " + strtext);
+                    //DeadlyLog4Net._log.Info("Empty Hot Key Text : " + strtext);
                     return;
                 }
 
@@ -2386,7 +2435,7 @@ namespace POExileDirection
                 if (HasAlt) { Modifier |= WindowsHook.Keys.Alt; }
                 if (HasShift) { Modifier |= WindowsHook.Keys.Shift; }
 
-                //Get the last key in the shortcut
+                // Get the last key in the shortcut
                 System.Windows.Forms.KeysConverter keyconverter = new System.Windows.Forms.KeysConverter();
 
                 // TO DO More.
@@ -2401,10 +2450,10 @@ namespace POExileDirection
             }
             catch(Exception ex)
             {
-                DeadlyLog4Net._log.Error($"Fail to set hotkey {MethodBase.GetCurrentMethod().Name}", ex);
+                DeadlyLog4Net._log.Error($"Fail to set hotkey {MethodBase.GetCurrentMethod().Name} strText : " + strtext, ex);
                 MSGForm frmMSG = new MSGForm();
                 if (LauncherForm.g_strUILang == "KOR")
-                    frmMSG.lbMsg.Text = "단축키 설정에 오류가 있습니다.\r\n\r\n단축키를 제외한 다른 기능은 정상작동합니다.";
+                    frmMSG.lbMsg.Text = "단축키 설정("+ strtext + ")에 오류가 있습니다.\r\n\r\n단축키를 제외한 다른 기능은 정상작동합니다.";
                 else
                     frmMSG.lbMsg.Text = "Fail to set hotkey.\r\n\r\nBut, all the other function is properly.";
                 frmMSG.ShowDialog();
@@ -2466,23 +2515,8 @@ namespace POExileDirection
         #region ⨌⨌ Init. Form Location ⨌⨌
         public void Init_ControlFormPosition()
         {
-            strImagePath[0] = @".\DeadlyInform\Betrayal.png";
-
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
-            DeadlyLog4Net._log.Info($"{MethodBase.GetCurrentMethod().Name} RESOLUTION : " + strINIPath);
 
             try
             {
@@ -2499,18 +2533,28 @@ namespace POExileDirection
                 string strPath = "";
                 strPath = parser.GetSetting("DIRECTIONHELPER", "POELOGPATH");
 
+                // Check User Custom Overlay or Default Overlay.
+                strJUNDefualt = parser.GetSetting("OVERLAY", "JUNDEFAULT");
+                strALVADefualt = parser.GetSetting("OVERLAY", "ALVADEFAULT");
+                strZANADefualt = parser.GetSetting("OVERLAY", "ZANADEFAULT");
+
                 // Get Image Path
-                /*strImagePath[0] = parser.GetSetting("OVERLAY", "JUN"); // @".\DeadlyInform\Betrayal.png";   // JUN
-                if(strImagePath[0]=="")
-                    strImagePath[0] = @".\DeadlyInform\Betrayal.png";*/
+                g_strImagePath[0] = parser.GetSetting("OVERLAY", "JUN"); // @".\DeadlyInform\Betrayal.png";   // JUN
+                if (String.IsNullOrEmpty(g_strImagePath[0]) || strJUNDefualt.Trim().ToUpper() == "Y")
+                {
+                    if(LauncherForm.g_strUILang=="KOR")
+                        g_strImagePath[0] = @".\DeadlyInform\Betrayal.png";
+                    else
+                        g_strImagePath[0] = @".\DeadlyInform\BetrayalEN.png";
+                }
 
-                strImagePath[1] = parser.GetSetting("OVERLAY", "ALVA"); // @".\DeadlyInform\Incursion.png";  // ALVA
-                if (strImagePath[1] == "")
-                    strImagePath[1] = @".\DeadlyInform\Incursion.png";
+                g_strImagePath[1] = parser.GetSetting("OVERLAY", "ALVA"); // @".\DeadlyInform\Incursion.png";  // ALVA
+                if (String.IsNullOrEmpty(g_strImagePath[1]) || strALVADefualt.Trim().ToUpper() == "Y")
+                    g_strImagePath[1] = @".\DeadlyInform\Incursion.png";
 
-                strImagePath[2] = parser.GetSetting("OVERLAY", "ZANA"); // @".\DeadlyInform\Atlas.png";      // ZANA
-                if (strImagePath[2] == "")
-                    strImagePath[2] = @".\DeadlyInform\Atlas.png";
+                g_strImagePath[2] = parser.GetSetting("OVERLAY", "ZANA"); // @".\DeadlyInform\Atlas.png";      // ZANA
+                if (String.IsNullOrEmpty(g_strImagePath[2]) || strZANADefualt.Trim().ToUpper() == "Y")
+                    g_strImagePath[2] = @".\DeadlyInform\Atlas.png";
 
                 // HOT KEYS
                 keyMAINRemains = parser.GetSetting("HOTKEY", "R");
@@ -2521,6 +2565,17 @@ namespace POExileDirection
                 keySearchbyPosition = parser.GetSetting("HOTKEY", "F");
                 keyEXIT = parser.GetSetting("HOTKEY", "E");
 
+                // HOT KEYS - Trade Panel
+                keyMAINInvite = parser.GetSetting("HOTKEY", "INVITE");
+                keyMAINTrade = parser.GetSetting("HOTKEY", "TRADE");
+                keyMAINKick = parser.GetSetting("HOTKEY", "KICK");
+                keyMAINMinimize = parser.GetSetting("HOTKEY", "MINIMIZE");
+                keyMAINClose = parser.GetSetting("HOTKEY", "CLOSE");
+                keyMAINSold = parser.GetSetting("HOTKEY", "SOLD");
+                keyMAINWait = parser.GetSetting("HOTKEY", "WAIT");
+                keyMAINThx = parser.GetSetting("HOTKEY", "THX");
+
+                // for Other Language's Key Code.
                 strPath = strPath.Replace("İ", "i");
                 strPath = strPath.Replace("Ý", "i");
 
@@ -2603,7 +2658,7 @@ namespace POExileDirection
             if (!bIMGOvelayActivated)
                 frmIMGOverlay = new ImageOverlayForm();
             // JUN
-            frmIMGOverlay.m_strImagePath = strImagePath[0];
+            frmIMGOverlay.m_strImagePath = g_strImagePath[0];
             frmIMGOverlay.nZoom = 0;
             frmIMGOverlay.Load_Image();
             IMGOverlayForm_Show_Hide((int)OVERLAY_WHAT.OVER_JUN);
@@ -2614,7 +2669,7 @@ namespace POExileDirection
             if (!bIMGOvelayActivatedALVA)
                 frmIMGOverlayALVA = new ImageOverlayFormAlva();
             // ALVA
-            frmIMGOverlayALVA.m_strImagePath = strImagePath[1];
+            frmIMGOverlayALVA.m_strImagePath = g_strImagePath[1];
             frmIMGOverlayALVA.nZoom = 0;
             frmIMGOverlayALVA.Load_Image();
             IMGOverlayForm_Show_Hide((int)OVERLAY_WHAT.OVER_ALVA);
@@ -2625,7 +2680,7 @@ namespace POExileDirection
             if (!bIMGOvelayActivatedMAP)
                 frmIMGOverlayMAP = new ImageOverlayFormMap();
             // ZANA
-            frmIMGOverlayMAP.m_strImagePath = strImagePath[2];
+            frmIMGOverlayMAP.m_strImagePath = g_strImagePath[2];
             frmIMGOverlayMAP.nZoom = 0;
             frmIMGOverlayMAP.Load_Image();
             IMGOverlayForm_Show_Hide((int)OVERLAY_WHAT.OVER_MAP);
@@ -2656,51 +2711,64 @@ namespace POExileDirection
             gCF_bIsTextFocused = true;
             try
             {
-                SettingsOverhaul settingsOverhaul = new SettingsOverhaul();
-                settingsOverhaul.Show();
-                return;
-                using (SettingsForm frmSettings = new SettingsForm())
+                using (SettingsOverhaul settingsOverhaul = new SettingsOverhaul())
                 {
-                    frmSettings.keyRemains = keyMAINRemains;
-                    frmSettings.keyJUN = keyMAINJUN;
-                    frmSettings.keyALVA = keyMAINALVA;
-                    frmSettings.keyZANA = keyMAINZANA;
-                    frmSettings.keyHideout = keyMAINHideout; // hideout
-                    frmSettings.keySearchbyPosition = keySearchbyPosition;
-                    frmSettings.keyEXIT = keyEXIT;
-                    if (frmSettings.ShowDialog() == DialogResult.OK)
+                    settingsOverhaul.keyRemains = keyMAINRemains;
+                    settingsOverhaul.keyJUN = keyMAINJUN;
+                    settingsOverhaul.keyALVA = keyMAINALVA;
+                    settingsOverhaul.keyZANA = keyMAINZANA;
+                    settingsOverhaul.keyHideout = keyMAINHideout;
+                    settingsOverhaul.keySearchbyPosition = keySearchbyPosition;
+                    settingsOverhaul.keyEXIT = keyEXIT;
+                    settingsOverhaul.keyInvite = keyMAINInvite;
+                    settingsOverhaul.keyTrade = keyMAINTrade;
+                    settingsOverhaul.keyKick = keyMAINKick;
+                    settingsOverhaul.keyMinimize = keyMAINMinimize;
+                    settingsOverhaul.keyClose = keyMAINClose;
+                    settingsOverhaul.keySold = keyMAINSold;
+                    settingsOverhaul.keyWait = keyMAINWait;
+                    settingsOverhaul.keyThx = keyMAINThx;
+                    if (settingsOverhaul.ShowDialog() == DialogResult.OK)
                     {
-                        keyMAINRemains = frmSettings.keyRemains;
-                        keyMAINJUN = frmSettings.keyJUN;
-                        keyMAINALVA = frmSettings.keyALVA;
-                        keyMAINZANA = frmSettings.keyZANA;
-                        keyMAINHideout = frmSettings.keyHideout;
-                        keySearchbyPosition = frmSettings.keySearchbyPosition;
-                        keyEXIT = frmSettings.keyEXIT;
-
-                        //x UnRegisterHotKeys();
-
-                        //x Register_HotKeys();
-                        Thread.Sleep(200);
-
-                        SaveNofiticationMsg(); //TODO: g_strCUSTOM1,2,3 Added.
-                        Thread.Sleep(200);
-
                         string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-                        if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-                        {
-                            strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                            if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                            else if (LauncherForm.resolution_width < 1280)
-                                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-                        }
-                        else if (LauncherForm.resolution_width > 1920)
-                            strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
                         IniParser parser = new IniParser(strINIPath);
 
+                        #region [[[[[ TAB1 - HOT KEYS ]]]]]
+                        // HotKey Use - MAIN                        
+                        parser.AddSetting("MISC", "REMAINING", LauncherForm.g_strYNUseRemainingHOTKEY);
+                        parser.AddSetting("MISC", "HOTKEYSYNDICATE", LauncherForm.g_strYNUseSyndicateJUNHOTKEY);
+                        parser.AddSetting("MISC", "HOTKEYALVAINCURSION", LauncherForm.g_strYNUseIncursionALVAHOTKEY);
+                        parser.AddSetting("MISC", "HOTKEYZANAATLAS", LauncherForm.g_strYNUseAtlasZANAHOTKEY);
+                        parser.AddSetting("MISC", "HOTKEYHIDEOUT", LauncherForm.g_strYNUseHideoutHOTKEY);
+                        parser.AddSetting("MISC", "FINDBYPOSTION", LauncherForm.g_strYNUseFindbyPositionHOTKEY);
+                        parser.AddSetting("MISC", "EMERGENCY", LauncherForm.g_strYNUseEmergencyHOTKEY);
+                        // Check Use - CTRL+MOUSEWHEEL
+                        parser.AddSetting("MISC", "MOUSESTASHTAB", LauncherForm.g_strYNMouseWheelStashTab);
+                        // HotKey Use - MAIN  - Trade Notification Panel
+                        parser.AddSetting("NOTIFYHOTKEY", "INVITE", LauncherForm.g_strYNUseHOTKEYInvite);
+                        parser.AddSetting("NOTIFYHOTKEY", "TRADE", LauncherForm.g_strYNUseHOTKEYTrade);
+                        parser.AddSetting("NOTIFYHOTKEY", "KICK", LauncherForm.g_strYNUseHOTKEYKick);
+                        parser.AddSetting("NOTIFYHOTKEY", "MINIMIZE", LauncherForm.g_strYNUseHOTKEYMinimize);
+                        parser.AddSetting("NOTIFYHOTKEY", "CLOSE", LauncherForm.g_strYNUseHOTKEYClose);
+                        parser.AddSetting("NOTIFYHOTKEY", "SOLD", LauncherForm.g_strYNUseHOTKEYSold);
+                        parser.AddSetting("NOTIFYHOTKEY", "WAIT", LauncherForm.g_strYNUseHOTKEYWait);
+                        parser.AddSetting("NOTIFYHOTKEY", "THX", LauncherForm.g_strYNUseHOTKEYThx);
+                        // HOT KYES BINDING
+                        keyMAINRemains = settingsOverhaul.keyRemains;
+                        keyMAINJUN = settingsOverhaul.keyJUN;
+                        keyMAINALVA = settingsOverhaul.keyALVA;
+                        keyMAINZANA = settingsOverhaul.keyZANA;
+                        keyMAINHideout = settingsOverhaul.keyHideout;
+                        keySearchbyPosition = settingsOverhaul.keySearchbyPosition;
+                        keyEXIT = settingsOverhaul.keyEXIT;
+                        keyMAINInvite = settingsOverhaul.keyInvite;
+                        keyMAINTrade = settingsOverhaul.keyTrade;
+                        keyMAINKick = settingsOverhaul.keyKick;
+                        keyMAINMinimize = settingsOverhaul.keyMinimize;
+                        keyMAINClose = settingsOverhaul.keyClose;
+                        keyMAINSold = settingsOverhaul.keySold;
+                        keyMAINWait = settingsOverhaul.keyWait;
+                        keyMAINThx = settingsOverhaul.keyThx;
                         parser.AddSetting("HOTKEY", "R", keyMAINRemains);
                         parser.AddSetting("HOTKEY", "J", keyMAINJUN);
                         parser.AddSetting("HOTKEY", "A", keyMAINALVA);
@@ -2708,138 +2776,148 @@ namespace POExileDirection
                         parser.AddSetting("HOTKEY", "H", keyMAINHideout);
                         parser.AddSetting("HOTKEY", "F", keySearchbyPosition);
                         parser.AddSetting("HOTKEY", "E", keyEXIT);
+                        parser.AddSetting("HOTKEY", "INVITE", keyMAINInvite);
+                        parser.AddSetting("HOTKEY", "TRADE", keyMAINTrade);
+                        parser.AddSetting("HOTKEY", "KICK", keyMAINKick);
+                        parser.AddSetting("HOTKEY", "MINIMIZE", keyMAINMinimize);
+                        parser.AddSetting("HOTKEY", "CLOSE", keyMAINClose);
+                        parser.AddSetting("HOTKEY", "SOLD", keyMAINSold);
+                        parser.AddSetting("HOTKEY", "WAIT", keyMAINWait);
+                        parser.AddSetting("HOTKEY", "THX", keyMAINThx);
+                        #endregion
 
+                        #region [[[[[ TAB2 - TRADE PANEL ]]]]]
+                        // Button Title & Text.
+                        Thread.Sleep(100);
+                        SaveNofiticationMsg();
+                        Thread.Sleep(100);
+                        // My Character NickName
+                        parser.AddSetting("CHARACTER", "MYNICK", LauncherForm.g_strMyNickName);
+                        // Notification Volume, Use Sound Alert Y/N
+                        parser.AddSetting("LOCATIONNOTIFY", "VOLUME", LauncherForm.g_NotifyVolume.ToString());
+                        parser.AddSetting("LOCATIONNOTIFY", "NOTIFICATIONSOUND", LauncherForm.g_strNotificationSoundYN);
+                        // CHECK AUTO KICK Y/N
+                        parser.AddSetting("CHARACTER", "AUTOKICK", LauncherForm.g_strTRAutoKick);
+                        parser.AddSetting("LOCATIONNOTIFY", "WAIT", LauncherForm.g_strTRAutoKickWait);
+                        parser.AddSetting("LOCATIONNOTIFY", "SOLD", LauncherForm.g_strTRAutoKickSold);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOM1", LauncherForm.g_strTRAutoKickCustom1);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOM2", LauncherForm.g_strTRAutoKickCustom2);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOM3", LauncherForm.g_strTRAutoKickCustom3);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOM4", LauncherForm.g_strTRAutoKickCustom4);
+                        #endregion
+
+                        #region [[[[[ TAB3 - FLASK TIMER ]]]]]
                         // FLASK COLOR
-                        parser.AddSetting("MISC", "FLASK1COLOR", frmSettings.colorStringRGB1);
-                        parser.AddSetting("MISC", "FLASK2COLOR", frmSettings.colorStringRGB2);
-                        parser.AddSetting("MISC", "FLASK3COLOR", frmSettings.colorStringRGB3);
-                        parser.AddSetting("MISC", "FLASK4COLOR", frmSettings.colorStringRGB4);
-                        parser.AddSetting("MISC", "FLASK5COLOR", frmSettings.colorStringRGB5);
+                        parser.AddSetting("MISC", "FLASK1COLOR", settingsOverhaul.colorStringRGB1);
+                        parser.AddSetting("MISC", "FLASK2COLOR", settingsOverhaul.colorStringRGB2);
+                        parser.AddSetting("MISC", "FLASK3COLOR", settingsOverhaul.colorStringRGB3);
+                        parser.AddSetting("MISC", "FLASK4COLOR", settingsOverhaul.colorStringRGB4);
+                        parser.AddSetting("MISC", "FLASK5COLOR", settingsOverhaul.colorStringRGB5);
                         // FLASK TIMER
                         parser.AddSetting("MISC", "FLASKTIME1", LauncherForm.g_FlaskTime1);
                         parser.AddSetting("MISC", "FLASKTIME2", LauncherForm.g_FlaskTime2);
                         parser.AddSetting("MISC", "FLASKTIME3", LauncherForm.g_FlaskTime3);
                         parser.AddSetting("MISC", "FLASKTIME4", LauncherForm.g_FlaskTime4);
                         parser.AddSetting("MISC", "FLASKTIME5", LauncherForm.g_FlaskTime5);
+                        // Use Sound Alert Y/N
+                        parser.AddSetting("LOCATIONNOTIFY", "FLASKTIMERSOUND", LauncherForm.g_strTimerSound1);
+                        parser.AddSetting("LOCATIONNOTIFY", "VOLUMEFLASKTIMER", LauncherForm.g_FlaskTimerVolume.ToString());
+                        #endregion
 
+                        #region [[[[[ TAB4 - SKILL TIMER ]]]]]
                         // SKILL COLOR
-                        parser.AddSetting("SKILL", "SKILL1COLOR", frmSettings.colorStringRGBQ);
-                        parser.AddSetting("SKILL", "SKILL2COLOR", frmSettings.colorStringRGBW);
-                        parser.AddSetting("SKILL", "SKILL3COLOR", frmSettings.colorStringRGBE);
-                        parser.AddSetting("SKILL", "SKILL4COLOR", frmSettings.colorStringRGBR);
-                        parser.AddSetting("SKILL", "SKILL5COLOR", frmSettings.colorStringRGBT);
+                        parser.AddSetting("SKILL", "SKILL1COLOR", settingsOverhaul.colorStringRGBQ);
+                        parser.AddSetting("SKILL", "SKILL2COLOR", settingsOverhaul.colorStringRGBW);
+                        parser.AddSetting("SKILL", "SKILL3COLOR", settingsOverhaul.colorStringRGBE);
+                        parser.AddSetting("SKILL", "SKILL4COLOR", settingsOverhaul.colorStringRGBR);
+                        parser.AddSetting("SKILL", "SKILL5COLOR", settingsOverhaul.colorStringRGBT);
                         // SKILL TIMER
                         parser.AddSetting("SKILL", "SKILLTIME1", LauncherForm.g_SkillTime1);
                         parser.AddSetting("SKILL", "SKILLTIME2", LauncherForm.g_SkillTime2);
                         parser.AddSetting("SKILL", "SKILLTIME3", LauncherForm.g_SkillTime3);
                         parser.AddSetting("SKILL", "SKILLTIME4", LauncherForm.g_SkillTime4);
                         parser.AddSetting("SKILL", "SKILLTIME5", LauncherForm.g_SkillTime5);
+                        #endregion
 
-                        // My Character NickName and Trade Setting
-                        parser.AddSetting("CHARACTER", "MYNICK", LauncherForm.g_strMyNickName);
-                        parser.AddSetting("CHARACTER", "AUTOKICK", LauncherForm.g_strTRAutoKick);
+                        #region [[[[[ TAB5 - OVERLAY ]]]]]
+                        parser.AddSetting("OVERLAY", "JUNDEFAULT", strJUNDefualt);
+                        parser.AddSetting("OVERLAY", "JUN", g_strImagePath[0]);
 
-                        //TODO : check box custom1,2,3 g_strTRAutoKickCustom1,2,3 - "CHARACTER", "AUTOKICK" Search All~!
+                        parser.AddSetting("OVERLAY", "ALVADEFAULT", strALVADefualt);
+                        parser.AddSetting("OVERLAY", "ALVA", g_strImagePath[1]);
 
-                        // Notification Volume, Flask Timer Volume
-                        parser.AddSetting("LOCATIONNOTIFY", "VOLUME", LauncherForm.g_NotifyVolume.ToString());
-                        parser.AddSetting("LOCATIONNOTIFY", "VOLUMEFLASKTIMER", LauncherForm.g_FlaskTimerVolume.ToString());
-
-                        // FLASK SOUND Y/N
-                        parser.AddSetting("MISC", "FLASKSOUND1", LauncherForm.g_strTimerSound1);
-                        parser.AddSetting("MISC", "FLASKSOUND2", LauncherForm.g_strTimerSound2);
-                        parser.AddSetting("MISC", "FLASKSOUND3", LauncherForm.g_strTimerSound3);
-                        parser.AddSetting("MISC", "FLASKSOUND4", LauncherForm.g_strTimerSound4);
-                        parser.AddSetting("MISC", "FLASKSOUND5", LauncherForm.g_strTimerSound5);
-
-                        // HotKey Use
-                        parser.AddSetting("MISC", "HOTKEYHIDEOUT", LauncherForm.g_strYNUseHideoutHOTKEY);
-                        parser.AddSetting("MISC", "EMERGENCY", LauncherForm.g_strYNUseEmergencyHOTKEY);
-                        parser.AddSetting("MISC", "REMAINING", LauncherForm.g_strYNUseRemainingHOTKEY);
-                        parser.AddSetting("MISC", "FINDBYPOSTION", LauncherForm.g_strYNUseFindbyPositionHOTKEY);
-                        parser.AddSetting("MISC", "HOTKEYSYNDICATE", LauncherForm.g_strYNUseSyndicateJUNHOTKEY);
-                        parser.AddSetting("MISC", "HOTKEYALVAINCURSION", LauncherForm.g_strYNUseIncursionALVAHOTKEY);
-                        parser.AddSetting("MISC", "HOTKEYZANAATLAS", LauncherForm.g_strYNUseAtlasZANAHOTKEY);
+                        parser.AddSetting("OVERLAY", "ZANADEFAULT", strZANADefualt);
+                        parser.AddSetting("OVERLAY", "ZANA", g_strImagePath[2]);
+                        #endregion
 
                         parser.SaveSettings();
                         parser = null;
-
-                        bIsSettingsPop = false;
-                        gCF_bIsTextFocused = false;
                     }
-                    else
-                    {
-                        bIsSettingsPop = false;
-                        gCF_bIsTextFocused = false;
-                    }
+                    bIsSettingsPop = false;
+                    gCF_bIsTextFocused = false;
                 }
 
                 InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
             }
             catch (Exception ex)
             {
+                InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
         }
 
+        #region [[[[[ Update JSON Data - Save to \\DeadlyInform\\NotificationMSG.json ]]]]]
         private void SaveNofiticationMsg()
         {
-            //TODO: g_strCUSTOM1,2,3 Added.
-
             var settings = new JsonSerializerSettings
             {
                 NullValueHandling = NullValueHandling.Ignore,
                 MissingMemberHandling = MissingMemberHandling.Ignore
             };
 
-            /*
-            {
-            "Id": "THX",
-            "Msg": "Thanks. gl hf~. (감사합니다.)"
-            },
-            {
-            "Id": "WAIT",
-            "Msg": "Wait a sec pls."
-            },
-            {
-            "Id": "WILLING",
-            "Msg": "Still Willing to Buy?"
-            },
-            {
-            "Id": "SOLD",
-            "Msg": "Sold already. sry."
-            },
-            */
-            /*
-            if (textBoxWait.Text.Length > 0)
-                LauncherForm.g_strnotiWAIT = textBoxWait.Text;
-
-            if (textBoxSold.Text.Length <= 0)
-                LauncherForm.g_strnotiSOLD = textBoxSold.Text;
-
-            if (textBoxDone.Text.Length <= 0)
-                LauncherForm.g_strnotiDONE = textBoxDone.Text;
-
-            if (textBoxResend.Text.Length <= 0)
-                LauncherForm.g_strnotiRESEND = textBoxResend.Text;
-            */
-            //string output = String.Empty;
-            //List<DeadlyAtlas.NotifyMSGCollection> NotifyMSG;
-
-            //NotifyMSG = LauncherForm.deadlyInformationData.InformationMSG.NotifyMSG.Where(retval => retval.Id == "THX").ToList();
-            //NotifyMSG[0].Msg = LauncherForm.g_strnotiDONE;
-
             List<DeadlyAtlas.NotifyMSGCollection> notiMSGUpdate = new List<DeadlyAtlas.NotifyMSGCollection>();
             foreach (var item in LauncherForm.deadlyInformationData.InformationMSG.NotifyMSG)
             {
                 if (item.Id == "THX")
+                {
                     item.Msg = LauncherForm.g_strnotiDONE;
+                    item.Title = LauncherForm.g_strnotiDONEbtnTITLE;
+                }
                 else if (item.Id == "WAIT")
+                {
                     item.Msg = LauncherForm.g_strnotiWAIT;
+                    item.Title = LauncherForm.g_strnotiWAITbtnTITLE;
+                }
                 else if (item.Id == "WILLING")
+                {
                     item.Msg = LauncherForm.g_strnotiRESEND;
+                    // This Button has not Title.
+                }
                 else if (item.Id == "SOLD")
+                {
                     item.Msg = LauncherForm.g_strnotiSOLD;
+                    item.Title = LauncherForm.g_strnotiSOLDbtnTITLE;
+                }
+                else if (item.Id == "CUSTOM1")
+                {
+                    item.Msg = LauncherForm.g_strCUSTOM1;
+                    item.Title = LauncherForm.g_strCUSTOM1btnTITLE;
+                }
+                else if (item.Id == "CUSTOM2")
+                {
+                    item.Msg = LauncherForm.g_strCUSTOM2;
+                    item.Title = LauncherForm.g_strCUSTOM2btnTITLE;
+                }
+                else if (item.Id == "CUSTOM3")
+                {
+                    item.Msg = LauncherForm.g_strCUSTOM3;
+                    item.Title = LauncherForm.g_strCUSTOM3btnTITLE;
+                }
+                else if (item.Id == "CUSTOM4")
+                {
+                    item.Msg = LauncherForm.g_strCUSTOM4;
+                    item.Title = LauncherForm.g_strCUSTOM4btnTITLE;
+                }
 
                 notiMSGUpdate.Add(item);
             }
@@ -2847,7 +2925,8 @@ namespace POExileDirection
             string output = JsonConvert.SerializeObject(notiMSGUpdate, Formatting.Indented);
             output = "{   \"NotifyMSG\": " + output + " }";
             File.WriteAllText(Application.StartupPath + "\\DeadlyInform\\NotificationMSG.json", output);
-        }
+        } 
+        #endregion
         #endregion
 
         #region ⨌⨌ STASH GRID ⨌⨌
@@ -2952,18 +3031,6 @@ namespace POExileDirection
             nMoving = 0;
             
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             parser.AddSetting("LOCATIONMAIN", "LEFT", this.Left.ToString());
@@ -3050,40 +3117,6 @@ namespace POExileDirection
                 btnMinimize.BackgroundImage = Properties.Resources.sysMinPOEBg1;
             }
             SetForegroundWindow(handlePOE);*/
-        }
-        #endregion
-
-        #region ⨌⨌ for TEST ⨌⨌
-        private void Button8_Click(object sender, EventArgs e)
-        {
-            NotificationForm frmSelling = new NotificationForm();
-            frmSelling.ShowDialog();
-        }
-
-        private void Button10_Click(object sender, EventArgs e)
-        {
-            // StashGrid ttt = new StashGrid();
-            // ttt.Show();
-
-            //FlaskTimerCircleForm ttt2 = new FlaskTimerCircleForm();
-            //ttt2.nFlaskNumber = 2;
-            //ttt2.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime2);
-            //ttt2.Show();
-
-            //DeadlySyndicateForm ttt3 = new DeadlySyndicateForm();
-            //ttt3.Show();
-
-            //ZoneItemsForm ttt4 = new ZoneItemsForm();
-            //ttt4.strZoneName = "Dungeon";
-            //ttt4.Show();
-
-            // FlaskTransparentForm ttt5 = new FlaskTransparentForm();
-            // ttt5.Show();
-            List<DeadlyAtlas.NotifyMSGCollection> NotifyMSG =
-                    LauncherForm.deadlyInformationData.InformationMSG.NotifyMSG.Where(retval => retval.Id == "THX").ToList();
-
-            string strSendString = String.Format("@{0} {1}", "DeadlyCrush", NotifyMSG[0].Msg);
-            MessageBox.Show(strSendString);
         }
         #endregion
 
@@ -3573,18 +3606,6 @@ namespace POExileDirection
             }
 
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
             DeadlyLog4Net._log.Info($"{MethodBase.GetCurrentMethod().Name} RESOLUTION : " + strINIPath);
 
@@ -3621,18 +3642,6 @@ namespace POExileDirection
         private void XuiSwitch1_SwitchStateChanged(object sender, EventArgs e)
         {
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             if (!LauncherForm.g_bToggle1)
@@ -3653,18 +3662,6 @@ namespace POExileDirection
         private void XuiSwitch2_SwitchStateChanged(object sender, EventArgs e)
         {
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             if (!LauncherForm.g_bToggle2)
@@ -3685,18 +3682,6 @@ namespace POExileDirection
         private void XuiSwitch3_SwitchStateChanged(object sender, EventArgs e)
         {
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             if (!LauncherForm.g_bToggle3)
@@ -3717,18 +3702,6 @@ namespace POExileDirection
         private void XuiSwitch4_SwitchStateChanged(object sender, EventArgs e)
         {
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             if (!LauncherForm.g_bToggle4)
@@ -3749,18 +3722,6 @@ namespace POExileDirection
         private void XuiSwitch5_SwitchStateChanged(object sender, EventArgs e)
         {
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             if (!LauncherForm.g_bToggle5)
@@ -3785,18 +3746,6 @@ namespace POExileDirection
         private void XuiSwitchQ_SwitchStateChanged(object sender, EventArgs e)
         {
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             if (!LauncherForm.g_bToggleSkill1)
@@ -3817,18 +3766,6 @@ namespace POExileDirection
         private void XuiSwitchW_SwitchStateChanged(object sender, EventArgs e)
         {
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             if (!LauncherForm.g_bToggleSkill2)
@@ -3849,18 +3786,6 @@ namespace POExileDirection
         private void XuiSwitchE_SwitchStateChanged(object sender, EventArgs e)
         {
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             if (!LauncherForm.g_bToggleSkill3)
@@ -3881,18 +3806,6 @@ namespace POExileDirection
         private void XuiSwitchR_SwitchStateChanged(object sender, EventArgs e)
         {
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             if (!LauncherForm.g_bToggleSkill4)
@@ -3913,18 +3826,6 @@ namespace POExileDirection
         private void XuiSwitchT_SwitchStateChanged(object sender, EventArgs e)
         {
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
 
             if (!LauncherForm.g_bToggleSkill5)
@@ -3951,13 +3852,9 @@ namespace POExileDirection
 
         public void DNDSetState()
         {
-            InputSimulator iSim = new InputSimulator();
-
-            // Need to press ALT because the SetForegroundWindow sometimes does not work
-            // Removed 2019.0712 iSim.Keyboard.KeyPress(VirtualKeyCode.MENU);
-
-            // Make POE the foreground application and send input
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
+
+            InputSimulator iSim = new InputSimulator();            
             if(m_bISDND)
             {
                 btnDND.Image = Properties.Resources.check_off;
@@ -3968,16 +3865,9 @@ namespace POExileDirection
                 btnDND.Image = Properties.Resources.check_on;
                 m_bISDND = true;
             }
-
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            // Send the input
             iSim.Keyboard.TextEntry("/dnd");
-
-            // Send RETURN
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
         }
 
         private void BtnManagerie_Click(object sender, EventArgs e)
@@ -3987,23 +3877,12 @@ namespace POExileDirection
 
         private void GO_Managerie() // /menagerie
         {
-            InputSimulator iSim = new InputSimulator();
-
-            // Need to press ALT because the SetForegroundWindow sometimes does not work
-            // Removed 2019.0712 iSim.Keyboard.KeyPress(VirtualKeyCode.MENU);
-
-            // Make POE the foreground application and send input
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
+            InputSimulator iSim = new InputSimulator();            
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            // Send the input
             iSim.Keyboard.TextEntry("/menagerie");
-
-            // Send RETURN
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
         }
 
         private void BtnDELVE_Click(object sender, EventArgs e)
@@ -4013,23 +3892,12 @@ namespace POExileDirection
 
         private void GO_Delve()
         {
-            InputSimulator iSim = new InputSimulator();
-
-            // Need to press ALT because the SetForegroundWindow sometimes does not work
-            // Removed 2019.0712 iSim.Keyboard.KeyPress(VirtualKeyCode.MENU);
-
-            // Make POE the foreground application and send input
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
+            InputSimulator iSim = new InputSimulator();
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            // Send the input
             iSim.Keyboard.TextEntry("/delve");
-
-            // Send RETURN
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
         }
 
         private void BtnPassives_Click(object sender, EventArgs e)
@@ -4049,23 +3917,12 @@ namespace POExileDirection
 
         private void SendPOECommand(string strSendString)
         {
-            InputSimulator iSim = new InputSimulator();
-
-            // Need to press ALT because the SetForegroundWindow sometimes does not work
-            // Removed 2019.0712 iSim.Keyboard.KeyPress(VirtualKeyCode.MENU);
-
-            // Make POE the foreground application and send input
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
+            InputSimulator iSim = new InputSimulator();
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            // Send the input
             iSim.Keyboard.TextEntry(strSendString);
-
-            // Send RETURN
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
         }
 
         private void BtnEXIT_Click(object sender, EventArgs e)
@@ -4075,23 +3932,12 @@ namespace POExileDirection
 
         private void EXITtoCharacterSelcection()
         {
-            InputSimulator iSim = new InputSimulator();
-
-            // Need to press ALT because the SetForegroundWindow sometimes does not work
-            // Removed 2019.0712 iSim.Keyboard.KeyPress(VirtualKeyCode.MENU);
-
-            // Make POE the foreground application and send input
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
+            InputSimulator iSim = new InputSimulator();
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            // Send the input
             iSim.Keyboard.TextEntry("/exit");
-
-            // Send RETURN
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
         }
 
         private void BtnCMD_Click(object sender, EventArgs e)
@@ -4248,7 +4094,7 @@ namespace POExileDirection
             if (!bIMGOvelayActivatedMAP)
                 frmIMGOverlayMAP = new ImageOverlayFormMap();
             // ZANA
-            frmIMGOverlayMAP.m_strImagePath = strImagePath[2];
+            frmIMGOverlayMAP.m_strImagePath = g_strImagePath[2];
             frmIMGOverlayMAP.nZoom = 0;
             frmIMGOverlayMAP.Load_Image();
             IMGOverlayForm_Show_Hide((int)OVERLAY_WHAT.OVER_MAP);
@@ -4492,6 +4338,7 @@ namespace POExileDirection
             btnMinimize_Click_1(this, new EventArgs());
         }
 
+        #region [[[[[ Drag Moving - SetDesktopLocation ]]]]]
         private void btnDeadlyTrade_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
         {
             if (!LauncherForm.g_pinLOCK)
@@ -4515,18 +4362,6 @@ namespace POExileDirection
             nMoving = 0;
 
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-
-            if (LauncherForm.resolution_width < 1920 && LauncherForm.resolution_height < 1080)
-            {
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
-                if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
-                else if (LauncherForm.resolution_width < 1280)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_LOW.ini");
-            }
-            else if (LauncherForm.resolution_width > 1920)
-                strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_HIGH.ini");
-
             IniParser parser = new IniParser(strINIPath);
             DeadlyLog4Net._log.Info($"{MethodBase.GetCurrentMethod().Name} RESOLUTION : " + strINIPath);
 
@@ -4535,7 +4370,8 @@ namespace POExileDirection
             parser.SaveSettings();
 
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-        }
+        } 
+        #endregion
 
         private void ControlForm_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -4544,22 +4380,73 @@ namespace POExileDirection
             nElapse = Convert.ToInt32(elapsedmin);
             if (nElapse < 0)
                 nElapse = 0;
+
+            DeadlyDBHelper.UpdateLoginCurrent(LauncherForm._sqlcon, "N", LauncherForm._strIPAddress, LauncherForm._strMacAddress, DateTime.Now);
             DeadlyDBHelper.InsertLoginStatus(LauncherForm._sqlcon, "N", LauncherForm._strIPAddress, LauncherForm._strMacAddress, ".", "LOGOUT", 
                                             LauncherForm.GetCountryByIPINFO(LauncherForm._strIPAddress), LauncherForm.dtLoggedIn, nElapse); 
             DeadlyLog4Net._log.Info("LOGOUT : " + LauncherForm._strIPAddress + LauncherForm._strMacAddress + " Elapsedminute : " + nElapse);
         }
 
-        private void btnTEST_Click(object sender, EventArgs e)
+        private void xuiSwitch1_SwitchStateChanged_1(object sender, EventArgs e)
         {
-            //DeadlyPriceAPI.GetItemDataFromClipboard(ClipboardHelper.GetUnicodeText());
-            
-            //frmNotify.Show();
+            if(xuiSwitch1.SwitchState == XanderUI.XUISwitch.State.On)
+            {
+                labelSNDOnOff.ForeColor = Color.FromArgb(235, 182, 111);
+                labelSNDOnOff.Text = "ON";
+                btnSOUND.Image = Properties.Resources.Volume_16x16;
+                LauncherForm.g_strTimerSound1 = "Y";
+            }
+            else
+            {
+                labelSNDOnOff.ForeColor = Color.FromArgb(28, 21, 16);
+                labelSNDOnOff.Text = "OFF";
+                btnSOUND.Image = Properties.Resources.Volume_16x16_Mute;
+                LauncherForm.g_strTimerSound1 = "N";
+            }
         }
 
-        private void button7_Click_1(object sender, EventArgs e)
+        private void btnSOUND_Click(object sender, EventArgs e)
         {
-            //Form1 frm = new Form1();
-            //frmNotify.AddBuyNotifyForm("TEST", frm);
+            if (xuiSwitch1.SwitchState == XanderUI.XUISwitch.State.On)
+                xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.Off;
+            else
+                xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.On;
+
+            xuiSwitch1_SwitchStateChanged_1(sender, e);
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            if (!g_bIsFossilOn)
+            {
+                g_bIsFossilOn = true;
+
+                frmFossil = new FossilForm();
+                frmFossil.Show();
+            }
+            else
+            {
+                g_bIsFossilOn = false;
+
+                frmFossil.Close();
+            }
+        }
+
+        private void btnTradeHistory_Click(object sender, EventArgs e)
+        {
+            if (!g_bIsHistoryOn)
+            {
+                g_bIsHistoryOn = true;
+
+                frmHistory = new TradeHistory();
+                frmHistory.Show();
+            }
+            else
+            {
+                g_bIsHistoryOn = false;
+
+                frmHistory.Close();
+            }
         }
     }
 }

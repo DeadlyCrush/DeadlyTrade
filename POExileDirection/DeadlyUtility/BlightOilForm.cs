@@ -188,8 +188,8 @@ namespace POExileDirection
                         strResult = String.Format("[ {0}({1}) ]\r\n{2}", item.PassiveName, item.KORName, item.Effect);
                         break;
                     }
-                    if (item.OilA.ToUpper() == arrSelected[2].ToUpper() && item.OilB.ToUpper() == arrSelected[0].ToUpper()
-                                && item.OilC.ToUpper() == arrSelected[1].ToUpper())
+                    if (item.OilA.ToUpper() == arrSelected[1].ToUpper() && item.OilB.ToUpper() == arrSelected[2].ToUpper()
+                                && item.OilC.ToUpper() == arrSelected[0].ToUpper())
                     {
                         strResult = String.Format("[ {0}({1}) ]\r\n{2}", item.PassiveName, item.KORName, item.Effect);
                         break;
@@ -201,8 +201,14 @@ namespace POExileDirection
                         strResult = String.Format("[ {0}({1}) ]\r\n{2}", item.PassiveName, item.KORName, item.Effect);
                         break;
                     }
-                    if (item.OilA.ToUpper() == arrSelected[0].ToUpper() && item.OilB.ToUpper() == arrSelected[1].ToUpper()
-                                && item.OilC.ToUpper() == arrSelected[2].ToUpper())
+                    if (item.OilA.ToUpper() == arrSelected[2].ToUpper() && item.OilB.ToUpper() == arrSelected[0].ToUpper()
+                                && item.OilC.ToUpper() == arrSelected[1].ToUpper())
+                    {
+                        strResult = String.Format("[ {0}({1}) ]\r\n{2}", item.PassiveName, item.KORName, item.Effect);
+                        break;
+                    }
+                    if (item.OilA.ToUpper() == arrSelected[2].ToUpper() && item.OilB.ToUpper() == arrSelected[1].ToUpper()
+                                && item.OilC.ToUpper() == arrSelected[0].ToUpper())
                     {
                         strResult = String.Format("[ {0}({1}) ]\r\n{2}", item.PassiveName, item.KORName, item.Effect);
                         break;
@@ -645,29 +651,29 @@ namespace POExileDirection
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             ControlForm.bOilsFormON = false;
-            pictureBox1.Dispose();
-            pictureBox2.Dispose();
-            pictureBox3.Dispose();
-            pictureBox4.Dispose();
+            if (pictureBox1 != null) pictureBox1.Dispose();
+            if (pictureBox2 != null) pictureBox2.Dispose();
+            if (pictureBox3 != null) pictureBox3.Dispose();
+            if (pictureBox4 != null) pictureBox4.Dispose();
 
-            pictureOil1.Dispose();
-            pictureOil2.Dispose();
-            pictureOil3.Dispose();
-            pictureOil4.Dispose();
-            pictureOil5.Dispose();
-            pictureOil6.Dispose();
-            pictureOil7.Dispose();
-            pictureOil8.Dispose();
-            pictureOil9.Dispose();
-            pictureOil10.Dispose();
-            pictureOil11.Dispose();
-            pictureOil12.Dispose();
-            btnAmulet.Dispose();
-            btnRing.Dispose();
-            btnMap.Dispose();
+            if (pictureOil1 != null) pictureOil1.Dispose();
+            if (pictureOil2 != null) pictureOil2.Dispose();
+            if (pictureOil3 != null) pictureOil3.Dispose();
+            if (pictureOil4 != null) pictureOil4.Dispose();
+            if (pictureOil5 != null) pictureOil5.Dispose();
+            if (pictureOil6 != null) pictureOil6.Dispose();
+            if (pictureOil7 != null) pictureOil7.Dispose();
+            if (pictureOil8 != null) pictureOil8.Dispose();
+            if (pictureOil9 != null) pictureOil9.Dispose();
+            if (pictureOil10 != null) pictureOil10.Dispose();
+            if (pictureOil11 != null) pictureOil11.Dispose();
+            if (pictureOil12 != null) pictureOil12.Dispose();
+            if (btnAmulet != null) btnAmulet.Dispose();
+            if (btnRing != null) btnRing.Dispose();
+            if (btnMap != null) btnMap.Dispose();
 
             arrSelected = null;
-            btnFind.Dispose();            
+            if (btnFind != null) btnFind.Dispose();            
             Close();
         }
 

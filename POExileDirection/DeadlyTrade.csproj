@@ -104,6 +104,9 @@
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="Markdig, Version=0.18.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Markdig.0.18.1\lib\net40\Markdig.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.DirectX.AudioVideoPlayback, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Windows\assembly\GAC\Microsoft.DirectX.AudioVideoPlayback\1.0.2902.0__31bf3856ad364e35\Microsoft.DirectX.AudioVideoPlayback.dll</HintPath>
@@ -189,6 +192,12 @@
     <Compile Include="DeadlyNotification\RemainingForm.Designer.cs">
       <DependentUpon>RemainingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeadlyNotification\TradeHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeadlyNotification\TradeHistory.Designer.cs">
+      <DependentUpon>TradeHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeadlyOverlay\FlaskICONTimer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +209,12 @@
     </Compile>
     <Compile Include="DeadlyOverlay\FlaskTimerCircleForm.Designer.cs">
       <DependentUpon>FlaskTimerCircleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlyOverlay\FossilForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeadlyOverlay\FossilForm.Designer.cs">
+      <DependentUpon>FossilForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DeadlyOverlay\LabyOverlayForm.cs">
       <SubType>Form</SubType>
@@ -241,10 +256,10 @@
     <Compile Include="ControlForm.Designer.cs">
       <DependentUpon>ControlForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DeadlyUtility\GuideGridForm.cs">
+    <Compile Include="DeadlyNotification\GuideGridForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeadlyUtility\GuideGridForm.Designer.cs">
+    <Compile Include="DeadlyNotification\GuideGridForm.Designer.cs">
       <DependentUpon>GuideGridForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DeadlyOverlay\ImageOverlayFormMap.cs">
@@ -274,12 +289,6 @@
       <DependentUpon>ITEMIndicatorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="LauncherForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LauncherForm.Designer.cs">
-      <DependentUpon>LauncherForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="DeadlyInformation\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -311,6 +320,12 @@
     <Compile Include="DeadlyUtility\OptimizerForm.Designer.cs">
       <DependentUpon>OptimizerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LauncherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LauncherForm.Designer.cs">
+      <DependentUpon>LauncherForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DeadlyPriceCheck\PublicStashForm.cs">
@@ -329,12 +344,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="SettingsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SettingsForm.Designer.cs">
-      <DependentUpon>SettingsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DeadlyOverlay\SkillTimerForm.cs">
       <SubType>Form</SubType>
@@ -370,11 +379,17 @@
     <EmbeddedResource Include="DeadlyNotification\RemainingForm.resx">
       <DependentUpon>RemainingForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DeadlyNotification\TradeHistory.resx">
+      <DependentUpon>TradeHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DeadlyOverlay\FlaskICONTimer.resx">
       <DependentUpon>FlaskICONTimer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyOverlay\FlaskTimerCircleForm.resx">
       <DependentUpon>FlaskTimerCircleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeadlyOverlay\FossilForm.resx">
+      <DependentUpon>FossilForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyOverlay\LabyOverlayForm.resx">
       <DependentUpon>LabyOverlayForm.cs</DependentUpon>
@@ -394,7 +409,7 @@
     <EmbeddedResource Include="ControlForm.resx">
       <DependentUpon>ControlForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DeadlyUtility\GuideGridForm.resx">
+    <EmbeddedResource Include="DeadlyNotification\GuideGridForm.resx">
       <DependentUpon>GuideGridForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyOverlay\ImageOverlayFormMap.resx">
@@ -408,9 +423,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyNotification\ITEMIndicatorForm.resx">
       <DependentUpon>ITEMIndicatorForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LauncherForm.resx">
-      <DependentUpon>LauncherForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyInformation\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -427,6 +439,9 @@
     <EmbeddedResource Include="DeadlyUtility\OptimizerForm.resx">
       <DependentUpon>OptimizerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LauncherForm.resx">
+      <DependentUpon>LauncherForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -437,9 +452,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyUtility\ScanChatForm.resx">
       <DependentUpon>ScanChatForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SettingsForm.resx">
-      <DependentUpon>SettingsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyOverlay\SkillTimerForm.resx">
       <DependentUpon>SkillTimerForm.cs</DependentUpon>
@@ -808,6 +820,26 @@
     <None Include="Resources\top_bar_bg_symbol_800_40.png" />
     <None Include="Resources\top_bar_bg_symbol.png" />
     <None Include="Resources\CI.bmp" />
+    <None Include="Resources\top_bg.png" />
+    <None Include="Resources\PanelHolderArrow_up.png" />
+    <None Include="Resources\PanelHolderArrow_dwon.png" />
+    <None Include="Resources\Volume_16x16.png" />
+    <None Include="Resources\top_bar_arrow_buy.png" />
+    <None Include="Resources\top_bar_arrow_sell.png" />
+    <None Include="Resources\panel_time2.png" />
+    <None Include="Resources\panel_whisper1.png" />
+    <None Include="Resources\top_bar_resend2.png" />
+    <None Include="Resources\top_bar_user_buy.png" />
+    <None Include="Resources\top_bar_arrow_sell1.png" />
+    <None Include="Resources\top_bar_user_sell.png" />
+    <None Include="Resources\Volume_16x16_Mute.png" />
+    <None Include="Resources\someoneentered_bg2.png" />
+    <None Include="Resources\someoneentered_bg.png" />
+    <None Include="Resources\MonsterRemaining_bg2.png" />
+    <None Include="Resources\someoneentered_bg21.png" />
+    <None Include="Resources\21.png" />
+    <None Include="Resources\icon_re_16_Fossil.png" />
+    <None Include="Resources\time.png" />
     <Content Include="res\Currency\curr_alch.png" />
     <Content Include="res\Currency\curr_alt.png" />
     <Content Include="res\Currency\curr_ancient.png" />

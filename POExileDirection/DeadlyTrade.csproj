@@ -192,6 +192,12 @@
     <Compile Include="DeadlyNotification\RemainingForm.Designer.cs">
       <DependentUpon>RemainingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeadlyNotification\TradeHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeadlyNotification\TradeHistory.Designer.cs">
+      <DependentUpon>TradeHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeadlyOverlay\FlaskICONTimer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -372,6 +378,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyNotification\RemainingForm.resx">
       <DependentUpon>RemainingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeadlyNotification\TradeHistory.resx">
+      <DependentUpon>TradeHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeadlyOverlay\FlaskICONTimer.resx">
       <DependentUpon>FlaskICONTimer.cs</DependentUpon>

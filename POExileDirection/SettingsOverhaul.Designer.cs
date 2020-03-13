@@ -4132,6 +4132,7 @@
             this.Name = "SettingsOverhaul";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.DarkGray;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SettingsOverhaul_FormClosed);

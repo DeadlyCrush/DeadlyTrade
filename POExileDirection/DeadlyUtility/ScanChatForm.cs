@@ -213,8 +213,6 @@ namespace POExileDirection
             iSim.Keyboard.TextEntry(strSendString);
 
             iSim.Keyboard.KeyPress(VirtualKeyCode.SPACE);
-
-            //iSim = null;
         }
 
         private void ListViewChat_MouseClick(object sender, MouseEventArgs e)
@@ -256,8 +254,6 @@ namespace POExileDirection
             iSim.Keyboard.TextEntry(strSendString);
 
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-
-            //iSim = null;
         }
     }
 }

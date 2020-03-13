@@ -82,6 +82,7 @@ namespace POExileDirection
 
         private void SettingsOverhaul_Load(object sender, EventArgs e)
         {
+            CenterToScreen();
             TopMost = true;
             ShowInTaskbar = false;
 

@@ -131,6 +131,7 @@ namespace POExileDirection
                 labelNickName.ForeColor = Color.FromArgb(0, 255, 236, 26);
                 labelStashTabDetail.ForeColor = Color.FromArgb(0, 255, 236, 26);
             }
+
             double nCalcRet = 0;
             double dSelectedCurr = 0;
             ControlForm.CurrencyCalcDictionary.TryGetValue("Exalted Orb", out dSelectedCurr);
@@ -138,13 +139,20 @@ namespace POExileDirection
 
             labelNickName.Text = tradeItem.nickName;
             labelItemName.Text = tradeItem.itemName;
-            string strTabDetail = String.Format("({0}, {1}) {2}", tradeItem.xPos, tradeItem.yPos, tradeItem.tabName);
-            labelStashTabDetail.Text = strTabDetail;
-            if(Convert.ToInt32(tradeItem.priceCall) >= Convert.ToInt32(dSelectedCurr.ToString("N1")) || // 1엑잘 상당의 카오스오브
-               Convert.ToInt32(tradeItem.priceCall)>=1 && tradeItem.whichCurrency.ToUpper().Contains("Exal") || tradeItem.whichCurrency.ToUpper().Contains("Exa")) // 1엑잘 이상
+            if (!String.IsNullOrEmpty(tradeItem.xPos) && !String.IsNullOrEmpty(tradeItem.yPos) && !String.IsNullOrEmpty(tradeItem.tabName))
             {
-                // Over 1exalted.
-                labelPrice.ForeColor = Color.Tomato;
+                string strTabDetail = String.Format("({0}, {1}) {2}", tradeItem.xPos, tradeItem.yPos, tradeItem.tabName);
+                labelStashTabDetail.Text = strTabDetail;
+            }
+
+            if (!String.IsNullOrEmpty(tradeItem.priceCall))
+            {
+                if (Convert.ToInt32(tradeItem.priceCall) >= Convert.ToInt32(dSelectedCurr.ToString("N1")) || // 1엑잘 상당의 카오스오브
+                 Convert.ToInt32(tradeItem.priceCall) >= 1 && tradeItem.whichCurrency.ToUpper().Contains("Exal") || tradeItem.whichCurrency.ToUpper().Contains("Exa")) // 1엑잘 이상
+                {
+                    // Over 1exalted.
+                    labelPrice.ForeColor = Color.Tomato;
+                }
             }
             labelPrice.Text = tradeItem.priceCall;
             labelPriceAtTitle.Text = tradeItem.priceCall;
@@ -542,16 +550,21 @@ namespace POExileDirection
                 if (tradeItem.offerMSG.Length > 0 && !String.IsNullOrEmpty(tradeItem.offerMSG))
                     labelStashTabDetail.Text = labelStashTabDetail.Text + "( "+ tradeItem.offerMSG + " )";
 
-                if (Convert.ToInt32(tradeItem.xPos) > 12 || Convert.ToInt32(tradeItem.yPos) > 12)
+                if (!String.IsNullOrEmpty(tradeItem.xPos) && !String.IsNullOrEmpty(tradeItem.yPos))
                 {
-                    checkQuadTab.Checked = true;
-                    bIsQuadStash = true;
+                    if (Convert.ToInt32(tradeItem.xPos) > 12 || Convert.ToInt32(tradeItem.yPos) > 12)
+                    {
+                        checkQuadTab.Checked = true;
+                        bIsQuadStash = true;
+                    }
+                    else
+                    {
+                        checkQuadTab.Checked = false;
+                        bIsQuadStash = false;
+                    }
                 }
                 else
-                {
-                    checkQuadTab.Checked = false;
-                    bIsQuadStash = false;
-                }
+                    checkQuadTab.Visible = false;
 
                 rcvDateTime = DateTime.Now;
 

@@ -227,6 +227,7 @@ namespace POExileDirection
         #region [[[[[ Trade Notification :: Trade Message ]]]]]
         private static DeadlyRegEx g_DeadlyRegEx = new DeadlyRegEx();
         public static List<DeadlyTRADE.TradeMSG> g_TradeMsgList = new List<DeadlyTRADE.TradeMSG>();
+        public static List<DeadlyTRADE.TradeMSG> g_TradeMsgListHistory = new List<DeadlyTRADE.TradeMSG>();
         public static int g_nNotificationShownCNT { get; set; }
         public static int g_nNotificationPanelShownCNT { get; set; }
 
@@ -1329,6 +1330,7 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisper)) return true;
                     g_TradeMsgList.Add(tradeWhisper);
+                    g_TradeMsgListHistory.Add(tradeWhisper);
 
                     NotificationForm frmNotifyPanel = new NotificationForm();
                     frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
@@ -1385,6 +1387,7 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisperCurr)) return true;
                     g_TradeMsgList.Add(tradeWhisperCurr);
+                    g_TradeMsgListHistory.Add(tradeWhisperCurr);
 
                     NotificationForm frmNotifyPanel = new NotificationForm();
                     frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
@@ -1440,6 +1443,7 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisper2Un)) return true;
                     g_TradeMsgList.Add(tradeWhisper2Un);
+                    g_TradeMsgListHistory.Add(tradeWhisper2Un);
 
                     NotificationForm frmNotifyPanel = new NotificationForm();
                     frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
@@ -1492,6 +1496,7 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisper2)) return true;
                     g_TradeMsgList.Add(tradeWhisper2);
+                    g_TradeMsgListHistory.Add(tradeWhisper2);
 
                     NotificationForm frmNotifyPanel = new NotificationForm();
                     frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
@@ -1544,6 +1549,7 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisper3)) return true;
                     g_TradeMsgList.Add(tradeWhisper3);
+                    g_TradeMsgListHistory.Add(tradeWhisper3);
 
                     NotificationForm frmNotifyPanel = new NotificationForm();
                     frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
@@ -1596,6 +1602,7 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisper4)) return true;
                     g_TradeMsgList.Add(tradeWhisper4);
+                    g_TradeMsgListHistory.Add(tradeWhisper4);
 
                     NotificationForm frmNotifyPanel = new NotificationForm();
                     frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
@@ -1648,6 +1655,7 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisperENMAP)) return true;
                     g_TradeMsgList.Add(tradeWhisperENMAP);
+                    g_TradeMsgListHistory.Add(tradeWhisperENMAP);
 
                     NotificationForm frmNotifyPanel = new NotificationForm();
                     frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
@@ -1700,6 +1708,7 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisper2)) return true;
                     g_TradeMsgList.Add(tradeWhisper2);
+                    g_TradeMsgListHistory.Add(tradeWhisper2);
 
                     NotificationForm frmNotifyPanel = new NotificationForm();
                     frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
@@ -1927,6 +1936,9 @@ namespace POExileDirection
 
                                     if (strTradePurpose != null && strTradePurpose != "")
                                     {
+                                        if (g_TradeMsgListHistory.Count >= 50)
+                                            g_TradeMsgListHistory.RemoveAt(0);
+
                                         if (WhisperCheck_ENGPriceWithTabName(strTradePurpose, readLineString))
                                             return;
 
@@ -2511,8 +2523,13 @@ namespace POExileDirection
 
                 // Get Image Path
                 g_strImagePath[0] = parser.GetSetting("OVERLAY", "JUN"); // @".\DeadlyInform\Betrayal.png";   // JUN
-                if(String.IsNullOrEmpty(g_strImagePath[0]) || strJUNDefualt.Trim().ToUpper()=="Y")
-                    g_strImagePath[0] = @".\DeadlyInform\Betrayal.png";
+                if (String.IsNullOrEmpty(g_strImagePath[0]) || strJUNDefualt.Trim().ToUpper() == "Y")
+                {
+                    if(LauncherForm.g_strUILang=="KOR")
+                        g_strImagePath[0] = @".\DeadlyInform\Betrayal.jpg";
+                    else
+                        g_strImagePath[0] = @".\DeadlyInform\BetrayalEN.jpg";
+                }
 
                 g_strImagePath[1] = parser.GetSetting("OVERLAY", "ALVA"); // @".\DeadlyInform\Incursion.png";  // ALVA
                 if (String.IsNullOrEmpty(g_strImagePath[1]) || strALVADefualt.Trim().ToUpper() == "Y")

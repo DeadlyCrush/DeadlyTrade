@@ -360,7 +360,7 @@ namespace POExileDirection
             catch (Exception ex)
             {
                 ipInfo.Country = "Unknown";
-                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+                //DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
 
             return ipInfo.Country;
@@ -1392,10 +1392,10 @@ namespace POExileDirection
             timerScrolling.Start();
 
             launcherTimer.Start();
-#if !DEBUG
+//#if !DEBUG
             frmNinja = new NinjaForm();
             frmNinja.GetNinJaDataSync();
-#endif
+//#endif
         }
 
         private void LauncherTimer_Tick(object sender, EventArgs e)
@@ -1405,9 +1405,9 @@ namespace POExileDirection
             labelNINJASTATUS.Text = "POE.NINJA Data ("+ g_NinjaUpdatedTime + ")";
 
             xuiFlatProgressBar1.Value = g_NinjaFileMakeAndUpdateCNT;
-#if !DEBUG
+//#if !DEBUG
             if (g_NinjaFileMakeAndUpdateCNT >= CNT_NINJACATEGORIES)
-#endif
+//#endif
             {
                 try
                 {

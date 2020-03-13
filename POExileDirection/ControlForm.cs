@@ -504,15 +504,16 @@ namespace POExileDirection
         // KEY HOOK
         private void _keymouseHooks_KeyDown(object sender, WindowsHook.KeyEventArgs e)
         {
-            // CTRL + C 
-            if (LauncherForm.g_FocusLosing && e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
-            {
-                //TODO : Trade Site.
-                // is it trade whisper?
-                DeadlyLog4Net._log.Info("CTRL+C for Trading");
-                return;
-            }
-            else if (!LauncherForm.g_FocusLosing) // Only Exile Focused.
+            //// CTRL + C 
+            //if (LauncherForm.g_FocusLosing && e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
+            //{
+            //    //TODO : Trade Site.
+            //    // is it trade whisper?
+            //    DeadlyLog4Net._log.Info("CTRL+C for Trading");
+            //    return;
+            //}
+            //else 
+            if (!LauncherForm.g_FocusLosing) // Only Exile Focused.
             {
                 #region [[[[[ HOT KEYS ]]]]]
                 if (e.Modifiers == ovHRemains.fsMod && e.KeyCode == ovHRemains.hotKeys && LauncherForm.g_strYNUseRemainingHOTKEY == "Y" && !bIsSettingsPop)
@@ -556,25 +557,25 @@ namespace POExileDirection
                 #endregion
 
                 // CTRL + C
-                if (e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
-                {
-                    // is it price checking?
-                    try
-                    {
-                        m_strClipboardText = ClipboardHelper.GetUnicodeText();
-                        if (m_strClipboardText.Contains("--------"))
-                        {
-                            Thread t = new Thread(new ThreadStart(GetItemDataThread));
-                            t.Start();
-                        }
-                        return;
-                    }
-                    catch (InvalidOperationException ex)
-                    {
-                        DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                        return;
-                    }
-                }
+                //if (e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
+                //{
+                //    // is it price checking?
+                //    try
+                //    {
+                //        m_strClipboardText = ClipboardHelper.GetUnicodeText();
+                //        if (m_strClipboardText.Contains("--------"))
+                //        {
+                //            Thread t = new Thread(new ThreadStart(GetItemDataThread));
+                //            t.Start();
+                //        }
+                //        return;
+                //    }
+                //    catch (InvalidOperationException ex)
+                //    {
+                //        DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+                //        return;
+                //    }
+                //}
 
                 // KAKAO User's CTRL+V → ENTER
                 //TODO : Send When ENTER - Previous Key is CTRL+V

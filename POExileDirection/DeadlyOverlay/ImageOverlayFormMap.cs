@@ -7,6 +7,9 @@ namespace POExileDirection
 {
     public partial class ImageOverlayFormMap : Form
     {
+        int nLeft = 0;
+        int nTop = 0;
+
         private int nMoving = 0;
         private int nMovePosX = 0;
         private int nMovePosY = 0;
@@ -14,11 +17,7 @@ namespace POExileDirection
         //RECT rectPOE;
         //RECT rectPOEBackup;
 
-        private Graphics gGDIfx;
         public string m_strImagePath = null;
-
-        private bool bListViewShowing = false;
-        private bool bInitListviewDone = false;
 
         Image img = null;
         public int nZoom = 0;
@@ -34,8 +33,8 @@ namespace POExileDirection
         {
             Visible = false;
             this.StartPosition = FormStartPosition.Manual;
-
-            //gGDIfx.DrawImage(Bitmap.FromFile(@".\DeadlyInform\Essence_KOR.png"), new Point(0, 0));
+            Left = 0;
+            Top = 0;
 
             this.BackColor = Color.Wheat;
             this.TransparencyKey = Color.Wheat;
@@ -64,32 +63,21 @@ namespace POExileDirection
         #region ⨌⨌ Init. Controls ⨌⨌
         public void Init_Controls()
         {
-            //
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.BackColor = Color.Transparent;
-            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            button1.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
-            button1.FlatAppearance.BorderSize = 0;
-            button1.TabStop = false;
-
-            //
-            btnZoomOut.FlatStyle = FlatStyle.Flat;
-            btnZoomOut.BackColor = Color.Transparent;
-            btnZoomOut.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btnZoomOut.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            btnZoomOut.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
-            btnZoomOut.FlatAppearance.BorderSize = 0;
-            btnZoomOut.TabStop = false;
-
-            //
-            btnZoomIn.FlatStyle = FlatStyle.Flat;
-            btnZoomIn.BackColor = Color.Transparent;
-            btnZoomIn.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btnZoomIn.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            btnZoomIn.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
-            btnZoomIn.FlatAppearance.BorderSize = 0;
-            btnZoomIn.TabStop = false;
+            btnClose.FlatStyle = FlatStyle.Flat;
+            btnClose.BackColor = Color.Transparent;
+            btnClose.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnClose.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnClose.TabStop = false;
+            btnZoomin.FlatStyle = FlatStyle.Flat;
+            btnZoomin.BackColor = Color.Transparent;
+            btnZoomin.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnZoomin.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnZoomin.TabStop = false;
+            btnZoomout.FlatStyle = FlatStyle.Flat;
+            btnZoomout.BackColor = Color.Transparent;
+            btnZoomout.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnZoomout.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnZoomout.TabStop = false;
         }
         #endregion
 
@@ -101,60 +89,70 @@ namespace POExileDirection
             IniParser parser = new IniParser(strINIPath);
 
             string sZoom = parser.GetSetting("LOCATIONIMGMAP", "ZOOM");
-            img = resizeImage(img, new Size(img.Width + Int32.Parse(sZoom), img.Height + Int32.Parse(sZoom)));
+            nZoom = Convert.ToInt32(sZoom);
+            SetImage();
         }
 
-        private static Image resizeImage(Image imgToResize, Size size)
+        private bool SetImage()
         {
-            return (Image)(new Bitmap(imgToResize, size));
-        }
+            int nCatch = 0;
 
-        private void ImageOverlayFormMap_Paint(object sender, PaintEventArgs e)
-        {
-            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
-            IniParser parser = new IniParser(strINIPath);
-
-            string sLeft = parser.GetSetting("LOCATIONIMGMAP", "LEFT");
-            string sTop = parser.GetSetting("LOCATIONIMGMAP", "TOP");
-            string sZoom = parser.GetSetting("LOCATIONIMGMAP", "ZOOM");
-
-            if (sLeft == null) sLeft = "0";
-            if (sTop == null) sTop = "0";
-            if (sZoom == null) sZoom = "0";
-
-            gGDIfx = e.Graphics;
-            gGDIfx.DrawImage(img, new Point(0, 0));
-            this.Top = Int32.Parse(sTop);
-            this.Left = Int32.Parse(sLeft);
-            this.Width = img.Width;
-            this.Height = img.Height;
-
-            #region ⨌⨌ Removed ⨌⨌
-            /*switch (nButtonNumber)
-            {                    
-                case 3: // Incursion.png
-                    gGDIfx.DrawImage(Bitmap.FromFile(@".\DeadlyInform\Incursion.png"), new Point(0, 25));
-                    break;
-                case 4:// Betrayal.png
-                    gGDIfx.DrawImage(Bitmap.FromFile(@".\DeadlyInform\Betrayal.png"), new Point(0, 25));
-                    break;
-                case 6: // ExpensiveItemB.png
-                    gGDIfx.DrawImage(Bitmap.FromFile(@".\DeadlyInform\ExpensiveItemB.png"), new Point(0, 25));
-                    break;
-                case 7: // Atlas.png
-                    gGDIfx.DrawImage(Bitmap.FromFile(@".\DeadlyInform\Atlas.png"), new Point(0, 25));
-                    break;
-                case 9: // Vendorrecipe.png
-                    gGDIfx.DrawImage(Bitmap.FromFile(@".\DeadlyInform\Vendorrecipe.png"), new Point(0, 25));
-                    break;
-                case 0:
-                    gGDIfx.DrawImage(Bitmap.FromFile(@".\DeadlyInform\Currency.png"), new Point(0, 25));
-                    break;
-                default:
-                    break;
+            int iWidth = 0;
+            int iHeight = 0;
+            int nWidth = 0;
+            int nHeight = 0;
+            if (nZoom != 0)
+            {
+                nWidth = img.Width + (img.Width * nZoom / 10);
+                nHeight = img.Height + (img.Height * nZoom / 10);
             }
-            */
-            #endregion
+            else
+            {
+                nWidth = img.Width;
+                nHeight = img.Height;
+            }
+
+
+            if ((nHeight == 0) && (nWidth != 0))
+            {
+                iWidth = nWidth;
+                iHeight = (img.Size.Height * iWidth / img.Size.Width);
+            }
+            else if ((nHeight != 0) && (nWidth == 0))
+            {
+                iHeight = nHeight;
+                iWidth = (img.Size.Width * iHeight / img.Size.Height);
+            }
+            else
+            {
+                iWidth = nWidth;
+                iHeight = nHeight;
+            }
+
+            Rectangle rcPrimary = Screen.PrimaryScreen.Bounds;
+            Width = iWidth;
+            if (Width > rcPrimary.Width)
+            {
+                Width = rcPrimary.Width;
+                nCatch = nCatch + 1;
+            }
+            Height = iHeight + 16;
+            if (Height > rcPrimary.Height)
+            {
+                Height = rcPrimary.Height;
+                nCatch = nCatch + 1;
+            }
+
+            Left = nLeft;
+            Top = nTop;
+
+            if (nCatch > 1)
+                return false;
+
+            pictureBox1.BackgroundImage = null;
+            pictureBox1.BackgroundImage = img;
+
+            return true;
         }
 
         private void Panel1_MouseDown(object sender, MouseEventArgs e)
@@ -174,6 +172,8 @@ namespace POExileDirection
 
         private void Panel1_MouseUp(object sender, MouseEventArgs e)
         {
+            nLeft = Left;
+            nTop = Top;
             nMoving = 0;
 
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
@@ -198,25 +198,15 @@ namespace POExileDirection
 
             string sZoom = parser.GetSetting("LOCATIONIMGMAP", "ZOOM");
             nZoom = Int32.Parse(sZoom);
-            img = Bitmap.FromFile(m_strImagePath);
-            nZoom = nZoom - 100;
-            if (img.Width + nZoom >= 320 && img.Height + nZoom >= 258)
+            nZoom = nZoom - 1;
+            if (!SetImage())
             {
-                try
-                {
-                    img = resizeImage(img, new Size(img.Width + nZoom, img.Height + nZoom));
-
-                    parser.AddSetting("LOCATIONIMGMAP", "ZOOM", nZoom.ToString());
-                    parser.SaveSettings();
-
-                    this.Invalidate();
-                    this.Update();
-                    this.Refresh();
-                }
-                catch (Exception ex)
-                {
-                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                }
+                nZoom = nZoom + 1;
+            }
+            else
+            {
+                parser.AddSetting("LOCATIONIMGMAP", "ZOOM", nZoom.ToString());
+                parser.SaveSettings();
             }
         }
 
@@ -228,39 +218,25 @@ namespace POExileDirection
             string sZoom = parser.GetSetting("LOCATIONIMGMAP", "ZOOM");
             nZoom = Int32.Parse(sZoom);
 
-            img = Bitmap.FromFile(m_strImagePath);
-            nZoom = nZoom + 100;
-            if (img.Width + nZoom <= 1901 && img.Height + nZoom <= 1154)
+            nZoom = nZoom + 1;
+            if (!SetImage())
             {
-                try
-                //img = resizeImage(img, new Size(img.Width + nZoom, img.Height + nZoom));
-                //img = DeadlyImageCommon.ScaleImage(img, img.Width + nZoom, img.Height + nZoom);
-                {
-                    img = resizeImage(img, new Size(img.Width + nZoom, img.Height + nZoom));
-
-                    parser.AddSetting("LOCATIONIMGMAP", "ZOOM", nZoom.ToString());
-                    parser.SaveSettings();
-
-                    this.Invalidate();
-                    this.Update();
-                    this.Refresh();
-                }
-                catch (Exception ex)
-                {
-                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-                }
+                nZoom = nZoom - 1;
+            }
+            else
+            {
+                parser.AddSetting("LOCATIONIMGMAP", "ZOOM", nZoom.ToString());
+                parser.SaveSettings();
             }
         }
 
         private void ImageOverlayFormMap_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (gGDIfx != null) gGDIfx.Dispose();
             if (img != null) img.Dispose();
         }
 
         private void ImageOverlayFormMap_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (gGDIfx != null) gGDIfx.Dispose();
             if (img != null) img.Dispose();
         }
     }

@@ -32,6 +32,8 @@ namespace POExileDirection
         {
             Visible = false;
             this.StartPosition = FormStartPosition.Manual;
+            Left = 0;
+            Top = 0;
 
             //gGDIfx.DrawImage(Bitmap.FromFile(@".\DeadlyInform\Essence_KOR.png"), new Point(0, 0));
 
@@ -65,32 +67,21 @@ namespace POExileDirection
         #region ⨌⨌ Init. Controls ⨌⨌
         public void Init_Controls()
         {
-            //
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.BackColor = Color.Transparent;
-            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            button1.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
-            button1.FlatAppearance.BorderSize = 0;
-            button1.TabStop = false;
-
-            //
-            btnZoomOut.FlatStyle = FlatStyle.Flat;
-            btnZoomOut.BackColor = Color.Transparent;
-            btnZoomOut.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btnZoomOut.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            btnZoomOut.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
-            btnZoomOut.FlatAppearance.BorderSize = 0;
-            btnZoomOut.TabStop = false;
-
-            //
-            btnZoomIn.FlatStyle = FlatStyle.Flat;
-            btnZoomIn.BackColor = Color.Transparent;
-            btnZoomIn.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btnZoomIn.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            btnZoomIn.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
-            btnZoomIn.FlatAppearance.BorderSize = 0;
-            btnZoomIn.TabStop = false;
+            btnClose.FlatStyle = FlatStyle.Flat;
+            btnClose.BackColor = Color.Transparent;
+            btnClose.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnClose.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnClose.TabStop = false;
+            btnZoomin.FlatStyle = FlatStyle.Flat;
+            btnZoomin.BackColor = Color.Transparent;
+            btnZoomin.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnZoomin.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnZoomin.TabStop = false;
+            btnZoomout.FlatStyle = FlatStyle.Flat;
+            btnZoomout.BackColor = Color.Transparent;
+            btnZoomout.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnZoomout.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnZoomout.TabStop = false;
         }
         #endregion
 
@@ -108,8 +99,10 @@ namespace POExileDirection
             SetImage();
         }
 
-        private void SetImage()
+        private bool SetImage()
         {
+            int nCatch = 0;
+
             int iWidth = 0;
             int iHeight = 0;
             int nWidth = 0;
@@ -142,19 +135,30 @@ namespace POExileDirection
                 iHeight = nHeight;
             }
 
-            RECT rcClient;
-            InteropCommon.GetClientRect(LauncherForm.g_handlePathOfExile, out rcClient);
-
+            Rectangle rcPrimary = Screen.PrimaryScreen.Bounds;
             Width = iWidth;
-            if (Width > rcClient.right) Width = rcClient.right;
+            if (Width > rcPrimary.Width)
+            {
+                Width = rcPrimary.Width;
+                nCatch = nCatch + 1;
+            }
             Height = iHeight + 16;
-            if (Height > rcClient.bottom) Height = rcClient.bottom;
+            if (Height > rcPrimary.Height)
+            {
+                Height = rcPrimary.Height;
+                nCatch = nCatch + 1;
+            }
 
             Left = nLeft;
             Top = nTop;
 
+            if (nCatch > 1)
+                return false;
+
             pictureBox1.BackgroundImage = null;
             pictureBox1.BackgroundImage = img;
+
+            return true;
         }
 
         private void Panel1_MouseDown(object sender, MouseEventArgs e)
@@ -174,6 +178,8 @@ namespace POExileDirection
 
         private void Panel1_MouseUp(object sender, MouseEventArgs e)
         {
+            nLeft = Left;
+            nTop = Top;
             nMoving = 0;
 
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
@@ -201,11 +207,15 @@ namespace POExileDirection
 
             img = Bitmap.FromFile(m_strImagePath);
             nZoom = nZoom - 1;
-            
-            parser.AddSetting("LOCATIONIMG", "ZOOM", nZoom.ToString());
-            parser.SaveSettings();
-
-            SetImage();
+            if (!SetImage())
+            {
+                nZoom = nZoom + 1;
+            }
+            else
+            {
+                parser.AddSetting("LOCATIONIMG", "ZOOM", nZoom.ToString());
+                parser.SaveSettings();
+            }
         }
 
         private void BtnZoomIn_Click(object sender, EventArgs e)
@@ -215,12 +225,17 @@ namespace POExileDirection
 
             string sZoom = parser.GetSetting("LOCATIONIMG", "ZOOM");
             nZoom = Int32.Parse(sZoom);
+            
             nZoom = nZoom + 1;
-
-            parser.AddSetting("LOCATIONIMG", "ZOOM", nZoom.ToString());
-            parser.SaveSettings();
-
-            SetImage();
+            if (!SetImage())
+            {
+                nZoom = nZoom - 1;
+            }
+            else
+            {
+                parser.AddSetting("LOCATIONIMG", "ZOOM", nZoom.ToString());
+                parser.SaveSettings();
+            }
         }
 
         private void ImageOverlayForm_FormClosed(object sender, FormClosedEventArgs e)

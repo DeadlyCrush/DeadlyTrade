@@ -117,23 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnZoomOut.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        xAAADsQBlSsOGwAAAJtJREFUOE+lkW0KhDAQQ/c0fo6gLux6/x6sOkKGtLa1aOCBpPH9aD/OOf+WU9LK
-        9piihJM6B0lJKbwDFwmHhxzulayER3dngQSJRwzCXVaSSrwBJmkygxiEO5P04zc7Agh3zVi4WA2POdwr
-        F4lSE94nJYBT6kzSyc9P01wFot+BRF+nlb/Za+iOvT5IIBlkOcq5mkHW8z+TvMP5HXrPyHqocD4eAAAA
-        AElFTkSuQmCC
-</value>
-  </data>
-  <data name="btnZoomIn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        xAAADsQBlSsOGwAAAJ9JREFUOE+lkW0KhDAMRD2NnxHUhXXv34NVR0iYalrKOvCgScf3wzYhhPiWS9LJ
-        72+KEo53r7iSUrinPCQcLnJ4D7ISnnN3SiLRcMGbEd5lJV7uHcUkbabgzQjvTDJMH7d0PyM6g3Yq/FiE
-        yxzeg4cE1IT7rkThlHYm6eUb53mpQoNzIsHrdLKbvYb+7ONBEsko67lcqhllu74zyTtCPAC0KtJCtfzf
-        owAAAABJRU5ErkJggg==
-</value>
-  </data>
 </root>

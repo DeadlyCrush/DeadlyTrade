@@ -29,20 +29,32 @@
         private void InitializeComponent()
         {
             this.panelQuadCheck = new System.Windows.Forms.Panel();
-            this.checkQuadTab = new System.Windows.Forms.CheckBox();
             this.labelAddonStatus = new System.Windows.Forms.Label();
+            this.checkQuadTab = new System.Windows.Forms.CheckBox();
             this.panelQuadCheck.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelQuadCheck
             // 
-            this.panelQuadCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(56)))));
+            this.panelQuadCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(47)))), ((int)(((byte)(28)))));
             this.panelQuadCheck.Controls.Add(this.labelAddonStatus);
             this.panelQuadCheck.Controls.Add(this.checkQuadTab);
             this.panelQuadCheck.Location = new System.Drawing.Point(190, 12);
             this.panelQuadCheck.Name = "panelQuadCheck";
             this.panelQuadCheck.Size = new System.Drawing.Size(133, 22);
             this.panelQuadCheck.TabIndex = 3;
+            // 
+            // labelAddonStatus
+            // 
+            this.labelAddonStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(47)))), ((int)(((byte)(28)))));
+            this.labelAddonStatus.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAddonStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(86)))));
+            this.labelAddonStatus.Location = new System.Drawing.Point(26, 1);
+            this.labelAddonStatus.Name = "labelAddonStatus";
+            this.labelAddonStatus.Size = new System.Drawing.Size(104, 18);
+            this.labelAddonStatus.TabIndex = 6;
+            this.labelAddonStatus.Text = "Show Quad Grid.";
+            this.labelAddonStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // checkQuadTab
             // 
@@ -55,17 +67,6 @@
             this.checkQuadTab.TabStop = false;
             this.checkQuadTab.UseVisualStyleBackColor = true;
             this.checkQuadTab.CheckedChanged += new System.EventHandler(this.checkQuadTab_CheckedChanged);
-            // 
-            // labelAddonStatus
-            // 
-            this.labelAddonStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
-            this.labelAddonStatus.ForeColor = System.Drawing.Color.Bisque;
-            this.labelAddonStatus.Location = new System.Drawing.Point(26, 1);
-            this.labelAddonStatus.Name = "labelAddonStatus";
-            this.labelAddonStatus.Size = new System.Drawing.Size(104, 18);
-            this.labelAddonStatus.TabIndex = 6;
-            this.labelAddonStatus.Text = "Show Quad Grid.";
-            this.labelAddonStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // StashGrid
             // 

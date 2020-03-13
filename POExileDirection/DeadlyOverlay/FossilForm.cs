@@ -29,10 +29,11 @@ namespace POExileDirection
         Image img;
         private void FossilForm_Load(object sender, EventArgs e)
         {
-            Visible = false;
             this.StartPosition = FormStartPosition.Manual;
             Left = 0;
             Top = 0;
+
+            Init_Control();
 
             pictureBox1.BackgroundImage = null;
             if (LauncherForm.g_strUILang == "KOR")
@@ -41,6 +42,25 @@ namespace POExileDirection
                 img = Image.FromFile(Application.StartupPath + "\\DeadlyInform\\fossil_eng.jpg");
 
             SetImage();
+        }
+
+        private void Init_Control()
+        {
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.BackColor = Color.Transparent;
+            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button1.TabStop = false;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.BackColor = Color.Transparent;
+            button2.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button2.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button2.TabStop = false;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.BackColor = Color.Transparent;
+            button3.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button3.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button3.TabStop = false;
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
@@ -66,8 +86,10 @@ namespace POExileDirection
         }
 
         private int nZoom = 0;
-        private void SetImage()
+        private bool SetImage()
         {
+            int nCatch = 0;
+
             int iWidth = 0;
             int iHeight = 0;
             int nWidth = 0;
@@ -100,19 +122,30 @@ namespace POExileDirection
                 iHeight = nHeight;
             }
 
-            RECT rcClient;
-            InteropCommon.GetClientRect(LauncherForm.g_handlePathOfExile, out rcClient);
-
+            Rectangle rcPrimary = Screen.PrimaryScreen.Bounds;
             Width = iWidth;
-            if (Width > rcClient.right) Width = rcClient.right;
-            Height = iHeight + 20;
-            if (Height > rcClient.bottom) Height = rcClient.bottom;
+            if (Width > rcPrimary.Width)
+            {
+                Width = rcPrimary.Width;
+                nCatch = nCatch + 1;
+            }
+            Height = iHeight + 16;
+            if (Height > rcPrimary.Height)
+            {
+                Height = rcPrimary.Height;
+                nCatch = nCatch + 1;
+            }
 
             Left = nLeft;
             Top = nTop;
 
+            if (nCatch > 1)
+                return false;
+
             pictureBox1.BackgroundImage = null;
             pictureBox1.BackgroundImage = img;
+
+            return true;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -125,13 +158,15 @@ namespace POExileDirection
         private void btnZoomIn_Click(object sender, EventArgs e)
         {
             nZoom = nZoom + 1;
-            SetImage();
+            if (!SetImage())
+                nZoom = nZoom - 1;
         }
 
         private void btnZoomOut_Click(object sender, EventArgs e)
         {
             nZoom = nZoom - 1;
-            SetImage();
+            if (!SetImage())
+                nZoom = nZoom + 1;
         }
     }
 }

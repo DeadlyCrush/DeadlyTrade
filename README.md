@@ -170,7 +170,7 @@ DeadlyTrade / Deadly KOR Team >
 
 ## Download Status (Real-Time)
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release)](https://github.com/DeadlyCrush/DeadlyTrade/releases) ![GitHub Releases](https://img.shields.io/github/downloads/deadlycrush/deadlytrade/latest/total) ![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/deadlycrush/deadlytrade/latest?include_prereleases) ![Github Last Commit DateTime](https://badgen.net/github/last-commit/deadlycrush/deadlytrade)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/deadlycrush/deadlytrade?label=latest%20release)](https://github.com/DeadlyCrush/DeadlyTrade/releases)  ![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/deadlycrush/deadlytrade/latest?include_prereleases) ![Github Last Commit DateTime](https://badgen.net/github/last-commit/deadlycrush/deadlytrade)
 
 | DeadlyTrade Repository. | Download |
 | ------ | ------ |

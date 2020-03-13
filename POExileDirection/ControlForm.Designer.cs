@@ -40,7 +40,6 @@
             this.labelT = new System.Windows.Forms.Label();
             this.labelR = new System.Windows.Forms.Label();
             this.labelE = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.labelW = new System.Windows.Forms.Label();
             this.labelQ = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -77,6 +76,7 @@
             this.btnQ = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
             this.btn4 = new System.Windows.Forms.Button();
+            this.btnTradeHistory = new System.Windows.Forms.Button();
             this.btnSOUND = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
@@ -173,6 +173,7 @@
             this.panelUtility.Controls.Add(this.btnQ);
             this.panelUtility.Controls.Add(this.btn5);
             this.panelUtility.Controls.Add(this.btn4);
+            this.panelUtility.Controls.Add(this.btnTradeHistory);
             this.panelUtility.Controls.Add(this.btnSOUND);
             this.panelUtility.Controls.Add(this.btn3);
             this.panelUtility.Controls.Add(this.btn2);
@@ -181,7 +182,6 @@
             this.panelUtility.Controls.Add(this.labelT);
             this.panelUtility.Controls.Add(this.labelR);
             this.panelUtility.Controls.Add(this.labelE);
-            this.panelUtility.Controls.Add(this.label6);
             this.panelUtility.Controls.Add(this.labelW);
             this.panelUtility.Controls.Add(this.labelQ);
             this.panelUtility.Controls.Add(this.label5);
@@ -269,18 +269,6 @@
             this.labelE.TabIndex = 22;
             this.labelE.Text = "E";
             this.labelE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
-            this.label6.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Italic);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
-            this.label6.Location = new System.Drawing.Point(103, 45);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 12);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "DeadlyTrade 1.4.0.1";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelW
             // 
@@ -809,6 +797,26 @@
             this.btn4.UseVisualStyleBackColor = false;
             this.btn4.Click += new System.EventHandler(this.XuiSwitch4_SwitchStateChanged);
             this.btn4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnHideout_Enter);
+            // 
+            // btnTradeHistory
+            // 
+            this.btnTradeHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.btnTradeHistory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTradeHistory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTradeHistory.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnTradeHistory.FlatAppearance.BorderSize = 0;
+            this.btnTradeHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTradeHistory.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTradeHistory.ForeColor = System.Drawing.Color.LightCoral;
+            this.btnTradeHistory.Image = global::POExileDirection.Properties.Resources.time;
+            this.btnTradeHistory.Location = new System.Drawing.Point(198, 43);
+            this.btnTradeHistory.Name = "btnTradeHistory";
+            this.btnTradeHistory.Size = new System.Drawing.Size(14, 14);
+            this.btnTradeHistory.TabIndex = 38;
+            this.btnTradeHistory.TabStop = false;
+            this.btnTradeHistory.Text = "img";
+            this.btnTradeHistory.UseVisualStyleBackColor = false;
+            this.btnTradeHistory.Click += new System.EventHandler(this.btnTradeHistory_Click);
             // 
             // btnSOUND
             // 
@@ -1446,6 +1454,6 @@
         private System.Windows.Forms.Label labelSNDOnOff;
         private XanderUI.XUISwitch xuiSwitch1;
         private System.Windows.Forms.Button btnSOUND;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnTradeHistory;
     }
 }

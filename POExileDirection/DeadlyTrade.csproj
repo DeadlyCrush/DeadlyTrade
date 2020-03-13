@@ -839,6 +839,7 @@
     <None Include="Resources\someoneentered_bg21.png" />
     <None Include="Resources\21.png" />
     <None Include="Resources\icon_re_16_Fossil.png" />
+    <None Include="Resources\time.png" />
     <Content Include="res\Currency\curr_alch.png" />
     <Content Include="res\Currency\curr_alt.png" />
     <Content Include="res\Currency\curr_ancient.png" />

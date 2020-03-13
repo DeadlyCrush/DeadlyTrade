@@ -1,4 +1,4 @@
-﻿namespace POExileDirection.DeadlyNotification
+﻿namespace POExileDirection
 {
     partial class TradeHistory
     {
@@ -33,10 +33,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.커런시 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.구매판매 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.닉네임 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.아이템 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.귓속말 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.구매판매 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panelDetail = new System.Windows.Forms.Panel();
             this.labelMessage = new System.Windows.Forms.Label();
             this.labelNickName = new System.Windows.Forms.Label();
@@ -57,6 +57,9 @@
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(600, 20);
             this.panelTop.TabIndex = 5;
+            this.panelTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseDown);
+            this.panelTop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseMove);
+            this.panelTop.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseUp);
             // 
             // btnClose
             // 
@@ -74,6 +77,7 @@
             this.btnClose.TabIndex = 9;
             this.btnClose.Text = "x";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label2
             // 
@@ -86,6 +90,9 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Trade Notification History.";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseDown);
+            this.label2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseMove);
+            this.label2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseUp);
             // 
             // listView1
             // 
@@ -114,6 +121,10 @@
             // 
             this.커런시.Width = 0;
             // 
+            // 구매판매
+            // 
+            this.구매판매.Width = 30;
+            // 
             // 닉네임
             // 
             this.닉네임.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -126,10 +137,6 @@
             // 귓속말
             // 
             this.귓속말.Width = 360;
-            // 
-            // 구매판매
-            // 
-            this.구매판매.Width = 30;
             // 
             // panelDetail
             // 

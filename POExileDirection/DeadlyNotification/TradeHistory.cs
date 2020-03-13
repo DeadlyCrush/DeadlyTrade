@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using WindowsInput;
 using WindowsInput.Native;
 
-namespace POExileDirection.DeadlyNotification
+namespace POExileDirection
 {
     public partial class TradeHistory : Form
     {
@@ -118,6 +118,32 @@ namespace POExileDirection.DeadlyNotification
             iSim.Keyboard.TextEntry(strSendString);
 
             iSim.Keyboard.KeyPress(VirtualKeyCode.SPACE);
+        }
+
+        private void panelTop_MouseDown(object sender, MouseEventArgs e)
+        {
+            nMoving = 1;
+            nMovePosX = e.X;
+            nMovePosY = e.Y;
+        }
+
+        private void panelTop_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (nMoving == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - nMovePosX, MousePosition.Y - nMovePosY);
+            }
+        }
+
+        private void panelTop_MouseUp(object sender, MouseEventArgs e)
+        {
+            nMoving = 0;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            ControlForm.g_bIsHistoryOn = false;
+            Close();
         }
     }
 }

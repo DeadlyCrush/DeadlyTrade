@@ -173,6 +173,9 @@ namespace POExileDirection
         FossilForm frmFossil = null;
         public static bool g_bIsFossilOn { get; set; }
 
+        TradeHistory frmHistory = null;
+        public static bool g_bIsHistoryOn { get; set; }
+
         public static NotificationContainer frmNotificationContainer = new NotificationContainer();
         public static bool g_bIsNofiticationContainerOn { get; set; }
 
@@ -378,6 +381,12 @@ namespace POExileDirection
             btnDeadlyTrade.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnDeadlyTrade.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnDeadlyTrade.TabStop = false;
+
+            btnTradeHistory.FlatStyle = FlatStyle.Flat;
+            btnTradeHistory.BackColor = Color.Transparent;
+            btnTradeHistory.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnTradeHistory.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnTradeHistory.TabStop = false;            
         }
         #endregion
 
@@ -412,6 +421,8 @@ namespace POExileDirection
 
             Set_FlaskTimerToggleSwitch();
             Set_SkillTimerToggleSwitch();
+
+            btnExpandCollapse_Click(this, new EventArgs());
 
             #region [[[[[ Set EventHandler ]]]]]
             deadlyHideoutEvent += ControlForm_deadlyHideoutEvent;
@@ -1188,6 +1199,9 @@ namespace POExileDirection
             {
                 if (bShow)
                 {
+                    if (g_bIsHistoryOn)
+                        frmHistory.Show();
+
                     if (g_bIsFossilOn)
                         frmFossil.Show();
 
@@ -1234,6 +1248,9 @@ namespace POExileDirection
                 }
                 else
                 {
+                    if (g_bIsHistoryOn)
+                        frmHistory.Hide();
+
                     if (g_bIsFossilOn)
                         frmFossil.Hide();
 
@@ -2526,9 +2543,9 @@ namespace POExileDirection
                 if (String.IsNullOrEmpty(g_strImagePath[0]) || strJUNDefualt.Trim().ToUpper() == "Y")
                 {
                     if(LauncherForm.g_strUILang=="KOR")
-                        g_strImagePath[0] = @".\DeadlyInform\Betrayal.jpg";
+                        g_strImagePath[0] = @".\DeadlyInform\Betrayal.png";
                     else
-                        g_strImagePath[0] = @".\DeadlyInform\BetrayalEN.jpg";
+                        g_strImagePath[0] = @".\DeadlyInform\BetrayalEN.png";
                 }
 
                 g_strImagePath[1] = parser.GetSetting("OVERLAY", "ALVA"); // @".\DeadlyInform\Incursion.png";  // ALVA
@@ -4412,6 +4429,23 @@ namespace POExileDirection
                 g_bIsFossilOn = false;
 
                 frmFossil.Close();
+            }
+        }
+
+        private void btnTradeHistory_Click(object sender, EventArgs e)
+        {
+            if (!g_bIsHistoryOn)
+            {
+                g_bIsHistoryOn = true;
+
+                frmHistory = new TradeHistory();
+                frmHistory.Show();
+            }
+            else
+            {
+                g_bIsHistoryOn = false;
+
+                frmHistory.Close();
             }
         }
     }

@@ -150,6 +150,7 @@
             this.btnMinimize.Size = new System.Drawing.Size(15, 15);
             this.btnMinimize.TabIndex = 9;
             this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Visible = false;
             this.btnMinimize.Click += new System.EventHandler(this.BtnMinimize_Click);
             // 
             // pictureBox3
@@ -747,26 +748,26 @@
             this.toolStripSeparator1,
             this.toolStripMenuItem2});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 76);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(180, 54);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Image = global::POExileDirection.Properties.Resources.sysMaxPOEBg;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(179, 22);
             this.toolStripMenuItem1.Text = "Maximize Launcher";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.ToolStripMenuItem1_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(176, 6);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Image = global::POExileDirection.Properties.Resources.sysClosePOEBg;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(179, 22);
             this.toolStripMenuItem2.Text = "Exit DeadlyTrade";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.ToolStripMenuItem2_Click);
             // 

@@ -887,15 +887,15 @@ namespace POExileDirection
         }
         #endregion
 
-        private void ControlForm_ClipboardParsingMapAlertEvent(object sender, EventArgs e)
-        {
-            return; // Temprorary Removed 1.3.9.0 Ver.
-            /*if (frmMapModResult == null) { frmMapModResult = new MapAlertForm(); }
-            frmMapModResult.m_strMapModString = m_strClipboardText;
-            frmMapModResult.Show();
+        //private void ControlForm_ClipboardParsingMapAlertEvent(object sender, EventArgs e)
+        //{
+        //    return; // Temprorary Removed 1.3.9.0 Ver.
+        //    /*if (frmMapModResult == null) { frmMapModResult = new MapAlertForm(); }
+        //    frmMapModResult.m_strMapModString = m_strClipboardText;
+        //    frmMapModResult.Show();
 
-            m_strClipboardText = null;*/
-        }
+        //    m_strClipboardText = null;*/
+        //}
 
         #region ⨌⨌ Hot Key Events ⨌⨌
         private void ControlForm_deadlyEXITEvent(object sender, EventArgs e)
@@ -1179,14 +1179,15 @@ namespace POExileDirection
             string a = "";
             g_DeadlyRegEx.RegExKORPriceWithTabName = new Regex("^(.*\\s)?(.+): 안녕하세요, (\\s*)?(.+?)\\(보관함 탭 \\\"(.*)\\\", 위치: 왼쪽 (\\d+), 상단 (\\d+)\\)에 (\\d+) (.*?)\\(으\\)로 올려놓은(.?\\s)(.+)\\(을\\)를 구매하고 싶습니다\\s*(.*)$");
             g_DeadlyRegEx.RegExKORPriceNoTabName = new Regex("NOT");
-            g_DeadlyRegEx.RegExKORUnPrice = new Regex("^(.*\\s)?(.+): 안녕하세요, (\\s*)?(.+)\\(보관함 탭(.*?)\\\"(.*)\\\", 위치: 왼쪽 (\\d+), 상단 (\\d+)\\)에 올려놓은 (.*?\\s*)을\\(를\\) 구매하고 싶습니다\\s*(.*)$");
+            // ^(.*\s)?(.+): 안녕하세요, (\s*)?(.+)\(보관함 탭(.*?)\"(.*)\", 위치: 왼쪽 (\d+), 상단 (\d+)\)에 올려놓은 (.*?\s*)\(을\)를 구매하고 싶습니다\s*(.*)$
+            g_DeadlyRegEx.RegExKORUnPrice = new Regex("^(.*\\s)?(.+): 안녕하세요, (\\s*)?(.+)\\(보관함 탭(.*?)\\\"(.*)\\\", 위치: 왼쪽 (\\d+), 상단 (\\d+)\\)에 올려놓은 (.*?\\s*)\\(을\\)를 구매하고 싶습니다\\s*(.*)$");
             g_DeadlyRegEx.RegExKORBulkCurrencies = new Regex("NOT");
-            g_DeadlyRegEx.RegExKORCurrency = new Regex("^(.*\\s)?(.+): 안녕하세요, (.*?)에 올려놓은(\\d) (\\s*)?(.+?)을\\(를\\) 제 (\\d+) (.*?)\\(으\\)로 구매하고 싶습니다\\s*(.*)$"); // @From TNDlowluck: 안녕하세요, Legion에 올려놓은7 톱니 화석을(를) 제 189 카오스 오브(으)로 구매하고 싶습니다  ^(.*\s)?(.+): 안녕하세요, (\s*)?(.+)(.*)에 올려놓은(\d+) (.*?\s*)을\(를\) 제 (\d+) 구매하고 싶습니다\s*(.*)$
+            g_DeadlyRegEx.RegExKORCurrency = new Regex("^(.*\\s)?(.+): 안녕하세요, (.*?)에 올려놓은(\\d) (\\s*)?(.+?)\\(을\\)를 제 (\\d+) (.*?)\\(으\\)로 구매하고 싶습니다\\s*(.*)$"); // @From TNDlowluck: 안녕하세요, Legion에 올려놓은7 톱니 화석을(를) 제 189 카오스 오브(으)로 구매하고 싶습니다  ^(.*\s)?(.+): 안녕하세요, (\s*)?(.+)(.*)에 올려놓은(\d+) (.*?\s*)을\(를\) 제 (\d+) 구매하고 싶습니다\s*(.*)$
             g_DeadlyRegEx.RegExKORMapLiveSite = new Regex("NOT");
 
             // BUY
-            g_DeadlyRegEx.RegExKORPriceWithTabNameKAKAO = new Regex("^@(.*\\s)?(.+) 안녕하세요, (\\s*)?(.+)\\(보관함 탭(.*?)\\\"(.*)\\\", 위치: 왼쪽 (\\d+), 상단 (\\d+)\\)에 (\\d+) (.*?)\\(으\\)로 올려놓은(.?\\s)(.+)을\\(를\\) 구매하고 싶습니다\\s*(.*)$");
-            g_DeadlyRegEx.RegExKORUnPriceKAKAO = new Regex("^@(.*\\s)?(.+) 안녕하세요, (\\s*)?(.+)\\(보관함 탭(.*?)\\\"(.*)\\\", 위치: 왼쪽 (\\d+), 상단 (\\d+)\\)에 올려놓은 (.*?\\s*)을\\(를\\) 구매하고 싶습니다\\s*(.*)$");
+            g_DeadlyRegEx.RegExKORPriceWithTabNameKAKAO = new Regex("^@(.*\\s)?(.+) 안녕하세요, (\\s*)?(.+)\\(보관함 탭(.*?)\\\"(.*)\\\", 위치: 왼쪽 (\\d+), 상단 (\\d+)\\)에 (\\d+) (.*?)\\(으\\)로 올려놓은(.?\\s)(.+)\\(을\\)를 구매하고 싶습니다\\s*(.*)$");
+            g_DeadlyRegEx.RegExKORUnPriceKAKAO = new Regex("^@(.*\\s)?(.+) 안녕하세요, (\\s*)?(.+)\\(보관함 탭(.*?)\\\"(.*)\\\", 위치: 왼쪽 (\\d+), 상단 (\\d+)\\)에 올려놓은 (.*?\\s*)\\(을\\)를 구매하고 싶습니다\\s*(.*)$");
 
             #endregion
         }
@@ -1536,29 +1537,29 @@ namespace POExileDirection
             {
                 DeadlyTRADE.TradeMSG tradeWhisper3 = new DeadlyTRADE.TradeMSG();
                 Match mItemPriceWithTabName = g_DeadlyRegEx.RegExKORPriceWithTabName.Match(readLineString);
-                if (mItemPriceWithTabName.Groups.Count > 11)
+                if (mItemPriceWithTabName.Groups.Count > 10)
                 {
                     tradeWhisper3.tradePurpose = strTradePurpose;
                     tradeWhisper3.fullMSG = mItemPriceWithTabName.Groups[0].Value;
                     tradeWhisper3.league = mItemPriceWithTabName.Groups[4].Value;
                     tradeWhisper3.nickName = mItemPriceWithTabName.Groups[2].Value;
-                    tradeWhisper3.itemName = mItemPriceWithTabName.Groups[12].Value;
-                    if (mItemPriceWithTabName.Groups[9] != null)
-                        tradeWhisper3.priceCall = mItemPriceWithTabName.Groups[9].Value;
+                    tradeWhisper3.itemName = mItemPriceWithTabName.Groups[11].Value;
+                    if (mItemPriceWithTabName.Groups[8] != null)
+                        tradeWhisper3.priceCall = mItemPriceWithTabName.Groups[8].Value;
                     else
                         tradeWhisper3.priceCall = "?";
-                    if (mItemPriceWithTabName.Groups[10] != null)
-                        tradeWhisper3.whichCurrency = mItemPriceWithTabName.Groups[10].Value;
+                    if (mItemPriceWithTabName.Groups[9] != null)
+                        tradeWhisper3.whichCurrency = mItemPriceWithTabName.Groups[9].Value;
                     else
                         tradeWhisper3.whichCurrency = "?";
-                    if (mItemPriceWithTabName.Groups[6] != null)
+                    if (mItemPriceWithTabName.Groups[5] != null)
                     {
-                        tradeWhisper3.tabName = mItemPriceWithTabName.Groups[6].Value;
-                        tradeWhisper3.xPos = mItemPriceWithTabName.Groups[7].Value;
-                        tradeWhisper3.yPos = mItemPriceWithTabName.Groups[8].Value;
+                        tradeWhisper3.tabName = mItemPriceWithTabName.Groups[5].Value;
+                        tradeWhisper3.xPos = mItemPriceWithTabName.Groups[6].Value;
+                        tradeWhisper3.yPos = mItemPriceWithTabName.Groups[7].Value;
                     }
                     if (mItemPriceWithTabName.Groups[13] != null)
-                        tradeWhisper3.offerMSG = mItemPriceWithTabName.Groups[13].Value;
+                        tradeWhisper3.offerMSG = mItemPriceWithTabName.Groups[12].Value;
 
                     g_nNotificationShownCNT = g_nNotificationShownCNT + 1;
                     tradeWhisper3.id = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss_fff");
@@ -2791,12 +2792,11 @@ namespace POExileDirection
                         Thread.Sleep(100);
                         SaveNofiticationMsg();
                         Thread.Sleep(100);
-                        // My Character NickName
-                        parser.AddSetting("CHARACTER", "MYNICK", LauncherForm.g_strMyNickName);
                         // Notification Volume, Use Sound Alert Y/N
                         parser.AddSetting("LOCATIONNOTIFY", "VOLUME", LauncherForm.g_NotifyVolume.ToString());
                         parser.AddSetting("LOCATIONNOTIFY", "NOTIFICATIONSOUND", LauncherForm.g_strNotificationSoundYN);
-                        // CHECK AUTO KICK Y/N
+                        // Check Auto Kick.
+                        parser.AddSetting("CHARACTER", "MYNICK", LauncherForm.g_strMyNickName);
                         parser.AddSetting("CHARACTER", "AUTOKICK", LauncherForm.g_strTRAutoKick);
                         parser.AddSetting("LOCATIONNOTIFY", "WAIT", LauncherForm.g_strTRAutoKickWait);
                         parser.AddSetting("LOCATIONNOTIFY", "SOLD", LauncherForm.g_strTRAutoKickSold);
@@ -2804,6 +2804,32 @@ namespace POExileDirection
                         parser.AddSetting("LOCATIONNOTIFY", "CUSTOM2", LauncherForm.g_strTRAutoKickCustom2);
                         parser.AddSetting("LOCATIONNOTIFY", "CUSTOM3", LauncherForm.g_strTRAutoKickCustom3);
                         parser.AddSetting("LOCATIONNOTIFY", "CUSTOM4", LauncherForm.g_strTRAutoKickCustom4);
+
+                        // Check - CLOSE
+                        parser.AddSetting("LOCATIONNOTIFY", "THXCLOSE", LauncherForm.g_strTRAutoCloseThx);
+                        parser.AddSetting("LOCATIONNOTIFY", "WAITCLOSE", LauncherForm.g_strTRAutoCloseWait);
+                        parser.AddSetting("LOCATIONNOTIFY", "SOLDCLOSE", LauncherForm.g_strTRAutoCloseSold);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOMCLOSE1", LauncherForm.g_strTRAutoCloseCustom1);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOMCLOSE2", LauncherForm.g_strTRAutoCloseCustom2);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOMCLOSE3", LauncherForm.g_strTRAutoCloseCustom3);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOMCLOSE4", LauncherForm.g_strTRAutoCloseCustom4);
+
+                        // Check - Trade & Invite
+                        parser.AddSetting("LOCATIONNOTIFY", "THXTRADE", LauncherForm.g_strTRADECheckYNThx);
+                        parser.AddSetting("LOCATIONNOTIFY", "WAITTRADE", LauncherForm.g_strTRADECheckYNWait);
+                        parser.AddSetting("LOCATIONNOTIFY", "SOLDTRADE", LauncherForm.g_strTRADECheckYNSold);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOMTRADE1", LauncherForm.g_strTRADECheckYNCustom1);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOMTRADE2", LauncherForm.g_strTRADECheckYNCustom2);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOMTRADE3", LauncherForm.g_strTRADECheckYNCustom3);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOMTRADE4", LauncherForm.g_strTRADECheckYNCustom4);
+
+                        parser.AddSetting("LOCATIONNOTIFY", "THXINVITE", LauncherForm.g_strINVITECheckYNThx);
+                        parser.AddSetting("LOCATIONNOTIFY", "WAITINVITE", LauncherForm.g_strINVITECheckYNWait);
+                        parser.AddSetting("LOCATIONNOTIFY", "SOLDINVITE", LauncherForm.g_strINVITECheckYNSold);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOMINVITE1", LauncherForm.g_strINVITECheckYNCustom1);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOMINVITE2", LauncherForm.g_strINVITECheckYNCustom2);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOMINVITE3", LauncherForm.g_strINVITECheckYNCustom3);
+                        parser.AddSetting("LOCATIONNOTIFY", "CUSTOMINVITE4", LauncherForm.g_strINVITECheckYNCustom4);
                         #endregion
 
                         #region [[[[[ TAB3 - FLASK TIMER ]]]]]
@@ -2821,6 +2847,7 @@ namespace POExileDirection
                         parser.AddSetting("MISC", "FLASKTIME5", LauncherForm.g_FlaskTime5);
                         // Use Sound Alert Y/N
                         parser.AddSetting("LOCATIONNOTIFY", "FLASKTIMERSOUND", LauncherForm.g_strTimerSound1);
+                        parser.AddSetting("LOCATIONNOTIFY", "FLASKSOUND1", LauncherForm.g_strTimerSound1); 
                         parser.AddSetting("LOCATIONNOTIFY", "VOLUMEFLASKTIMER", LauncherForm.g_FlaskTimerVolume.ToString());
                         #endregion
 

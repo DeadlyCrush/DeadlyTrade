@@ -342,42 +342,114 @@ namespace POExileDirection
             try
             {
                 string strShaderCacheDir = g_strPOEPath + "ShaderCacheD3D11";
-
-                DirectoryInfo di = new DirectoryInfo(strShaderCacheDir);
-
-                foreach (FileInfo file in di.EnumerateFiles())
+                if (Directory.Exists(strShaderCacheDir))
                 {
-                    ts = dtCurrent - file.LastWriteTime;
-                    if (ts.Days > 3)
-                        file.Delete();
-                    this.Invoke(this.updateStatusDelegate);
+                    DirectoryInfo di2 = new DirectoryInfo(strShaderCacheDir);
+                    foreach (FileInfo file in di2.EnumerateFiles())
+                    {
+                        ts = dtCurrent - file.LastWriteTime;
+                        if (ts.Days > 3)
+                            file.Delete();
+                        this.Invoke(this.updateStatusDelegate);
+                    }
+
+                    DirectoryInfo[] subDirs2 = di2.GetDirectories();
+                    if (subDirs2.Length > 0)
+                    {
+                        foreach (DirectoryInfo subDirInfo in subDirs2)
+                        {
+                            // Console.WriteLine("   " + subDirInfo.Name);
+                            if (subDirInfo != null)
+                            {
+                                FileInfo[] subFiles = subDirInfo.GetFiles();
+                                if (subFiles.Length > 0)
+                                {
+                                    foreach (FileInfo subFile in subFiles)
+                                    {
+                                        ts = dtCurrent - subFile.LastWriteTime;
+                                        if (ts.Days > 3)
+                                            //Console.WriteLine("   " + subFile.Name + " (" + subFile.Length + " bytes)");
+                                            subFile.Delete();
+                                        this.Invoke(this.updateStatusDelegate);
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-                foreach (DirectoryInfo dir in di.EnumerateDirectories())
-                {
-                    ts = dtCurrent - dir.LastWriteTime;
-                    if (ts.Days > 3)
-                        dir.Delete(true);
-                    this.Invoke(this.updateStatusDelegate);
-                }
+                //DirectoryInfo di = new DirectoryInfo(strShaderCacheDir);
+
+                //foreach (FileInfo file in di.EnumerateFiles())
+                //{
+                //    ts = dtCurrent - file.LastWriteTime;
+                //    if (ts.Days > 3)
+                //        file.Delete();
+                //    this.Invoke(this.updateStatusDelegate);
+                //}
+                //foreach (DirectoryInfo dir in di.EnumerateDirectories())
+                //{
+                //    ts = dtCurrent - dir.LastWriteTime;
+                //    if (ts.Days > 3)
+                //        dir.Delete(true);
+                //    this.Invoke(this.updateStatusDelegate);
+                //}
 
                 strShaderCacheDir = g_strPOEPath + "ShaderCacheD3D11_GI";
-
-                DirectoryInfo di2 = new DirectoryInfo(strShaderCacheDir);
-
-                foreach (FileInfo file in di2.EnumerateFiles())
+                if (Directory.Exists(strShaderCacheDir))
                 {
-                    ts = dtCurrent - file.LastWriteTime;
-                    if (ts.Days > 3)
-                        file.Delete();
-                    this.Invoke(this.updateStatusDelegate);
+
+                    DirectoryInfo di3 = new DirectoryInfo(strShaderCacheDir);
+                    foreach (FileInfo file in di3.EnumerateFiles())
+                    {
+                        ts = dtCurrent - file.LastWriteTime;
+                        if (ts.Days > 3)
+                            file.Delete();
+                        this.Invoke(this.updateStatusDelegate);
+                    }
+
+                    DirectoryInfo[] subDirs3 = di3.GetDirectories();
+                    if (subDirs3.Length > 0)
+                    {
+                        foreach (DirectoryInfo subDirInfo in subDirs3)
+                        {
+                            // Console.WriteLine("   " + subDirInfo.Name);
+                            if (subDirInfo != null)
+                            {
+                                FileInfo[] subFiles = subDirInfo.GetFiles();
+                                if (subFiles.Length > 0)
+                                {
+                                    foreach (FileInfo subFile in subFiles)
+                                    {
+                                        //Console.WriteLine("   " + subFile.Name + " (" + subFile.Length + " bytes)");
+                                        ts = dtCurrent - subFile.LastWriteTime;
+                                        if (ts.Days > 3)
+                                            subFile.Delete();
+                                        this.Invoke(this.updateStatusDelegate);
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-                foreach (DirectoryInfo dir in di2.EnumerateDirectories())
-                {
-                    ts = dtCurrent - dir.LastWriteTime;
-                    if (ts.Days > 3)
-                        dir.Delete(true);
-                    this.Invoke(this.updateStatusDelegate);
-                }
+
+                //strShaderCacheDir = g_strPOEPath + "ShaderCacheD3D11_GI";
+
+                //DirectoryInfo di2 = new DirectoryInfo(strShaderCacheDir);
+
+                //foreach (FileInfo file in di2.EnumerateFiles())
+                //{
+                //    ts = dtCurrent - file.LastWriteTime;
+                //    if (ts.Days > 3)
+                //        file.Delete();
+                //    this.Invoke(this.updateStatusDelegate);
+                //}
+                //foreach (DirectoryInfo dir in di2.EnumerateDirectories())
+                //{
+                //    ts = dtCurrent - dir.LastWriteTime;
+                //    if (ts.Days > 3)
+                //        dir.Delete(true);
+                //    this.Invoke(this.updateStatusDelegate);
+                //}
             }
             catch (Exception ex)
             {

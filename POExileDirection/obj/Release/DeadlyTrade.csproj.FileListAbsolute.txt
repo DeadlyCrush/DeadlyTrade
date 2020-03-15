@@ -204,9 +204,6 @@ D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\SharpDX.XAudio2.pdb
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\SharpDX.XAudio2.xml
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\Microsoft.DirectX.Direct3D.xml
 D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\Microsoft.DirectX.xml
-D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\Markdig.dll
-D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\Markdig.pdb
-D:\GitDesk\DeadlyTrade\POExileDirection\bin\Release\Markdig.xml
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.LoginForm.resources
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.FossilForm.resources
 D:\GitDesk\DeadlyTrade\POExileDirection\obj\Release\POExileDirection.TradeHistory.resources

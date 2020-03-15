@@ -150,6 +150,7 @@
             this.panelFunctions.Name = "panelFunctions";
             this.panelFunctions.Size = new System.Drawing.Size(288, 30);
             this.panelFunctions.TabIndex = 2;
+            this.panelFunctions.Visible = false;
             // 
             // btnSold
             // 
@@ -315,7 +316,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelTop;
         private System.Windows.Forms.Label labelItemName;
-        private System.Windows.Forms.Button btnCurrency;
+        public System.Windows.Forms.Button btnCurrency;
         private System.Windows.Forms.Label labelPriceAtTitle;
         private System.Windows.Forms.CheckBox checkQuadTab;
         private System.Windows.Forms.Panel panelFunctions;

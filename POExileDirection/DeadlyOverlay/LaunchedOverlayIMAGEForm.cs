@@ -111,11 +111,11 @@ namespace POExileDirection
             Left = nLeft;
             Top = nTop;
 
-            if (nCatch > 1)
-                return false;
-
             pictureBox1.BackgroundImage = null;
             pictureBox1.BackgroundImage = img;
+
+            if (nCatch > 1)
+                return false;
 
             return true;
         }

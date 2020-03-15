@@ -282,10 +282,17 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.button12 = new System.Windows.Forms.Button();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.label69 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.button14 = new System.Windows.Forms.Button();
             this.label60 = new System.Windows.Forms.Label();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.labelDateTime = new System.Windows.Forms.Label();
@@ -309,13 +316,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelTop = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
             this.FlatSettingTab.SuspendLayout();
             this.tabHotKeys.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -337,6 +337,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxALVA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJUN)).BeginInit();
             this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -344,8 +346,6 @@
             this.panelWaiting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // FlatSettingTab
@@ -471,7 +471,7 @@
             this.btnT.FlatAppearance.BorderSize = 0;
             this.btnT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnT.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnT.ForeColor = System.Drawing.Color.Black;
+            this.btnT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
             this.btnT.Image = ((System.Drawing.Image)(resources.GetObject("btnT.Image")));
             this.btnT.Location = new System.Drawing.Point(516, 324);
             this.btnT.Name = "btnT";
@@ -488,7 +488,7 @@
             this.btnW.FlatAppearance.BorderSize = 0;
             this.btnW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnW.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnW.ForeColor = System.Drawing.Color.White;
+            this.btnW.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
             this.btnW.Image = ((System.Drawing.Image)(resources.GetObject("btnW.Image")));
             this.btnW.Location = new System.Drawing.Point(516, 287);
             this.btnW.Name = "btnW";
@@ -3791,6 +3791,82 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Help";
             // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button12.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.ForeColor = System.Drawing.Color.Silver;
+            this.button12.Location = new System.Drawing.Point(692, 449);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(92, 26);
+            this.button12.TabIndex = 112;
+            this.button12.Text = "CANCEL";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
+            this.label70.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label70.Location = new System.Drawing.Point(183, 499);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(63, 15);
+            this.label70.TabIndex = 110;
+            this.label70.Text = "KOR User";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
+            this.label71.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
+            this.label71.Location = new System.Drawing.Point(44, 499);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(63, 15);
+            this.label71.TabIndex = 111;
+            this.label71.Text = "ENG User";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
+            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox8.Image = global::POExileDirection.Properties.Resources.Discord;
+            this.pictureBox8.Location = new System.Drawing.Point(8, 492);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(30, 29);
+            this.pictureBox8.TabIndex = 108;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
+            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox9.Image = global::POExileDirection.Properties.Resources.Discord;
+            this.pictureBox9.Location = new System.Drawing.Point(147, 492);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(30, 29);
+            this.pictureBox9.TabIndex = 109;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
+            // label69
+            // 
+            this.label69.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.label69.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.label69.Location = new System.Drawing.Point(8, 444);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(666, 36);
+            this.label69.TabIndex = 106;
+            this.label69.Text = "We are working to detailed manual of all content.\r\nPlease join discord and please" +
+    " tell me if you have any question, bug report or suggestion.";
+            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // linkLabel1
             // 
             this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
@@ -3846,6 +3922,22 @@
             this.tabPage7.Size = new System.Drawing.Size(792, 529);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Hall Of Fame";
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
+            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button14.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button14.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.ForeColor = System.Drawing.Color.Silver;
+            this.button14.Location = new System.Drawing.Point(687, 452);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(92, 26);
+            this.button14.TabIndex = 113;
+            this.button14.Text = "CANCEL";
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // label60
             // 
@@ -4058,98 +4150,6 @@
             this.label16.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label16_MouseMove);
             this.label16.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label16_MouseUp);
             // 
-            // label69
-            // 
-            this.label69.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.label69.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.label69.Location = new System.Drawing.Point(8, 444);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(666, 36);
-            this.label69.TabIndex = 106;
-            this.label69.Text = "We are working to detailed manual of all content.\r\nPlease join discord and please" +
-    " tell me if you have any question, bug report or suggestion.";
-            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
-            this.label70.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label70.Location = new System.Drawing.Point(183, 499);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(63, 15);
-            this.label70.TabIndex = 110;
-            this.label70.Text = "KOR User";
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
-            this.label71.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(182)))), ((int)(((byte)(111)))));
-            this.label71.Location = new System.Drawing.Point(44, 499);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(63, 15);
-            this.label71.TabIndex = 111;
-            this.label71.Text = "ENG User";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
-            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = global::POExileDirection.Properties.Resources.Discord;
-            this.pictureBox8.Location = new System.Drawing.Point(8, 492);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(30, 29);
-            this.pictureBox8.TabIndex = 108;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(24)))), ((int)(((byte)(11)))));
-            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Image = global::POExileDirection.Properties.Resources.Discord;
-            this.pictureBox9.Location = new System.Drawing.Point(147, 492);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(30, 29);
-            this.pictureBox9.TabIndex = 109;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button12.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.ForeColor = System.Drawing.Color.Silver;
-            this.button12.Location = new System.Drawing.Point(692, 449);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(92, 26);
-            this.button12.TabIndex = 112;
-            this.button12.Text = "CANCEL";
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(20)))), ((int)(((byte)(16)))));
-            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button14.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button14.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(55)))), ((int)(((byte)(33)))));
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.ForeColor = System.Drawing.Color.Silver;
-            this.button14.Location = new System.Drawing.Point(687, 452);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(92, 26);
-            this.button14.TabIndex = 113;
-            this.button14.Text = "CANCEL";
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
             // SettingsOverhaul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -4199,6 +4199,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJUN)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -4207,8 +4209,6 @@
             this.panelWaiting.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }

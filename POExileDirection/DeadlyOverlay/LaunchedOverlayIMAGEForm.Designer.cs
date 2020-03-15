@@ -73,6 +73,7 @@
             this.btnZoomout.TabIndex = 11;
             this.btnZoomout.Text = "-";
             this.btnZoomout.UseVisualStyleBackColor = false;
+            this.btnZoomout.Click += new System.EventHandler(this.btnZoomOut_Click);
             // 
             // btnZoomin
             // 
@@ -91,6 +92,7 @@
             this.btnZoomin.TabIndex = 10;
             this.btnZoomin.Text = "+";
             this.btnZoomin.UseVisualStyleBackColor = false;
+            this.btnZoomin.Click += new System.EventHandler(this.btnZoomIn_Click);
             // 
             // btnClose
             // 
@@ -109,6 +111,7 @@
             this.btnClose.TabIndex = 9;
             this.btnClose.Text = "x";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label2
             // 

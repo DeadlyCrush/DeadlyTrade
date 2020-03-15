@@ -1081,6 +1081,12 @@ namespace POExileDirection
                     case 1:
                         enumUerChoice = LEAGUE_STRING.LEAGUE_HDCORE_STANDARD;
                         break;
+                    case 2:
+                        enumUerChoice = LEAGUE_STRING.LEAGUE_CURRENT;
+                        break;
+                    case 3:
+                        enumUerChoice = LEAGUE_STRING.LEAGUE_HDCORE_CURRENT;
+                        break;
                     default:
                         enumUerChoice = LEAGUE_STRING.LEAGUE_STANDARD;
                         break;
@@ -1196,6 +1202,7 @@ namespace POExileDirection
                 g_strTRAutoKickCustom3 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOM3");
                 g_strTRAutoKickCustom4 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOM4");
 
+                // Check - CLOSE
                 g_strTRAutoCloseThx = parser.GetSetting("LOCATIONNOTIFY", "THXCLOSE");
                 g_strTRAutoCloseWait = parser.GetSetting("LOCATIONNOTIFY", "WAITCLOSE");
                 g_strTRAutoCloseSold = parser.GetSetting("LOCATIONNOTIFY", "SOLDCLOSE");
@@ -1205,21 +1212,21 @@ namespace POExileDirection
                 g_strTRAutoCloseCustom4 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE4");
 
                 // Check - Trade & Invite
-                g_strTRADECheckYNThx = parser.GetSetting("LOCATIONNOTIFY", "THXCLOSE");
-                g_strTRADECheckYNWait = parser.GetSetting("LOCATIONNOTIFY", "WAITCLOSE");
-                g_strTRADECheckYNSold = parser.GetSetting("LOCATIONNOTIFY", "SOLDCLOSE");
-                g_strTRADECheckYNCustom1 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE1");
-                g_strTRADECheckYNCustom2 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE2");
-                g_strTRADECheckYNCustom3 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE3");
-                g_strTRADECheckYNCustom4 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE4");
+                g_strTRADECheckYNThx = parser.GetSetting("LOCATIONNOTIFY", "THXTRADE");
+                g_strTRADECheckYNWait = parser.GetSetting("LOCATIONNOTIFY", "WAITTRADE");
+                g_strTRADECheckYNSold = parser.GetSetting("LOCATIONNOTIFY", "SOLDTRADE");
+                g_strTRADECheckYNCustom1 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMTRADE1");
+                g_strTRADECheckYNCustom2 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMTRADE2");
+                g_strTRADECheckYNCustom3 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMTRADE3");
+                g_strTRADECheckYNCustom4 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMTRADE4");
 
-                g_strINVITECheckYNThx = parser.GetSetting("LOCATIONNOTIFY", "THXCLOSE");
-                g_strINVITECheckYNWait = parser.GetSetting("LOCATIONNOTIFY", "WAITCLOSE");
-                g_strINVITECheckYNSold = parser.GetSetting("LOCATIONNOTIFY", "SOLDCLOSE");
-                g_strINVITECheckYNCustom1 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE1");
-                g_strINVITECheckYNCustom2 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE2");
-                g_strINVITECheckYNCustom3 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE3");
-                g_strINVITECheckYNCustom4 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMCLOSE4");
+                g_strINVITECheckYNThx = parser.GetSetting("LOCATIONNOTIFY", "THXINVITE");
+                g_strINVITECheckYNWait = parser.GetSetting("LOCATIONNOTIFY", "WAITINVITE");
+                g_strINVITECheckYNSold = parser.GetSetting("LOCATIONNOTIFY", "SOLDINVITE");
+                g_strINVITECheckYNCustom1 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMINVITE1");
+                g_strINVITECheckYNCustom2 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMINVITE2");
+                g_strINVITECheckYNCustom3 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMINVITE3");
+                g_strINVITECheckYNCustom4 = parser.GetSetting("LOCATIONNOTIFY", "CUSTOMINVITE4");
 
                 g_nGridLeft = Convert.ToInt32(parser.GetSetting("LOCATIONGRID", "LEFT"));
                 g_nGridTop = Convert.ToInt32(parser.GetSetting("LOCATIONGRID", "TOP"));

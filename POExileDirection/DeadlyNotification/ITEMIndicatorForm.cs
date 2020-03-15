@@ -18,7 +18,6 @@ namespace POExileDirection
 
         public string _strItemName = String.Empty;
         public string _strPrice = String.Empty;
-        public string _strBmpPath = String.Empty;
 
         public string _strNickName = String.Empty;
         public string _strTradePurpose = String.Empty;
@@ -299,13 +298,8 @@ namespace POExileDirection
                 //} 
                 #endregion
 
-                if (!String.IsNullOrEmpty(_strBmpPath))
-                    btnCurrency.Text = "";
-
                 labelItemName.Text = _strItemName;
                 labelPriceAtTitle.Text = _strPrice;
-                if(String.IsNullOrEmpty(_strBmpPath))
-                    btnCurrency.BackgroundImage = Bitmap.FromFile(_strBmpPath);
 
                 panelTop.Left = pictureBox1.Width + 1;
                 panelFunctions.Left = panelTop.Right - 288;

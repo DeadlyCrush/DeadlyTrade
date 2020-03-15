@@ -145,15 +145,15 @@ namespace POExileDirection
                 labelStashTabDetail.Text = strTabDetail;
             }
 
-            if (!String.IsNullOrEmpty(tradeItem.priceCall))
-            {
-                if (Convert.ToInt32(tradeItem.priceCall) >= Convert.ToInt32(dSelectedCurr.ToString("N1")) || // 1엑잘 상당의 카오스오브
-                 Convert.ToInt32(tradeItem.priceCall) >= 1 && tradeItem.whichCurrency.ToUpper().Contains("Exal") || tradeItem.whichCurrency.ToUpper().Contains("Exa")) // 1엑잘 이상
-                {
-                    // Over 1exalted.
-                    labelPrice.ForeColor = Color.Tomato;
-                }
-            }
+            //if (!String.IsNullOrEmpty(tradeItem.priceCall))
+            //{
+            //    if (Convert.ToInt32(tradeItem.priceCall) >= Convert.ToInt32(dSelectedCurr.ToString("N1")) || // 1엑잘 상당의 카오스오브
+            //    Convert.ToInt32(tradeItem.priceCall) >= 1 && tradeItem.whichCurrency.ToUpper().Contains("Exal") || tradeItem.whichCurrency.ToUpper().Contains("Exa")) // 1엑잘 이상
+            //    {
+            //        // Over 1exalted.
+            //        labelPrice.ForeColor = Color.Tomato;
+            //    }
+            //}
             labelPrice.Text = tradeItem.priceCall;
             labelPriceAtTitle.Text = tradeItem.priceCall;
 
@@ -822,7 +822,7 @@ namespace POExileDirection
                 itemIndicator.nStashY = Convert.ToInt32(thisTradeMsg.yPos);
                 itemIndicator._strItemName = thisTradeMsg.itemName;
                 itemIndicator._strPrice = thisTradeMsg.priceCall;
-                itemIndicator._strBmpPath = strBmpPath;
+                itemIndicator.btnCurrency.BackgroundImage = pictureCurrency.BackgroundImage;
                 itemIndicator._strNickName = thisTradeMsg.nickName;
                 itemIndicator._strTradePurpose = thisTradeMsg.tradePurpose;
                 itemIndicator.Owner = this;
@@ -1235,7 +1235,7 @@ namespace POExileDirection
             itemIndicator.nStashY = Convert.ToInt32(thisTradeMsg.yPos);
             itemIndicator._strItemName = thisTradeMsg.itemName;
             itemIndicator._strPrice = thisTradeMsg.priceCall;
-            itemIndicator._strBmpPath = strBmpPath;
+            itemIndicator.btnCurrency.BackgroundImage = pictureCurrency.BackgroundImage;
             itemIndicator.Owner = this;
             itemIndicator.Show();
 

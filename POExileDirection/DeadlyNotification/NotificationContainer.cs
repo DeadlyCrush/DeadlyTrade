@@ -110,7 +110,7 @@ namespace POExileDirection
                 btnPanelArrow.Image = Properties.Resources.PanelHolderArrow_up;
             }
 
-            if (panelNOTIFICATION.Controls.Count + 1 > 2)
+            if (ControlForm.g_nNotificationPanelShownCNT > 0)
             {
                 panelHolder.BackColor = Color.FromArgb(74, 42, 0);
                 btnPanelArrow.Visible = true;

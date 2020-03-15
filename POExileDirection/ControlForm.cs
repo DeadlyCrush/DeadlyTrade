@@ -3184,6 +3184,7 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisper)) return true;
                     g_TradeMsgList.Add(tradeWhisper);
+                    g_TradeMsgListHistory.Add(tradeWhisper);
 
                     NotificationForm frmNotifyPanel = new NotificationForm();
                     frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
@@ -3241,10 +3242,10 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisperCurr)) return true;
                     g_TradeMsgList.Add(tradeWhisperCurr);
+                    g_TradeMsgListHistory.Add(tradeWhisperCurr);
 
-                    NotificationForm frmNotifySell = new NotificationForm();
-                    frmNotifySell.Owner = this;
-                    frmNotifySell.Show();
+                    NotificationForm frmNotifyPanel = new NotificationForm();
+                    frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
 
                     tradeWhisperCurr = null;
                     return true;
@@ -3297,10 +3298,10 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisper2Un)) return true;
                     g_TradeMsgList.Add(tradeWhisper2Un);
+                    g_TradeMsgListHistory.Add(tradeWhisper2Un);
 
-                    NotificationForm frmNotifySell = new NotificationForm();
-                    frmNotifySell.Owner = this;
-                    frmNotifySell.Show();
+                    NotificationForm frmNotifyPanel = new NotificationForm();
+                    frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
 
                     tradeWhisper2Un = null;
                     return true;
@@ -3351,10 +3352,10 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisper2)) return true;
                     g_TradeMsgList.Add(tradeWhisper2);
+                    g_TradeMsgListHistory.Add(tradeWhisper2);
 
-                    NotificationForm frmNotifySell = new NotificationForm();
-                    frmNotifySell.Owner = this;
-                    frmNotifySell.Show();
+                    NotificationForm frmNotifyPanel = new NotificationForm();
+                    frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
 
                     tradeWhisper2 = null;
                     return true;
@@ -3405,10 +3406,10 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisper3)) return true;
                     g_TradeMsgList.Add(tradeWhisper3);
+                    g_TradeMsgListHistory.Add(tradeWhisper3);
 
-                    NotificationForm frmNotifySell = new NotificationForm();
-                    frmNotifySell.Owner = this;
-                    frmNotifySell.Show();
+                    NotificationForm frmNotifyPanel = new NotificationForm();
+                    frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
 
                     tradeWhisper3 = null;
                     return true;
@@ -3459,10 +3460,10 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisper4)) return true;
                     g_TradeMsgList.Add(tradeWhisper4);
+                    g_TradeMsgListHistory.Add(tradeWhisper4);
 
-                    NotificationForm frmNotifySell = new NotificationForm();
-                    frmNotifySell.Owner = this;
-                    frmNotifySell.Show();
+                    NotificationForm frmNotifyPanel = new NotificationForm();
+                    frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
 
                     tradeWhisper4 = null;
                     return true;
@@ -3513,10 +3514,10 @@ namespace POExileDirection
 
                     if (Check_DuplicateTradeMSG(tradeWhisperENMAP)) return true;
                     g_TradeMsgList.Add(tradeWhisperENMAP);
+                    g_TradeMsgListHistory.Add(tradeWhisperENMAP);
 
-                    NotificationForm frmNotifySell = new NotificationForm();
-                    frmNotifySell.Owner = this;
-                    frmNotifySell.Show();
+                    NotificationForm frmNotifyPanel = new NotificationForm();
+                    frmNotificationContainer.AddNotifyForm(frmNotifyPanel);
 
                     tradeWhisperENMAP = null;
                     return true;
@@ -3628,7 +3629,6 @@ namespace POExileDirection
                 btnLOCK.Image = Properties.Resources.icon_re_09_unlock;
                 panelDrag.BackgroundImage = Properties.Resources.moving_bar_unlock;
                 strLock = "N";
-
                 //panelDrag.Visible = true;
             }
 

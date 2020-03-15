@@ -79,6 +79,7 @@
             // labelElapsed
             // 
             this.labelElapsed.AutoEllipsis = true;
+            this.labelElapsed.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelElapsed.ForeColor = System.Drawing.Color.Tan;
             this.labelElapsed.Location = new System.Drawing.Point(416, 5);
             this.labelElapsed.Name = "labelElapsed";
@@ -113,6 +114,7 @@
             // 
             // labelPrice
             // 
+            this.labelPrice.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelPrice.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(200)))), ((int)(((byte)(124)))));
             this.labelPrice.Location = new System.Drawing.Point(390, 33);
@@ -226,6 +228,7 @@
             // 
             // labelLeague
             // 
+            this.labelLeague.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelLeague.ForeColor = System.Drawing.Color.Tan;
             this.labelLeague.Location = new System.Drawing.Point(48, 5);
             this.labelLeague.Name = "labelLeague";
@@ -261,6 +264,7 @@
             this.pictureCurrency.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.pictureCurrency.BackgroundImage = global::POExileDirection.Properties.Resources.QuestionMark_20px;
             this.pictureCurrency.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureCurrency.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureCurrency.Location = new System.Drawing.Point(466, 28);
             this.pictureCurrency.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureCurrency.Name = "pictureCurrency";
@@ -593,6 +597,7 @@
             // labelItemName
             // 
             this.labelItemName.BackColor = System.Drawing.Color.Transparent;
+            this.labelItemName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelItemName.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelItemName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(110)))), ((int)(((byte)(23)))));
             this.labelItemName.Location = new System.Drawing.Point(28, 5);
@@ -607,6 +612,7 @@
             // 
             this.btnCurrency.BackColor = System.Drawing.Color.Transparent;
             this.btnCurrency.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCurrency.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnCurrency.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnCurrency.FlatAppearance.BorderSize = 0;
             this.btnCurrency.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -626,6 +632,7 @@
             // labelPriceAtTitle
             // 
             this.labelPriceAtTitle.BackColor = System.Drawing.Color.Transparent;
+            this.labelPriceAtTitle.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelPriceAtTitle.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPriceAtTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(110)))), ((int)(((byte)(23)))));
             this.labelPriceAtTitle.Location = new System.Drawing.Point(259, 6);

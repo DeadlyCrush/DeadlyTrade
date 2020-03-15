@@ -75,7 +75,7 @@ Provide clipboard parsing when Kakao user buying that can be useful for kakao us
 [![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTNfNjUg/MDAxNTgxNTMwNjk1NDA0.02lfDR79X4qIkEL-rzAjZK0gMqIHrTsLRXRf0b3SpMEg.Qmkzb9Lg9pqZzKNYHKKgUDGGe24OBgMlKh2w301JlA0g.PNG.eocsdev2/2020_0213_002.png?type=w773)](https://youtu.be/MVxWsaGGbGA)
 
 ### New Flask image timer, skill timer ui changed.
-[![Watch the video](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2F1VA8R%2FbtqCF8aXxxO%2FlywiSbfJZBb2DYkgf1kdT1%2Fimg.gif)](https://youtu.be/M1R05mVXYcY)
+[![](DeadlyCrush_2020_0314_0131.gif)](https://youtu.be/M1R05mVXYcY)
 
 ## Settings
 ![](DeadlyCrush_Setting.gif)

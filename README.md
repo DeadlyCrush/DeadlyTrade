@@ -19,48 +19,72 @@
 * [C++] - Core
 
 # DeadlyTrade Main Features and Useful Functions.
-
 * Please check detailed Explanation in POE Forum : https://www.pathofexile.com/forum/view-thread/2785386
 
-### Main HUD rework.
-![Main HUD](https://cdn.discordapp.com/attachments/676421822882775042/688027459622535233/new_main_hud_v3.jpg)
+### Auto Detect.
+* User's POE Client Path.
+* Detect GGG Client & KAKAO Client.
+* User's POE UI Language setting.
+* User's Screen resolution.
+* User's POE Flask and Skill key binding.
+* All information auto change by detected UI Language : ENG/KOR
 
-[![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTNfMTUx/MDAxNTgxNTMwNTg1Mzc3.FFWw_SfHrU1IaNDnGArMz2uy7QCnoR5IAdsAZxWcjC4g.uhQyyNZe9y2sch0qBdNNUqMEjbVv2F19udQvLxiDaN4g.PNG.eocsdev2/image.png?type=w773)](https://youtu.be/CC-UjKUfOpY)
+### Main HUD rework.
+[![Main HUD](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FwFdVW%2FbtqCKBip4yg%2FDSQZUbcdygA01VRuwN1m2k%2Fimg.jpg)](https://youtu.be/CC-UjKUfOpY)
 
 ### Trade Notification
 Provide clipboard parsing when Kakao user buying that can be useful for kakao user. Find item by position function can be useful for who struggle with other languages message not Eng. Also deadlytrade can parse and pop panel when trade whisper by ggg user even if kakao user set default trade message language to Korean.
+* Color Change : BUY/SELL
+* Show Grid when Click Notification panel.
+* Show currenct Ninja currency ratio.
+* Convenience default button : Visit hideout, invite, trade request, kick/leave and etc...
+* Provide 7 User customize buttons.
 
-![TradeNotification](https://media.discordapp.net/attachments/676442578505433090/688032178784698383/8d50885a-6081-4726-b548-fb01f12ea2c9.png?width=616&height=467)
+![TradeNotification](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbLBOdF%2FbtqCMnKwwjT%2F7kSgtOpYy2b2WWm5IVJzT0%2Fimg.png)
 
-![TradeNotification](https://media.discordapp.net/attachments/676442578505433090/688041387266015259/unknown.png)
+![TradeNotification](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fz7dPs%2FbtqCKgyPyNo%2FdpagmxRwvGOJbCMUu37NyK%2Fimg.png)
 
-![TradeNotification](https://media.discordapp.net/attachments/676421822882775042/688797562848804918/unknown.png)
+### Auto Grid Setting by User's screen resolution
+![TradeNotification](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FcbpttD%2FbtqCF7bYXaZ%2FXK7WKLAjiKa1vQFFxxQ44k%2Fimg.jpg)
 
-![TradeNotification](https://media.discordapp.net/attachments/676442578505433090/688032227560390669/db1773de-42c6-4d9a-8118-c5a1ce91b836.png?width=618&height=467)
+![TradeNotification](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fo6pd6%2FbtqCMoJqRG9%2FI2eA7Gg98EfMhWVqEXB7nK%2Fimg.jpg)
 
-![TradeNotification](https://media.discordapp.net/attachments/676442578505433090/688030454514843652/88d1c9bf-a5a5-4a46-8533-3a625924a689.png?width=432&height=467)
+### Search Item by Position (X,Y)
+![TradeNotification](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Feqvn4d%2FbtqCKhLhoA1%2FzqWpi6juq1rxBOAhK0qfpK%2Fimg.png)
 
-![TradeNotification](https://media.discordapp.net/attachments/676442578505433090/688030528984842260/322513ae-e413-4cea-a1d5-f19640a022ca.png?width=432&height=467)
+### Chat Scanner : Trade Channel
+![ChatScan](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fd7Riee%2FbtqCKfNsBtC%2FwwrTLjYuTz8Wf0wGWks3RK%2Fimg.png)
 
-![TradeNotification](https://media.discordapp.net/attachments/676442578505433090/688031237700321295/unknown.png?width=495&height=468)
+### Act Helper for Leveling, Quest line.
+![TradeNotification](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FcgvGZG%2FbtqCKhkciv0%2FbEKIM9OPsQGJxA6wTXxh7K%2Fimg.jpg)
+![TradeNotification](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbFRDAH%2FbtqCMnKwvxZ%2FMqBYBEfGUOHK3XMFezWdq0%2Fimg.jpg)
+![TradeNotification](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FnRzBh%2FbtqCKAcLuPz%2FUCduClH3Prp3vs96No7k10%2Fimg.jpg)
+
+### Check Ninja Currency & Simple Caclulator.
+![Ninja](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Frdeza%2FbtqCGQ8V7MO%2Fzs8s5ASMBez8pqHGIl7cC1%2Fimg.png)
+
+[![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTNfMjUx/MDAxNTgxNTM1NjkwMTAz.hYn_oQIDueeeKBnv_JtCI1MSy_a8dsLn8qboFKagrk8g.0vZCPSyojgZJNcz5X-OMfhW345OJ_9MGBjIRfNXsTG8g.PNG.eocsdev2/2020_0213_005.png?type=w773)](https://youtu.be/a5axIiNkzXo)
+
+### Annoint information rework.
+[![Annoint](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FzZllj%2FbtqCLdn39YP%2FrpVYo5JIXK28vEElr7mRW1%2Fimg.png)](https://youtu.be/2OuqruR_E1Y)
+
+### Region map search rework.
+[![Watch the video](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdjQJun%2FbtqCIEGUL4v%2FfEEn08BX1f10O1kIyKn410%2Fimg.png)](https://youtu.be/g_I0g5u9Hqc)
 
 ### Atlas Overlay new feature added.
 [![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTNfNjUg/MDAxNTgxNTMwNjk1NDA0.02lfDR79X4qIkEL-rzAjZK0gMqIHrTsLRXRf0b3SpMEg.Qmkzb9Lg9pqZzKNYHKKgUDGGe24OBgMlKh2w301JlA0g.PNG.eocsdev2/2020_0213_002.png?type=w773)](https://youtu.be/MVxWsaGGbGA)
 
-### Region map search rework.
-[![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTNfMjY5/MDAxNTgxNTMwNzQzNDc4.1mNXRgYY8RcExre1ucm-npY4y_2XUHc7NlM1d6MlyAsg.9JZk69ix7UaOHdRVG72ZDNZ5kqG6EJkIRmNDwFM-0Yog.PNG.eocsdev2/2020_0213_003.png?type=w773)](https://youtu.be/g_I0g5u9Hqc)
-
 ### New Flask image timer, skill timer ui changed.
-[![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTNfODkg/MDAxNTgxNTM1MTg3MTI2.9VteEcqMrnmpsN2lPggXszyHB5SdaE04PuO443My274g.f0U6wti9o1BGF3anb43FYXDWArZx-49GEHWX-i5gng0g.PNG.eocsdev2/2020_0213_004.png?type=w773)](https://youtu.be/M1R05mVXYcY)
-
-### Annoint information rework.
-[![Watch the video](https://media.discordapp.net/attachments/676442578505433090/688034551674830893/9745eaee-2642-495f-8838-66aae05a59b3.png)](https://youtu.be/2OuqruR_E1Y)
-
-### Better speed.
-[![Watch the video](https://postfiles.pstatic.net/MjAyMDAyMTNfMjUx/MDAxNTgxNTM1NjkwMTAz.hYn_oQIDueeeKBnv_JtCI1MSy_a8dsLn8qboFKagrk8g.0vZCPSyojgZJNcz5X-OMfhW345OJ_9MGBjIRfNXsTG8g.PNG.eocsdev2/2020_0213_005.png?type=w773)](https://youtu.be/a5axIiNkzXo)
+[![Watch the video](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2F1VA8R%2FbtqCF8aXxxO%2FlywiSbfJZBb2DYkgf1kdT1%2Fimg.gif)](https://youtu.be/M1R05mVXYcY)
 
 ## Settings
 ![](DeadlyCrush_Setting.gif)
+
+![Settings](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbB5dmV%2FbtqCIFsiMJB%2FTX4mKzcfsD7yKZVsGMwYs0%2Fimg.jpg)
+![Settings](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdZxrJZ%2FbtqCHwCjZmv%2FkMZnE6DK3RZKZLGUxS2ETK%2Fimg.jpg)
+![Settings](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FM5ibL%2FbtqCF8aXuCW%2F1ranwWcrtX2KorUaP6JDz1%2Fimg.jpg)
+![Settings](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fbn7amb%2FbtqCJlf3hEz%2F9c61TQzTCKikydk7AJXH5K%2Fimg.jpg)
+![Settings](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2F68CQI%2FbtqCKgZXi4W%2FkNemtfSqWjqwTdQcEbrLg1%2Fimg.jpg)
 
 ## Labyrinth Overlay
 ![Labyrinth](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fn4UF5%2FbtqB7aUAEEj%2FNpe2T7JydAlQhGwGNMVsI1%2Fimg.png)

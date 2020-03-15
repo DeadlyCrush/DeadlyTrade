@@ -101,10 +101,6 @@ Provide clipboard parsing when Kakao user buying that can be useful for kakao us
 ## Misc.
 - CTRL+MOUSE WHEEL : Moving stash tab by Ctrl+Mouse Wheel
 
-- Find Item by Position (Left, Top)
-
-- ![Misc](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdCllsC%2FbtqB7PJtr4y%2FF53jA7idpiFwZnBwz1knRk%2Fimg.jpg)
-
 - Monster Remaining.
 
 - ![Misc](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2F7OBIQ%2FbtqB7OjvPG2%2F5xpH4WtipqeEdDjU4mAU40%2Fimg.png)

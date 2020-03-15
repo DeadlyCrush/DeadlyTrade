@@ -34,6 +34,8 @@ Provide clipboard parsing when Kakao user buying that can be useful for kakao us
 
 ![TradeNotification](https://media.discordapp.net/attachments/676442578505433090/688041387266015259/unknown.png)
 
+![TradeNotification](https://media.discordapp.net/attachments/676421822882775042/688797562848804918/unknown.png)
+
 ![TradeNotification](https://media.discordapp.net/attachments/676442578505433090/688032227560390669/db1773de-42c6-4d9a-8118-c5a1ce91b836.png?width=618&height=467)
 
 ![TradeNotification](https://media.discordapp.net/attachments/676442578505433090/688030454514843652/88d1c9bf-a5a5-4a46-8533-3a625924a689.png?width=432&height=467)

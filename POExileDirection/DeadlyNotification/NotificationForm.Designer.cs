@@ -79,10 +79,11 @@
             // labelElapsed
             // 
             this.labelElapsed.AutoEllipsis = true;
+            this.labelElapsed.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelElapsed.ForeColor = System.Drawing.Color.Tan;
             this.labelElapsed.Location = new System.Drawing.Point(416, 5);
             this.labelElapsed.Name = "labelElapsed";
-            this.labelElapsed.Size = new System.Drawing.Size(74, 12);
+            this.labelElapsed.Size = new System.Drawing.Size(74, 14);
             this.labelElapsed.TabIndex = 0;
             this.labelElapsed.Text = "0h 00m 00s";
             this.labelElapsed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -91,36 +92,35 @@
             // 
             this.labelStashTabDetail.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStashTabDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(200)))), ((int)(((byte)(124)))));
-            this.labelStashTabDetail.Location = new System.Drawing.Point(135, 33);
+            this.labelStashTabDetail.Location = new System.Drawing.Point(135, 31);
             this.labelStashTabDetail.Name = "labelStashTabDetail";
-            this.labelStashTabDetail.Size = new System.Drawing.Size(255, 12);
+            this.labelStashTabDetail.Size = new System.Drawing.Size(255, 14);
             this.labelStashTabDetail.TabIndex = 0;
             this.labelStashTabDetail.Text = "(00, 00) TabName ( Offer : 0000? )";
-            this.labelStashTabDetail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelStashTabDetail.Click += new System.EventHandler(this.LabelItemName_Click);
             // 
             // labelNickName
             // 
             this.labelNickName.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNickName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(200)))), ((int)(((byte)(124)))));
-            this.labelNickName.Location = new System.Drawing.Point(25, 33);
+            this.labelNickName.Location = new System.Drawing.Point(25, 31);
             this.labelNickName.Name = "labelNickName";
-            this.labelNickName.Size = new System.Drawing.Size(94, 12);
+            this.labelNickName.Size = new System.Drawing.Size(94, 14);
             this.labelNickName.TabIndex = 0;
-            this.labelNickName.Text = "Nick Name\r\nNick Name";
-            this.labelNickName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelNickName.Text = "Deadly_DeliriumFrost";
             this.labelNickName.DoubleClick += new System.EventHandler(this.BtnWhois_Click);
             // 
             // labelPrice
             // 
+            this.labelPrice.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelPrice.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(200)))), ((int)(((byte)(124)))));
-            this.labelPrice.Location = new System.Drawing.Point(390, 33);
+            this.labelPrice.Location = new System.Drawing.Point(390, 31);
             this.labelPrice.Name = "labelPrice";
-            this.labelPrice.Size = new System.Drawing.Size(73, 12);
+            this.labelPrice.Size = new System.Drawing.Size(73, 14);
             this.labelPrice.TabIndex = 0;
             this.labelPrice.Text = "99999";
-            this.labelPrice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPrice.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.labelPrice.Click += new System.EventHandler(this.LabelItemName_Click);
             // 
             // panelMiddle
@@ -226,10 +226,11 @@
             // 
             // labelLeague
             // 
+            this.labelLeague.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelLeague.ForeColor = System.Drawing.Color.Tan;
             this.labelLeague.Location = new System.Drawing.Point(48, 5);
             this.labelLeague.Name = "labelLeague";
-            this.labelLeague.Size = new System.Drawing.Size(320, 15);
+            this.labelLeague.Size = new System.Drawing.Size(320, 14);
             this.labelLeague.TabIndex = 0;
             this.labelLeague.Text = "LeagueName (1ex = 999c)";
             this.labelLeague.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -261,6 +262,7 @@
             this.pictureCurrency.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.pictureCurrency.BackgroundImage = global::POExileDirection.Properties.Resources.QuestionMark_20px;
             this.pictureCurrency.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureCurrency.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureCurrency.Location = new System.Drawing.Point(466, 28);
             this.pictureCurrency.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureCurrency.Name = "pictureCurrency";
@@ -593,6 +595,7 @@
             // labelItemName
             // 
             this.labelItemName.BackColor = System.Drawing.Color.Transparent;
+            this.labelItemName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelItemName.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelItemName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(110)))), ((int)(((byte)(23)))));
             this.labelItemName.Location = new System.Drawing.Point(28, 5);
@@ -607,6 +610,7 @@
             // 
             this.btnCurrency.BackColor = System.Drawing.Color.Transparent;
             this.btnCurrency.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCurrency.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnCurrency.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnCurrency.FlatAppearance.BorderSize = 0;
             this.btnCurrency.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -626,6 +630,7 @@
             // labelPriceAtTitle
             // 
             this.labelPriceAtTitle.BackColor = System.Drawing.Color.Transparent;
+            this.labelPriceAtTitle.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelPriceAtTitle.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPriceAtTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(110)))), ((int)(((byte)(23)))));
             this.labelPriceAtTitle.Location = new System.Drawing.Point(259, 6);

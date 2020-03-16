@@ -97,7 +97,7 @@ namespace POExileDirection
             {
                 checkQuadTab.Visible = false;
 
-                labelPriceAtTitle.Left = 31;
+                labelPriceAtTitle.Left = 28;
                 btnCurrency.Left = 78;
                 pictureArrow.Left = 103;
                 labelItemName.Left = 126;
@@ -112,6 +112,9 @@ namespace POExileDirection
                 btnWhois.Image = Properties.Resources.top_bar_user_buy;
                 labelNickName.ForeColor = Color.FromArgb(0, 26, 204, 255);
                 labelStashTabDetail.ForeColor = Color.FromArgb(0, 26, 204, 255);
+
+                labelItemName.Cursor = System.Windows.Forms.Cursors.Default;
+                labelStashTabDetail.Cursor = System.Windows.Forms.Cursors.Default;
             }
             else
             {
@@ -130,6 +133,9 @@ namespace POExileDirection
                 btnWhois.Image = Properties.Resources.top_bar_user_sell;
                 labelNickName.ForeColor = Color.FromArgb(0, 255, 236, 26);
                 labelStashTabDetail.ForeColor = Color.FromArgb(0, 255, 236, 26);
+
+                labelItemName.Cursor = System.Windows.Forms.Cursors.Hand;
+                labelStashTabDetail.Cursor = System.Windows.Forms.Cursors.Hand;
             }
 
             double nCalcRet = 0;
@@ -139,10 +145,18 @@ namespace POExileDirection
 
             labelNickName.Text = tradeItem.nickName;
             labelItemName.Text = tradeItem.itemName;
-            if (!String.IsNullOrEmpty(tradeItem.xPos) && !String.IsNullOrEmpty(tradeItem.yPos) && !String.IsNullOrEmpty(tradeItem.tabName))
+            labelStashTabDetail.Visible = true;
+            if (thisTradeMsg.tradePurpose == "BUY")
             {
-                string strTabDetail = String.Format("({0}, {1}) {2}", tradeItem.xPos, tradeItem.yPos, tradeItem.tabName);
-                labelStashTabDetail.Text = strTabDetail;
+                labelStashTabDetail.Text = "Your Buying";
+            }
+            else
+            {
+                if (!String.IsNullOrEmpty(tradeItem.xPos) && !String.IsNullOrEmpty(tradeItem.yPos) && !String.IsNullOrEmpty(tradeItem.tabName))
+                {
+                    string strTabDetail = String.Format("({0}, {1}) {2}", tradeItem.xPos, tradeItem.yPos, tradeItem.tabName);
+                    labelStashTabDetail.Text = strTabDetail;
+                }
             }
 
             //if (!String.IsNullOrEmpty(tradeItem.priceCall))
@@ -161,9 +175,9 @@ namespace POExileDirection
 
             bool bIsExpansive = false;
             bool bFoundCurrencyImage = false;
-            #region ⨌⨌ Currency Character, Image ⨌⨌
             try
             {
+                #region ⨌⨌ Currency Character, Image ⨌⨌
                 nCalcRet = 0;
                 dSelectedCurr = 0;
                 if (tradeItem.whichCurrency.Contains("Chaos") || tradeItem.whichCurrency.Contains("Cha") ||
@@ -510,29 +524,35 @@ namespace POExileDirection
                 }
 
                 btnCurrency.BackgroundImage = pictureCurrency.BackgroundImage;
-                if (bIsExpansive)
-                {
-                    labelNickName.ForeColor = System.Drawing.Color.FromArgb(0, 124, 255, 127);
-                    labelStashTabDetail.ForeColor = System.Drawing.Color.FromArgb(0, 124, 255, 127);
-                    labelPrice.ForeColor = System.Drawing.Color.FromArgb(0, 124, 255, 127);
+                #endregion
+                //if (bIsExpansive)
+                //{
+                //    labelNickName.ForeColor = System.Drawing.Color.FromArgb(0, 124, 255, 127);
+                //    labelStashTabDetail.ForeColor = System.Drawing.Color.FromArgb(0, 124, 255, 127);
+                //    labelPrice.ForeColor = System.Drawing.Color.FromArgb(0, 124, 255, 127);
 
-                    Task.Run(() =>
-                    {
-                        dxWrapper.SetAudioHandler(Application.StartupPath + "\\notify.wav", LauncherForm.g_NotifyVolume/2);
-                        dxWrapper.Play();
-                    });
-                }
-                else
+                //    Task.Run(() =>
+                //    {
+                //        dxWrapper.SetAudioHandler(Application.StartupPath + "\\notify.wav", LauncherForm.g_NotifyVolume/2);
+                //        dxWrapper.Play();
+                //    });
+                //}
+                //else
+                //{
+                //    labelNickName.ForeColor = System.Drawing.Color.FromArgb(0, 255, 200, 124);
+                //    labelStashTabDetail.ForeColor = System.Drawing.Color.FromArgb(0, 255, 200, 124);
+                //    labelPrice.ForeColor = System.Drawing.Color.FromArgb(0, 255, 200, 124);
+                //    Task.Run(() =>
+                //    {
+                //        dxWrapper.SetAudioHandler(Application.StartupPath + "\\notify.wav", LauncherForm.g_NotifyVolume/2);
+                //        dxWrapper.Play();
+                //    });
+                //}
+                Task.Run(() =>
                 {
-                    labelNickName.ForeColor = System.Drawing.Color.FromArgb(0, 255, 200, 124);
-                    labelStashTabDetail.ForeColor = System.Drawing.Color.FromArgb(0, 255, 200, 124);
-                    labelPrice.ForeColor = System.Drawing.Color.FromArgb(0, 255, 200, 124);
-                    Task.Run(() =>
-                    {
-                        dxWrapper.SetAudioHandler(Application.StartupPath + "\\notify.wav", LauncherForm.g_NotifyVolume/2);
-                        dxWrapper.Play();
-                    });
-                }
+                    dxWrapper.SetAudioHandler(Application.StartupPath + "\\notify.wav", LauncherForm.g_NotifyVolume / 2);
+                    dxWrapper.Play();
+                });
             }
             catch (Exception ex)
             {
@@ -548,7 +568,6 @@ namespace POExileDirection
                 else
                     btnCurrency.Text = "";
             }
-            #endregion
 
             try
             {
@@ -798,7 +817,9 @@ namespace POExileDirection
             try
             {
                 if (thisTradeMsg.tradePurpose != "SELL")
+                {
                     return;
+                }
 
                 if (thisTradeMsg.tabName == "" || Convert.ToInt32(thisTradeMsg.xPos) == 0 || Convert.ToInt32(thisTradeMsg.yPos) == 0)
                     return;

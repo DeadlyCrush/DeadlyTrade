@@ -193,55 +193,39 @@ namespace POExileDirection
             {
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex); ;
             }
-        } 
+        }
         #endregion
 
+        //private async Task playTask()
+        //{
+        //    bool bRet = await Task.Run(() => PlayAlertSound());
+        //}
+
+        //private bool PlayAlertSound()
+        //{
+        //    dxWrapper.SetAudioHandler(Application.StartupPath + "\\flaskalert.wav", LauncherForm.g_FlaskTimerVolume / 2);
+        //    dxWrapper.Play();
+
+        //    return true;
+        //}
+
+        //private Task playTask;
         private void PlayMediaFile(string filename)
         {
+            //Task playTask = new Task(delegate
+            //{
+            //    dxWrapper.SetAudioHandler(filename, LauncherForm.g_FlaskTimerVolume / 2);
+            //    dxWrapper.Play();
+            //});
+            //playTask.Start();
+            //await playTask.ConfigureAwait(false);
+            //playTask =
             Task.Run(() =>
             {
-                dxWrapper.SetAudioHandler(Application.StartupPath + "\\flaskalert.wav", LauncherForm.g_FlaskTimerVolume/2);
+                dxWrapper.SetAudioHandler(filename, LauncherForm.g_FlaskTimerVolume / 2);
                 dxWrapper.Play();
             });
         }
-
-        // Adjust an image's translucency.
-        /*private Bitmap AdjustAlpha(Image image, float translucency)
-        {
-            // Make the ColorMatrix.
-            float t = translucency;
-            ColorMatrix cm = new ColorMatrix(new float[][]
-                {
-            new float[] {1, 0, 0, 0, 0},
-            new float[] {0, 1, 0, 0, 0},
-            new float[] {0, 0, 1, 0, 0},
-            new float[] {0, 0, 0, t, 0},
-            new float[] {0, 0, 0, 0, 1},
-                });
-            ImageAttributes attributes = new ImageAttributes();
-            attributes.SetColorMatrix(cm);
-
-            // Draw the image onto the new bitmap while
-            // applying the new ColorMatrix.
-            Point[] points =
-            {
-                new Point(0, 0),
-                new Point(image.Width, 0),
-                new Point(0, image.Height),
-            };
-            Rectangle rect = new Rectangle(0, 0, image.Width, image.Height);
-
-            // Make the result bitmap.
-            Bitmap bm = new Bitmap(image.Width, image.Height);
-            using (Graphics gr = Graphics.FromImage(bm))
-            {
-                gr.DrawImage(image, points, rect,
-                    GraphicsUnit.Pixel, attributes);
-            }
-
-            // Return the result.
-            return bm;
-        }*/
 
         private void pictureFlask_MouseDown(object sender, MouseEventArgs e)
         {

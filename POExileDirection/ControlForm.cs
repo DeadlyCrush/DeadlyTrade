@@ -1042,6 +1042,21 @@ namespace POExileDirection
                 btn5.Image = Properties.Resources.check_on;
             else
                 btn5.Image = Properties.Resources.check_off;
+
+            if (LauncherForm.g_strTimerSound1 == "Y")
+            {
+                xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.On;
+                labelSNDOnOff.ForeColor = Color.FromArgb(235, 182, 111);
+                labelSNDOnOff.Text = "ON";
+                btnSOUND.Image = Properties.Resources.Volume_16x16;
+            }
+            else
+            {
+                xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.Off;
+                labelSNDOnOff.ForeColor = Color.FromArgb(28, 21, 16);
+                labelSNDOnOff.Text = "OFF";
+                btnSOUND.Image = Properties.Resources.Volume_16x16_Mute;
+            }
         }
         #endregion
 
@@ -4430,6 +4445,14 @@ namespace POExileDirection
                 btnSOUND.Image = Properties.Resources.Volume_16x16_Mute;
                 LauncherForm.g_strTimerSound1 = "N";
             }
+
+            string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
+            IniParser parser = new IniParser(strINIPath);
+            parser.AddSetting("LOCATIONNOTIFY", "FLASKTIMERSOUND", LauncherForm.g_strTimerSound1);
+            parser.AddSetting("LOCATIONNOTIFY", "FLASKSOUND1", LauncherForm.g_strTimerSound1);
+            parser.AddSetting("LOCATIONNOTIFY", "VOLUMEFLASKTIMER", LauncherForm.g_FlaskTimerVolume.ToString());
+            parser.SaveSettings();
+            parser = null;
         }
 
         private void btnSOUND_Click(object sender, EventArgs e)

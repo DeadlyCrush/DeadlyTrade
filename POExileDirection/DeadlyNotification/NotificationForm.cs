@@ -175,9 +175,9 @@ namespace POExileDirection
 
             bool bIsExpansive = false;
             bool bFoundCurrencyImage = false;
-            #region ⨌⨌ Currency Character, Image ⨌⨌
             try
             {
+                #region ⨌⨌ Currency Character, Image ⨌⨌
                 nCalcRet = 0;
                 dSelectedCurr = 0;
                 if (tradeItem.whichCurrency.Contains("Chaos") || tradeItem.whichCurrency.Contains("Cha") ||
@@ -524,6 +524,7 @@ namespace POExileDirection
                 }
 
                 btnCurrency.BackgroundImage = pictureCurrency.BackgroundImage;
+                #endregion
                 //if (bIsExpansive)
                 //{
                 //    labelNickName.ForeColor = System.Drawing.Color.FromArgb(0, 124, 255, 127);
@@ -567,7 +568,6 @@ namespace POExileDirection
                 else
                     btnCurrency.Text = "";
             }
-            #endregion
 
             try
             {

@@ -538,10 +538,9 @@ namespace POExileDirection
 
         public class CurrencyCollection
         {
-            public string Id { get; set; }
             public string Name_en { get; set; }
             public string Name_ko { get; set; }
-            public string DDSFile { get; set; }
+            public string WebCDN { get; set; }
         }
 
         public class RootObjectCurruncy
@@ -577,10 +576,9 @@ namespace POExileDirection
 
         public class ScarabCollection
         {
-            public string Id { get; set; }
             public string Name_en { get; set; }
             public string Name_ko { get; set; }
-            public string DDSFile { get; set; }
+            public string WebCDN { get; set; }
         }
 
         public class RootObjectScarab
@@ -590,10 +588,9 @@ namespace POExileDirection
 
         public class MapFragmentCollection
         {
-            public string Id { get; set; }
             public string Name_en { get; set; }
             public string Name_ko { get; set; }
-            public string DDSFile { get; set; }
+            public string WebCDN { get; set; }
         }
 
         public class RootObjectMapFragment

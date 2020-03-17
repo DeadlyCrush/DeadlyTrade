@@ -101,6 +101,7 @@
             this.DeadlyToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timerInit = new System.Windows.Forms.Timer(this.components);
             this.timerParser = new System.Windows.Forms.Timer(this.components);
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panelCOMMAND.SuspendLayout();
             this.panelDrag.SuspendLayout();
@@ -316,6 +317,7 @@
             // panelUtility
             // 
             this.panelUtility.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.panelUtility.Controls.Add(this.label6);
             this.panelUtility.Controls.Add(this.labelSNDOnOff);
             this.panelUtility.Controls.Add(this.xuiSwitch1);
             this.panelUtility.Controls.Add(this.pictureBox3);
@@ -360,6 +362,7 @@
             this.labelSNDOnOff.TabIndex = 49;
             this.labelSNDOnOff.Text = "OFF";
             this.labelSNDOnOff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelSNDOnOff.Visible = false;
             // 
             // xuiSwitch1
             // 
@@ -375,6 +378,7 @@
             this.xuiSwitch1.SwitchStyle = XanderUI.XUISwitch.Style.Horizontal;
             this.xuiSwitch1.TabIndex = 48;
             this.xuiSwitch1.Text = "xuiSwitch1";
+            this.xuiSwitch1.Visible = false;
             this.xuiSwitch1.SwitchStateChanged += new System.EventHandler(this.xuiSwitch1_SwitchStateChanged_1);
             // 
             // pictureBox3
@@ -593,6 +597,7 @@
             this.btnSOUND.TabStop = false;
             this.btnSOUND.Text = "img";
             this.btnSOUND.UseVisualStyleBackColor = false;
+            this.btnSOUND.Visible = false;
             this.btnSOUND.Click += new System.EventHandler(this.btnSOUND_Click);
             // 
             // btn3
@@ -1336,6 +1341,18 @@
             // 
             this.timerParser.Tick += new System.EventHandler(this.TimerParser_Tick);
             // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(21)))), ((int)(((byte)(16)))));
+            this.label6.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(109)))), ((int)(((byte)(72)))));
+            this.label6.Location = new System.Drawing.Point(45, 43);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(150, 16);
+            this.label6.TabIndex = 49;
+            this.label6.Text = "Trady Notification History";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ControlForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 11F);
@@ -1455,5 +1472,6 @@
         private XanderUI.XUISwitch xuiSwitch1;
         private System.Windows.Forms.Button btnSOUND;
         private System.Windows.Forms.Button btnTradeHistory;
+        private System.Windows.Forms.Label label6;
     }
 }

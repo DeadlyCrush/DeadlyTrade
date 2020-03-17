@@ -130,6 +130,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 20);
             this.pictureBox1.Name = "pictureBox1";

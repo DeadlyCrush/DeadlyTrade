@@ -783,6 +783,16 @@ namespace POExileDirection.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap Github {
+            get {
+                object obj = ResourceManager.GetObject("Github", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap Golden_Oil {
             get {
                 object obj = ResourceManager.GetObject("Golden Oil", resourceCulture);
@@ -1786,16 +1796,6 @@ namespace POExileDirection.Properties {
         internal static System.Drawing.Bitmap social_twitter_bird {
             get {
                 object obj = ResourceManager.GetObject("social_twitter_bird", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap social_you_tube {
-            get {
-                object obj = ResourceManager.GetObject("social_you_tube", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -169,8 +169,9 @@ namespace POExileDirection
                     LauncherForm.g_NinjaUpdatedTime = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss");
                     xuiFlatProgressBar1.Value = LauncherForm.g_NinjaFileMakeAndUpdateCNT;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                     LauncherForm.g_NinjaFileMakeAndUpdateCNT = LauncherForm.g_NinjaFileMakeAndUpdateCNT + 1;
                 }
                 try
@@ -180,8 +181,9 @@ namespace POExileDirection
                     LauncherForm.g_NinjaUpdatedTime = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss");
                     xuiFlatProgressBar1.Value = LauncherForm.g_NinjaFileMakeAndUpdateCNT;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                     LauncherForm.g_NinjaFileMakeAndUpdateCNT = LauncherForm.g_NinjaFileMakeAndUpdateCNT + 1;
                 }
                 try
@@ -191,8 +193,9 @@ namespace POExileDirection
                     LauncherForm.g_NinjaUpdatedTime = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss");
                     xuiFlatProgressBar1.Value = LauncherForm.g_NinjaFileMakeAndUpdateCNT;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                     LauncherForm.g_NinjaFileMakeAndUpdateCNT = LauncherForm.g_NinjaFileMakeAndUpdateCNT + 1;
                 }
                 try
@@ -202,8 +205,9 @@ namespace POExileDirection
                     LauncherForm.g_NinjaUpdatedTime = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss");
                     xuiFlatProgressBar1.Value = LauncherForm.g_NinjaFileMakeAndUpdateCNT;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                     LauncherForm.g_NinjaFileMakeAndUpdateCNT = LauncherForm.g_NinjaFileMakeAndUpdateCNT + 1;
                 }
                 try
@@ -213,8 +217,9 @@ namespace POExileDirection
                     LauncherForm.g_NinjaUpdatedTime = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss");
                     xuiFlatProgressBar1.Value = LauncherForm.g_NinjaFileMakeAndUpdateCNT;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                     LauncherForm.g_NinjaFileMakeAndUpdateCNT = LauncherForm.g_NinjaFileMakeAndUpdateCNT + 1;
                 }
                 try
@@ -224,8 +229,9 @@ namespace POExileDirection
                     LauncherForm.g_NinjaUpdatedTime = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss");
                     xuiFlatProgressBar1.Value = LauncherForm.g_NinjaFileMakeAndUpdateCNT;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                     LauncherForm.g_NinjaFileMakeAndUpdateCNT = LauncherForm.g_NinjaFileMakeAndUpdateCNT + 1;
                 }
                 try
@@ -235,8 +241,9 @@ namespace POExileDirection
                     LauncherForm.g_NinjaUpdatedTime = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss");
                     xuiFlatProgressBar1.Value = LauncherForm.g_NinjaFileMakeAndUpdateCNT;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                     LauncherForm.g_NinjaFileMakeAndUpdateCNT = LauncherForm.g_NinjaFileMakeAndUpdateCNT + 1;
                 }
                 try
@@ -246,8 +253,9 @@ namespace POExileDirection
                     LauncherForm.g_NinjaUpdatedTime = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss");
                     xuiFlatProgressBar1.Value = LauncherForm.g_NinjaFileMakeAndUpdateCNT;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                     LauncherForm.g_NinjaFileMakeAndUpdateCNT = LauncherForm.g_NinjaFileMakeAndUpdateCNT + 1;
                 }
                 try
@@ -257,8 +265,9 @@ namespace POExileDirection
                     LauncherForm.g_NinjaUpdatedTime = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss");
                     xuiFlatProgressBar1.Value = LauncherForm.g_NinjaFileMakeAndUpdateCNT;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                     LauncherForm.g_NinjaFileMakeAndUpdateCNT = LauncherForm.g_NinjaFileMakeAndUpdateCNT + 1;
                 }
                 try
@@ -268,8 +277,9 @@ namespace POExileDirection
                     LauncherForm.g_NinjaUpdatedTime = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss");
                     xuiFlatProgressBar1.Value = LauncherForm.g_NinjaFileMakeAndUpdateCNT;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                     LauncherForm.g_NinjaFileMakeAndUpdateCNT = LauncherForm.g_NinjaFileMakeAndUpdateCNT + 1;
                 }
                 try
@@ -279,8 +289,9 @@ namespace POExileDirection
                     LauncherForm.g_NinjaUpdatedTime = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss");
                     xuiFlatProgressBar1.Value = LauncherForm.g_NinjaFileMakeAndUpdateCNT;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                     LauncherForm.g_NinjaFileMakeAndUpdateCNT = LauncherForm.g_NinjaFileMakeAndUpdateCNT + 1;
                 }
                 try
@@ -290,8 +301,9 @@ namespace POExileDirection
                     LauncherForm.g_NinjaUpdatedTime = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss");
                     xuiFlatProgressBar1.Value = LauncherForm.g_NinjaFileMakeAndUpdateCNT;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                     LauncherForm.g_NinjaFileMakeAndUpdateCNT = LauncherForm.g_NinjaFileMakeAndUpdateCNT + 1;
                 }
                 try
@@ -301,8 +313,9 @@ namespace POExileDirection
                     LauncherForm.g_NinjaUpdatedTime = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss");
                     xuiFlatProgressBar1.Value = LauncherForm.g_NinjaFileMakeAndUpdateCNT;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                     LauncherForm.g_NinjaFileMakeAndUpdateCNT = LauncherForm.g_NinjaFileMakeAndUpdateCNT + 1;
                 }
                 try
@@ -312,8 +325,9 @@ namespace POExileDirection
                     LauncherForm.g_NinjaUpdatedTime = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss");
                     xuiFlatProgressBar1.Value = LauncherForm.g_NinjaFileMakeAndUpdateCNT;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                     LauncherForm.g_NinjaFileMakeAndUpdateCNT = LauncherForm.g_NinjaFileMakeAndUpdateCNT + 1;
                 }
                 try
@@ -323,8 +337,9 @@ namespace POExileDirection
                     LauncherForm.g_NinjaUpdatedTime = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss");
                     xuiFlatProgressBar1.Value = LauncherForm.g_NinjaFileMakeAndUpdateCNT;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                     LauncherForm.g_NinjaFileMakeAndUpdateCNT = LauncherForm.g_NinjaFileMakeAndUpdateCNT + 1;
                 }
                 try
@@ -334,8 +349,9 @@ namespace POExileDirection
                     LauncherForm.g_NinjaUpdatedTime = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss");
                     xuiFlatProgressBar1.Value = LauncherForm.g_NinjaFileMakeAndUpdateCNT;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                     LauncherForm.g_NinjaFileMakeAndUpdateCNT = LauncherForm.g_NinjaFileMakeAndUpdateCNT + 1;
                 }
                 try // BlightOil_URL : Added 1.3.9.0 Version
@@ -345,8 +361,9 @@ namespace POExileDirection
                     LauncherForm.g_NinjaUpdatedTime = DateTime.Now.ToString("yyyy.MM.dd HH:mm:ss");
                     xuiFlatProgressBar1.Value = LauncherForm.g_NinjaFileMakeAndUpdateCNT;
                 }
-                catch
+                catch(Exception ex)
                 {
+                    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                     LauncherForm.g_NinjaFileMakeAndUpdateCNT = LauncherForm.g_NinjaFileMakeAndUpdateCNT + 1;
                 }
 
@@ -1134,44 +1151,53 @@ namespace POExileDirection
 
             listView1.Items.Clear();
             CurrencyNameAndAverage.Clear();
-            ImageList imgList = new ImageList();
 
-            string strItemName = String.Empty;
-            foreach (var objLine in LauncherForm.ninjaData.Oils.lines)
+            try
             {
-                if (CurrencyNameAndAverage.ContainsKey(objLine.name)) continue;
+                ImageList imgList = new ImageList();
 
-                if (LauncherForm.g_strUILang == "KOR")
+                string strItemName = String.Empty;
+                foreach (var objLine in LauncherForm.ninjaData.Oils.lines)
                 {
-                    if (DeadlyTranslation.transBlightOil.ContainsKey(objLine.name))
-                        strItemName = DeadlyTranslation.transBlightOil[objLine.name];
-                }
-                else
-                    strItemName = objLine.name;
+                    if (CurrencyNameAndAverage.ContainsKey(objLine.name)) continue;
 
-                if (!CurrencyNameAndAverage.ContainsKey(strItemName))
-                    CurrencyNameAndAverage.Add(strItemName, objLine.chaosValue);
-
-                foreach (var objDetail in LauncherForm.ninjaData.Oils.lines)
-                {
-                    if (objLine.name == objDetail.name)
+                    if (LauncherForm.g_strUILang == "KOR")
                     {
-                        imgList.Images.Add(Bitmap.FromFile(Application.StartupPath + "\\NINJA\\PriceImages\\" + objDetail.name + ".png"));
-                        /*WebRequest TmpRequest = (HttpWebRequest)WebRequest.Create(objDetail.icon);
-                        WebResponse TmpResponse = TmpRequest.GetResponse();
+                        if (DeadlyTranslation.transBlightOil.ContainsKey(objLine.name))
+                            strItemName = DeadlyTranslation.transBlightOil[objLine.name];
+                    }
+                    else
+                        strItemName = objLine.name;
 
-                        Bitmap TmpBmp = new Bitmap(TmpResponse.GetResponseStream());
-                        TmpBmp.Save(Application.StartupPath + "\\NinjaData\\Images\\" + objDetail.name + ".png", System.Drawing.Imaging.ImageFormat.Png);
-                        imgList.Images.Add(TmpBmp);*/
+                    if (!CurrencyNameAndAverage.ContainsKey(strItemName))
+                        CurrencyNameAndAverage.Add(strItemName, objLine.chaosValue);
+
+                    foreach (var objDetail in LauncherForm.ninjaData.Oils.lines)
+                    {
+                        if (objLine.name == objDetail.name)
+                        {
+                            imgList.Images.Add(Bitmap.FromFile(Application.StartupPath + "\\NINJA\\PriceImages\\" + objDetail.name + ".png"));
+                            /*WebRequest TmpRequest = (HttpWebRequest)WebRequest.Create(objDetail.icon);
+                            WebResponse TmpResponse = TmpRequest.GetResponse();
+
+                            Bitmap TmpBmp = new Bitmap(TmpResponse.GetResponseStream());
+                            TmpBmp.Save(Application.StartupPath + "\\NinjaData\\Images\\" + objDetail.name + ".png", System.Drawing.Imaging.ImageFormat.Png);
+                            imgList.Images.Add(TmpBmp);*/
+                        }
                     }
                 }
+
+                listView1.SmallImageList = imgList;
+
+                Update_ListViewChaosExalted();
+
+                labelDateTimeCalc.Text = "Last Checked : " + LauncherForm.g_NinjaUpdatedTime;
             }
-
-            listView1.SmallImageList = imgList;
-
-            Update_ListViewChaosExalted();
-
-            labelDateTimeCalc.Text = "Last Checked : " + LauncherForm.g_NinjaUpdatedTime;
+            catch (Exception ex)
+            {
+                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+                ButtonEnableTRUEFALSE(true);
+            }
             ButtonEnableTRUEFALSE(true);
         }
         #endregion

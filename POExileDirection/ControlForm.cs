@@ -1013,7 +1013,7 @@ namespace POExileDirection
             if (LauncherForm.g_bToggleSkill5)
                 btnT.Image = Properties.Resources.check_on;
             else
-                btnR.Image = Properties.Resources.check_off;
+                btnT.Image = Properties.Resources.check_off;
         }
 
         private void Set_FlaskTimerToggleSwitch()
@@ -1043,20 +1043,20 @@ namespace POExileDirection
             else
                 btn5.Image = Properties.Resources.check_off;
 
-            if (LauncherForm.g_strTimerSound1 == "Y")
-            {
-                xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.On;
-                labelSNDOnOff.ForeColor = Color.FromArgb(235, 182, 111);
-                labelSNDOnOff.Text = "ON";
-                btnSOUND.Image = Properties.Resources.Volume_16x16;
-            }
-            else
-            {
-                xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.Off;
-                labelSNDOnOff.ForeColor = Color.FromArgb(28, 21, 16);
-                labelSNDOnOff.Text = "OFF";
-                btnSOUND.Image = Properties.Resources.Volume_16x16_Mute;
-            }
+            //if (LauncherForm.g_strTimerSound1 == "Y")
+            //{
+            //    xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.On;
+            //    labelSNDOnOff.ForeColor = Color.FromArgb(235, 182, 111);
+            //    labelSNDOnOff.Text = "ON";
+            //    btnSOUND.Image = Properties.Resources.Volume_16x16;
+            //}
+            //else
+            //{
+            //    xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.Off;
+            //    labelSNDOnOff.ForeColor = Color.FromArgb(28, 21, 16);
+            //    labelSNDOnOff.Text = "OFF";
+            //    btnSOUND.Image = Properties.Resources.Volume_16x16_Mute;
+            //}
         }
         #endregion
 

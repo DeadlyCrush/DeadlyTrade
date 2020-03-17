@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace POExileDirection
@@ -86,9 +82,9 @@ namespace POExileDirection
             TopMost = true;
             ShowInTaskbar = false;
 
-            webBrowser1.ScriptErrorsSuppressed = true;
+            // webBrowser1.ScriptErrorsSuppressed = true;
 
-            timer1.Start();
+            // timer1.Start();
 
             Thread.Sleep(300);
             GetHotkeySettings();                // TAB 1
@@ -581,13 +577,6 @@ namespace POExileDirection
 
                 if (String.IsNullOrEmpty(ControlForm.g_strImagePath[2]) || xuiCheckBoxDefaultZANA.Checked == true)
                     ControlForm.g_strImagePath[2] = @".\DeadlyInform\Atlas.png";
-
-                labelPathJUN.Text = ControlForm.g_strImagePath[0];
-                pictureBoxJUN.BackgroundImage = Image.FromFile(ControlForm.g_strImagePath[0]);
-                labelPathALVA.Text = ControlForm.g_strImagePath[1];
-                pictureBoxALVA.BackgroundImage = Image.FromFile(ControlForm.g_strImagePath[1]);
-                labelPathZANA.Text = ControlForm.g_strImagePath[2];
-                pictureBoxZANA.BackgroundImage = Image.FromFile(ControlForm.g_strImagePath[2]);
             }
             catch (Exception ex)
             {
@@ -595,25 +584,40 @@ namespace POExileDirection
             }
         }
 
+        private void OverlaySettingLoadImage()
+        {
+            labelPathJUN.Text = ControlForm.g_strImagePath[0];
+            if (File.Exists(ControlForm.g_strImagePath[0]))
+                pictureBoxJUN.BackgroundImage = Image.FromFile(ControlForm.g_strImagePath[0]);
+
+            labelPathALVA.Text = ControlForm.g_strImagePath[1];
+            if (File.Exists(ControlForm.g_strImagePath[0]))
+                pictureBoxALVA.BackgroundImage = Image.FromFile(ControlForm.g_strImagePath[1]);
+
+            labelPathZANA.Text = ControlForm.g_strImagePath[2];
+            if (File.Exists(ControlForm.g_strImagePath[0]))
+                pictureBoxZANA.BackgroundImage = Image.FromFile(ControlForm.g_strImagePath[2]);
+        }
+
         private void GetHelpSettings()
         {
-            try
-            {
-                //string strFilePath = String.Format("{0}\\{1}", Application.StartupPath, "HELP.md");
-                //string strMDText = String.Empty;
-                //if (File.Exists(strFilePath))
-                //{
-                //    strMDText = File.ReadAllText(strFilePath);
-                //    var htmlCode = Markdig.Markdown.ToHtml(strMDText);
-                //    webBrowser1.DocumentText = htmlCode;
-                //}
-                webBrowser1.Navigate("https://www.jumpleasure.me/deadlytrade/?lang=en");
-            }
-            catch (Exception ex)
-            {
-                webBrowser1.DocumentText = "<html><body style='background-color:Blue'>Unknown Error occurred while reading ReadMe file.</body></html>";
-                DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
-            }
+            //try
+            //{
+            //    //string strFilePath = String.Format("{0}\\{1}", Application.StartupPath, "HELP.md");
+            //    //string strMDText = String.Empty;
+            //    //if (File.Exists(strFilePath))
+            //    //{
+            //    //    strMDText = File.ReadAllText(strFilePath);
+            //    //    var htmlCode = Markdig.Markdown.ToHtml(strMDText);
+            //    //    webBrowser1.DocumentText = htmlCode;
+            //    //}
+            //    webBrowser1.Navigate("https://www.jumpleasure.me/deadlytrade/?lang=en");
+            //}
+            //catch (Exception ex)
+            //{
+            //    webBrowser1.DocumentText = "<html><body style='background-color:Blue'>Unknown Error occurred while reading ReadMe file.</body></html>";
+            //    DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
+            //}
         }
 
         private void GetHallOfFameSettings()
@@ -2042,7 +2046,7 @@ namespace POExileDirection
             pictureFlask4.Dispose();
             pictureFlask5.Dispose();
 
-            if (webBrowser1 != null) webBrowser1.Dispose();
+            //if (webBrowser1 != null) webBrowser1.Dispose();
         }
         #endregion
 
@@ -2191,24 +2195,24 @@ namespace POExileDirection
         }
         #endregion
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            panelWaiting.Width = 800;
-            panelWaiting.Height = 562;
-            panelWaiting.Visible = true;
+        //private void timer1_Tick(object sender, EventArgs e)
+        //{
+        //    panelWaiting.Width = 800;
+        //    panelWaiting.Height = 562;
+        //    panelWaiting.Visible = true;
 
-            if (_nInitCNT>=7)
-            {
-                Thread.Sleep(500);
-                panelWaiting.Visible = false;
-                timer1.Stop();
-            }
-        }
+        //    if (_nInitCNT>=7)
+        //    {
+        //        Thread.Sleep(500);
+        //        panelWaiting.Visible = false;
+        //        timer1.Stop();
+        //    }
+        //}
 
         private void SettingsOverhaul_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (panelWaiting != null) panelWaiting.Dispose();
-            if (timer1 != null) timer1.Dispose();
+            //if (panelWaiting != null) panelWaiting.Dispose();
+            //if (timer1 != null) timer1.Dispose();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -2260,6 +2264,83 @@ namespace POExileDirection
         {
             DisposeGarbage();
             Close();
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // GitHub Read Me. (ENG)
+            System.Diagnostics.Process.Start("https://github.com/DeadlyCrush/DeadlyTrade/blob/master/README.md");
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // GGG Site Thread (ENG)
+            System.Diagnostics.Process.Start("https://www.pathofexile.com/forum/view-thread/2785386");
+        }
+
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // 한글 메뉴얼(KOR) #3
+            System.Diagnostics.Process.Start("https://blog.naver.com/eocsdev2/221855629916");
+        }
+
+        private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // 한글 메뉴얼(KOR) #2
+            System.Diagnostics.Process.Start("https://deadlytrade.tistory.com/20");
+        }
+
+        private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // DeadlyTrade SITE (ENG)
+            System.Diagnostics.Process.Start("https://www.jumpleasure.me/deadlytrade/?lang=en");
+        }
+
+        private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // DeadlyTrade SITE (ENG)
+            System.Diagnostics.Process.Start("https://www.jumpleasure.me/deadlytrade/");
+        }
+
+        private void FlatSettingTab_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (FlatSettingTab.SelectedIndex == 4 && !bTab5)
+            {
+                bTab5 = true;
+                OverlaySettingLoadImage();
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/DeadlyCrush/DeadlyTrade");
+        }
+
+        private void pictureGithub_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/DeadlyCrush/DeadlyTrade");
+        }
+
+        private void pictureTwitter_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://twitter.com/crush_deadly");
+        }
+
+        private void pictureFacebook_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/deadlycrush.kor");
+        }
+
+        private void label71_Click(object sender, EventArgs e)
+        {
+            // ENG
+            System.Diagnostics.Process.Start("https://discord.gg/Gd7MjCz");
+        }
+
+        private void label70_Click(object sender, EventArgs e)
+        {
+            // KOR
+            System.Diagnostics.Process.Start("https://discord.gg/ryjUA7r");
         }
     }
 }

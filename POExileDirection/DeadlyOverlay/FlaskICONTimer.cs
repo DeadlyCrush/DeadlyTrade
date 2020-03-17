@@ -181,8 +181,10 @@ namespace POExileDirection
                 lnFlaskTimer = lnFlaskTimer - 0.1; // 100ms
                 if (lnFlaskTimer <= 0.0)
                 {
-                    if (strUseAlertSound == "Y")
-                        PlayMediaFile(Application.StartupPath + "\\flaskalert.wav");
+                    #region [[[[[ Remove temporary - Assertion ]]]]]
+                    //if (strUseAlertSound == "Y")
+                    //    PlayMediaFile(Application.StartupPath + "\\flaskalert.wav"); 
+                    #endregion
 
                     timer1.Stop();
                     xuiFlatProgressBar1.Dispose();

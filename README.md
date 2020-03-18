@@ -63,6 +63,7 @@ Allows you to scan the trade chat. Works when the trade chat channel is activate
 
 ### Act Helper for Leveling, Quest line.
 Act helper is especially useful when you want to reroll or speedrun at league start. It will tell you where to go for waypoints and every step from Act 1 to Act 10. You no longer have to alt tab to look at a leveling guide and you can use this for a faster playthrough.
+
 ![TradeNotification](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FcgvGZG%2FbtqCKhkciv0%2FbEKIM9OPsQGJxA6wTXxh7K%2Fimg.jpg)
 ![TradeNotification](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbFRDAH%2FbtqCMnKwvxZ%2FMqBYBEfGUOHK3XMFezWdq0%2Fimg.jpg)
 ![TradeNotification](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FnRzBh%2FbtqCKAcLuPz%2FUCduClH3Prp3vs96No7k10%2Fimg.jpg)
@@ -161,22 +162,6 @@ I am getting a warning when i try to install. Are you trying to hack my computer
 
 I got a suggestion/problem, how can i contact you? You can contact us via discord and github. We would be happy to listen to you. https://discord.gg/Gd7MjCz
 
-## How to fix : Error by high security protection
-Hello, this is DeadlyCursh.
-I received a few bug-report and I was checked and figured out those case with reported user's log and configuration. Thank you for all users.
-
-If you have repeated error please download "DeadlySecurityChecked_Dll.zip (Size 1.62Mb)" and unzip files.
-And overwrite that to installed folder. download "DeadlySecurityChecked_exe_config.zip (Size 1.87Mb)" that contains lastest exe and defualt configuration file if you necessory.
-
-exe or dll could be deleted by high security protection recently. So if in this case you should temporary pause virus protection program when download/extract. After that re-check downloaded files whether virus detected or not.
-
-Thank you all. Exile. gl & hf.
-
-reference. >
-"When downloading or launching the program, you might get some warnings from your security or anti-virus program caused by missing licenses and signatures. I will add an international signature to fix that. SSH Certification is accepted and is being prepared for Code Signing. It will be done before next update."
-
-Update server, agile board, build passing, issue tracking and etc. all use my personal servers. Also international certification is delaying as it is conducted as an individual. I will proceed international certification ASAP.
-
 ## History
 - DeadlyTrade Overhaul Version Released Feb,2020
 - DeadlyTrade Renewal Version Started Jan,2020
@@ -225,6 +210,9 @@ All are such an amazing and inspiring examples that I can't thank enough.
 - Price checking throgh the pathofexile trade.
 - Set priority User request and will be reflect.
 - English will be default UI from now on.
+- Separating Korean and English menu and alert message language resources.
+- Adding user suggestions' function to reflect by priority.
+- Continuing development of core new features that were already planned.
 
 ## Goal
 - Useful and Convenient Addon for Path of Exile User
@@ -266,3 +254,19 @@ DeadlyTrade / Deadly KOR Team >
 # Thank you all. Good Luck Exile~!
 Please let me know about any bugs you encounter or if you have any suggestions.
 Thank you for your interest and support.
+
+## Added - How to fix : Error by high security protection
+Hello, this is DeadlyCursh.
+I received a few bug-report and I was checked and figured out those case with reported user's log and configuration. Thank you for all users.
+
+If you have repeated error please download "DeadlySecurityChecked_Dll.zip (Size 1.62Mb)" and unzip files.
+And overwrite that to installed folder. download "DeadlySecurityChecked_exe_config.zip (Size 1.87Mb)" that contains lastest exe and defualt configuration file if you necessory.
+
+exe or dll could be deleted by high security protection recently. So if in this case you should temporary pause virus protection program when download/extract. After that re-check downloaded files whether virus detected or not.
+
+Thank you all. Exile. gl & hf.
+
+reference. >
+"When downloading or launching the program, you might get some warnings from your security or anti-virus program caused by missing licenses and signatures. I will add an international signature to fix that. SSH Certification is accepted and is being prepared for Code Signing. It will be done before next update."
+
+Update server, agile board, build passing, issue tracking and etc. all use my personal servers. Also international certification is delaying as it is conducted as an individual. I will proceed international certification ASAP.

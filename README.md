@@ -47,6 +47,8 @@ Support Korean and English.You can customize notification panel buttons.
 
 ![TradeNotification](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fz7dPs%2FbtqCKgyPyNo%2FdpagmxRwvGOJbCMUu37NyK%2Fimg.png)
 
+![TradeNotification](https://blogfiles.pstatic.net/MjAyMDAzMTlfMTU3/MDAxNTg0NTkxMDY0NTc2.HDVRwVTPZ6o0NbMjv1zw7m2h4JKhVD2rilH5jOuj-E4g.K0SAuo9GLZRkXKXr0HcQYAeVIaEICh2L8akmqTn-Lbog.PNG.eocsdev2/Deadly_2020_0319_003.png)
+
 ### Auto Grid Setting by User's screen resolution
 Automatically detect and display the grid in the item window.
 

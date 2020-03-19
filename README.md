@@ -41,7 +41,7 @@ Support Korean and English.You can customize notification panel buttons.
 * Show Grid when Click Notification panel.
 * Show currenct Ninja currency ratio.
 * Convenience default button : Visit hideout, invite, trade request, kick/leave and etc...
-* Provide 7 User customize buttons.
+* Can use user customize 7 buttons.
 
 ![TradeNotification](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbLBOdF%2FbtqCMnKwwjT%2F7kSgtOpYy2b2WWm5IVJzT0%2Fimg.png)
 

@@ -39,7 +39,7 @@ Provide clipboard parsing when Kakao user buying that can be useful for kakao us
 Support Korean and English.You can customize notification panel buttons.
 * Color Change : BUY/SELL
 * Show Grid when Click Notification panel.
-* Show currenct Ninja currency ratio.
+* Show current Ninja currency ratio.
 * Convenience default button : Visit hideout, invite, trade request, kick/leave and etc...
 * Can use user customize 7 buttons.
 

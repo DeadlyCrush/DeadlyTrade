@@ -49,6 +49,7 @@ Support Korean and English.You can customize notification panel buttons.
 
 ### Auto Grid Setting by User's screen resolution
 Automatically detect and display the grid in the item window.
+
 ![TradeNotification](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FcbpttD%2FbtqCF7bYXaZ%2FXK7WKLAjiKa1vQFFxxQ44k%2Fimg.jpg)
 
 ![TradeNotification](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fo6pd6%2FbtqCMoJqRG9%2FI2eA7Gg98EfMhWVqEXB7nK%2Fimg.jpg)

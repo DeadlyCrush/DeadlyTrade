@@ -92,6 +92,7 @@ You can search maps by region using this button. If you have your stash open it 
 
 ### New Flask image timer, skill timer ui changed.
 With timer toggle buttons, you can turn flask timer (1,2,3,4,5) and skill timer (Q,W,E,R,T) on and off. Changes will be immediately applied after clicking the button. Automatically detect POE key bindings
+
 [![](DeadlyCrush_2020_0314_0131.gif)](https://youtu.be/M1R05mVXYcY)
 
 ### Chromatic Calculator

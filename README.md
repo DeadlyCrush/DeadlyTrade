@@ -132,7 +132,7 @@ You can change overlay image to your custom image in settings.
 - Remaining Monster.
 Remaining monsters count hotkey is F2 by default, and is configurable in the settings.
 More than 50 monsters are displayed as 50+.
-- ![Misc](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2F7OBIQ%2FbtqB7OjvPG2%2F5xpH4WtipqeEdDjU4mAU40%2Fimg.png)
+- ![Misc](https://postfiles.pstatic.net/MjAyMDA0MDZfMjQ3/MDAxNTg2MTAxOTA1MjU3.x4hUJxwC61PAzbOjIc3mmRBtA2kUsgQnSIbPG0t1mCQg.RYcGFuVylCEbiPlkvlYI49EHA2cH3UaVfk2tPjCb0cog.PNG.eocsdev2/Deadly_2020_0406_002.png?type=w773)
 
 - Someone entered.  ( hideout )
 Automatic feature that works in the hideout.

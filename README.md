@@ -274,3 +274,17 @@ reference. >
 "When downloading or launching the program, you might get some warnings from your security or anti-virus program caused by missing licenses and signatures. I will add an international signature to fix that. SSH Certification is accepted and is being prepared for Code Signing. It will be done before next update."
 
 Update server, agile board, build passing, issue tracking and etc. all use my personal servers. Also international certification is delaying as it is conducted as an individual. I will proceed international certification ASAP.
+
+## Added - 2020.04.13 Personal Message for users.
+
+I will restart maintenance add-on from now on.
+I have been confused last two weeks about improve & sharing this add-on. So, I took a break time with my family.
+
+Fortunately, I feel much better than lask week. This add-on that hobby for me (like a I was deployed WOW original add-on before.) so I didnt not code professional like a my IT working field before overhauled.
+
+But, It's small ugly add-on was growed up with yours, and I feel somthing like duty whatever when it's growing up.
+
+Anyway I will keep maintenance, improvement this add-on without consider that duty, user's wrong complain and the other weird users.
+
+Thanks for waiting and patience. GL & HF
+Stay healthy and have a nice day!

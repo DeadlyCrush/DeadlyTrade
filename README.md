@@ -288,3 +288,16 @@ Anyway I will keep maintenance, improvement this add-on without consider that du
 
 Thanks for waiting and patience. GL & HF
 Stay healthy and have a nice day!
+
+## Added - 2020.05.02 Update server Fixed.
+
+### Update server Down (13:00 +- 4hours)
+I＇m checking about DeadlyTrade launch issue because there is a problem with the personal server that used for update. Please understand it may delayed that it is hard to figure out whether this issue with the service provider or other problem, because it is weekend.
+
+I＇ll let you know asap the issue＇s causing confirmed or issue is fixed.
+In addition, if the issue is continue, I will release earlier that scheduled update at sunday, for receive updates from other my personal servers. Thank you.
+
+### Update server Fixed (15:30 +- 10min. )
+You can launchDeadlyTrade now. Please understand it was delayed that it was hard to figure out whether this issue with the service provider or other problem, because it is weekend.
+
+DeadlyTrade available normally now. Thank you.

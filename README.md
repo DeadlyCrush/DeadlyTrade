@@ -18,6 +18,12 @@
 * [Cli] - Interop, Core API
 * [C++] - Core
 
+## Work in progress - For 3.11 Season. (Temporary Added. 2020.06.06)
+I'm prepare update focus to next league including support Vulcan & price check.
+I will announce details soon. Thanks 😊. 
+
+Stay healthy and have a nice day 😊
+
 # DeadlyTrade Main Features and Useful Functions.
 * Please check detailed Explanation in POE Forum : https://www.pathofexile.com/forum/view-thread/2785386
 

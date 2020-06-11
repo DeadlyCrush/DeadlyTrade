@@ -19,7 +19,7 @@
 * [C++] - Core
 
 ## Work in progress - For 3.11 Season. (Temporary Added. 2020.06.06)
-I'm prepare update focus to next league including support Vulcan & price check.
+I'm prepare update focus to next league including support Vulkan & price check.
 I will announce details soon. Thanks 😊. 
 
 Stay healthy and have a nice day 😊

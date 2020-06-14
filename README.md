@@ -22,7 +22,11 @@
 I'm prepare update focus to next league including support Vulkan & price check.
 I will announce details soon. Thanks 😊. 
 
-More Information : https://poe.game.daum.net/forum/view-thread/2785386 and https://discord.gg/Gd7MjCz #work-in-progress channel.
+More Information : 
+https://www.pathofexile.com/forum/view-thread/2785386
+https://poe.game.daum.net/forum/view-thread/2785386 
+and 
+https://discord.gg/Gd7MjCz #work-in-progress channel.
 
 Stay healthy and have a nice day 😊
 

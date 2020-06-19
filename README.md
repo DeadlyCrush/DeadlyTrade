@@ -18,6 +18,23 @@
 * [Cli] - Interop, Core API
 * [C++] - Core
 
+## (Important) Work in progress - Added 2020.06.20 01:42 Local time in Korea
+Hello, this is DeadlyCrush.
+
+I＇m work in progress DeadlyTrade Overhaul version for 3.11 Harvest league and for support Vulkan with new features.
+
+Unfortunately I found some critical bugs.
+I spent most my personal time after work for this update but critical bugs came to me at this important moment.
+
+So my plan have 3 case. one is release after cleaning bugs. second one is release current version (directx) for 3.11 and release new version later. last one is release minimal version that many functions disabled.
+
+Worst scenario is DeadlyTrade temporarily close (1~2days) I can＇t imagine.
+Fortunately it＇s Friday, So I will try hard to fix the my ugly code.
+
+Anyway there is a good news I made a leveling helper which is improved from DeadlyTrade＇s Act helper.
+
+I will let you know all those status and progression and release scenario soon. thanks all of you. Stay healthy and gl.hf. See you soon
+
 ## Work in progress - For 3.11 Season. (Temporary Added. 2020.06.06)
 I'm prepare update focus to next league including support Vulkan & price check.
 I will announce details soon. Thanks 😊. 

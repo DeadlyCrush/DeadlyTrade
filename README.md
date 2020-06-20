@@ -18,6 +18,19 @@
 * [Cli] - Interop, Core API
 * [C++] - Core
 
+## Current DeadlyTrade version works properly at 3.11 Harvest league. But!!!
+Hello my exile friend, this is DeadlyCrush.
+
+First of all current DeadlyTrade version works properly at 3.11 Harvest league.
+But, [u][b][span color="#cc1427"]you must change option at DeadlyTrade＇s ninja price function[/span][/b][/u] (Ref. below), That＇s important for prevent ninja＇s new league data errors.
+
+I will let you know about new version fix & release schedule with detailed explanation of new features soon.
+I really hope introduce new deadlytrade asap.
+
+Keep grinding~! ♡ cheers, gl&hf all of you. Thanks.
+
+![Notice](https://media.discordapp.net/attachments/593745178762674213/723740449986183179/Temp_Use_for_Harvest.jpg)
+
 ## (Important) Work in progress - Added 2020.06.20 01:42 Local time in Korea
 Hello, this is DeadlyCrush.
 

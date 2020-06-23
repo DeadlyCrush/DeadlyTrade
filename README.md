@@ -346,3 +346,5 @@ In addition, if the issue is continue, I will release earlier that scheduled upd
 You can launchDeadlyTrade now. Please understand it was delayed that it was hard to figure out whether this issue with the service provider or other problem, because it is weekend.
 
 DeadlyTrade available normally now. Thank you.
+
+![DeadlyFilter_Example](https://postfiles.pstatic.net/MjAyMDA2MjNfMTA2/MDAxNTkyODkwOTk0Mzgz.sGvn_QLk2eVbvCimyfgAeE2P2bNOcri2U0zI7ynLIgIg.cBiNmVU3f6kjgtg0hbMzK4YBDPeYXvWwc6hRpk-ZQSwg.PNG.eocsdev2/DeadlyTrade_MoonLight.png?type=w773)

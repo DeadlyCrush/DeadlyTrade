@@ -992,8 +992,8 @@ namespace POExileDirection
 
                     if (!CurrencyNameAndAverage.ContainsKey(strItemName))
                     {
-                        CurrencyNameAndAverage.Add(strItemName, objLine.ChaosEquivalent);
-                        CurrencyCalcDictionary.Add(strItemName, objLine.ChaosEquivalent);
+                        CurrencyNameAndAverage.Add(strItemName, (double)objLine.ChaosEquivalent);
+                        CurrencyCalcDictionary.Add(strItemName, (double)objLine.ChaosEquivalent);
                         cbCurrency.Items.Add(strItemName);
 
                         foreach (var objDetail in LauncherForm.ninjaData.Currency.CurrencyDetails)
@@ -1020,7 +1020,7 @@ namespace POExileDirection
                 {
                     if (objLine.CurrencyTypeName == "Exalted Orb")
                     {
-                        oneExaltedChaos = objLine.ChaosEquivalent;
+                        oneExaltedChaos = (double)objLine.ChaosEquivalent;
                         break;
                     }
                 }

@@ -208,8 +208,8 @@
             this.cbLeague.Items.AddRange(new object[] {
             "Standard",
             "Hardcore",
-            "Delirium",
-            "Hardcore Delirium"});
+            "Harvest",
+            "Hardcore Harvest"});
             this.cbLeague.Location = new System.Drawing.Point(10, 53);
             this.cbLeague.Name = "cbLeague";
             this.cbLeague.Size = new System.Drawing.Size(109, 20);

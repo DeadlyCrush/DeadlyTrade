@@ -98,7 +98,7 @@ namespace POExileDirection
         public static bool g_bToggle4 { get; set; }
         public static bool g_bToggle5 { get; set; }
 
-        public static string g_strTimerSound1 { get; set; }       
+        public static string g_strTimerSound1 { get; set; }
         #endregion
 
         #region ⨌⨌ for SKILL TIMER ⨌⨌
@@ -132,17 +132,17 @@ namespace POExileDirection
         public static string Scarabs_URL = "https://poe.ninja/api/data/itemoverview?type=Scarab&league=";
         public static string Fossils_URL = "https://poe.ninja/api/data/itemoverview?type=Fossil&league=";
         public static string Resonators_URL = "https://poe.ninja/api/data/itemoverview?type=Resonator&league=";
-        
+
         public static string Essences_URL = "https://poe.ninja/api/data/itemoverview?type=Essence&league=";
         public static string DivinationCards_URL = "https://poe.ninja/api/data/itemoverview?type=DivinationCard&league=";
         public static string Prophecies_URL = "https://poe.ninja/api/data/itemoverview?type=Prophecy&league=";
-        
+
         public static string UniqueMaps_URL = "https://poe.ninja/api/data/itemoverview?type=UniqueMap&league=";
         public static string WhiteMaps_URL = "https://poe.ninja/api/data/itemoverview?type=Map&league=";
-        
+
         public static string UniqueJewels_URL = "https://poe.ninja/api/data/itemoverview?type=UniqueJewel&league=";
         public static string UniqueFlasks_URL = "https://poe.ninja/api/data/itemoverview?type=UniqueFlask&league=";
-        
+
         public static string UniqueWeapons_URL = "https://poe.ninja/api/data/itemoverview?type=UniqueWeapon&league=";
         public static string UniqueArmours_URL = "https://poe.ninja/api/data/itemoverview?type=UniqueArmour&league=";
         public static string UniqueAccessories_URL = "https://poe.ninja/api/data/itemoverview?type=UniqueAccessory&league=";
@@ -341,7 +341,7 @@ namespace POExileDirection
         }
 
         public LauncherForm()
-        {            
+        {
             InitializeComponent();
             Text = "DeadlyTradeForPOE";
         }
@@ -369,7 +369,7 @@ namespace POExileDirection
         private void GetPOE_IngameUserOption()
         {
             #region ⨌⨌ Parsing POE production_Config.ini ⨌⨌
-            // Get Addon Data & Pesonal Setting ( From My Games - Path of Exile )               
+            // Get Addon Data & Pesonal Setting ( From My Games - Path of Exile )
             String strPathPOEConifg = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             strPathPOEConifg = strPathPOEConifg + "\\My Games\\Path of Exile\\production_Config.ini";
             IniParser parser = new IniParser(strPathPOEConifg);
@@ -452,7 +452,7 @@ namespace POExileDirection
                 g_Skill2 = Convert.ToInt32(strSkill2);
                 g_Skill3 = Convert.ToInt32(strSkill3);
                 g_Skill4 = Convert.ToInt32(strSkill4);
-                g_Skill5 = Convert.ToInt32(strSkill5);                
+                g_Skill5 = Convert.ToInt32(strSkill5);
                 DeadlyLog4Net._log.Info(String.Format("Skill Keys #Q {0}, #W {1}, #E {2}, #R {3}, #T {4}", strSkill1, strSkill2, strSkill3, strSkill4, strSkill5));
                 #endregion
 
@@ -469,7 +469,7 @@ namespace POExileDirection
 
                     g_isWindowdedFullScreenOLD = g_isWindowdedFullScreen;
                 }
-                DeadlyLog4Net._log.Info(String.Format("resolution_height : {0}, resolution_width : {1}, g_isWindowdedFullScreen : {2}", 
+                DeadlyLog4Net._log.Info(String.Format("resolution_height : {0}, resolution_width : {1}, g_isWindowdedFullScreen : {2}",
                     resolution_height.ToString(), resolution_width.ToString(), g_isWindowdedFullScreen.ToString()));
             }
             catch (Exception ex)
@@ -600,7 +600,7 @@ namespace POExileDirection
 
         private void LauncherForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            _strIPAddress = getInternalIP();
+            /*_strIPAddress = getInternalIP();
             _strMacAddress = NICMacAddress();
 
             int nElapse = 0;
@@ -610,7 +610,7 @@ namespace POExileDirection
                 nElapse = 0;
             DeadlyDBHelper.InsertLoginStatus(_sqlcon, "N", _strIPAddress, _strMacAddress, ".", "LOGOUT", GetCountryByIPINFO(_strIPAddress), dtLoggedIn,
                                             nElapse);
-            DeadlyLog4Net._log.Info("LOGOUT : " + _strIPAddress + _strMacAddress + " Elapsedminute : " + nElapse);
+            DeadlyLog4Net._log.Info("LOGOUT : " + _strIPAddress + _strMacAddress + " Elapsedminute : " + nElapse);*/
         }
 
         private void textBoxDeadlyTradeCODE_KeyDown(object sender, KeyEventArgs e)
@@ -622,32 +622,32 @@ namespace POExileDirection
         private void btnLauncherLogin_Click(object sender, EventArgs e)
         {
             bool bIsValid = false;
-            
+            bIsValid = true;
 
-            DeadlyLog4Net._log.Info(_strIPAddress + _strMacAddress);
+            // DeadlyLog4Net._log.Info(_strIPAddress + _strMacAddress);
             string strisLogin = String.Empty;
             try
             {
                 dtLoggedIn = DateTime.Now;
                 _strIPAddress = getInternalIP();
                 _strMacAddress = NICMacAddress();
-                strisLogin = DeadlyDBHelper.IsLoggedInCurrent(_sqlcon, _strIPAddress, _strMacAddress);
+                // strisLogin = DeadlyDBHelper.IsLoggedInCurrent(_sqlcon, _strIPAddress, _strMacAddress);
 
-                if (strisLogin == "X")
+                /*if (strisLogin == "X")
                 {
                     DeadlyDBHelper.InsertLoginCurrent(_sqlcon, "Y", _strIPAddress, _strMacAddress, ".", ".", dtLoggedIn);
                 }
                 else if(strisLogin == "N")
                 {
                     DeadlyDBHelper.UpdateLoginCurrent(_sqlcon, "Y", _strIPAddress, _strMacAddress, dtLoggedIn);
-                }
+                }*/
 
                 //if (checkBoxAutoLogin.Checked)
                 //    SaveLoginInformEncrypt();
 
-                // Insert Action Log.                
-                DeadlyDBHelper.InsertLoginStatus(_sqlcon, "Y", _strIPAddress, _strMacAddress, ".", "LOGIN", GetCountryByIPINFO(_strIPAddress), dtLoggedIn, 0);
-                DeadlyLog4Net._log.Info("LOGIN Welcome : " + _strIPAddress + _strMacAddress);
+                // Insert Action Log.
+                //DeadlyDBHelper.InsertLoginStatus(_sqlcon, "Y", _strIPAddress, _strMacAddress, ".", "LOGIN", GetCountryByIPINFO(_strIPAddress), dtLoggedIn, 0);
+                //DeadlyLog4Net._log.Info("LOGIN Welcome : " + _strIPAddress + _strMacAddress);
 
                 // Now Check Update available.
                 // AutoUpdater check server's xml.
@@ -698,14 +698,14 @@ namespace POExileDirection
 
         private void btnForceLogin_Click(object sender, EventArgs e)
         {
-            _strIPAddress = getInternalIP();
+            /*_strIPAddress = getInternalIP();
             _strMacAddress = NICMacAddress();
 
             DeadlyLog4Net._log.Info("Force Login : " + _strIPAddress + _strMacAddress);
             // Insert Action Log.
             dtLoggedIn = DateTime.Now;
             DeadlyDBHelper.InsertLoginStatus(_sqlcon, "Y", _strIPAddress, _strMacAddress, ".", "LOGIN", GetCountryByIPINFO(_strIPAddress), dtLoggedIn, 0);
-            DeadlyLog4Net._log.Info("LOGIN Welcome : " + _strIPAddress + _strMacAddress);
+            DeadlyLog4Net._log.Info("LOGIN Welcome : " + _strIPAddress + _strMacAddress);*/
 
             // Now Check Update available.
             // AutoUpdater check server's xml.
@@ -870,7 +870,7 @@ namespace POExileDirection
         #endregion
 
         private void ReadyToStartAddon()
-        {          
+        {
             btnStartAddon.Image = Properties.Resources.DeadlyTradeStartYellowButton;
             DeadlyToolTip.SetToolTip(btnStartAddon, "Start Add-on 'Deadly Trade'");
 
@@ -926,7 +926,7 @@ namespace POExileDirection
                         // Specific File : File.Delete(Application.StartupPath + "\\");
                         #endregion
 
-                        if (AutoUpdater.DownloadUpdate())
+                        if (AutoUpdater.DownloadUpdate(args))
                         {
                             this.TopMost = true;
                             #region [[[[[ Show Update Contents. ]]]]]
@@ -1113,6 +1113,7 @@ namespace POExileDirection
                 //}
 
                 g_CurrentLeague = enumUerChoice.ToDescriptionString();
+
                 labelUserLeague.Text = String.Format("Last Your currency checked league is '{0}'.", g_CurrentLeague);
 
                 #region ⨌⨌ GET TIMER SETTING : FLASK, SKILL ⨌⨌
@@ -1170,7 +1171,7 @@ namespace POExileDirection
                     g_bToggleSkill1 = true;
                 else
                     g_bToggleSkill1 = false;
-                
+
                 if (parser.GetSetting("SKILL", "TOGGLESKILL2ON") == "TRUE")
                     g_bToggleSkill2 = true;
                 else
@@ -1293,12 +1294,12 @@ namespace POExileDirection
                 if (String.IsNullOrEmpty(g_strYNUseHOTKEYInvite))
                     g_strYNUseHOTKEYInvite = "N";
                 DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYInvite);
-                
+
                 g_strYNUseHOTKEYTrade = parser.GetSetting("NOTIFYHOTKEY", "TRADE");
                 if (String.IsNullOrEmpty(g_strYNUseHOTKEYTrade))
                     g_strYNUseHOTKEYTrade = "N";
                 DeadlyLog4Net._log.Info("checkTRDADE INVITE : " + g_strYNUseHOTKEYTrade);
-                
+
                 g_strYNUseHOTKEYKick = parser.GetSetting("NOTIFYHOTKEY", "KICK");
                 if (String.IsNullOrEmpty(g_strYNUseHOTKEYKick))
                     g_strYNUseHOTKEYKick = "N";
@@ -1504,7 +1505,7 @@ namespace POExileDirection
                     timerDetect.Dispose();
                     DeadlyTranslation.InitTranslateKOR();
                     DeadlyPriceCommon.InitDeadlyPriceCommon();
-                
+
                     g_POELogPath = InteropCommon.GetPathFromHandle(LauncherForm.g_handlePathOfExile);
 
                     bool containsKG = Regex.IsMatch(g_POELogPath, Regex.Escape("KG"), RegexOptions.IgnoreCase);
@@ -1556,7 +1557,7 @@ namespace POExileDirection
                     g_POELogPath = String.Format("{0}\\Logs\\{1}", g_POELogPath, g_POELogFileName);
                     labelPOERealPath.Text = g_POELogPath;
 
-                    // TTTTTTT // TTTTTTTg_POELogPath = @"D:\DAUM GAMES\PATH OF EXILE\LOGS\TESTCLIENT.TXT"; 
+                    // TTTTTTT // TTTTTTTg_POELogPath = @"D:\DAUM GAMES\PATH OF EXILE\LOGS\TESTCLIENT.TXT";
 
                     string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
                     IniParser parser = new IniParser(strINIPath);
@@ -1607,7 +1608,7 @@ namespace POExileDirection
                 this.BringToFront();
             }
             #endregion
-        } 
+        }
         #endregion
 
         private void RunDeadlyTradeManager()
@@ -1735,7 +1736,7 @@ namespace POExileDirection
 
         //        await Task.Delay(1000*60*60*1); // 1000ms(1s) * 60 = 60s(1m) * 60 = 60m(1h) * 1 = 1h
         //    }
-        //} 
+        //}
         #endregion
 
         #region [[[[[ Get JSON Data : DeadlyInformation ]]]]]
@@ -2046,7 +2047,7 @@ namespace POExileDirection
         private void PictureBox3_MouseUp(object sender, MouseEventArgs e)
         {
             nMoving = 0;
-        } 
+        }
         #endregion
 
         private void BtnMinimize_Click(object sender, EventArgs e)

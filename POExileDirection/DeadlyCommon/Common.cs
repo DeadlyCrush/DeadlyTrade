@@ -23,11 +23,11 @@ namespace POExileDirection
         [Description("Hardcore")]
         LEAGUE_HDCORE_STANDARD,
 
-        [Description("Delirium")]
+        [Description("Harvest")]
         LEAGUE_CURRENT,
 
-        [Description("Hardcore Delirium")]
-        LEAGUE_HDCORE_CURRENT,       
+        [Description("Hardcore Harvest")]
+        LEAGUE_HDCORE_CURRENT,
     };
 
     public static class LEAGUE_STRINGExtensions
@@ -277,7 +277,7 @@ namespace POExileDirection
 
             SqlCommand sqlCmd = new SqlCommand();
             try
-            {         
+            {
                 if (_sqlcon.State != ConnectionState.Open) _sqlcon.Open();
 
 
@@ -387,7 +387,7 @@ namespace POExileDirection
             // BUYING
             public Regex RegExENGPriceWithTabNameKAKAO { get; set; } // ^@(.*\s)?(.+) Hi, I (.+ to buy your\s+?(.+?)(\s+?listed for\s+?([\d\.]+?)\s+?(.+))?\s+?in\s+?(.+?)\s+?\(stash tab \"(.*)\"; position: left (\d+), top (\d+)\)\s*?(.*))$
             public Regex RegExENGPriceNoTabNameKAKAO { get; set; }
-            public Regex RegExENGCurrencyKAKAO { get; set; }   
+            public Regex RegExENGCurrencyKAKAO { get; set; }
             public Regex RegExENGMapLiveSiteKAKAO { get; set; }
 
         // Trade Message - Korean
@@ -400,7 +400,7 @@ namespace POExileDirection
             // BUYING
             public Regex RegExKORPriceWithTabNameKAKAO { get; set; }
             public Regex RegExKORUnPriceKAKAO { get; set; }
-        
+
 
     }
 
@@ -676,37 +676,43 @@ namespace POExileDirection
             IniParser parser = new IniParser(strINIPath);
 
             string strImageNumber = String.Empty;
-            // 1
-            strImageNumber = parser.GetSetting("MISC", "FLASKIMAGE1");
-            if (String.IsNullOrEmpty(strImageNumber))
-                g_nFlaskImageTimer.Add(0, 0);
-            else
-                g_nFlaskImageTimer.Add(0, Convert.ToInt32(strImageNumber));
-            // 2
-            strImageNumber = parser.GetSetting("MISC", "FLASKIMAGE2");
-            if (String.IsNullOrEmpty(strImageNumber))
-                g_nFlaskImageTimer.Add(1, 1);
-            else
-                g_nFlaskImageTimer.Add(1, Convert.ToInt32(strImageNumber));
-            // 3
-            strImageNumber = parser.GetSetting("MISC", "FLASKIMAGE3");
-            if (String.IsNullOrEmpty(strImageNumber))
-                g_nFlaskImageTimer.Add(2, 2);
-            else
-                g_nFlaskImageTimer.Add(2, Convert.ToInt32(strImageNumber));
-            // 4
-            strImageNumber = parser.GetSetting("MISC", "FLASKIMAGE4");
-            if (String.IsNullOrEmpty(strImageNumber))
-                g_nFlaskImageTimer.Add(3, 3);
-            else
-                g_nFlaskImageTimer.Add(3, Convert.ToInt32(strImageNumber));
-            // 5
-            strImageNumber = parser.GetSetting("MISC", "FLASKIMAGE5");
-            if (String.IsNullOrEmpty(strImageNumber))
-                g_nFlaskImageTimer.Add(4, 4);
-            else
-                g_nFlaskImageTimer.Add(4, Convert.ToInt32(strImageNumber));
 
+            try
+            {// 1
+                strImageNumber = parser.GetSetting("MISC", "FLASKIMAGE1");
+                if (String.IsNullOrEmpty(strImageNumber))
+                    g_nFlaskImageTimer.Add(0, 0);
+                else
+                    g_nFlaskImageTimer.Add(0, Convert.ToInt32(strImageNumber));
+                // 2
+                strImageNumber = parser.GetSetting("MISC", "FLASKIMAGE2");
+                if (String.IsNullOrEmpty(strImageNumber))
+                    g_nFlaskImageTimer.Add(1, 1);
+                else
+                    g_nFlaskImageTimer.Add(1, Convert.ToInt32(strImageNumber));
+                // 3
+                strImageNumber = parser.GetSetting("MISC", "FLASKIMAGE3");
+                if (String.IsNullOrEmpty(strImageNumber))
+                    g_nFlaskImageTimer.Add(2, 2);
+                else
+                    g_nFlaskImageTimer.Add(2, Convert.ToInt32(strImageNumber));
+                // 4
+                strImageNumber = parser.GetSetting("MISC", "FLASKIMAGE4");
+                if (String.IsNullOrEmpty(strImageNumber))
+                    g_nFlaskImageTimer.Add(3, 3);
+                else
+                    g_nFlaskImageTimer.Add(3, Convert.ToInt32(strImageNumber));
+                // 5
+                strImageNumber = parser.GetSetting("MISC", "FLASKIMAGE5");
+                if (String.IsNullOrEmpty(strImageNumber))
+                    g_nFlaskImageTimer.Add(4, 4);
+                else
+                    g_nFlaskImageTimer.Add(4, Convert.ToInt32(strImageNumber));
+            }
+            catch
+            {
+                MessageBox.Show("Can't Read Flask Image Number");
+            }
             parser = null;
         }
 
@@ -909,7 +915,7 @@ namespace POExileDirection
 
         public static void DeleteAllFilesInFoder(string strPath)
         {
-            // Delete all files in a directory  
+            // Delete all files in a directory
             try
             {
                 string[] files = Directory.GetFiles(strPath);

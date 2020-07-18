@@ -33,6 +33,7 @@ namespace POExileDirection
 
         private string GetPOELABDateTime()
         {
+            // poelab changed image file name format ex) 2020-07-18_000138227_uber.jpg
             DateTime dt = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("GMT Standard Time"));
 
             string strAUSDateTime = dt.ToString("yyyy-MM-dd");
@@ -75,10 +76,10 @@ namespace POExileDirection
             {
                 WebResponse TmpResponse = TmpRequest.GetResponse();
                 g_OverlayLABBmp = new Bitmap(TmpResponse.GetResponseStream());
-                
+
                 Rectangle rcCrop = new Rectangle(289, 110, 840, 268);
                 g_OverlayLABBmp = DeadlyImageCommon.cropImage(g_OverlayLABBmp, rcCrop);
-                
+
                 pictureLabyrinthLayout.BackgroundImage = g_OverlayLABBmp;
                 _LabName = "UBER";
 
@@ -171,7 +172,7 @@ namespace POExileDirection
 
             string strLABImagePath = String.Empty;
             strLABImagePath = String.Format(@"https://www.poelab.com/wp-content/labfiles/{0}_normal.jpg", GetPOELABDateTime());
-            
+
             labelAUDAteTime.Text = "GMT 0 DateTime : " + GetPOELABDateTimeDetail();
 
             WebRequest TmpRequest = (HttpWebRequest)WebRequest.Create(strLABImagePath);

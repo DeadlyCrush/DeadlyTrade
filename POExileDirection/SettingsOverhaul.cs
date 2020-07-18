@@ -175,7 +175,7 @@ namespace POExileDirection
             btnS.Text = LauncherForm.g_strnotiSOLDbtnTITLE;
             btnW.Text = LauncherForm.g_strnotiWAITbtnTITLE;
             btnT.Text = LauncherForm.g_strnotiDONEbtnTITLE;
-            
+
             textHotKeyInvite.Text = keyInvite;
             textHotKeyTradeRequest.Text = keyTrade;
             textHotKeyKickLeave.Text = keyKick;
@@ -286,7 +286,7 @@ namespace POExileDirection
                 checkBoxAutoKickWAIT.Checked = true;
             else
                 checkBoxAutoKickWAIT.Checked = false;
-            
+
             if (LauncherForm.g_strTRAutoKickSold.Trim().ToUpper() == "Y")
                 checkBoxAutoKickSOLD.Checked = true;
             else
@@ -567,7 +567,7 @@ namespace POExileDirection
                 {
                     xuiCheckBoxDefaultZANA.Checked = false;
                     btnBrowseZANA.Enabled = true;
-                }                
+                }
 
                 if (String.IsNullOrEmpty(ControlForm.g_strImagePath[0]) || xuiCheckBoxDefaultJUN.Checked == true)
                     ControlForm.g_strImagePath[0] = @".\DeadlyInform\Betrayal.png";
@@ -576,7 +576,7 @@ namespace POExileDirection
                     ControlForm.g_strImagePath[1] = @".\DeadlyInform\Incursion.png";
 
                 if (String.IsNullOrEmpty(ControlForm.g_strImagePath[2]) || xuiCheckBoxDefaultZANA.Checked == true)
-                    ControlForm.g_strImagePath[2] = @".\DeadlyInform\Atlas.png";
+                    ControlForm.g_strImagePath[2] = @".\DeadlyInform\Seed_Cheat_Sheet.png";
             }
             catch (Exception ex)
             {
@@ -1127,7 +1127,7 @@ namespace POExileDirection
             {
                 e.Handled = true;
             }
-        } 
+        }
         #endregion
 
         #region [[[[[ Volume Slider - Trade Notification, Flask Timer ]]]]]
@@ -1605,7 +1605,7 @@ namespace POExileDirection
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
         }
-        
+
         private void xuiCheckBoxDefaultALVA_CheckedStateChanged(object sender, EventArgs e)
         {
             if (xuiCheckBoxDefaultALVA.Checked == true)
@@ -1642,12 +1642,12 @@ namespace POExileDirection
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
             }
         }
-                
+
         private void xuiCheckBoxDefaultZANA_CheckedStateChanged(object sender, EventArgs e)
         {
             if (xuiCheckBoxDefaultZANA.Checked == true)
             {
-                ControlForm.g_strImagePath[2] = @".\DeadlyInform\Atlas.png";
+                ControlForm.g_strImagePath[2] = @".\DeadlyInform\Seed_Cheat_Sheet.png";
                 labelPathZANA.Text = ControlForm.g_strImagePath[2];
                 btnBrowseZANA.Enabled = false;
 
@@ -2017,6 +2017,7 @@ namespace POExileDirection
                 #endregion
 
                 #region[[[[[ TAB5 - OVERLAY ]]]]]
+                // Already Done.
                 #endregion
 
                 #region[[[[[ TAB6 - HELP ]]]]]

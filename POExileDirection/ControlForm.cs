@@ -42,13 +42,13 @@ namespace POExileDirection
         [StructLayout(LayoutKind.Sequential)]
         struct CURSORINFO
         {
-            public Int32 cbSize;        // Specifies the size, in bytes, of the structure. 
+            public Int32 cbSize;        // Specifies the size, in bytes, of the structure.
                                         // The caller must set this to Marshal.SizeOf(typeof(CURSORINFO)).
             public Int32 flags;         // Specifies the cursor state. This parameter can be one of the following values:
                                         //    0             The cursor is hidden.
                                         //    CURSOR_SHOWING    The cursor is showing.
-            public IntPtr hCursor;          // Handle to the cursor. 
-            public POINT ptScreenPos;       // A POINT structure that receives the screen coordinates of the cursor. 
+            public IntPtr hCursor;          // Handle to the cursor.
+            public POINT ptScreenPos;       // A POINT structure that receives the screen coordinates of the cursor.
         }
 
         [DllImport("user32.dll")]
@@ -61,7 +61,7 @@ namespace POExileDirection
         private int nMovePosY = 0;
 
         private bool bIsMinimized = false;
-        private bool isMainExpand = false; 
+        private bool isMainExpand = false;
         #endregion
 
         #region [[[[[ Hot Keys ]]]]]
@@ -277,7 +277,7 @@ namespace POExileDirection
                 Check_UILanguageWrapping();
                 Set_TradeMessageRegEx();
 
-                Thread.Sleep(100);               
+                Thread.Sleep(100);
             }
         }
 
@@ -299,7 +299,7 @@ namespace POExileDirection
                     else
                         strItemName = objLine.CurrencyTypeName;
 
-                    CurrencyCalcDictionary.Add(strItemName, objLine.ChaosEquivalent);
+                    CurrencyCalcDictionary.Add(strItemName, (double)objLine.ChaosEquivalent);
                 }
             }
             catch (Exception ex)
@@ -386,7 +386,7 @@ namespace POExileDirection
             btnTradeHistory.BackColor = Color.Transparent;
             btnTradeHistory.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnTradeHistory.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            btnTradeHistory.TabStop = false;            
+            btnTradeHistory.TabStop = false;
         }
         #endregion
 
@@ -501,7 +501,7 @@ namespace POExileDirection
                 DeadlyLog4Net._log.Error($"catch {MethodBase.GetCurrentMethod().Name}", ex);
                 //Task.Factory.StartNew(() =>
             }
-        } 
+        }
         #endregion
 
         private void GetItemDataThread()
@@ -516,7 +516,7 @@ namespace POExileDirection
         // KEY HOOK
         private void _keymouseHooks_KeyDown(object sender, WindowsHook.KeyEventArgs e)
         {
-            //// CTRL + C 
+            //// CTRL + C
             //if (LauncherForm.g_FocusLosing && e.Modifiers == WindowsHook.Keys.Control && e.KeyCode == WindowsHook.Keys.C)
             //{
             //    //TODO : Trade Site.
@@ -524,7 +524,7 @@ namespace POExileDirection
             //    DeadlyLog4Net._log.Info("CTRL+C for Trading");
             //    return;
             //}
-            //else 
+            //else
             if (!LauncherForm.g_FocusLosing) // Only Exile Focused.
             {
                 #region [[[[[ HOT KEYS ]]]]]
@@ -565,7 +565,7 @@ namespace POExileDirection
                     return;
                 }
 
-                //TODO : NEW HOT KEYS... 
+                //TODO : NEW HOT KEYS...
                 #endregion
 
                 // CTRL + C
@@ -635,7 +635,7 @@ namespace POExileDirection
                         frmICONF1.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime1);
                         bShowingfrmICONF1 = true;
                         frmICONF1.Show();
-                        
+
                         InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                     }
                     catch (InvalidOperationException ex)
@@ -654,7 +654,7 @@ namespace POExileDirection
                         frmICONF2.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime2);
                         bShowingfrmICONF2 = true;
                         frmICONF2.Show();
-                        
+
                         InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                     }
                     catch (InvalidOperationException ex)
@@ -673,7 +673,7 @@ namespace POExileDirection
                         frmICONF3.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime3);
                         bShowingfrmICONF3 = true;
                         frmICONF3.Show();
-                        
+
                         InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                     }
                     catch (InvalidOperationException ex)
@@ -692,7 +692,7 @@ namespace POExileDirection
                         frmICONF4.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime4);
                         bShowingfrmICONF4 = true;
                         frmICONF4.Show();
-                        
+
                         InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                     }
                     catch (InvalidOperationException ex)
@@ -711,7 +711,7 @@ namespace POExileDirection
                         frmICONF5.lnFlaskTimer = Convert.ToDouble(LauncherForm.g_FlaskTime5);
                         bShowingfrmICONF5 = true;
                         frmICONF5.Show();
-                        
+
                         InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
                     }
                     catch (InvalidOperationException ex)
@@ -1109,7 +1109,7 @@ namespace POExileDirection
                     this.StartPosition = FormStartPosition.Manual;
                     this.Left = Int32.Parse(sLeft);
                     this.Top = Int32.Parse(sTop);
-                }             
+                }
             }
             catch(Exception ex)
             {
@@ -1185,7 +1185,7 @@ namespace POExileDirection
             g_DeadlyRegEx.RegExENGPriceNoTabNameKAKAO = new Regex("^@(.*\\s)?(.+) Hi, I (.+ to buy your\\s+?(.+?)(\\s+?listed for\\s+?([\\d\\.]+?)\\s+?(.+))?\\s+?in\\s+?(.*?))$");
             g_DeadlyRegEx.RegExENGCurrencyKAKAO = new Regex("^@(.*\\s)?(.+) Hi, (\\s*)?(.+ to buy your (\\d+(\\.\\d+)?)? (.+) for my (\\d+(\\.\\d+)?)? (.+) in (.*?)\\.\\s*(.*))$");
             g_DeadlyRegEx.RegExENGMapLiveSiteKAKAO = new Regex("^@(.*\\s)?(.+) (I'd like to exchange my (T\\d+:\\s\\([\\s\\S,]+) for your (T\\d+:\\s\\([\\S,\\s]+) in\\s+?(.+?)\\.)");
-            g_DeadlyRegEx.RegExENGPoeAppComTabNameKAKAO = 
+            g_DeadlyRegEx.RegExENGPoeAppComTabNameKAKAO =
                 new Regex("^@(.*\\s)?(.+)?(.+)(\\s*?wtb\\s+?(.+?)(\\s+?listed for\\s+?([\\d\\.]+?)\\s+?(.+))?\\s+?in\\s+?(.+?)\\s+?\\(stash\\s+?\\\"(.*?)\\\";\\s+?left\\s+?(\\d+?),\\s+?top\\s+(\\d+?)\\)\\s*?(.*))$");
             //new Regex("^@(.*\\s)?(.+)?(.+)(\\s*?wtb\\s+?(.+?)(\\s+?listed for\\s+?([\\d\\.]+?)\\s+?(.+))?\\s+?in\\s+?(.+?)\\s+?\\(stash\\s+?\\\"(.*?)\\\";\\s+?left\\s+?(\\d+?),\\s+?top\\s+(\\d+?)\\)\\s*?(.*))$")
             #endregion
@@ -1937,7 +1937,7 @@ namespace POExileDirection
                                     public string priceYour { get; set; } // 대상자의 얼마를 :: 너의 1
                                     public string yourCurrency { get; set; } // 대상자의 어떤 커런시를 :: 너의 Exalted Orb 를
 
-                                    
+
                                     // 구매, 판매 정보
                                     public string tradePurpose { get; set; } // 거래 목적 : 구매? 판매?
 
@@ -2132,7 +2132,7 @@ namespace POExileDirection
                 }
                 nIndex = nIndex + 1;
             }
-        } 
+        }
         #endregion
 
         private void ControlForm_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
@@ -2213,7 +2213,6 @@ namespace POExileDirection
         public UI_LANG CheckPOEUILanguage()
         {
             LauncherForm.g_strExplanationLANG = LauncherForm.g_strUILang;
-
             if (LauncherForm.g_strUILang == "KOR")
                 return UI_LANG.UI_KOREAN;
             else if (LauncherForm.g_strUILang == "ENG")
@@ -2481,14 +2480,14 @@ namespace POExileDirection
         public void Get_Remaining()
         {
             /*IntPtr hIMC = ImmGetContext(handlePOE);
-            
+
             // Force to English
             ImmSetConversionStatus(hIMC, IME_CMODE_ALPHANUMERIC, 0);
             SendKeys.Send("{Enter}/remaining{Enter}");
             ImmReleaseContext(handlePOE, hIMC);
             */
             InputSimulator iSim = new InputSimulator();
-            
+
             // Need to press ALT because the SetForegroundWindow sometimes does not work
             //iSim.Keyboard.KeyPress(VirtualKeyCode.MENU);
 
@@ -2555,11 +2554,14 @@ namespace POExileDirection
                 strZANADefualt = parser.GetSetting("OVERLAY", "ZANADEFAULT");
 
                 // Get Image Path
+                g_nUILang = CheckPOEUILanguage();
                 g_strImagePath[0] = parser.GetSetting("OVERLAY", "JUN"); // @".\DeadlyInform\Betrayal.png";   // JUN
                 if (String.IsNullOrEmpty(g_strImagePath[0]) || strJUNDefualt.Trim().ToUpper() == "Y")
                 {
-                    if(LauncherForm.g_strUILang=="KOR")
+                    if (g_nUILang == UI_LANG.UI_KOREAN)
+                    {
                         g_strImagePath[0] = @".\DeadlyInform\Betrayal.png";
+                    }
                     else
                         g_strImagePath[0] = @".\DeadlyInform\BetrayalEN.png";
                 }
@@ -2568,9 +2570,9 @@ namespace POExileDirection
                 if (String.IsNullOrEmpty(g_strImagePath[1]) || strALVADefualt.Trim().ToUpper() == "Y")
                     g_strImagePath[1] = @".\DeadlyInform\Incursion.png";
 
-                g_strImagePath[2] = parser.GetSetting("OVERLAY", "ZANA"); // @".\DeadlyInform\Atlas.png";      // ZANA
+                g_strImagePath[2] = parser.GetSetting("OVERLAY", "ZANA"); // @".\DeadlyInform\Seed_Cheat_Sheet.png";      // ZANA
                 if (String.IsNullOrEmpty(g_strImagePath[2]) || strZANADefualt.Trim().ToUpper() == "Y")
-                    g_strImagePath[2] = @".\DeadlyInform\Atlas.png";
+                    g_strImagePath[2] = @".\DeadlyInform\Seed_Cheat_Sheet.png";
 
                 // HOT KEYS
                 keyMAINRemains = parser.GetSetting("HOTKEY", "R");
@@ -2621,7 +2623,7 @@ namespace POExileDirection
                         else
                             strPath = String.Format("{0}\\{1}", dlgFolder.SelectedPath, "logs\\Client.txt");
 
-                        // TTTTTTTTstrPath = String.Format("{0}\\{1}", dlgFolder.SelectedPath, "logs\\TESTClient.txt"); 
+                        // TTTTTTTTstrPath = String.Format("{0}\\{1}", dlgFolder.SelectedPath, "logs\\TESTClient.txt");
                     }
                     else
                     {
@@ -2750,7 +2752,7 @@ namespace POExileDirection
                         IniParser parser = new IniParser(strINIPath);
 
                         #region [[[[[ TAB1 - HOT KEYS ]]]]]
-                        // HotKey Use - MAIN                        
+                        // HotKey Use - MAIN
                         parser.AddSetting("MISC", "REMAINING", LauncherForm.g_strYNUseRemainingHOTKEY);
                         parser.AddSetting("MISC", "HOTKEYSYNDICATE", LauncherForm.g_strYNUseSyndicateJUNHOTKEY);
                         parser.AddSetting("MISC", "HOTKEYALVAINCURSION", LauncherForm.g_strYNUseIncursionALVAHOTKEY);
@@ -2862,7 +2864,7 @@ namespace POExileDirection
                         parser.AddSetting("MISC", "FLASKTIME5", LauncherForm.g_FlaskTime5);
                         // Use Sound Alert Y/N
                         parser.AddSetting("LOCATIONNOTIFY", "FLASKTIMERSOUND", LauncherForm.g_strTimerSound1);
-                        parser.AddSetting("LOCATIONNOTIFY", "FLASKSOUND1", LauncherForm.g_strTimerSound1); 
+                        parser.AddSetting("LOCATIONNOTIFY", "FLASKSOUND1", LauncherForm.g_strTimerSound1);
                         parser.AddSetting("LOCATIONNOTIFY", "VOLUMEFLASKTIMER", LauncherForm.g_FlaskTimerVolume.ToString());
                         #endregion
 
@@ -2882,6 +2884,26 @@ namespace POExileDirection
                         #endregion
 
                         #region [[[[[ TAB5 - OVERLAY ]]]]]
+                        // Get Image Path
+                        g_strImagePath[0] = parser.GetSetting("OVERLAY", "JUN"); // @".\DeadlyInform\Betrayal.png";   // JUN
+                        if (String.IsNullOrEmpty(g_strImagePath[0]) || strJUNDefualt.Trim().ToUpper() == "Y")
+                        {
+                            if (g_nUILang == UI_LANG.UI_KOREAN)
+                            {
+                                g_strImagePath[0] = @".\DeadlyInform\Betrayal.png";
+                            }
+                            else
+                                g_strImagePath[0] = @".\DeadlyInform\BetrayalEN.png";
+                        }
+
+                        g_strImagePath[1] = parser.GetSetting("OVERLAY", "ALVA"); // @".\DeadlyInform\Incursion.png";  // ALVA
+                        if (String.IsNullOrEmpty(g_strImagePath[1]) || strALVADefualt.Trim().ToUpper() == "Y")
+                            g_strImagePath[1] = @".\DeadlyInform\Incursion.png";
+
+                        g_strImagePath[2] = parser.GetSetting("OVERLAY", "ZANA"); // @".\DeadlyInform\Seed_Cheat_Sheet.png";      // ZANA
+                        if (String.IsNullOrEmpty(g_strImagePath[2]) || strZANADefualt.Trim().ToUpper() == "Y")
+                            g_strImagePath[2] = @".\DeadlyInform\Seed_Cheat_Sheet.png";
+
                         parser.AddSetting("OVERLAY", "JUNDEFAULT", strJUNDefualt);
                         parser.AddSetting("OVERLAY", "JUN", g_strImagePath[0]);
 
@@ -2967,7 +2989,7 @@ namespace POExileDirection
             string output = JsonConvert.SerializeObject(notiMSGUpdate, Formatting.Indented);
             output = "{   \"NotifyMSG\": " + output + " }";
             File.WriteAllText(Application.StartupPath + "\\DeadlyInform\\NotificationMSG.json", output);
-        } 
+        }
         #endregion
         #endregion
 
@@ -3016,7 +3038,7 @@ namespace POExileDirection
             {
                 strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1600_1024.ini");
                 if (LauncherForm.resolution_width < 1600 && LauncherForm.resolution_height < 1024)
-                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini"); 
+                    strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath_1280_768.ini");
             }
             IniParser parser = new IniParser(strINIPath);
             parser.AddSetting("LOCATIONMAIN", "LEFT", this.Left.ToString());
@@ -3071,7 +3093,7 @@ namespace POExileDirection
         private void PictureBox1_MouseUp(object sender, System.Windows.Forms.MouseEventArgs e)
         {
             nMoving = 0;
-            
+
             string strINIPath = String.Format("{0}\\{1}", Application.StartupPath, "ConfigPath.ini");
             IniParser parser = new IniParser(strINIPath);
 
@@ -3896,7 +3918,7 @@ namespace POExileDirection
         {
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
-            InputSimulator iSim = new InputSimulator();            
+            InputSimulator iSim = new InputSimulator();
             if(m_bISDND)
             {
                 btnDND.Image = Properties.Resources.check_off;
@@ -3921,7 +3943,7 @@ namespace POExileDirection
         {
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
 
-            InputSimulator iSim = new InputSimulator();            
+            InputSimulator iSim = new InputSimulator();
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
             iSim.Keyboard.TextEntry("/menagerie");
             iSim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
@@ -3946,7 +3968,7 @@ namespace POExileDirection
         {
             SendPOECommand("/passives");
         }
-        
+
         private void BtnPlayed_Click(object sender, EventArgs e)
         {
             SendPOECommand("/played");
@@ -4035,7 +4057,7 @@ namespace POExileDirection
         {
             if (!isMainExpand)
             {
-                panelUtilityRectBorder.Visible = true;            
+                panelUtilityRectBorder.Visible = true;
 
                 isMainExpand = true;
                 btnExpandCollapse.Image = Properties.Resources.arrow_up;
@@ -4226,7 +4248,7 @@ namespace POExileDirection
             DeadlyToolTip.SetToolTip(btnScan, "Scan trade channel chatting.");
         }
 
-        
+
         private void button5_MouseHover(object sender, EventArgs e)
         {
             DeadlyToolTip.SetToolTip(button5, "Poe.Ninja Price and Simple caclulator.");
@@ -4269,7 +4291,7 @@ namespace POExileDirection
 
         private void button2_MouseHover(object sender, EventArgs e)
         {
-            DeadlyToolTip.SetToolTip(button2, "Syndicate Information Overlay."); 
+            DeadlyToolTip.SetToolTip(button2, "Syndicate Information Overlay.");
         }
 
         private void button3_MouseHover(object sender, EventArgs e)
@@ -4335,7 +4357,7 @@ namespace POExileDirection
                 bIsMinimized = true;
                 btnDeadlyTrade.Visible = true;
                 panel6.BorderStyle = BorderStyle.None;
-                
+
                 panelUtilityRectBorder.Visible = false;
             }
             else
@@ -4412,21 +4434,21 @@ namespace POExileDirection
             parser.SaveSettings();
 
             InteropCommon.SetForegroundWindow(LauncherForm.g_handlePathOfExile);
-        } 
+        }
         #endregion
 
         private void ControlForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            int nElapse = 0;
+            /*int nElapse = 0;
             double elapsedmin = ((TimeSpan)(LauncherForm.dtLoggedIn - DateTime.Now)).TotalMinutes;
             nElapse = Convert.ToInt32(elapsedmin);
             if (nElapse < 0)
                 nElapse = 0;
 
             DeadlyDBHelper.UpdateLoginCurrent(LauncherForm._sqlcon, "N", LauncherForm._strIPAddress, LauncherForm._strMacAddress, DateTime.Now);
-            DeadlyDBHelper.InsertLoginStatus(LauncherForm._sqlcon, "N", LauncherForm._strIPAddress, LauncherForm._strMacAddress, ".", "LOGOUT", 
-                                            LauncherForm.GetCountryByIPINFO(LauncherForm._strIPAddress), LauncherForm.dtLoggedIn, nElapse); 
-            DeadlyLog4Net._log.Info("LOGOUT : " + LauncherForm._strIPAddress + LauncherForm._strMacAddress + " Elapsedminute : " + nElapse);
+            DeadlyDBHelper.InsertLoginStatus(LauncherForm._sqlcon, "N", LauncherForm._strIPAddress, LauncherForm._strMacAddress, ".", "LOGOUT",
+                                            LauncherForm.GetCountryByIPINFO(LauncherForm._strIPAddress), LauncherForm.dtLoggedIn, nElapse);
+            DeadlyLog4Net._log.Info("LOGOUT : " + LauncherForm._strIPAddress + LauncherForm._strMacAddress + " Elapsedminute : " + nElapse);*/
         }
 
         private void xuiSwitch1_SwitchStateChanged_1(object sender, EventArgs e)

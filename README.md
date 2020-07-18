@@ -42,6 +42,17 @@ Keep grinding~! ♡ cheers, gl&hf all of you. Thanks.
 ![Notice](https://blogfiles.pstatic.net/MjAyMDA3MThfMzcg/MDAxNTk1MDQ2NTUyMjg3.VS440DqgtlA5FARd3BhOhQFUkg76BRmX3xpLo_eCATcg.VzkKQLLsMCwNeeiZtrsFuDDRBzmd_T7AN_wvxJdY8u0g.PNG.eocsdev2/Deadly_2020_0718_001.png)
 ![Notice](https://blogfiles.pstatic.net/MjAyMDA3MThfMjYx/MDAxNTk1MDQ2NTUyMzA2.P_KXNBxdTyZRSZ-aWptVdFMwE5c4xpv74jJRfSSW0lgg.fGAMcCoYzl_ovVOScOroSrXD99lXk-0lvPvjUpd4P1gg.PNG.eocsdev2/Deadly_2020_0718_002.png)
 
+![Notice](https://youtu.be/OI7TI1aC0l0)
+
+[ Download Link ]
+
+* Full Version :
+https://github.com/DeadlyCrush/DeadlyTrade/releases/download/1.4.0.8/DeadlyTradeOverhaul_1.4.0.8.zip
+* Update :
+https://github.com/DeadlyCrush/DeadlyTrade/releases/download/1.4.0.8/DeadlyTrade_Update_1.4.0.8.zip
+* Update will be automatically if you have previous version above 1.4.0.1
+기존 사용자분들 중 1.4.0.1 버전 이상의 사용자는 자동 업데이트 됩니다.
+
 ## Work in progress - For 3.11 Season. (Temporary Added. 2020.06.06)
 I'm prepare update focus to next league including support Vulkan & price check.
 I will announce details soon. Thanks 😊. 

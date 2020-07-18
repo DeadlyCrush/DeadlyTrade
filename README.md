@@ -1,7 +1,6 @@
 # DeadlyTrade Overhaul.
 [![Travis (.org) CI](https://img.shields.io/travis/deadlycrush/deadlytrade?logo=travis)](https://travis-ci.org/DeadlyCrush/DeadlyTrade)
 [![appveyor CI](https://ci.appveyor.com/api/projects/status/ncnly5qi6uk5gyb9?svg=true)](https://ci.appveyor.com/project/DeadlyCrush/deadlytrade)
-[![buddy.works CI](https://app.buddy.works/rino74eocs/deadlytrade/pipelines/pipeline/242652/badge.svg?token=57fabdfd2da6d0ef73c5b935da30b4e13e1b03c55a68803c1dc07c81bd94c6c1 "buddy pipeline")](https://app.buddy.works/rino74eocs/deadlytrade/pipelines/pipeline/242652)
 [![Dev Azure Pipeline](https://dev.azure.com/DeadlyCrush/DeadlyTrade/_apis/build/status/DeadlyCrush.DeadlyTrade?branchName=master)](https://dev.azure.com/DeadlyCrush/DeadlyTrade/_build/latest?definitionId=1&branchName=master)
 [![NetFrameWork.Legacy.CI](https://github.com/DeadlyCrush/DeadlyTrade/workflows/NetFrameWork.Legacy.CI/badge.svg?branch=master)](https://github.com/DeadlyCrush/DeadlyTrade/actions)
 
@@ -17,6 +16,31 @@
 * [C#, .Net Core/Web] - Front End, Web API
 * [Cli] - Interop, Core API
 * [C++] - Core
+
+## DeadlyTrade Overhaul 1.4.0.7 version. Temporary version before new version release.
+
+### 1.4.0.7 DeadlyTrade Temporary Released.
+
+○ This deploying is a temporary version
+because I'm having a long process of finalizing new versions with significant changes with new features.
+
+I'm trying to release new version asap.
+Thank you always all of you.
+
+○ This temporary release modified only Ninja price function for Harvest league.
+
+○ 이번 배포는 새로운 기능들과 함께 상당히 많은 변화가 있는
+새로운 버전을 마무리하는 과정이 길어지고 있어서 임시로 배포드리는 버전입니다.
+
+새로운 버전을 가능한한 빨리 마무리하기 위해 노력하고 있습니다.
+모든분들께 감사드립니다.
+
+○ 이 임시 배포는 수확 리그를 위한 닌자 가격 기능의 수정만 포함되어 있습니다.
+
+Keep grinding~! ♡ cheers, gl&hf all of you. Thanks.
+
+![Notice](https://blogfiles.pstatic.net/MjAyMDA3MThfMzcg/MDAxNTk1MDQ2NTUyMjg3.VS440DqgtlA5FARd3BhOhQFUkg76BRmX3xpLo_eCATcg.VzkKQLLsMCwNeeiZtrsFuDDRBzmd_T7AN_wvxJdY8u0g.PNG.eocsdev2/Deadly_2020_0718_001.png)
+![Notice](https://blogfiles.pstatic.net/MjAyMDA3MThfMjYx/MDAxNTk1MDQ2NTUyMzA2.P_KXNBxdTyZRSZ-aWptVdFMwE5c4xpv74jJRfSSW0lgg.fGAMcCoYzl_ovVOScOroSrXD99lXk-0lvPvjUpd4P1gg.PNG.eocsdev2/Deadly_2020_0718_002.png)
 
 ## Work in progress - For 3.11 Season. (Temporary Added. 2020.06.06)
 I'm prepare update focus to next league including support Vulkan & price check.
@@ -208,7 +232,6 @@ I got "Build Passing" with Travis CI, AppVeyor and other Sites. Travis CI and th
 - Travis CI and the others are automatically detects when a commit has been made and pushed to a GitHub repository that is using their pipeline and each time this happens, it will try to build the project and run tests. Especially considering the increasing number of add-ons, this should have a positive effect for everyone.
 - Github Actions CI Passed. Real-Time connected.
 - AppVeyor CI Passed. Real-Time connected.
-- buddy.works CI Passed. Real-Time connected.
 - Azure Pipelines Passed. Real-Time connected.
 - Travis CI Passed. Real-Time connected.
 - Addition 1: Added License and Contributor Covenant, so we can work together under the License MIT and Contributor Covenent.
@@ -315,3 +338,5 @@ In addition, if the issue is continue, I will release earlier that scheduled upd
 You can launchDeadlyTrade now. Please understand it was delayed that it was hard to figure out whether this issue with the service provider or other problem, because it is weekend.
 
 DeadlyTrade available normally now. Thank you.
+
+![DeadlyFilter_Example](https://postfiles.pstatic.net/MjAyMDA2MjNfMTA2/MDAxNTkyODkwOTk0Mzgz.sGvn_QLk2eVbvCimyfgAeE2P2bNOcri2U0zI7ynLIgIg.cBiNmVU3f6kjgtg0hbMzK4YBDPeYXvWwc6hRpk-ZQSwg.PNG.eocsdev2/DeadlyTrade_MoonLight.png?type=w773)

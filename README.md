@@ -17,36 +17,30 @@
 * [Cli] - Interop, Core API
 * [C++] - Core
 
-## Current DeadlyTrade version works properly at 3.11 Harvest league. But!!!
-Hello my exile friend, this is DeadlyCrush.
-First of all current DeadlyTrade version works properly at 3.11 Harvest league.
+# DeadlyTrade Overhaul 1.4.0.7 version. Temporary version before new version release.
 
-### But, you must change option at DeadlyTrade＇s ninja price function (Ref. below), That＇s important for prevent ninja＇s new league data errors.
+## 1.4.0.7 DeadlyTrade Temporary Released.
 
-I will let you know about new version fix & release schedule with detailed explanation of new features soon.
-I really hope introduce new deadlytrade asap.
+○ This deploying is a temporary version
+because I'm having a long process of finalizing new versions with significant changes with new features.
+
+I'm trying to release new version asap.
+Thank you always all of you.
+
+○ This temporary release modified only Ninja price function for Harvest league.
+
+○ 이번 배포는 새로운 기능들과 함께 상당히 많은 변화가 있는
+새로운 버전을 마무리하는 과정이 길어지고 있어서 임시로 배포드리는 버전입니다.
+
+새로운 버전을 가능한한 빨리 마무리하기 위해 노력하고 있습니다.
+모든분들께 감사드립니다.
+
+○ 이 임시 배포는 수확 리그를 위한 닌자 가격 기능의 수정만 포함되어 있습니다.
 
 Keep grinding~! ♡ cheers, gl&hf all of you. Thanks.
 
-![Notice](https://media.discordapp.net/attachments/593745178762674213/723740449986183179/Temp_Use_for_Harvest.jpg)
-![Notice](https://media.discordapp.net/attachments/593745178762674213/723746917691031663/unknown.png?width=1204&height=677)
-
-## (Important) Work in progress - Added 2020.06.20 01:42 Local time in Korea
-Hello, this is DeadlyCrush.
-
-I＇m work in progress DeadlyTrade Overhaul version for 3.11 Harvest league and for support Vulkan with new features.
-
-Unfortunately I found some critical bugs.
-I spent most my personal time after work for this update but critical bugs came to me at this important moment.
-
-So my plan have 3 case. one is release after cleaning bugs. second one is release current version (directx) for 3.11 and release new version later. last one is release minimal version that many functions disabled.
-
-Worst scenario is DeadlyTrade temporarily close (1~2days) I can＇t imagine.
-Fortunately it＇s Friday, So I will try hard to fix the my ugly code.
-
-Anyway there is a good news I made a leveling helper which is improved from DeadlyTrade＇s Act helper.
-
-I will let you know all those status and progression and release scenario soon. thanks all of you. Stay healthy and gl.hf. See you soon
+![Notice](https://blogfiles.pstatic.net/MjAyMDA3MThfMzcg/MDAxNTk1MDQ2NTUyMjg3.VS440DqgtlA5FARd3BhOhQFUkg76BRmX3xpLo_eCATcg.VzkKQLLsMCwNeeiZtrsFuDDRBzmd_T7AN_wvxJdY8u0g.PNG.eocsdev2/Deadly_2020_0718_001.png)
+![Notice](https://blogfiles.pstatic.net/MjAyMDA3MThfMjYx/MDAxNTk1MDQ2NTUyMzA2.P_KXNBxdTyZRSZ-aWptVdFMwE5c4xpv74jJRfSSW0lgg.fGAMcCoYzl_ovVOScOroSrXD99lXk-0lvPvjUpd4P1gg.PNG.eocsdev2/Deadly_2020_0718_002.png)
 
 ## Work in progress - For 3.11 Season. (Temporary Added. 2020.06.06)
 I'm prepare update focus to next league including support Vulkan & price check.

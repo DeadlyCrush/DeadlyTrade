@@ -17,9 +17,9 @@
 * [Cli] - Interop, Core API
 * [C++] - Core
 
-# DeadlyTrade Overhaul 1.4.0.7 version. Temporary version before new version release.
+## DeadlyTrade Overhaul 1.4.0.7 version. Temporary version before new version release.
 
-## 1.4.0.7 DeadlyTrade Temporary Released.
+### 1.4.0.7 DeadlyTrade Temporary Released.
 
 ○ This deploying is a temporary version
 because I'm having a long process of finalizing new versions with significant changes with new features.

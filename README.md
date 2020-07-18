@@ -42,7 +42,7 @@ Keep grinding~! ♡ cheers, gl&hf all of you. Thanks.
 ![Notice](https://blogfiles.pstatic.net/MjAyMDA3MThfMzcg/MDAxNTk1MDQ2NTUyMjg3.VS440DqgtlA5FARd3BhOhQFUkg76BRmX3xpLo_eCATcg.VzkKQLLsMCwNeeiZtrsFuDDRBzmd_T7AN_wvxJdY8u0g.PNG.eocsdev2/Deadly_2020_0718_001.png)
 ![Notice](https://blogfiles.pstatic.net/MjAyMDA3MThfMjYx/MDAxNTk1MDQ2NTUyMzA2.P_KXNBxdTyZRSZ-aWptVdFMwE5c4xpv74jJRfSSW0lgg.fGAMcCoYzl_ovVOScOroSrXD99lXk-0lvPvjUpd4P1gg.PNG.eocsdev2/Deadly_2020_0718_002.png)
 
-![Notice](https://youtu.be/OI7TI1aC0l0)
+[![(DeadlyTrade) 데들리트레이드 1.4.0.7 임시 버전 릴리즈 안내 - Temporary version before new version release.](http://img.youtube.com/vi/OI7TI1aC0l0/0.jpg)](http://www.youtube.com/watch?v=OI7TI1aC0l0 "(DeadlyTrade) 데들리트레이드 1.4.0.7 임시 버전 릴리즈 안내 - Temporary version before new version release.")
 
 [ Download Link ]
 

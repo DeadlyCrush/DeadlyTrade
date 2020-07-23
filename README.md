@@ -219,11 +219,17 @@ I got a suggestion/problem, how can i contact you? You can contact us via discor
 
 ## History
 ○ DeadlyTrade Overhaul Version Released Feb,2020
+
 ○ DeadlyTrade Renewal Version Started Jan,2020
+
 ○ DeadlyTrade Started and Sharing April,2019
+
 ○ POEExileDirection converted to DeadlyTrade in new empty Project 1year ago.
+
 ○ POEExileDirection developed in new empty hand and Released over 1year ago.
+
 ○ MercuryTrade KOR Version. (Origin. Exslims) All Korean UI&Functions Version Jun,2019 until Exslims no longer maintain officially.
+
 
 ### Behind...
 It started from inspired Mercurytrade when I made and share Korean version of Mecurytrade. Addon name 'DeadlyTrade' also  inspired by 'MercuryTrade' including my respect to great exslims mercury trade ("Deadly"Crush + Mercury"Trade"). But All of my add-ons including this, DeadlyTrade, started empty handed, completely on my own and It comply with ggg's TOS.

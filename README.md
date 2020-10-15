@@ -17,25 +17,34 @@
 * [Cli] - Interop, Core API
 * [C++] - Core
 
-## DeadlyTrade Overhaul 1.4.0.7 version. Temporary version before new version release.
+## DeadlyTrade Overhaul 1.4.0.9 version for 3.12 Heist League. Temporary version before new version release.
 
-### 1.4.0.7 DeadlyTrade Temporary Released.
+### 1.4.0.9 DeadlyTrade Temporary Released.
 
-○ This deploying is a temporary version
-because I'm having a long process of finalizing new versions with significant changes with new features.
+I really apologize for delay until now without another announce after release schedule notice.
 
-I'm trying to release new version asap.
-Thank you always all of you.
+Due to the specificity of the development company＇s work,  sometimes happens to find old man;; in urgent situations like service abort. I couldn＇t keep my promise because I had to handle last important company＇s service abort.
 
-○ This temporary release modified only Ninja price function for Harvest league.
+But, I＇ve kept work to finishing for new version release that you＇re waiting for. Nevertheless, I found a few problem below and I don＇t have enough personal time to fix it, so I will finish it through weekend from Friday afternoon.
 
-○ 이번 배포는 새로운 기능들과 함께 상당히 많은 변화가 있는
-새로운 버전을 마무리하는 과정이 길어지고 있어서 임시로 배포드리는 버전입니다.
+1. Fix errors due to harvest & heist league price checking problems.
+2. Unknown error related to integrated launcher to ensure no waiting in the new league with additional logic.
+3. Finishing something additional new thing that can not announce at this moment.
 
-새로운 버전을 가능한한 빨리 마무리하기 위해 노력하고 있습니다.
-모든분들께 감사드립니다.
+Therefore, all other features are available normally in the current version, but some function below had problem. I＇ve released the current version not new version by modifying only two function below.
+1. The NINJA quotient verification function with errors in the new league is made available by adding data from the current league.
+2. Other unspecified errors that misbehaved in the new league
 
-○ 이 임시 배포는 수확 리그를 위한 닌자 가격 기능의 수정만 포함되어 있습니다.
+I＇m sorry to all DeadlyTrade users who are waiting, but I＇ve spent almost all my personal time to finish release when occurred delayed situation past 2 years, even if I can＇t sleep. Also I＇m going to do it this time.
+
+I emptied my personal schedule from Friday to Sunday and asked for my family＇s understanding. So, if not company＇s service down or not serious that I have to handle it, DeadlyTrade new version release will be possible this weekend, a week later than schedule that I announced.
+
+I know there are some problem when new league start that are inconvenient and waiting new version release, and I＇m sorry to users who waiting and new version solving these problem and including additional features.
+And thank you so much for your support and encouragement even if in this situation.
+
+Next notice will be new version release with something additional new thing that can not announce at this moment.
+
+Thank you.
 
 Keep grinding~! ♡ cheers, gl&hf all of you. Thanks.
 
@@ -46,14 +55,12 @@ http://www.youtube.com/watch?v=OI7TI1aC0l0
 
 [![(DeadlyTrade) 데들리트레이드 1.4.0.7 임시 버전 릴리즈 안내 - Temporary version before new version release.](http://img.youtube.com/vi/OI7TI1aC0l0/0.jpg)](http://www.youtube.com/watch?v=OI7TI1aC0l0 "(DeadlyTrade) 데들리트레이드 1.4.0.7 임시 버전 릴리즈 안내 - Temporary version before new version release.")
 
-[ Download Link ]
+[ Latest Release ]
 
-* Full Version :
-https://github.com/DeadlyCrush/DeadlyTrade/releases/download/1.4.0.8/DeadlyTradeOverhaul_1.4.0.8.zip
-* Update :
-https://github.com/DeadlyCrush/DeadlyTrade/releases/download/1.4.0.8/DeadlyTrade_Update_1.4.0.8.zip
-* Update will be automatically if you have previous version above 1.4.0.1
-기존 사용자분들 중 1.4.0.1 버전 이상의 사용자는 자동 업데이트 됩니다.
+https://github.com/DeadlyCrush/DeadlyTrade/releases/
+
+* Update will be automatically if you have previous version above 1.4.0.5
+기존 사용자분들 중 1.4.0.5 버전 이상의 사용자는 자동 업데이트 됩니다.
 
 ## Work in progress - For 3.11 Season. (Temporary Added. 2020.06.06)
 I'm prepare update focus to next league including support Vulkan & price check.

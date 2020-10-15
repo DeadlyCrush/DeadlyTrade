@@ -51,6 +51,26 @@ Keep grinding~! ♡ cheers, gl&hf all of you. Thanks.
 ![Notice](https://blogfiles.pstatic.net/MjAyMDA3MThfMzcg/MDAxNTk1MDQ2NTUyMjg3.VS440DqgtlA5FARd3BhOhQFUkg76BRmX3xpLo_eCATcg.VzkKQLLsMCwNeeiZtrsFuDDRBzmd_T7AN_wvxJdY8u0g.PNG.eocsdev2/Deadly_2020_0718_001.png)
 ![Notice](https://blogfiles.pstatic.net/MjAyMDA3MThfMjYx/MDAxNTk1MDQ2NTUyMzA2.P_KXNBxdTyZRSZ-aWptVdFMwE5c4xpv74jJRfSSW0lgg.fGAMcCoYzl_ovVOScOroSrXD99lXk-0lvPvjUpd4P1gg.PNG.eocsdev2/Deadly_2020_0718_002.png)
 
+### Added > 2020.10.16 06:07 Local time in Korea
+
+Currently, I＇ve checked that there is an error related with getting data when updating automatically. My test was ok because I have related files in development environment.
+
+If you have any errors, please download full version of 1.4.0.9 temp release : https://github.com/DeadlyCrush/DeadlyTrade/releases/download/1.4.0.9/DeadlyTradeOverhaul_1.4.0.9.zip in a separate folder.
+
+1.4.0.9 temporary version has no errors except Unexpected error while getting data after autoupdate.
+
+message from Daum Kakao user or the message format is not correct If trade notification is not pop up. If you receive from GGG user and message format is correct, please let me know if you don＇t get trade notification.
+
+And because data in ninja site fluctuates frequently and data being added with image to the ninja site, may error occur when checking unique item. This issue due to load image from local because speed problems when images are taken from ninja site. In next new version, this logic is changed to prevent error if images are not present.
+
+If there are any other special problems, please let me know.
+I will inform you with new version release asap.
+
+Thank you.
+
+* ps : If you see any errors that you haven＇t seen at previous version after the update, please download Full Version 1.4.0.9 and check if error occurs.
+
+
 http://www.youtube.com/watch?v=OI7TI1aC0l0
 
 [![(DeadlyTrade) 데들리트레이드 1.4.0.7 임시 버전 릴리즈 안내 - Temporary version before new version release.](http://img.youtube.com/vi/OI7TI1aC0l0/0.jpg)](http://www.youtube.com/watch?v=OI7TI1aC0l0 "(DeadlyTrade) 데들리트레이드 1.4.0.7 임시 버전 릴리즈 안내 - Temporary version before new version release.")

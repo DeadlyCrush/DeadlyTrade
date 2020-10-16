@@ -17,7 +17,21 @@
 * [Cli] - Interop, Core API
 * [C++] - Core
 
-## DeadlyTrade Overhaul 1.4.0.9 version for 3.12 Heist League. Temporary version before new version release.
+## DeadlyTrade Overhaul 1.4.1.1 version for 3.12 Heist League. Hotfix released.
+
+I received received CASE OPEN for abnormal traffic form my private server service. Due to abnormal traffic, my update server for DeadlyTrade has been suspended and will be resume after abnormal traffic cause has been cleared.
+
+I＇m communicating and discuss about this CASE with server companies. If traffic problem persists, I will use another my private spare server service.
+
+I＇ll let you know as situation progresses and changes.
+
+개인 서버를 통한 업데이트에서 트래픽 이상에 대한 사건-CASE OPEN을 전달 받았습니다.
+비정상 트래픽을 이유로 서버가 일시 중지-Suspend 상태가 되었으며, 원인 파악이 완료된 이후에 정상화될 예정이라고 합니다.
+
+이와 관련해서 서버 업체와 내용을 주고 받고 있고,
+만약 트래픽 문제가 지속될 경우 다른 예비 서버를 이용할 계획입니다.
+
+상황의 진행과 변화에 따라 안내드리겠습니다.
 
 ### 1.4.0.9 DeadlyTrade Temporary Released.
 

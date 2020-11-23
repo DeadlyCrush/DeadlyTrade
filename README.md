@@ -17,6 +17,32 @@
 * [Cli] - Interop, Core API
 * [C++] - Core
 
+## DeadlyTrade 1.4.1.3 Hotfix
+
+https://youtu.be/xUgUEdfj1us
+
+ㅇ Updated
+- Modified : Grid auto-calculation formula for displaying in Stash by user screen resolution has been modified.
+- Added : Top panel has been added to adjust position of Grid if it is not fit your display, depending on your settings or screen resolution.
+- Added : Check box has been added to Find by position function to check whether or not indicated Statsh is in the folder.
+- Added : Check box has been added to trade notification panel check whether or not indicated Statsh is in the folder.
+- Notice : Item name pate at find input field when you click the item name in the grid that appears from Trade notification panel.
+- Modified : Now dispaly recv/snd time 00h:00m:00s format in Trade notification panel is displayed.
+- Fixed : Exalted value is not diplayed has been modified in the Trade notification panel when large amount of chaos value.
+
+ㅇ MISC.
+- Guide videos added unedited.
+- In the future, I will edit it and add it if possible, and upload any guide video clips that may be helpful even if not edited.
+- Also, if you hard to find usage or problems which is difficult to find, please ask questions through each contact below description.
+- But, inform you that DeadlyTrade discord is main channel for contact.
+
+Thank you. Stay heathly and have a great day.
+
+﻿ 데들리트레이드 1.4.1.2 버전 기준 각 기능 소개 및 설명 영상
+스트림에서 요청주셔서 급 답변 드리다가보니 전체를 모두 상세히 설명드린건 아니지만,
+각 기능에 대해서 어느 정도는 설명이 된거 같아요. 편집 없이 그냥 올립니다.
+https://youtu.be/vYi44ds06nM
+
 ## DeadlyTrade Overhaul 1.4.1.1 version for 3.12 Heist League. Hotfix released.
 
 I received received CASE OPEN for abnormal traffic form my private server service. Due to abnormal traffic, my update server for DeadlyTrade has been suspended and will be resume after abnormal traffic cause has been cleared.

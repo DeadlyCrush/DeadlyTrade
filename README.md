@@ -43,98 +43,12 @@ Thank you. Stay heathly and have a great day.
 각 기능에 대해서 어느 정도는 설명이 된거 같아요. 편집 없이 그냥 올립니다.
 https://youtu.be/vYi44ds06nM
 
-## DeadlyTrade Overhaul 1.4.1.1 version for 3.12 Heist League. Hotfix released.
-
-I received received CASE OPEN for abnormal traffic form my private server service. Due to abnormal traffic, my update server for DeadlyTrade has been suspended and will be resume after abnormal traffic cause has been cleared.
-
-I＇m communicating and discuss about this CASE with server companies. If traffic problem persists, I will use another my private spare server service.
-
-I＇ll let you know as situation progresses and changes.
-
-개인 서버를 통한 업데이트에서 트래픽 이상에 대한 사건-CASE OPEN을 전달 받았습니다.
-비정상 트래픽을 이유로 서버가 일시 중지-Suspend 상태가 되었으며, 원인 파악이 완료된 이후에 정상화될 예정이라고 합니다.
-
-이와 관련해서 서버 업체와 내용을 주고 받고 있고,
-만약 트래픽 문제가 지속될 경우 다른 예비 서버를 이용할 계획입니다.
-
-상황의 진행과 변화에 따라 안내드리겠습니다.
-
-### 1.4.0.9 DeadlyTrade Temporary Released.
-
-I really apologize for delay until now without another announce after release schedule notice.
-
-Due to the specificity of the development company＇s work,  sometimes happens to find old man;; in urgent situations like service abort. I couldn＇t keep my promise because I had to handle last important company＇s service abort.
-
-But, I＇ve kept work to finishing for new version release that you＇re waiting for. Nevertheless, I found a few problem below and I don＇t have enough personal time to fix it, so I will finish it through weekend from Friday afternoon.
-
-1. Fix errors due to harvest & heist league price checking problems.
-2. Unknown error related to integrated launcher to ensure no waiting in the new league with additional logic.
-3. Finishing something additional new thing that can not announce at this moment.
-
-Therefore, all other features are available normally in the current version, but some function below had problem. I＇ve released the current version not new version by modifying only two function below.
-1. The NINJA quotient verification function with errors in the new league is made available by adding data from the current league.
-2. Other unspecified errors that misbehaved in the new league
-
-I＇m sorry to all DeadlyTrade users who are waiting, but I＇ve spent almost all my personal time to finish release when occurred delayed situation past 2 years, even if I can＇t sleep. Also I＇m going to do it this time.
-
-I emptied my personal schedule from Friday to Sunday and asked for my family＇s understanding. So, if not company＇s service down or not serious that I have to handle it, DeadlyTrade new version release will be possible this weekend, a week later than schedule that I announced.
-
-I know there are some problem when new league start that are inconvenient and waiting new version release, and I＇m sorry to users who waiting and new version solving these problem and including additional features.
-And thank you so much for your support and encouragement even if in this situation.
-
-Next notice will be new version release with something additional new thing that can not announce at this moment.
-
-Thank you.
-
-Keep grinding~! ♡ cheers, gl&hf all of you. Thanks.
-
-![Notice](https://blogfiles.pstatic.net/MjAyMDA3MThfMzcg/MDAxNTk1MDQ2NTUyMjg3.VS440DqgtlA5FARd3BhOhQFUkg76BRmX3xpLo_eCATcg.VzkKQLLsMCwNeeiZtrsFuDDRBzmd_T7AN_wvxJdY8u0g.PNG.eocsdev2/Deadly_2020_0718_001.png)
-![Notice](https://blogfiles.pstatic.net/MjAyMDA3MThfMjYx/MDAxNTk1MDQ2NTUyMzA2.P_KXNBxdTyZRSZ-aWptVdFMwE5c4xpv74jJRfSSW0lgg.fGAMcCoYzl_ovVOScOroSrXD99lXk-0lvPvjUpd4P1gg.PNG.eocsdev2/Deadly_2020_0718_002.png)
-
-### Added > 2020.10.16 06:07 Local time in Korea
-
-Currently, I＇ve checked that there is an error related with getting data when updating automatically. My test was ok because I have related files in development environment.
-
-If you have any errors, please download full version of 1.4.0.9 temp release : https://github.com/DeadlyCrush/DeadlyTrade/releases/download/1.4.0.9/DeadlyTradeOverhaul_1.4.0.9.zip in a separate folder.
-
-1.4.0.9 temporary version has no errors except Unexpected error while getting data after autoupdate.
-
-message from Daum Kakao user or the message format is not correct If trade notification is not pop up. If you receive from GGG user and message format is correct, please let me know if you don＇t get trade notification.
-
-And because data in ninja site fluctuates frequently and data being added with image to the ninja site, may error occur when checking unique item. This issue due to load image from local because speed problems when images are taken from ninja site. In next new version, this logic is changed to prevent error if images are not present.
-
-If there are any other special problems, please let me know.
-I will inform you with new version release asap.
-
-Thank you.
-
-* ps : If you see any errors that you haven＇t seen at previous version after the update, please download Full Version 1.4.0.9 and check if error occurs.
-
-
-http://www.youtube.com/watch?v=OI7TI1aC0l0
-
-[![(DeadlyTrade) 데들리트레이드 1.4.0.7 임시 버전 릴리즈 안내 - Temporary version before new version release.](http://img.youtube.com/vi/OI7TI1aC0l0/0.jpg)](http://www.youtube.com/watch?v=OI7TI1aC0l0 "(DeadlyTrade) 데들리트레이드 1.4.0.7 임시 버전 릴리즈 안내 - Temporary version before new version release.")
-
 [ Latest Release ]
 
 https://github.com/DeadlyCrush/DeadlyTrade/releases/
 
 * Update will be automatically if you have previous version above 1.4.0.5
 기존 사용자분들 중 1.4.0.5 버전 이상의 사용자는 자동 업데이트 됩니다.
-
-## Work in progress - For 3.11 Season. (Temporary Added. 2020.06.06)
-I'm prepare update focus to next league including support Vulkan & price check.
-I will announce details soon. Thanks 😊. 
-
-More Information : 
-
-https://www.pathofexile.com/forum/view-thread/2785386 (https://poe.game.daum.net/forum/view-thread/2785386)
-
-and 
-
-https://discord.gg/Gd7MjCz #work-in-progress channel.
-
-Stay healthy and have a nice day 😊
 
 # DeadlyTrade Main Features and Useful Functions.
 * Please check detailed Explanation in POE Forum : https://www.pathofexile.com/forum/view-thread/2785386

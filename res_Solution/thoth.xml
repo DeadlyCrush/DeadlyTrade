@@ -1,0 +1,26 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+<title>Grafana Labs Blog on Grafana Labs</title>
+<link>https://grafana.com/blog/</link>
+<description>Recent content in Grafana Labs Blog on Grafana Labs</description>
+<generator>Hugo -- gohugo.io</generator>
+<language>en-us</language>
+<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>GrafanaCONline 2022 Day 3 recap: Alerting in Grafana 9, Loki developments, dashing dashboards, and more!</title>
+<meta property="og:image" content="https://grafana.com/static/assets/meta/grafanaconline-2022-day-3-recap.png"/>
+<link>https://grafana.com/blog/2022/06/17/grafanaconline-2022-day-3-recap-alerting-in-grafana-9-loki-developments-dashing-dashboards-and-more/?utm_source=grafana_news&utm_medium=rss</link>
+<pubDate>Fri, 17 Jun 2022 12:30:00 +0000</pubDate>
+<guid>https://grafana.com/blog/2022/06/17/grafanaconline-2022-day-3-recap-alerting-in-grafana-9-loki-developments-dashing-dashboards-and-more/?utm_source=grafana_news&utm_medium=rss&src=in-prod&plcmt=rss</guid>
+<description>GrafanaCONline 2022 is still going strong, with sessions that covered alerting in Grafana 9, developments in Grafana Loki, and some winning Loki use cases. Plus, there was a talk about building an a F1 telemetry analysis solution that uses Grafana Cloud, along with plenty of dashboard discussions. You can tune into GrafanaCONline 2022 live (for free!) for today’s lineup of awesome speakers, or you can sign up to get notified about on-demand access to all our session recordings, which will be available after GrafanaCONline ends on June 17.</description>
+</item>
+<item>
+<title>Inside Grafana Labs hackathons: how they work and what projects ended up on the product roadmap</title>
+<meta property="og:image" content="https://grafana.com/static/assets/meta/grafana-big-tent-podcast-meta.png"/>
+<link>https://grafana.com/blog/2022/06/17/inside-grafana-labs-hackathons-how-they-work-and-what-projects-ended-up-on-the-product-roadmap/?utm_source=grafana_news&utm_medium=rss</link>
+<pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
+<guid>https://grafana.com/blog/2022/06/17/inside-grafana-labs-hackathons-how-they-work-and-what-projects-ended-up-on-the-product-roadmap/?utm_source=grafana_news&utm_medium=rss&src=in-prod&plcmt=rss</guid>
+<description>Three times a year, Grafanistas around the world step away from their daily responsibilities for one week and put their creative energy into what has quickly become a cultural touchstone at Grafana Labs: Our company-wide hackathon. In just 8 months, Grafana Labs has hosted three hackathons that average about 130 participants and have produced more than 150 different projects, from exciting new features that have been added to our roadmap to answering life&rsquo;s most pressing questions, such as &ldquo;Can Grafana run Doom?</description>
+</item>
+</channel>
+</rss>
